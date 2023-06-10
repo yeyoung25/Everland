@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVERAND RESORT</title>
-    <link rel="shortcut icon" href="/images/logo_png.png">
-    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="/favicon-64x64.png" type="image/x-icon">
     <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/import.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -257,7 +257,7 @@
                 EVERLAND <strong>HOMEBRIDGE</strong>
             </h2>
             <div>
-                <p>A place of joy and romance given by nature Dark forests, clear air, </p>
+                <p>A place of joy and romance given by nature Dark forests, clear air,</p>
                 <p>A place with fresh impressions from nature</p>
             </div>
             <span></span>
@@ -325,7 +325,25 @@
     </section>
     <!-- sec03 Fin -->
     <div class="map_sec">
-        <div></div>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1685950876670" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1685950876670",
+                "key" : "2f25a",
+                "mapWidth" : "1440",
+                "mapHeight" : "550"
+            }).render();
+        </script>
         <div class="map_dtl">
             <p>EVERLANDRESORT</p>
             <a href="#" class="copy">COPY</a>
