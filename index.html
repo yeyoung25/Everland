@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVERAND RESORT</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/customize.bxslider.js"></script>
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="shortcut icon" href="/favicon-64x64.png" type="image/x-icon">
     <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
@@ -101,116 +105,117 @@
         <a href="#wrap" class="go_top"></a>
     </nav>
     <header>
-        <!-- Swiper -->
-        <div class="swiper mainsilde">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/images/bg_main01.png" alt="메인배너01">
-                    <p class="txt01">DESIGN HAPPINESS</p>
-                    <p class="txt02">TULIP GARDEN</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="/images/bg_main02.png" alt="메인배너02">
-                    <p class="txt01">DESIGN HAPPINESS</p>
-                    <p class="txt02">T EXPRESS</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="/images/bg_main03.png" alt="메인배너03">
-                    <p class="txt01">DESIGN HAPPINESS</p>
-                    <p class="txt02">23rd Season Calendar</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="/images/bg_main04.png" alt="메인배너04">
-                    <p class="txt01">DESIGN HAPPINESS</p>
-                    <p class="txt02">SNOWMAN WORLD</p>
-                </div>
-            </div>
-            <!-- 배너 공통 / 왼쪽 막대 및 화살표 -->
-            <span></span>
-            <div class="swiper-button-next" alt="다음"></div>
-            <div class="swiper-button-prev" alt="이전"></div>
-            <div class="swiper-pagination"></div>
-        </div>
+        <!-- header ? -->
     </header>
     <!-- header fin -->
+    <!-- bxslider -->
+    <div class="bxslider mainsilde">
+        <ul class="bxslider-wrapper">
+            <li>
+                <img src="/images/bg_main01.png" alt="메인배너01">
+                <p class="txt01">DESIGN HAPPINESS</p>
+                <p class="txt02">TULIP GARDEN</p>
+            </li>
+            <li>
+                <img src="/images/bg_main02.png" alt="메인배너02">
+                <p class="txt01">DESIGN HAPPINESS</p>
+                <p class="txt02">T EXPRESS</p>
+            </li>
+            <li>
+                <img src="/images/bg_main03.png" alt="메인배너03">
+                <p class="txt01">DESIGN HAPPINESS</p>
+                <p class="txt02">23rd Season Calendar</p>
+            </li>
+            <li>
+                <img src="/images/bg_main04.png" alt="메인배너04">
+                <p class="txt01">DESIGN HAPPINESS</p>
+                <p class="txt02">SNOWMAN WORLD</p>
+            </li>
+        </ul>
+        <!-- 배너 공통 / 왼쪽 막대 및 화살표 -->
+        <span></span>
+        <div class="swiper-button-next" alt="다음"></div>
+        <div class="swiper-button-prev" alt="이전"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     <section class="sec01">
         <h2>What’s New</h2>
         <span>Welcome to the land of dreams and fantasies!</span>
         <a href="#" class="more_next"></a>
-        <!-- Swiper -->
-        <div class="swiper newSilde">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+        <!-- bxslider -->
+        <div class="bxslider newSilde">
+            <ul class="bxslider-wrapper">
+                <li>
                     <img src="/images/slide01.png" alt="Slide 1">
                     <dl>
                         <dt class="tit">23rd Season Calendar Information</dt>
                         <dd class="txt">Seasonal price adjustment</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide02.png" alt="Slide 2">
                     <dl>
                         <dt class="tit">[Notice] Information regarding COVID-19</dt>
                         <dd class="txt">COVID-19 Prevention</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide03.png" alt="Slide 3">
                     <dl>
                         <dt class="tit">Guide to using English APP for foreign guests</dt>
                         <dd class="txt">English app usage guide</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide04.png" alt="Slide 4">
                     <dl>
                         <dt class="tit">Application for smart queue after admission</dt>
                         <dd class="txt">Early open</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide05.png" alt="Slide 5">
                     <dl>
                         <dt class="tit">Guide for Smart Queue Beginners</dt>
                         <dd class="txt">User guide for beginners</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide06.png" alt="Slide 6">
                     <dl>
                         <dt class="tit">Everland Rose garden</dt>
                         <dd class="txt">It’s rose time</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide07.png" alt="Slide 7">
                     <dl>
                         <dt class="tit">Everland Parade Guest Participation Smart Reservation OPEN</dt>
                         <dd class="txt">Good Morning Safari Tour</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide08.png" alt="Slide 8">
                     <dl>
                         <dt class="tit">Early Bird Lost Valley Tour</dt>
                         <dd class="txt">Herbivore Observation Program</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide09.png" alt="Slide 9">
                     <dl>
                         <dt class="tit">Zootopia Happy Stamp Rally</dt>
                         <dd class="txt">Earth Happiness Energy</dd>
                     </dl>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li>
                     <img src="/images/slide10.png" alt="Slide 10">
                     <dl>
                         <dt class="tit">EVER SMTOWN - META PASSPORT Guide</p>
                         <dd class="txt">SEASON.1</dd>
                     </dl>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- sec01 Fin -->
@@ -329,10 +334,8 @@
         <!-- 1. 지도 노드 -->
         <div id="daumRoughmapContainer1685950876670" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-        <!--
-            2. 설치 스크립트
-            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-        -->
+        <!-- 2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.-->
         <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
         <!-- 3. 실행 스크립트 -->
