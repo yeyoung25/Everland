@@ -1,0 +1,7 @@
+:root{
+    --gs1:#ffffff;.
+}
+
+div{
+    color: var(--gs1);
+}
