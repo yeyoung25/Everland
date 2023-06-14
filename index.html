@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVERAND RESORT</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="/favicon-64x64.png" type="image/x-icon">
+    <link rel="icon" href="/favicon-64x64.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/import.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <script src="js/customize.bxslider.js"></script>
-    <link rel="shortcut icon" href="images/logo.png">
-    <link rel="shortcut icon" href="/favicon-64x64.png" type="image/x-icon">
-    <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/import.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -107,33 +106,33 @@
     <!-- header fin -->
     <!-- bxslider -->
     <div class="bxslider mainsilde">
-        <ul class="bxslider-wrapper">
+        <ul class="slider">
             <li>
-                <img src="/images/bg_main01.png" alt="메인배너01">
+                <img src="/images/bg_main01.png" title="banner1" alt="메인배너01">
                 <p class="txt01">DESIGN HAPPINESS</p>
                 <p class="txt02">TULIP GARDEN</p>
             </li>
             <li>
-                <img src="/images/bg_main02.png" alt="메인배너02">
+                <img src="/images/bg_main02.png" title="banner2" alt="메인배너02">
                 <p class="txt01">DESIGN HAPPINESS</p>
                 <p class="txt02">T EXPRESS</p>
             </li>
             <li>
-                <img src="/images/bg_main03.png" alt="메인배너03">
+                <img src="/images/bg_main03.png" title="banner3" alt="메인배너03">
                 <p class="txt01">DESIGN HAPPINESS</p>
                 <p class="txt02">23rd Season Calendar</p>
             </li>
             <li>
-                <img src="/images/bg_main04.png" alt="메인배너04">
+                <img src="/images/bg_main04.png" title="banner4" alt="메인배너04">
                 <p class="txt01">DESIGN HAPPINESS</p>
                 <p class="txt02">SNOWMAN WORLD</p>
             </li>
         </ul>
         <!-- 배너 공통 / 왼쪽 막대 및 화살표 -->
         <span></span>
-        <div class="swiper-button-next" alt="다음"></div>
-        <div class="swiper-button-prev" alt="이전"></div>
-        <div class="swiper-pagination"></div>
+        <div class="btn_prev" alt="이전"></div>
+        <div class="btn_next" alt="다음"></div>
+        <div class="pagination"></div>
     </div>
     <section class="sec01">
         <h2>What’s New</h2>
@@ -141,7 +140,7 @@
         <a href="#" class="more_next"></a>
         <!-- bxslider -->
         <div class="bxslider newSilde">
-            <ul class="bxslider-wrapper">
+            <ul class="slider">
                 <li>
                     <img src="/images/slide01.png" alt="Slide 1">
                     <dl>
@@ -218,93 +217,115 @@
     <!-- sec01 Fin -->
     <section class="sec02">
         <div class="ACTIVITIES">
-            <h2>
-                EVERLAND
-                <strong>ACTIVITIES</strong>
-            </h2>
-            <div>
-                <p>In a magical mountain, </p>
-                <p>Everlanders living in the land of eternity dream of this world.</p>
+            <div class="tab_area">
+                <div class="tab1">
+                    <img src="/images/actv01.png" />
+                </div>
+                <div class="tab2">
+                    <img src="/images/actv02.png" />
+                </div>
+                <div class="tab3">
+                    <img src="/images/actv03.png" />
+                </div>
+                <div class="tab4">
+                    <img src="/images/actv04.png" />
+                </div>
+                <div class="tab5">
+                    <img src="/images/actv05.png" />
+                </div>
             </div>
-            <span></span>
-            <a href="#" class="more">MORE</a>
-            <!-- bxslider -->
-                <ul class="bxslider">
-                    <li class="bxslider-slide">
-                        <img src="/images/actv01.png" />
-                        <a href="#">Recommended course</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/actv02.png" />
-                        <a href="#">Attraction</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/actv03.png" />
-                        <a href="#">Entertainment</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/actv04.png" />
-                        <a href="#">Restaurant</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/actv05.png" />
-                        <a href="#">Gift shop</a>
-                    </li>
-                </ul>
+            <div class="txt_box">
+                <h2>
+                    EVERLAND
+                    <strong>ACTIVITIES</strong>
+                </h2>
+                <div>
+                    <p>In a magical mountain, </p>
+                    <p>Everlanders living in the land of eternity dream of this world.</p>
+                </div>
+                <span></span>
+                <a href="javascript:;" class="more">MORE</a>
+                <div class="tab">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">Recommended course</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Attraction</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Entertainment</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Gift shop</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>    
-        <div>
-            <h2 class="HOMEBRIDGE">
-                EVERLAND <strong>HOMEBRIDGE</strong>
-            </h2>
-            <div>
-                <p>A place of joy and romance given by nature Dark forests, clear air,</p>
-                <p>A place with fresh impressions from nature</p>
+        <div class="HOMEBRIDGE">
+            <div class="tab_area">
+                <div class="tab1">
+                    <img src="/images/home01.png" />
+                </div>
+                <div class="tab2">
+                    <img src="/images/home02.png" />
+                </div>
+                <div class="tab3">
+                    <img src="/images/home03.png" />
+                </div>
             </div>
-            <span></span>
-            <a href="#" class="more">MORE</a>
-            <!-- bxslider --> 
-                <ul class="bxslider-wrapper">
-                    <li class="bxslider-slide">
-                        <img src="/images/home01.png" />
-                        <a href="#">Cabin Hostel New Building</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/home02.png" />
-                        <a href="#">Cabin Hostel Main Building</a>
-                    </li>
-                    <li class="bxslider-slide">
-                        <img src="/images/home03.png" />
-                        <a href="#">Theme story</a>
-                    </li>
-                </ul>
-                <div class="bxslider-button-next"></div>
-                <div class="bxslider-button-prev"></div>
+            <div class="txt_box">
+                <h2 class="HOMEBRIDGE">
+                    EVERLAND <strong>HOMEBRIDGE</strong>
+                </h2>
+                <div>
+                    <p>A place of joy and romance given by nature Dark forests, clear air,</p>
+                    <p>A place with fresh impressions from nature</p>
+                </div>
+                <span></span>
+                <a href="javascript:;" class="more">MORE</a>
+                <div class="tab">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">Cabin Hostel New Building</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Cabin Hostel Main Building</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Theme story</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>    
     </section>
-
+    <!-- sec02 Fin -->
     <section class="sec03">
         <div class="new_notice">
             <div>
                 <h2>NEWS & NOTICE</h2>
-                <a href="#" class="more">MORE</a>
+                <a href="javascript:;" class="more">MORE</a>
             </div>
             <ul>
                 <li>
-                    <a href="#">23 season calendar information</a>
+                    <a href="javascript:;">23 season calendar information</a>
                     <span class="date">2023-01-27</span>
                 </li>
                 <li>
-                    <a href="#">[Notice] Information regarding COVID-19</a>
+                    <a href="javascript:;">[Notice] Information regarding COVID-19</a>
                     <span class="date">2023-01-30</span>
                 </li>
                 <li>
-                    <a href="#">Guide to using the English APP for foreign guests</a>
+                    <a href="javascript:;">Guide to using the English APP for foreign guests</a>
                     <span class="date">2022-07-06</span>
                 </li>
                 <li>
-                    <a href="#">[Notice] Application for smart queue after admission</a>
+                    <a href="javascript:;">[Notice] Application for smart queue after admission</a>
                     <span class="date">2021-10-15</span>
                 </li>
             </ul>
@@ -312,13 +333,13 @@
          <div class="information">
             <ul>
                 <li>
-                    <a href="#" class="res_ckeck">reservation confirm</a>
+                    <a href="javascript:;" class="res_ckeck">reservation confirm</a>
                 </li>
                 <li>
-                    <a href="#" class="1:1_inquiry">1:1 inquiry</a>
+                    <a href="javascript:;" class="1:1_inquiry">1:1 inquiry</a>
                 </li>
                 <li>
-                    <a href="#" class="lost_item">lost and found</a>
+                    <a href="javascript:;" class="lost_item">lost and found</a>
                 </li>
             </ul>
         </div>
@@ -380,19 +401,19 @@
                 <h2 class="logo"></h2>
                 <div class="foot_menu_list">
                     <ul>
-                        <li><a href="#">COMMUNITY</a></li>
-                        <li><a href="#">TOS</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">POLICY</a></li>
-                        <li><a href="#">SITE MAP</a></li>
-                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="javascript:;">COMMUNITY</a></li>
+                        <li><a href="javascript:;">TOS</a></li>
+                        <li><a href="javascript:;">ABOUT US</a></li>
+                        <li><a href="javascript:;">POLICY</a></li>
+                        <li><a href="javascript:;">SITE MAP</a></li>
+                        <li><a href="javascript:;">HISTORY</a></li>
                     </ul>
                 </div>
                 <div class="sns">
                     <ul>
-                        <li><a href="#" class="fac"></a></li>
-                        <li><a href="#" class="ins"></a></li>
-                        <li><a href="#" class="kakao"></a></li>
+                        <li><a href="javascript:;" class="fac"></a></li>
+                        <li><a href="javascript:;" class="ins"></a></li>
+                        <li><a href="javascript:;" class="kakao"></a></li>
                     </ul>
                 </div>
             </div>
@@ -409,8 +430,5 @@
              </div> 
         </div>
     </footer>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="/js/page.js" type="module"></script>
 </body>
 </html>
