@@ -54,9 +54,72 @@
 }
 [class^='la']{font-family: 'Lato';}
 [class^='op']{font-family: 'Opensans';}
-[class*='']{font-size: px;}
-
+[class*='140']{font-size: 140px;}
+[class*='45']{font-size: 45px;}
+[class*='35']{font-size: 35px;}
+[class*='34']{font-size: 34px;}
+[class*='30']{font-size: 30px;}
+[class*='25']{font-size: 25px;}
+[class*='24']{font-size: 24px;}
+[class*='22']{font-size: 22px;}
+[class*='21']{font-size: 21px;}
+[class*='20']{font-size: 20px;}
+[class*='18']{font-size: 18px;}
+[class*='16']{font-size: 16px;}
+[class*='14']{font-size: 14px;}
+[class*='13']{font-size: 13px;}
+[class*='12']{font-size: 12px;}
+.la9_45{ font-size: 45px; font-weight: 900;}
+.la9_35{ font-size: 35px; font-weight: 900;}
+.la3_35{ font-size: 35px; font-weight: 300;}
+.la9_30{ font-size: 30px; font-weight: 900;}
+.la7_30{ font-size: 30px; font-weight: 700;}
+.la9_25{ font-size: 25px; font-weight: 900;}
+.la7_25{ font-size: 25px; font-weight: 700;}
+.la4_25{ font-size: 25px; font-weight: 400;}
+.la9_24{ font-size: 24px; font-weight: 900;}
+.la7_24{ font-size: 24px; font-weight: 700;}
+.la9_22{ font-size: 22px; font-weight: 900;}
+.la9_20{ font-size: 20px; font-weight: 900;}
+.la7_20{ font-size: 20px; font-weight: 700;}
+.la6_20{ font-size: 20px; font-weight: 600;}
+.la4_18{ font-size: 18px; font-weight: 400;}
+.la9_16{ font-size: 16px; font-weight: 900;}
+.la4_16{ font-size: 16px; font-weight: 400;}
+.la7_14{ font-size: 14px; font-weight: 700;}
+.la4_14{ font-size: 14px; font-weight: 400;}
+.la9_13{ font-size: 13px; font-weight: 900;}
+.op7_140{ font-size: 140px; font-weight: 700;}
+.op3_35{ font-size: 35px; font-weight: 300;}
+.op7_34{ font-size: 34px; font-weight: 700;}
+.op6_30{ font-size: 30px; font-weight: 600;}
+.op7_25{ font-size: 25px; font-weight: 700;}
+.op7_24{ font-size: 24px; font-weight: 700;}
+.op6_24{ font-size: 24px; font-weight: 600;}
+.op4_24{ font-size: 24px; font-weight: 400;}
+.op4_22{ font-size: 22px; font-weight: 400;}
+.op7_21{ font-size: 21px; font-weight: 700;}
+.op7_20{ font-size: 20px; font-weight: 700;}
+.op6_20{ font-size: 20px; font-weight: 600;}
+.op4_20{ font-size: 20px; font-weight: 400;}
+.op7_18{ font-size: 18px; font-weight: 700;}
+.op6_18{ font-size: 18px; font-weight: 600;}
+.op4_18{ font-size: 18px; font-weight: 400;}
+.op3_18{ font-size: 18px; font-weight: 300;}
+.op7_16{ font-size: 16px; font-weight: 700;}
+.op6_16{ font-size: 16px; font-weight: 600;}
+.op4_16{ font-size: 16px; font-weight: 400;}
+.op7_14{ font-size: 14px; font-weight: 700;}
+.op6_14{ font-size: 14px; font-weight: 600;}
+.op4_14{ font-size: 14px; font-weight: 400;}
+.op3_14{ font-size: 14px; font-weight: 300;}
+.op7_12{ font-size: 12px; font-weight: 700;}
+.text01{
+    
+}
 /* 사용시 예시 
 div{
     color: var(--gs1);
+    border: ;
+    background-color: ;
 } */
