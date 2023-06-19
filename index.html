@@ -15,22 +15,23 @@
     <script src="js/customize.bxslider.js"></script>
 </head>
 <body>
+    <a href="#wrap" class="go_top">back to top</a>
     <header>
-        <h1><a href="index.html" class="logo"></a></h1>
-        <div class="rightBox">
+        <h1><a href="index.html">welcome to EVERLAND</a></h1>
+        <div>
             <div class="ect_btn op7_20">
                 <a href="signIn.html">SIGN IN</a>
                 <a href="signUp.html">SIGN UP</a>
-                <a href="community.html">COMMUNITY</a>
-                <a href="reservation.html" class="op7_20">RESERVATION</a>
+                <a href="faq.html">COMMUNITY</a>
+                <a href="reservation.html">RESERVATION</a>
             </div>
-            <div class="menuBar">
+            <div class="menuBar" data-panel="fnbPanel">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-        <nav>
+        <nav id="fnbPanel">
             <ul>
                 <li>
                     <h2 class="la9_22">EVERLAND GUIDE</h2>
@@ -101,32 +102,39 @@
             </ul>
         </nav>
         <!-- f&b Fin -->
-        <a href="#wrap" class="go_top">back to top</a>
     </header>
     <!-- header fin -->
-    <!-- bxslider -->
     <div class="indexContainer">
-        <div class="bxslider">
+        <!-- bxslider -->
+        <div class="bxslider main">
             <ul class="slider">
                 <li>
-                    <img src="images/bg_main01.png" alt="튤립 축제">
-                    <strong class="la9_30">DESIGN HAPPINESS</strong>
-                    <h2 class="la9_45">TULIP GARDEN</h2>
+                    <a href="tulipGarden.html">
+                        <img src="images/bg_main01.png" alt="튤립 축제">
+                        <strong class="la9_30">DESIGN HAPPINESS</strong>
+                        <h2 class="la9_45">TULIP GARDEN</h2>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/bg_main02.png" alt="돌아온 티익스프레스">
-                    <strong class="la9_30">DESIGN HAPPINESS</strong>
-                    <h2 class="la9_45">T EXPRESS</h2>
+                    <a href="tExpress.html">
+                        <img src="images/bg_main02.png" alt="돌아온 티익스프레스">
+                        <strong class="la9_30">DESIGN HAPPINESS</strong>
+                        <h2 class="la9_45">T EXPRESS</h2>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/bg_main03.png" alt="시즌캘린더 토끼 사진">
-                    <strong class="la9_30">DESIGN HAPPINESS</strong>
-                    <h2 class="la9_45">23rd Season Calendar</h2>
+                    <a href="seasonCalendar.html">
+                        <img src="images/bg_main03.png" alt="시즌캘린더 토끼 사진">
+                        <strong class="la9_30">DESIGN HAPPINESS</strong>
+                        <h2 class="la9_45">23rd Season Calendar</h2>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/bg_main04.png" alt="스노우월드 겨울 사진">
-                    <strong class="la9_30">DESIGN HAPPINESS</strong>
-                    <h2 class="la9_45">SNOWMAN WORLD</h2>
+                    <a href="snowmanWorld.html">
+                        <img src="images/bg_main04.png" alt="스노우월드 겨울 사진">
+                        <strong class="la9_30">DESIGN HAPPINESS</strong>
+                        <h2 class="la9_45">SNOWMAN WORLD</h2>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -135,93 +143,114 @@
             <span class="la3_35">Welcome to the land of dreams and fantasies&#33;</span>
             <a href="newsNotice.html" class="more_next"></a>
             <!-- bxslider -->
-            <div class="bxslider newSilde">
+            <div class="bxslider new">
                 <ul class="slider">
                     <li>
-                        <img src="images/slide01.png" alt="시즌캘린더 토끼 사진">
-                        <dl>
-                            <dt class="op7_20">23rd Season Calendar Information</dt>
-                            <dd class="op6_14">Seasonal price adjustment</dd>
-                            <dd class="la9_13">2023.01.27 &#126; 2023.12.31</dd>
-                        </dl>
+                        <a href="seasonCalendar.html">
+                            <img src="images/slide01.png" alt="시즌캘린더 토끼 사진">
+                            <dl>
+                                <dt class="op7_20">23rd Season Calendar Information</dt>
+                                <dd class="op6_14">Seasonal price adjustment</dd>
+                                <dd class="la9_13">2023.01.27 &#126; 2023.12.31</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide02.png" alt="코로나 방역수칙">
-                        <dl>
-                            <dt class="op7_20">&#91;Notice&#93; Information regarding COVID-19</dt>
-                            <dd class="op6_14">COVID-19 Prevention</dd>
-                            <dd class="la9_13">2023.01.30 &#126; 2023.12.31</dd>
-                        </dl>
+                        <a href="covid-19.html">
+                            <img src="images/slide02.png" alt="코로나 방역수칙">
+                            <dl>
+                                <dt class="op7_20">&#91;Notice&#93; Information regarding COVID-19</dt>
+                                <dd class="op6_14">COVID-19 Prevention</dd>
+                                <dd class="la9_13">2023.01.30 &#126; 2023.12.31</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide03.png" alt="외국인을 위한 앱사용">
-                        <dl>
-                            <dt class="op7_20">Guide to using English APP for foreign guests</dt>
-                            <dd class="op6_14">English app usage guide</dd>
-                            <dd class="la9_13">2021.10.15 &#126; 2023.12.31</dd>
-                        </dl>
+                        <a href="foreignGuests.html">
+                            <img src="images/slide03.png" alt="외국인을 위한 앱사용">
+                            <dl>
+                                <dt class="op7_20">Guide to using English APP for foreign guests</dt>
+                                <dd class="op6_14">English app usage guide</dd>
+                                <dd class="la9_13">2021.10.15 &#126; 2023.12.31</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide04.png" alt="스마트줄서기 이용">
-                        <dl>
-                            <dt class="op7_20">Application for smart queue after admission</dt>
-                            <dd class="op6_14">Early open</dd>
-                            <dd class="la9_13">2023.02.01 &#126; 2023.02.28</dd>
-                        </dl>
+                        <a href="application.html">
+                            <img src="images/slide04.png" alt="스마트줄서기 이용">
+                            <dl>
+                                <dt class="op7_20">Application for smart queue after admission</dt>
+                                <dd class="op6_14">Early open</dd>
+                                <dd class="la9_13">2023.02.01 &#126; 2023.02.28</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide05.png" alt="스마트줄서기 초보자 가이드">
-                        <dl>
-                            <dt class="op7_20">Guide for Smart Queue Beginners</dt>
-                            <dd class="op6_14">User guide for beginners</dd>
-                            <dd class="la9_13">2022.06.22 &#126; 2023.12.31</dd>
-                        </dl>
+                        <a href="applicationBeginners.html">
+                            <img src="images/slide05.png" alt="스마트줄서기 초보자 가이드">
+                            <dl>
+                                <dt class="op7_20">Guide for Smart Queue Beginners</dt>
+                                <dd class="op6_14">User guide for beginners</dd>
+                                <dd class="la9_13">2022.06.22 &#126; 2023.12.31</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide06.png" alt="장미 축제">
-                        <dl>
-                            <dt class="op7_20">Everland Rose garden</dt>
-                            <dd class="op6_14">It&#39;s rose time</dd>
-                            <dd class="la9_13">2023.05.19 &#126; 2023.05.20</dd>
-                        </dl>
+                        <a href="roseGarden.html">
+                            <img src="images/slide06.png" alt="장미 축제">
+                            <dl>
+                                <dt class="op7_20">Everland Rose garden</dt>
+                                <dd class="op6_14">It&#39;s rose time</dd>
+                                <dd class="la9_13">2023.05.19 &#126; 2023.05.20</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide07.png" alt="퍼레이트 게스트 참여">
-                        <dl>
-                            <dt class="op7_20">Everland Parade Guest Participation Smart Reservation OPEN</dt>
-                            <dd class="op6_14">Good Morning Safari Tour</dd>
-                            <dd class="la9_13">2023.01.05 &#126; 2023.02.26</dd>
-                        </dl>
+                        <a href="Guest Participation.html">
+                            <img src="images/slide07.png" alt="퍼레이트 게스트 참여">
+                            <dl>
+                                <dt class="op7_20">Everland Parade Guest Participation Smart Reservation OPEN</dt>
+                                <dd class="op6_14">Good Morning Safari Tour</dd>
+                                <dd class="la9_13">2023.01.05 &#126; 2023.02.26</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide08.png" alt="로스트밸리 투어">
-                        <dl>
-                            <dt class="op7_20">Early Bird Lost Valley Tour</dt>
-                            <dd class="op6_14">Herbivore Observation Program</dd>
-                            <dd class="la9_13">2023.04.11 &#126; 2023.05.18</dd>
-                        </dl>
+                        <a href="earlyBirdLostValleyTour.html">
+                            <img src="images/slide08.png" alt="로스트밸리 투어">
+                            <dl>
+                                <dt class="op7_20">Early Bird Lost Valley Tour</dt>
+                                <dd class="op6_14">Herbivore Observation Program</dd>
+                                <dd class="la9_13">2023.04.11 &#126; 2023.05.18</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide09.png" alt="주토피아 스탬프">
-                        <dl>
-                            <dt class="op7_20">Zootopia Happy Stamp Rally</dt>
-                            <dd class="op6_14">Earth Happiness Energy</dd>
-                            <dd class="la9_13">2023.04.18 &#126; 2023.06.04</dd>
-                        </dl>
+                        <a href="zootopia.html">
+                            <img src="images/slide09.png" alt="주토피아 스탬프">
+                            <dl>
+                                <dt class="op7_20">Zootopia Happy Stamp Rally</dt>
+                                <dd class="op6_14">Earth Happiness Energy</dd>
+                                <dd class="la9_13">2023.04.18 &#126; 2023.06.04</dd>
+                            </dl>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/slide10.png" alt="EVER x SMTOWN SEASON">
-                        <dl>
-                            <dt class="op7_20">EVER SMTOWN &#45; META PASSPORT Guide</p>
-                            <dd class="op6_14">SEASON.1</dd>
-                            <dd class="la9_13">2023.02.01 &#126; 2023.02.28</dd>
-                        </dl>
+                        <a href="everSmtown.html">
+                            <img src="images/slide10.png" alt="EVER x SMTOWN SEASON">
+                            <dl>
+                                <dt class="op7_20">EVER SMTOWN &#45; META PASSPORT Guide</p>
+                                <dd class="op6_14">SEASON.1</dd>
+                                <dd class="la9_13">2023.02.01 &#126; 2023.02.28</dd>
+                            </dl>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- sec01 Fin -->
         <section class="sec02">
+            <!-- bxslider -->
             <div class="activities">
                 <ul class="tab_area slider">
                     <li class="tab1">
@@ -241,7 +270,7 @@
                     </li>
                 </ul>
                 <div class="txt_box">
-                    <h2 class="everland la4_25">
+                    <h2 class="la4_25">
                         EVERLAND
                         <strong class="la9_25">ACTIVITIES</strong>
                     </h2>
@@ -285,7 +314,7 @@
                     </li>
                 </ul>
                 <div class="txt_box">
-                    <h2 class="homebridge la4_25">
+                    <h2 class="la4_25">
                         EVERLAND <strong class="la9_25">HOMEBRIDGE</strong>
                     </h2>
                     <div class="op4_20">
@@ -320,19 +349,19 @@
                 <ul>
                     <li>
                         <a href="seasonCalendar.html" class="op3_18">23 season calendar information</a>
-                        <span class="date" class="op3_14">2023-01-27</span>
+                        <span class="op3_14">2023-01-27</span>
                     </li>
                     <li>
                         <a href="covid-19.html" class="op3_18">&#91;Notice&#93; Information regarding COVID-19</a>
-                        <span class="date" class="op3_14">2023-01-30</span>
+                        <span class="op3_14">2023-01-30</span>
                     </li>
                     <li>
                         <a href="foreignGuests.html" class="op3_18">Guide to using the English APP for foreign guests</a>
-                        <span class="date" class="op3_14">2022-07-06</span>
+                        <span class="op3_14">2022-07-06</span>
                     </li>
                     <li>
                         <a href="application.html" class="op3_18">&#91;Notice&#93; Application for smart queue after admission</a>
-                        <span class="date" class="op3_14">2021-10-15</span>
+                        <span class="op3_14">2021-10-15</span>
                     </li>
                 </ul>
             </div>
@@ -345,7 +374,7 @@
                         <a href="reservation.html">reservation</a>
                     </li>
                     <li>
-                        <a href="inquiry.html">1&#58;1 inquiry</a>
+                        <a href="inquiry.html">1:1 inquiry</a>
                     </li>
                     <li>
                         <a href="lostAndFound.html">lost and found</a>
@@ -370,57 +399,43 @@
         <!-- sec03 Fin -->
     </div>
     <footer>
-        <div class="call_sec">
-            <ul>
-                <li>
-                    <img src="images/call01.png" alt="Everland_call">
-                    <p class="everland la4_16">Everland Resort Inquiries</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-                <li>
-                    <img src="images/call02.png" alt="caribbeanBay_call">
-                    <p class="caribbeanBay la4_16">Caribbean Bay Inquiry</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-                <li>
-                    <img src="images/call03.png" alt="homebridge_call">
-                    <p class="homebridge la4_16">Homebridge Inquiry</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_in">
-            <div class="foot_top">
-                <h2 class="logo"></h2>
-                <div class="foot_menu_list" class="op7_16">
-                    <ul>
-                        <li><a href="community.html">COMMUNITY</a></li>
-                        <li><a href="tos.html">TOS</a></li>
-                        <li><a href="aboutUs.html">ABOUT US</a></li>
-                        <li><a href="policy.html">POLICY</a></li>
-                        <li><a href="siteMap.html">SITE MAP</a></li>
-                        <li><a href="history.html">HISTORY</a></li>
-                    </ul>
-                </div>
-                <div class="sns">
-                    <ul>
-                        <li><a href="fac.html" class="fac"></a></li>
-                        <li><a href="ins.html" class="ins"></a></li>
-                        <li><a href="kakao.html" class="kakao"></a></li>
-                    </ul>
-                </div>
+        <ul>
+            <li>
+                <h3 class="la4_16">Everland Resort Inquiries</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+            <li>
+                <h3 class="la4_16">Caribbean Bay Inquiry</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+            <li>
+                <h3 class="la4_16">Homebridge Inquiry</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <h2>goodBye. EVERLAND</h2>
+                <ul class="op7_16">
+                    <li><a href="faq.html">COMMUNITY</a></li>
+                    <li><a href="tos.html">TOS</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="siteMap.html">SITE MAP</a></li>
+                    <li><a href="history.html">HISTORY</a></li>
+                </ul>
+                <ol>
+                    <li><a href="fac.html">faceBook</a></li>
+                    <li><a href="ins.html" class="ins">instagram</a></li>
+                    <li><a href="kakao.html" class="kakao">kakao</a></li>
+                </ol>
             </div>
-            <div class="foot_btm" class="op4_16">
-                <div class="foot_txt">
-                    <p>Samsung C&T Corporation&#44; 199 Everland-ro&#44; Pogok-eup&#44; Cheoin-gu&#44; Yongin-si&#44; Gyeonggi-do</p>
-                    <span class="det_ckeck"></span>
-                </div>
-                <div class="footer_txt_ckeck">
-                    <p>CEO &#58; Seunghwan Han &#124; Business registration number &#58; 135-85-04288 &#124; Mail-order business report number &#58; 2006-Yongin Cheoin-0216 &#124; Check business information</p>
-                    <p>Customer Consultation Center &#58; 031-320-5000 &#40;paid&#41; &#124; Privacy Policy &#124; Notice of Policy Revision &#124; Bid Notice</p>
-                    <p>Copyright © Samsung C&T Corporation. All rights reserved.</p>
-                </div>
-             </div> 
+            <details class="op4_16">
+                <summary>Samsung C&T Corporation, 199 Everland-ro, Pogok-eup, Cheoin-gu, Yongin-si, Gyeonggi-do</summary>
+                <span>CEO : Seunghwan Han | Business registration number : 135-85-04288 | Mail-order business report number : 2006-Yongin Cheoin-0216 | Check business information</span>
+                <span>Customer Consultation Center : <a href="tel:+8231-320-5000">031-320-5000(paid)</a> | <a href="policy.html">Privacy Policy</a> | <a href="https://www.everland.com/web/everland/policyrevision/list.html">Notice of Policy Revision</a> | <a href="https://www.everland.com/web/everland/bidnotice/list.html">Bid Notice</a></span>
+                <p>Copyright © Samsung C&T Corporation. All rights reserved.</p>
+            </details>
         </div>
     </footer>
 </body>

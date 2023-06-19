@@ -15,28 +15,29 @@
     <script src="js/customize.bxslider.js"></script>
 </head>
 <body>
+    <a href="#wrap" class="go_top">back to top</a>
     <header>
-        <h1><a href="index.html" class="logo"></a></h1>
-        <div class="rightBox">
+        <h1><a href="index.html">welcome to EVERLAND</a></h1>
+        <div>
             <div class="ect_btn op7_20">
                 <a href="signIn.html">SIGN IN</a>
                 <a href="signUp.html">SIGN UP</a>
-                <a href="community.html">COMMUNITY</a>
-                <a href="reservation.html" class="op7_20">RESERVATION</a>
+                <a href="faq.html">COMMUNITY</a>
+                <a href="reservation.html">RESERVATION</a>
             </div>
-            <div class="menuBar">
+            <div class="menuBar" data-panel="fnbPanel">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-        <nav>
+        <nav id="fnbPanel">
             <ul>
                 <li>
                     <h2 class="la9_22">EVERLAND GUIDE</h2>
                     <ol class="op7_18">
                         <li><a href="newsNotice.html">News notice</a></li>
-                        <li><a href="howTouse.html">How to use</a></li>
+                        <li><a href="howToUse.html">How to use</a></li>
                         <li><a href="operatingTime.html">Operating time</a></li>
                         <li><a href="suspensionNotice.html">Suspension Notice</a></li>
                         <li><a href="trafficReport.html">Traffic report</a></li>
@@ -101,64 +102,81 @@
             </ul>
         </nav>
         <!-- f&b Fin -->
-        <a href="#wrap" class="go_top">back to top</a>
     </header>
     <!-- header fin -->
-    <div>
-
-    </div>
-    <footer>
-        <div class="call_sec">
-            <ul>
-                <li>
-                    <img src="images/call01.png" alt="Everland_call">
-                    <p class="everland la4_16">Everland Resort Inquiries</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-                <li>
-                    <img src="images/call02.png" alt="caribbeanBay_call">
-                    <p class="caribbeanBay la4_16">Caribbean Bay Inquiry</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-                <li>
-                    <img src="images/call03.png" alt="homebridge_call">
-                    <p class="homebridge la4_16">Homebridge Inquiry</p>
-                    <a href="tel:031-645-2000" class="everland_tel la9_16">031-645-2000</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_in">
-            <div class="foot_top">
-                <h2 class="logo"></h2>
-                <div class="foot_menu_list" class="op7_16">
-                    <ul>
-                        <li><a href="community.html">COMMUNITY</a></li>
-                        <li><a href="tos.html">TOS</a></li>
-                        <li><a href="aboutUs.html">ABOUT US</a></li>
-                        <li><a href="policy.html">POLICY</a></li>
-                        <li><a href="siteMap.html">SITE MAP</a></li>
-                        <li><a href="history.html">HISTORY</a></li>
+    <div class="container">
+        <div class="title_txt">  <!-- title_txt 위치가 여기 맞나... -->
+            <p class="la7_30">EVERLAND GUIDE</p>  <!-- p태그가 맞나 h2가 맞나... -->
+            <div class="nav_box">
+                <div class="home">
+                    <a href="index.html">home</a> <!-- home은 굳이 div로 안감싸도 되나?... -->
+                </div> 
+                <div class="sel_box01">
+                    <p class="la7_14">EVERLAND GUIDE</p>
+                    <ul class="op4_14">
+                        <li><a href="newsNotice.html">EVERLAND GUIDE</a></li>
+                        <li><a href="usageFee.html">TICKET PRICE</a></li>
+                        <li><a href="recommendedCourse.html">ACTIVITIES</a></li>
+                        <li><a href="seasonTicket.html">MEMBERSHIP</a></li>
+                        <li><a href="faq.html">COMMUNITY</a></li>
                     </ul>
                 </div>
-                <div class="sns">
-                    <ul>
-                        <li><a href="fac.html" class="fac"></a></li>
-                        <li><a href="ins.html" class="ins"></a></li>
-                        <li><a href="kakao.html" class="kakao"></a></li>
+                <div class="sel_box02">
+                    <p class="la7_14">NEWS NOTICE</p>
+                    <ul class="op4_14">
+                        <li><a href="newsNotice.html">NEWS NOTICE</a></li>
+                        <li><a href="howToUse.html">HOW TO USE</a></li>
+                        <li><a href="operatingTime.html">OPERATING HOURS</a></li>
+                        <li><a href="suspensionNotice.html">SUSPENSION NOTICE</a></li>
+                        <li><a href="trafficReport.html">TRAFFIC REPORT</a></li>
+                        <li><a href="amenities.html">AMENNITIES</a></li>
+                        <li><a href="guideMap.html">GUIDE MAP</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="foot_btm" class="op4_16">
-                <div class="foot_txt">
-                    <p>Samsung C&T Corporation&#44; 199 Everland-ro&#44; Pogok-eup&#44; Cheoin-gu&#44; Yongin-si&#44; Gyeonggi-do</p>
-                    <span class="det_ckeck"></span>
-                </div>
-                <div class="footer_txt_ckeck">
-                    <p>CEO &#58; Seunghwan Han &#124; Business registration number &#58; 135-85-04288 &#124; Mail-order business report number &#58; 2006-Yongin Cheoin-0216 &#124; Check business information</p>
-                    <p>Customer Consultation Center &#58; 031-320-5000 &#40;paid&#41; &#124; Privacy Policy &#124; Notice of Policy Revision &#124; Bid Notice</p>
-                    <p>Copyright © Samsung C&T Corporation. All rights reserved.</p>
-                </div>
-             </div> 
+        </div>
+
+
+        
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <h3 class="la4_16">Everland Resort Inquiries</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+            <li>
+                <h3 class="la4_16">Caribbean Bay Inquiry</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+            <li>
+                <h3 class="la4_16">Homebridge Inquiry</h3>
+                <a href="tel:+82316452000" class="la9_16">031-645-2000</a>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <h2>goodBye. EVERLAND</h2>
+                <ul class="op7_16">
+                    <li><a href="faq.html">COMMUNITY</a></li>
+                    <li><a href="tos.html">TOS</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="policy.html">POLICY</a></li>
+                    <li><a href="siteMap.html">SITE MAP</a></li>
+                    <li><a href="history.html">HISTORY</a></li>
+                </ul>
+                <ol>
+                    <li><a href="fac.html">faceBook</a></li>
+                    <li><a href="ins.html" class="ins">instagram</a></li>
+                    <li><a href="kakao.html" class="kakao">kakao</a></li>
+                </ol>
+            </div>
+            <details class="op4_16">
+                <summary>Samsung C&T Corporation, 199 Everland-ro, Pogok-eup, Cheoin-gu, Yongin-si, Gyeonggi-do</summary>
+                <span>CEO : Seunghwan Han | Business registration number : 135-85-04288 | Mail-order business report number : 2006-Yongin Cheoin-0216 | Check business information</span>
+                <span>Customer Consultation Center : <a href="tel:+8231-320-5000">031-320-5000(paid)</a> | <a href="policy.html">Privacy Policy</a> | <a href="https://www.everland.com/web/everland/policyrevision/list.html">Notice of Policy Revision</a> | <a href="https://www.everland.com/web/everland/bidnotice/list.html">Bid Notice</a></span>
+                <p>Copyright © Samsung C&T Corporation. All rights reserved.</p>
+            </details>
         </div>
     </footer>
 </body>
