@@ -7,12 +7,11 @@
     <title>EVERAND RESORT</title>
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="shortcut icon" href="favicon-64x64.png" type="image/x-icon">
-    <link rel="icon" href="favicon-64x64.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/import.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
     <a href="#wrap" class="go_top">back to top</a>
@@ -212,20 +211,18 @@
                             </p>
                         </li>
                     </ul>
-                    <map name="guide_book">
-                        <area shape="rect" coords="" href="http://www.everland.com/web/everland/how/Everland_attraction_safe_guidebook.pdf" alt="View Attractions Safety Guidebook" target="_blank">
-                        <a href="" class="op4_16">Attraction Safety Guidebook</a>
+                    <div>
+                        <a href="http://www.everland.com/web/everland/how/Everland_attraction_safe_guidebook.pdf" target="_blank" class="op4_16">Attraction Safety Guidebook</a>
                         <!-- path/file.pdf -->
-                        <a href="" class="op4_16">Handicapped guest attraction user guide</a>
-                        <!-- input:button data-popup='handicappedPopUp' -->
-                    </map>
+                        <input type="button" value="Handicapped guest attraction user guide" data-popup='handicappedPopUp' class="op4_16">
+                    </div>
                 </div>
             </div>
         </article> 
     </div>
-    <div class="handicappedPopUp">
+    <div id="handicappedPopUp">
         <h2 class="op7_28">Information on the use of attractions for guests with disabilities</h2>
-        <input type="button" value="close" class=""> <!-- close class 이름 통일하기 -->
+        <input type="button" value="close" class="back"> <!-- close class 이름 통일하기 -->
         <p class="op7_24">&#45; Disabled Boarding Reservation System</p>
         <div>
             <h3 class="op7_24">Subject of use</h3>
