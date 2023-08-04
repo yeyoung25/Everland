@@ -1,6 +1,58 @@
-@media screen and (min-width: 1920px) {
-    body{
+/* 임시 */
+img{
+    max-width: 100%;
+}
+/* fin.임시 */
+.go_top{
+    position: fixed; right: 0; bottom: 0;
+}
+header{
+    position: fixed; top: 0; left: 0; width: 100%; 
+}
+header h1{
+    float: left;
+    width: 20.208%;
+}
+header h1 a{
+    display: block; 
+}
+header h1 a img{
+    width: 100%;
+}
+nav{
+    position: absolute;
+}
+
+
+@media screen and (max-width: 767px){
+
+}
+/* ?mobile */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+}
+/* ?tablet */
+@media screen and (min-width: 1280px) {
+    .indexContainer,
+    footer{
         max-width: 1410px;
+    }
+    header{
+
+    }
+    header::after,
+    .cboth::after{
+        content: '';
+        display: flex;
+        clear: both;
+    }
+    header h1,
+    .fleft{
+        float: left;
+    }
+    header > div,
+    .fright{
+        float: right;
     }
 }
 /* ?desktop */
