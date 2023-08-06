@@ -88,6 +88,7 @@ div{
     background-color: ;
 } */
 header > div,
+header .ect_btn,
 .flexBox{
     display: flex;
 }
@@ -105,4 +106,3 @@ header > div,
 .fright{
     float: right;
 }
-.flexBox
