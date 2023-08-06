@@ -87,3 +87,22 @@ div{
     border: ;
     background-color: ;
 } */
+header > div,
+.flexBox{
+    display: flex;
+}
+header::after,
+.cboth::after{
+    content: '';
+    display: flex;
+    clear: both;
+}
+header h1,
+.fleft{
+    float: left;
+}
+header > div,
+.fright{
+    float: right;
+}
+.flexBox
