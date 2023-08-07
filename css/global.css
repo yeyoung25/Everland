@@ -113,36 +113,38 @@ footer ul li a{
 }
 footer>ul li:first-child{
     background: url('/images/call01.png') no-repeat;
+    padding-left: 50px;
+    box-sizing: border-box;
 }
-footer>ul li:first-child h3,
-footer>ul li:first-child a{
-    margin-left: 255px;
+footer>ul li h3,
+footer>ul li a{
+    display: block;
+    text-align: center;
 }
 footer>ul li:first-child h3{
-    background: url('/images/footer_ever.png') no-repeat center / contain;
-    width: 44px;
-    height: 47px;
-    padding-top: 50px;
+    background: url('/images/footer_ever.png') no-repeat center / 45px;
+    padding-top: 70px;
+    margin: 30px 0 10px;
 }
 footer>ul li:nth-child(2){
     background: url('/images/call02.png') no-repeat;
 }
 footer>ul li:nth-child(2) h3{
-    background: url('/images/footer_carib.png') no-repeat center / contain;
+    background: url('/images/footer_carib.png') no-repeat center / 45px;
+    padding-top: 70px;
+    margin: 30px 0 10px;
     /* width: 43px; */
-    height: 48px;
+    /* height: 48px; */
 }
 footer>ul li:last-child{
     background: url('/images/call03.png') no-repeat;
 }
 footer>ul li:last-child h3{
-    background: url('/images/footer_home.png') no-repeat center / contain;
+    background: url('/images/footer_home.png') no-repeat center / 45px;
+    padding-top: 70px;
+    margin: 30px 0 10px;
     /* width: 49px; */
-    height: 49px;
-}
-footer>ul li:last-child h3,
-footer>ul li:last-child a{
-    margin-right: 255px;
+    /* height: 49px; */
 }
 footer{
     background-color: var(--gs10);
@@ -208,9 +210,16 @@ footer div details a{
     color: var(--gs8);
 }
 footer div details summary{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     list-style: none;
     cursor: pointer;
+}
+footer div details summary::after{
+    background: url('/images/footer_sum.png') no-repeat / contain;
+    width: 12px;
+    height: 7px;
+    content: '';
+    display: block;
 }
 footer div details span{
     display: block;
