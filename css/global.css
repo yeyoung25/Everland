@@ -2,15 +2,17 @@
 img {
     max-width: 100%;
 }
-
 /* fin.임시 */
-.go_top {
+.go_top{
+    background: url('/images/go_top.png')no-repeat center / contain;
     position: fixed;
     right: 0;
     bottom: 0;
+    width: 81px;
+    height: 81px;
+    text-indent: -9999px;
 }
-
-header {
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -18,165 +20,202 @@ header {
     height: 110px;
 }
 header > div{
-    width: 768px;
     justify-content: flex-end;
+    width: 768px;
 }
-
-/* header:hover{
-    background: url('/images/color_logo.png') no-repeat;
-    background-color: #ffffff; color: #000000; 
-} */
-header h1 {
+header h1{
     background: url('/images/main_logo.png') no-repeat center / contain;
-    text-indent: -9999px;
-    width: 365px;
-    height: 81px;
     float: left;
     padding-left: 60px;
-    padding-top: 15px;
+    margin-top: 15px;
+    width: 365px;
+    height: 81px;
+    text-indent: -9999px;
 }
-header h1 a {
+header h1 a{
     display: block;
 }
-
-header h1 a img {
+header h1 a img{
     width: 100%;
 }
-
-header .ect_btn {
-    align-items: center;
+header .ect_btn{
     justify-content: space-between;
+    align-items: center;
     width: calc(100% - 111px);
     text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
 }
-
-header div .ect_btn a {
-    color: #ffffff;
+header div .ect_btn a{
+    color: var(--gs1);
 }
-header div .ect_btn a:last-of-type {
-    text-shadow: none;
-    background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;;
-    background-color: #932599;
-    line-height: 110px;
+header div .ect_btn a:last-of-type{
+    background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
+    background-color: var(--vs7);
     padding: 0 35px 0 97px;
+    text-shadow: none;
+    line-height: 110px;
 }
-
-header div .menuBar {
-    background-color: #2b2b2b;
+header div .menuBar{
+    background-color: var(--gs10);
     padding: 38px 36px;
 }
-
-header div .menuBar span {
+header div .menuBar span{
     display: block;
 }
-
-header div .menuBar span:not(:last-child) {
+header div .menuBar span:not(:last-child){
     margin-bottom: 11px;
 }
-
-header div .menuBar span:nth-child(odd) {
-    background-color: #ffffff;
+header div .menuBar span:nth-child(odd){
+    background-color: var(--gs1);
     width: 38px;
     height: 4px;
 }
-
-header div .menuBar span:nth-child(2) {
-    background-color: #ffffff;
+header div .menuBar span:nth-child(2){
+    background-color: var(--gs1);
     width: 26px;
     height: 4px;
     margin-left: auto;
 }
-
-header.mouseOver{
+/* header.mouseOver{
     background-color: white;
 }
 header.mouseOver h1{
-
+    background: url('/images/color_logo.png') no-repeat center / contain;
+    text-indent: -9999px;
+    width: 364px;
+    height: 80px;
+    float: left;
+    padding-left: 60px;
+    margin-top: 15px;
 }
-header.mouseOver div .ect_btn a{
-    color: #000000; text-shadow: none;
-}
-nav {
+header.mouseOver div .ect_btn a:not(:last-child){
+    color: var(--gs11); text-shadow: none;
+} */
+nav{
     position: absolute;
-    display: none;
-    /* 임시 */
+    display: none; /* 임시 */
 }
 
-
-footer>ul {
+footer>ul{
     display: flex;
 }
-
-footer>ul li {
+footer>ul li{
     width: 33.33%;
     height: 200px;
     filter: brightness(50%);
+    color: var(--gs1);
 }
-
-footer>ul li:first-child {
+footer>ul li::before{
+    background-color: var(--gs11);
+    opacity: 0.5;
+}
+footer ul li a{
+    filter: brightness(100%);
+    color: var(--gs1);
+}
+footer>ul li:first-child{
     background: url('/images/call01.png') no-repeat;
 }
-
-footer>ul li:nth-child(2) {
+footer>ul li:first-child h3,
+footer>ul li:first-child a{
+    margin-left: 255px;
+}
+footer>ul li:first-child h3{
+    background: url('/images/footer_ever.png') no-repeat center / contain;
+    /* width: 44px; */
+    height: 47px;
+}
+footer>ul li:nth-child(2){
     background: url('/images/call02.png') no-repeat;
 }
-
-footer>ul li:last-child {
+footer>ul li:nth-child(2) h3{
+    background: url('/images/footer_ever.png') no-repeat center / contain;
+    /* width: 43px; */
+    height: 48px;
+}
+footer>ul li:last-child{
     background: url('/images/call03.png') no-repeat;
 }
-
-footer {
-    background-color: #2b2b2b;
+footer>ul li:last-child h3{
+    background: url('/images/footer_home.png') no-repeat center / contain;
+    /* width: 49px; */
+    height: 49px;
 }
-footer > div {
+footer>ul li:last-child h3,
+footer>ul li:last-child a{
+    margin-right: 255px;
+}
+footer{
+    background-color: var(--gs10);
+}
+footer>div {
+    position: relative;
     max-width: 1410px;
     margin: 0 auto;
     padding: 37px 0 47px;
 }
-footer div div h2 {
+footer div div h2{
     background: url('/images/footer_logo.png') no-repeat;
     display: inline-block;
     width: 289px;
     height: 65px;
     text-indent: -9999px;
-    /* margin: 40px 40px 25px 0; */
+    margin-right: 40px;
 }
-
-footer div div ul {
+footer div div ul{
     display: inline-block;
 }
-
-footer div div ul li {
+footer div div ul li{
     display: inline-block;
 }
-
-footer div div ul li:not(:first-child) {
-    /* margin: 65px 0 50px 25px; */
+footer div div ul li:not(:first-child){
+    padding: 26px 0 50px 25px;
 }
+footer div div ol{
+    position: absolute;
+    right: 0;
+    top: 47px;
 
-footer div div ol li {
+}
+footer div div ol li{
+    display: inline-block;
+    
     text-indent: -9999px;
     width: 45px;
     height: 45px;
 }
-
-footer div div ol li:first-child {
+footer div div ol li:not(:first-child){
+    margin-left: 15px;
+}
+footer div div ol li:first-child{
     background: url('/images/ico_sns01.png') no-repeat center / contain;
 }
-
-footer div div ol li:nth-child(2) {
-    background: url('/images/ico_sns0') no-repeat center / contain;
+footer div div ol li:nth-child(2){
+    background: url('/images/ico_sns02.png') no-repeat center / contain;
 }
-
-footer div div ol li:last-child {
+footer div div ol li:last-child{
     background: url('/images/ico_sns03.png') no-repeat center / contain;
 }
+footer div details{
+    color: var(--gs8);
+    max-width: 1224px;
+}
+footer div details a{
+    color: var(--gs8);
+}
+footer div details summary{
+    margin-bottom: 15px;
+}
+footer div details span{
+    margin-bottom: 15px;
 
-@media screen and (max-width: 767px) {}
+}
+@media screen and (max-width: 767px) {
 
+}
 /* ?mobile */
-@media screen and (min-width: 768px) and (max-width: 1279px) {}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 
+}
 /* ?tablet */
 @media screen and (min-width: 1280px) {
     footer ul li,
@@ -184,7 +223,9 @@ footer div div ol li:last-child {
         max-width: 1410px;
         margin: 0 auto;
     }
-    header {}
+    header {
+
+    }
 }
 
 /* ?desktop */
