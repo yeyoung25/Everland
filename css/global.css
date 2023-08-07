@@ -24,13 +24,17 @@ header > div{
     width: 768px;
 }
 header h1{
-    background: url('/images/main_logo.png') no-repeat center / contain;
     float: left;
     padding-left: 60px;
     margin-top: 15px;
-    width: 365px;
-    height: 81px;
-    text-indent: -9999px;
+    width: 20.208%;
+    font-size: 0;
+}
+header h1::after{
+    background: url('/images/main_logo.png') no-repeat center / contain;
+    content: '';
+    display: block;
+    padding-bottom: 26.804%;
 }
 header h1 a{
     display: block;
@@ -80,12 +84,7 @@ header div .menuBar span:nth-child(2){
 }
 header.mouseOver h1{
     background: url('/images/color_logo.png') no-repeat center / contain;
-    text-indent: -9999px;
-    width: 364px;
-    height: 80px;
-    float: left;
-    padding-left: 60px;
-    margin-top: 15px;
+    height: ;
 }
 header.mouseOver div .ect_btn a:not(:last-child){
     color: var(--gs11); text-shadow: none;
@@ -121,14 +120,15 @@ footer>ul li:first-child a{
 }
 footer>ul li:first-child h3{
     background: url('/images/footer_ever.png') no-repeat center / contain;
-    /* width: 44px; */
+    width: 44px;
     height: 47px;
+    padding-top: 50px;
 }
 footer>ul li:nth-child(2){
     background: url('/images/call02.png') no-repeat;
 }
 footer>ul li:nth-child(2) h3{
-    background: url('/images/footer_ever.png') no-repeat center / contain;
+    background: url('/images/footer_carib.png') no-repeat center / contain;
     /* width: 43px; */
     height: 48px;
 }
@@ -153,9 +153,13 @@ footer>div {
     margin: 0 auto;
     padding: 37px 0 47px;
 }
+footer div div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
 footer div div h2{
     background: url('/images/footer_logo.png') no-repeat;
-    display: inline-block;
     width: 289px;
     height: 65px;
     text-indent: -9999px;
@@ -168,7 +172,7 @@ footer div div ul li{
     display: inline-block;
 }
 footer div div ul li:not(:first-child){
-    padding: 26px 0 50px 25px;
+    padding-right: 25px;
 }
 footer div div ol{
     position: absolute;
@@ -198,16 +202,19 @@ footer div div ol li:last-child{
 footer div details{
     color: var(--gs8);
     max-width: 1224px;
+    margin-bottom: 50px;
 }
 footer div details a{
     color: var(--gs8);
 }
 footer div details summary{
     margin-bottom: 15px;
+    list-style: none;
+    cursor: pointer;
 }
 footer div details span{
-    margin-bottom: 15px;
-
+    display: block;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
 
