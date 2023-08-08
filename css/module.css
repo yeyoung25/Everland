@@ -77,16 +77,6 @@
 [class*='4_']{font-weight: 400;}
 [class*='3_']{font-weight: 300;}
 
-
-/* .black{
-    
-} */
-/* 사용시 예시 
-div{
-    color: var(--gs1);
-    border: ;
-    background-color: ;
-} */
 header > div,
 header .ect_btn,
 .flexBox{
@@ -95,9 +85,12 @@ header .ect_btn,
 header::after,
 .cboth::after{
     content: '';
-    display: flex;
+    display: block;
     clear: both;
 }
+#fnbPanel ul>li,
+/* .indexContainer .contentBanner01 ul li, */
+/* .contentBanner03>div, */
 header h1,
 .fleft{
     float: left;
@@ -105,4 +98,10 @@ header h1,
 header > div,
 .fright{
     float: right;
+}
+.posiR{
+    position: relative;
+}
+.posiA{
+    position: relative;
 }

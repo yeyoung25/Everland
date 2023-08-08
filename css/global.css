@@ -1,368 +1,335 @@
-/* 임시 */
-img {
-    max-width: 100%;
-}
-/* fin.임시 */
-.go_top{
-    background: url('/images/go_top.png')no-repeat center / contain;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 81px;
-    height: 81px;
-    text-indent: -9999px;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110px;
-}
-header > div{
-    justify-content: flex-end;
-    width: 768px;
-}
-header h1{
-    float: left;
-    padding-left: 60px;
-    margin-top: 15px;
-    width: 20.208%;
-    font-size: 0;
-}
-header h1::after{
-    background: url('/images/main_logo.png') no-repeat center / contain;
-    content: '';
-    display: block;
-    padding-bottom: 26.804%;
-}
-header h1 a{
-    display: block;
-}
-header h1 a img{
-    width: 100%;
-}
-header .ect_btn{
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 111px);
-    text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
-}
-header div .ect_btn a{
-    color: var(--gs1);
-}
-header div .ect_btn a:last-of-type{
-    background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
-    background-color: var(--vs7);
-    padding: 0 35px 0 97px;
-    text-shadow: none;
-    line-height: 110px;
-}
-header div .menuBar{
-    background-color: var(--gs10);
-    padding: 38px 36px;
-}
-header div .menuBar span{
-    display: block;
-}
-header div .menuBar span:not(:last-child){
-    margin-bottom: 11px;
-}
-header div .menuBar span:nth-child(odd){
-    background-color: var(--gs1);
-    width: 38px;
-    height: 4px;
-}
-header div .menuBar span:nth-child(2){
-    background-color: var(--gs1);
-    width: 26px;
-    height: 4px;
-    margin-left: auto;
-}
-/* header.mouseOver{
-    background-color: white;
-}
-header.mouseOver h1{
-    background: url('/images/color_logo.png') no-repeat center / contain;
-    height: ;
-}
-header.mouseOver div .ect_btn a:not(:last-child){
-    color: var(--gs11); text-shadow: none;
-} */
-#fnbPanel{
-    display: none;
-}
-#fnbPanel{
-    position: absolute;
-    top: 110px;
-    background-color: var(--gs11);
-    opacity: 0.95;
-    width: 100%;
-    height: 815px;
-    padding: 200px 280px 0;
-    margin: 0 auto;
-}
-#fnbPanel ul>li{
-    float: left;
-    /* border: 1px solid white; */
-    height: 350px;
-    cursor: pointer;
-    margin-right: 120px;
-    width: 265px;
-}
-#fnbPanel ul>li h2{
-    color: var(--gs1);
-    margin-bottom: 30px;
-}
-#fnbPanel ul>li ol li{
-    margin-bottom: 10px;
-}
-#fnbPanel ul>li ol li a{
-    color: var(--gs6);
-}
-#fnbPanel ul>li:first-child ol li a:hover{
-    color: var(--os1);
-}
-
-footer{
-    background-color: var(--gs10);
-}
-footer>ul{
-    display: flex;
-    overflow: hidden;
-}
-footer>ul li{
-    /* filter: brightness(50%); */
-    width: 33.33%;
-    height: 200px;
-    color: var(--gs1);
-    transition: all 1.2s;
-}
-footer>ul li:hover{
-    transform: scale(1.1);
-}
-footer>ul li a::before{
-    background-color: var(--gs11);
-    opacity: 0.5;
-}
-footer>ul li a{
-    /* filter: brightness(100%); */
-    color: var(--gs1);
-}
-footer>ul li:first-child{
-    background: url('/images/call01.png') no-repeat;
-    padding-left: 50px;
-    box-sizing: border-box;
-}
-footer>ul li h3,
-footer>ul li a{
-    display: block;
-    text-align: center;
-}
-footer>ul li:first-child h3{
-    background: url('/images/footer_ever.png') no-repeat center / 45px;
-    padding-top: 80px;
-    margin: 30px 0 10px;
-}
-footer>ul li:nth-child(2){
-    background: url('/images/call02.png') no-repeat;
-}
-footer>ul li:nth-child(2) h3{
-    background: url('/images/footer_carib.png') no-repeat center / 45px;
-    padding-top: 80px;
-    margin: 30px 0 10px;
-}
-footer>ul li:last-child{
-    background: url('/images/call03.png') no-repeat;
-}
-footer>ul li:last-child h3{
-    background: url('/images/footer_home.png') no-repeat center / 45px;
-    padding-top: 80px;
-    margin: 30px 0 10px;
-}
-footer>div{
-    position: relative;
-    max-width: 1410px;
-    margin: 0 auto;
-    padding: 37px 0 47px;
-}
-footer div div{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-footer div div h2{
-    background: url('/images/footer_logo.png') no-repeat;
-    width: 289px;
-    height: 65px;
-    text-indent: -9999px;
-    margin-right: 40px;
-}
-footer div div ul{
-    display: inline-block;
-}
-footer div div ul li{
-    display: inline-block;
-}
-footer div div ul li a{
-    color: var(--gs1);
-}
-footer div div ul li:not(:first-child){
-    padding-left: 25px;
-}
-footer div div ol{
-    position: absolute;
-    right: 0;
-    top: 47px;
-}
-footer div div ol li{
-    display: inline-block;
-    
-    text-indent: -9999px;
-    width: 45px;
-    height: 45px;
-}
-footer div div ol li:not(:first-child){
-    margin-left: 15px;
-}
-footer div div ol li:first-child{
-    background: url('/images/ico_sns01.png') no-repeat center / contain;
-}
-footer div div ol li:nth-child(2){
-    background: url('/images/ico_sns02.png') no-repeat center / contain;
-}
-footer div div ol li:last-child{
-    background: url('/images/ico_sns03.png') no-repeat center / contain;
-}
-footer div details{
-    color: var(--gs8);
-    max-width: 1224px;
-    margin-bottom: 50px;
-}
-footer div details a{
-    color: var(--gs8);
-}
-footer div details summary{
-    margin-bottom: 10px;
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-footer div details summary::after{
-    background: url('/images/footer_sum.png') no-repeat center / contain;
-    width: 12px;
-    height: 7px;
-    content: '';
-    display: block;
-    margin-left: 25px;
-}
-footer div details span{
-    display: block;
-    margin-bottom: 10px;
-}
-.banslider{
-    margin-bottom: 155px;
-}
-.indexContainer ul li{
-    /* position: relative; */
-}
-.indexContainer ul li strong{
-    /* position: absolute; */
-}
-.indexContainer .contentBanner01{
-    margin-bottom: 130px;
-
-}
-.indexContainer .contentBanner01 h2{
-    margin-bottom: 25px;
-}
-.indexContainer .contentBanner01 div{
-    margin-bottom: 120px;
-}
-.indexContainer .contentBanner01 div p{
-    display: inline-block;
-    margin-right: 10px;
-}
-.indexContainer .contentBanner01 div a{
-    background: url('/images/maincon01_more.png') no-repeat center / contain;
-    width: 102px;
-    height: 7px;
-    display: inline-block;
-}
-.indexContainer .contentBanner01 ul::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.indexContainer .contentBanner01 ul li{
-    float: left;
-    width: 325px;
-    margin-right: 40px;
-}
-.indexContainer .contentBanner01 ul li:first-child{
-    margin-left: 255px;
-}
-.indexContainer .contentBanner01 ul li strong{
-    display: inline-block;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 15px 0;
-}
-.indexContainer .contentBanner01 ul li span{
-    display: block;
-    margin-bottom: 40px;
-    color: var(--gs9);
-}
-.indexContainer .contentBanner01 ul li b{
-    display: block;
-    text-align: right;
-    color: var(--gs6);
-}
-.contentBanner02{
-
-}
-.contentBanner03::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.contentBanner03>div{
-    float: left;
-}
-.contentBanner03>div h2 a{
-    display: inline-block;
-    
-}
-.contentBanner03>div h2 a::after{
-    background: url('/images/maincon03_more.png') no-repeat center / contain;
-    width: 7px;
-    height: 11px;
-    clear: both;
-}
-
-
-
-@media screen and (max-width: 767px) {
-
-}
-/* ?mobile */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-
-}
-/* ?tablet */
 @media screen and (min-width: 1280px) {
-    .contentBanner01 h2,
-    .contentBanner01 div,
-    footer ul li,
-    footer > div,
-    .contentBanner03 {
+    footer>ul li,
+    footer>div{
         max-width: 1410px;
         margin: 0 auto;
     }
-    header {
+    /* 임시 */
+    img{
+        max-width: 100%;
+    }
+    /* fin.임시 */
+    .go_top{
+        background: url('/images/go_top.png') no-repeat center / contain;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 81px;
+        height: 81px;
+        text-indent: -9999px;
+        z-index: 1000;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110px;
+        z-index: 1000;
+    }
+    header>div{
+        justify-content: flex-end;
+        width: 768px;
+    }
+    header h1{
+        padding-left: 60px;
+        margin-top: 15px;
+        width: 20.208%;
+        font-size: 0;
+    }
+    header h1 a::after{
+        background: url('/images/main_logo.png') no-repeat center / contain;
+        content: '';
+        display: block;
+        width: 365px;
+        height: 81px;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header .ect_btn{
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 111px);
+        text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
+    }
+    header div .ect_btn a{
+        color: var(--gs1);
+    }
+    header div .ect_btn a:last-of-type{
+        background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
+        background-color: var(--vs7);
+        padding: 0 35px 0 97px;
+        text-shadow: none;
+        line-height: 110px;
+    }
+    header div .menuBar{
+        background-color: var(--gs10);
+        padding: 38px 36px;
+    }
+    header div .menuBar span{
+        display: block;
+    }
+    header div .menuBar span:not(:last-child){
+        margin-bottom: 11px;
+    }
+    header div .menuBar span:nth-child(odd){
+        background-color: var(--gs1);
+        width: 38px;
+        height: 4px;
+    }
+    header div .menuBar span:nth-child(2){
+        background-color: var(--gs1);
+        width: 26px;
+        height: 4px;
+        margin-left: auto;
+    }
+    header #fnbPanel{
+        display: none;
+    }
+    header.mouseOver{
+        background-color: white;
+    }
+    header.mouseOver h1 a::after{
+        background: url('/images/color_logo.png') no-repeat center / contain;
+        width: 365px;
+        height: 80px;
+    }
+    header.mouseOver div .ect_btn a:not(:last-child){
+        color: var(--gs11); 
+        text-shadow: none;
+    }
+    #fnbPanel.act{
+        display: block;
+    }
+    #fnbPanel{
+        position: absolute;
+        top: 0;
+        background-color: var(--gs11);
+        opacity: 0.95;
+        width: 100%;
+        height: calc(100vh- 100px);
+        padding: 200px 280px 23px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    #fnbPanel ul>li{
+        float: left;
+        height: 350px;
+        width: 25%;
+    }
+    #fnbPanel ul>li h2{
+        color: var(--gs1);
+        margin-bottom: 30px;
+    }
+    #fnbPanel ul>li ol li{
+        margin-bottom: 10px;
+    }
+    #fnbPanel ul>li ol li a{
+        color: var(--gs6);
+    }
+    #fnbPanel ul>li:first-child:hover h2,
+    #fnbPanel ul>li:nth-child(5):hover h2{
+        color: var(--os1);
+    }
+    #fnbPanel ul>li:first-child:hover a,
+    #fnbPanel ul>li:nth-child(5):hover a{
+        color: var(--os6);
+    }
+    #fnbPanel ul>li:first-child:hover a:hover,
+    #fnbPanel ul>li:nth-child(5):hover a:hover{
+        color: var(--os1);
+    }
+    #fnbPanel ul>li:nth-child(2):hover h2,
+    #fnbPanel ul>li:nth-child(6):hover h2{
+        color: var(--rs1);
+    }
+    #fnbPanel ul>li:nth-child(2):hover a,
+    #fnbPanel ul>li:nth-child(6):hover a{
+        color: var(--rs6);
+    }
+    #fnbPanel ul>li:nth-child(2):hover a:hover,
+    #fnbPanel ul>li:nth-child(6):hover a:hover{
+        color: var(--rs1);
+    }
+    #fnbPanel ul>li:nth-child(3):hover h2,
+    #fnbPanel ul>li:nth-child(7):hover h2{
+        color: var(--bs1);
+    }
+    #fnbPanel ul>li:nth-child(3):hover a,
+    #fnbPanel ul>li:nth-child(7):hover a{
+        color: var(--bs6);
+    }
+    #fnbPanel ul>li:nth-child(3):hover a:hover,
+    #fnbPanel ul>li:nth-child(7):hover a:hover{
+        color: var(--bs1);
+    }
+    #fnbPanel ul>li:nth-child(4):hover h2,
+    #fnbPanel ul>li:nth-child(8):hover h2{
+        color: var(--vs1);
+    }
+    #fnbPanel ul>li:nth-child(4):hover a,
+    #fnbPanel ul>li:nth-child(8):hover a{
+        color: var(--vs6);
+    }
+    #fnbPanel ul>li:nth-child(4):hover a:hover,
+    #fnbPanel ul>li:nth-child(8):hover a:hover{
+        color: var(--vs1);
+    }
 
+    footer{
+        background-color: var(--gs10);
+    }
+    footer>ul{
+        display: flex;
+        overflow: hidden;
+    }
+    footer>ul li{
+        position: relative;
+        width: 33.33%;
+        height: 200px;
+        color: var(--gs1);
+        transition: all 1.2s;
+    }
+    footer>ul li::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.2s;
+        box-sizing: border-box;
+    }    
+    footer>ul li:first-child::after{
+        background: url('/images/call01.png') no-repeat;
+    }
+    footer>ul li a{
+        color: var(--gs1);
+    }
+    footer>ul li h3,
+    footer>ul li a{
+        display: block;
+        text-align: center;
+        position: relative;
+        z-index: 1;  
+    }
+    footer>ul li:first-child h3{
+        background: url('/images/footer_ever.png') no-repeat center / 45px;
+        padding-top: 80px;
+        margin: 30px 0 10px;
+    }
+    footer>ul li:nth-child(2)::after{
+        background: url('/images/call02.png') no-repeat;
+    }
+    footer>ul li:nth-child(2) h3{
+        background: url('/images/footer_carib.png') no-repeat center / 45px;
+        padding-top: 80px;
+        margin: 30px 0 10px;
+    }
+    footer>ul li:last-child::after{
+        background: url('/images/call03.png') no-repeat;
+    }
+    footer>ul li:last-child h3{
+        background: url('/images/footer_home.png') no-repeat center / 45px;
+        padding-top: 80px;
+        margin: 30px 0 10px;
+    }
+    footer>div{
+        position: relative;
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 37px 0 47px;
+    }
+    footer div div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    footer div div h2{
+        background: url('/images/footer_logo.png') no-repeat;
+        width: 289px;
+        height: 65px;
+        margin-right: 40px;
+        text-indent: -9999px;
+    }
+    footer div div ul{
+        display: inline-block;
+    }
+    footer div div ul li{
+        display: inline-block;
+    }
+    footer div div ul li a{
+        color: var(--gs7);
+    }
+    footer div div ul li:nth-child(4) a{
+        color: var(--gs1);
+    }
+    footer div div ul li:not(:first-child){
+        padding-left: 25px;
+    }
+    footer div div ol{
+        position: absolute;
+        right: 0;
+        top: 47px;
+    }
+    footer div div ol li{
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+    }
+    footer div div ol li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer div div ol li:first-child a{
+        background: url('/images/ico_sns01.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    footer div div ol li:nth-child(2) a{
+        background: url('/images/ico_sns02.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    footer div div ol li:last-child a{
+        background: url('/images/ico_sns03.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    footer div details{
+        color: var(--gs8);
+        max-width: 1224px;
+        margin-bottom: 50px;
+    }
+    footer div details a{
+        color: var(--gs8);
+    }
+    footer div details summary{
+        margin-bottom: 10px;
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    footer div details summary::after{
+        background: url('/images/footer_sum.png') no-repeat center / contain;
+        width: 12px;
+        height: 7px;
+        content: '';
+        display: block;
+        margin-left: 25px;
+    }
+    footer div details span{
+        display: block;
+        margin-bottom: 10px;
     }
 }
-
 /* ?desktop */
