@@ -33,13 +33,9 @@
     }
     header h1 a{
         display: block;
-    }
-    header h1 a::after{
         background: url('/images/main_logo.png') no-repeat center / contain;
-        content: '';
-        display: block;
         width: 365px;
-        height: 81px;
+        height: 80px;
     }
     header>div{
         display: flex;
@@ -64,24 +60,33 @@
     }
     header div .menuBar{
         background-color: var(--gs10);
-        padding: 38px 36px;
+        position: relative;
+        width: 110px;
+        height: 110px;
     }
-    header div .menuBar span{
-        display: block;
-    }
-    header div .menuBar span:not(:last-child){
-        margin-bottom: 11px;
-    }
-    header div .menuBar span:nth-child(odd){
+    header div .menuBar span:first-child{
+        position: absolute;
+        top: 38px;
+        left: 37px;
         background-color: var(--gs1);
         width: 38px;
         height: 4px;
     }
     header div .menuBar span:nth-child(2){
+        position: absolute;
+        top: 52px;
+        left: 49px;
         background-color: var(--gs1);
         width: 26px;
         height: 4px;
-        margin-left: auto;
+    }
+    header div .menuBar span:last-child{
+        position: absolute;
+        top: 66px;
+        left: 37px;
+        background-color: var(--gs1);
+        width: 38px;
+        height: 4px;
     }
     header.mouseOver{
         background-color: white;
@@ -107,8 +112,8 @@
         background-color: var(--gs11);
         opacity: 0.95;
         width: 100%;
-        height: calc(100vh- 100px);
-        padding: 200px 280px 23px;
+        /* height: calc(100vh- 100px); */
+        padding: 200px 350px 23px;
         margin: 0 auto;
         box-sizing: border-box;
     }
