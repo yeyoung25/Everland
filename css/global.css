@@ -1,4 +1,6 @@
 @media screen and (min-width: 1280px) {
+    .contentBanner01 h2,
+    .contentBanner01 div,
     footer>ul li,
     footer>div{
         max-width: 1410px;
@@ -38,7 +40,6 @@
         height: 80px;
     }
     header>div{
-        display: flex;
         justify-content: flex-end;
         width: 768px;
     }
@@ -60,33 +61,27 @@
     }
     header div .menuBar{
         background-color: var(--gs10);
-        position: relative;
         width: 110px;
         height: 110px;
     }
+    header div .menuBar span{
+        background-color: var(--gs1);
+        height: 4px;
+    }
     header div .menuBar span:first-child{
-        position: absolute;
         top: 38px;
         left: 37px;
-        background-color: var(--gs1);
         width: 38px;
-        height: 4px;
     }
     header div .menuBar span:nth-child(2){
-        position: absolute;
         top: 52px;
         left: 49px;
-        background-color: var(--gs1);
         width: 26px;
-        height: 4px;
     }
     header div .menuBar span:last-child{
-        position: absolute;
         top: 66px;
         left: 37px;
-        background-color: var(--gs1);
         width: 38px;
-        height: 4px;
     }
     header.mouseOver{
         background-color: white;
@@ -107,7 +102,6 @@
         display: block;
     }
     header #fnbPanel{
-        position: absolute;
         top: 0;
         background-color: var(--gs11);
         opacity: 0.95;
@@ -118,7 +112,6 @@
         box-sizing: border-box;
     }
     header #fnbPanel ul>li{
-        float: left;
         height: 350px;
         width: 25%;
     }
@@ -185,11 +178,9 @@
         background-color: var(--gs10);
     }
     footer>ul{
-        display: flex;
         overflow: hidden;
     }
     footer>ul li{
-        position: relative;
         width: 33.33%;
         height: 200px;
         color: var(--gs1);
@@ -197,7 +188,6 @@
         
     }
     footer>ul li::after{
-        position: absolute;
         content: '';
         top: 0;
         left: 0;
@@ -220,7 +210,6 @@
     footer>ul li a{
         display: block;
         text-align: center;
-        position: relative;
         z-index: 1;  
     }
     footer>ul li:first-child h3{
@@ -245,13 +234,9 @@
         margin: 30px 0 10px;
     }
     footer>div{
-        position: relative;
-        max-width: 1410px;
-        margin: 0 auto;
         padding: 37px 0 47px;
     }
     footer div div{
-        display: flex;
         align-items: center;
         margin-bottom: 25px;
     }
@@ -278,7 +263,6 @@
         padding-left: 25px;
     }
     footer div div ol{
-        position: absolute;
         right: 0;
         top: 47px;
     }
@@ -321,7 +305,6 @@
         margin-bottom: 10px;
         list-style: none;
         cursor: pointer;
-        display: flex;
         align-items: center;
     }
     footer div details summary::after{

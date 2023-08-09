@@ -77,31 +77,47 @@
 [class*='4_']{font-weight: 400;}
 [class*='3_']{font-weight: 300;}
 
-header > div,
+header>div,
 header .ect_btn,
+footer>ul,
+footer div div,
+footer div details summary,
 .flexBox{
     display: flex;
 }
 header::after,
+.indexContainer .contentBanner01 ul::after,
+.indexContainer .contentBanner02>div::after,
+.contentBanner03::after,
 .cboth::after{
     content: '';
     display: block;
     clear: both;
 }
 #fnbPanel ul>li,
-/* .indexContainer .contentBanner01 ul li, */
+.indexContainer .contentBanner01 ul li,
 /* .contentBanner03>div, */
 header h1,
+header #fnbPanel ul>li,
 .fleft{
     float: left;
 }
-header > div,
+header>div,
 .fright{
     float: right;
 }
+header div .menuBar,
+footer>ul li,
+footer>ul li h3,
+footer>ul li a,
+footer>div,
 .posiR{
     position: relative;
 }
+header div .menuBar span,
+header #fnbPanel,
+footer>ul li::after,
+footer div div ol,
 .posiA{
-    position: relative;
+    position: absolute;
 }

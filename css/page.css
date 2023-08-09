@@ -1,15 +1,33 @@
-/* .banslider{
+.indexContainer .banslider{
     margin-bottom: 155px;
 }
-.indexContainer ul li{
+.indexContainer>ul li{
     position: relative;
+    color: var(--gs1);
 }
-.indexContainer ul li strong{
+.indexContainer>ul li::before{
     position: absolute;
+    border-left: 12px solid var(--vs7);
+    top: 400px;
+    left: 203px;
+    height: 99px;
+    content: '';
+    display: block;
 }
+.indexContainer>ul li strong{
+    position: absolute;
+    top: 400px;
+    left: 255px;
+}
+.indexContainer>ul li h2{
+    position: absolute;
+    top: 445px;
+    left: 255px;
+}
+
+
 .indexContainer .contentBanner01{
     margin-bottom: 130px;
-
 }
 .indexContainer .contentBanner01 h2{
     margin-bottom: 25px;
@@ -27,38 +45,43 @@
     height: 7px;
     display: inline-block;
 }
-.indexContainer .contentBanner01 ul::after{
-    content: '';
-    display: block;
-    clear: both;
+.indexContainer .contentBanner01 .carouselWay4{
+    /* display: flex; */
 }
-.indexContainer .contentBanner01 ul li{
+.indexContainer .contentBanner01 .carouselWay4 li{
+    /* flex-wrap: wrap; */
     width: 325px;
     margin-right: 40px;
 }
-.indexContainer .contentBanner01 ul li:first-child{
+.indexContainer .contentBanner01 .carouselWay4 li:first-child{
     margin-left: 255px;
 }
-.indexContainer .contentBanner01 ul li strong{
+.indexContainer .contentBanner01 .carouselWay4 li strong{
     display: inline-block;  
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 15px 0;
 }
-.indexContainer .contentBanner01 ul li span{
+.indexContainer .contentBanner01 .carouselWay4 li span{
     display: block;
     margin-bottom: 40px;
     color: var(--gs9);
 }
-.indexContainer .contentBanner01 ul li b{
+.indexContainer .contentBanner01 .carouselWay4 li b{
     display: block;
     text-align: right;
     color: var(--gs6);
 }
-.contentBanner02{
 
+
+.indexContainer .contentBanner02>div div{
+    float: left;
 }
-.contentBanner03::after{
+.indexContainer .contentBanner02 div:nth-child(2) div{
+    float: right;
+}
+
+/* .contentBanner03::after{
     content: '';
     display: block;
     clear: both;
