@@ -6,7 +6,7 @@
   position: relative;
   margin-bottom: 60px;
   padding: 0;
-  *zoom: 1;
+  zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
@@ -14,13 +14,15 @@
   max-width: 100%;
   display: block;
 }
-.bxslider {
+.banslider,
+.carouselWay4{
   margin: 0;
   padding: 0;
   /*fix flickering when used background-image instead of <img> (on Chrome)*/
   perspective: 1000;
 }
-ul.bxslider {
+ul.banslider,
+.carouselWay4{
   list-style: none;
 }
 .bx-viewport {
@@ -29,13 +31,13 @@ ul.bxslider {
 }
 /** THEME
 ===================================*/
-.bx-wrapper {
+/* .bx-wrapper {
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: 5px solid #fff;
   background: #fff;
-}
+} */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -54,7 +56,7 @@ ul.bxslider {
   z-index: 2000;
 }
 /* PAGER */
-.bx-wrapper .bx-pager {
+/* .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
   font-family: Arial;
@@ -78,7 +80,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #000;
-}
+} */
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -92,24 +94,20 @@ ul.bxslider {
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url('../images/controls.png') no-repeat 0 -32px;
+  left: 335px;
+  background: url('../images/mainBanL.png') no-repeat;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
   background-position: 0 0;
 }
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url('../images/controls.png') no-repeat -43px -32px;
-}
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+  left: 400px;
+  background: url('../images/mainBanR.png') no-repeat;
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
+  top: 586px;
   margin-top: -16px;
   outline: 0;
   width: 32px;

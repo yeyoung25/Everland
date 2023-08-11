@@ -27,29 +27,27 @@
 
 
 .indexContainer .contentBanner01{
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
+    margin-bottom: 500px; /*임시*/
 }
 .indexContainer .contentBanner01 h2{
     margin-bottom: 25px;
 }
 .indexContainer .contentBanner01 div{
     margin-bottom: 120px;
+    height: 35px;
 }
 .indexContainer .contentBanner01 div p{
     display: inline-block;
     margin-right: 10px;
 }
-.indexContainer .contentBanner01 div a{
-    background: url('/images/maincon01_more.png') no-repeat center / contain;
-    width: 102px;
-    height: 7px;
+.indexContainer .contentBanner01 div>a{
+    background: url('/images/maincon01_more.png') no-repeat center bottom;
     display: inline-block;
-}
-.indexContainer .contentBanner01 .carouselWay4{
-    /* display: flex; */
+    text-align: center;
+    width: 102px;
 }
 .indexContainer .contentBanner01 .carouselWay4 li{
-    /* flex-wrap: wrap; */
     width: 325px;
     margin-right: 40px;
 }
@@ -57,9 +55,10 @@
     margin-left: 255px;
 }
 .indexContainer .contentBanner01 .carouselWay4 li strong{
-    display: inline-block;  
+    display: block;  
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     margin: 15px 0;
 }
 .indexContainer .contentBanner01 .carouselWay4 li span{
