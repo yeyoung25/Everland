@@ -82,27 +82,31 @@ header .ect_btn,
 footer>ul,
 footer div div,
 footer div details summary,
+.contentBanner03,
+.contentBanner03>div:first-child ul li,
+.contentBanner03>div:first-child h2,
 .flexBox{
     display: flex;
+    flex-wrap: wrap;
 }
 header::after,
 .indexContainer .contentBanner01 ul::after,
 .indexContainer .contentBanner02>div::after,
-.contentBanner03::after,
 .cboth::after{
     content: '';
     display: block;
     clear: both;
 }
-#fnbPanel ul>li,
-.indexContainer .contentBanner01 ul li,
-/* .contentBanner03>div, */
 header h1,
 header #fnbPanel ul>li,
+.indexContainer .contentBanner01 ul li,
+.indexContainer .contentBanner02 div:first-child div:first-child,
+.indexContainer .contentBanner02 div:nth-child(2) div,
 .fleft{
     float: left;
 }
 header>div,
+.indexContainer .contentBanner02 div:first-child div:last-child,
 .fright{
     float: right;
 }
@@ -120,4 +124,13 @@ footer>ul li::after,
 footer div div ol,
 .posiA{
     position: absolute;
+}
+
+.rightContent{
+    margin-left: auto;
+    max-width: 86.718%;
+}
+.leftContent{
+    margin-right: auto;
+    max-width: 86.718%;
 }

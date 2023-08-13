@@ -1,323 +1,338 @@
+html{scroll-behavior: smooth;}
+/* 임시 */
+img{
+    max-width: 100%;
+}
+.go_top{
+    background: url('/images/go_top.png') no-repeat center / contain;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 81px;
+    height: 81px;
+    text-indent: -9999px;
+    z-index: 1000;
+    transition-duration: 0.2s;
+}
+.go_top.scrollTop{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 1000;
+    transition-duration: 0.2s;
+}
+header h1{
+    padding-left: 60px;
+    margin-top: 15px;
+    font-size: 0;
+}
+header h1 a{
+    display: block;
+    background: url('/images/main_logo.png') no-repeat center / contain;
+    width: 365px;
+    height: 80px;
+}
+header>div{
+    justify-content: flex-end;
+    width: 768px;
+}
+header div .ect_btn{
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 111px);
+    text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
+}
+header div .ect_btn a{
+    color: var(--gs1);
+}
+header div .ect_btn a:last-of-type{
+    background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
+    background-color: var(--vs7);
+    padding: 0 35px 0 97px;
+    text-shadow: none;
+    line-height: 110px;
+}
+header div .menuBar{
+    background-color: var(--gs10);
+    width: 110px;
+    height: 110px;
+}
+header div .menuBar span{
+    background-color: var(--gs1);
+    height: 4px;
+    transition: all 0.4s;
+}
+header div .menuBar span:first-child{
+    top: 38px;
+    left: 37px;
+    width: 38px;
+}
+header div .menuBar span:nth-child(2){
+    top: 52px;
+    left: 49px;
+    width: 26px;
+}
+header div .menuBar span:last-child{
+    top: 66px;
+    left: 37px;
+    width: 38px;
+}
+header div .menuBar.toggle span:first-child{
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+header div .menuBar.toggle span:nth-child(2){
+    opacity: 0;
+}
+header div .menuBar.toggle span:last-child{
+    transform: rotate(45deg) translate(-10px, -10px);
+}
+header.mouseOver{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+header.mouseOver h1 a{
+    background: url('/images/color_logo.png') no-repeat center / contain;
+}
+header.mouseOver div .ect_btn a:not(:last-child){
+    color: var(--gs11); 
+    text-shadow: none;
+}
+header #fnbPanel{
+    display: none;
+    top: 0;
+    background-color: var(--gs11);
+    opacity: 0.95;
+    width: 100%;
+    padding: 200px 350px 23px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+}
+header #fnbPanel.act{
+    display: block;
+}
+header #fnbPanel ul>li{
+    height: 350px;
+    width: 25%;
+}
+header #fnbPanel ul>li h2{
+    color: var(--gs1);
+    margin-bottom: 30px;
+}
+header #fnbPanel ul>li ol li{
+    margin-bottom: 10px;
+}
+header #fnbPanel ul>li ol li a{
+    color: var(--gs6);
+}
+header #fnbPanel ul>li:first-child:hover h2,
+header #fnbPanel ul>li:nth-child(5):hover h2{
+    color: var(--os1);
+}
+header #fnbPanel ul>li:first-child:hover a,
+header #fnbPanel ul>li:nth-child(5):hover a{
+    color: var(--os6);
+}
+header #fnbPanel ul>li:first-child:hover a:hover,
+header #fnbPanel ul>li:nth-child(5):hover a:hover{
+    color: var(--os1);
+}
+header #fnbPanel ul>li:nth-child(2):hover h2,
+header #fnbPanel ul>li:nth-child(6):hover h2{
+    color: var(--rs1);
+}
+header #fnbPanel ul>li:nth-child(2):hover a,
+header #fnbPanel ul>li:nth-child(6):hover a{
+    color: var(--rs6);
+}
+header #fnbPanel ul>li:nth-child(2):hover a:hover,
+header #fnbPanel ul>li:nth-child(6):hover a:hover{
+    color: var(--rs1);
+}
+header #fnbPanel ul>li:nth-child(3):hover h2,
+header #fnbPanel ul>li:nth-child(7):hover h2{
+    color: var(--bs1);
+}
+header #fnbPanel ul>li:nth-child(3):hover a,
+header #fnbPanel ul>li:nth-child(7):hover a{
+    color: var(--bs6);
+}
+header #fnbPanel ul>li:nth-child(3):hover a:hover,
+header #fnbPanel ul>li:nth-child(7):hover a:hover{
+    color: var(--bs1);
+}
+header #fnbPanel ul>li:nth-child(4):hover h2,
+header #fnbPanel ul>li:nth-child(8):hover h2{
+    color: var(--vs1);
+}
+header #fnbPanel ul>li:nth-child(4):hover a,
+header #fnbPanel ul>li:nth-child(8):hover a{
+    color: var(--vs6);
+}
+header #fnbPanel ul>li:nth-child(4):hover a:hover,
+header #fnbPanel ul>li:nth-child(8):hover a:hover{
+    color: var(--vs1);
+}
+
+footer{
+    background-color: var(--gs10);
+}
+footer>ul{
+    overflow: hidden;
+}
+footer>ul li{
+    width: 33.33%;
+    height: 200px;
+    color: var(--gs1);
+    overflow: hidden;
+    
+}
+footer>ul li::after{
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all 1.2s;
+}    
+footer>ul li:first-child::after{
+    background: url('/images/call01.png') no-repeat center;
+}
+footer>ul li:hover::after{
+    transform: scale(1.1);
+}
+footer>ul li a{
+    color: var(--gs1);
+}
+footer>ul li h3,
+footer>ul li a{
+    display: block;
+    text-align: center;
+    z-index: 1;  
+}
+footer>ul li:first-child h3{
+    background: url('/images/footer_ever.png') no-repeat center / 45px;
+    padding-top: 80px;
+    margin: 30px 0 10px;
+}
+footer>ul li:nth-child(2)::after{
+    background: url('/images/call02.png') no-repeat center;
+}
+footer>ul li:nth-child(2) h3{
+    background: url('/images/footer_carib.png') no-repeat center / 45px;
+    padding-top: 80px;
+    margin: 30px 0 10px;
+}
+footer>ul li:last-child::after{
+    background: url('/images/call03.png') no-repeat center;
+}
+footer>ul li:last-child h3{
+    background: url('/images/footer_home.png') no-repeat center / 45px;
+    padding-top: 80px;
+    margin: 30px 0 10px;
+}
+footer>div{
+    padding: 37px 0 47px;
+}
+footer div div{
+    align-items: center;
+    margin-bottom: 25px;
+}
+footer div div h2{
+    background: url('/images/footer_logo.png') no-repeat;
+    width: 289px;
+    height: 65px;
+    margin-right: 40px;
+    text-indent: -9999px;
+}
+footer div div ul{
+    display: inline-block;
+}
+footer div div ul li{
+    display: inline-block;
+}
+footer div div ul li a{
+    color: var(--gs7);
+}
+footer div div ul li:nth-child(4) a{
+    color: var(--gs1);
+}
+footer div div ul li:not(:first-child){
+    padding-left: 25px;
+}
+footer div div ol{
+    right: 0;
+    top: 47px;
+}
+footer div div ol li{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-indent: -9999px;
+}
+footer div div ol li:not(:first-child){
+    margin-left: 15px;
+}
+footer div div ol li:first-child a{
+    background: url('/images/ico_sns01.png') no-repeat center / contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+footer div div ol li:nth-child(2) a{
+    background: url('/images/ico_sns02.png') no-repeat center / contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+footer div div ol li:last-child a{
+    background: url('/images/ico_sns03.png') no-repeat center / contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+footer div details{
+    color: var(--gs8);
+    max-width: 1224px;
+    margin-bottom: 50px;
+}
+footer div details a{
+    color: var(--gs8);
+}
+footer div details summary{
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+    align-items: center;
+}
+footer div details summary::after{
+    background: url('/images/footer_sum.png') no-repeat center / contain;
+    width: 12px;
+    height: 7px;
+    content: '';
+    display: block;
+    margin-left: 25px;
+}
+footer div details span{
+    display: block;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1280px) {
     .contentBanner01 h2,
-    .contentBanner01>div,
+    .contentBanner01>.textBox,
+    .contentBanner03,
     footer>ul li,
     footer>div{
         max-width: 1410px;
         margin: 0 auto;
-    }
-    /* 임시 */
-    img{
-        max-width: 100%;
-    }
-    .go_top{
-        background: url('/images/go_top.png') no-repeat center / contain;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 81px;
-        height: 81px;
-        text-indent: -9999px;
-        z-index: 1000;
-    }
-    header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 110px;
-        z-index: 1000;
-    }
-    header h1{
-        padding-left: 60px;
-        margin-top: 15px;
-        font-size: 0;
-    }
-    header h1 a{
-        display: block;
-        background: url('/images/main_logo.png') no-repeat center / contain;
-        width: 365px;
-        height: 80px;
-    }
-    header>div{
-        justify-content: flex-end;
-        width: 768px;
-    }
-    header div .ect_btn{
-        justify-content: space-between;
-        align-items: center;
-        width: calc(100% - 111px);
-        text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
-    }
-    header div .ect_btn a{
-        color: var(--gs1);
-    }
-    header div .ect_btn a:last-of-type{
-        background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
-        background-color: var(--vs7);
-        padding: 0 35px 0 97px;
-        text-shadow: none;
-        line-height: 110px;
-    }
-    header div .menuBar{
-        background-color: var(--gs10);
-        width: 110px;
-        height: 110px;
-    }
-    header div .menuBar span{
-        background-color: var(--gs1);
-        height: 4px;
-    }
-    header div .menuBar span:first-child{
-        top: 38px;
-        left: 37px;
-        width: 38px;
-    }
-    header div .menuBar span:nth-child(2){
-        top: 52px;
-        left: 49px;
-        width: 26px;
-    }
-    header div .menuBar span:last-child{
-        top: 66px;
-        left: 37px;
-        width: 38px;
-    }
-    header.mouseOver{
-        background-color: white;
-    }
-    header.mouseOver h1 a::after{
-        background: url('/images/color_logo.png') no-repeat center / contain;
-        width: 365px;
-        height: 80px;
-    }
-    header.mouseOver div .ect_btn a:not(:last-child){
-        color: var(--gs11); 
-        text-shadow: none;
-    }
-    header #fnbPanel{
-        display: none;
-    }
-    header #fnbPanel.act{
-        display: block;
-    }
-    header #fnbPanel{
-        top: 0;
-        background-color: var(--gs11);
-        opacity: 0.95;
-        width: 100%;
-        /* height: calc(100vh- 100px); */
-        padding: 200px 350px 23px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-    header #fnbPanel ul>li{
-        height: 350px;
-        width: 25%;
-    }
-    header #fnbPanel ul>li h2{
-        color: var(--gs1);
-        margin-bottom: 30px;
-    }
-    header #fnbPanel ul>li ol li{
-        margin-bottom: 10px;
-    }
-    header #fnbPanel ul>li ol li a{
-        color: var(--gs6);
-    }
-    header #fnbPanel ul>li:first-child:hover h2,
-    header #fnbPanel ul>li:nth-child(5):hover h2{
-        color: var(--os1);
-    }
-    header #fnbPanel ul>li:first-child:hover a,
-    header #fnbPanel ul>li:nth-child(5):hover a{
-        color: var(--os6);
-    }
-    header #fnbPanel ul>li:first-child:hover a:hover,
-    header #fnbPanel ul>li:nth-child(5):hover a:hover{
-        color: var(--os1);
-    }
-    header #fnbPanel ul>li:nth-child(2):hover h2,
-    header #fnbPanel ul>li:nth-child(6):hover h2{
-        color: var(--rs1);
-    }
-    header #fnbPanel ul>li:nth-child(2):hover a,
-    header #fnbPanel ul>li:nth-child(6):hover a{
-        color: var(--rs6);
-    }
-    header #fnbPanel ul>li:nth-child(2):hover a:hover,
-    header #fnbPanel ul>li:nth-child(6):hover a:hover{
-        color: var(--rs1);
-    }
-    header #fnbPanel ul>li:nth-child(3):hover h2,
-    header #fnbPanel ul>li:nth-child(7):hover h2{
-        color: var(--bs1);
-    }
-    header #fnbPanel ul>li:nth-child(3):hover a,
-    header #fnbPanel ul>li:nth-child(7):hover a{
-        color: var(--bs6);
-    }
-    header #fnbPanel ul>li:nth-child(3):hover a:hover,
-    header #fnbPanel ul>li:nth-child(7):hover a:hover{
-        color: var(--bs1);
-    }
-    header #fnbPanel ul>li:nth-child(4):hover h2,
-    header #fnbPanel ul>li:nth-child(8):hover h2{
-        color: var(--vs1);
-    }
-    header #fnbPanel ul>li:nth-child(4):hover a,
-    header #fnbPanel ul>li:nth-child(8):hover a{
-        color: var(--vs6);
-    }
-    header #fnbPanel ul>li:nth-child(4):hover a:hover,
-    header #fnbPanel ul>li:nth-child(8):hover a:hover{
-        color: var(--vs1);
-    }
-
-    footer{
-        background-color: var(--gs10);
-    }
-    footer>ul{
-        overflow: hidden;
-    }
-    footer>ul li{
-        width: 33.33%;
-        height: 200px;
-        color: var(--gs1);
-        overflow: hidden;
-        
-    }
-    footer>ul li::after{
-        content: '';
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        transition: all 1.2s;
-    }    
-    footer>ul li:first-child::after{
-        background: url('/images/call01.png') no-repeat center;
-    }
-    footer>ul li:hover::after{
-        transform: scale(1.1);
-    }
-    footer>ul li a{
-        color: var(--gs1);
-    }
-    footer>ul li h3,
-    footer>ul li a{
-        display: block;
-        text-align: center;
-        z-index: 1;  
-    }
-    footer>ul li:first-child h3{
-        background: url('/images/footer_ever.png') no-repeat center / 45px;
-        padding-top: 80px;
-        margin: 30px 0 10px;
-    }
-    footer>ul li:nth-child(2)::after{
-        background: url('/images/call02.png') no-repeat center;
-    }
-    footer>ul li:nth-child(2) h3{
-        background: url('/images/footer_carib.png') no-repeat center / 45px;
-        padding-top: 80px;
-        margin: 30px 0 10px;
-    }
-    footer>ul li:last-child::after{
-        background: url('/images/call03.png') no-repeat center;
-    }
-    footer>ul li:last-child h3{
-        background: url('/images/footer_home.png') no-repeat center / 45px;
-        padding-top: 80px;
-        margin: 30px 0 10px;
-    }
-    footer>div{
-        padding: 37px 0 47px;
-    }
-    footer div div{
-        align-items: center;
-        margin-bottom: 25px;
-    }
-    footer div div h2{
-        background: url('/images/footer_logo.png') no-repeat;
-        width: 289px;
-        height: 65px;
-        margin-right: 40px;
-        text-indent: -9999px;
-    }
-    footer div div ul{
-        display: inline-block;
-    }
-    footer div div ul li{
-        display: inline-block;
-    }
-    footer div div ul li a{
-        color: var(--gs7);
-    }
-    footer div div ul li:nth-child(4) a{
-        color: var(--gs1);
-    }
-    footer div div ul li:not(:first-child){
-        padding-left: 25px;
-    }
-    footer div div ol{
-        right: 0;
-        top: 47px;
-    }
-    footer div div ol li{
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        text-indent: -9999px;
-    }
-    footer div div ol li:not(:first-child){
-        margin-left: 15px;
-    }
-    footer div div ol li:first-child a{
-        background: url('/images/ico_sns01.png') no-repeat center / contain;
-        display: block;
-        width: 45px;
-        height: 45px;
-    }
-    footer div div ol li:nth-child(2) a{
-        background: url('/images/ico_sns02.png') no-repeat center / contain;
-        display: block;
-        width: 45px;
-        height: 45px;
-    }
-    footer div div ol li:last-child a{
-        background: url('/images/ico_sns03.png') no-repeat center / contain;
-        display: block;
-        width: 45px;
-        height: 45px;
-    }
-    footer div details{
-        color: var(--gs8);
-        max-width: 1224px;
-        margin-bottom: 50px;
-    }
-    footer div details a{
-        color: var(--gs8);
-    }
-    footer div details summary{
-        margin-bottom: 10px;
-        list-style: none;
-        cursor: pointer;
-        align-items: center;
-    }
-    footer div details summary::after{
-        background: url('/images/footer_sum.png') no-repeat center / contain;
-        width: 12px;
-        height: 7px;
-        content: '';
-        display: block;
-        margin-left: 25px;
-    }
-    footer div details span{
-        display: block;
-        margin-bottom: 10px;
     }
 }
 /* ?desktop */

@@ -1,11 +1,8 @@
-.indexContainer .banslider{
-    margin-bottom: 155px;
-}
-.indexContainer>ul li{
+.indexContainer .banslider li{
     position: relative;
     color: var(--gs1);
 }
-.indexContainer>ul li::before{
+.indexContainer .banslider li::before{
     position: absolute;
     border-left: 12px solid var(--vs7);
     top: 400px;
@@ -14,28 +11,27 @@
     content: '';
     display: block;
 }
-.indexContainer>ul li strong{
+.indexContainer .banslider li strong{
     position: absolute;
     top: 400px;
     left: 255px;
 }
-.indexContainer>ul li h2{
+.indexContainer .banslider li h2{
     position: absolute;
     top: 445px;
     left: 255px;
 }
-
-
 .indexContainer .contentBanner01{
-    /* margin-bottom: 130px; */
-    margin-bottom: 500px; /*임시*/
+    margin: 155px 0 190px;
 }
 .indexContainer .contentBanner01 h2{
     margin-bottom: 25px;
 }
 .indexContainer .contentBanner01 div{
     margin-bottom: 120px;
-    height: 35px;
+}
+.indexContainer .contentBanner01 .bx-wrapper{
+    max-width: none !important;
 }
 .indexContainer .contentBanner01 div p{
     display: inline-block;
@@ -46,8 +42,11 @@
     display: inline-block;
     text-align: center;
     width: 102px;
+    vertical-align: text-bottom;
+    padding: 0 0 5px;
 }
-.indexContainer .contentBanner01 .carouselWay4 li{
+.indexContainer .contentBanner01 .carouselWay4 li a{
+    display: block;
     width: 325px;
     margin-right: 40px;
 }
@@ -60,6 +59,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 15px 0;
+    height: 23px;
 }
 .indexContainer .contentBanner01 .carouselWay4 li span{
     display: block;
@@ -71,27 +71,161 @@
     text-align: right;
     color: var(--gs6);
 }
-
-
-.indexContainer .contentBanner02>div div{
-    float: left;
+.indexContainer .contentBanner02{
+    border-bottom: 1px solid var(--gs5);
 }
-.indexContainer .contentBanner02 div:nth-child(2) div{
-    float: right;
+.indexContainer .contentBanner02>div:first-child div{
+    margin-left: 65px;
 }
-
-/* .contentBanner03::after{
-    content: '';
+.indexContainer .contentBanner02 div div h2 strong{
     display: block;
-    clear: both;
+    color: var(--rs7);
+    line-height: 35px;
+    margin-bottom: 25px;
 }
-.contentBanner03>div h2 a{
+.indexContainer .contentBanner02 div div p{
+    color: var(--gs9);
+    line-height: 30px;
+}
+.indexContainer .contentBanner02 div div a{
+    background: url('/images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
     display: inline-block;
-    
+    color: var(--rs6);
+    border: 1px solid var(--rs6);
+    padding: 20px 85px 20px 70px;
+    margin: 65px 0;    
+    margin-left: 350px;
 }
-.contentBanner03>div h2 a::after{
-    background: url('/images/maincon03_more.png') no-repeat center / contain;
+.indexContainer .contentBanner02>div:nth-child(2) div a{
+    background: url('/images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
+    display: inline-block;
+    color: var(--rs6);
+    border: 1px solid var(--rs6);
+    padding: 20px 85px 20px 70px;
+    margin: 65px 0;    
+    margin-left: 430px;
+}
+.indexContainer .contentBanner02>div:first-child div{
+    /* width: 50%; */
+}
+.indexContainer .contentBanner02>div:nth-child(2) div{
+    width: 50%;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div h2{
+    margin-top: 135px;
+    margin-left: 220px;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div p{
+    margin-left: 220px;
+}
+.indexContainer .contentBanner02 div div ol li{
+    color: var(--gs6);
+    margin-bottom: 40px;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div ol li{
+    margin-left: 220px;
+}
+.indexContainer .contentBanner02>div .picSlider li{
+    overflow: hidden;
+}
+.indexContainer .contentBanner02>div .picSlider li img{
+    transition: all 0.5s linear;
+}
+.indexContainer .contentBanner02>div .picSlider li img:hover{
+    transform: scale(1.03);
+}
+.indexContainer .contentBanner03>div:first-child{
+    border-right: 1px solid var(--gs5);
+}
+.indexContainer .contentBanner03 div:not(:last-child){
+    box-sizing: border-box;
+    padding: 75px 70px;
+    width: 50%;
+}
+.indexContainer .contentBanner03>div:first-child h2{
+    margin-bottom: 60px;
+}
+.indexContainer .contentBanner03>div:not(:last-child) h2{
+    margin-bottom: 35px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--os10);
+}
+.indexContainer .contentBanner03>div:first-child h2 a{
+    padding-right: 15px;
+    background: url('/images/maincon03_more.png') no-repeat right center / 6px 11px;
+}
+.indexContainer .contentBanner03>div ul li a,
+.indexContainer .contentBanner03>div ul li time{
+    display: inline-block;
+    color: var(--gs9);
+    margin-bottom: 15px;
+}
+.indexContainer .contentBanner03>div ul li{
+    justify-content: space-between;
+
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul{
+    display: flex;
+    align-items: flex-start;
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul li a{
+    display: block;
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul li{
+    padding-top: 120px;
+    justify-content: space-between;
+    width: 33.33%;
+    text-align: center;
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul li:first-child{
+    background: url('/images/maincon03_res.png') no-repeat center top/ 100px 100px;
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul li:nth-child(2){
+    background: url('/images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
+}
+.indexContainer .contentBanner03 div:nth-child(2) ul li:last-child{
+    background: url('/images/maincon03_lost.png') no-repeat center top/ 100px 100px;
+}
+.indexContainer .contentBanner03>div h2 a::after{
+    background: url('/images/maincon03_more.png') no-repeat center top/ 100px 100px;
     width: 7px;
     height: 11px;
     clear: both;
-} */
+}
+.indexContainer .contentBanner03>div:last-child{
+    position: relative;
+    background: url('/images/kakao_map.png') no-repeat center / cover; /*임시*/
+    width: 100%;
+    height: 550px;
+}
+.indexContainer .contentBanner03 #map .map_dtl{
+    position: absolute;
+    top: 160px;
+    right: 60px;
+    background-color: var(--os3);
+    opacity: 0.94;
+    width: 445px;
+    color: var(--gs1);
+    padding: 55px 30px 35px;
+}
+.indexContainer .contentBanner03 #map .map_dtl h2{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.indexContainer .contentBanner03 #map .map_dtl button{
+    display: inline-block;
+    margin-left: 40px;
+    border: 1px solid var(--gs1);
+    background: none;
+    color: var(--gs1);
+    padding: 10px;
+    vertical-align: text-bottom;
+}
+.indexContainer .contentBanner03 #map .map_dtl address{
+    line-height: 26px;
+}
+.indexContainer .contentBanner03 #map .map_dtl address b{
+    display: block;
+    line-height: 26px;
+}
