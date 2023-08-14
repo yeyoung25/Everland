@@ -2,7 +2,9 @@ $(document).ready(function(){
     banslider();
     carouselWay();
     picSlider();
-}); 
+});
+
+
 function banslider(){
     $(".banslider").bxSlider({
         mode: 'fade',

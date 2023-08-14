@@ -4,8 +4,6 @@ $(document).ready(function(){
     meuuButton();
 });
 
-
-
 function headerScroll(){
     if($(window).scrollTop() == 0 && !$('#fnbPanel').hasClass("act")){
         $('header').removeClass("mouseOver");

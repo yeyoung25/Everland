@@ -1,3 +1,8 @@
+/* 임시 */
+.bx-controls:not(:nth-child(1)){
+    display: none;
+}
+
 .indexContainer .banslider li{
     position: relative;
     color: var(--gs1);
@@ -74,8 +79,11 @@
 .indexContainer .contentBanner02{
     border-bottom: 1px solid var(--gs5);
 }
-.indexContainer .contentBanner02>div:first-child div{
-    margin-left: 65px;
+.indexContainer .contentBanner02 div:first-child div:last-child{
+    max-width: 50%;
+}
+.indexContainer .contentBanner02>div:first-child > div:first-child{
+    margin-left: 320px;
 }
 .indexContainer .contentBanner02 div div h2 strong{
     display: block;
@@ -103,28 +111,26 @@
     border: 1px solid var(--rs6);
     padding: 20px 85px 20px 70px;
     margin: 65px 0;    
-    margin-left: 430px;
+    margin-left: 200px;
 }
-.indexContainer .contentBanner02>div:first-child div{
-    /* width: 50%; */
-}
+
 .indexContainer .contentBanner02>div:nth-child(2) div{
     width: 50%;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div h2{
-    margin-top: 135px;
-    margin-left: 220px;
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2){
+    padding: 135px 0 0 220px;
+    box-sizing: border-box;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div p{
+/* .indexContainer .contentBanner02>div:nth-child(2) div p{
     margin-left: 220px;
-}
+} */
 .indexContainer .contentBanner02 div div ol li{
     color: var(--gs6);
     margin-bottom: 40px;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div ol li{
+/* .indexContainer .contentBanner02>div:nth-child(2) div ol li{
     margin-left: 220px;
-}
+} */
 .indexContainer .contentBanner02>div .picSlider li{
     overflow: hidden;
 }
@@ -163,7 +169,9 @@
 }
 .indexContainer .contentBanner03>div ul li{
     justify-content: space-between;
-
+}
+.indexContainer .contentBanner03>div:first-child ul li a:hover{
+    text-decoration: underline;
 }
 .indexContainer .contentBanner03 div:nth-child(2) ul{
     display: flex;
