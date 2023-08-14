@@ -77,6 +77,7 @@ header div .menuBar span:nth-child(2){
     top: 52px;
     left: 49px;
     width: 26px;
+    transition: all 0.1s;
 }
 header div .menuBar span:last-child{
     top: 66px;
@@ -300,7 +301,6 @@ footer div div ol li:last-child a{
 }
 footer div details{
     color: var(--gs8);
-    max-width: 1224px;
     margin-bottom: 50px;
 }
 footer div details a{

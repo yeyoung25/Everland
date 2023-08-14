@@ -1,8 +1,22 @@
-/* 임시 */
-.bx-controls:not(:nth-child(1)){
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+}
+.bx-wrapper:first-child .bx-pager{
     display: none;
 }
-
+.bx-wrapper .bx-prev {
+    left: 335px;
+    background: url('../images/mainBanL.png') no-repeat;
+}
+.bx-wrapper .bx-next {
+    left: 400px;
+    background: url('../images/mainBanR.png') no-repeat;
+}
+.bx-wrapper .bx-controls-direction a {
+    top: 586px;
+    z-index: 100;
+}
 .indexContainer .banslider li{
     position: relative;
     color: var(--gs1);
@@ -35,14 +49,14 @@
 .indexContainer .contentBanner01 div{
     margin-bottom: 120px;
 }
-.indexContainer .contentBanner01 .bx-wrapper{
+/* .indexContainer .contentBanner01 .bx-wrapper{
     max-width: none !important;
-}
+} */
 .indexContainer .contentBanner01 div p{
     display: inline-block;
     margin-right: 10px;
 }
-.indexContainer .contentBanner01 div>a{
+.indexContainer .contentBanner01 > div > a{
     background: url('/images/maincon01_more.png') no-repeat center bottom;
     display: inline-block;
     text-align: center;
@@ -113,24 +127,21 @@
     margin: 65px 0;    
     margin-left: 200px;
 }
-
 .indexContainer .contentBanner02>div:nth-child(2) div{
     width: 50%;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2){
-    padding: 135px 0 0 220px;
+    padding: 0 0 0 220px;
     box-sizing: border-box;
 }
-/* .indexContainer .contentBanner02>div:nth-child(2) div p{
-    margin-left: 220px;
-} */
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
+    padding-top: 135px;
+    
+}
 .indexContainer .contentBanner02 div div ol li{
     color: var(--gs6);
     margin-bottom: 40px;
 }
-/* .indexContainer .contentBanner02>div:nth-child(2) div ol li{
-    margin-left: 220px;
-} */
 .indexContainer .contentBanner02>div .picSlider li{
     overflow: hidden;
 }
@@ -148,18 +159,18 @@
     padding: 75px 70px;
     width: 50%;
 }
-.indexContainer .contentBanner03>div:first-child h2{
-    margin-bottom: 60px;
-}
 .indexContainer .contentBanner03>div:not(:last-child) h2{
     margin-bottom: 35px;
     justify-content: space-between;
     align-items: center;
     color: var(--os10);
 }
+.indexContainer .contentBanner03>div:first-child h2{
+    margin-bottom: 60px;
+}
 .indexContainer .contentBanner03>div:first-child h2 a{
-    padding-right: 15px;
     background: url('/images/maincon03_more.png') no-repeat right center / 6px 11px;
+    padding-right: 15px;
 }
 .indexContainer .contentBanner03>div ul li a,
 .indexContainer .contentBanner03>div ul li time{
@@ -202,8 +213,8 @@
     clear: both;
 }
 .indexContainer .contentBanner03>div:last-child{
-    position: relative;
     background: url('/images/kakao_map.png') no-repeat center / cover; /*임시*/
+    position: relative;
     width: 100%;
     height: 550px;
 }
@@ -213,8 +224,8 @@
     right: 60px;
     background-color: var(--os3);
     opacity: 0.94;
-    width: 445px;
     color: var(--gs1);
+    width: 445px;
     padding: 55px 30px 35px;
 }
 .indexContainer .contentBanner03 #map .map_dtl h2{
