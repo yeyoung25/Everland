@@ -6,14 +6,36 @@
 //   function copy_to_map() {
     
 //   }
-    // div 취득
-    var copyMap = document.getElementById("copyMap");
+// const copy = (text) => {
+//   // 임시의 textarea 생성
+//   const $textarea = document.createElement("textarea");
 
-    // button 클릭 이벤트
-    document.getElementById("btnCopy").onclick = () => {
-      // div의 내용(textContent)을 복사한다.
-      window.navigator.clipboard.writeText(copyMap.textContent).then(() => {
-        // 복사가 완료되면 호출된다.
-        alert("복사완료");
-      });
-    };
+//   // body 요소에 존재해야 복사가 진행됨
+//   document.body.appendChild($textarea);
+  
+//   // 복사할 특정 텍스트를 임시의 textarea에 넣어주고 모두 셀렉션 상태
+//   $textarea.value = text;
+//   $textarea.select();
+  
+//   // 복사 후 textarea 지우기
+//   document.execCommand('copy');
+//   document.body.removeChild($textarea);
+// }
+
+const copy = (text) => {
+  // 임시의 textarea 생성
+  const $textarea = document.createElement("textarea");
+
+  // body 요소에 존재해야 복사가 진행됨
+  document.body.appendChild($textarea);
+  
+  // 복사할 특정 텍스트를 임시의 textarea에 넣어주고 모두 셀렉션 상태
+  $textarea.value = "199, EVERLAND-RO, POGOK-EUP, CHEOIN-GU, YONGIN-SI,GYEONGGI-DO, KOREA(Location number) 310 Jeondae-ri, Pogok-eup";
+  $textarea.select();
+  
+  // 복사 후 textarea 지우기
+  document.execCommand('copy');
+  document.body.removeChild($textarea);
+}
+
+copy("복사 테스트");
