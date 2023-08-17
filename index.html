@@ -9,14 +9,13 @@
     <link rel="shortcut icon" href="favicon-64x64.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/customize.bxslider.js"></script>
+      <script src="js/jquery.fitvids.js"></script>
     <script src="js/global.js"></script>
     <script src="js/page.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <a href="javacript:;" class="go_top">back to top</a>
+    <a href="Javascript:;" class="go_top">back to top</a>
     <header>
         <h1><a href="index.html">welcome to EVERLAND</a></h1>
         <div>
@@ -230,7 +229,7 @@
         <!-- contentBanner01 Fin -->
         <div class="contentBanner02">
             <div>
-                <div class="rightContent">
+                <div>
                     <h2 class="la4_25">
                         EVERLAND
                         <strong class="la9_25">ACTIVITIES</strong>
@@ -241,14 +240,14 @@
                     </p>
                     <a href="recommendedCourse.html" class="op7_16">MORE</a>
                     <ol class="actTabPager op4_20">
-                        <li>Recommended course</li>
-                        <li>Attraction</li>
-                        <li>Entertainment</li>
-                        <li>Restaurant</li>
-                        <li>Gift shop</li>
+                        <li><a data-slide-index="0">Recommended course</a> </li>
+                        <li><a data-slide-index="1">Attraction</a> </li>
+                        <li><a data-slide-index="2">Entertainment</a> </li>
+                        <li><a data-slide-index="3">Restaurant</a> </li>
+                        <li><a data-slide-index="4">Gift shop</a> </li>
                     </ol>
                 </div>
-                <ul class="picSlider">
+                <ul class="picSliderE">
                     <li>
                         <img src="images/actv01.png" alt="activities_RecommendedCourse">
                     </li>
@@ -267,7 +266,7 @@
                 </ul>
             </div>    
             <div class="leftContent">
-                <ul class="picSlider">
+                <ul class="picSliderH">
                     <li>
                         <img src="images/home01.png" alt="homebridge_NewBuilding">
                     </li>
@@ -336,7 +335,7 @@
             <div id="map">
                 <div class="map_dtl op7_20">
                     <h2 class="la9_35">EVERLANDRESORT</h2>
-                    <button id="btnCopy" class="op7_12">COPY</button>
+                    <button id="btnCopy" class="op7_12" onclick="copy()">COPY</button>
                     <address id="copyMap" class="op7_20">
                         199, EVERLAND-RO, POGOK-EUP, 
                         CHEOIN-GU, YONGIN-SI,GYEONGGI-DO,

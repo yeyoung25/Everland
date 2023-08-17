@@ -99,14 +99,14 @@ header::after,
 }
 header h1,
 header #fnbPanel ul>li,
-.indexContainer .contentBanner01 ul li,
+/* .indexContainer .contentBanner01 ul li,
 .indexContainer .contentBanner02 div:first-child div:first-child,
-.indexContainer .contentBanner02 div:nth-child(2) div,
+.indexContainer .contentBanner02 div:nth-child(2) div, */
 .fleft{
     float: left;
 }
 header>div,
-.indexContainer .contentBanner02 div:first-child div:last-child,
+/* .indexContainer .contentBanner02 div:first-child div:last-child, */
 .fright{
     float: right;
 }
