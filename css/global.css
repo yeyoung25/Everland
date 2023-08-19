@@ -1,6 +1,3 @@
-/* html{scroll-behavior: smooth;} */
-/* 임시 */
-
 .bx-wrapper {
     box-shadow: none;
     border: none;
@@ -120,7 +117,7 @@ header #fnbPanel{
     background-color: var(--gs11);
     opacity: 0.95;
     width: 100%;
-    padding: 200px 350px 23px;
+    padding: 150px 350px 23px;
     margin: 0 auto;
     box-sizing: border-box;
     transition-duration: 0.2s;
@@ -141,6 +138,7 @@ header #fnbPanel ul>li ol li{
 }
 header #fnbPanel ul>li ol li a{
     color: var(--gs6);
+    transition: 0.2s;
 }
 header #fnbPanel ul>li:first-child:hover h2,
 header #fnbPanel ul>li:nth-child(5):hover h2{
@@ -334,6 +332,9 @@ footer div details summary::after{
     content: '';
     display: block;
     margin-left: 25px;
+}
+footer div details summary.on::after{
+    transform: rotate(-180deg);
 }
 footer div details span{
     display: block;

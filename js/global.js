@@ -1,15 +1,16 @@
 $(document).ready(function () {
+    customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short');
+    customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,7,5,600,10,null,'full');
+    customSlider(".picSliderE",'fade',true,1000,6500,true,false,1,1,952,0,'.actTabPager','full');
+    customSlider(".picSliderH",'fade',true,1000,6500,true,false,1,1,952,0,'.homTabPager','full');
     headerEvent();
     headerAct();
     meuuButton();
     gotop();
     sumDetail();
-    customSlider(".banslider",'fade',true,1000,7000,true,false,1,1,0,0,null);
-    customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,7,5,600,10,null);
-    customSlider(".picSliderE",'fade',true,1000,6500,true,false,1,1,952,0,'.actTabPager');
   });
   
-function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom){
+function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType){
     $(sliderName).bxSlider({
         mode: modeVal,
         auto: slideAuto,
@@ -21,7 +22,8 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
         minSlides: slideMinSlides,
         slideWidth: slideSlideWidth,
         slideMargin: slideSlideMargin,
-        pagerCustom: slidePagerCustom
+        pagerCustom: slidePagerCustom,
+        pagerType: slidepagerType
     });
 }
 
@@ -56,7 +58,7 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
     $("#fnbPanel").css("top", headerHight + "px");
     $(".menuBar").click(function () {
       $("#fnbPanel").toggleClass("act");
-      if (!$("#fnbPanel").hasClass("act")) {
+      if (!$("#fnbPanel").hasClass("act") && $(window).scrollTop() !== 0) {
         $(".go_top").removeClass("scrollTop");
       } else {
         $(".go_top").addClass("scrollTop");
@@ -85,13 +87,14 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
 //     });
 //   }
   function sumDetail(){ 
-    $("summary").click(function(){
+    $("details").click(function(e){
+        // e.preventDefault();
       if($("summary").hasClass("on")){
-        $(this).removeClass("on");
-        $("details span,details p").slideUp();
+          $("details span,details p").slideUp();
+        $("summary").removeClass("on");
       }else {
-        $(this).addClass("on");
-        $("details span, details p").slideDown();
+          $("details span, details p").slideDown();
+        $("summary").addClass("on");
       }
     });
   }
