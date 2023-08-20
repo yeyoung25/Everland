@@ -12,7 +12,7 @@ img{
     max-width: 100%;
 }
 .go_top{
-    background: url('/images/go_top.png') no-repeat center / contain;
+    background: url('../images/go_top.png') no-repeat center / contain;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -42,7 +42,7 @@ header h1{
 }
 header h1 a{
     display: block;
-    background: url('/images/main_logo.png') no-repeat center / contain;
+    background: url('../images/main_logo.png') no-repeat center / contain;
     width: 365px;
     height: 80px;
 }
@@ -60,7 +60,7 @@ header div .ect_btn a{
     color: var(--gs1);
 }
 header div .ect_btn a:last-of-type{
-    background: url('/images/headerRes.png') no-repeat 35px center / 45px 42px;
+    background: url('../images/headerRes.png') no-repeat 35px center / 45px 42px;
     background-color: var(--vs7);
     padding: 0 35px 0 97px;
     text-shadow: none;
@@ -105,7 +105,7 @@ header.mouseOver{
     background-color: rgba(255, 255, 255, 0.95);
 }
 header.mouseOver h1 a{
-    background: url('/images/color_logo.png') no-repeat center / contain;
+    background: url('../images/color_logo.png') no-repeat center / contain;
 }
 header.mouseOver div .ect_btn a:not(:last-child){
     color: var(--gs11); 
@@ -213,7 +213,7 @@ footer>ul li::after{
     transition: all 1.2s;
 }    
 footer>ul li:first-child::after{
-    background: url('/images/call01.png') no-repeat center;
+    background: url('../images/call01.png') no-repeat center;
 }
 footer>ul li:hover::after{
     transform: scale(1.1);
@@ -228,23 +228,23 @@ footer>ul li a{
     z-index: 1;  
 }
 footer>ul li:first-child h3{
-    background: url('/images/footer_ever.png') no-repeat center / 45px;
+    background: url('../images/footer_ever.png') no-repeat center / 45px;
     padding-top: 80px;
     margin: 30px 0 10px;
 }
 footer>ul li:nth-child(2)::after{
-    background: url('/images/call02.png') no-repeat center;
+    background: url('../images/call02.png') no-repeat center;
 }
 footer>ul li:nth-child(2) h3{
-    background: url('/images/footer_carib.png') no-repeat center / 45px;
+    background: url('../images/footer_carib.png') no-repeat center / 45px;
     padding-top: 80px;
     margin: 30px 0 10px;
 }
 footer>ul li:last-child::after{
-    background: url('/images/call03.png') no-repeat center;
+    background: url('../images/call03.png') no-repeat center;
 }
 footer>ul li:last-child h3{
-    background: url('/images/footer_home.png') no-repeat center / 45px;
+    background: url('../images/footer_home.png') no-repeat center / 45px;
     padding-top: 80px;
     margin: 30px 0 10px;
 }
@@ -257,7 +257,7 @@ footer div div{
     margin-bottom: 25px;
 }
 footer div div h2{
-    background: url('/images/footer_logo.png') no-repeat;
+    background: url('../images/footer_logo.png') no-repeat;
     width: 289px;
     height: 65px;
     margin-right: 40px;
@@ -292,19 +292,19 @@ footer div div ol li:not(:first-child){
     margin-left: 15px;
 }
 footer div div ol li:first-child a{
-    background: url('/images/ico_sns01.png') no-repeat center / contain;
+    background: url('../images/ico_sns01.png') no-repeat center / contain;
     display: block;
     width: 45px;
     height: 45px;
 }
 footer div div ol li:nth-child(2) a{
-    background: url('/images/ico_sns02.png') no-repeat center / contain;
+    background: url('../images/ico_sns02.png') no-repeat center / contain;
     display: block;
     width: 45px;
     height: 45px;
 }
 footer div div ol li:last-child a{
-    background: url('/images/ico_sns03.png') no-repeat center / contain;
+    background: url('../images/ico_sns03.png') no-repeat center / contain;
     display: block;
     width: 45px;
     height: 45px;
@@ -326,7 +326,7 @@ footer div details summary{
     align-items: center;
 }
 footer div details summary::after{
-    background: url('/images/footer_sum.png') no-repeat center / contain;
+    background: url('../images/footer_sum.png') no-repeat center / contain;
     width: 12px;
     height: 7px;
     content: '';
