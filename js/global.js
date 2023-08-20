@@ -4,7 +4,7 @@ $(document).ready(function () {
   customSlider(".picSliderE",'fade',true,1000,6500,true,false,1,1,952,0,'.actTabPager','full');
   customSlider(".picSliderH",'fade',true,1000,6500,true,false,1,1,952,0,'.homTabPager','full');
   headerAct();
-  meuuButton();
+  menuButton();
   gotop();
   sumDetail();
   mainHeader();
@@ -18,7 +18,7 @@ function mainHeader(){
     headerEvent();
   }
 }
-  
+
 function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType){
     $(sliderName).bxSlider({
         mode: modeVal,
@@ -87,17 +87,8 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
         $('html, body').animate({scrollTop: '0'}, 680);
     });
   }
-//   function sumDetail(){ 
-//     $("summary").on("click",function(){
-//         $("details span").slideUp();
-//     });
-//     $("summary").on("click",function(){
-//         $("details span").slideDown();
-//     });
-//   }
   function sumDetail(){ 
-    $("details").click(function(e){
-        // e.preventDefault();
+    $("details").click(function(){
       if($("summary").hasClass("on")){
           $("details span,details p").slideUp();
         $("summary").removeClass("on");

@@ -1,7 +1,25 @@
-.indexContainer .contentBanner01 .bx-wrapper{
-    box-shadow: none;
-    border: none;
-    margin-bottom: 0;
+.indexContainer .banslider li{
+    position: relative;
+    color: var(--gs1);
+}
+.indexContainer .banslider li::before{
+    display: block;
+    position: absolute;
+    content: '';
+    border-left: 12px solid var(--vs7);
+    top: 400px;
+    left: 203px;
+    height: 99px;
+}
+.indexContainer .banslider li strong{
+    position: absolute;
+    top: 400px;
+    left: 255px;
+}
+.indexContainer .banslider li h2{
+    position: absolute;
+    top: 445px;
+    left: 255px;
 }
 .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
     font-family: 'Open Sans';
@@ -29,44 +47,7 @@
     background: url('../images/mainBanR.png') no-repeat;
     left: 430px;
 }
-.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
-    top: 415px;
-}
-.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
-    width: 705px;
-    height: 1px;
-    margin: 0;
-    background-color: var(--gs6);
-}
-.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a.active{
-    height: 3px;
-    margin-bottom: -1px;
-    background-color: var(--gs11);
-}
-
-.indexContainer .banslider li{
-    position: relative;
-    color: var(--gs1);
-}
-.indexContainer .banslider li::before{
-    position: absolute;
-    border-left: 12px solid var(--vs7);
-    top: 400px;
-    left: 203px;
-    height: 99px;
-    content: '';
-    display: block;
-}
-.indexContainer .banslider li strong{
-    position: absolute;
-    top: 400px;
-    left: 255px;
-}
-.indexContainer .banslider li h2{
-    position: absolute;
-    top: 445px;
-    left: 255px;
-}
+/* banslider Fin */
 .indexContainer .contentBanner01{
     margin: 155px 0 190px;
 }
@@ -80,7 +61,7 @@
     display: inline-block;
     margin-right: 10px;
 }
-.indexContainer .contentBanner01 > div > a{
+.indexContainer .contentBanner01>div>a{
     background: url('../images/maincon01_more.png') no-repeat center bottom;
     display: inline-block;
     text-align: center;
@@ -114,30 +95,42 @@
     text-align: right;
     color: var(--gs6);
 }
+.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
+    top: 415px;
+}
+.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
+    width: 705px;
+    height: 1px;
+    margin: 0;
+    background-color: var(--gs6);
+}
+.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a.active{
+    height: 3px;
+    margin-bottom: -1px;
+    background-color: var(--gs11);
+}
+/* contentBanner01 Fin */
 .indexContainer .contentBanner02{
     border-bottom: 1px solid var(--gs5);
     margin-left: auto;
 }
-.indexContainer .contentBanner02 > div:first-of-type:after{
+.indexContainer .contentBanner02>div:first-of-type:after{
     content: ''; 
     display: block; 
     clear: both;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div{
+.indexContainer .contentBanner02>div:first-of-type>div{
     float: left; 
     width: 50%;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div ol{
-    padding-left: 65px;
-}
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type{
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type{
     position: relative;
     width: 50%;
     padding-top: 140px;
     padding-left: 16.666%;
     box-sizing: border-box;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type h2:before{
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2:before{
     background-color: var(--rs4);
     content: '';
     width: 190px;
@@ -147,68 +140,75 @@
     right: -30px;
     z-index: 1000;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type h2 strong{
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
     display: block;
     color: var(--rs7);
     line-height: 35px;
     margin-bottom: 25px;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type ol li:not(:last-child){
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol{
+    padding-left: 65px;
+    position: relative;
+    border-left: 2px solid var(--gs5);
+}
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li:not(:last-child){
     margin-bottom: 40px;
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type ol li a{
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a{
     cursor: default;
     color: var(--gs6);
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type ol li a.active::before{
-    display: block;
-    content: '';
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a.active::before{
     position: absolute;
-    left: -2px;
-    width: 3px;
+    content: '';
+    left: -3px;
+    width: 4px;
     height: 30px;
     background-color: var(--gs11);
 }
-.indexContainer .contentBanner02 > div:first-of-type > div:first-of-type ol li a.active{
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a.active{
     color: var(--gs11);
     font-weight: 700;
 }
-.indexContainer .contentBanner02>div>div:first-of-type ol{
-    position: relative;
-    border-left: 1px solid var(--gs6);
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
-    border-left: 1px solid var(--gs6);
-}
-.indexContainer .contentBanner02>div:nth-child(2) div ol{
-    position: relative;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div ol li a.active::before{
-    position: absolute;
-    content: '';
-    left: -2px;
-    width: 3px;
-    height: 30px;
-    background-color: var(--gs11);
-}
-.indexContainer .contentBanner02>div:nth-child(2) div ol li a.active{
-    color: var(--gs11);
-    font-weight: 700;
-    
-}
-.indexContainer .contentBanner02 > div:nth-child(2) > div{
+.indexContainer .contentBanner02>div:nth-child(2)>div{
     float: left;
     width: 50%;
 }
-.indexContainer .contentBanner02 > div:nth-child(2) > .picSliderH{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
+    position: relative;
+    border-left: 2px solid var(--gs5);
+    padding-left: 30px;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li:not(:last-child){
+    margin-bottom: 40px;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a{
+    cursor: default;
+    color: var(--gs6);
+}
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active::before{
+    position: absolute;
+    content: '';
+    left: -3px;
+    width: 4px;
+    height: 30px;
+    background-color: var(--gs11);
+}
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active{
+    color: var(--gs11);
+    font-weight: 700;
+}
+.indexContainer .contentBanner02>div:nth-child(2)>.picSliderH{
     width: 50%;
     padding-top: 140px;
     position: relative;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2){
     position: relative;
+    padding-left: 220px;
+    box-sizing: border-box;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div h2::before{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2::before{
     background-color: var(--rs4);
     content: '';
     width: 190px;
@@ -217,44 +217,27 @@
     display: block;
     left: -30px;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div h2 strong{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
+    padding-top: 135px;
+}
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
     display: block;
     color: var(--rs7);
     line-height: 35px;
     margin-bottom: 25px;
 }
-.indexContainer .contentBanner02 div div p{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) p{
     color: var(--gs9);
     line-height: 30px;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div ol li{
-    margin-bottom: 40px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div ol li a{
-    cursor: default;
-    color: var(--gs6);
-}
-.indexContainer .contentBanner02 div div > a{
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2)>a{
     background: url('../images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
     display: inline-block;
     color: var(--rs6);
     border: 1px solid var(--rs6);
     padding: 20px 85px 20px 70px;
     margin: 65px 0;    
-    margin-left: 350px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div > a{
     margin-left: 200px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2){
-    padding-left: 220px;
-    box-sizing: border-box;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
-    padding-top: 135px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
-    padding-left: 30px;
 }
 .indexContainer .contentBanner02>div .picSliderE li,
 .indexContainer .contentBanner02>div .picSliderH li{
@@ -268,19 +251,20 @@
 .indexContainer .contentBanner02>div .picSliderH li img:hover{
     transform: scale(1.03);
 }
-.indexContainer .contentBanner03>div:first-child{
-    border-right: 1px solid var(--gs5);
-}
-.indexContainer .contentBanner03 div:not(:last-child){
+/* contentBanner02 Fin */
+.indexContainer .contentBanner03>div:not(:last-child){
     box-sizing: border-box;
     padding: 75px 70px;
     width: 50%;
 }
 .indexContainer .contentBanner03>div:not(:last-child) h2{
-    margin-bottom: 35px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
     color: var(--os10);
+}
+.indexContainer .contentBanner03>div:first-child{
+    border-right: 1px solid var(--gs5);
 }
 .indexContainer .contentBanner03>div:first-child h2{
     margin-bottom: 60px;
@@ -289,51 +273,45 @@
     background: url('../images/maincon03_more.png') no-repeat right center / 6px 11px;
     padding-right: 15px;
 }
-.indexContainer .contentBanner03>div ul li a,
-.indexContainer .contentBanner03>div ul li time{
+.indexContainer .contentBanner03>div:first-child ul li{
+    justify-content: space-between;
+}
+.indexContainer .contentBanner03>div:first-child ul li a,
+.indexContainer .contentBanner03>div:first-child ul li time{
     display: inline-block;
     color: var(--gs9);
     margin-bottom: 15px;
 }
-.indexContainer .contentBanner03>div ul li time{
-    padding-top: 4px;
-}
-.indexContainer .contentBanner03>div ul li{
-    justify-content: space-between;
-}
 .indexContainer .contentBanner03>div:first-child ul li a:hover{
     text-decoration: underline;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul{
+.indexContainer .contentBanner03>div:first-child ul li time{
+    padding-top: 4px;
+}
+.indexContainer .contentBanner03>div:nth-child(2) ul{
     display: flex;
     align-items: flex-start;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul li a{
+.indexContainer .contentBanner03>div:nth-child(2) ul li a{
     display: block;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul li{
+.indexContainer .contentBanner03>div:nth-child(2) ul li{
     padding-top: 120px;
     justify-content: space-between;
     width: 33.33%;
     text-align: center;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul li:first-child{
+.indexContainer .contentBanner03>div:nth-child(2) ul li:first-child{
     background: url('../images/maincon03_res.png') no-repeat center top/ 100px 100px;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul li:nth-child(2){
+.indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2){
     background: url('../images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
 }
-.indexContainer .contentBanner03 div:nth-child(2) ul li:last-child{
+.indexContainer .contentBanner03>div:nth-child(2) ul li:last-child{
     background: url('../images/maincon03_lost.png') no-repeat center top/ 100px 100px;
 }
-.indexContainer .contentBanner03>div h2 a::after{
-    background: url('../images/maincon03_more.png') no-repeat center top/ 100px 100px;
-    width: 7px;
-    height: 11px;
-    clear: both;
-}
-.indexContainer .contentBanner03>div:last-child{
-    background: url('../images/kakao_map.png') no-repeat center / cover; /*임시*/
+.indexContainer .contentBanner03>#map{
+    background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
     position: relative;
     width: 100%;
     height: 550px;
@@ -354,9 +332,9 @@
 }
 .indexContainer .contentBanner03 #map .map_dtl button{
     display: inline-block;
-    margin-left: 40px;
     border: 1px solid var(--gs1);
     background: none;
+    margin-left: 40px;
     color: var(--gs1);
     padding: 10px;
     vertical-align: text-bottom;
@@ -368,56 +346,141 @@
     display: block;
     line-height: 26px;
 }
+/* contentBanner03 Fin */
 /* 상세페이지 시작 */
 .newsContainer div:first-child{
-    background: url('../images/ever_Header01.png') no-repeat center;
+    background: url('../images/ever_Header01.png') no-repeat center / cover;
 }
 .newsContainer div:first-child h2{
     display: flex;
     color: var(--gs1);
     justify-content: center;
-    padding-top: 145px;
+    padding: 145px 0;
 }
 .newsContainer div:first-child nav{
     display: flex;
     background-color: var(--gs1);
-    width: 900px;
+    width: 46.875%;
     height: 65px;
+    padding-left: 13.281%;
+    box-sizing: border-box;
+    align-items: center;
 }
-.newsContainer div:first-child nav::before{
-    width: 255px;
-    content: '';
-}
-.newsContainer div:first-child nav a{
-    background: url('../images/home_nav.png') no-repeat;
-    text-indent: -9999px;
+.newsContainer div:first-child nav>a{
+    display: block;
+    background: url('../images/home_nav.png') no-repeat left / contain;
+    font-size: 0;
+    width: 19px;
+    height: 20px;
 }
 .newsContainer div:first-child nav div{
-
+    position: relative;
+}
+.newsContainer div:first-child nav div::before{
+    border: 1px solid var(--gs4);
+    height: 25px;
+    content: '';
+    position: absolute;
+    top: -4px;
 }
 .newsContainer div:first-child nav div input{
     color: var(--gs11);
     background-color: transparent;
     border: none;
+    padding-left: 30px;
 }
-/* .newsContainer div:first-child nav div{
+.newsContainer div:first-child nav div::after{
     content: '';
     display: block;
-    clear: both;
-} */
-.newsContainer div:first-child nav div:first-of-type input{
-    background: url('../images/det_nav.png') no-repeat;
+    width: 10px;
+    height: 10px;
 }
-.newsContainer div:first-child nav div:last-of-type input{
-    background: url('../images/det_nav.png') no-repeat;
+.newsContainer div:first-child nav div:first-of-type::after{
+    background: url('../images/det_nav.png') no-repeat center / contain;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+.newsContainer div:first-child nav div:last-of-type::after{
+    background: url('../images/det_nav.png') no-repeat center / contain;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+.newsContainer div:first-child nav div:first-of-type.on::after{
+    transform: rotate(-180deg);
 }
 .newsContainer div:first-child nav div ol{
     display: none;
+    padding: 20px 0 20px 30px;
+    border: 1px solid var(--gs6);
+    background-color: var(--gs1);
+}
+.newsContainer div:first-child nav div ol li:not(:last-child){
+    margin-bottom: 20px;
+}
+.newsContainer div:first-child nav div ol li a{
+    color: var(--gs9);
+}
+.newsContainer div:first-child nav div ol li a:hover{
+    color: var(--gs11);
+}
+.newsContainer div:first-child nav a{
+    width: 10%;
+}
+.newsContainer div:first-child nav div{
+    width: 45%;
 }
 .newsContainer div:nth-child(2) h3{
     text-align: center;
     padding: 95px 0;
     border-bottom: 1px solid var(--gs5);
+}
+.newsContainer div:nth-child(2) ul{
+    
+}
+.newsContainer div:nth-child(2) ul li{
+    border-bottom: 1px solid var(--gs5);
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+}
+.newsContainer div:nth-child(2) ul li a span:first-child{
+    width: 10%;
+}
+.newsContainer div:nth-child(2) ul li a span:nth-child(2){
+    width: 10%;
+}
+.newsContainer div:nth-child(2) ul li a strong{
+    width: 70%;
+}
+.newsContainer div:nth-child(2) ul li a time{
+    width: 10%;
+}
+.newsContainer .paging{
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    padding: 125px 0 350px 0;
+}
+.newsContainer .paging>a{
+    font-size: 0;
+}
+.newsContainer .paging>a:first-child{
+    background: url(../images/newdet_first.png) no-repeat center / contain;
+    width: 12px;
+}
+.newsContainer .paging>a:nth-child(2){
+    background: url(../images/newdet_pre.png) no-repeat center / contain;
+    width: 8px;
+}
+.newsContainer .paging>a:nth-child(4){
+    background: url(../images/newdet_next.png) no-repeat center / contain;
+    width: 8px;
+}
+.newsContainer .paging>a:last-child{
+    background: url(../images/newdet_last.png) no-repeat center / contain;
+    width: 12px;
 }
 @media screen and (min-width: 1280px) {
     .newsContainer>div:not(:first-child){

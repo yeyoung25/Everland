@@ -8,9 +8,6 @@
     margin-bottom: 0px;
     padding: 0;
 }
-img{
-    max-width: 100%;
-}
 .go_top{
     background: url('../images/go_top.png') no-repeat center / contain;
     position: fixed;
@@ -85,7 +82,7 @@ header div .menuBar span:nth-child(2){
     top: 52px;
     left: 49px;
     width: 26px;
-    transition: all 0.05s;
+    transition: all 0.1s;
 }
 header div .menuBar span:last-child{
     top: 66px;
@@ -188,7 +185,7 @@ header #fnbPanel ul>li:nth-child(4):hover a:hover,
 header #fnbPanel ul>li:nth-child(8):hover a:hover{
     color: var(--vs1);
 }
-
+/* header Fin */
 footer{
     position: relative;
     background-color: var(--gs10);
@@ -312,7 +309,6 @@ footer div div ol li:last-child a{
 footer div details{
     position: absolute;
     top: 125px;
-    /* left: 255px; */
     color: var(--gs8);
     margin-bottom: 50px;
 }
@@ -340,6 +336,7 @@ footer div details span{
     display: block;
     margin-bottom: 10px;
 }
+/* footer Fin */
 
 @media screen and (min-width: 1280px) {
     .contentBanner01 h2,
