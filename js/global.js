@@ -1,14 +1,23 @@
 $(document).ready(function () {
-    customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short');
-    customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,7,5,600,10,null,'full');
-    customSlider(".picSliderE",'fade',true,1000,6500,true,false,1,1,952,0,'.actTabPager','full');
-    customSlider(".picSliderH",'fade',true,1000,6500,true,false,1,1,952,0,'.homTabPager','full');
+  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short');
+  customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,7,5,600,10,null,'full');
+  customSlider(".picSliderE",'fade',true,1000,6500,true,false,1,1,952,0,'.actTabPager','full');
+  customSlider(".picSliderH",'fade',true,1000,6500,true,false,1,1,952,0,'.homTabPager','full');
+  headerAct();
+  meuuButton();
+  gotop();
+  sumDetail();
+  mainHeader();
+});
+
+function mainHeader(){
+  if(!$("#wrap").hasClass("indexContainer")){
+    $("header").css("position", "sticky");
+    $("header").addClass("mouseOver");
+  }else{
     headerEvent();
-    headerAct();
-    meuuButton();
-    gotop();
-    sumDetail();
-  });
+  }
+}
   
 function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType){
     $(sliderName).bxSlider({
@@ -66,7 +75,7 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
     });
   }
   
-  function meuuButton() {
+  function menuButton() {
     var menuBar = document.querySelector(".menuBar");
     menuBar.addEventListener("click", () => {
       menuBar.classList.toggle("toggle");
