@@ -138,7 +138,7 @@
     position: absolute;
     display: block;
     right: -30px;
-    z-index: 1000;
+    z-index: 100;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
     display: block;
@@ -168,8 +168,9 @@
     margin-bottom: 40px;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a{
-    cursor: default;
+    cursor: pointer;
     color: var(--gs6);
+    display: block;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a.active::before{
     position: absolute;
@@ -361,105 +362,8 @@
 }
 /* contentBanner03 Fin */
 /* 상세페이지 시작 / newsContainer */
-.newsContainer div:first-child{
-    background: url('../images/ever_Header01.png') no-repeat center / cover;
-}
-.newsContainer div:first-child h2{
-    display: flex;
-    color: var(--gs1);
-    justify-content: center;
-    padding: 145px 0;
-}
-.newsContainer div:first-child nav{
-    display: flex;
-    background-color: var(--gs1);
-    width: 46.875%;
-    height: 65px;
-    padding-left: 13.281%;
-    box-sizing: border-box;
-    align-items: center;
-}
-.newsContainer div:first-child nav>a{
-    display: block;
-    background: url('../images/home_nav.png') no-repeat left / contain;
-    font-size: 0;
-    width: 19px;
-    height: 20px;
-}
-.newsContainer div:first-child nav div{
-    position: relative;
-}
-.newsContainer div:first-child nav div::before{
-    border: 1px solid var(--gs4);
-    height: 25px;
-    content: '';
-    position: absolute;
-    top: -4px;
-}
-.newsContainer div:first-child nav div input{
-    color: var(--gs11);
-    background-color: transparent;
-    border: none;
-    padding-left: 30px;
-}
-.newsContainer div:first-child nav div::after{
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-}
-.newsContainer div:first-child nav div:first-of-type::after{
-    background: url('../images/det_nav.png') no-repeat center / contain;
-    position: absolute;
-    right: 30px;
-    top: 5px;
-}
-.newsContainer div:first-child nav div:last-of-type::after{
-    background: url('../images/det_nav.png') no-repeat center / contain;
-    position: absolute;
-    right: 30px;
-    top: 5px;
-}
-.newsContainer div:first-child nav div:first-of-type.on::after{
-    transform: rotate(-180deg);
-}
-.newsContainer div:first-child nav div:last-of-type.on::after{
-    transform: rotate(-180deg);
-}
-.newsContainer div:first-child nav a{
-    width: 10%;
-}
-.newsContainer div:first-child nav div{
-    width: 45%;
-    position: relative;
-}
-.newsContainer div:first-child nav div:first-of-type ol{
-    display: none;
-    position: absolute;
-    width: 257px;
-    top: 41px;
-    padding: 20px 0 20px 30px;
-    border: 1px solid var(--gs6);
-    background-color: var(--gs1);
-}
-.newsContainer div:first-child nav div:last-of-type ol{
-    display: none;
-    position: absolute;
-    width: 257px;
-    top: 41px;
-    padding: 20px 0 20px 30px;
-    border: 1px solid var(--gs6);
-    background-color: var(--gs1);
-}
-.newsContainer div:first-child nav div ol li:not(:last-child){
-    margin-bottom: 20px;
-}
-.newsContainer div:first-child nav div ol li a{
-    color: var(--gs9);
-}
-.newsContainer div:first-child nav div ol li a:hover{
-    color: var(--gs11);
-}
+
+
 .newsContainer div:nth-child(2) ul{
     width: 100%;
 }
@@ -483,7 +387,6 @@
 }
 .newsContainer div:nth-child(2) ul li a time{
     background: url('../images/newdet_calendar.png') no-repeat left / contain;
-    width: 12px;
     width: 10%;
     padding-left: 30px;
     color: var(--gs10);
@@ -499,19 +402,19 @@
     font-size: 0;
 }
 .newsContainer .paging>a:first-child{
-    background: url(../images/newdet_first.png) no-repeat center / contain;
+    background: url('../images/newdet_first.png') no-repeat center / contain;
     width: 12px;
 }
 .newsContainer .paging>a:nth-child(2){
-    background: url(../images/newdet_pre.png) no-repeat center / contain;
+    background: url('../images/newdet_pre.png') no-repeat center / contain;
     width: 8px;
 }
 .newsContainer .paging>a:nth-child(4){
-    background: url(../images/newdet_next.png) no-repeat center / contain;
+    background: url('../images/newdet_next.png') no-repeat center / contain;
     width: 8px;
 }
 .newsContainer .paging>a:last-child{
-    background: url(../images/newdet_last.png) no-repeat center / contain;
+    background: url('../images/newdet_last.png') no-repeat center / contain;
     width: 12px;
 }
 /* newNotice Fin */
@@ -537,19 +440,24 @@
     background: url('../images/newdetD_calendar.png') no-repeat left / contain;
     padding-left: 20px;
     background-size: 11px;
+    line-height: 27px;
 }
 .newsContainer article div figure{
-    padding: 30px 0 100px;
+    padding: 30px 25px 100px;
     text-align: center;
-    border-bottom: 1px solid var(--gs5);
+    display: inline-block;
+}
+.newsContainer article div figure img{
+    width: 100%;
 }
 .newsContainer article div figure figcaption{
     font-size: 0;
 }
 .newsContainer article .innerPager{
+    display: flex;
     padding: 110px 20px 350px;
     width: 100%;
-    display: flex;
+    border-top: 1px solid var(--gs5);
 }
 .newsContainer article .innerPager li{
     justify-content: space-between;
@@ -584,17 +492,246 @@
     padding: 0px 50px 0px 80px;
     line-height: 60px;
 }
+/* newNotice Fin */
+.howcontainer .detail_contents>div{
+    margin: 30px 25px 100px;
+    /* text-align: center; */
+    display: inline-block;
+    background-color: var(--gs2);
+    padding: 0  35px 65px 35px;
+}
+.howcontainer .detail_contents div>p:first-child{
+    color: var(--vs9);
+    width: 600px;
+    line-height: 50px;
+    text-align: center;
+    margin: 65px auto;
+}
+.howcontainer .detail_contents>div{
+    position: relative;
+}
+.howcontainer .detail_contents>div img{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.howcontainer .detail_contents div>.imgBox h4{
+    position: absolute;
+    left: 60px;
+    top: 330px;
+    color: var(--gs1);
+    line-height: 30px;
+    text-align: left;
+    width: 330px;
+    border-bottom: 1px solid var(--gs1);
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+.howcontainer .detail_contents div>.imgBox h4 mark{
+    color: var(--os1);
+    background-color: transparent;
+    font-style: normal;
+}
+.howcontainer .detail_contents div>.imgBox p{
+    position: absolute;
+    left: 60px;
+    top: 420px;
+    color: var(--gs1);
+    line-height: 20px;
+    text-align: left;
+    width: 350px;
+}
+.howcontainer .detail_contents div dl dt::before{
+    content: '⊙';
+}
+.howcontainer .detail_contents div dl dt{
+    margin-bottom: 30px;
+    
+}
+.howcontainer .detail_contents div dl dd{
+    padding-left: 25px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.howcontainer .detail_contents div dl{
+    margin-bottom: 55px;
+}
+.howcontainer .detail_contents div dl:last-of-type{
+    margin-bottom: 180px;
+}
+.howcontainer .detail_contents div p:nth-of-type(2):before,
+.howcontainer .detail_contents div p:nth-of-type(3):before{
+    content: '⊙';
+}
+.howcontainer .detail_contents div p:not(:first-child){
+    margin-bottom: 55px;
+}
+.howcontainer .detail_contents div .safetyBox{
+    padding: 40px 0 40px 320px;
+    background: url('../images/how_safety.png') no-repeat left ;
+    background-position: 40px;
+    width: 955px;
+    background-color: var(--gs8);
+    border-radius: 10px;
+}
+.howcontainer .detail_contents div .safetyBox h4{
+    color: var(--rs1);
+    margin-bottom: 30px;
+}
+.howcontainer .detail_contents div .safetyBox ul li p{
+    color: var(--gs1);
+    line-height: 30px;
+}
+.howcontainer .detail_contents div .safetyBox div{
+    margin-top: 50px;
+}
+.howcontainer .detail_contents div .safetyBox div a{
+    background: url('../images/how_safetyNext.png') no-repeat right;
+    display: inline-block;
+    background-color: var(--gs1);
+    width: 345px;
+    line-height: 42px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 30px;
+}
+.howcontainer .detail_contents div .safetyBox div input{
+    background: url('../images/how_safetyNext.png') no-repeat right;
+    display: inline-block;
+    background-color: var(--gs1);
+    border: none;
+    width: 475px;
+    line-height: 42px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
 
 @media screen and (min-width: 1280px) {
     .newsContainer>div:not(:first-child),
-    .newsContainer article{
+    .newsContainer article,
+    .howcontainer article{
         max-width: 1410px;
         margin: 0 auto;
     }
-    .newsContainer div:nth-child(2) h3{
+    .newsContainer div:nth-child(2) h3,
+    .howcontainer article h3{
         text-align: center;
         padding: 95px 0;
         border-bottom: 1px solid var(--gs5);
+    }
+    .howcontainer div:first-child,
+    .newsContainer div:first-child{
+        background: url('../images/ever_Header01.png') no-repeat center / cover;
+    }
+    .howcontainer div:first-child h2,
+    .newsContainer div:first-child h2{
+        display: flex;
+        color: var(--gs1);
+        justify-content: center;
+        padding: 145px 0;
+    }
+    .howcontainer div:first-child nav,
+    .newsContainer div:first-child nav{
+        display: flex;
+        background-color: var(--gs1);
+        width: 46.875%;
+        height: 65px;
+        padding-left: 13.281%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .howcontainer div:first-child nav>a,
+    .newsContainer div:first-child nav>a{
+        display: block;
+        background: url('../images/home_nav.png') no-repeat left / contain;
+        font-size: 0;
+        width: 19px;
+        height: 20px;
+    }
+    .howcontainer div:first-child nav div,
+    .newsContainer div:first-child nav div{
+        position: relative;
+    }
+    .howcontainer div:first-child nav div::before,
+    .newsContainer div:first-child nav div::before{
+        border: 1px solid var(--gs4);
+        height: 25px;
+        content: '';
+        position: absolute;
+        top: -4px;
+    }
+    .howcontainer div:first-child nav div input,
+    .newsContainer div:first-child nav div input{
+        color: var(--gs11);
+        background-color: transparent;
+        border: none;
+        padding-left: 30px;
+    }
+    .howcontainer div:first-child nav div::after,
+    .newsContainer div:first-child nav div::after{
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+    .howcontainer div:first-child nav div:first-of-type::after,
+    .newsContainer div:first-child nav div:first-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 5px;
+    }
+    .howcontainer div:first-child nav div:last-of-type::after,
+    .newsContainer div:first-child nav div:last-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 5px;
+    }
+    .howcontainer div:first-child nav a,
+    .newsContainer div:first-child nav a{
+        width: 10%;
+    }
+    .howcontainer div:first-child nav div,
+    .newsContainer div:first-child nav div{
+        width: 45%;
+        position: relative;
+    }
+    .howcontainer div:first-child nav div ol,
+    .newsContainer div:first-child nav div ol{
+        display: none;
+    }
+    .howcontainer div:first-child nav div:first-of-type ol,
+    .newsContainer div:first-child nav div:first-of-type ol{
+        position: absolute;
+        width: 257px;
+        top: 41px;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    .howcontainer div:first-child nav div:last-of-type ol,
+    .newsContainer div:first-child nav div:last-of-type ol{
+        position: absolute;
+        width: 257px;
+        top: 41px;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    .howcontainer div:first-child nav div ol li:not(:last-child),
+    .newsContainer div:first-child nav div ol li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .howcontainer div:first-child nav div ol li a,
+    .newsContainer div:first-child nav div ol li a{
+        color: var(--gs9);
+    }
+    .howcontainer div:first-child nav div ol li a:hover,
+    .newsContainer div:first-child nav div ol li a:hover{
+        color: var(--gs11);
     }
 }
 /* ?desktop */

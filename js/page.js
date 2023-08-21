@@ -1,18 +1,16 @@
 $(document).ready(function(){
-
+  justToggle();
 });
 
-var copy = (text) => {
-  alert("복사했습니다.");
-  var $textarea = document.createElement("textarea");
-  document.body.appendChild($textarea);$textarea.value =
-    "199, EVERLAND-RO, POGOK-EUP, CHEOIN-GU, YONGIN-SI,GYEONGGI-DO, KOREA (Location number) 310 Jeondae-ri, Pogok-eup";
-  $textarea.select();document.execCommand("copy");
-  document.body.removeChild($textarea);
-};
 
-function manuNav(){
-  $('button').click(function(){
-  
+function justToggle(button){
+  $(button).click(function(){ //button을 눌렀을때 
+    $(this).toggleClass("active"); //button에 active 추가할것
+    if ($("button").hasClass("active")) { //만약 button이 active를 가지고있다면
+      $("ol").removeClass(".newsContainer div:first-child nav div ol"); //ol에 .act를 지울것
+    } else {
+      $("button").addClass(".newsContainer div:first-child nav div ol");
+    } // 또는 ol에 .act를 추가할것
   });
-};
+
+}
