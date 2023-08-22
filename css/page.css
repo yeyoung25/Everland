@@ -69,13 +69,13 @@
     vertical-align: text-bottom;
     padding: 0 0 5px;
 }
+.indexContainer .contentBanner01 .bx-wrapper{
+    max-width: 1665px !important; margin-left: auto;
+}
 .indexContainer .contentBanner01 .carouselWay4 li a{
     display: block;
     width: 325px;
     margin-right: 40px;
-}
-.indexContainer .contentBanner01 .carouselWay4 li:first-child{
-    margin-left: 255px;
 }
 .indexContainer .contentBanner01 .carouselWay4 li strong{
     display: block;  
@@ -98,15 +98,19 @@
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
     top: 415px;
 }
+.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager{
+    display: flex;
+    width: 85%;
+}
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
-    width: 705px;
+    width: 470px;
     height: 1px;
     margin: 0;
     background-color: var(--gs6);
 }
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a.active{
     height: 3px;
-    margin-bottom: -1px;
+    margin-top: -1px;
     background-color: var(--gs11);
 }
 /* contentBanner01 Fin */
@@ -363,10 +367,6 @@
 /* contentBanner03 Fin */
 /* 상세페이지 시작 / newsContainer */
 
-
-.newsContainer div:nth-child(2) ul{
-    width: 100%;
-}
 .newsContainer div:nth-child(2) ul li{
     border-bottom: 1px solid var(--gs5);
     padding: 20px 0;
@@ -587,6 +587,7 @@
 }
 .howcontainer .detail_contents div .safetyBox div a{
     background: url('../images/how_safetyNext.png') no-repeat right;
+    background-position: 90% center;
     display: inline-block;
     background-color: var(--gs1);
     width: 345px;
@@ -597,6 +598,7 @@
 }
 .howcontainer .detail_contents div .safetyBox div input{
     background: url('../images/how_safetyNext.png') no-repeat right;
+    background-position: 90% center;
     display: inline-block;
     background-color: var(--gs1);
     border: none;
@@ -676,6 +678,9 @@
         width: 10px;
         height: 10px;
     }
+    /* .newsContainer div:first-child nav div::after.active{
+        transform: rotate(-180deg)
+    } */
     .howcontainer div:first-child nav div:first-of-type::after,
     .newsContainer div:first-child nav div:first-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
@@ -702,6 +707,9 @@
     .howcontainer div:first-child nav div ol,
     .newsContainer div:first-child nav div ol{
         display: none;
+    }
+    .newsContainer div:first-child nav div ol.active{
+        display: block;
     }
     .howcontainer div:first-child nav div:first-of-type ol,
     .newsContainer div:first-child nav div:first-of-type ol{
