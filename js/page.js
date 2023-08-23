@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  justToggle($(".button"),$(".listBox"));
+  justToggle($("div div:first-child nav div"));
 });
 
 
-function justToggle(){
+function justToggle(button){
   $(button).click(function(){
-    $(button).toggleClass("active");
+    $(this).toggleClass("active");
   });
 }

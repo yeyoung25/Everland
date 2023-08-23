@@ -100,7 +100,7 @@
 }
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager{
     display: flex;
-    width: 85%;
+    width: 86.71%;
 }
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
     width: 470px;
@@ -365,126 +365,126 @@
     line-height: 26px;
 }
 /* contentBanner03 Fin */
-/* 상세페이지 시작 / newsContainer */
-
-.newsContainer div:nth-child(2) ul li{
+/* 상세페이지 시작 / everContainer */
+.newContainer div:nth-child(2) h3+ul li{
     border-bottom: 1px solid var(--gs5);
     padding: 20px 0;
 }
-.newsContainer div:nth-child(2) ul li a{
+.newContainer div:nth-child(2) ul li a{
     display: flex;
 }
-.newsContainer div:nth-child(2) ul li a span:first-child{
+.newContainer div:nth-child(2) ul li a span:first-child{
     width: 5%;
     padding-left: 30px;
 }
-.newsContainer div:nth-child(2) ul li a span:nth-child(2){
+.newContainer div:nth-child(2) ul li a span:nth-child(2){
     width: 15%;
     color: var(--gs9);
 }
-.newsContainer div:nth-child(2) ul li a strong{
+.newContainer div:nth-child(2) ul li a strong{
     width: 70%;
 }
-.newsContainer div:nth-child(2) ul li a time{
+.newContainer div:nth-child(2) ul li a time{
     background: url('../images/newdet_calendar.png') no-repeat left / contain;
     width: 10%;
     padding-left: 30px;
     color: var(--gs10);
     background-size: 12px;
 }
-.newsContainer .paging{
+.newContainer .paging{
     display: flex;
     width: 240px;
     justify-content: space-between;
     padding: 125px 0 350px 0;
 }
-.newsContainer .paging>a{
+.newContainer .paging>a{
     font-size: 0;
 }
-.newsContainer .paging>a:first-child{
+.newContainer .paging>a:first-child{
     background: url('../images/newdet_first.png') no-repeat center / contain;
     width: 12px;
 }
-.newsContainer .paging>a:nth-child(2){
+.newContainer .paging>a:nth-child(2){
     background: url('../images/newdet_pre.png') no-repeat center / contain;
     width: 8px;
 }
-.newsContainer .paging>a:nth-child(4){
+.newContainer .paging>a:nth-child(4){
     background: url('../images/newdet_next.png') no-repeat center / contain;
     width: 8px;
 }
-.newsContainer .paging>a:last-child{
+.newContainer .paging>a:last-child{
     background: url('../images/newdet_last.png') no-repeat center / contain;
     width: 12px;
 }
 /* newNotice Fin */
-.newsContainer article h3{
+.newContainer article h3{
     text-align: center;
     padding: 95px 0;
 }
-.newsContainer article div h4{
+.newContainer article div h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 35px;
     border-bottom: 1px solid var(--gs5);
 }
-.newsContainer article div h4 small{
+.newContainer article div h4 small{
     width: 100%;
     display: block;
     margin-bottom: 30px;
     color: var(--gs9);
 }
-.newsContainer article div h4 time{
+.newContainer article div h4 time{
     color: var(--gs7);
     background: url('../images/newdetD_calendar.png') no-repeat left / contain;
     padding-left: 20px;
     background-size: 11px;
     line-height: 27px;
 }
-.newsContainer article div figure{
+.newContainer article div figure{
     padding: 30px 25px 100px;
     text-align: center;
     display: inline-block;
 }
-.newsContainer article div figure img{
+.newContainer article div figure img{
     width: 100%;
 }
-.newsContainer article div figure figcaption{
+.newContainer article div figure figcaption{
     font-size: 0;
 }
-.newsContainer article .innerPager{
+.newContainer article .innerPager{
     display: flex;
     padding: 110px 20px 350px;
     width: 100%;
     border-top: 1px solid var(--gs5);
+    box-sizing: border-box;
 }
-.newsContainer article .innerPager li{
+.newContainer article .innerPager li{
     justify-content: space-between;
     width: 33.33%;
 }
-.newsContainer article .innerPager li:first-child{
+.newContainer article .innerPager li:first-child{
     background: url('../images/newdetD_pre.png') no-repeat left;
     padding: 10px 0 0 50px;
 }
-.newsContainer article .innerPager li:last-child{
+.newContainer article .innerPager li:last-child{
     background: url('../images/newdetD_next.png') no-repeat right;
     padding: 10px 50px 0 0px;
     padding-right: 50px;
     text-align: right;
 }
-.newsContainer article .innerPager li a span{
+.newContainer article .innerPager li a span{
     display: block;
     color: var(--gs9);
     margin-bottom: 10px;
 }
-.newsContainer article .innerPager li a strong{
+.newContainer article .innerPager li a strong{
     line-height: 22px;
 }
-.newsContainer article .innerPager li:nth-child(2){
+.newContainer article .innerPager li:nth-child(2){
     text-align: center;
 }
-.newsContainer article .innerPager li:nth-child(2) a{
+.newContainer article .innerPager li:nth-child(2) a{
     background: url('../images/newdetD_list.png') no-repeat 45px center;
     display: inline-block;
     background-color: var(--vs8);
@@ -493,29 +493,29 @@
     line-height: 60px;
 }
 /* newNotice Fin */
-.howcontainer .detail_contents>div{
-    margin: 30px 25px 100px;
-    /* text-align: center; */
+.howContainer .detail_contents>div{
+    margin: 30px 25px 350px;
     display: inline-block;
     background-color: var(--gs2);
     padding: 0  35px 65px 35px;
+    width: 100%;
 }
-.howcontainer .detail_contents div>p:first-child{
+.howContainer .detail_contents div>p:first-child{
     color: var(--vs9);
     width: 600px;
     line-height: 50px;
     text-align: center;
     margin: 65px auto;
 }
-.howcontainer .detail_contents>div{
+.howContainer .detail_contents>div{
     position: relative;
 }
-.howcontainer .detail_contents>div img{
+.howContainer .detail_contents>div img{
     display: inline-block;
     width: 100%;
     margin-bottom: 100px;
 }
-.howcontainer .detail_contents div>.imgBox h4{
+.howContainer .detail_contents div>.imgBox h4{
     position: absolute;
     left: 60px;
     top: 330px;
@@ -527,12 +527,12 @@
     padding-bottom: 20px;
     font-size: 24px;
 }
-.howcontainer .detail_contents div>.imgBox h4 mark{
+.howContainer .detail_contents div>.imgBox h4 mark{
     color: var(--os1);
     background-color: transparent;
     font-style: normal;
 }
-.howcontainer .detail_contents div>.imgBox p{
+.howContainer .detail_contents div>.imgBox p{
     position: absolute;
     left: 60px;
     top: 420px;
@@ -541,32 +541,29 @@
     text-align: left;
     width: 350px;
 }
-.howcontainer .detail_contents div dl dt::before{
-    content: '⊙';
-}
-.howcontainer .detail_contents div dl dt{
+.howContainer .detail_contents div dl dt{
+    background: url('../images/how_text.png') no-repeat left;
     margin-bottom: 30px;
-    
+    padding-left: 30px;
 }
-.howcontainer .detail_contents div dl dd{
+.howContainer .detail_contents div dl dd{
     padding-left: 25px;
     margin-bottom: 20px;
     line-height: 22px;
 }
-.howcontainer .detail_contents div dl{
+.howContainer .detail_contents div dl{
     margin-bottom: 55px;
 }
-.howcontainer .detail_contents div dl:last-of-type{
+.howContainer .detail_contents div dl:last-of-type{
     margin-bottom: 180px;
 }
-.howcontainer .detail_contents div p:nth-of-type(2):before,
-.howcontainer .detail_contents div p:nth-of-type(3):before{
-    content: '⊙';
-}
-.howcontainer .detail_contents div p:not(:first-child){
+.howContainer .detail_contents div p:nth-of-type(2),
+.howContainer .detail_contents div p:nth-of-type(3){
+    background: url('../images/how_text.png') no-repeat left;
     margin-bottom: 55px;
+    padding-left: 30px;
 }
-.howcontainer .detail_contents div .safetyBox{
+.howContainer .detail_contents div .safetyBox{
     padding: 40px 0 40px 320px;
     background: url('../images/how_safety.png') no-repeat left ;
     background-position: 40px;
@@ -574,18 +571,18 @@
     background-color: var(--gs8);
     border-radius: 10px;
 }
-.howcontainer .detail_contents div .safetyBox h4{
+.howContainer .detail_contents div .safetyBox h4{
     color: var(--rs1);
     margin-bottom: 30px;
 }
-.howcontainer .detail_contents div .safetyBox ul li p{
+.howContainer .detail_contents div .safetyBox ul li p{
     color: var(--gs1);
     line-height: 30px;
 }
-.howcontainer .detail_contents div .safetyBox div{
+.howContainer .detail_contents div .safetyBox div{
     margin-top: 50px;
 }
-.howcontainer .detail_contents div .safetyBox div a{
+.howContainer .detail_contents div .safetyBox div a{
     background: url('../images/how_safetyNext.png') no-repeat right;
     background-position: 90% center;
     display: inline-block;
@@ -596,7 +593,7 @@
     text-align: center;
     margin-right: 30px;
 }
-.howcontainer .detail_contents div .safetyBox div input{
+.howContainer .detail_contents div .safetyBox div input{
     background: url('../images/how_safetyNext.png') no-repeat right;
     background-position: 90% center;
     display: inline-block;
@@ -607,35 +604,100 @@
     border-radius: 20px;
     text-align: center;
 }
+#handicappedPopUp{
+    display: none;
+}
+#handicappedPopUp.active{
+    display: block;
+}
+#handicappedPopUp{
+    background-color: var(--gs1);
+    border: 3px solid var(--os1);
+    width: 1170px;
+    height: 1238px;
+    padding: 80px 30px 90px;
+    position: relative;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    overflow: scroll;
+}
+#handicappedPopUp h2{
+    margin-bottom: 50px;
+}
+#handicappedPopUp .backBtn{
+    background: url('../images/how_pre.png') no-repeat center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+}
+#handicappedPopUp p:first-child{
+    margin: 50px 0;
+}
+#handicappedPopUp div h3{
+    margin-bottom: 35px;
+}
+#handicappedPopUp div:first-of-type{
+    margin-top: 50px;
+}
+#handicappedPopUp div{
+    margin-bottom: 55px;
+}
+#handicappedPopUp div:first-of-type p{
+    margin-bottom: 35px;
+    line-height: 30px;
+}
+#handicappedPopUp div:first-of-type p>b{
+    display: block;
+}
+#handicappedPopUp div:nth-of-type(3) ol li{
+    margin-bottom: 40px;
+    line-height: 30px;
+}
 
 
+/* usageFee Fin */
 
 @media screen and (min-width: 1280px) {
-    .newsContainer>div:not(:first-child),
-    .newsContainer article,
-    .howcontainer article{
+    div .everContainer~div,
+    div article{
         max-width: 1410px;
         margin: 0 auto;
     }
-    .newsContainer div:nth-child(2) h3,
-    .howcontainer article h3{
+    div div:nth-child(2) .linebtm,
+    div article .linebtm{
         text-align: center;
         padding: 95px 0;
         border-bottom: 1px solid var(--gs5);
     }
-    .howcontainer div:first-child,
-    .newsContainer div:first-child{
+    div .guide{
         background: url('../images/ever_Header01.png') no-repeat center / cover;
     }
-    .howcontainer div:first-child h2,
-    .newsContainer div:first-child h2{
+    div .ticket{
+        background: url('../images/ever_Header02.png') no-repeat center / cover;
+    }
+    div .activity{
+        background: url('../images/ever_Header03.png') no-repeat center / cover;
+    }
+    div .member{
+        background: url('../images/ever_Header04.png') no-repeat center / cover;
+    }
+    div .communit{
+        background: url('../images/ever_Header05.png') no-repeat center / cover;
+    }
+    div .everContainer h2{
         display: flex;
         color: var(--gs1);
         justify-content: center;
         padding: 145px 0;
     }
-    .howcontainer div:first-child nav,
-    .newsContainer div:first-child nav{
+    div .everContainer nav{
         display: flex;
         background-color: var(--gs1);
         width: 46.875%;
@@ -644,75 +706,65 @@
         box-sizing: border-box;
         align-items: center;
     }
-    .howcontainer div:first-child nav>a,
-    .newsContainer div:first-child nav>a{
+    div .everContainer nav>a{
         display: block;
         background: url('../images/home_nav.png') no-repeat left / contain;
         font-size: 0;
         width: 19px;
         height: 20px;
     }
-    .howcontainer div:first-child nav div,
-    .newsContainer div:first-child nav div{
+    div .everContainer nav div{
         position: relative;
     }
-    .howcontainer div:first-child nav div::before,
-    .newsContainer div:first-child nav div::before{
+    div .everContainer nav div::before{
         border: 1px solid var(--gs4);
         height: 25px;
         content: '';
         position: absolute;
         top: -4px;
     }
-    .howcontainer div:first-child nav div input,
-    .newsContainer div:first-child nav div input{
+    div .everContainer nav div input{
         color: var(--gs11);
         background-color: transparent;
         border: none;
         padding-left: 30px;
     }
-    .howcontainer div:first-child nav div::after,
-    .newsContainer div:first-child nav div::after{
+    div .everContainer nav div::after{
         content: '';
         display: block;
         width: 10px;
         height: 10px;
     }
-    /* .newsContainer div:first-child nav div::after.active{
-        transform: rotate(-180deg)
-    } */
-    .howcontainer div:first-child nav div:first-of-type::after,
-    .newsContainer div:first-child nav div:first-of-type::after{
+    div .everContainer nav div.active::after{
+        transform: rotate(-180deg);
+    }
+    div .everContainer nav div:first-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
         right: 30px;
         top: 5px;
     }
-    .howcontainer div:first-child nav div:last-of-type::after,
-    .newsContainer div:first-child nav div:last-of-type::after{
+    div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
         right: 30px;
         top: 5px;
     }
-    .howcontainer div:first-child nav a,
-    .newsContainer div:first-child nav a{
+    div .everContainer nav a{
         width: 10%;
     }
-    .howcontainer div:first-child nav div,
-    .newsContainer div:first-child nav div{
+    div .everContainer nav div{
         width: 45%;
         position: relative;
     }
-    .howcontainer div:first-child nav div ol,
-    .newsContainer div:first-child nav div ol{
+    div .everContainer nav div ol{
         display: none;
     }
-    .newsContainer div:first-child nav div ol.active{
+    div .everContainer nav div.active ol{
         display: block;
+        z-index: 100;
     }
-    .howcontainer div:first-child nav div:first-of-type ol,
-    .newsContainer div:first-child nav div:first-of-type ol{
+    div .everContainer nav div:first-of-type ol{
         position: absolute;
         width: 257px;
         top: 41px;
@@ -720,8 +772,7 @@
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
     }
-    .howcontainer div:first-child nav div:last-of-type ol,
-    .newsContainer div:first-child nav div:last-of-type ol{
+    div .everContainer nav div:last-of-type ol{
         position: absolute;
         width: 257px;
         top: 41px;
@@ -729,16 +780,13 @@
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
     }
-    .howcontainer div:first-child nav div ol li:not(:last-child),
-    .newsContainer div:first-child nav div ol li:not(:last-child){
+    div .everContainer nav div ol li:not(:last-child){
         margin-bottom: 20px;
     }
-    .howcontainer div:first-child nav div ol li a,
-    .newsContainer div:first-child nav div ol li a{
+    div .everContainer nav div ol li a{
         color: var(--gs9);
     }
-    .howcontainer div:first-child nav div ol li a:hover,
-    .newsContainer div:first-child nav div ol li a:hover{
+    div .everContainer nav div ol li a:hover{
         color: var(--gs11);
     }
 }

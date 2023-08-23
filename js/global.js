@@ -101,7 +101,7 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
   //   });
   // }
   function sumDetail(){ 
-    $("details").click(function(){
+    $("summary").click(function(){
       if($("summary").hasClass("on")){
         $("summary").removeClass("on");
       }else {
