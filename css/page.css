@@ -365,7 +365,7 @@
     line-height: 26px;
 }
 /* contentBanner03 Fin */
-/* 상세페이지 시작 / everContainer */
+/* 상세페이지 시작 */
 .newContainer div:nth-child(2) h3+ul li{
     border-bottom: 1px solid var(--gs5);
     padding: 20px 0;
@@ -492,7 +492,7 @@
     padding: 0px 50px 0px 80px;
     line-height: 60px;
 }
-/* newNotice Fin */
+/* newNotice detail Fin */
 .howContainer .detail_contents>div{
     margin: 30px 25px 350px;
     display: inline-block;
@@ -665,7 +665,7 @@
 /* usageFee Fin */
 
 @media screen and (min-width: 1280px) {
-    div .everContainer~div,
+    div .linemg~div,
     div article{
         max-width: 1410px;
         margin: 0 auto;
