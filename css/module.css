@@ -130,3 +130,8 @@ footer div div ol,
 .leftContent{
     margin-right: auto;
 }
+mark{
+    color: var(--gs11);
+    background-color: transparent;
+    font-style: normal;
+}

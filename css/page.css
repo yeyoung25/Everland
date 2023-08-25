@@ -308,24 +308,25 @@
 }
 .indexContainer .contentBanner03>div:nth-child(2) ul{
     display: flex;
-    align-items: flex-start;
 }
 .indexContainer .contentBanner03>div:nth-child(2) ul li a{
-    display: block;
+    display: inline-block;
+    width: 100%;
+    padding-top: 120px;
 }
 .indexContainer .contentBanner03>div:nth-child(2) ul li{
-    padding-top: 120px;
-    justify-content: space-between;
     width: 33.33%;
+    box-sizing: border-box;
     text-align: center;
 }
-.indexContainer .contentBanner03>div:nth-child(2) ul li:first-child{
-    background: url('../images/maincon03_res.png') no-repeat center top/ 100px 100px;
+.indexContainer .contentBanner03>div:nth-child(2) ul li:first-child a{
+    background: url('../images/maincon03_res.png') no-repeat center top;
+    
 }
-.indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2){
+.indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2) a{
     background: url('../images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
 }
-.indexContainer .contentBanner03>div:nth-child(2) ul li:last-child{
+.indexContainer .contentBanner03>div:nth-child(2) ul li:last-child a{
     background: url('../images/maincon03_lost.png') no-repeat center top/ 100px 100px;
 }
 .indexContainer .contentBanner03>#map{
@@ -498,7 +499,6 @@
     display: inline-block;
     background-color: var(--gs2);
     padding: 0  35px 65px 35px;
-    width: 100%;
 }
 .howContainer .detail_contents div>p:first-child{
     color: var(--vs9);
@@ -614,14 +614,19 @@
     background-color: var(--gs1);
     border: 3px solid var(--os1);
     width: 1170px;
-    height: 1238px;
+    height: 100%;
     padding: 80px 30px 90px;
+    box-sizing: border-box;
     position: relative;
     margin: 0 auto;
     position: fixed;
     top: 0;
     z-index: 1000;
     overflow: scroll;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 #handicappedPopUp h2{
     margin-bottom: 50px;
@@ -660,9 +665,153 @@
     margin-bottom: 40px;
     line-height: 30px;
 }
+/* howToUse Fin */
+.operContainer div:nth-child(2)>strong{
+    display: block;
+    margin: 110px 0 50px;
+    color: var(--os1);
+}
+.operContainer div:nth-child(2) div ol{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.operContainer div:nth-child(2) div ol li{
+    border: 1px solid var(--gs11);
+    width: 10.491%;
+    box-sizing: border-box;
+}
 
+/* operatingTime Fin */
+.susContainer div:nth-child(2)>div:first-of-type{
+    margin: 110px 0 110px;
 
-/* usageFee Fin */
+}
+.susContainer div:nth-child(2)>div:first-of-type mark{
+    display: block;
+    color: var(--os1);
+    margin-bottom: 35px;
+}
+.susContainer div:nth-child(2)>div:first-of-type p:not(:last-child){
+    margin-bottom: 20px;
+}
+.susContainer div:nth-child(2)>div:last-of-type{
+    margin-bottom: 350px;
+}
+.susContainer div:nth-child(2)>div:last-of-type strong{
+    display: block;
+    text-align: center;
+    color: var(--os1);
+    margin-bottom: 55px;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table tr td{
+    border: 1px solid var(--gs11);
+}
+.susContainer div:nth-child(2)>div:last-of-type div table tr td mark{
+    color: var(--os1);
+}
+.susContainer div:nth-child(2)>div:last-of-type div table:not(:nth-child(2)){
+    margin-bottom: 55px;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table:nth-child(2){
+    margin-bottom: 30px;
+}
+.susContainer div:nth-child(2)>div:last-of-type::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.susContainer div:nth-child(2)>div:last-of-type .left{
+    float: left;
+}
+.susContainer div:nth-child(2)>div:last-of-type .left p{
+    width: 430px;
+
+}
+
+/* suspensionNotice Fin */
+.amanContainer>div:nth-child(2){
+    margin-bottom: 350px;
+}
+.amanContainer div:nth-child(2) strong{
+    display: block;
+    margin: 110px 0 30px;
+}
+.amanContainer div:nth-child(2) ul li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.amanContainer div:nth-child(2) ul li:not(:last-child){
+    margin-bottom: 115px;
+}
+.amanContainer div:nth-child(2) ul li img{
+    float: left;
+    margin-right: 110px;
+}
+.amanContainer div:nth-child(2) ul li dl{
+    float: left;
+}
+.amanContainer div:nth-child(2) ul li dl dt{
+    margin-bottom: 30px;
+}
+.amanContainer div:nth-child(2) ul li dl dd:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.amanContainer div:nth-child(2) ul li dl dd{
+    width: 820px;
+    line-height: 24px;
+}
+.amanContainer div:nth-child(2) ul li dl dd::before{
+    content: '- ';
+}
+/* amenities Fin */
+.guidContainer div:nth-child(2) h3{
+    margin-bottom: 55px;
+}
+.guidContainer div:nth-child(2) div{
+    position: relative;
+    margin-bottom: 350px;
+}
+.guidContainer div:nth-child(2) img{
+    width: 100%;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(1){
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 540px;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(1) strong{
+    line-height: 51px;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(1) p{
+    color: var(--gs8);
+    width: 410px;
+    margin-top: 50px;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(1) p mark{
+    color: var(--os1);
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(1) a{
+    display: inline-block;
+    padding: 25px 85px;
+    background-color: var(--os1);
+    color: var(--gs1);
+    margin-top: 50px;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(2){
+    position: absolute;
+    top: 70px;
+    right: 460px;
+    line-height: 55px;
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(2) p{
+    color: var(--gs5);
+}
+.guidContainer div:nth-child(2)>div div:nth-of-type(2) mark{
+    color: var(--os1);
+}
+/* guideMap Fin */
 
 @media screen and (min-width: 1280px) {
     div .linemg~div,
@@ -721,13 +870,14 @@
         height: 25px;
         content: '';
         position: absolute;
-        top: -4px;
+        top: 20px;
     }
     div .everContainer nav div input{
         color: var(--gs11);
         background-color: transparent;
         border: none;
         padding-left: 30px;
+        height: 65px;
     }
     div .everContainer nav div::after{
         content: '';
@@ -742,13 +892,13 @@
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
         right: 30px;
-        top: 5px;
+        top: 27px;
     }
     div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
         right: 30px;
-        top: 5px;
+        top: 27px;
     }
     div .everContainer nav a{
         width: 10%;
@@ -767,7 +917,7 @@
     div .everContainer nav div:first-of-type ol{
         position: absolute;
         width: 257px;
-        top: 41px;
+        top: 64px;
         padding: 20px 0 20px 30px;
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
@@ -775,19 +925,23 @@
     div .everContainer nav div:last-of-type ol{
         position: absolute;
         width: 257px;
-        top: 41px;
+        top: 64px;
         padding: 20px 0 20px 30px;
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
     }
     div .everContainer nav div ol li:not(:last-child){
+        display: block;
         margin-bottom: 20px;
     }
     div .everContainer nav div ol li a{
-        color: var(--gs9);
+        color: var(--gs7);
+        display: block;
+        width: 100%;
     }
     div .everContainer nav div ol li a:hover{
         color: var(--gs11);
+        /* font-weight: 600; */
     }
 }
 /* ?desktop */
