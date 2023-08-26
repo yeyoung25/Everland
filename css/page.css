@@ -396,7 +396,7 @@
     display: flex;
     width: 240px;
     justify-content: space-between;
-    padding: 125px 0 350px 0;
+    padding-top: 125px;
 }
 .newContainer .paging>a{
     font-size: 0;
@@ -455,7 +455,7 @@
 }
 .newContainer article .innerPager{
     display: flex;
-    padding: 110px 20px 350px;
+    padding: 110px 20px 0;
     width: 100%;
     border-top: 1px solid var(--gs5);
     box-sizing: border-box;
@@ -494,11 +494,18 @@
     line-height: 60px;
 }
 /* newNotice detail Fin */
+.howContainer .detail_contents{
+    /* margin: 0 auto; */
+    text-align: center;
+}
 .howContainer .detail_contents>div{
-    margin: 30px 25px 350px;
+    margin: 30px 0 0;
     display: inline-block;
     background-color: var(--gs2);
     padding: 0  35px 65px 35px;
+    width: 95.744%;
+    box-sizing: border-box;
+    position: relative;
 }
 .howContainer .detail_contents div>p:first-child{
     color: var(--vs9);
@@ -506,9 +513,6 @@
     line-height: 50px;
     text-align: center;
     margin: 65px auto;
-}
-.howContainer .detail_contents>div{
-    position: relative;
 }
 .howContainer .detail_contents>div img{
     display: inline-block;
@@ -541,10 +545,13 @@
     text-align: left;
     width: 350px;
 }
+.howContainer .detail_contents div dl{
+    text-align: left;
+}
 .howContainer .detail_contents div dl dt{
     background: url('../images/how_text.png') no-repeat left;
     margin-bottom: 30px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 .howContainer .detail_contents div dl dd{
     padding-left: 25px;
@@ -562,14 +569,17 @@
     background: url('../images/how_text.png') no-repeat left;
     margin-bottom: 55px;
     padding-left: 30px;
+    text-align: left;
 }
 .howContainer .detail_contents div .safetyBox{
     padding: 40px 0 40px 320px;
     background: url('../images/how_safety.png') no-repeat left ;
     background-position: 40px;
-    width: 955px;
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--gs8);
     border-radius: 10px;
+    text-align: left;
 }
 .howContainer .detail_contents div .safetyBox h4{
     color: var(--rs1);
@@ -613,20 +623,18 @@
 #handicappedPopUp{
     background-color: var(--gs1);
     border: 3px solid var(--os1);
-    width: 1170px;
-    height: 100%;
+    position: relative;
+    width: 60.937%;
+    height: 100vh;
     padding: 80px 30px 90px;
     box-sizing: border-box;
-    position: relative;
     margin: 0 auto;
     position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
     overflow: scroll;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 #handicappedPopUp h2{
     margin-bottom: 50px;
@@ -651,9 +659,6 @@
 #handicappedPopUp div:first-of-type{
     margin-top: 50px;
 }
-#handicappedPopUp div{
-    margin-bottom: 55px;
-}
 #handicappedPopUp div:first-of-type p{
     margin-bottom: 35px;
     line-height: 30px;
@@ -661,8 +666,23 @@
 #handicappedPopUp div:first-of-type p>b{
     display: block;
 }
+#handicappedPopUp div:nth-of-type(2){
+    margin-bottom: 40px;
+    line-height: 30px;
+}
 #handicappedPopUp div:nth-of-type(3) ol li{
     margin-bottom: 40px;
+    line-height: 30px;
+}
+#handicappedPopUp div:nth-of-type(3) mark{
+    display: block;
+    color: red;
+    margin-bottom: 15px;
+}
+#handicappedPopUp div:nth-of-type(3) mark:last-of-type{
+    margin-bottom: 50px;
+}
+#handicappedPopUp div:nth-of-type(3) p{
     line-height: 30px;
 }
 /* howToUse Fin */
@@ -673,18 +693,75 @@
 }
 .operContainer div:nth-child(2) div ol{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    border: 1px solid var(--os1);
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* border-collapse: collapse;
+    border-spacing: 0; */
 }
 .operContainer div:nth-child(2) div ol li{
     border: 1px solid var(--gs11);
-    width: 10.491%;
+    width: 14.286%;
     box-sizing: border-box;
+    border: 1px solid var(--gs4);
+    height: 160px;
+}
+.operContainer div:nth-child(2) div ol li:nth-child(1){
+    border-radius: 20px 0 0 0;
+    border: none;
+}
+.operContainer div:nth-child(2) div ol li:nth-child(7){
+    border-radius: 0 20px 0 0;
+    border: none;
+}
+.operContainer div:nth-child(2) div ol li:nth-child(43){
+    border-radius: 0 0 0 20px;
+}
+.operContainer div:nth-child(2) div ol li:nth-child(49){
+    border-radius: 0 0 20px 0;
+}
+.operContainer div:nth-child(2) div ol li:nth-child(1),
+.operContainer div:nth-child(2) div ol li:nth-child(2),
+.operContainer div:nth-child(2) div ol li:nth-child(3),
+.operContainer div:nth-child(2) div ol li:nth-child(4),
+.operContainer div:nth-child(2) div ol li:nth-child(5),
+.operContainer div:nth-child(2) div ol li:nth-child(6),
+.operContainer div:nth-child(2) div ol li:nth-child(7){
+    background-color: var(--os1);
+    text-align: center;
+    color: var(--gs1);
+    padding: 25px 0;
+    height: 70px;
+    border-top: none;
+}
+.operContainer div:nth-child(2) div ol li strong{
+    display: block;
+    margin: 15px 0 30px 15px;
+}
+.operContainer div:nth-child(2) div ol li b{
+    display: block;
+    color: var(--gs7);
+    margin-left: 15px;
+}
+.operContainer div:nth-child(2) p{
+    text-align: center;
+}
+.operContainer div:nth-child(2) p:first-of-type{
+    color: var(--os1);
+    margin-bottom: 60px;
+}
+.operContainer div:nth-child(2) p:last-of-type{
+    color: var(--gs9);
+}
+.operContainer div:nth-child(2) p:last-of-type strong{
+    color: var(--gs11);
 }
 
 /* operatingTime Fin */
 .susContainer div:nth-child(2)>div:first-of-type{
-    margin: 110px 0 110px;
-
+    margin: 110px 0;
 }
 .susContainer div:nth-child(2)>div:first-of-type mark{
     display: block;
@@ -694,26 +771,44 @@
 .susContainer div:nth-child(2)>div:first-of-type p:not(:last-child){
     margin-bottom: 20px;
 }
-.susContainer div:nth-child(2)>div:last-of-type{
-    margin-bottom: 350px;
-}
 .susContainer div:nth-child(2)>div:last-of-type strong{
     display: block;
     text-align: center;
     color: var(--os1);
     margin-bottom: 55px;
 }
+.susContainer div:nth-child(2)>div:last-of-type div table{
+    width: 46.241%;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table caption{
+    border-top: 2px solid var(--os1);
+    background-color: rgba(255, 113, 5, 0.3);
+    line-height: 75px;
+}
 .susContainer div:nth-child(2)>div:last-of-type div table tr td{
-    border: 1px solid var(--gs11);
+    border-bottom: 1px solid var(--gs9);
+    border-right: 1px solid var(--gs9);
+    padding: 25px 0;
+    text-align: center;
+    line-height: 24px;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table tr td:last-child{
+    border-right: none;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table tr th{
+    border: 1px solid var(--gs9);
+    border-left: none;
+    background-color: rgba(197, 197, 197, 0.3);
+    padding: 25px 0;
+}
+.susContainer div:nth-child(2)>div:last-of-type div table tr th:last-child{
+    border-right: none;
 }
 .susContainer div:nth-child(2)>div:last-of-type div table tr td mark{
     color: var(--os1);
 }
-.susContainer div:nth-child(2)>div:last-of-type div table:not(:nth-child(2)){
+.susContainer div:nth-child(2)>div:last-of-type div table:not(:last-of-type){
     margin-bottom: 55px;
-}
-.susContainer div:nth-child(2)>div:last-of-type div table:nth-child(2){
-    margin-bottom: 30px;
 }
 .susContainer div:nth-child(2)>div:last-of-type::after{
     content: '';
@@ -722,16 +817,113 @@
 }
 .susContainer div:nth-child(2)>div:last-of-type .left{
     float: left;
+    width: 46.241%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .left table{
+    width: 100%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .left table:nth-child(2){
+    margin-bottom: 30px;
+}
+.susContainer div:nth-child(2)>div:last-of-type .left table tr td{
+    width: 50%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .right{
+    float: right;
+    width: 46.241%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .right table{
+    width: 100%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .right table tr td{
+    width: 40%;
+}
+.susContainer div:nth-child(2)>div:last-of-type .right table tr td:last-child{
+    width: 20%;
 }
 .susContainer div:nth-child(2)>div:last-of-type .left p{
     width: 430px;
-
+    line-height: 30px;
 }
-
 /* suspensionNotice Fin */
-.amanContainer>div:nth-child(2){
-    margin-bottom: 350px;
+.trafContainer div:nth-child(2) h3{
+    text-align: center;
+    padding: 95px 0;
 }
+.trafContainer div:nth-child(2) ul{
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+    cursor: pointer;
+}
+.trafContainer div:nth-child(2) ul li{
+    border-bottom: 1px solid var(--gs11);
+    /* border: 1px solid var(--gs11); */
+    width: 25%;
+    text-align: center;
+    line-height: 100px;
+    color: var(--gs5);
+    /* display: none; */
+}
+.trafContainer div:nth-child(2) ul li:not(:last-child)::after{
+    border-right: 1px solid var(--gs5);
+    content: '';
+    position: absolute;
+    right: 0;
+}
+.trafContainer div:nth-child(2) ul li.active{
+    border: 1px solid var(--gs11);
+    border-bottom: none;
+    color: var(--gs11);
+}
+.trafContainer div:nth-child(2)>div.active{
+    display: block;
+}
+.trafContainer div:nth-child(2)>div{
+    display: none;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li strong{
+    display: block;
+    margin-bottom: 60px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li strong mark{
+    color: var(--os1);
+}
+.trafContainer div:nth-child(2) .publicTransport ol li strong mark:first-child{
+    margin-right: 35px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:first-child{
+    margin-bottom: 150px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before{
+    content: '▶';
+    width: 10px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
+    margin-bottom: 30px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
+    margin-bottom: 20px;
+    color: var(--gs8);
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
+    display: block;
+    margin-bottom: 30px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
+    margin-bottom: 30px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
+    margin-bottom: 15px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
+    margin: 100px 0 40px;
+}
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
+    margin-top: 50px;
+}
+
+/* amenities Fin */
 .amanContainer div:nth-child(2) strong{
     display: block;
     margin: 110px 0 30px;
@@ -760,9 +952,12 @@
 .amanContainer div:nth-child(2) ul li dl dd{
     width: 820px;
     line-height: 24px;
+    display: flex;
 }
 .amanContainer div:nth-child(2) ul li dl dd::before{
-    content: '- ';
+    content: '-';
+    display: block;
+    margin-right: 5px;
 }
 /* amenities Fin */
 .guidContainer div:nth-child(2) h3{
@@ -770,7 +965,6 @@
 }
 .guidContainer div:nth-child(2) div{
     position: relative;
-    margin-bottom: 350px;
 }
 .guidContainer div:nth-child(2) img{
     width: 100%;
@@ -818,12 +1012,17 @@
     div article{
         max-width: 1410px;
         margin: 0 auto;
+        /* padding: 25px; */
+        box-sizing: border-box;
     }
     div div:nth-child(2) .linebtm,
     div article .linebtm{
         text-align: center;
         padding: 95px 0;
         border-bottom: 1px solid var(--gs5);
+    }
+    .conPbtm{
+        padding-bottom: 350px;
     }
     div .guide{
         background: url('../images/ever_Header01.png') no-repeat center / cover;
@@ -916,16 +1115,18 @@
     }
     div .everContainer nav div:first-of-type ol{
         position: absolute;
-        width: 257px;
+        width: 100%;
         top: 64px;
+        box-sizing: border-box;
         padding: 20px 0 20px 30px;
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
     }
     div .everContainer nav div:last-of-type ol{
         position: absolute;
-        width: 257px;
+        width: 100%;
         top: 64px;
+        box-sizing: border-box;
         padding: 20px 0 20px 30px;
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
