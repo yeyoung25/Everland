@@ -623,10 +623,11 @@
 #handicappedPopUp{
     background-color: var(--gs1);
     border: 3px solid var(--os1);
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.7);
     position: relative;
     width: 60.937%;
     height: 100vh;
-    padding: 80px 30px 90px;
+    padding: 40px 30px 90px;
     box-sizing: border-box;
     margin: 0 auto;
     position: fixed;
@@ -639,7 +640,7 @@
 #handicappedPopUp h2{
     margin-bottom: 50px;
 }
-#handicappedPopUp .backBtn{
+#handicappedPopUp .closemodel{
     background: url('../images/how_pre.png') no-repeat center;
     width: 30px;
     height: 30px;
@@ -702,11 +703,11 @@
     border-spacing: 0; */
 }
 .operContainer div:nth-child(2) div ol li{
-    border: 1px solid var(--gs11);
     width: 14.286%;
     box-sizing: border-box;
     border: 1px solid var(--gs4);
     height: 160px;
+    justify-content: space-between;
 }
 .operContainer div:nth-child(2) div ol li:nth-child(1){
     border-radius: 20px 0 0 0;
@@ -837,6 +838,8 @@
 }
 .susContainer div:nth-child(2)>div:last-of-type .right table tr td{
     width: 40%;
+    display: table-cell; 
+    vertical-align:middle; 
 }
 .susContainer div:nth-child(2)>div:last-of-type .right table tr td:last-child{
     width: 20%;
@@ -863,13 +866,14 @@
     text-align: center;
     line-height: 100px;
     color: var(--gs5);
-    /* display: none; */
 }
 .trafContainer div:nth-child(2) ul li:not(:last-child)::after{
-    border-right: 1px solid var(--gs5);
-    content: '';
+    display: inline-block;
     position: absolute;
+    content: '';
+    top: 0;
     right: 0;
+    border-right: 1px solid var(--gs5);
 }
 .trafContainer div:nth-child(2) ul li.active{
     border: 1px solid var(--gs11);
@@ -896,23 +900,33 @@
     margin-bottom: 150px;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before{
+    display: inline-block;
     content: '▶';
-    width: 6px;
-    height: 9px;
+    font-size: 10px;
+    line-height: 24px;
+    margin-right: 10px;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
     margin-bottom: 30px;
+    display: flex;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
     margin-bottom: 20px;
     color: var(--gs8);
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
-    display: block;
+    display: flex;
     margin-bottom: 30px;
 }
+.trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before{
+    display: inline-block;
+    content: '▶';
+    font-size: 10px;
+    line-height: 24px;
+    margin-right: 10px;
+}
 .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
     margin-bottom: 15px;
@@ -927,19 +941,33 @@
     margin-bottom: 60px;
 }
 .trafContainer div:nth-child(2) .byCar dl dt::before{
+    display: inline-block;
     content: '▶';
-    width: 6px;
-    height: 9px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 5px;
 }
 .trafContainer div:nth-child(2) .byCar dl dt{
     margin-bottom: 30px;
+    display: flex;
 }
-
 .trafContainer div:nth-child(2) .byCar dl dd{
     margin-bottom: 20px;
 }
+.trafContainer div:nth-child(2) .byCar figure{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.trafContainer div:nth-child(2) .byCar figure figcaption::before{
+    display: inline-block;
+    content: '▶';
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 5px;
+}
 .trafContainer div:nth-child(2) .byCar figure figcaption{
-    order: -1;
+    display: flex;
+    margin-bottom: 30px;
 }
 .trafContainer div:nth-child(2) .kakaoT b{
     display: block;
@@ -977,12 +1005,15 @@
     margin-bottom: 60px;
 }
 .trafContainer div:nth-child(2) .regularBus dl dt::before{
+    display: inline-block;
     content: '▶';
-    width: 6px;
-    height: 9px;
+    font-size: 10px;
+    line-height: 24px;
+    margin-right: 5px;
 }
 .trafContainer div:nth-child(2) .regularBus dl dt{
     margin-bottom: 35px;
+    display: flex;
 }
 .trafContainer div:nth-child(2) .regularBus dl dd{
     line-height: 25px;
