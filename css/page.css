@@ -897,7 +897,8 @@
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before{
     content: '▶';
-    width: 10px;
+    width: 6px;
+    height: 9px;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
     margin-bottom: 30px;
@@ -922,6 +923,80 @@
 .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
     margin-top: 50px;
 }
+.trafContainer div:nth-child(2) .byCar dl{
+    margin-bottom: 60px;
+}
+.trafContainer div:nth-child(2) .byCar dl dt::before{
+    content: '▶';
+    width: 6px;
+    height: 9px;
+}
+.trafContainer div:nth-child(2) .byCar dl dt{
+    margin-bottom: 30px;
+}
+
+.trafContainer div:nth-child(2) .byCar dl dd{
+    margin-bottom: 20px;
+}
+.trafContainer div:nth-child(2) .byCar figure figcaption{
+    order: -1;
+}
+.trafContainer div:nth-child(2) .kakaoT b{
+    display: block;
+    margin-bottom: 50px;
+}
+.trafContainer div:nth-child(2) .kakaoT b:first-child{
+    display: block;
+    color: var(--os1);
+    margin-bottom: 45px;
+}
+.trafContainer div:nth-child(2) .kakaoT span{
+    display: inline-block;
+    margin-left: 30px;
+}
+.trafContainer div:nth-child(2) .kakaoT p{
+    display: block;
+    color: var(--gs8);
+    width: 53.546%;
+    line-height: 26px;
+    margin-bottom: 155px;
+}
+.trafContainer div:nth-child(2) .kakaoT dl:not(:last-child){
+    margin-bottom: 70px;
+}
+.trafContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
+    margin-bottom: 150px;
+}
+.trafContainer div:nth-child(2) .kakaoT dl dt{
+    margin-bottom: 50px;
+}
+.trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
+    margin-bottom: 25px;
+}
+.trafContainer div:nth-child(2) .regularBus dl{
+    margin-bottom: 60px;
+}
+.trafContainer div:nth-child(2) .regularBus dl dt::before{
+    content: '▶';
+    width: 6px;
+    height: 9px;
+}
+.trafContainer div:nth-child(2) .regularBus dl dt{
+    margin-bottom: 35px;
+}
+.trafContainer div:nth-child(2) .regularBus dl dd{
+    line-height: 25px;
+    color: var(--gs9);
+
+}
+.trafContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
+    margin-bottom: 20px;
+}
+.trafContainer div:nth-child(2) .regularBus b{
+    display: block;
+    margin-bottom: 60px;
+}
+
 
 /* amenities Fin */
 .amanContainer div:nth-child(2) strong{
