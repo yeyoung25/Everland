@@ -874,7 +874,7 @@
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    right: 0;
+    right: -1px;
     width: 1px;
     height: 22px;
     border-right: 1px solid var(--gs5);
@@ -1056,7 +1056,7 @@
 }
 .amanContainer div:nth-child(2) ul li dl{
     float: left;
-    width: 58.156%;
+    width: 60%;
 }
 .amanContainer div:nth-child(2) ul li dl dt{
     margin-bottom: 30px;
@@ -1128,9 +1128,11 @@
     width: 22.340%;
 }
 .usagContainer div:nth-child(2) strong a::after{
-    background: url('../images/usageA.png') no-repeat center / content;
+    background: url('../images/usageA.png') no-repeat center / contain;
     content: '';
+    display: inline-block;
     width: 8px;
+    height: 12px;
 }
 .usagContainer div:nth-child(2) strong a{
     display: inline-block;
