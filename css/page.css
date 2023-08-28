@@ -858,29 +858,35 @@
 .trafContainer div:nth-child(2) ul{
     display: flex;
     margin-bottom: 100px;
-    position: relative;
     cursor: pointer;
 }
 .trafContainer div:nth-child(2) ul li{
     border-bottom: 1px solid var(--gs11);
-    /* border: 1px solid var(--gs11); */
+    position: relative;
     width: 25%;
     text-align: center;
     line-height: 100px;
     color: var(--gs5);
 }
 .trafContainer div:nth-child(2) ul li:not(:last-child)::after{
+    content: '';
     display: inline-block;
     position: absolute;
-    content: '';
-    top: 0;
+    transform: translateY(-50%);
+    top: 50%;
     right: 0;
+    width: 1px;
+    height: 22px;
     border-right: 1px solid var(--gs5);
 }
 .trafContainer div:nth-child(2) ul li.active{
     border: 1px solid var(--gs11);
     border-bottom: none;
     color: var(--gs11);
+}
+.trafContainer div:nth-child(2) ul li.active::after{
+    content: none;
+    border: 0;
 }
 .trafContainer div:nth-child(2)>div.active{
     display: block;
@@ -1167,9 +1173,9 @@
 @media screen and (min-width: 1280px) {
     div .linemg~div,
     div article{
-        max-width: 1410px;
+        max-width: 1458px;
         margin: 0 auto;
-        /* margin: 24px; */
+        padding: 0 24px;
         box-sizing: border-box;
     }
     div div:nth-child(2) .linebtm,
@@ -1264,6 +1270,7 @@
         width: 45%; 
         min-width: 225px;
         position: relative;
+        background-color: var(--gs1);
     }
     div .everContainer nav div ol{
         display: none;
