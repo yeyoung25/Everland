@@ -621,7 +621,14 @@
     display: block;
 }
 #handicappedPopUp{
+    width: 100%;
+    height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    /* position: fixed;
     background-color: var(--gs1);
     border: 3px solid var(--os1);
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.7);
@@ -634,10 +641,25 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    overflow: scroll;
+    overflow: scroll; */
 }
 #handicappedPopUp div{
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.7);
     position: relative;
+    background-color: var(--gs1);
+    border: 3px solid var(--os1);
+    position: absolute;
+    width: 60.937%;
+    height: 100vh;
+    padding: 40px 30px 90px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    overflow: scroll;
 }
 #handicappedPopUp div h2{
     margin-bottom: 50px;
