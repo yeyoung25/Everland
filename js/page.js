@@ -1,8 +1,9 @@
 $(document).ready(function(){
   justToggle($("div div:first-child nav div"));
-  howToggle($(".howContainer .detail_contents div .safetyBox div input"));
-  backBtn($(".backBtn"));
+  // howToggle($(".howContainer .detail_contents div .safetyBox div input"));
+  // howToggleclose($(".#handicappedPopUp .closemodel"));
   trafTab();
+  backBtn($(".backBtn"));
 });
 
 
@@ -11,13 +12,12 @@ function justToggle(button){
     $(this).toggleClass("active");
   });
 }
-function howToggle(button){
-  $(button).click(function(){
-    $('#handicappedPopUp').addClass('active');
-    $('.closemodel').removeClass('active');
-  });
-}
-
+// function howToggle(button){
+//   $(button).click(function(){
+//     $('#handicappedPopUp').addClass('active');
+//     $('.#handicappedPopUp .closemodel').removeClass('active');
+//   });
+// }
 
 
 function trafTab(){
