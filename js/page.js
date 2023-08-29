@@ -11,25 +11,25 @@ function justToggle(button){
     $(this).toggleClass("active");
   });
 }
-// function howToggle(button){
-//   $(button).click(function(){
-//     $('#handicappedPopUp').addClass('active');
-//     $('#handicappedPopUp .closemodel').removeClass('active');
-//   });
-// }
+
 function howToggle(button){
+  var currentPopup = null;
   $(button).click(function(){
-    $('#handicappedPopUp').addClass('active');
-  });
-  $("#handicappedPopUp > div").click(function(){
-    return false;
-  });
-  $("#handicappedPopUp").click(function(){
-    $('#handicappedPopUp').removeClass('active');
+    currentPopup = "#" + $(this).attr("data-popup");
+    $(currentPopup).addClass('active');
   });
   $(".closemodel").click(function(){
-    $('#handicappedPopUp').removeClass('active');
+    $(currentPopup).removeClass('active');
   });
+  // $("#handicappedPopUp > div").click(function(){
+  //   return false;
+  // });
+  // $("#handicappedPopUp").click(function(){
+  //   $('#handicappedPopUp').removeClass('active');
+  // });
+  // $(".closemodel").click(function(){
+  //   $('#handicappedPopUp').removeClass('active');
+  // });
 }
 
 
