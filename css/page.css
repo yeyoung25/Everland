@@ -1439,89 +1439,298 @@
     display: block;
     margin-top: 30px;
     text-align: center;
+    line-height: 30px;
 }
 /* affiliateCard Fin */
-
-
-
-
-
+.speContainer div:nth-child(2) div{
+    display: flex;
+}
+.speContainer div:nth-child(2) div div{
+    height: 264px;
+    margin: 100px 0 130px;
+}
+.speContainer div:nth-child(2) div div:first-child{
+    background: url('../images/specialEverland.png')no-repeat center / contain;
+    position: relative;
+    width: 43.617%;
+    margin-left: 80px;
+    margin-right: 1.063%;
+}
+.speContainer div:nth-child(2) div div:first-child span{
+    position: absolute;
+    top: 52px;
+    left: 4.836%;
+    background-color: #c69e00;
+    padding: 12px 23px;
+    border-radius: 25px;
+    color: var(--gs1);
+}
+.speContainer div:nth-child(2) div div:first-child p{
+    position: absolute;
+    top: 120px;
+    left: 4.836%;
+    color: #705900;
+}
+.speContainer div:nth-child(2) div div:first-child p strong{
+    display: block;
+    margin-top: 15px;
+    color: #705900;
+}
+.speContainer div:nth-child(2) div div:first-child b{
+    position: absolute;
+    top: 210px;
+    left: 4.836%;
+    color: #705900;
+}
+.speContainer div:nth-child(2) div div:last-child{
+    background: url('../images/specialAsiana.png')no-repeat center / contain;
+    position: relative;
+    margin-right: 80px;
+    width: 43.617%;
+}
+.speContainer div:nth-child(2) div div:last-child span{
+    position: absolute;
+    top: 52px;
+    left: 4.836%;
+    background-color: #bfa0a0;
+    padding: 12px 23px;
+    border-radius: 25px;
+}
+.speContainer div:nth-child(2) div div:last-child p{
+    position: absolute;
+    top: 120px;
+    left: 4.836%;
+    color: var(--gs1);
+}
+.speContainer div:nth-child(2) div div:last-child p strong{
+    display: block;
+    margin-top: 15px;
+    color: var(--gs1);
+}
+.speContainer div:nth-child(2) div div:last-child b{
+    position: absolute;
+    top: 210px;
+    left: 4.836%;
+    color: var(--gs1);
+}
+.speContainer div:nth-child(2) .speslider{
+    display: flex;
+    margin-bottom: 150px;
+    padding: 0 80px;
+}
+.speContainer div:nth-child(2) .speslider li{
+    position: relative;
+    width: 15.177%;
+    height: 343px;
+    margin: 0 auto;
+}
+.speContainer div:nth-child(2) .speslider li:first-child{
+    background: url('../images/speslider01.png') no-repeat center / cover;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(2){
+    background: url('../images/speslider02.png') no-repeat center / cover;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(3){
+    background: url('../images/speslider03.png') no-repeat center / cover;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(3) span:last-child{
+    top: 210px;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(4){
+    background: url('../images/speslider04.png') no-repeat center / cover;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(4) span:last-child{
+    top: 150px;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(5){
+    background: url('../images/speslider05.png') no-repeat center / cover;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(5) span:last-child{
+    display: block;
+    text-align: center;
+    top: 150px;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(6){
+    background: url('../images/speslider06.png') no-repeat center / cover;
+    display: none;
+}
+.speContainer div:nth-child(2) .speslider li:nth-child(7){
+    background: url('../images/speslider07.png') no-repeat center / cover;
+    display: none;
+}
+.speContainer div:nth-child(2) .speslider li span{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 30px;
+    left: 22px;
+}
+.speContainer div:nth-child(2) .speslider li p{
+    position: absolute;
+    top: 80px;
+    left: 22px;
+    line-height: 30px;
+}
+.speContainer div:nth-child(2) .speslider li span:last-child{
+    position: absolute;
+    left: 22px;
+}
+.speContainer div:nth-child(2) ul:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    margin-top: 140px;
+}
+.speContainer div:nth-child(2) ul:last-child::before{
+    width: 23.84%;
+    height: 318px;
+    content: '';
+    order: 1;
+}
+.speContainer div:nth-child(2) ul:last-child::after{
+    width: 23.84%;
+    height: 318px;
+    content: '';
+    order: 1;
+}
+.speContainer div:nth-child(2) ul:last-child{
+    justify-content: space-between;
+}
+.speContainer div:nth-child(2) ul:last-child li{
+    height: 318px;
+    margin-bottom: 20px;
+}
+.speContainer div:nth-child(2) ul:last-child li:first-child{
+    background: url('../images/spediscount01.png') no-repeat center / contain;
+    width: 49.2%;
+    position: relative;
+}
+.speContainer div:nth-child(2) ul:last-child li:first-child span:first-child{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: var(--os8);
+}
+.speContainer div:nth-child(2) ul:last-child li:first-child b{
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    color: var(--os1);
+}
+.speContainer div:nth-child(2) ul:last-child li:first-child span{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: var(--os1);
+}
+.speContainer div:nth-child(2) ul:last-child li:first-child strong{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: var(--os8);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(2){
+    background: url('../images/spediscount02.png') no-repeat center / contain;
+    width: 49.2%;
+    position: relative;
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(2) span:first-child{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: var(--os8);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(2) b{
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    color: var(--os1);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(2) span{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: var(--os1);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(2) strong{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: var(--os8);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(n+3){
+    width: 23.84%;
+    height: 318px;
+    border-radius: 20px;
+    border: 3px solid rgba(98, 24, 102, 0.3);
+    background-color: rgba(228, 228, 228, 0.3);
+    padding: 40px 0 40px 35px;
+    box-sizing: border-box;
+    position: relative;
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(n+3) span:first-child{
+    display: block;
+    margin-bottom: 20px;
+    color: var(--vs9);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(n+3) b{
+    display: block;
+    margin-bottom: 25px;
+    line-height: 35px;
+    color: var(--vs9);
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(n+3) span:nth-child(3){
+    display: block;
+    color: var(--gs8);
+    margin-bottom: 50px;
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(n+3) strong{
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(19){
+    position: relative;
+}
+.speContainer div:nth-child(2) ul:last-child li:nth-child(19)::after{
+    background: url('../images/specialRain.png') no-repeat center;
+    content: '';
+    width: 118px;
+    height: 118px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+.speContainer div:nth-child(2) ul:last-child li:last-child{
+    position: relative;
+}
+.speContainer div:nth-child(2) ul:last-child li:last-child::after{
+    background: url('../images/specialgift.png') no-repeat center;
+    content: '';
+    width: 118px;
+    height: 118px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
 /* specialPromotion Fin */
 .experContainer div:nth-child(2) ul li{
     background-color: var(--gs11);
     position: relative;
-}
-.experContainer div:nth-child(2) ul li:first-child::after{
-    background: url('../images/experience_lost.png') no-repeat center / contain;
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 1000px;
-    opacity: 0.4;
-    transition: all 1.2s;
-    width: 100%;
-}
-.experContainer div:nth-child(2) ul li{
     overflow: hidden;
     box-sizing: border-box;
 }
-.experContainer div:nth-child(2) ul li:first-child strong{
-    position: absolute;
-    top: 150px;
-    right: 25%;
-}
-.experContainer div:nth-child(2) ul li:first-child p{
-    position: absolute;
-    top: 265px;
-    right: 13.281%;
-}
-.experContainer div:nth-child(2) ul li:first-child a{
-    position: absolute;
-    bottom: 110px;
-    right: 13.281%;  
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) strong{
-    position: absolute;
-    top: 150px;
-    right: 25%;
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) p{
-    position: absolute;
-    top: 265px;
-    right: 13.281%;
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) a{
-    position: absolute;
-    bottom: 110px;
-    right: 13.281%;  
-}
-.experContainer div:nth-child(2) ul li:last-child strong{
-    position: absolute;
-    top: 150px;
-    right: 25%;
-}
-.experContainer div:nth-child(2) ul li:last-child p{
-    position: absolute;
-    top: 265px;
-    right: 13.281%;
-}
-.experContainer div:nth-child(2) ul li:last-child a{
-    position: absolute;
-    bottom: 110px;
-    right: 13.281%;  
+.experContainer div:nth-child(2) ul li pre{
+    z-index: 100;
+    color: var(--gs1);
+    line-height: 25px;
+    z-index: 100;
 }
 .experContainer div:nth-child(2) ul li strong{
     display: block;
     margin-bottom: 70px;
     z-index: 100;
-}
-.experContainer div:nth-child(2) ul li p{
-    color: var(--gs1);
-    width: 37.239%;
-    z-index: 100;
-}
-.experContainer div:nth-child(2) ul li:first-child strong{
-    color: var(--os1);
 }
 .experContainer div:nth-child(2) ul li a{
     background: url('../images/exper_go.png') no-repeat 150px center;
@@ -1531,6 +1740,32 @@
     padding: 20px 120px 20px 70px;
     width: 35px;
     z-index: 100;
+}
+.experContainer div:nth-child(2) ul li:first-child::after{
+    background: url('../images/experience_lost.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1000px;
+    opacity: 0.4;
+    transition: all 1.2s;
+}
+.experContainer div:nth-child(2) ul li:first-child strong{
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    color: var(--os1);
+}
+.experContainer div:nth-child(2) ul li:first-child pre{
+    position: absolute;
+    top: 265px;
+    right: 13.281%;
+    /* width: 37.239%; */
+}
+.experContainer div:nth-child(2) ul li:first-child a{
+    position: absolute;
+    bottom: 110px;
+    right: 13.281%;  
 }
 .experContainer div:nth-child(2) ul li:nth-child(2)::after{
     background: url('../images/experience_safari.png') no-repeat center / contain;
@@ -1542,10 +1777,20 @@
     transition: all 1.2s;
 }
 .experContainer div:nth-child(2) ul li:nth-child(2) strong{
+    position: absolute;
+    top: 150px;
+    left: 13.281%;
     color: var(--rs1);
 }
-.experContainer div:nth-child(2) ul li:nth-child(2) p{
-    color: var(--gs1);
+.experContainer div:nth-child(2) ul li:nth-child(2) pre{
+    position: absolute;
+    top: 265px;
+    left: 13.281%;
+}
+.experContainer div:nth-child(2) ul li:nth-child(2) a{
+    position: absolute;
+    bottom: 110px;
+    right: 13.281%;
 }
 .experContainer div:nth-child(2) ul li:last-child::after{
     background: url('../images/experience_texpress.png') no-repeat center / contain;
@@ -1556,8 +1801,23 @@
     height: 1000px;
     transition: all 1.2s;
 }
+.experContainer div:nth-child(2) ul li:last-child strong{
+    position: absolute;
+    top: 150px;
+    right: 25%;
+}
+.experContainer div:nth-child(2) ul li:last-child pre{
+    position: absolute;
+    top: 265px;
+    right: 13.281%;
+}
+.experContainer div:nth-child(2) ul li:last-child a{
+    position: absolute;
+    bottom: 110px;
+    right: 13.281%;  
+}
 .experContainer div:nth-child(2) ul li:hover::after{
-    /* opacity: 0.7; */
+    opacity: 0.5;
     transform: scale(1.1);
 }
 .experContainer div:nth-child(2) ul li:last-child strong{

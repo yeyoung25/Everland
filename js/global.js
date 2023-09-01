@@ -3,6 +3,7 @@ $(document).ready(function () {
   customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false);
   customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false);
   customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false);
+  // customSlider(".speslider",'horizontal',false,0,0,false,true,5,5,0,0,null,'short',false);
   headerAct();
   menuButton();
   gotop();
