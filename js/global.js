@@ -1,9 +1,15 @@
 $(document).ready(function () {
-  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false);
-  customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false);
-  customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false);
-  customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false);
-  // customSlider(".speslider",'horizontal',false,0,0,false,true,5,5,0,0,null,'short',false);
+  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
+  customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0);
+  customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false,0);
+  customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false,0);
+  customSlider(".speslider",'horizontal',false,0,0,false,true,5,1,214,45,null,'full',false,0);
+  customSlider(".pagerSliderBox01 .fadeSlider",'horizontal',false,0,0,true,false,1,1,0,0,null,'full',false,0);
+  customSlider(".pagerSliderBox01 .thumbPager",'horizontal',false,0,0,true,false,3,1,0,0,null,'full',false,0);
+  customSlider(".pagerSliderBox02 .fadeSlider",'horizontal',false,0,0,true,false,1,1,0,0,null,'full',false,0);
+  customSlider(".pagerSliderBox02 .thumbPager",'horizontal',false,0,0,true,false,3,1,0,0,null,'full',false,0);
+  customSlider(".pagerSliderBox03 .fadeSlider",'horizontal',false,0,0,true,false,1,1,0,0,null,'full',false,0);
+  customSlider(".pagerSliderBox03 .thumbPager",'horizontal',false,0,0,true,false,3,1,0,0,null,'full',false,0);
   headerAct();
   menuButton();
   gotop();
@@ -21,7 +27,7 @@ function mainHeader(){
   }
 }
 
-function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType,slideshrinkItems){
+function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType,slideshrinkItems,slidemoveSlides){
     $(sliderName).bxSlider({
         mode: modeVal,
         auto: slideAuto,
@@ -35,7 +41,8 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
         slideMargin: slideSlideMargin,
         pagerCustom: slidePagerCustom,
         pagerType: slidepagerType,
-        shrinkItems: slideshrinkItems
+        shrinkItems: slideshrinkItems,
+        moveSlides: slidemoveSlides
     });
 }
 
@@ -90,17 +97,7 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
         $('html, body').animate({scrollTop: '0'}, 680);
     });
   }
-  // function sumDetail(){ 
-  //   $("details").click(function(){
-  //     if($("summary").hasClass("on")){
-  //         $("details span,details p").slideUp();
-  //       $("summary").removeClass("on");
-  //     }else {
-  //         $("details span, details p").slideDown();
-  //       $("summary").addClass("on");
-  //     }
-  //   });
-  // }
+
   function sumDetail(){ 
     $("summary").click(function(){
       if($("summary").hasClass("on")){
