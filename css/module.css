@@ -78,6 +78,18 @@
 [class*='4_']{font-weight: 400;}
 [class*='3_']{font-weight: 300;}
 
+.os1{
+    color: var(--os1);
+  }
+.rs1{
+    color: var(--rs1);
+  }
+.vs4{
+    color: var(--vs4);
+  }
+
+
+
 header>div,
 header .ect_btn,
 footer>ul,
