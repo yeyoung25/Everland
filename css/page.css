@@ -1517,8 +1517,20 @@
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:first-child{
     background: url('../images/speslider01.png') no-repeat center / contain;
 }
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:first-child p mark:first-child{
+    color: var(--gs9);
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:first-child p mark:not(:first-child){
+    color: #e3007f;
+}
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(2){
     background: url('../images/speslider02.png') no-repeat center / contain;
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(2) p{
+    color: var(--gs1);
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(2) p mark:last-of-type{
+    color: #fff000;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(3){
     background: url('../images/speslider03.png') no-repeat center / contain;
@@ -1526,14 +1538,21 @@
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(3) span:last-child{
     top: 210px;
 }
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(3) p{
+    color: #0061aa;
+}
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(4){
     background: url('../images/speslider04.png') no-repeat center / contain;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(4) span:last-child{
     top: 150px;
+
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5){
     background: url('../images/speslider05.png') no-repeat center / contain;
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5) p{
+    color: #002c5f;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5) span:last-child{
     display: block;
@@ -1542,6 +1561,9 @@
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(6){
     background: url('../images/speslider06.png') no-repeat center / contain;
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(6) p{
+    color: #0061aa;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(7){
     background: url('../images/speslider07.png') no-repeat center / contain;
@@ -1555,6 +1577,11 @@
     margin: 0 auto;
     top: 30px;
     left: 22px;
+}
+.speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li span:last-child{
+    /* display: block; */
+    text-align: center;
+    line-height: 22px;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li p{
     position: absolute;
@@ -1606,7 +1633,8 @@
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/special_next.png') no-repeat center;
-    right: -10.546%;
+    /* right: -10.546%; */
+    /* padding-left: 500px; */
 }
 .speContainer div:nth-child(2) hr+ul:last-child{
     display: flex;
@@ -1750,102 +1778,62 @@
 /* specialPromotion Fin */
 .experContainer div:nth-child(2) ul li{
     background-color: var(--gs11);
-    position: relative;
-    overflow: hidden;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
-    height: 1000px;
+    padding: 150px 13.28%;
 }
-.experContainer div:nth-child(2) ul li pre{
+.experContainer div:nth-child(2) ul li:hover{
+    opacity: 0.4;
+    transition: all 1.2s;
+}
+.experContainer div:nth-child(2) ul li p{
     color: var(--gs1);
     line-height: 25px;
     z-index: 100;
 }
 .experContainer div:nth-child(2) ul li strong{
     display: block;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     z-index: 100;
+}
+.experContainer div:nth-child(2) ul li p:not(:last-of-type){
+    margin-bottom: 25px;
+}
+.experContainer div:nth-child(2) ul li p:last-of-type{
+    margin-bottom: 320px;
 }
 .experContainer div:nth-child(2) ul li a{
     background: url('../images/exper_go.png') no-repeat 150px center;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
     color: var(--gs1);
     border: 1px solid var(--gs1);
     padding: 20px 120px 20px 70px;
     width: 35px;
     z-index: 100;
 }
-.experContainer div:nth-child(2) ul li:first-child::after{
-    background: url('../images/experience_lost.png') no-repeat center / cover;
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 1000px;
-    opacity: 0.4;
-    transition: all 1.2s;
+.experContainer div:nth-child(2) ul li:first-child{
+    background-image: url('../images/experience_lost.png');
 }
 .experContainer div:nth-child(2) ul li:first-child strong{
-    position: absolute;
-    top: 150px;
-    /* right: 25.5%; */
-    right: 13%;
     color: var(--os1);
-    width: 715px;
 }
-.experContainer div:nth-child(2) ul li:first-child pre{
-    position: absolute;
-    top: 265px;
-    right: 13.281%;
-    /* width: 37.239%; */
+.experContainer div:nth-child(2) ul li:nth-child(2){
+    background-image: url('../images/experience_safari.png');
 }
-.experContainer div:nth-child(2) ul li:first-child a{
-    position: absolute;
-    bottom: 200px;
-    right: 13.281%;  
+.experContainer div:nth-child(2) ul li:last-child{
+    background-image: url('../images/experience_texpress.png');
 }
-.experContainer div:nth-child(2) ul li:nth-child(2)::after{
-    background: url('../images/experience_safari.png') no-repeat center / cover;
-    content: '';
-    display: inline-block;
-    opacity: 0.3;
-    width: 100%;
-    height: 1000px;
-    transition: all 1.2s;
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) strong{
-    width: 38.025%;
+/* .experContainer div:nth-child(2) ul li:last-child strong{
     position: absolute;
     top: 150px;
-    left: 5.281%;
-    color: var(--rs1);
-    padding-left: 150px;
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) pre{
-    position: absolute;
-    top: 265px;
-    left: 7.281%;
-}
-.experContainer div:nth-child(2) ul li:nth-child(2) a{
-    position: absolute;
-    bottom: 200px;
-    right: 13.281%;
-}
-.experContainer div:nth-child(2) ul li:last-child::after{
-    background: url('../images/experience_texpress.png') no-repeat center / cover;
-    content: '';
-    display: inline-block;
-    opacity: 0.3;
-    width: 100%;
-    height: 1000px;
-    transition: all 1.2s;
-}
-.experContainer div:nth-child(2) ul li:last-child strong{
-    position: absolute;
-    top: 150px;
-    /* right: 23.298%; */
+    right: 23.298%;
     right: 12.4%;
     width: 715px;
-}
-.experContainer div:nth-child(2) ul li:last-child pre{
+} */
+/* .experContainer div:nth-child(2) ul li:last-child pre{
     position: absolute;
     top: 265px;
     right: 13.281%;
@@ -1861,7 +1849,7 @@
 }
 .experContainer div:nth-child(2) ul li:last-child strong{
     color: var(--vs1);
-}
+} */
 /* experienceProgram Fin */
 .experContainer article div h4{
     padding-bottom: 35px;
@@ -1960,6 +1948,12 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager01 li a.active{
+    border: 1px solid var(--os1);
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager01 li a img{
+    /* width: 100%; */
 }
 
 
