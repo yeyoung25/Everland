@@ -221,7 +221,7 @@
     padding-top: 140px;
     position: relative;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2){
+.indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
     position: relative;
     padding-left: 220px;
     box-sizing: border-box;
@@ -248,7 +248,7 @@
     color: var(--gs9);
     line-height: 30px;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2)>a{
+.indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2)>a{
     background: url('../images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
     display: inline-block;
     color: var(--rs6);
@@ -1505,8 +1505,8 @@
     position: relative;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider{
-    display: inline-block;
-    padding: 0 80px;
+    display: block;
+    /* padding: 0 80px; */
     transform: none;
     position: relative;
 }
@@ -1579,7 +1579,6 @@
     left: 22px;
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li span:last-child{
-    /* display: block; */
     text-align: center;
     line-height: 22px;
 }
@@ -1620,21 +1619,24 @@
     /* display: none; */
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction{
-    box-sizing: border-box;
-    display: block;
+    /* box-sizing: border-box;
+    display: block; */
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction a{
-    margin: 0 24px;
-    padding: 0 24px;
+    /* margin: 0 24px;
+    padding: 0 24px; */
+    
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/special_pre.png') no-repeat center;
-    left: -10.546%;
+    /* left: -10.546%; */
 }
 .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/special_next.png') no-repeat center;
-    /* right: -10.546%; */
-    /* padding-left: 500px; */
+    /* right: -10.546%;
+    margin-right: -10%;
+    display: inline-block; */
+    
 }
 .speContainer div:nth-child(2) hr+ul:last-child{
     display: flex;
@@ -1776,22 +1778,42 @@
     right: 40px;
 }
 /* specialPromotion Fin */
+.experContainer div:nth-child(2) ul{
+    overflow: hidden;
+}
 .experContainer div:nth-child(2) ul li{
-    background-color: var(--gs11);
+    overflow: hidden;
+}
+.experContainer div:nth-child(2) ul li{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     padding: 150px 13.28%;
+    filter: brightness(0.4);
+    transition: 0.5s;
 }
 .experContainer div:nth-child(2) ul li:hover{
-    opacity: 0.4;
-    transition: all 1.2s;
+    filter: brightness(0.6);
+    transform: scale(1.1);
+    /* transition: all 1.2s; */
 }
 .experContainer div:nth-child(2) ul li p{
     color: var(--gs1);
     line-height: 25px;
-    z-index: 100;
+    /* z-index: 100; */
+}
+.experContainer div:nth-child(2) ul li:first-child{
+    background-image: url('../images/experience_lost.png');
+}
+.experContainer div:nth-child(2) ul li:first-child strong{
+    color: var(--os1);
+}
+.experContainer div:nth-child(2) ul li:nth-child(2){
+    background-image: url('../images/experience_safari.png');
+}
+.experContainer div:nth-child(2) ul li:last-child{
+    background-image: url('../images/experience_texpress.png');
 }
 .experContainer div:nth-child(2) ul li strong{
     display: block;
@@ -1814,26 +1836,16 @@
     width: 35px;
     z-index: 100;
 }
-.experContainer div:nth-child(2) ul li:first-child{
-    background-image: url('../images/experience_lost.png');
-}
-.experContainer div:nth-child(2) ul li:first-child strong{
-    color: var(--os1);
-}
-.experContainer div:nth-child(2) ul li:nth-child(2){
-    background-image: url('../images/experience_safari.png');
-}
-.experContainer div:nth-child(2) ul li:last-child{
-    background-image: url('../images/experience_texpress.png');
-}
-/* .experContainer div:nth-child(2) ul li:last-child strong{
+
+
+.experContainer div:nth-child(2) ul li:last-child strong{
     position: absolute;
     top: 150px;
     right: 23.298%;
     right: 12.4%;
     width: 715px;
-} */
-/* .experContainer div:nth-child(2) ul li:last-child pre{
+} 
+.experContainer div:nth-child(2) ul li:last-child p{
     position: absolute;
     top: 265px;
     right: 13.281%;
@@ -1849,7 +1861,9 @@
 }
 .experContainer div:nth-child(2) ul li:last-child strong{
     color: var(--vs1);
-} */
+}
+
+
 /* experienceProgram Fin */
 .experContainer article div h4{
     padding-bottom: 35px;
@@ -2172,8 +2186,10 @@
 }
 .atraContainer div:nth-child(2)>div h4+div img+div{
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
+/* .atraContainer div:nth-child(2)>div h4+div img+.flexStart{
+    justify-content: flex-start;
+} */
 .atraContainer div:nth-child(2)>div h4+div img+div p:not(:last-child){
     line-height: 20px;
     margin-bottom: 20px;
@@ -2182,6 +2198,13 @@
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 20px;
+}
+.atraContainer div:nth-child(2)>div h4+div img+div p{
+    line-height: 22px;
+}
+.atraContainer div:nth-child(2)>div h4+div img+div p .peter{
+    display: block;
+    line-height: 22px;
 }
 .atraContainer div:nth-child(2)>div h4+div img+div div:last-child{
     flex-wrap: wrap;
@@ -2235,6 +2258,9 @@
 }
 .atraContainer div:nth-child(2)>div div:last-child img+div strong mark{
     color: var(--os1);
+}
+.atraContainer div:nth-child(2)>div div:last-child img+div strong .samsung{
+    color: #1428a0;
 }
 .atraContainer div:nth-child(2)>div div:last-child div{
     order: -1;
