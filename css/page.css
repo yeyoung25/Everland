@@ -1967,9 +1967,6 @@
     bottom: 110px;
     right: 76px;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 div:nth-child(2) div ul li:not(:last-child){
-    /* margin-left: 35px; */
-}
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
     background-color: rgba(76, 34, 2, 0.8);
     width: 50%;
@@ -1999,18 +1996,9 @@
     color: #fff4e0;
     line-height: 30px;
     width: 82.708%;
-
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager01 li a.active{
-    /* border: 1px solid var(--os1); */
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager01 li a img{
-    /* width: 100%; */
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper .bx-viewport .thumbPager01 li.active{
+    border: 3px solid var(--os1);
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02{
     position: relative;
@@ -2098,11 +2086,6 @@
     color: #fcceff;
     line-height: 30px;
     width: 82.708%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper .bx-viewport .thumbPager{
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
 
@@ -2270,8 +2253,8 @@
     top: 20px;
     left: -105px;
 }
-.atraContainer div:nth-child(2)>div h4+div img+.flexStart p:first-child:before,
-.enterContainer div:nth-child(2)>div h4+div img+.flexStart p:first-child::before{
+.atraContainer div:nth-child(2)>div h4+div img+.flexStart::before,
+.enterContainer div:nth-child(2)>div h4+div img+.flexStart::before{
     content: '';
     display: inline-block;
     width: 80px;
