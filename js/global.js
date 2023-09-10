@@ -3,7 +3,7 @@ $(document).ready(function () {
   customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0,null);
   customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false,0,null);
   customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false,0,null);
-  customSlider(".speslider",'horizontal',false,0,0,false,true,5,1,214,45,null,'full',false,0,null);
+  customSlider(".speslider",'horizontal',false,0,0,false,true,5,5,214,45,null,'full',false,0,null);
   customSlider(".pagerSliderBox01 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,null,'full',false,0,".thumbPager01");
   customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,0,0,true,false,3,1,250,0,null,'full',false,1,null);
   customSlider(".pagerSliderBox02 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,null,'full',false,0,".thumbPager02");
@@ -89,7 +89,7 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
   function menuButton() {
     var menuBar = document.querySelector(".menuBar");
     menuBar.addEventListener("click", () => {
-      menuBar.classList.toggle("toggle");
+    menuBar.classList.toggle("toggle");
     });
   }
 
