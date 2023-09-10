@@ -1939,7 +1939,7 @@
 .recoContainer div:nth-child(2) dl dt::after{
     content: '';
     display: inline-block;
-    width: 120px;
+    width: 70%;
     height: 5px;
     background-color: var(--os1);
     position: absolute;
