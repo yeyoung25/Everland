@@ -5,11 +5,11 @@ $(document).ready(function () {
   customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false,0,null);
   customSlider(".speslider",'horizontal',false,500,0,false,true,5,5,214,45,null,'full',false,0,null);
   customSlider(".pagerSliderBox01 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,null,'full',false,0,".thumbPager01");
-  customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,0,0,true,true,3,1,250,35,null,'full',false,1,null);
+  customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,500,0,true,true,3,1,250,35,null,'full',false,1,null);
   customSlider(".pagerSliderBox02 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,null,'full',false,0,".thumbPager02");
-  customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,0,0,true,true,3,1,250,35,null,'full',false,1,null);
+  customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,null,'full',false,1,null);
   customSlider(".pagerSliderBox03 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,null,'full',false,0,".thumbPager03");
-  customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,0,0,true,true,3,1,250,35,null,'full',false,1,null);
+  customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,null,'full',false,1,null);
   headerAct();
   menuButton();
   gotop();
