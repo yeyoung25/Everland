@@ -1769,12 +1769,7 @@
 /* specialPromotion Fin */
 .experContainer div:nth-child(2) ul{
     overflow: hidden;
-}
-.experContainer div:nth-child(2) ul li{
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
-    box-sizing: border-box;
+    position: relative;
 }
 .experContainer div:nth-child(2) ul li{
     background-position: center top;
@@ -1782,19 +1777,31 @@
     background-size: cover;
     box-sizing: border-box;
     padding: 150px 13.28%;
-    filter: brightness(0.4);
+    /* filter: brightness(0.4); */
     transition: 0.5s;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .experContainer div:nth-child(2) ul li:hover{
-    filter: brightness(0.6);
+    filter: brightness(0.1);
     transform: scale(1.1);
-}
-.experContainer div:nth-child(2) ul li p{
-    color: var(--gs1);
-    line-height: 25px;
 }
 .experContainer div:nth-child(2) ul li:first-child{
     background-image: url('../images/experience_lost.png');
+    filter: brightness(1);
+}
+.experContainer div:nth-child(2) ul li:first-child::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--gs11);
+    z-index: -1;
 }
 .experContainer div:nth-child(2) ul li:first-child strong{
     color: var(--os1);
@@ -1805,12 +1812,40 @@
 }
 .experContainer div:nth-child(2) ul li:nth-child(2){
     background-image: url('../images/experience_safari.png');
+    filter: brightness(1);
 }
 .experContainer div:nth-child(2) ul li:nth-child(2) strong{
     color: var(--rs1);
 }
+.experContainer div:nth-child(2) ul li:nth-child(2)::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--gs11);
+    z-index: -1;
+}
+.experContainer div:nth-child(2) ul li p{
+    color: var(--gs1);
+    line-height: 25px;
+}
 .experContainer div:nth-child(2) ul li:last-child{
     background-image: url('../images/experience_texpress.png');
+    filter: brightness(1);
+}
+.experContainer div:nth-child(2) ul li:last-child::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--gs11);
+    z-index: -1;
 }
 .experContainer div:nth-child(2) ul li:last-child strong{
     color: var(--vs1);
@@ -1841,7 +1876,6 @@
     border: 1px solid var(--gs1);
     padding: 20px 120px 20px 70px;
     width: 35px;
-    z-index: 100;
 }
 /* experienceProgram Fin */
 .experContainer article div h4{
@@ -1951,7 +1985,7 @@
     display: inline-block;
     width: 100%;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a.active{
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
     /* border: 3px solid var(--os1); */
 }
 .recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2){
@@ -1959,16 +1993,35 @@
 }
 .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
     display: block;
-    top: 0;
+    top: -16px;
+    z-index: 0;
 }
-.recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+.recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon01_pre.png') no-repeat center;
     position: absolute;
-    left: 0;
+    left: -792px;
 }
-.recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+.recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon01_next.png') no-repeat center;
-    right: 0;
+    right: -130px;
+}
+.recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+    background: url('../images/recomcon02_pre.png') no-repeat center;
+    position: absolute;
+    left: -130px;
+}
+.recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+    background: url('../images/recomcon02_next.png') no-repeat center;
+    right: -785px;
+}
+.recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+    background: url('../images/recomcon03_pre.png') no-repeat center;
+    position: absolute;
+    left: -792px;
+}
+.recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+    background: url('../images/recomcon03_next.png') no-repeat center;
+    right: -130px;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02{
     position: relative;
@@ -2095,6 +2148,12 @@
     position: relative;
     width: 28.368%;
     margin-bottom: 100px;
+}
+.atraContainer div:nth-child(2) h3+ul li a,
+.enterContainer div:nth-child(2) h3+ul li a,
+.restContainer div:nth-child(2) h3+ul li a,
+.gifContainer div:nth-child(2) h3+ul li a{
+    display: block;
 }
 .atraContainer div:nth-child(2) h3+ul li a img,
 .enterContainer div:nth-child(2) h3+ul li a img,
@@ -2571,10 +2630,175 @@ div .backBtn{
     color: var(--gs10);
 }
 /* giftShop Details Fin */
+.seaContainer div:nth-child(2) div>strong{
+    display: block;
+    margin: 110px 0 35px;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li{
+    width: 25%;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li img{
+    width: 100%;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul{
+    display: flex;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li b{
+    display: block;
+    line-height: 30px;
+    margin: 35px 0 15px 15px;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li p{
+    line-height: 22px;
+    margin-left: 15px;
+    color: var(--gs9);
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li{
+    position: relative;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:first-child b{
+    color: var(--os1);
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:first-child b::after{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 95px;
+    background-color: var(--os1);
+    position: absolute;
+    top: 61.412%;
+    right: 70px;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:nth-child(2) b{
+    color: var(--vs7);
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:nth-child(2) b::after{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 95px;
+    background-color: var(--vs7);
+    position: absolute;
+    top: 61.412%;
+    right: 70px;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:nth-child(3) b{
+    color: var(--rs7);
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:nth-child(3) b::after{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 95px;
+    background-color: var(--rs7);
+    position: absolute;
+    top: 61.412%;
+    right: 70px;
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:last-child b{
+    color: var(--gs10);
+}
+.seaContainer div:nth-child(2) div:first-of-type>ul li:last-child b::after{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 95px;
+    background-color: var(--gs11);
+    position: absolute;
+    top: 61.412%;
+    right: 70px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) strong{
+    display: block;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul{
+    margin-bottom: 155px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:not(:last-child){
+    margin-bottom: 115px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong::before{
+    display: inline-block;
+    content: '▶';
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
+    margin-left: 15px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong{
+    display: flex;
+    margin-bottom: 35px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:first-child strong{
+    color: var(--os1);
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(2) strong{
+    color: var(--vs7);
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(3) strong{
+    color: var(--rs7);
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(5) strong{
+    color: var(--os5);
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(6) strong{
+    color: var(--vs9);
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(6) p span{
+    display: inline-block;
+    margin-left: 20px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li p span{
+    margin-left: 20px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
+    margin-bottom: 20px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3){
+    margin-bottom: 110px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3) ul li:not(:last-child){
+    margin-bottom: 50px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dt{
+    margin-bottom: 30px;
+    display: flex;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dt::before{
+    display: inline-block;
+    content: '▶';
+    font-size: 10px;
+    line-height: 18px;
+    margin-right: 10px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dd{
+    line-height: 22px;
+}
+.seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dd:not(:last-child){
+    margin-bottom: 15px;
+}
+.seaContainer div:nth-child(2) div:last-child ul li{
+    line-height: 22px;
+}
+.seaContainer div:nth-child(2) div:last-child ul li ol{
+    margin-top: 15px;
+}
+.seaContainer div:nth-child(2) div:last-child ul li ol li{
+    display: flex;
 
-
-
-
+}
+.seaContainer div:nth-child(2) div:last-child ul li ol li mark{
+    margin-right: 5px;
+}
+.seaContainer div:nth-child(2) div:last-child ul li ol li:last-child{
+    margin-left: 5.828%;
+}
+.seaContainer div:nth-child(2) div:last-child ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+/* seasonTicket Details Fin */
 
 
 
