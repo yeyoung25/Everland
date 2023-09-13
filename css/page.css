@@ -3085,6 +3085,22 @@ div .backBtn{
     flex-wrap: wrap;
     width: 80%;
 }
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li{
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li:first-child{
+    margin-bottom: 10px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li{
+    margin-bottom: 5px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:first-of-type{
+    margin-bottom: 5px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:not(:first-of-type){
+    margin-left: 5px;
+}
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(11) div ol li:last-child{
     color: #ff0000;
 }
