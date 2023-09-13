@@ -1158,16 +1158,12 @@
     height: 24px;
     vertical-align: middle;
 }
-.usagContainer div:nth-child(2) table::after{
-    content: '';
-    display: block;
-    clear: both;
-}
 .usagContainer div:nth-child(2) table{
     float: right;
     width: 71.985%;
     text-align: center;
-    overflow : hidden 
+    overflow : hidden;
+    margin-bottom: 150px;
 }
 .usagContainer div:nth-child(2) table thead tr th{
     width: 33.33%;
@@ -1218,9 +1214,12 @@
 .usagContainer div:nth-child(2) table tr:last-child td:last-child{
     padding: 25px 95px;
 }
+.usagContainer div:nth-child(2) table+div{
+    clear: both;
+}
 .usagContainer div:nth-child(2) table+div>strong{
     display: block;
-    margin: 500px 0 45px;
+    margin-bottom: 45px;
 }
 .usagContainer div:nth-child(2) table+div>strong a{
     display: inline-block;
@@ -3009,22 +3008,99 @@ div .backBtn{
     margin-bottom: 15px;
 }
 /* seasonTicket Details Fin */
-.comuContainer div:nth-child(2) h3+ol{
+.comuContainer div:nth-child(2) .accordion{
     border-top: 2px solid var(--vs8);
+    cursor: pointer;
 }
-.comuContainer div:nth-child(2) h3+ol>li{
+.comuContainer div:nth-child(2) .accordion>li{
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid var(--vs8);
 }
-.comuContainer div:nth-child(2) ol li strong{
+.comuContainer div:nth-child(2) .accordion li strong{
     display: block;
-    padding: 20px 0;
-    width: 100%;
-    border-bottom: 1px solid var(--gs5);
     position: relative;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gs6);
 }
-.comuContainer div:nth-child(2) h3+ol li strong::after{
+.comuContainer div:nth-child(2) .accordion li strong span{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+.comuContainer div:nth-child(2) .accordion li strong b{
+    display: inline-block;
+    margin-right: 30px;
+    color: var(--gs5);
+}
+.comuContainer div:nth-child(2) .accordion li>div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--gs2);
+    color: var(--gs10);
+}
+.comuContainer div:nth-child(2) .accordion li>div::before{
+    content: '';
+    display: inline-block;
+    width: 10%;
+}
+.comuContainer div:nth-child(2) .accordion li div b{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    color: var(--vs8);
+}
+.comuContainer div:nth-child(2) .accordion li div b+p{
+    width: 80%;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div ol li{
+    line-height: 22px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div ol li:not(:last-child){
+    /* margin-bottom: 10px; */
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div b+ol li:first-child{
+    margin-bottom: 10px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div ol{
+    margin-bottom: 25px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div p{
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div ol li{
+    line-height: 20px;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div,
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div,
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(11) div ol li:last-child{
+    color: #ff0000;
+}
+.comuContainer div:nth-child(2) .accordion li div ol{
+    width: 80%;
+}
+.comuContainer div:nth-child(2) .accordion li div .accordion li{
+    width: 85%;
+}
+.comuContainer div:nth-child(2) .accordion li div .accordion li:not(:last-child){
+    margin-bottom: 10px;
+}
+.comuContainer div:nth-child(2) .accordion li div .accordion li:first-child{
+    margin-bottom: 15px;
+}
+.comuContainer div:nth-child(2) .accordion .accordion_item > strong::after{
     background: url('../images/faq_gray.png') no-repeat center / contain;
     content: '';
     display: inline-block;
@@ -3033,58 +3109,22 @@ div .backBtn{
     position: absolute;
     right: 60px;
     top: 24px;
-
+    transition: transform 0.2s ease-in-out;
 }
-.comuContainer div:nth-child(2) ol li strong span{
-    display: inline-block;
-    width: 10%;
-    text-align: center;
+.comuContainer div:nth-child(2) .accordion .accordion_item > .accordion_content.open{
+    display: none;
 }
-.comuContainer div:nth-child(2) ol li strong b{
-    display: inline-block;
-    width: 5%;
-    color: var(--gs5);
-    /* text-align: center; */
-}
-.comuContainer div:nth-child(2) ol li div{
+/* accrodion 닫혔을때 */
+.comuContainer div:nth-child(2) .accordion .accordion_item{
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px 0;
-    background-color: var(--gs2);
 }
-.comuContainer div:nth-child(2) ol li div::before{
-    content: '';
-    display: inline-block;
-    width: 10%;
-}
-.comuContainer div:nth-child(2) ol li div b{
-    /* display: inline-block; */
-    display: flex;
-    flex-wrap: wrap;
-    width: 5%;
-    color: var(--vs8);
-}
-.comuContainer div:nth-child(2) ol li:nth-child(7) div ol{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: flex-end; */
-}
-.comuContainer div:nth-child(2) ol li:nth-child(7) div ol li{
-    line-height: 22px;
-} 
-.comuContainer div:nth-child(2) ol li div b+ol li{
-    width: 85%;
-}
-.comuContainer div:nth-child(2) ol li div b+ol li:not(:last-child){
-    margin-bottom: 10px;
-}
-.comuContainer div:nth-child(2) ol li div b+ol li:first-child{
-    margin-bottom: 15px;
+.comuContainer div:nth-child(2) .accordion .accordion_item{
+    border-bottom: 1px solid var(--vs8);
 }
 
 
-.comuContainer .paging {
+
+.comuContainer .paging{
     display: flex;
     width: 240px;
     justify-content: space-between;
@@ -3131,7 +3171,8 @@ div .backBtn{
         border-bottom: 1px solid var(--gs5);
     }
     .newContainer article h3,
-    .experContainer article h3{
+    .experContainer article h3,
+    .comuContainer div:nth-child(2) h3{
         text-align: center;
         padding: 95px 0;
     }

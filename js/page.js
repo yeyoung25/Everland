@@ -3,6 +3,7 @@ $(document).ready(function(){
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   trafTab();
   backBtn($(".backBtn"));
+  // accordionFaq();
 });
 
 
