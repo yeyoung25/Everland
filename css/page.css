@@ -3092,7 +3092,7 @@ div .backBtn{
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li:first-child{
     margin-bottom: 10px;
 }
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li{
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:not(:last-child){
     margin-bottom: 5px;
 }
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:first-of-type{
@@ -3127,7 +3127,7 @@ div .backBtn{
     top: 24px;
     transition: transform 0.2s ease-in-out;
 }
-.comuContainer div:nth-child(2) .accordion .accordion_item > .accordion_content.open{
+.comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content.active{
     display: none;
 }
 /* accrodion 닫혔을때 */
