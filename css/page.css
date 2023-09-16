@@ -3126,7 +3126,10 @@ div .backBtn{
 .comuContainer div:nth-child(2) .accordion li div .accordion li:first-child{
     margin-bottom: 15px;
 }
-.comuContainer div:nth-child(2) .accordion .accordion_item > strong::after{
+.comuContainer div:nth-child(2) .accordion .accordion_item.active>strong::after{
+    background: url('../images/faq_color.png') no-repeat center / contain;
+}
+.comuContainer div:nth-child(2) .accordion .accordion_item>strong::after{
     background: url('../images/faq_gray.png') no-repeat center / contain;
     content: '';
     display: inline-block;
@@ -3137,17 +3140,13 @@ div .backBtn{
     top: 24px;
     transition: transform 0.2s ease-in-out;
 }
-.comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content.active{
+.comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content{
     display: none;
 }
-/* accrodion 닫혔을때 */
-.comuContainer div:nth-child(2) .accordion .accordion_item{
+.comuContainer div:nth-child(2) .accordion .accordion_item.active .accordion_content{
     display: flex;
-}
-.comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content{
     border-bottom: 1px solid var(--vs8);
 }
-
 .comuContainer .paging{
     display: flex;
     width: 240px;
@@ -3182,22 +3181,22 @@ div .backBtn{
     display: block;
     clear:both;
 }
-.inqBContainer div:nth-child(2) div:first-of-type strong{
+.inqBContainer div:nth-child(2)>div:first-of-type>strong{
     display: block;
     margin-bottom: 30px;
 }
-.inqBContainer div:nth-child(2) div:first-of-type ol{
+.inqBContainer div:nth-child(2)>div:first-of-type>ol{
     border: 1px solid var(--gs5);
     padding: 35px 30px;
     margin-bottom: 30px;
 }
-.inqBContainer div:nth-child(2) div:first-of-type ol li:not(:last-child){
+.inqBContainer div:nth-child(2)>div:first-of-type>ol li:not(:last-child){
     margin-bottom: 10px;
 }
-.inqBContainer div:nth-child(2) div:first-of-type form{
+.inqBContainer div:nth-child(2)>div:first-of-type form{
     display: inline-block;
 }
-.inqBContainer div:nth-child(2) div:first-of-type form input{
+.inqBContainer div:nth-child(2)>div:first-of-type form input{
     appearance: none;
     margin-right: 10px;
     margin-bottom: 4px;
@@ -3206,108 +3205,108 @@ div .backBtn{
     box-shadow: 0 0 0 1px var(--vs7);
     border-radius: 50%;
 }
-.inqBContainer div:nth-child(2) div:first-of-type form input[type="radio"]:checked{
+.inqBContainer div:nth-child(2)>div:first-of-type form input[type="radio"]:checked{
     border: 1px solid var(--gs1);
     background-color: var(--vs7);
 }
-.inqBContainer div:nth-child(2) div:first-of-type form label{
+.inqBContainer div:nth-child(2)>div:first-of-type form label{
     display: inline-block;
 }
-.inqBContainer div:nth-child(2) div:first-of-type form label:first-of-type{
+.inqBContainer div:nth-child(2)>div:first-of-type form label:first-of-type{
     margin-right: 25px;
 }
-.inqBContainer div:nth-child(2) div:first-of-type p{
+.inqBContainer div:nth-child(2)>div:first-of-type p{
     float: right;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2){
     margin-bottom: 110px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset legend{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend{
     display: block;
     margin-bottom: 30px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset legend b{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b{
     display: inline-block;
     margin-left: 30px;
     color: var(--vs9);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul{
     border-top: 3px solid var(--vs7);
     border-bottom: 1px solid var(--vs7);
     margin-bottom: 30px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul>li{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li{
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul>li:not(:last-child){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li:not(:last-child){
     border-bottom: 1px solid var(--gs8);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li label{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
     width: 19.148%;
     vertical-align: middle;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
     border: none;
     color: var(--gs8);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(5) input{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(5) input{
     width: 50%;
     outline-color: var(--vs9);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6){
     flex-wrap: nowrap;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset > ul li:nth-child(6) label{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset > ul li:nth-child(6) label{
     width: 38.296%;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) div{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div{
     display: flex;
     flex-wrap: wrap;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea{
     width: 100%;
     border: 1px solid var(--gs9);
     outline-color: var(--vs9);
     resize: none;
     margin-bottom: 15px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li{
     color: var(--gs8);
     line-height: 22px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child){
     margin-bottom: 10px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:not(:first-child){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:first-child){
     width: 19.858%;
     color: var(--gs11);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:not(:last-child){
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:last-child){
     display: block;
     margin-bottom: 10px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:last-child{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:last-child{
     width: 10%;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li input{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li input{
     border: none;
     outline-color: transparent;
     /* display: none; */
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child{
     flex-wrap: nowrap;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div{
     display: flex;
     flex-wrap: wrap;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span{
     width: 100%;
     color: var(--gs8);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span label{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span label{
     display: inline-block;
     background-color: var(--vs7);
     color: var(--gs1);
@@ -3316,14 +3315,14 @@ div .backBtn{
     width: 10.171%;
     margin-right: 20px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span input{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span input{
     display: none;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div p{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div p{
     margin-top: 15px;
     color: var(--gs8);
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>input{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input{
     display: block;
     margin: 0 auto;
     border: none;
@@ -3331,33 +3330,95 @@ div .backBtn{
     color: var(--gs1);
     padding: 25px 65px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(3){
+.inqBContainer div:nth-child(2)>div:nth-of-type(3){
+    display: flex;
+    flex-wrap: nowrap;
     background-color: var(--gs2);
     border-radius: 15px;
     padding: 75px 115px;
-    display: flex;
-    flex-wrap: wrap;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(3)::before{
-    background: url('../images/inqulry_B.png') no-repeat center / contain;
-    content: '';
-    display: inline-block;
-    width: 150px;
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
     height: 150px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(3) strong{
-    display: block;
-    width: 63.12%;
-    margin-bottom: 60px;
-}
-.inqBContainer div:nth-child(2) div:nth-of-type(3) span{
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) img+div{
+    display: flex;
     flex-wrap: wrap;
+    margin-left: 110px;
 }
-.inqBContainer div:nth-child(2) div:nth-of-type(3) ol li{
-    display: inline-block;
-    list-style: decimal;
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) strong mark,
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) span a{
+    color: var(--vs7);
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
+    display: block;
+    margin-bottom: 40px;
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.modal01{
+    display: none;
+}
+.modal01.active{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 56.737%; */
+}
+.modal01 b{
+    display: block;
+    padding: 50px 185px;
+    background-color: var(--gs5);
+    text-align: center;
+}
+.modal01 div{
+    background-color: var(--gs6);
+    text-align: center;
+
+}
+.modal01 div input{
+    border: none;
+    background-color: transparent;
 }
 /* inquiryBeforeVisiting Details Fin */
+.cheContainer div:nth-child(2) h3{
+    margin-bottom: 50px;
+}
+.cheContainer div:nth-child(2) h3+ul{
+}
+.cheContainer div:nth-child(2) h3+ul>li{
+    margin: 0 auto;
+    width: 94.326%;
+    height: 700px;
+}
+.cheContainer div:nth-child(2) h3+ul>li:first-child{
+    background-color: #2d6bba;
+}
+.cheContainer div:nth-child(2) h3+ul>li:first-child div{
+    /* background: url('../images/lost_item01.png') no-repeat center / contain; */
+    /* display: flex; */
+}
+.cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
+    background-color: rgba(228, 228, 228, 0.3);
+}
+.cheContainer div:nth-child(2) h3+ul>li:last-child{
+    background-color: rgba(32, 8, 33, 0.1);
+}
+
+
+
+
+
+
+
+/* checkLostItems Details Fin */
+
+
 
 
 

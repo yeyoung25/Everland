@@ -1,13 +1,20 @@
 $(document).ready(function(){
   justToggle($("div div:first-child nav div"));
+  accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   trafTab();
   backBtn($(".backBtn"));
-  // accordionFaq();
 });
 
 
 function justToggle(button){
+  $(button).click(function(){
+    $(this).toggleClass("active");
+  });
+}
+
+
+function accordionFaq(button){
   $(button).click(function(){
     $(this).toggleClass("active");
   });
@@ -22,15 +29,6 @@ function howToggle(button){
   $(".closemodel").click(function(){
     $(currentPopup).removeClass('active');
   });
-  // $("#handicappedPopUp > div").click(function(){
-  //   return false;
-  // });
-  // $("#handicappedPopUp").click(function(){
-  //   $('#handicappedPopUp').removeClass('active');
-  // });
-  // $(".closemodel").click(function(){
-  //   $('#handicappedPopUp').removeClass('active');
-  // });
 }
 
 
