@@ -3189,17 +3189,39 @@ div .backBtn{
 .inqBContainer div:nth-child(2) div:first-of-type ol{
     border: 1px solid var(--gs5);
     padding: 35px 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+}
+.inqBContainer div:nth-child(2) div:first-of-type ol li:not(:last-child){
+    margin-bottom: 10px;
 }
 .inqBContainer div:nth-child(2) div:first-of-type form{
     display: inline-block;
+}
+.inqBContainer div:nth-child(2) div:first-of-type form input{
+    appearance: none;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 1px var(--vs7);
+    border-radius: 50%;
+}
+.inqBContainer div:nth-child(2) div:first-of-type form input[type="radio"]:checked{
+    border: 1px solid var(--gs1);
+    background-color: var(--vs7);
+}
+.inqBContainer div:nth-child(2) div:first-of-type form label{
+    display: inline-block;
+}
+.inqBContainer div:nth-child(2) div:first-of-type form label:first-of-type{
+    margin-right: 25px;
 }
 .inqBContainer div:nth-child(2) div:first-of-type p{
     float: right;
 }
 .inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset legend{
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 
