@@ -3059,8 +3059,8 @@ div .backBtn{
 .comuContainer div:nth-child(2) .accordion li div ol li{
     line-height: 22px;
 }
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div ol li:not(:last-child){
-    /* margin-bottom: 10px; */
+.comuContainer div:nth-child(2) .accordion li:nth-of-type(N+7) div>b{
+    margin-top: 4px;
 }
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div b+ol li:first-child{
     margin-bottom: 10px;
@@ -3174,10 +3174,10 @@ div .backBtn{
     width: 12px;
 }
 /* faq Details Fin */
-.inqBContainer div:nth-child(2) div:first-of-type{
+.inqBContainer div:nth-child(2)>div:first-of-type{
     margin: 110px 0 80px 0;
 }
-.inqBContainer div:nth-child(2) div:first-of-type::after{
+.inqBContainer div:nth-child(2)>div:first-of-type::after{
     content: '';
     display: block;
     clear:both;
@@ -3219,12 +3219,118 @@ div .backBtn{
 .inqBContainer div:nth-child(2) div:first-of-type p{
     float: right;
 }
+.inqBContainer div:nth-child(2) div:nth-of-type(2){
+    margin-bottom: 110px;
+}
 .inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset legend{
     display: block;
     margin-bottom: 30px;
 }
-
-
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset legend b{
+    display: inline-block;
+    margin-left: 30px;
+    color: var(--vs9);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul{
+    border-top: 3px solid var(--vs7);
+    border-bottom: 1px solid var(--vs7);
+    margin-bottom: 30px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul>li:not(:last-child){
+    border-bottom: 1px solid var(--gs8);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li label{
+    width: 19.148%;
+    vertical-align: middle;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select{
+    border: none;
+    color: var(--gs8);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(5) input{
+    width: 50%;
+    outline-color: var(--vs9);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6){
+    flex-wrap: nowrap;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset > ul li:nth-child(6) label{
+    width: 38.296%;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea{
+    width: 100%;
+    border: 1px solid var(--gs9);
+    outline-color: var(--vs9);
+    resize: none;
+    margin-bottom: 15px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li{
+    color: var(--gs8);
+    line-height: 22px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:not(:first-child){
+    width: 19.858%;
+    color: var(--gs11);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:not(:last-child){
+    display: block;
+    margin-bottom: 10px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li select option:last-child{
+    width: 10%;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li input{
+    border: none;
+    outline-color: transparent;
+    /* display: none; */
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child{
+    flex-wrap: nowrap;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span{
+    width: 100%;
+    color: var(--gs8);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span label{
+    display: inline-block;
+    background-color: var(--vs7);
+    color: var(--gs1);
+    padding: 10px 25px;
+    border-radius: 5px;
+    width: 10.171%;
+    margin-right: 20px;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div span input{
+    display: none;
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>ul li:last-child div p{
+    margin-top: 15px;
+    color: var(--gs8);
+}
+.inqBContainer div:nth-child(2) div:nth-of-type(2) form fieldset>input{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--vs8);
+    color: var(--gs1);
+    padding: 25px 65px;
+}
 .inqBContainer div:nth-child(2) div:nth-of-type(3){
     background-color: var(--gs2);
     border-radius: 15px;
