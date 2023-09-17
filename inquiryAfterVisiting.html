@@ -133,14 +133,17 @@
         <div>
             <h3 class="la7_24 linebtm">INQUIRY AFTER VISITING</h3>
             <div>
-                <strong class="la9_35">
-                    <span class="la3_35">For any questions,</span>
-                    please use the <mark>"Inquiry before visiting"</mark> menu.
-                </strong>
-                <p class="op7_20">
-                    Please leave your compliments, encouragement, improvement requests, and suggestions 
-                    for Everland Resort&#33;
-                </p>
+                <img src="images/inqulry_A.png" alt="tel_inqulryA">
+                <div>
+                    <strong class="la9_35">
+                        <span class="la3_35 os1">For any questions,</span>
+                        please use the <mark class="vs7">"Inquiry before visiting"</mark> menu.
+                    </strong>
+                    <p class="op7_20">
+                        Please leave your compliments, encouragement, improvement requests, and suggestions 
+                        for Everland Resort&#33;
+                    </p>
+                </div>
             </div>
             <div class="op4_16">
                 <strong class="op7_20">User Agreement for Personal Information Protection</strong>
@@ -161,66 +164,72 @@
             <div>
                 <form action="#">
                     <fieldset class="op6_18">
-                        <legend>Write inquiry <b>mark is a required input field.</b></legend>
+                        <legend>Write inquiry <b class="op7_14 star">mark is a required input field.</b></legend>
                         <ul>
                             <li class="op4_18">
                                 <b class="op6_18">Type of inquiry</b>
-                                <input type="radio" id="praise" name="typeOfInquiry">
-                                <label for="praise">Praise Encouragement</label>
-                                <input type="radio" id="request" name="typeOfInquiry">
-                                <label for="request">Request for improvement</label>
-                                <input type="radio" id="suggestions" name="typeOfInquiry">
-                                <label for="suggestions">suggestions</label>
-                                <span class="op4_16">&#42; For inquiries, please use Q&amp;A.</span>
+                                <div>
+                                    <input type="radio" id="praise" name="typeOfInquiry" checked>
+                                    <label for="praise">Praise Encouragement</label>
+                                    <input type="radio" id="request" name="typeOfInquiry">
+                                    <label for="request">Request for improvement</label>
+                                    <input type="radio" id="suggestions" name="typeOfInquiry">
+                                    <label for="suggestions">Suggestions</label>
+                                    <span class="op4_16">&#42; For inquiries, please use Q&amp;A.</span>
+                                </div>
                             </li>
                             <li><label for="serviceCode02">Service type</label>
-                                <select name="serviceCode" id="serviceCode02">
-                                    <option value="0" selected class="op4_18">please select</option>
+                                <select name="serviceCode" id="serviceCode02" class="op4_16">
+                                    <option value="0" selected disabled>please select</option>
                                     <option value="Human Services">1. Human Services</option>
                                     <option value="Rules and Policies">2. Rules and Policies</option>
                                     <option value="User Guide">3. User Guide</option>
                                     <option value="Hygiene and Safety">4. Hygiene and Safety</option>
                                     <option value="Quality">5. Quality</option>
-                                    <option value="Others">6.Others</option>
+                                    <option value="Others">6. Others</option>
                                 </select>
                             </li>
                             <li>
                                 <label for="name">Name</label>
-                                <input type="text" title="name" id="name" value="PARK YEYOUNG">
+                                <input type="text" title="name" id="name" value="PARK YEYOUNG" class="op6_16" readonly>
                             </li>
                             <li>
                                 <label for="mail">Email</label>
-                                <input type="text" title="e-mail" id="mail" value="sevim0105@naver.com">
+                                <input type="text" title="e-mail" id="mail" value="sevim0105@naver.com" class="op6_16" readonly>
                             </li>
                             <li>
                                 <label for="phone">number</label>
-                                <input type="tel" title="phone" id="phone" value="010-7271-7410">
+                                <input type="tel" title="phone" id="phone" value="010-7271-7410" class="op6_16" readonly>
                             </li>
                             <li>
                                 <label for="subject">Title</label>
-                                <input type="text" title="title" id="subject" value="Please enter the subject">
+                                <input type="text" title="title" id="subject" placeholder="Please enter the subject"class="op6_16">
                             </li>
                             <li>
                                 <label for="detail">Detail</label>
-                                <textarea name="text" id="detail" cols="100" rows="20"></textarea>
-                                <ul class="op4_16">
-                                    <li>&#42; When entering information, the login duration is 30 minutes for PC and 1 hour for mobile.</li>
-                                    <li>&#42; Please understand that it may take time to respond if there are a lot of comments and inquiries or if they are received on holidays.</li>
-                                    <li>
-                                        &#42; Please note that if you register false facts to defame others or if you steal other people's personal information and register the contents, you may 
-                                        be subject to legal punishment according to the relevant laws.
-                                    </li>
-                                    <li>&#42; When entering information, please be careful not to register phone number, e-mail, etc. as they are personal information.</li>
-                                </ul>
+                                <div>
+                                    <textarea name="text" id="detail" cols="100" rows="20"></textarea>
+                                    <ul class="op4_16">
+                                        <li>&#42; When entering information, the login duration is 30 minutes for PC and 1 hour for mobile.</li>
+                                        <li>&#42; Please understand that it may take time to respond if there are a lot of comments and inquiries or if they are received on holidays.</li>
+                                        <li>
+                                            &#42; Please note that if you register false facts to defame others or if you steal other people's personal information and register the contents, you may 
+                                            be subject to legal punishment according to the relevant laws.
+                                        </li>
+                                        <li>&#42; When entering information, please be careful not to register phone number, e-mail, etc. as they are personal information.</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <label for="selectFiles">Attachments</label>
-                                <span class="fileComponent">
-                                    <label for="selectFiles">selectFiles</label>
-                                    <input type="file" id="selectFiles">
-                                    <small>File Upload &#40;less than 5M&#41;</small>
-                                </span>
-                                <p class="op4_16">&#42; Only image files under 5M can be attached. &#40;jpg, jpeg, img, png, gif, bmp, etc.&#41;</p>
+                                <div>
+                                    <span class="fileComponent">
+                                        <label for="selectFiles">select Files</label>
+                                        <input type="file" id="selectFiles">
+                                        <small>File Upload &#40;less than 5M&#41;</small>
+                                    </span>
+                                    <p class="op4_16">&#42; Only image files under 5M can be attached. &#40;jpg, jpeg, img, png, gif, bmp, etc.&#41;</p>
+                                </div>
                             </li>
                         </ul>
                         <input type="button" value="UPLOAD" class="btn-open-popup01 op7_18">
