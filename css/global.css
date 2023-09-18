@@ -114,7 +114,7 @@ header #fnbPanel{
     background-color: var(--gs11);
     opacity: 0.95;
     width: 100%;
-    padding: 150px 350px 23px;
+    padding: 150px 18.229% 23px;
     margin: 0 auto;
     box-sizing: border-box;
     transition-duration: 0.2s;
@@ -339,6 +339,13 @@ footer div details span{
 /* footer Fin */
 
 @media screen and (min-width: 1280px) {
+    header,
+    #wrap,
+    footer,
+    header+div{
+        max-width: 1920px;
+    }
+
     .contentBanner01 h2,
     .contentBanner01>.textBox,
     .contentBanner03,

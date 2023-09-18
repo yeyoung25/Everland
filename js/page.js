@@ -3,6 +3,7 @@ $(document).ready(function(){
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   trafTab();
+  policyTab();
   backBtn($(".backBtn"));
 });
 
@@ -37,6 +38,15 @@ function trafTab(){
     $('.trafContainer div:nth-child(2) ul li').removeClass('active');
     $(this).addClass('active');
     $('.trafContainer div:nth-child(2) div').removeClass('active');
+    $('.' + $(this).attr('data-tab')).addClass('active');
+  });
+}
+
+function policyTab(){
+  $('.poliContainer>ul li').click(function(){
+    $('.poliContainer>ul li').removeClass('active');
+    $(this).addClass('active');
+    $('.poliContainer>div').removeClass('active');
     $('.' + $(this).attr('data-tab')).addClass('active');
   });
 }
