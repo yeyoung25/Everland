@@ -4,6 +4,7 @@ $(document).ready(function(){
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   trafTab();
   policyTab();
+  historyTab()
   backBtn($(".backBtn"));
 });
 
@@ -47,6 +48,14 @@ function policyTab(){
     $('.poliContainer>ul li').removeClass('active');
     $(this).addClass('active');
     $('.poliContainer>div').removeClass('active');
+    $('.' + $(this).attr('data-tab')).addClass('active');
+  });
+}
+function historyTab(){
+  $('.hisContainer>ul>li').click(function(){
+    $('.hisContainer>ul>li').removeClass('active');
+    $(this).addClass('active');
+    $('.hisContainer>ol').removeClass('active');
     $('.' + $(this).attr('data-tab')).addClass('active');
   });
 }
