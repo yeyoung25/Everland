@@ -3423,7 +3423,7 @@ div .backBtn{
     justify-content: space-between;
 }
 .modal01{
-    /* display: none; */
+    display: none;
 }
 .modal01.active{
     display: block;
