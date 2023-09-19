@@ -2,7 +2,7 @@ $(document).ready(function(){
   justToggle($("div div:first-child nav div"));
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
-  inquToggle($(".inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input"));
+  inquToggle($("header+div div:nth-child(2)>div>form fieldset>input"));
   trafTab();
   policyTab();
   historyTab()
@@ -37,14 +37,13 @@ function howToggle(button){
 function inquToggle(button){
   var currentPopup = null;
   $(button).click(function(){
-    currentPopup = "#" + $(this).attr("data-popup");
+    currentPopup = "." + $(this).attr("data-popup");
     $(currentPopup).addClass('active');
   });
-  $(".closemodel").click(function(){
+  $(".closemodel").parent().click(function(){
     $(currentPopup).removeClass('active');
   });
 }
-
 
 function trafTab(){
   $('.trafContainer div:nth-child(2) ul li').click(function(){

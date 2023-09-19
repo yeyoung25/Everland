@@ -3280,12 +3280,18 @@ div .backBtn{
     vertical-align: middle;
     line-height: 24px;
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
     background: url('../images/inqulry_select.png') no-repeat 95% 50%;
     border: none;
     appearance: none;
     width: 42%;
+    padding: 5px 0;
+}
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
+    background: url('../images/inqulry_select.png') no-repeat 95% 50%;
+    border: none;
+    appearance: none;
+    width: 20%;
     padding: 5px 0;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:first-child,
@@ -3453,6 +3459,7 @@ div .backBtn{
     border: none;
     background-color: transparent;
     color: var(--gs1);
+    cursor: pointer;
 }
 
 .inqAContainer div:nth-child(2) h3{
@@ -4164,11 +4171,20 @@ div .backBtn{
     margin-bottom: 40px;
 }
 .notContainer>div>p{
+    margin-bottom: 30px;
+}
+.notContainer>div:first-of-type>p,
+.notContainer>div:last-of-type>p{
     margin-bottom: 70px;
+}
+.notContainer>div>p{
     line-height: 22px;
 }
 .notContainer>div>div:first-of-type{
     margin-bottom: 110px;
+}
+.notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child){
+    margin-bottom: 10px;
 }
 .notContainer>div>div>strong{
     display: block;
@@ -4202,7 +4218,7 @@ div .backBtn{
     display: block;
     margin-bottom: 70px;
 }
-.notContainer>div>div>ul>li:not(:last-child){
+.notContainer>div:nth-child(2)>span+div>b+ul>li:not(:last-child){
     margin-bottom: 15px;
 }
 .notContainer>div>div>ul>li>del,
@@ -4217,16 +4233,140 @@ div .backBtn{
 }
 .notContainer>div>div:last-child>ul>li>p>mark,
 .notContainer>div>div:last-child>ul>li>p>del,
-.notContainer>div>div:last-child>ul>li>p>del>mark{
+.notContainer>div>div:last-child>ul>li>p>del>mark,
+.notContainer>div>div:last-child>ul>li>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div:last-child>ul>li>mark{
+    display: block;
+    line-height: 22px;
+}
+.notContainer>div>div:last-child>ul>li>mark:first-child{
+    margin-bottom: 20px;
+}
+.notContainer>div>div>p{
+    margin-bottom: 30px;
+}
+.notContainer>div:nth-of-type(6)>div>ol>li>ol{
+    margin: 10px 0 0 20px;
+}
+.notContainer>div>div>ol>li>ol>li{
+    line-height: 22px;
+}
+.notContainer>div:nth-of-type(6)>div>ol>li>ol>li:not(:last-child){
+    margin-bottom: 15px;
+}
+.notContainer>div>div>ol>li>ol>li>ul{
+    margin: 10px 0 0 20px;
+}
+.notContainer>div>div:last-child>ol>li>ol>li>ul>li:last-child>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div>ul>li>b{
+    display: block;
+    margin-bottom: 20px;
+}
+.notContainer>div>div>ul{
+    margin-bottom: 70px;
+}
+.notContainer>div>div:last-child>ul>li>p>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div>b+div>b+p:first-child{
+    display: block;
+    margin-bottom: 50px;
+}
+.notContainer>div>div>div>ul{
+    margin: 20px 0;
+}
+.notContainer>div>div>div>ul>li:not(:last-child){
+    margin-bottom: 15px;
+}
+.notContainer>div>div>div>p>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div>div>p+p{
+    margin-bottom: 50px;
+}
+.notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
+    margin-bottom: 30px;
+}
+.notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div:nth-of-type(8)>div:first-of-type>div>b+p{
+    margin-bottom: 50px;
+}
+.notContainer>div:nth-of-type(8)>div:last-child>div>b+p{
+    margin-bottom: 15px;
+}
+.notContainer>div:nth-of-type(8)>div:last-child>div>ul>li>mark{
+    color: var(--bs2);
+}
+.notContainer>div:nth-of-type(9)>div>ol>li>ol{
+    margin: 20px 0 30px 0;
+}
+.notContainer>div:nth-of-type(9)>div>ol>li{
+    line-height: 22px;
+}
+.notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div:nth-of-type(9)>div:last-child>ol>li>ol>li>del,
+.notContainer>div:nth-of-type(9)>div:last-child>ol>li>ol>li>del>mark{
+    color: var(--bs2);
+}
+.notContainer>div:last-of-type>div>p>mark{
     color: var(--bs2);
 }
 /* noticeOfPolicyRevision Details Fin */
-
-
-
-
-
-
+.bidContainer>h3{
+    margin-bottom: 110px;
+}
+.bidContainer>div:not(:last-child){
+    margin-bottom: 100px;
+}
+.bidContainer>div>h4::before{
+    content: '•';
+    display: inline-block;
+    margin-right: 10px;
+}
+.bidContainer>div>h4{
+    margin-bottom: 40px;
+}
+.bidContainer>div:first-of-type>ul>li>ol{
+    margin: 25px 0 0 25px;
+}
+.bidContainer>div:first-of-type>ul>li>ol>li:not(:last-child){
+    margin-bottom: 15px;
+}
+.bidContainer>div:first-of-type>ul>li:first-child{
+    margin-bottom: 25px;
+}
+.bidContainer>div:first-of-type>ul>li:nth-child(2),
+.bidContainer>div:first-of-type>ul>li:nth-child(3){
+    margin-bottom: 15px;
+}
+.bidContainer>div:last-of-type>ul{
+    margin-bottom: 40px;
+}
+.bidContainer>div:last-of-type>ul>li{
+    line-height: 22px;
+}
+.bidContainer>div:last-of-type>ul>li:not(:last-child){
+    margin-bottom: 15px;
+}
+.bidContainer>div:last-of-type>strong{
+    display: block;
+    line-height: 22px;
+}
+.bidContainer>div:last-of-type>strong:not(:last-child){
+    margin-bottom: 15px;
+}
+/* bidNotice Details Fin */
 
 
 @media screen and (min-width: 1280px) {
