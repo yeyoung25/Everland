@@ -3423,40 +3423,31 @@ div .backBtn{
     justify-content: space-between;
 }
 .modal01{
-    display: none;
+    /* display: none; */
 }
 .modal01.active{
     display: block;
 }
-.modal01{
-    /* position: fixed;
-    width: 100%;
-    height: 100vh; */
-    /* top: 0;
-    left: 0;
-    display: none; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-}
-.modal01 div{
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
+.modal01>div{
+    position: fixed;
+    width: 800px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
-}
-.modal01 div>b{
-    display: block;
-    width: 41.666%;
-    background-color: var(--gs5);
-    padding: 50px 0;
-    line-height: 26px;
-    text-align: center;
-    /* z-index: 1000; */
+    z-index: 100;
 }
 .modal01 div>div{
-    width: 41.666%;
     background-color: var(--gs7);
     text-align: center;
     padding: 25px 0;
+}
+.modal01 div>b{
+    display: block;
+    background-color: var(--gs1);
+    padding: 50px 12.765%;
+    line-height: 26px;
+    text-align: center;
 }
 .modal01 div>div input{
     border: none;
@@ -4019,13 +4010,13 @@ div .backBtn{
     cursor: pointer;
 }
 .hisContainer>ul>li{
+    position: relative;
     width: 25%;
     text-align: center;
     border-bottom: 1px solid var(--gs11);
     color: var(--gs5);
     line-height: 100px;
     margin-bottom: 110px;
-    position: relative;
 }
 .hisContainer>ul>li:not(:last-child):after{
     content: '';
@@ -4062,24 +4053,28 @@ div .backBtn{
     color: var(--vs7);
 }
 .hisContainer>ol>li>ol{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     width: 75%;
     padding: 55px 0;
 }
 .hisContainer>ol>li>ol>li{
-    display: flex;
+    /* display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    line-height: 22px;
+    line-height: 22px; */
+    position: relative;
+    padding-left: 70px;
 }
 .hisContainer>ol>li>ol>li:not(:last-child){
     margin-bottom: 20px;
 }
 .hisContainer>ol>li>ol>li>mark{
     display: inline-block;
-    width: 10%;
     color: var(--gs5);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 /* history Details Fin */
 .siteContainer>div{
@@ -4158,11 +4153,74 @@ div .backBtn{
     margin-bottom: 100px;
 }
 /* siteMap Details Fin */
-
-
-
-
-
+.notContainer h3{
+    margin-bottom: 110px;
+}
+.notContainer>div:not(:last-child){
+    margin-bottom: 150px;
+}
+.notContainer>div>strong{
+    display: block;
+    margin-bottom: 40px;
+}
+.notContainer>div>p{
+    margin-bottom: 70px;
+    line-height: 22px;
+}
+.notContainer>div>div:first-of-type{
+    margin-bottom: 110px;
+}
+.notContainer>div>div>strong{
+    display: block;
+    margin-bottom: 40px;
+}
+.notContainer>div>div>b{
+    display: block;
+    margin-bottom: 30px;
+}
+.notContainer>div>div>div>b{
+    display: block;
+    margin-bottom: 20px;
+}
+.notContainer>div>div>div>ol{
+    margin: 0 0 50px 10px;
+}
+.notContainer>div>div>div>ol>li{
+    line-height: 22px;
+}
+.notContainer>div>div>div>ol>li>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div>div>ol>li:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div>span>b{
+    display: block;
+    margin-bottom: 15px;
+}
+.notContainer>div>span{
+    display: block;
+    margin-bottom: 70px;
+}
+.notContainer>div>div>ul>li:not(:last-child){
+    margin-bottom: 15px;
+}
+.notContainer>div>div>ul>li>del,
+.notContainer>div>div>ul>li>del>mark{
+    color: var(--bs2);
+}
+.notContainer>div>div>ul>li>p:first-child{
+    margin-top: 20px;
+}
+.notContainer>div>div>ul>li>p{
+    line-height: 22px;
+}
+.notContainer>div>div:last-child>ul>li>p>mark,
+.notContainer>div>div:last-child>ul>li>p>del,
+.notContainer>div>div:last-child>ul>li>p>del>mark{
+    color: var(--bs2);
+}
+/* noticeOfPolicyRevision Details Fin */
 
 
 
