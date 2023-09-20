@@ -346,8 +346,8 @@ footer div details span{
         max-width: 1920px;
     }
 
-    .contentBanner01 h2,
-    .contentBanner01>.textBox,
+    /* .contentBanner01 h2, */
+    /* .contentBanner01>.textBox, */
     .contentBanner03,
     footer>ul li,
     footer>div{

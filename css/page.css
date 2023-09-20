@@ -2755,16 +2755,19 @@ div .backBtn{
 }
 .seaContainer div:nth-child(2) div:last-child ul li ol li{
     display: flex;
-
 }
 .seaContainer div:nth-child(2) div:last-child ul li ol li mark{
     margin-right: 5px;
 }
 .seaContainer div:nth-child(2) div:last-child ul li ol li:last-child{
-    margin-left: 5.828%;
+    /* margin-left: 5.228%; */
+    margin-left: 75px;
 }
 .seaContainer div:nth-child(2) div:last-child ul li:not(:last-child){
     margin-bottom: 15px;
+}
+.seaContainer div:nth-child(2) div:last-child ul li>mark{
+
 }
 /* seasonTicket Details Fin */
 .proContainer div:nth-child(2)>strong{
@@ -3276,9 +3279,11 @@ div .backBtn{
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li label{
-    width: 19.148%;
-    vertical-align: middle;
+    /* width: 19.148%; */
+    /* vertical-align: middle; */
     line-height: 24px;
+    display: inline-block;
+    width: 15%;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
     background: url('../images/inqulry_select.png') no-repeat 95% 50%;
@@ -3302,19 +3307,29 @@ div .backBtn{
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(6) input{
     width: 50%;
     outline-color: var(--vs9);
+    padding: 5px 0;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6),
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7){
+    display: flex;
+    flex-wrap: nowrap;
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(7),
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(8){
+    display: flex;
     flex-wrap: nowrap;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset > ul li:nth-child(6) label,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset > ul li:nth-child(7) label{
-    width: 38.296%;
+    /* width: 38.296%; */
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: inline-block;
+    width: 85%;
+    box-sizing: border-box;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div>textarea{
@@ -3325,6 +3340,8 @@ div .backBtn{
     margin-bottom: 15px;
     font-family: 'Open Sans';
     font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li{
@@ -3353,6 +3370,7 @@ div .backBtn{
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li input{
     border: none;
     outline-color: transparent;
+    padding: 0;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child{
@@ -4288,8 +4306,24 @@ div .backBtn{
 .notContainer>div>div>div>p+p{
     margin-bottom: 50px;
 }
+.notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
+.notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child){
+    margin-bottom: 10px;
+}
+.notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
+    margin-bottom: 20px;
+}
+.notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child){
+    margin-bottom: 10px;
+}
 .notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
     margin-bottom: 30px;
+}
+.notContainer>div:nth-of-type(7)>div>ul>li>p:not(:last-child){
+    margin-bottom: 5px;
 }
 .notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child){
     margin-bottom: 10px;
@@ -4367,6 +4401,167 @@ div .backBtn{
     margin-bottom: 15px;
 }
 /* bidNotice Details Fin */
+.signInContainer>form,
+.findIdContainer>form,
+.findPWContainer>form{
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.signInContainer>form>fieldset,
+.signInContainer>div,
+.findIdContainer>form>fieldset,
+.findPWContainer>form>fieldset{
+    width: 670px;
+    margin: 0 auto;
+}
+.signInContainer>form>fieldset>legend,
+.findIdContainer>form>fieldset>legend,
+.findPWContainer>form>fieldset>legend{
+    margin-bottom: 50px;
+}
+.signInContainer>form>fieldset>ul,
+.findIdContainer>form>fieldset>ul,
+.findPWContainer>form>fieldset>ul{
+    margin-bottom: 60px;
+}
+.signInContainer>form>fieldset>ul>li:not(:last-child),
+.findIdContainer>form>fieldset>ul>li,
+.findPWContainer>form>fieldset>ul>li{
+    border-bottom: 1px solid var(--gs9);
+    line-height: 90px;
+    color: var(--gs9);
+}
+.signInContainer>form>fieldset>ul>li>input,
+.findIdContainer>form>fieldset>ul>li>input,
+.findPWContainer>form>fieldset>ul>li>input{
+    border: none;
+}
+.signInContainer>form>fieldset>ul>li:nth-child(2){
+    margin-bottom: 25px;
+}
+.signInContainer>form>fieldset>ul>li:last-child>input{
+    appearance: none;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    width: 12px;
+    height: 12px;
+    box-shadow: 0 0 0 1px var(--gs5);
+    border-radius: 50%;
+    position: relative;
+}
+.signInContainer>form>fieldset>ul>li:last-child>input[type="checkbox"]:checked::after{
+    content: '✔';
+    color: var(--gs5);
+    border: 1px solid var(--gs1);
+    position: absolute;
+    left: 0;
+    top:-4px;
+}
+.signInContainer>form>fieldset>ul>li:last-child label{
+    color: var(--gs5);
+}
+.signInContainer>form>fieldset>input,
+.findIdContainer>form>fieldset>input,
+.findPWContainer>form>fieldset>input{
+    border: none;
+    background-color: var(--vs7);
+    color: var(--gs1);
+    width: 100%;
+    height: 65px;
+}
+.signInContainer>div>ul{
+    display: flex;
+}
+.signInContainer>div>ul:first-child{
+    margin-bottom: 70px;
+}
+.signInContainer>form>fieldset>ul>li:not(:last-child)>label,
+.findIdContainer>form>fieldset>ul>li>label,
+.findPWContainer>form>fieldset>ul>li>label{
+    display: inline-block;
+    width: 150px;
+}
+.signInContainer>form>fieldset>ul>li:not(:last-child)>input,
+.findIdContainer>form>fieldset>ul>li>input,
+.findPWContainer>form>fieldset>ul>li>input{
+    padding: 20px 0;
+    width: 70%;
+}
+.signInContainer>div>ul>li{
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.signInContainer>div>ul:first-child>li:not(:first-child)::before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: var(--gs9);
+    position: absolute;
+    left: 0;
+}
+.signInContainer>div>ul>li>a{
+    color: var(--gs9);
+}
+.signInContainer>div>ul:last-child{
+    justify-content: center;
+}
+.signInContainer>div>ul:last-child>li{
+    width: 100px;
+}
+.signInContainer>div>ul:last-child>li{
+    font-size: 0;
+}
+.signInContainer>div>ul:last-child>li:first-child a{
+    background: url('../images/signIn_kakao.png') no-repeat center / contain;
+    display: inline-block;
+    width: 39px;
+    height: 36px;
+}
+.signInContainer>div>ul:last-child>li:last-child a{
+    background: url('../images/signIn_faceBook.png') no-repeat center / contain;
+    display: inline-block;
+    width: 19px;
+    height: 36px;
+}
+.findIdContainer>form>fieldset>div,
+.findPWContainer>form>fieldset>div{
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-bottom: 65px;
+}
+.findIdContainer>form>fieldset>div::after,
+.findPWContainer>form>fieldset>div::after{
+    background: url('../images/findId.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 138px;
+    height: 131px;
+}
+.findIdContainer>form>fieldset>div>h3,
+.findPWContainer>form>fieldset>div>h3{
+    margin-bottom: 30px;
+}
+.findIdContainer>form>fieldset>div>h3>mark,
+.findPWContainer>form>fieldset>div>h3>mark{
+    color: var(--vs7);
+}
+.findIdContainer>form>fieldset>div>p,
+.findPWContainer>form>fieldset>div>p{
+    line-height: 26px;
+}
+.findIdContainer>form>fieldset>div>p>mark,
+.findPWContainer>form>fieldset>div>p>mark{
+    color: var(--os1);
+}
+/* signIn / findId  Details Fin */
+
+
+
+
+
 
 
 @media screen and (min-width: 1280px) {
