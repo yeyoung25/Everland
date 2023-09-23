@@ -3,9 +3,11 @@ $(document).ready(function(){
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   inquToggle($("header+div div:nth-child(2)>div>form fieldset>input"));
+  findtoggle($("div>form>fieldset>input"));
   trafTab();
   policyTab();
-  historyTab()
+  historyTab();
+  findtoggle();
   backBtn($(".backBtn"));
 });
 
@@ -15,7 +17,6 @@ function justToggle(button){
     $(this).toggleClass("active");
   });
 }
-
 
 function accordionFaq(button){
   $(button).click(function(){
@@ -42,6 +43,11 @@ function inquToggle(button){
   });
   $(".closemodel").parent().click(function(){
     $(currentPopup).removeClass('active');
+  });
+}
+function findtoggle(button){
+  $(button).click(function(){
+    $('.modal02').toggleClass('active');
   });
 }
 
@@ -71,8 +77,14 @@ function historyTab(){
   });
 }
 
+
 function backBtn(button){
   $(button).click(function(){
     history.go(-1);
   });
 }
+var hypenTel = (target) => {
+  target.value = target.value
+    .replace(/[^0-9]/g, '')
+    .replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
+ }

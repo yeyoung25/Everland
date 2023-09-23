@@ -4408,10 +4408,13 @@ div .backBtn{
     margin-bottom: 50px;
 }
 .signInContainer>form>fieldset,
-.signInContainer>div,
+.signInContainer>div{
+    width: 606px;
+    margin: 0 auto;
+}
 .findIdContainer>form>fieldset,
 .findPWContainer>form>fieldset{
-    width: 670px;
+    width: 750px;
     margin: 0 auto;
 }
 .signInContainer>form>fieldset>legend,
@@ -4448,14 +4451,16 @@ div .backBtn{
     box-shadow: 0 0 0 1px var(--gs5);
     border-radius: 50%;
     position: relative;
+    border-radius: 50%;
+
 }
 .signInContainer>form>fieldset>ul>li:last-child>input[type="checkbox"]:checked::after{
-    content: '✔';
-    color: var(--gs5);
-    border: 1px solid var(--gs1);
+    content:'✔';
+    text-align: center;
     position: absolute;
-    left: 0;
-    top:-4px;
+    left: 1px;
+    top: -3px;
+    color: var(--gs9);
 }
 .signInContainer>form>fieldset>ul>li:last-child label{
     color: var(--gs5);
@@ -4481,11 +4486,16 @@ div .backBtn{
     display: inline-block;
     width: 150px;
 }
-.signInContainer>form>fieldset>ul>li:not(:last-child)>input,
+.signInContainer>form>fieldset>ul>li:not(:last-child)>input{
+    width: 73%;
+    outline-color: transparent;
+}
 .findIdContainer>form>fieldset>ul>li>input,
 .findPWContainer>form>fieldset>ul>li>input{
-    padding: 20px 0;
-    width: 70%;
+    padding: 20px 5px;
+    width: 77%;
+    font-size: 18px;
+    outline-color: transparent;
 }
 .signInContainer>div>ul>li{
     width: 33.33%;
@@ -4528,9 +4538,8 @@ div .backBtn{
 }
 .findIdContainer>form>fieldset>div,
 .findPWContainer>form>fieldset>div{
-    /* display: flex;
-    flex-wrap: wrap; */
     margin-bottom: 65px;
+    position: relative;
 }
 .findIdContainer>form>fieldset>div::after,
 .findPWContainer>form>fieldset>div::after{
@@ -4539,9 +4548,13 @@ div .backBtn{
     display: inline-block;
     width: 138px;
     height: 131px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .findIdContainer>form>fieldset>div>h3,
 .findPWContainer>form>fieldset>div>h3{
+    display: inline-block;
     margin-bottom: 30px;
 }
 .findIdContainer>form>fieldset>div>h3>mark,
@@ -4551,12 +4564,296 @@ div .backBtn{
 .findIdContainer>form>fieldset>div>p,
 .findPWContainer>form>fieldset>div>p{
     line-height: 26px;
+    width: 570px;
 }
 .findIdContainer>form>fieldset>div>p>mark,
 .findPWContainer>form>fieldset>div>p>mark{
     color: var(--os1);
 }
+.modal02{
+    display: none;
+}
+.modal02.active{
+    display: block;
+}
+.modal02>div{
+    position: fixed;
+    width: 800px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.modal02>div>div{
+    padding: 65px 13.75%;
+    background-color: var(--gs1);
+    text-align: center;
+}
+.modal02>div>div strong{
+    display: block;
+    margin-bottom: 20px;
+}
+.modal02>div>div p{
+    margin-bottom: 50px;
+    color: var(--gs9);
+}
+.modal02>div>div b{
+    display: block;
+    text-align: left;
+}
+.modal02>div>div b>mark{
+    color: var(--vs9);
+    margin-right: 5px;
+}
+.modal02>div a{
+    display: inline-block;
+    width: 100%;
+    line-height: 65px;
+    color: var(--gs1);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--gs7);
+}
 /* signIn / findId  Details Fin */
+.signUpContainer h3{
+    margin-bottom: 110px;
+}
+.signUpContainer>ul{
+    display: flex;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--gs8);
+}
+.signUpContainer>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.33%;
+    position: relative;
+    padding-left: 8.592%;
+}
+.signUpContainer>ul>li>strong{
+    display: block;
+    width: 100%;
+    color: var(--vs7);
+    margin-bottom: 20px;
+}
+.signUpContainer>ul>li>b{
+    line-height: 26px;
+}
+.signUpContainer>ul>li:first-child::before{
+    background: url('../images/signup01.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 93px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.signUpContainer>ul>li:nth-child(2):before{
+    background: url('../images/signup02.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.signUpContainer>ul>li:last-child::before{
+    background: url('../images/signup03.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 79px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.signUpContainer .step01>form>div{
+    background-color: rgba(98, 24, 102, 0.1);
+    margin: 65px 0 85px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.signUpContainer .step01>form>div>input{
+    width: 22.695%;
+    height: 19px;
+}
+.signUpContainer .step01>form>div>input[type="checkbox"]:checked{
+    /* border: 1px solid var(--gs1);
+    background-color: var(--vs7); */
+}
+.signUpContainer .step01>form>div>label{
+    display: block;
+    width: 65.957%;
+    color: var(--vs10);
+}
+.signUpContainer .step01>form>div>label>b{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.signUpContainer .step01>form>div>label>span{
+    display: block;
+    line-height: 22px;
+}
+.signUpContainer .step01>form>ol>li{
+    position: relative;
+}
+.signUpContainer .step01>form>ol>li:not(:last-child)>strong>mark{
+    display: inline-block;
+    color: var(--vs7);
+    margin-right: 25px;
+}
+.signUpContainer .step01>form>ol>li:last-child>strong>mark{
+    color: var(--os1);
+    margin-left: 25px;
+}
+.signUpContainer .step01>form>ol>li>div{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.signUpContainer .step01>form>ol>li>div>label{
+    color: var(--gs8);
+}
+.signUpContainer .step01>form>ol>li>ol{
+    margin: 55px 0 110px;
+    border: 1px solid var(--gs8);
+    padding: 85px 4.237%;
+    color: var(--gs8);
+    height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.signUpContainer .step01>form>div+ol>li{
+    line-height: 24px;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:first-child{
+    margin-bottom: 90px;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:not(:first-child){
+    margin-left: 6.933%;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:nth-child(n+2):not(:last-child){
+    margin-bottom: 65px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(2)>ol>li:not(:last-child),
+.signUpContainer .step01>form>div+ol>li:nth-child(3)>ol>li:not(:last-child),
+.signUpContainer .step01>form>div+ol>li:last-child>ol>li:nth-child(-n+2){
+    margin-bottom: 65px;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:not(:first-child)>b{
+    display: block;
+    margin-bottom: 35px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(2)>ol>li>b,
+.signUpContainer .step01>form>div+ol>li:nth-child(3)>ol>li>b,
+.signUpContainer .step01>form>div+ol>li:last-child>ol>li>strong{
+    display: block;
+    margin-bottom: 35px;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:not(:first-child)>ol>li:not(:last-child){
+    margin-bottom: 20px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(2)>ol>li>ol>li:not(:last-child){
+    margin-bottom: 20px;
+}
+.signUpContainer .step01>form>div+ol>li:first-child>ol>li:not(:first-child)>ol>li>ol>li{
+    margin: 0 0 5px 20px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(2)>ol>li>ol>li>ol>li:first-child{
+    margin-top: 20px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(2)>ol>li>ol>li>ol>li{
+    margin: 0 0 5px 20px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(3)>ol>li>ul>li:not(:last-child){
+    margin-bottom: 20px;
+}
+.signUpContainer .step01>form>div+ol>li:nth-child(3)>ol>li>ul>li>b{
+    color: var(--gs10);
+}
+.signUpContainer .step01>form>div+ol>li:last-child>ol>li:last-child{
+    margin-top: 35px;
+}
+.signUpContainer .step01>form>input,
+.signUpContainer .step02>form>fieldset>input{
+    display: block;
+    border: none;
+    background-color: var(--vs8);
+    color: var(--gs1);
+    padding: 25px 75px;
+    margin: 0 auto;
+}
+.signUpContainer .step02>form>fieldset>strong{
+    display: block;
+    margin-bottom: 20px;
+}
+.signUpContainer .step02>form>fieldset>ol:first-of-type{
+    margin-bottom: 110px;
+}
+.signUpContainer .step02>form>fieldset>ol>li{
+    padding: 30px 0;
+}
+.signUpContainer .step02>form>fieldset>ol:first-of-type>li{
+    border-bottom: 1px solid var(--gs8);
+}
+.signUpContainer .step02>form>fieldset>ol>li>label{
+    display: inline-block;
+    width: 17.021%;
+}
+.signUpContainer .step02>form>fieldset>ol>li>input{
+    border: none;
+}
+.signUpContainer .step02>form>fieldset>ol>li>button{
+    border: none;
+    background-color: transparent;
+    color: var(--bs5);
+}
+.signUpContainer .step02>form>fieldset>ol>li:nth-child(5){
+    display: flex;
+    align-items: center;
+}
+.signUpContainer .step02>form>fieldset>ol>li:nth-child(5) span{
+    display: inline-block;
+    width: 59.156%;
+    color: var(--gs8);
+    margin-left: auto;
+    line-height: 22px;
+}
+.signUpContainer .step02>form>fieldset>ol:last-of-type{
+    /* display: flex; */
+}
+.signUpContainer .step03{
+    text-align: center;
+}
+.signUpContainer .step03 h3{
+    margin-bottom: 115px;
+}
+.signUpContainer .step03>strong{
+    display: block;
+    margin-bottom: 25px;
+}
+.signUpContainer .step03>p{
+    color: var(--gs8);
+    margin-bottom: 115px;
+}
+.signUpContainer .step03>a{
+    display: inline-block;
+    padding: 25px 20.921%;
+}
+.signUpContainer .step03>a:first-of-type{
+    background-color: var(--vs7);
+    color: var(--gs1);
+}
+.signUpContainer .step03>a:last-of-type{
+    border: 1px solid var(--gs11);
+}
+/* signUp  Details Fin */
 
 
 

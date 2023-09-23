@@ -122,20 +122,20 @@
                     </li>
                     <li>
                         <label for="phone">PHONE</label>
-                        <input type="tel" title="phone" id="phone">
+                        <input type="tel" title="phone" id="phone" oninput="hypenTel(this)" maxlength="13">
                     </li>
                 </ul>
-                <input type="button" value="CHECK" class="op7_20" data-popup="popup02">
+                <input type="button" value="CHECK" class="op7_20" data-popup="modal02">
             </fieldset>
         </form>
     </div>
-    <div id="modal02">
+    <div class="modal02">
         <div>
-            <strong class="op6_25">A list that matches the information you entered</strong>
-            <p class="op4_20">&#40;For privacy protection, the ending digit is marked with &#42;&#41;</p>
-            <b class="op6_20"><mark>abcd****</mark> Joined: 2023.02.12</b>
-        </div>
-        <div>
+            <div>
+                <strong class="op6_25">A list that matches the information you entered</strong>
+                <p class="op4_20">&#40;For privacy protection, the ending digit is marked with &#42;&#41;</p>
+                <b class="op6_20"><mark>abcd****</mark> Joined: 2023.02.12</b>
+            </div>
             <a href="signIn.html" class="op7_20">CHECK</a>
         </div>
     </div>

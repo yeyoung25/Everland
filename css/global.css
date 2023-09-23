@@ -125,6 +125,8 @@ header #fnbPanel.act{
 header #fnbPanel ul>li{
     height: 350px;
     width: 25%;
+    padding-right: 5px;
+    box-sizing: border-box;
 }
 header #fnbPanel ul>li h2{
     color: var(--gs1);
@@ -247,7 +249,7 @@ footer>ul li:last-child h3{
 }
 footer>div{
     padding-top: 37px;
-    height: 220px;
+    height: 250px;
 }
 footer div div{
     align-items: center;
@@ -276,8 +278,7 @@ footer div div ul li:not(:first-child){
     padding-left: 25px;
 }
 footer div div ol{
-    right: 0;
-    top: 47px;
+    margin-left: auto;
 }
 footer div div ol li{
     display: inline-block;
@@ -310,7 +311,6 @@ footer div details{
     position: absolute;
     top: 125px;
     color: var(--gs8);
-    margin-bottom: 50px;
 }
 footer div details a{
     color: var(--gs8);
@@ -340,19 +340,19 @@ footer div details span{
 
 @media screen and (min-width: 1280px) {
     header,
-    #wrap,
-    footer,
-    header+div{
+    header+div,
+    footer{
         max-width: 1920px;
     }
-
-    /* .contentBanner01 h2, */
-    /* .contentBanner01>.textBox, */
-    .contentBanner03,
-    footer>ul li,
-    footer>div{
+    footer>ul li{
         max-width: 1410px;
         margin: 0 auto;
+    }
+    footer>div{
+        max-width: 1458px;
+        margin: 0 auto;
+        padding: 37px 24px 0;
+        box-sizing: border-box;
     }
 }
 /* ?desktop */
