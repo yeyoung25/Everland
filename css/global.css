@@ -51,7 +51,7 @@ header div .ect_btn{
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 111px);
-    text-shadow: 0px 2px 7px rgba(18, 128, 196, 0.8);
+    text-shadow: 0px 2px 7px rgba(127,127,127,0.8);
 }
 header div .ect_btn a{
     color: var(--gs1);
@@ -138,6 +138,7 @@ header #fnbPanel ul>li ol li{
 header #fnbPanel ul>li ol li a{
     color: var(--gs6);
     transition: 0.2s;
+    line-height: 22px;
 }
 header #fnbPanel ul>li:first-child:hover h2,
 header #fnbPanel ul>li:nth-child(5):hover h2{

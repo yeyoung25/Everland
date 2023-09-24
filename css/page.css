@@ -105,6 +105,7 @@
 }
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
     width: 470px;
+    /* width: 33.33%; */
     height: 1px;
     margin: 0;
     background-color: var(--gs6);
@@ -1903,8 +1904,12 @@
     width: 30%;
     height: 5px;
     background-color: var(--os1);
-    float: right;
-    margin: 10px 30px 0 5px;
+    margin: -50px 30px 0 5px;
+    transform: rotate(90deg);
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: -10px;
 }
 .recoContainer div:nth-child(2) dl dt mark{
     display: block;
@@ -3277,10 +3282,14 @@ div .backBtn{
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li:not(:last-child){
     border-bottom: 1px solid var(--gs8);
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li label{
-    /* width: 19.148%; */
-    /* vertical-align: middle; */
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
+    vertical-align: middle;
+    line-height: 24px;
+    display: inline-block;
+    width: 15%;
+}
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) label{
+    vertical-align: middle;
     line-height: 24px;
     display: inline-block;
     width: 15%;
@@ -3509,7 +3518,7 @@ div .backBtn{
     margin-bottom: 80px;
 }
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child b{
-    width: 19.148%;
+    width: 15%;
 }
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
     width: 80.852%;
@@ -4444,30 +4453,34 @@ div .backBtn{
 }
 .signInContainer>form>fieldset>ul>li:last-child>input{
     appearance: none;
-    margin-right: 10px;
+    background: url('../images/signin_check01.png') no-repeat center / contain;
     margin-bottom: 6px;
-    width: 12px;
-    height: 12px;
-    box-shadow: 0 0 0 1px var(--gs5);
-    border-radius: 50%;
-    position: relative;
-    border-radius: 50%;
-
+    width: 14px;
+    height: 14px;
+    filter: opacity(0.2) drop-shadow(0 0 0 gray);
 }
-.signInContainer>form>fieldset>ul>li:last-child>input[type="checkbox"]:checked::after{
-    content: '✔';
-    text-align: center;
-    position: absolute;
-    left: 0px;
-    top: -9px;
-    font-weight: 900;
-    font-size: 18px;
-    color: var(--gs9);
+.signInContainer>form>fieldset>ul>li:last-child>input[type="checkbox"]:checked:after{
+    background: url('../images/signin_check02.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    margin-bottom: 6px;
+    width: 14px;
+    height: 14px;
+    color: var(--gs10);
 }
 .signInContainer>form>fieldset>ul>li:last-child label{
     color: var(--gs5);
 }
-.signInContainer>form>fieldset>input,
+.signInContainer>form>fieldset>a{
+    display: block;
+    border: none;
+    background-color: var(--vs7);
+    color: var(--gs1);
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+}
 .findIdContainer>form>fieldset>input,
 .findPWContainer>form>fieldset>input{
     border: none;
@@ -4516,6 +4529,12 @@ div .backBtn{
 }
 .signInContainer>div>ul>li>a{
     color: var(--gs9);
+}
+.signInContainer>div>ul>li:first-child>a{
+    margin-left: 30px;
+}
+.signInContainer>div>ul>li:last-child>a{
+    margin-right: 30px;
 }
 .signInContainer>div>ul:last-child{
     justify-content: center;
@@ -4590,7 +4609,6 @@ div .backBtn{
 .modal02>div>div{
     padding: 65px 13.75%;
     background-color: var(--gs1);
-    text-align: center;
 }
 .modal02>div>div strong{
     display: block;
@@ -4600,9 +4618,15 @@ div .backBtn{
     margin-bottom: 50px;
     color: var(--gs9);
 }
-.modal02>div>div b{
+.modal02>div>div>b{
+    display: block;
+    text-align: center;
+    line-height: 26px;
+}
+.modal02>div>div p+b{
     display: block;
     text-align: left;
+    line-height: 26px;
 }
 .modal02>div>div b>mark{
     color: var(--vs9);
@@ -4626,6 +4650,7 @@ div .backBtn{
     display: flex;
     padding-bottom: 60px;
     border-bottom: 1px solid var(--gs8);
+    margin-bottom: 110px;
 }
 .signUpContainer>ul>li{
     display: flex;
@@ -4640,10 +4665,28 @@ div .backBtn{
     color: var(--vs7);
     margin-bottom: 20px;
 }
-.signUpContainer>ul>li>b{
-    line-height: 26px;
+.signUpContainer>.step1>li:not(:first-child)>strong{
+    opacity: 0.3;
 }
-.signUpContainer>ul>li:first-child::before{
+.signUpContainer>.step1>li:not(:first-child)>b{
+    line-height: 26px;
+    opacity: 0.3;
+}
+.signUpContainer>.step2>li:not(:nth-child(2))>strong{
+    opacity: 0.3;
+}
+.signUpContainer>.step2>li:not(:nth-child(2))>b{
+    line-height: 26px;
+    opacity: 0.3;
+}
+.signUpContainer>.step3>li:not(:last-child)>strong{
+    opacity: 0.3;
+}
+.signUpContainer>.step3>li:not(:last-child)>b{
+    line-height: 26px;
+    opacity: 0.3;
+}
+.signUpContainer>.step1>li:first-child::before{
     background: url('../images/signup01.png') no-repeat center / contain;
     content: '';
     display: inline-block;
@@ -4653,7 +4696,40 @@ div .backBtn{
     top: 0;
     left: 0;
 }
-.signUpContainer>ul>li:nth-child(2):before{
+.signUpContainer>.step1>li:nth-child(2):before{
+    background: url('../images/signup02.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step1>li:last-child::before{
+    background: url('../images/signup03.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 79px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step2>li:first-child::before{
+    background: url('../images/signup01.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 93px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step2>li:nth-child(2):before{
     background: url('../images/signup02.png') no-repeat center / contain;
     content: '';
     display: inline-block;
@@ -4663,7 +4739,40 @@ div .backBtn{
     top: 0;
     left: 0;
 }
-.signUpContainer>ul>li:last-child::before{
+.signUpContainer>.step2>li:last-child::before{
+    background: url('../images/signup03.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 79px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step3>li:first-child::before{
+    background: url('../images/signup01.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 93px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step3>li:nth-child(2):before{
+    background: url('../images/signup02.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.signUpContainer>.step3>li:last-child::before{
     background: url('../images/signup03.png') no-repeat center / contain;
     content: '';
     display: inline-block;
@@ -4675,7 +4784,7 @@ div .backBtn{
 }
 .signUpContainer .step01>form>div{
     background-color: rgba(98, 24, 102, 0.1);
-    margin: 65px 0 85px;
+    margin-bottom: 85px;
     padding: 50px 0;
     display: flex;
     align-items: center;
@@ -4685,8 +4794,7 @@ div .backBtn{
     height: 19px;
 }
 .signUpContainer .step01>form>div>input[type="checkbox"]:checked{
-    /* border: 1px solid var(--gs1);
-    background-color: var(--vs7); */
+    accent-color: purple;
 }
 .signUpContainer .step01>form>div>label{
     display: block;
@@ -4718,6 +4826,10 @@ div .backBtn{
     position: absolute;
     top: 0;
     right: 0;
+}
+.signUpContainer .step01>form>ol>li>div>input{
+    margin: 0 10px 4px 0;
+    accent-color: var(--vs8);
 }
 .signUpContainer .step01>form>ol>li>div>label{
     color: var(--gs8);
@@ -4782,18 +4894,24 @@ div .backBtn{
 .signUpContainer .step01>form>div+ol>li:last-child>ol>li:last-child{
     margin-top: 35px;
 }
-.signUpContainer .step01>form>input,
-.signUpContainer .step02>form>fieldset>input{
+.signUpContainer .step01>form>a,
+.signUpContainer .step02>form>fieldset>a{
     display: block;
+    width: 17.730%;
     border: none;
     background-color: var(--vs8);
     color: var(--gs1);
-    padding: 25px 75px;
+    padding: 25px 0px;
+    text-align: center;
     margin: 0 auto;
 }
 .signUpContainer .step02>form>fieldset>strong{
     display: block;
     margin-bottom: 20px;
+}
+.signUpContainer .step02>form>fieldset>strong:last-of-type{
+    display: block;
+    margin-bottom: 50px;
 }
 .signUpContainer .step02>form>fieldset>ol:first-of-type{
     margin-bottom: 110px;
@@ -4838,7 +4956,7 @@ div .backBtn{
 }
 .signUpContainer .step02>form>fieldset>ol:last-of-type>li:nth-child(5){
     width: 100%;
-    margin: 55px 0 115px;
+    margin: 30px 0 115px;
     padding-top: 30px;
     border-top: 1px solid var(--gs8);
     line-height: 22px;
@@ -4866,15 +4984,19 @@ div .backBtn{
     margin-bottom: 115px;
 }
 .signUpContainer .step03>a{
-    display: inline-block;
-    padding: 25px 20.921%;
+    display: block;
+    width: 46.808%;
+    line-height: 65px;
+    margin: 0 auto;
 }
 .signUpContainer .step03>a:first-of-type{
     background-color: var(--vs7);
     color: var(--gs1);
+    margin-bottom: 25px;
 }
 .signUpContainer .step03>a:last-of-type{
     border: 1px solid var(--gs11);
+    box-sizing: border-box;
 }
 /* signUp  Details Fin */
 

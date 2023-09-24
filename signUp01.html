@@ -21,7 +21,7 @@
         <div>
             <div class="ect_btn op7_20">
                 <a href="signIn.html">SIGN IN</a>
-                <a href="signUp.html">SIGN UP</a>
+                <a href="signUp01.html">SIGN UP</a>
                 <a href="faq.html">COMMUNITY</a>
                 <a href="reservation.html">RESERVATION</a>
             </div>
@@ -96,7 +96,7 @@
                     <h2 class="la9_22">SIGN IN</h2>
                     <ol class="op7_18">
                         <li><a href="signIn.html">Sign in</a></li>
-                        <li><a href="signUp.html">Sign up</a></li>
+                        <li><a href="signUp01.html">Sign up</a></li>
                     </ol>
                 </li>
             </ul>
@@ -106,7 +106,7 @@
     <!-- header fin -->
     <div class="signUpContainer mwpadding conPbtm">
         <h3 class="la7_24 linebtm">SIGN UP</h3>
-        <ul>
+        <ul class="step1">
             <li data-tab="step01" class="active">
                 <strong class="la9_30">STEP 01</strong>
                 <b class="op6_20">Agree to terms and <br>conditions and verify identity</b>
@@ -123,7 +123,7 @@
         <div class="step01 active">
             <form>
                 <div>
-                    <input type="checkbox" id="agreeAllCheck">
+                    <input type="checkbox" id="agreeAllCheck" name="signUpAll" value='selectall' onclick='selectAll(this)'>
                     <label for="agreeAllCheck" class="check-all">
                         <b class="op6_24">Receive all terms and promotions below &#40;optional&#41; Check the content and agree.</b>
                         <span class="op6_16">&#8251; Even if you refuse to agree to the optional items, membership registration is not affected.Information may be limited.</span>
@@ -133,7 +133,7 @@
                     <li>
                         <strong class="op7_20"><mark class="op6_20">&#91;Required&#93;</mark>Everland Terms of Use</strong>
                         <div>
-                            <input type="checkbox" id="option01" class="check">
+                            <input type="checkbox" id="option01" name="signUpAll" class="check">
                             <label for="option01" class="op7_20">Agree &#40;essential&#41;</label>
                         </div>
                         <ol>
@@ -341,7 +341,7 @@
                     <li>
                         <strong class="op7_20"><mark class="op6_20">&#91;Required&#93;</mark>E&#45;Commerce Terms and Conditions</strong>
                         <div>
-                            <input type="checkbox" id="option02" class="check">
+                            <input type="checkbox" id="option02" name="signUpAll" class="check">
                             <label for="option02" class="op7_20">Agree &#40;essential&#41;</label>
                         </div>
                         <ol>
@@ -520,7 +520,7 @@
                     <li>
                         <strong class="op7_20"><mark class="op6_20">&#91;Required&#93;</mark>Consent to collection and use of personal information</strong>
                         <div>
-                            <input type="checkbox" id="option03" class="check">
+                            <input type="checkbox" id="option03" name="signUpAll" class="check">
                             <label for="option03" class="op7_20">Agree &#40;essential&#41;</label>
                         </div>
                         <ol>
@@ -558,7 +558,7 @@
                     <li>
                         <strong class="op7_20">Consent to collection and use of personal information<mark class="op6_20">&#40;select&#41;</mark></strong>
                         <div>
-                            <input type="checkbox" id="option04">
+                            <input type="checkbox" id="option04" name="signUpAll">
                             <label for="option04" class="op7_20">Agree &#40;select&#41;</label>
                         </div>
                         <ol>
@@ -578,77 +578,9 @@
                         </ol>
                     </li>
                 </ol>
-                <input type="button" value="NEXT STEP" data-tab="step02" class="op7_20">
+                <a href="signUp02.html" class="op7_20">NEXT STEP</a>
+                <!-- <input type="button" value="NEXT STEP" data-tab="step02" class="op7_20"> -->
             </form>
-        </div>
-        <div class="step02">
-            <form action="#">
-                <fieldset>
-                    <strong class="op7_20">Enter required information</strong>
-                    <ol class="op7_18">
-                        <li>
-                            <label for="name" class="op6_18">Name</label>
-                            <input type="text" title="name" id="name" value="PARK YEYOUNG" class="op6_16">
-                        </li>
-                        <li>
-                            <label for="phone" class="op6_18">number</label>
-                            <input type="tel" title="phone" id="phone" value="010-7271-7410" class="op6_16">
-                        </li>
-                        <li>
-                            <label for="userID" class="op6_18">ID</label>
-                            <input type="text" id="userID" class="op6_16">
-                            <button type="button" class="op6_16">ID confirmation</button>
-                        </li>
-                        <li>
-                            <label for="userPW01" class="op6_18">PASSWORD</label>
-                            <input type="password" id="userPW01"  maxlength="12" class="op6_16">
-                        </li>
-                        <li>
-                            <label for="userPW02" class="op6_18">PASSWORD CHECK</label>
-                            <input type="password" id="userPW02"  maxlength="12" class="op6_16">
-                            <span class="op6_16">
-                                &#42; Please enter a combination of 9 or more English letters, numbers, and special characters without spaces. 
-                                &#40;Only &#33; &#64; &#35; &#36; &#37; &amp; can be used as special characters.&#41;
-                            </span>
-                        </li>
-                        <li>
-                            <label for="userID" class="op6_18">BIRTH DATE</label>
-                            <input type="date" id="userDate" value="1999-07-06" class="op6_18">
-                        </li>
-                    </ol>
-                    <strong class="op7_20">Personal information validity period</strong>
-                    <ol>
-                        <li>
-                            <input type="radio" id="option05" name="validityPeriod">
-                            <label for="option05">Destroy upon withdrawal</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="option06" name="validityPeriod" checked>
-                            <label for="option06">1 Year</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="option07" name="validityPeriod">
-                            <label for="option07">3 Year</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="option08" name="validityPeriod">
-                            <label for="option08">5 Year</label>
-                        </li>
-                        <li class="op6_16">
-                            &#42; If there is no use such as logging in during the set personal information validity period, it will be converted to a dormant member and personal information will be stored/managed 
-                            or destroyed separately.
-                        </li>
-                    </ol>
-                    <input type="button" value="SIGN UP" data-tab="step03" class="op7_20">
-                </fieldset>
-            </form>
-        </div>
-        <div class="step03">
-            <h3 class="la9_45">WELCOME&#33;</h3>
-            <strong class="la9_30">Congratulations on your Sign up.</strong>
-            <p class="la9_30">You can use all services after logging in.</p>
-            <a href="signIn.html" class="op7_20">SIGN IN</a>
-            <a href="index.html" class="op7_20">MAIN</a>
         </div>
     </div>
     <footer>

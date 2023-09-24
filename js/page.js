@@ -9,6 +9,9 @@ $(document).ready(function(){
   historyTab();
   findtoggle();
   backBtn($(".backBtn"));
+  signIn();
+  findID();
+  confirmation();
 });
 
 
@@ -77,7 +80,6 @@ function historyTab(){
   });
 }
 
-
 function backBtn(button){
   $(button).click(function(){
     history.go(-1);
@@ -88,3 +90,43 @@ var hypenTel = (target) => {
     .replace(/[^0-9]/g, '')
     .replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
  }
+
+ function selectAll(selectAll)  {
+  var checkboxes 
+       = document.getElementsByName('signUpAll');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  })
+}
+
+function signIn(){
+  $("#submit-btn").click(function(){
+      if($("#userID").val().length==0) { 
+        alert("Please enter your ID."); 
+          setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
+      if($("#userPW").val().length==0) { 
+        alert("Please enter a password."); $("#recipeBody").focus(); return false;}
+  });
+};
+
+function findID(){
+  $("#submit-btn").click(function(){
+      if($("#userName").val().length==0) { 
+        alert("Please enter your Name."); 
+          setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
+      if($("#phone").val().length==0) { 
+        alert("Please enter a phone."); $("#recipeBody").focus(); return false;}
+  });
+};
+
+function confirmation(){
+  $("#confirmation").click(function(){
+    if($("#userID").val().length==0) { 
+      alert("Please enter your ID."); 
+        setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
+    else{
+      alert("This is a UserID you can use!");
+    };
+});
+}

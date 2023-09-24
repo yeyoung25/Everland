@@ -104,59 +104,85 @@
         <!-- f&b Fin -->
     </header>
     <!-- header fin -->
-    <div class="atraContainer">
-        <div class="everContainer activity linemg">
-            <h2 class="la7_30">ACTIVITIES</h2>
-            <nav>
-                <a href="index.html">home</a> 
-                <div>
-                    <input type="button" value="ACTIVITIES" class="la7_14">
-                    <ol class="op4_14">
-                        <li><a href="newsNotice.html">EVERLAND GUIDE</a></li>
-                        <li><a href="usageFee.html">TICKET PRICE</a></li>
-                        <li><a href="recommendedCourse.html">ACTIVITIES</a></li>
-                        <li><a href="seasonTicket.html">MEMBERSHIP</a></li>
-                        <li><a href="faq.html">COMMUNITY</a></li>
+    <div class="signUpContainer mwpadding conPbtm">
+        <h3 class="la7_24 linebtm">SIGN UP</h3>
+        <ul class="step2">
+            <li data-tab="step01" class="active">
+                <strong class="la9_30">STEP 01</strong>
+                <b class="op6_20">Agree to terms and <br>conditions and verify identity</b>
+            </li>
+            <li data-tab="step02">
+                <strong class="la9_30">STEP 02</strong>
+                <b class="op6_20">Enter member information</b>
+            </li>
+            <li data-tab="step03">
+                <strong class="la9_30">STEP 03</strong>
+                <b class="op6_20">Member registration complete</b>
+            </li>
+        </ul>
+        <div class="step02">
+            <form action="#">
+                <fieldset>
+                    <strong class="op7_20">Enter required information</strong>
+                    <ol class="op7_18">
+                        <li>
+                            <label for="name" class="op6_18">Name</label>
+                            <input type="text" title="name" id="name" value="PARK YEYOUNG" class="op6_16">
+                        </li>
+                        <li>
+                            <label for="phone" class="op6_18">number</label>
+                            <input type="tel" title="phone" id="phone" value="010-7271-7410" class="op6_16">
+                        </li>
+                        <li>
+                            <label for="userID" class="op6_18">ID</label>
+                            <input type="text" id="userID" class="op6_16">
+                            <button type="button" class="op6_16" id="confirmation">ID confirmation</button>
+                        </li>
+                        <li>
+                            <label for="userPW01" class="op6_18">PASSWORD</label>
+                            <input type="password" id="userPW01"  maxlength="12" class="op6_16">
+                        </li>
+                        <li>
+                            <label for="userPW02" class="op6_18">PASSWORD CHECK</label>
+                            <input type="password" id="userPW02"  maxlength="12" class="op6_16">
+                            <span class="op6_16">
+                                &#42; Please enter a combination of 9 or more English letters, numbers, and special characters without spaces. 
+                                &#40;Only &#33; &#64; &#35; &#36; &#37; &amp; can be used as special characters.&#41;
+                            </span>
+                        </li>
+                        <li>
+                            <label for="userID" class="op6_18">BIRTH DATE</label>
+                            <input type="date" id="userDate" value="1999-07-06" class="op6_18">
+                        </li>
                     </ol>
-                </div>
-                <div>
-                    <input type="button" value="ATTRACTION" class="la7_14">
-                    <ol class="op4_14">
-                        <li><a href="recommendedCourse.html">RECOMMENDED COURSE</a></li>
-                        <li><a href="attraction.html">ATTRACTION</a></li>
-                        <li><a href="entertainment.html">ENTERTAINMENT</a></li>
-                        <li><a href="restaurant.html">RESTAURANT</a></li>
-                        <li><a href="giftShop.html">GIFT SHOP</a></li>
+                    <strong class="op7_20">Personal information validity period</strong>
+                    <ol>
+                        <li>
+                            <input type="radio" id="option05" name="validityPeriod">
+                            <label for="option05">Destroy upon withdrawal</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option06" name="validityPeriod" checked>
+                            <label for="option06">1 Year</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option07" name="validityPeriod">
+                            <label for="option07">3 Year</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="option08" name="validityPeriod">
+                            <label for="option08">5 Year</label>
+                        </li>
+                        <li class="op6_16">
+                            &#42; If there is no use such as logging in during the set personal information validity period, it will be converted to a dormant member and personal information will be stored/managed 
+                            or destroyed separately.
+                        </li>
                     </ol>
-                </div>
-            </nav>
+                    <a href="signUp03.html" class="op7_20">SIGN UP</a>
+                    <!-- <input type="button" value="SIGN UP" data-tab="step03" class="op7_20"> -->
+                </fieldset>
+            </form>
         </div>
-        <div>
-            <h3 class="la7_24 linebtm">ATTRACTION</h3>
-            <div>
-                <h4 class="op3_35">Sky Dancing</h4>
-                <div>
-                    <img src="images/atraB25.png" alt="Sky Dancing image">
-                    <div class="op7_16 flexStart">
-                        <p><mark class="os1">The whole train moves&#33;</mark></p>
-                        <p>Traveling on a circular train that <mark class="rs6">spins around and rises into the air&#33;</mark></p>
-                    </div> 
-                </div>
-                <div>
-                    <img src="images/atraMap25.png" alt="Sky Dancing mini map">
-                    <div>
-                        <strong class="op7_18">&#91;Notice&#93;</strong>
-                        <p class="op4_16">
-                            &#45; Due to safety sensor operation, lightning strikes, power outages, and weather conditions during 
-                            attraction operation Emergency stop is possible, and if an emergency facility inspection is required
-                            Operation may be suspended without prior notice.
-                        </p>
-                        <strong class="op7_20">&#8251; Available height: <mark>&#126;100cm Must be accompanied by a guardian</mark></strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <input type="button" value="to previous page" class="backBtn">
     </div>
     <footer>
         <ul>
