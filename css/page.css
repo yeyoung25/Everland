@@ -4796,27 +4796,51 @@ div .backBtn{
 .signUpContainer .step02>form>fieldset>ol:first-of-type{
     margin-bottom: 110px;
 }
-.signUpContainer .step02>form>fieldset>ol>li{
-    padding: 30px 0;
-}
 .signUpContainer .step02>form>fieldset>ol:first-of-type>li{
     border-bottom: 1px solid var(--gs8);
+    padding: 30px 0;
 }
-.signUpContainer .step02>form>fieldset>ol>li>label{
+.signUpContainer .step02>form>fieldset>ol:first-of-type>li>label{
     display: inline-block;
     width: 17.021%;
 }
-.signUpContainer .step02>form>fieldset>ol>li>input{
+.signUpContainer .step02>form>fieldset>ol:first-of-type>li>input{
     border: none;
+}
+.signUpContainer .step02>form>fieldset>ol:last-of-type li:not(:last-child){
+    display: inline-block;
+    margin-right: 4.964%;
+}
+.signUpContainer .step02>form>fieldset>ol:last-of-type>li>input{
+    border: none;
+    appearance: none;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 1px var(--vs7);
+    border-radius: 50%;
+}
+.signUpContainer .step02>form>fieldset>ol:last-of-type>li>input[type="radio"]:checked{
+    border: 1px solid var(--gs1);
+    background-color: var(--vs7);
 }
 .signUpContainer .step02>form>fieldset>ol>li>button{
     border: none;
     background-color: transparent;
     color: var(--bs5);
 }
-.signUpContainer .step02>form>fieldset>ol>li:nth-child(5){
+.signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-child(5){
     display: flex;
     align-items: center;
+}
+.signUpContainer .step02>form>fieldset>ol:last-of-type>li:nth-child(5){
+    width: 100%;
+    margin: 55px 0 115px;
+    padding-top: 30px;
+    border-top: 1px solid var(--gs8);
+    line-height: 22px;
+    color: var(--gs10);
 }
 .signUpContainer .step02>form>fieldset>ol>li:nth-child(5) span{
     display: inline-block;
@@ -4824,9 +4848,6 @@ div .backBtn{
     color: var(--gs8);
     margin-left: auto;
     line-height: 22px;
-}
-.signUpContainer .step02>form>fieldset>ol:last-of-type{
-    /* display: flex; */
 }
 .signUpContainer .step03{
     text-align: center;
