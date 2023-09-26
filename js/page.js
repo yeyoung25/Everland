@@ -8,7 +8,7 @@ $(document).ready(function(){
   historyTab();
   backBtn($(".backBtn"));
   findmodal();
-  // findtoggle($("div>form>fieldset>input"));
+  findtoggle($("div>form>fieldset>input"));
   confirmation();
 });
 
@@ -94,11 +94,13 @@ var hypenTel = (target) => {
 }
 
 function findmodal(){
-  $("#input_text").on('input',function(){
+  $("#testBtn").click(function(e){
     if($("#input_text").val()=='')
+    $("#testBtn").attr("disabled",true);
+    e.preventDefault();
+  else{
     $("#testBtn").attr("disabled",false);
-  else
-  $("#testBtn").attr("disabled",true);
+  }
 });
 }
 
