@@ -121,7 +121,7 @@
             </li>
         </ul>
         <div class="step02">
-            <form action="#">
+            <form action="signUp03.html">
                 <fieldset>
                     <strong class="op7_20">Enter required information</strong>
                     <ol class="op7_18">
@@ -135,16 +135,16 @@
                         </li>
                         <li>
                             <label for="userID" class="op6_18">ID</label>
-                            <input type="text" id="userID" class="op6_16">
+                            <input type="text" id="userID" class="op6_16" required>
                             <button type="button" class="op6_16" id="confirmation">ID confirmation</button>
                         </li>
                         <li>
                             <label for="userPW01" class="op6_18">PASSWORD</label>
-                            <input type="password" id="userPW01"  maxlength="12" class="op6_16">
+                            <input type="password" id="userPW01"  maxlength="12" class="op6_16" required>
                         </li>
                         <li>
                             <label for="userPW02" class="op6_18">PASSWORD CHECK</label>
-                            <input type="password" id="userPW02"  maxlength="12" class="op6_16">
+                            <input type="password" id="userPW02"  maxlength="12" class="op6_16" required>
                             <span class="op6_16">
                                 &#42; Please enter a combination of 9 or more English letters, numbers, and special characters without spaces. 
                                 &#40;Only &#33; &#64; &#35; &#36; &#37; &amp; can be used as special characters.&#41;
@@ -178,8 +178,7 @@
                             or destroyed separately.
                         </li>
                     </ol>
-                    <a href="signUp03.html" class="op7_20">SIGN UP</a>
-                    <!-- <input type="button" value="SIGN UP" data-tab="step03" class="op7_20"> -->
+                    <input type="submit" value="SIGN UP" data-tab="step03" class="op7_20">
                 </fieldset>
             </form>
         </div>

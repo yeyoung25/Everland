@@ -3,14 +3,12 @@ $(document).ready(function(){
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   inquToggle($("header+div div:nth-child(2)>div>form fieldset>input"));
-  findtoggle($("div>form>fieldset>input"));
   trafTab();
   policyTab();
   historyTab();
-  findtoggle();
   backBtn($(".backBtn"));
-  signIn();
-  findID();
+  findmodal();
+  // findtoggle($("div>form>fieldset>input"));
   confirmation();
 });
 
@@ -46,11 +44,6 @@ function inquToggle(button){
   });
   $(".closemodel").parent().click(function(){
     $(currentPopup).removeClass('active');
-  });
-}
-function findtoggle(button){
-  $(button).click(function(){
-    $('.modal02').toggleClass('active');
   });
 }
 
@@ -100,25 +93,20 @@ var hypenTel = (target) => {
   })
 }
 
-function signIn(){
-  $("#submit-btn").click(function(){
-      if($("#userID").val().length==0) { 
-        alert("Please enter your ID."); 
-          setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
-      if($("#userPW").val().length==0) { 
-        alert("Please enter a password."); $("#recipeBody").focus(); return false;}
-  });
-};
+function findmodal(){
+  $("#input_text").on('input',function(){
+    if($("#input_text").val()=='')
+    $("#testBtn").attr("disabled",false);
+  else
+  $("#testBtn").attr("disabled",true);
+});
+}
 
-function findID(){
-  $("#submit-btn").click(function(){
-      if($("#userName").val().length==0) { 
-        alert("Please enter your Name."); 
-          setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
-      if($("#phone").val().length==0) { 
-        alert("Please enter a phone."); $("#recipeBody").focus(); return false;}
+function findtoggle(button){
+  $(button).click(function(){
+    $('.modal02').toggleClass('active');
   });
-};
+}
 
 function confirmation(){
   $("#confirmation").click(function(){

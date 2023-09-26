@@ -105,7 +105,7 @@
     </header>
     <!-- header fin -->
     <div class="findIdContainer conPbtm">
-        <form action="#">
+        <form action="signIn.html">
             <fieldset>
                 <legend class="la7_24">FIND ID</legend>
                 <div>
@@ -118,14 +118,14 @@
                 <ul class="op7_20">
                     <li>
                         <label for="userName">NAME</label>
-                        <input type="text" id="userName" required>
+                        <input type="text" id="userName" required id="input_text">
                     </li>
                     <li>
                         <label for="phone">PHONE</label>
-                        <input type="tel" title="phone" id="phone" oninput="hypenTel(this)" maxlength="13">
+                        <input type="tel" title="phone" id="phone" oninput="hypenTel(this)" maxlength="13" required id="input_text">
                     </li>
                 </ul>
-                <input type="button" value="CHECK" class="op7_20" data-popup="modal02" id="submit-btn">
+                <input type="submit" value="CHECK" class="op7_20" data-popup="modal02" id="testBtn">
             </fieldset>
         </form>
     </div>

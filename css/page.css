@@ -2359,7 +2359,7 @@
 }
 .atraContainer div:nth-child(2)>div div:last-child img+div ul li,
 .enterContainer div:nth-child(2)>div div:last-child img+div ul li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 22px;
 }
 .atraContainer div:nth-child(2)>div div:last-child img+div ul li ol,
@@ -4471,7 +4471,7 @@ div .backBtn{
 .signInContainer>form>fieldset>ul>li:last-child label{
     color: var(--gs5);
 }
-.signInContainer>form>fieldset>a{
+.signInContainer>form>fieldset>input{
     display: block;
     border: none;
     background-color: var(--vs7);
@@ -4504,6 +4504,7 @@ div .backBtn{
 .signInContainer>form>fieldset>ul>li:not(:last-child)>input{
     width: 73%;
     outline-color: transparent;
+    font-family: 'Open Sans';
 }
 .findIdContainer>form>fieldset>ul>li>input,
 .findPWContainer>form>fieldset>ul>li>input{
@@ -4511,6 +4512,7 @@ div .backBtn{
     width: 77%;
     font-size: 18px;
     outline-color: transparent;
+    font-family: 'Open Sans';
 }
 .signInContainer>div>ul>li{
     width: 33.33%;
@@ -4894,8 +4896,8 @@ div .backBtn{
 .signUpContainer .step01>form>div+ol>li:last-child>ol>li:last-child{
     margin-top: 35px;
 }
-.signUpContainer .step01>form>a,
-.signUpContainer .step02>form>fieldset>a{
+.signUpContainer .step01>form>input,
+.signUpContainer .step02>form>fieldset>input{
     display: block;
     width: 17.730%;
     border: none;

@@ -105,25 +105,24 @@
     </header>
     <!-- header fin -->
     <div class="signInContainer mwpadding conPbtm">
-        <form name="login" action="#" method="post" autocomplete="on">
+        <form action="index.html">
             <fieldset>
                 <legend class="la7_24">SIGN IN</legend>
                 <ul class="op7_20">
                     <li>
                         <label for="userID">ID</label>
-                        <input type="text" id="userID" class="op7_20">
+                        <input type="text" id="userID" class="op7_20" required>
                     </li>
                     <li>
                         <label for="userPW">PASSWORD</label>
-                        <input type="password" id="userPW"  maxlength="12" class="op7_20">
+                        <input type="password" id="userPW"  maxlength="12" class="op7_20" required>
                     </li>
                     <li>
                         <input type="checkbox" id="saveId">
                         <label for="saveId" class="op6_20">SAVE ID</label>
                     </li>
                 </ul>
-                <a href="index.html" class="op7_20" id="submit-btn">SIGN IN</a>
-                <!-- <input type="submit" value="SIGN IN" class="op7_20" onclick="return false;"> -->
+                <input type="submit" value="SIGN IN" class="op7_20">
             </fieldset>
         </form>
         <div>
