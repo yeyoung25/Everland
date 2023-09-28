@@ -7,8 +7,7 @@ $(document).ready(function(){
   policyTab();
   historyTab();
   backBtn($(".backBtn"));
-  // findmodal();
-  // findtoggle($("div>form>fieldset>input"));
+  findtoggle($("div>form>fieldset>input"));
   confirmation();
 });
 
@@ -93,31 +92,6 @@ function selectAll(selectAll){
     checkbox.checked = selectAll.checked;
   })
 }
-
-function findmodal(){
-  var dataStatus;
-  var target = $(".findIdContainer form fieldset ul li input");
-  $(target).keydown(function(){
-    if($(target).val() == undefined){
-      $("#testBtn").attr("disabled",true);
-    }else{
-      $("#testBtn").attr("disabled",false);
-    }
-  });
-  // $("#testBtn").click(function(e){
-  //   dataStatus = $("#input_text").val();
-  //   console.log(dataStatus);
-  //   if(dataStatus == undefined){
-  //     e.preventDefault();
-  //     $("#testBtn").attr("disabled",true);
-  //   }else{
-  //     $("#testBtn").attr("disabled",false);
-  //   }
-  // });
-}
-
-// 1. button click했을 때 $(target)의 .val() == undefined -> case.1 name: / case.2 phone / case.3 둘다 입력 / case.4 둘다 입력안되었을때
-// 2. popup -> 띄울지 말지 결정.
 
 function findtoggle(button){
   $(button).click(function(){
