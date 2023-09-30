@@ -104,11 +104,11 @@ function findtoggle(button){
     e.preventDefault();
 
     if (userID == ""){
-      alert("아이디가 비어있습니다.");
+      alert("Please enter your ID.");
     } else if (userName == "" ){
-      alert("이름이 비어있습니다.");
+      alert("Input your name, please.");
     } else if (phone == ""){
-      alert("폰 번호가 비어있습니다.");
+      alert("The phone number is empty.");
     } else {
       $('.modal02').toggleClass('active');
     }

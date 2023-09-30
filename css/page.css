@@ -1,152 +1,165 @@
-#wrap .contentBanner03,
-    div .linemg~div,
-    div article,
-    header+.mwpadding,
-    .siteContainer>ul{
-        max-width: 1458px;
-        margin: 0 auto;
-        padding: 0 24px;
-        box-sizing: border-box;
-    }
-    div div:nth-child(2) .linebtm,
-    div article .linebtm,
-    header+div>.linebtm,
-    .siteContainer ul li>.linebtm{
-        text-align: center;
-        padding: 95px 0;
-        border-bottom: 1px solid var(--gs5);
-    }
-    .newContainer article h3,
-    .experContainer article h3,
-    .comuContainer div:nth-child(2) h3{
-        text-align: center;
-        padding: 95px 0;
-    }
-    header+.conPbtm{
-        padding-bottom: 350px;
-    }
-    div .guide{
-        background: url('../images/ever_Header01.png') no-repeat center / cover;
-    }
-    div .ticket{
-        background: url('../images/ever_Header02.png') no-repeat center / cover;
-    }
-    div .activity{
-        background: url('../images/ever_Header03.png') no-repeat center / cover;
-    }
-    div .member{
-        background: url('../images/ever_Header04.png') no-repeat center / cover;
-    }
-    div .communit{
-        background: url('../images/ever_Header05.png') no-repeat center / cover;
-    }
-    div .everContainer h2{
-        display: flex;
-        color: var(--gs1);
-        justify-content: center;
-        padding: 145px 0;
-    }
-    div .everContainer nav{
-        display: flex;
-        background-color: var(--gs1);
-        width: 46.875%;
-        min-width: 660px;
-        padding-left: 13.281%;
-        box-sizing: border-box;
-        align-items: center;
-    }
-    div .everContainer nav>a{
-        display: block;
-        background: url('../images/home_nav.png') no-repeat left / contain;
-        font-size: 0;
-        width: 19px;
-        height: 20px;
-    }
-    div .everContainer nav div{
-        position: relative;
-    }
-    div .everContainer nav div::before{
-        border: 1px solid var(--gs4);
-        height: 25px;
-        content: '';
-        position: absolute;
-        top: 20px;
-    }
-    div .everContainer nav div input{
-        color: var(--gs11);
-        background-color: transparent;
-        border: none;
-        padding-left: 30px;
-        height: 65px;
-    }
-    div .everContainer nav div::after{
-        content: '';
-        display: block;
-        width: 10px;
-        height: 10px;
-    }
-    div .everContainer nav div.active::after{
-        transform: rotate(-180deg);
-    }
-    div .everContainer nav div:first-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
-        position: absolute;
-        right: 30px;
-        top: 27px;
-    }
-    div .everContainer nav div:last-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
-        position: absolute;
-        right: 30px;
-        top: 27px;
-    }
-    div .everContainer nav a{
-        width: 10%; 
-        min-width: 39px;
-    }
-    div .everContainer nav div{
-        width: 45%; 
-        min-width: 255px;
-        position: relative;
-        background-color: var(--gs1);
-    }
-    div .everContainer nav div ol{
-        display: none;
-    }
-    div .everContainer nav div.active ol{
-        display: block;
-        z-index: 100;
-    }
-    div .everContainer nav div:first-of-type ol{
-        position: absolute;
-        width: 100%;
-        top: 64px;
-        box-sizing: border-box;
-        padding: 20px 0 20px 30px;
-        border: 1px solid var(--gs6);
-        background-color: var(--gs1);
-    }
-    div .everContainer nav div:last-of-type ol{
-        position: absolute;
-        width: 100%;
-        top: 64px;
-        box-sizing: border-box;
-        padding: 20px 0 20px 30px;
-        border: 1px solid var(--gs6);
-        background-color: var(--gs1);
-    }
-    div .everContainer nav div ol li:not(:last-child){
-        display: block;
-        margin-bottom: 20px;
-    }
-    div .everContainer nav div ol li a{
-        color: var(--gs7);
-        display: block;
-        width: 100%;
-    }
-    div .everContainer nav div ol li a:hover{
-        color: var(--gs11);
-    }
+div .linemg~div,
+div article,
+header+.mwpadding>h3,
+header+.mwpadding>div,
+header+.hisContainer>ul,
+header+.hisContainer>ol,
+.siteContainer>ul{
+    max-width: 1458px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin-bottom: 110px;
+}
+header+.mwpadding>ul,
+#wrap .contentBanner03{
+    max-width: 1458px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+header+.mwpadding>h3{
+    /* margin-bottom: 110px; */
+}
+div div:nth-child(2) .linebtm,
+div article .linebtm,
+header+div>.linebtm,
+.siteContainer ul li>.linebtm{
+    text-align: center;
+    padding: 95px 0;
+    border-bottom: 1px solid var(--gs5);
+}
+.newContainer article h3,
+.experContainer article h3,
+.comuContainer div:nth-child(2) h3{
+    text-align: center;
+    padding: 95px 0;
+}
+header+.conPbtm{
+    padding-bottom: 350px;
+}
+div .guide{
+    background: url('../images/ever_Header01.png') no-repeat center / cover;
+}
+div .ticket{
+    background: url('../images/ever_Header02.png') no-repeat center / cover;
+}
+div .activity{
+    background: url('../images/ever_Header03.png') no-repeat center / cover;
+}
+div .member{
+    background: url('../images/ever_Header04.png') no-repeat center / cover;
+}
+div .communit{
+    background: url('../images/ever_Header05.png') no-repeat center / cover;
+}
+div .everContainer h2{
+    display: flex;
+    color: var(--gs1);
+    justify-content: center;
+    padding: 145px 0;
+}
+div .everContainer nav{
+    display: flex;
+    background-color: var(--gs1);
+    width: 46.875%;
+    min-width: 660px;
+    padding-left: 13.281%;
+    box-sizing: border-box;
+    align-items: center;
+}
+div .everContainer nav>a{
+    display: block;
+    background: url('../images/home_nav.png') no-repeat left / contain;
+    font-size: 0;
+    width: 19px;
+    height: 20px;
+}
+div .everContainer nav div{
+    position: relative;
+}
+div .everContainer nav div::before{
+    border: 1px solid var(--gs4);
+    height: 25px;
+    content: '';
+    position: absolute;
+    top: 20px;
+}
+div .everContainer nav div input{
+    color: var(--gs11);
+    background-color: transparent;
+    border: none;
+    padding-left: 30px;
+    height: 65px;
+}
+div .everContainer nav div::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+div .everContainer nav div.active::after{
+    transform: rotate(-180deg);
+}
+div .everContainer nav div:first-of-type::after{
+    background: url('../images/det_nav.png') no-repeat center / contain;
+    position: absolute;
+    right: 30px;
+    top: 27px;
+}
+div .everContainer nav div:last-of-type::after{
+    background: url('../images/det_nav.png') no-repeat center / contain;
+    position: absolute;
+    right: 30px;
+    top: 27px;
+}
+div .everContainer nav a{
+    width: 10%; 
+    min-width: 39px;
+}
+div .everContainer nav div{
+    width: 45%; 
+    min-width: 255px;
+    position: relative;
+    background-color: var(--gs1);
+}
+div .everContainer nav div ol{
+    display: none;
+}
+div .everContainer nav div.active ol{
+    display: block;
+    z-index: 100;
+}
+div .everContainer nav div:first-of-type ol{
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    box-sizing: border-box;
+    padding: 20px 0 20px 30px;
+    border: 1px solid var(--gs6);
+    background-color: var(--gs1);
+}
+div .everContainer nav div:last-of-type ol{
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    box-sizing: border-box;
+    padding: 20px 0 20px 30px;
+    border: 1px solid var(--gs6);
+    background-color: var(--gs1);
+}
+div .everContainer nav div ol li:not(:last-child){
+    display: block;
+    margin-bottom: 20px;
+}
+div .everContainer nav div ol li a{
+    color: var(--gs7);
+    display: block;
+    width: 100%;
+}
+div .everContainer nav div ol li a:hover{
+    color: var(--gs11);
+}
 .indexContainer .banslider li{
     position: relative;
     color: var(--gs1);
@@ -252,9 +265,12 @@
     display: flex;
     width: 86.71%;
 }
+.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager>div{
+    width: 33.33%;
+}
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager .bx-pager-item a{
-    width: 470px;
-    /* width: 33.33%; */
+    /* width: 470px; */
+    width: 100%;
     height: 1px;
     margin: 0;
     background-color: var(--gs6);
@@ -281,7 +297,7 @@
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type{
     position: relative;
     width: 50%;
-    padding: 10.250% 0 0 16.666%;
+    padding: 5.250% 5% 0 16.666%;
     box-sizing: border-box;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2{
@@ -375,7 +391,7 @@
 }
 .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
     position: relative;
-    padding-left: 220px;
+    padding-left: 11.458%;
     box-sizing: border-box;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2::before{
@@ -385,10 +401,11 @@
     height: 7px;
     position: absolute;
     display: block;
-    left: -30px;
+    right: 83%;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
-    padding-top: 135px;
+    /* padding-top: 135px; */
+    padding-top: 16.564%;
     margin-bottom: 25px;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
@@ -406,7 +423,7 @@
     color: var(--rs6);
     border: 1px solid var(--rs6);
     padding: 20px 85px 20px 70px;
-    margin: 65px 0;    
+    margin: 10% 0 10% auto;;
     margin-left: 200px;
 }
 .indexContainer .contentBanner02>div .picSliderE li,
@@ -451,6 +468,11 @@
     display: inline-block;
     color: var(--gs9);
     margin-bottom: 15px;
+}
+.indexContainer .contentBanner03>div:first-child ul li a{
+    width: 80%;
+    line-height: 24px;
+    text-overflow: ellipsis;
 }
 .indexContainer .contentBanner03>div:first-child ul li a:hover{
     text-decoration: underline;
@@ -3334,7 +3356,7 @@ div .backBtn{
 }
 /* faq Details Fin */
 .inqBContainer div:nth-child(2)>div:first-of-type{
-    margin: 110px 0 80px 0;
+    margin-bottom: 80px;
 }
 .inqBContainer div:nth-child(2)>div:first-of-type>strong,
 .inqAContainer div:nth-child(2)>div:nth-of-type(2)>strong{
@@ -3482,14 +3504,8 @@ div .backBtn{
     display: flex;
     flex-wrap: nowrap;
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset > ul li:nth-child(6) label,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset > ul li:nth-child(7) label{
-    /* width: 38.296%; */
-}
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
-    /* display: flex;
-    flex-wrap: wrap; */
     display: inline-block;
     width: 85%;
     box-sizing: border-box;
@@ -3642,7 +3658,7 @@ div .backBtn{
     color: var(--gs1);
     cursor: pointer;
 }
-
+.inqBContainer div:nth-child(2) h3,
 .inqAContainer div:nth-child(2) h3{
     margin-bottom: 110px;
 }
@@ -3880,11 +3896,6 @@ div .backBtn{
     color: var(--os10);
 }
 /* checkLostItems Details Fin */
-
-
-.tosContainer>h3{
-    margin-bottom: 110px;
-}
 .tosContainer>div>ol>li:not(:last-child){
     margin-bottom: 115px;
 }
@@ -3913,9 +3924,6 @@ div .backBtn{
     color: var(--gs10);
 }
 /* tos Details Fin */
-.poliContainer>h3{
-    margin-bottom: 110px;
-}
 .poliContainer>ul{
     display: flex;
     cursor: pointer;
@@ -4150,9 +4158,6 @@ div .backBtn{
     line-height: 22px;
 }
 /* policy Details Fin */
-.aboutContainer>h3{
-    margin-bottom: 110px;
-}
 .aboutContainer>div>b{
     display: block;
     color: var(--os1);
@@ -4193,9 +4198,6 @@ div .backBtn{
     margin-bottom: 90px;
 }
 /* aboutUs Details Fin */
-.hisContainer>h3{
-    margin-bottom: 110px;
-}
 .hisContainer>ul{
     display: flex;
     cursor: pointer;
@@ -4207,7 +4209,6 @@ div .backBtn{
     border-bottom: 1px solid var(--gs11);
     color: var(--gs5);
     line-height: 100px;
-    margin-bottom: 110px;
 }
 .hisContainer>ul>li:not(:last-child):after{
     content: '';
@@ -4344,9 +4345,6 @@ div .backBtn{
     margin-bottom: 100px;
 }
 /* siteMap Details Fin */
-.notContainer h3{
-    margin-bottom: 110px;
-}
 .notContainer>div:not(:last-child){
     margin-bottom: 150px;
 }
@@ -4523,9 +4521,6 @@ div .backBtn{
     color: var(--bs2);
 }
 /* noticeOfPolicyRevision Details Fin */
-.bidContainer>h3{
-    margin-bottom: 110px;
-}
 .bidContainer>div:not(:last-child){
     margin-bottom: 100px;
 }
@@ -4802,9 +4797,6 @@ div .backBtn{
     background-color: var(--gs7);
 }
 /* signIn / findId  Details Fin */
-.signUpContainer h3{
-    margin-bottom: 110px;
-}
 .signUpContainer>ul{
     display: flex;
     padding-bottom: 60px;
@@ -5157,7 +5149,66 @@ div .backBtn{
     border: 1px solid var(--gs11);
     box-sizing: border-box;
 }
-/* signUp  Details Fin */
+/* signUp Details Fin */
+.reserContainer>h2{
+    text-align: center;
+    margin: 155px 0 70px;
+    line-height: 55px;
+}
+.reserContainer>h2>mark{
+    color: var(--os1);
+}
+.reserContainer>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.reserContainer>ul>li{
+    position: relative;
+}
+.reserContainer>ul>li:first-child{
+    background: url('../images/resever.png') no-repeat center / contain;
+    width: 400px;
+    height: 450px;
+}
+.reserContainer>ul>li:nth-child(2){
+    background: url('../images/rescari.png') no-repeat center / contain;
+    width: 400px;
+    height: 450px;
+}
+.reserContainer>ul>li:last-child{
+    background: url('../images/reshome.png') no-repeat center / contain;
+    width: 400px;
+    height: 450px;
+}
+.reserContainer>ul>li>a{
+    display: inline-block;
+    color: var(--gs1);
+    border: 1px solid var(--gs1);
+    padding: 20px 25px;
+    position: absolute;
+    bottom: 70px;
+    left: 122px;
+    box-sizing: border-box;
+}
+.reserContainer>ul>li>a:hover{
+    background-color: var(--gs1);
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.reserContainer>ul>li:first-child>a:hover{
+    color: var(--os1);
+}
+.reserContainer>ul>li:nth-child(2)>a:hover{
+    color: var(--bs8);
+}
+.reserContainer>ul>li:last-child>a:hover{
+    color: var(--rs9);
+}
+
+
+
+
+/* reservation Fin */
 
 
 
@@ -5168,7 +5219,10 @@ div .backBtn{
 }
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-
+    .indexContainer .banslider li strong{
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 /* ?tablet */
 
