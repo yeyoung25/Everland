@@ -7,7 +7,8 @@ $(document).ready(function(){
   policyTab();
   historyTab();
   backBtn($(".backBtn"));
-  findtoggle($("div>form>fieldset>input"));
+  findtoggle($(".findIdContainer form>fieldset>input"));
+  findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
 });
 
@@ -94,8 +95,24 @@ function selectAll(selectAll){
 }
 
 function findtoggle(button){
-  $(button).click(function(){
-    $('.modal02').toggleClass('active');
+
+  $(button).click(function(e){
+
+    let userName = button.prev().find("#userName").val();
+    let phone = button.prev().find("#phone").val();
+    let userID = button.prev().find("#userID").val();
+    e.preventDefault();
+
+    if (userID == ""){
+      alert("아이디가 비어있습니다.");
+    } else if (userName == "" ){
+      alert("이름이 비어있습니다.");
+    } else if (phone == ""){
+      alert("폰 번호가 비어있습니다.");
+    } else {
+      $('.modal02').toggleClass('active');
+    }
+
   });
 }
 
