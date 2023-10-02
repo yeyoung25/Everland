@@ -10,6 +10,8 @@ $(document).ready(function(){
   findtoggle($(".findIdContainer form>fieldset>input"));
   findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
+  signUPcheck();
+  signUPpassCkeck();
 });
 
 
@@ -98,14 +100,14 @@ function findtoggle(button){
 
   $(button).click(function(e){
 
-    let userName = button.prev().find("#userName").val();
-    let phone = button.prev().find("#phone").val();
-    let userID = button.prev().find("#userID").val();
+    var userName = button.prev().find("#userName").val();
+    var phone = button.prev().find("#phone").val();
+    var userID = button.prev().find("#userID").val();
     e.preventDefault();
 
     if (userID == ""){
       alert("Please enter your ID.");
-    } else if (userName == "" ){
+    } else if (userName == ""){
       alert("Input your name, please.");
     } else if (phone == ""){
       alert("The phone number is empty.");
@@ -120,9 +122,35 @@ function confirmation(){
   $("#confirmation").click(function(){
     if($("#userID").val().length==0) { 
       alert("Please enter your ID."); 
-        setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
-    else{
-      alert("This is a UserID you can use!");
-    };
-});
+      setTimeout(function (){ $("#recipeTitle").focus();}, 1); return false;}
+      else{
+        alert("This is a UserID you can use!");
+      };
+    });
+  }
+  
+function signUPcheck(){
+  $('#next02').click(function(e){
+    var checked1 = $('#option01').is(':checked');
+    var checked2 = $('#option02').is(':checked');
+    var checked3 = $('#option03').is(':checked');
+    var next02 = $('#next02');
+
+    console.log(checked1);
+    console.log(checked2);
+    console.log(checked3);
+
+    if(checked1 && checked2 && checked3){
+      return;
+    } else {
+        e.preventDefault();
+        alert("Please check the required items.");
+    }
+  });
+}
+
+function signUPpassCkeck(){
+  $('#next03').click(function(e){
+    
+  })
 }
