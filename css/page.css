@@ -2086,7 +2086,6 @@ div .everContainer nav div ol li a:hover{
     background-color: var(--os1);
     margin: -50px 30px 0 5px;
     transform: rotate(90deg);
-    /* float: right; */
     position: absolute;
     top: 0;
     right: -10px;
@@ -2118,7 +2117,7 @@ div .everContainer nav div ol li a:hover{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 110px 0 0 70px;
+    padding: 5.458% 0 0 3.723%;
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
@@ -2152,6 +2151,16 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a img:hover,
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a.active img{
     border: 3px solid var(--os1);
+    box-sizing: border-box;
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a img:hover,
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a.active img{
+    border: 3px solid var(--rs4);
+    box-sizing: border-box;
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a img:hover,
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a.active img{
+    border: 3px solid var(--vs4);
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2){
@@ -2204,7 +2213,7 @@ div .everContainer nav div ol li a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    padding: 110px 0 0 70px;
+    padding: 5.458% 0 0 3.723%;
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
@@ -2256,7 +2265,7 @@ div .everContainer nav div ol li a:hover{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 110px 0 0 70px;
+    padding: 5.458% 0 0 3.723%;
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
