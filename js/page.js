@@ -99,7 +99,6 @@ function selectAll(selectAll){
 function findtoggle(button){
 
   $(button).click(function(e){
-
     var userName = button.prev().find("#userName").val();
     var phone = button.prev().find("#phone").val();
     var userID = button.prev().find("#userID").val();
@@ -135,10 +134,6 @@ function signUPcheck(){
     var checked2 = $('#option02').is(':checked');
     var checked3 = $('#option03').is(':checked');
     var next02 = $('#next02');
-
-    console.log(checked1);
-    console.log(checked2);
-    console.log(checked3);
 
     if(checked1 && checked2 && checked3){
       return;

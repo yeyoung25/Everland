@@ -128,7 +128,7 @@ header #fnbPanel{
     background-color: var(--gs11);
     opacity: 0.95;
     width: 100%;
-    padding: 150px 18.229% 23px;
+    padding: 7.888% 18.229% 23px;
     margin: 0 auto;
     box-sizing: border-box;
     transition-duration: 0.2s;
@@ -373,7 +373,15 @@ footer div details span{
         left: 50%;
         transform: translateX(-50%);
     }
-    header.mouseOver{
+    header div .menuBar{
+        /* width: 60px;
+        height: 60px; */
+    }
+    header #fnbPanel{
+        /* background-color: var(--gs1); */
+    }
+    header #fnbPanel ul>li{
+        /* display: block; */
     }
 }
 /* ?tablet */

@@ -195,15 +195,18 @@ div .everContainer nav div ol li a:hover{
     font-size: 34px;
 }
 .indexContainer>.bx-wrapper div:nth-child(2) div:first-child a{
-    top: 59.172%;
+    position: absolute;
+    /* top: 59.172%; */
+    /* top: 0; */
+    top: 58.572%;
     z-index: 100;
 }
 .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
-    background: url('../images/mainBanL.png') no-repeat;
+    background: url('../images/mainBanL.png') no-repeat top / contain;
     left: 18.75%;
 }
 .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
-    background: url('../images/mainBanR.png') no-repeat;
+    background: url('../images/mainBanR.png') no-repeat top / contain;
     left: 22.083%;
 }
 /* banslider Fin */
@@ -337,8 +340,9 @@ div .everContainer nav div ol li a:hover{
     position: relative;
     border-left: 2px solid var(--gs5);
 }
-.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li:not(:last-child){
-    margin-bottom: 40px;
+.indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li:not(:last-child),
+.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li:not(:last-child){
+    margin-bottom: 2.085vw;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li a{
     display: block;
@@ -366,9 +370,6 @@ div .everContainer nav div ol li a:hover{
     position: relative;
     border-left: 2px solid var(--gs5);
     padding-left: 30px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li:not(:last-child){
-    margin-bottom: 40px;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a{
     cursor: default;
@@ -473,12 +474,17 @@ div .everContainer nav div ol li a:hover{
 .indexContainer .contentBanner03>div:first-child ul li time{
     display: inline-block;
     color: var(--gs9);
+}
+.indexContainer .contentBanner03>div:first-child ul li:not(:last-child) a,
+.indexContainer .contentBanner03>div:first-child ul li:not(:last-child) time{
     margin-bottom: 15px;
 }
 .indexContainer .contentBanner03>div:first-child ul li a{
     width: 80%;
-    line-height: 24px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 2px;
 }
 .indexContainer .contentBanner03>div:first-child ul li a:hover{
     text-decoration: underline;
@@ -2107,8 +2113,10 @@ div .everContainer nav div ol li a:hover{
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 div:nth-child(2){
     position: absolute;
-    bottom: 110px;
-    right: 76px;
+    bottom: 12%;
+    right: 0;
+    width: 45%;
+    margin-right: 3%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
     background-color: rgba(76, 34, 2, 0.8);
@@ -2121,7 +2129,7 @@ div .everContainer nav div ol li a:hover{
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
-    margin-bottom: 70px;
+    margin-bottom: 7.95%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
     color: rgba(180, 96, 96, 0.7);
@@ -2135,7 +2143,7 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
     display: block;
     color: #fff4e0;
-    margin-bottom: 35px;
+    margin-bottom: 3.95%;
     font-size: 1.041vw;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
@@ -2147,6 +2155,12 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a{
     display: inline-block;
     width: 100%;
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a img,
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a img,
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a img{
+    border: 3px solid transparent;
+    box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a img:hover,
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a.active img{
@@ -2173,38 +2187,43 @@ div .everContainer nav div ol li a:hover{
 }
 .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon01_pre.png') no-repeat center;
-    position: absolute;
-    left: -792px;
+    left: -127%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon01_next.png') no-repeat center;
-    right: -130px;
+    right: -19%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon02_pre.png') no-repeat center;
-    position: absolute;
-    left: -130px;
+    left: -19%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon02_next.png') no-repeat center;
-    right: -785px;
+    right: -127%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon03_pre.png') no-repeat center;
-    position: absolute;
-    left: -792px;
+    left: -127%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon03_next.png') no-repeat center;
-    right: -130px;
+    right: -19%;
+    top: -95px;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02{
     position: relative;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 div:nth-child(2){
     position: absolute;
-    bottom: 110px;
-    left: 76px;
+    bottom: 12%;
+    left: 0;
+    width: 45%;
+    margin-left: 3%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
     background-color: rgba(14,40,5, 0.8);
@@ -2217,7 +2236,7 @@ div .everContainer nav div ol li a:hover{
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
-    margin-bottom: 70px;
+    margin-bottom: 7.95%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
     color: rgba(60,128,37, 0.7);
@@ -2232,7 +2251,7 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
     display: block;
     color: #dbffcf;
-    margin-bottom: 35px;
+    margin-bottom: 3.95%;
     font-size: 1.041vw;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
@@ -2254,9 +2273,10 @@ div .everContainer nav div ol li a:hover{
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 div:nth-child(2){
     position: absolute;
-    bottom: 110px;
-    /* top: 63.124%; */
-    right: 76px;
+    bottom: 12%;
+    right: 0;
+    width: 45%;
+    margin-right: 3%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
     background-color: rgba(20,4,21, 0.8);
@@ -2269,7 +2289,7 @@ div .everContainer nav div ol li a:hover{
     box-sizing: border-box;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
-    margin-bottom: 70px;
+    margin-bottom: 7.95%;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
     color: rgba(122,31,127,0.7);
@@ -2284,7 +2304,7 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
     display: block;
     color: #fcceff;
-    margin-bottom: 35px;
+    margin-bottom: 3.95%;
     font-size: 1.041vw;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
@@ -5170,7 +5190,7 @@ body .signUpContainer>ul{
 /* signUp Details Fin */
 .reserContainer>h2{
     text-align: center;
-    margin: 155px 0 70px;
+    margin: 3.351% 0 70px;
     line-height: 55px;
 }
 .reserContainer>h2>mark{
@@ -5220,10 +5240,6 @@ body .signUpContainer>ul{
 .reserContainer>ul>li:last-child>a:hover{
     color: var(--rs9);
 }
-
-
-
-
 /* reservation Fin */
 
 
@@ -5236,8 +5252,14 @@ body .signUpContainer>ul{
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .indexContainer .banslider li strong{
+        font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
+    }
+    .indexContainer .banslider li h2{
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 700;
     }
 }
 /* ?tablet */
