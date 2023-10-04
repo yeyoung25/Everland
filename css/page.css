@@ -2111,7 +2111,7 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox01{
     position: relative;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 div:nth-child(2){
+.recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2){
     position: absolute;
     bottom: 12%;
     right: 0;
@@ -2153,47 +2153,49 @@ div .everContainer nav div ol li a:hover{
     font-size: 1.041vw;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a{
-    display: inline-block;
+    display: block;
     width: 100%;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a img,
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a img,
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a img{
+.recoContainer div:nth-child(2) div [class^='pagerSliderBox'] .bx-wrapper .bx-viewport [class^='thumbPager'] li a{
+    display: block;
+}
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
     border: 3px solid transparent;
     box-sizing: border-box;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a img:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a.active img{
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a:hover,
+.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
     border: 3px solid var(--os1);
-    box-sizing: border-box;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a img:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a.active img{
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a:hover,
+.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
     border: 3px solid var(--rs4);
-    box-sizing: border-box;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a img:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a.active img{
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a:hover,
+.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
     border: 3px solid var(--vs4);
-    box-sizing: border-box;
 }
 .recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2){
     position: relative;
 }
 .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
     display: block;
-    top: -16px;
+    top: 0;
     z-index: 0;
+    height: 100%;
+    margin-top: 0;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon01_pre.png') no-repeat center;
-    left: -127%;
-    top: -95px;
+    left: 0;
+    top: 0;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon01_next.png') no-repeat center;
-    right: -19%;
-    top: -95px;
+    right: 0;
+    top: 0;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon02_pre.png') no-repeat center;

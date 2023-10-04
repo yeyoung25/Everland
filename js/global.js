@@ -1,21 +1,22 @@
 $(document).ready(function () {
-  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0,false,false,false);
-  customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0,false,false,false);
-  customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false,0,false,false,false);
-  customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false,0,false,false,false);
-  customSlider(".speslider",'horizontal',false,500,0,false,true,5,5,214,45,null,'full',false,0,false,false,false);
-  customSlider(".pagerSliderBox01 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'#bx-pager01','full',false,0,false,false,false);
-  customSlider(".pagerSliderBox02 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'#bx-pager02','full',false,0,false,false,false);
-  customSlider(".pagerSliderBox03 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'#bx-pager03','full',false,0,false,false,false);
-  customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox01','full',false,1,true,true,true);
-  customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox02','full',false,1,true,true,true);
-  customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox03','full',false,1,true,true,true);
+  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0,false);
+  customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0,false);
+  customSlider(".picSliderE",'fade',true,350,4500,true,false,1,1,0,0,'.actTabPager','full',false,0,false);
+  customSlider(".picSliderH",'fade',true,350,4500,true,false,1,1,0,0,'.homTabPager','full',false,0,false);
+  customSlider(".speslider",'horizontal',false,500,0,false,true,5,5,214,45,null,'full',false,0,false);
+  customSlider(".pagerSliderBox01 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'.thumbPager01','full',false,0,false);
+  customSlider(".pagerSliderBox02 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'.thumbPager02','full',false,0,false);
+  customSlider(".pagerSliderBox03 .fadeSlider",'fade',false,0,0,true,false,1,1,0,0,'.thumbPager03','full',false,0,false);
+  customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox01','full',false,1,true);
+  customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox02','full',false,1,true);
+  customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox03','full',false,1,true);
   headerAct();
   menuButton();
   gotop();
   sumDetail();
   mainHeader();
   justCopy();
+  bxExt();
 });
 
 function mainHeader(){
@@ -27,7 +28,7 @@ function mainHeader(){
   }
 }
 
-function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType,slideshrinkItems,slidemoveSlides,slideshrinkItems,slidecenterMode,slidefocusOnSelect){
+function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideInfiniteLoop,slideControls,slideMaxSlides,slideMinSlides,slideSlideWidth,slideSlideMargin,slidePagerCustom,slidepagerType,slideshrinkItems,slidemoveSlides,slideshrinkItems){
     $(sliderName).bxSlider({
         mode: modeVal,
         auto: slideAuto,
@@ -43,10 +44,17 @@ function customSlider(sliderName,modeVal,slideAuto,slideSpeed,slidePause,slideIn
         pagerType: slidepagerType,
         shrinkItems: slideshrinkItems,
         moveSlides: slidemoveSlides,
-        shrinkItems: slideshrinkItems,
-        centerMode: slidecenterMode,
-        focusOnSelect: slidefocusOnSelect
+        shrinkItems: slideshrinkItems
     });
+}
+function bxExt(){
+  var $btn = $("[class^='thumbPager'] li");
+  $btn.click(function(){
+    var target = "." + $(this).prop("class").replace("bx-clone","");
+    console.log(target);
+    $(this).siblings().removeClass("active");
+    $(target).addClass("active");
+  });
 }
 
   function headerScroll() {
