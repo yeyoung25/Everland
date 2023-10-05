@@ -2111,7 +2111,8 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox01{
     position: relative;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2){
+.recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2),
+.recoContainer div:nth-child(2) div .pagerSliderBox03 > div:nth-child(2){
     position: absolute;
     bottom: 12%;
     right: 0;
@@ -2152,10 +2153,6 @@ div .everContainer nav div ol li a:hover{
     width: 82.708%;
     font-size: 1.041vw;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a{
-    display: block;
-    width: 100%;
-}
 .recoContainer div:nth-child(2) div [class^='pagerSliderBox'] .bx-wrapper .bx-viewport [class^='thumbPager'] li a{
     display: block;
 }
@@ -2178,49 +2175,48 @@ div .everContainer nav div ol li a:hover{
     border: 3px solid var(--vs4);
 }
 .recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2){
-    position: relative;
+    /* position: relative; */
 }
 .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
     display: block;
-    top: 0;
     z-index: 0;
     height: 100%;
     margin-top: 0;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon01_pre.png') no-repeat center;
-    left: 0;
+    left: -5%;
     top: 0;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon01_next.png') no-repeat center;
-    right: 0;
+    right: -5%;
     top: 0;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon02_pre.png') no-repeat center;
-    left: -19%;
-    top: -95px;
+    left: -5%;
+    top: 0;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon02_next.png') no-repeat center;
-    right: -127%;
-    top: -95px;
+    right: -5%;
+    top: 0;
 }
 .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
     background: url('../images/recomcon03_pre.png') no-repeat center;
-    left: -127%;
-    top: -95px;
+    left: -5%;
+    top: 0;
 }
 .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
     background: url('../images/recomcon03_next.png') no-repeat center;
-    right: -19%;
-    top: -95px;
+    right: -5%;
+    top: 0;
 }
 .recoContainer div:nth-child(2) div .pagerSliderBox02{
     position: relative;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox02 div:nth-child(2){
+.recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
     position: absolute;
     bottom: 12%;
     left: 0;
@@ -2273,13 +2269,6 @@ div .everContainer nav div ol li a:hover{
 .recoContainer div:nth-child(2) div .pagerSliderBox03{
     position: relative;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox03 div:nth-child(2){
-    position: absolute;
-    bottom: 12%;
-    right: 0;
-    width: 45%;
-    margin-right: 3%;
-}
 .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
     background-color: rgba(20,4,21, 0.8);
     width: 50%;
@@ -2315,13 +2304,9 @@ div .everContainer nav div ol li a:hover{
     width: 82.708%;
     font-size: 1.041vw;
 }
-
-
-
 .recoContainer div:nth-child(2) div div .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
     display: none;
 }
-
 /* recommendedCourse Fin */
 .atraContainer div:nth-child(2) h3+ul,
 .enterContainer div:nth-child(2) h3+ul,

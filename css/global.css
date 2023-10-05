@@ -48,7 +48,7 @@ header{
     transition-duration: 0.2s;
 }
 header h1{
-    padding-left: 60px;
+    padding-left: 3.125%;
     margin-top: 15px;
     font-size: 0;
 }
