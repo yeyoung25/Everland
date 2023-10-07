@@ -358,14 +358,40 @@ footer div details span{
 }
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    header,
+    header+div,
+    footer{
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    header{
+        height: 60px;
+    }
+    header h1 a{
+        width: 165px;
+        height: 36px;
+    }
     header div .ect_btn a:nth-child(-n+3){
         display: none;
     }
     header div .ect_btn a:last-of-type{
         font-size: 0;
     }
+    header div .ect_btn{
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div .ect_btn a:last-of-type{
+        background: url('../images/headerRes.png') no-repeat 14px center / 32px 30px;
+        background-color: var(--vs7);
+        text-shadow: none;
+        line-height: 60px;
+        padding: 0;
+        width: 60px;
+    }
     header>div{
         width: 100%;
+        justify-content: space-between;
     }
     header h1{
         position: fixed;
@@ -374,18 +400,31 @@ footer div details span{
         transform: translateX(-50%);
     }
     header div .menuBar{
-        /* width: 60px;
-        height: 60px; */
+        background-color: var(--gs10);
+        width: 60px;
+        height: 60px;
     }
-    header #fnbPanel{
-        /* background-color: var(--gs1); */
+    header div .menuBar span{
+        width: 25px;
+        height: 3px;
     }
-    header #fnbPanel ul>li{
-        /* display: block; */
+    header div .menuBar span:first-child{
+        top: 19px;
+        left: 17px;
+        width: 25px;
+    }
+    header div .menuBar span:nth-child(2){
+        width: 17px;
+        top: 29px;
+        left: 25px;
+    }
+    header div .menuBar span:last-child{
+        width: 25px;
+        top: 38px;
+        left: 17px;
     }
 }
 /* ?tablet */
-
 @media screen and (min-width: 1280px) {
     header>div{
         width: 768px;
