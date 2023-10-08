@@ -50,8 +50,6 @@ header{
 header h1 a{
     display: block;
     background: url('../images/main_logo.png') no-repeat center / contain;
-    width: 365px;
-    height: 80px;
     font-size: 0;
 }
 header>div{
@@ -358,8 +356,10 @@ footer div details span{
         height: 60px;
     }
     header h1 a{
-        width: 165px;
-        height: 36px;
+        width: 223.846px;
+        height: 60px;
+        height: ;
+        font-size: 0;
     }
     header div .ect_btn a:nth-child(-n+3){
         display: none;
@@ -475,7 +475,11 @@ footer div details span{
         color: var(--gs1);
     }
     header #fnbPanel ul>li>ol{
-        display: none;
+        /* display: none; */
+    }
+    header #fnbPanel{
+        max-height: calc(100% - 60px);
+        overflow: scroll;
     }
     header #fnbPanel ul>li>ol>li{
         /* display: block; */
@@ -556,6 +560,10 @@ footer div details span{
         font-size: 0;
         display: flex;
         align-items: center;
+    }
+    header h1 a{
+        width: 365px;
+        height: 80px;
     }
 }
 /* ?desktop */
