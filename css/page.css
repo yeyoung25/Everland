@@ -11,7 +11,13 @@ header+.hisContainer>ol,
     box-sizing: border-box;
     margin-bottom: 110px;
 }
-header+.mwpadding>ul,
+header+.mwpadding>ul{
+    max-width: 1458px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin-bottom: 110px;
+}
 #wrap .contentBanner03{
     max-width: 1458px;
     margin: 0 auto;
@@ -201,10 +207,12 @@ div .everContainer nav div ol li a:hover{
 .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
     background: url('../images/mainBanL.png') no-repeat top / contain;
     left: 18.75%;
+    z-index: 100;
 }
 .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
     background: url('../images/mainBanR.png') no-repeat top / contain;
     left: 22.083%;
+    z-index: 100;
 }
 /* banslider Fin */
 .indexContainer .contentBanner01{
@@ -5240,6 +5248,12 @@ body .signUpContainer>ul{
         font-size: 16px;
         font-weight: 400;
     }
+    .indexContainer .banslider li{
+        height: 500px;
+    }
+    .indexContainer .banslider li a h2{
+        /* height: 100%; */
+    }
     .indexContainer .banslider li h2{
         font-family: 'Lato';
         font-size: 24px;
@@ -5248,6 +5262,9 @@ body .signUpContainer>ul{
     .indexContainer .contentBanner01{
         margin-top: 45px;
         padding-left: 24px;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
+        font-size: 22px;
     }
     #wrap .contentBanner03{
         padding: 0;

@@ -113,11 +113,6 @@ header::after,
     display: block;
     clear: both;
 }
-header h1,
-header #fnbPanel ul>li,
-.fleft{
-    float: left;
-}
 header>div,
 .fright{
     float: right;
