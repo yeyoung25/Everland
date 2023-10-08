@@ -478,14 +478,14 @@ footer div details span{
     header #fnbPanel ul>li:hover ol li{
         color: var(--gs1);
     }
-    header #fnbPanel ul>li>ol>li:not(:last-child){
-        margin-bottom: 75px;
-    }
     header #fnbPanel ul>li>ol{
-        /* display: none; */
+        display: none;
     }
     header #fnbPanel ul>li>ol>li{
         /* display: block; */
+    }
+    header #fnbPanel ul>li:not(:last-child){
+        margin-bottom: 75px;
     }
     header #fnbPanel ul>li:first-child:hover h2,
     header #fnbPanel ul>li:nth-child(5):hover h2{
