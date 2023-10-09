@@ -19,6 +19,7 @@ $(document).ready(function () {
   bxExt01();
   bxExt02();
   bxExt03();
+  mainFnb($("header #fnbPanel ul>li"));
 });
 
 function mainHeader(){
@@ -138,11 +139,16 @@ function sumDetail(){
   });
 }
 
-
 function justCopy(){
   var copyContent = "";
   $("#btnCopy").click(function(){
     copyContent = $("#copyMap").text();
     alert("복사했습니다.");
+  });
+}
+
+function mainFnb(button){
+  $(button).click(function(){
+    $(this).toggleClass("active");
   });
 }

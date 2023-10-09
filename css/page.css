@@ -5251,8 +5251,13 @@ body .signUpContainer>ul{
     .indexContainer .banslider li{
         height: 500px;
     }
-    .indexContainer .banslider li a h2{
-        /* height: 100%; */
+    .indexContainer .banslider li a{
+        display: block;
+        height: 100%;
+    }
+    .indexContainer .banslider li a img{
+        object-fit: cover;
+        height: 100%;
     }
     .indexContainer .banslider li h2{
         font-family: 'Lato';
@@ -5268,6 +5273,21 @@ body .signUpContainer>ul{
     }
     #wrap .contentBanner03{
         padding: 0;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
+        background: url('../images/mainBanL.png') no-repeat top / contain;
+        left: 23.75%;
+        z-index: 100;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
+        background: url('../images/mainBanR.png') no-repeat top / contain;
+        left: 30.083%;
+        z-index: 100;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2)>a{
+        padding: 20px 85px 20px 70px;
+        margin: 0;
+        /* 임시 */
     }
 }
 /* ?tablet */
