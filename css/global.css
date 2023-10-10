@@ -8,17 +8,6 @@
     margin-bottom: 0px;
     padding: 0;
 }
-.go_top{
-    background: url('../images/go_top.png') no-repeat center / contain;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 81px;
-    height: 81px;
-    text-indent: -9999px;
-    z-index: 1000;
-    transition-duration: 0.2s;
-}
 .go_top.scrollTop{
     opacity: 0;
     pointer-events: none;
@@ -292,6 +281,17 @@ footer div details span{
 }
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .go_top{
+        background: url('../images/go_top.png') no-repeat center / contain;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+        z-index: 1000;
+        transition-duration: 0.2s;
+    }
     header,
     header+div,
     footer{
@@ -514,7 +514,7 @@ footer div details span{
     }
     footer>div{
         padding-top: 37px;
-        height: 300px;
+        height: 350px;
     }
     footer div div h2{
         background: url('../images/footer_logo.png') no-repeat center / contain;
@@ -533,10 +533,36 @@ footer div details span{
     }
     footer div details{
         color: var(--gs8);
+        margin: 0 auto;
+        width: 85%;
+    }
+    footer div details summary{
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    footer div details span{
+        display: block;
+        text-align: center;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+    footer div details p{
+        text-align: center;
     }
 }
 /* ?tablet */
 @media screen and (min-width: 1280px) {
+    .go_top{
+        background: url('../images/go_top.png') no-repeat center / contain;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 81px;
+        height: 81px;
+        text-indent: -9999px;
+        z-index: 1000;
+        transition-duration: 0.2s;
+    }
     header,
     header+div,
     footer{
