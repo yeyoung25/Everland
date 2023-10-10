@@ -121,54 +121,6 @@ header #fnbPanel ul>li ol li a{
     transition: 0.2s;
     line-height: 22px;
 }
-header #fnbPanel ul>li:first-child:hover h2,
-header #fnbPanel ul>li:nth-child(5):hover h2{
-    color: var(--os1);
-}
-header #fnbPanel ul>li:first-child:hover a,
-header #fnbPanel ul>li:nth-child(5):hover a{
-    color: var(--os6);
-}
-header #fnbPanel ul>li:first-child:hover a:hover,
-header #fnbPanel ul>li:nth-child(5):hover a:hover{
-    color: var(--os1);
-}
-header #fnbPanel ul>li:nth-child(2):hover h2,
-header #fnbPanel ul>li:nth-child(6):hover h2{
-    color: var(--rs1);
-}
-header #fnbPanel ul>li:nth-child(2):hover a,
-header #fnbPanel ul>li:nth-child(6):hover a{
-    color: var(--rs6);
-}
-header #fnbPanel ul>li:nth-child(2):hover a:hover,
-header #fnbPanel ul>li:nth-child(6):hover a:hover{
-    color: var(--rs1);
-}
-header #fnbPanel ul>li:nth-child(3):hover h2,
-header #fnbPanel ul>li:nth-child(7):hover h2{
-    color: var(--bs1);
-}
-header #fnbPanel ul>li:nth-child(3):hover a,
-header #fnbPanel ul>li:nth-child(7):hover a{
-    color: var(--bs6);
-}
-header #fnbPanel ul>li:nth-child(3):hover a:hover,
-header #fnbPanel ul>li:nth-child(7):hover a:hover{
-    color: var(--bs1);
-}
-header #fnbPanel ul>li:nth-child(4):hover h2,
-header #fnbPanel ul>li:nth-child(8):hover h2{
-    color: var(--vs1);
-}
-header #fnbPanel ul>li:nth-child(4):hover a,
-header #fnbPanel ul>li:nth-child(8):hover a{
-    color: var(--vs6);
-}
-header #fnbPanel ul>li:nth-child(4):hover a:hover,
-header #fnbPanel ul>li:nth-child(8):hover a:hover{
-    color: var(--vs1);
-}
 /* header Fin */
 footer{
     position: relative;
@@ -431,15 +383,15 @@ footer div details span{
         /* display: none; */
         opacity: 0;
         height: 0;
+        transition-duration: 0.5s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
     }
     header #fnbPanel ul>li.active>ol{
         /* display: block;
         transition: 0.5; */
         display: block; 
-        transition-duration: 1s;
-        overflow-y: hidden;
         opacity: 1;
-        transition-property: height, opacity;
         height: 250px;
     }
     header #fnbPanel ul>li:not(:last-child){
@@ -602,6 +554,54 @@ footer div details span{
         height: 200px;
         color: var(--gs1);
         overflow: hidden;
+    }
+    header #fnbPanel ul>li:first-child:hover h2,
+    header #fnbPanel ul>li:nth-child(5):hover h2{
+        color: var(--os1);
+    }
+    header #fnbPanel ul>li:first-child:hover a,
+    header #fnbPanel ul>li:nth-child(5):hover a{
+        color: var(--os6);
+    }
+    header #fnbPanel ul>li:first-child:hover a:hover,
+    header #fnbPanel ul>li:nth-child(5):hover a:hover{
+        color: var(--os1);
+    }
+    header #fnbPanel ul>li:nth-child(2):hover h2,
+    header #fnbPanel ul>li:nth-child(6):hover h2{
+        color: var(--rs1);
+    }
+    header #fnbPanel ul>li:nth-child(2):hover a,
+    header #fnbPanel ul>li:nth-child(6):hover a{
+        color: var(--rs6);
+    }
+    header #fnbPanel ul>li:nth-child(2):hover a:hover,
+    header #fnbPanel ul>li:nth-child(6):hover a:hover{
+        color: var(--rs1);
+    }
+    header #fnbPanel ul>li:nth-child(3):hover h2,
+    header #fnbPanel ul>li:nth-child(7):hover h2{
+        color: var(--bs1);
+    }
+    header #fnbPanel ul>li:nth-child(3):hover a,
+    header #fnbPanel ul>li:nth-child(7):hover a{
+        color: var(--bs6);
+    }
+    header #fnbPanel ul>li:nth-child(3):hover a:hover,
+    header #fnbPanel ul>li:nth-child(7):hover a:hover{
+        color: var(--bs1);
+    }
+    header #fnbPanel ul>li:nth-child(4):hover h2,
+    header #fnbPanel ul>li:nth-child(8):hover h2{
+        color: var(--vs1);
+    }
+    header #fnbPanel ul>li:nth-child(4):hover a,
+    header #fnbPanel ul>li:nth-child(8):hover a{
+        color: var(--vs6);
+    }
+    header #fnbPanel ul>li:nth-child(4):hover a:hover,
+    header #fnbPanel ul>li:nth-child(8):hover a:hover{
+        color: var(--vs1);
     }
     footer>ul li:first-child h3{
         background: url('../images/footer_ever.png') no-repeat center / 45px;
