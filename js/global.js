@@ -53,7 +53,6 @@ function bxExt01(){
   var $btn = $("[class^='thumbPager01'] li");
   $btn.click(function(){
     var target = "." + $(this).prop("class").replace("bx-clone","");
-    console.log(target);
     $(this).siblings().removeClass("active");
     $(target).addClass("active");
   });
@@ -62,7 +61,6 @@ function bxExt02(){
   var $btn = $("[class^='thumbPager02'] li");
   $btn.click(function(){
     var target = "." + $(this).prop("class").replace("bx-clone","");
-    console.log(target);
     $(this).siblings().removeClass("active");
     $(target).addClass("active");
   });
@@ -71,7 +69,6 @@ function bxExt03(){
   var $btn = $("[class^='thumbPager03'] li");
   $btn.click(function(){
     var target = "." + $(this).prop("class").replace("bx-clone","");
-    console.log(target);
     $(this).siblings().removeClass("active");
     $(target).addClass("active");
   });

@@ -175,32 +175,8 @@ footer div div ul li:nth-child(4) a{
 footer div div ul li:not(:first-child){
     padding-left: 25px;
 }
-footer div div ol li{
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    text-indent: -9999px;
-}
 footer div div ol li:not(:first-child){
     margin-left: 15px;
-}
-footer div div ol li:first-child a{
-    background: url('../images/ico_sns01.png') no-repeat center / contain;
-    display: block;
-    width: 45px;
-    height: 45px;
-}
-footer div div ol li:nth-child(2) a{
-    background: url('../images/ico_sns02.png') no-repeat center / contain;
-    display: block;
-    width: 45px;
-    height: 45px;
-}
-footer div div ol li:last-child a{
-    background: url('../images/ico_sns03.png') no-repeat center / contain;
-    display: block;
-    width: 45px;
-    height: 45px;
 }
 footer div details a{
     color: var(--gs8);
@@ -324,12 +300,12 @@ footer div details span{
     header #fnbPanel{
         background-color: var(--gs1);
         top: 60px;
-        padding: 40px 60px;
+        padding: 40px 60px 350px;
     }
     header #fnbPanel ul>li{
         display: block;
         width: 100%;
-        margin-bottom: 35px;
+        /* margin-bottom: 35px; */
     }
     header #fnbPanel ul>li h2{
         position: relative;
@@ -380,7 +356,6 @@ footer div details span{
         overflow: scroll;
     }
     header #fnbPanel ul>li>ol{
-        /* display: none; */
         opacity: 0;
         height: 0;
         transition-duration: 0.5s;
@@ -388,61 +363,52 @@ footer div details span{
         overflow-y: hidden;
     }
     header #fnbPanel ul>li.active>ol{
-        /* display: block;
-        transition: 0.5; */
         display: block; 
         opacity: 1;
+    }
+    header #fnbPanel ul>li:first-child.active>ol{
         height: 250px;
     }
+    header #fnbPanel ul>li:nth-child(2).active>ol,
+    header #fnbPanel ul>li:nth-child(3).active>ol,
+        header #fnbPanel ul>li:nth-child(5).active>ol{
+        height: 150px;
+    }
+    header #fnbPanel ul>li:nth-child(4).active>ol,
+    header #fnbPanel ul>li:last-child.active>ol{
+        height: 80px;
+    }
+    header #fnbPanel ul>li:nth-child(6).active>ol,
+    header #fnbPanel ul>li:nth-child(7).active>ol{
+        height: 50px;
+    }
+    header #fnbPanel ul>li>ol>li>a{
+        font-weight: 600;
+    }
     header #fnbPanel ul>li:not(:last-child){
-        margin-bottom: 75px;
+        margin-bottom: 40px;
+    }
+    header #fnbPanel ul>li>h2{
+        cursor: pointer;
     }
     header #fnbPanel ul>li:first-child:hover h2,
     header #fnbPanel ul>li:nth-child(5):hover h2{
         color: var(--gs10);
     }
     header #fnbPanel ul>li:first-child ol li a,
-    header #fnbPanel ul>li:first-child:hover ol li a,
-    header #fnbPanel ul>li:first-child:hover a:hover,
-    header #fnbPanel ul>li:nth-child(5) ol li a,
-    header #fnbPanel ul>li:nth-child(5):hover ol li a,
-    header #fnbPanel ul>li:nth-child(5):hover a:hover{
+    header #fnbPanel ul>li:nth-child(5) ol li a{
         color: var(--gs9);
     }
-    header #fnbPanel ul>li:nth-child(2):hover h2,
-    header #fnbPanel ul>li:nth-child(6):hover h2{
-        color: var(--os3);
-    }
     header #fnbPanel ul>li:nth-child(2) ol li a,
-    header #fnbPanel ul>li:nth-child(2):hover ol li a,
-    header #fnbPanel ul>li:nth-child(2):hover a:hover
-    header #fnbPanel ul>li:nth-child(6) ol li a,
-    header #fnbPanel ul>li:nth-child(6):hover ol li a,
-    header #fnbPanel ul>li:nth-child(6):hover a:hover{
+    header #fnbPanel ul>li:nth-child(6) ol li a{
         color: var(--os1);
     }
-    header #fnbPanel ul>li:nth-child(3):hover h2,
-    header #fnbPanel ul>li:nth-child(7):hover h2{
-        color: var(--rs8);
-    }
     header #fnbPanel ul>li:nth-child(3) ol li a,
-    header #fnbPanel ul>li:nth-child(3):hover ol li a,
-    header #fnbPanel ul>li:nth-child(3):hover a:hover
-    header #fnbPanel ul>li:nth-child(7) ol li a,
-    header #fnbPanel ul>li:nth-child(7):hover ol li a,
-    header #fnbPanel ul>li:nth-child(7):hover a:hover{
+    header #fnbPanel ul>li:nth-child(7) ol li a{
         color: var(--rs6);
     }
-    header #fnbPanel ul>li:nth-child(4):hover h2,
-    header #fnbPanel ul>li:nth-child(8):hover h2{
-        color: var(--vs8);
-    }
     header #fnbPanel ul>li:nth-child(4) ol li a,
-    header #fnbPanel ul>li:nth-child(4):hover ol li a,
-    header #fnbPanel ul>li:nth-child(4):hover a:hover
-    header #fnbPanel ul>li:last-child ol li a,
-    header #fnbPanel ul>li:last-child:hover ol li a,
-    header #fnbPanel ul>li:last-child:hover a:hover{
+    header #fnbPanel ul>li:last-child ol li a{
         color: var(--vs5);
     }
     header #fnbPanel ul>li>ol>li:not(:last-child){
@@ -455,10 +421,13 @@ footer div details span{
         height: 120px;
         color: var(--gs1);
         overflow: hidden;
+        align-items: flex-start;
+        align-content: flex-start;
     }
     footer>ul li>h3{
         width: 100%;
         padding-top: 40px;
+        margin-bottom: 15px;
     }
     footer>ul li>a{
         display: block;
@@ -466,22 +435,50 @@ footer div details span{
     }
     footer>div{
         padding-top: 37px;
-        height: 350px;
+        height: 300px;
     }
     footer div div h2{
         background: url('../images/footer_logo.png') no-repeat center / contain;
-        width: 100%;
+        width: 165px;
         height: 36px;
         text-indent: -9999px;
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
+    }
+    footer div div ul{
+        display: block;
+        text-align: center;
     }
     footer div div{
-        justify-content: center;
+        display: block;
     }
     footer div div ol{
         width: 100%;
         text-align: center;
         margin: 20px 0;
+    }
+    footer div div ol li{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        text-indent: -9999px;
+    }
+    footer div div ol li:first-child a{
+        background: url('../images/ico_sns01.png') no-repeat center / contain;
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+    footer div div ol li:nth-child(2) a{
+        background: url('../images/ico_sns02.png') no-repeat center / contain;
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+    footer div div ol li:last-child a{
+        background: url('../images/ico_sns03.png') no-repeat center / contain;
+        display: block;
+        width: 32px;
+        height: 32px;
     }
     footer div details{
         color: var(--gs8);
@@ -635,6 +632,30 @@ footer div details span{
     }
     footer div div ol{
         margin-left: auto;
+    }
+    footer div div ol li{
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+    }
+    footer div div ol li:first-child a{
+        background: url('../images/ico_sns01.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    footer div div ol li:nth-child(2) a{
+        background: url('../images/ico_sns02.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+    footer div div ol li:last-child a{
+        background: url('../images/ico_sns03.png') no-repeat center / contain;
+        display: block;
+        width: 45px;
+        height: 45px;
     }
     footer div details{
         position: absolute;

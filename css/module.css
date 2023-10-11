@@ -126,11 +126,11 @@ mark{
 }
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    [class^='la']{font-family: 'Lato';}
-    [class^='op']{font-family: 'Open Sans';}
+    [class^='la']{font-family: 'Lato', sans-serif;}
+    [class^='op']{font-family: 'Open Sans', sans-serif;}
     /* F/M module */
-    [class*='140']{font-size: 50px;}/**/
-    [class*='45']{font-size: 45px;}
+    [class*='140']{font-size: 50px;} /**/
+    [class*='45']{font-size: 24px;} /**/
     [class*='35']{font-size: 20px;} /**/
     [class*='34']{font-size: 34px;}
     [class*='30']{font-size: 30px;}
@@ -154,8 +154,8 @@ mark{
 }
 /* ?tablet */
 @media screen and (min-width: 1280px) {
-    [class^='la']{font-family: 'Lato';}
-    [class^='op']{font-family: 'Open Sans';}
+    [class^='la']{font-family: 'Lato', sans-serif;}
+    [class^='op']{font-family: 'Open Sans', sans-serif;}
     /* F/M module */
     [class*='140']{font-size: 140px;}
     [class*='45']{font-size: 45px;}

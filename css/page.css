@@ -163,29 +163,6 @@ div .everContainer nav div ol li a{
 div .everContainer nav div ol li a:hover{
     color: var(--gs11);
 }
-.indexContainer .banslider li{
-    position: relative;
-    color: var(--gs1);
-}
-.indexContainer .banslider li::before{
-    display: block;
-    position: absolute;
-    content: '';
-    border-left: 0.65vw solid var(--vs7);
-    top: 43.827%;
-    left: 11.25%;
-    height: 5.157vw;
-}
-.indexContainer .banslider li strong{
-    position: absolute;
-    top: 43.827%;
-    left: 13.281%;
-}
-.indexContainer .banslider li h2{
-    position: absolute;
-    top: 48.229%;
-    left: 13.281%;
-}
 .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
     font-family: 'Open Sans';
     font-size: 20px;
@@ -197,34 +174,7 @@ div .everContainer nav div ol li a:hover{
     height: 5%;
     text-align: left;
 }
-.indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
-    font-size: 34px;
-}
-.indexContainer>.bx-wrapper .bx-controls .bx-controls-direction a{
-    top: 57.172%;
-    margin: 0;
-}
-.indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
-    background: url('../images/mainBanL.png') no-repeat top / contain;
-    left: 18.75%;
-    z-index: 100;
-}
-.indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
-    background: url('../images/mainBanR.png') no-repeat top / contain;
-    left: 22.083%;
-    z-index: 100;
-}
 /* banslider Fin */
-.indexContainer .contentBanner01{
-    margin: 155px 0 190px;
-    padding-left: 13.281%;
-}
-.indexContainer .contentBanner01 h2{
-    margin-bottom: 25px;
-}
-.indexContainer .contentBanner01 .textBox{
-    margin-bottom: 120px;
-}
 .indexContainer .contentBanner01 div p{
     display: inline-block;
     margin-right: 10px;
@@ -239,11 +189,6 @@ div .everContainer nav div ol li a:hover{
 }
 .indexContainer .contentBanner01 .bx-wrapper{
     max-width: 1665px !important; margin-left: auto;
-}
-.indexContainer .contentBanner01 .carouselWay4 li a{
-    display: block;
-    width: 325px;
-    margin-right: 40px;
 }
 .indexContainer .contentBanner01 .carouselWay4 li strong{
     display: block;  
@@ -308,16 +253,6 @@ div .everContainer nav div ol li a:hover{
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2{
     margin-bottom: 25px;
     font-size: 1.303vw;
-}
-.indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2:before{
-    background-color: var(--rs4);
-    content: '';
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    display: block;
-    right: -30px;
-    z-index: 100;
 }
 .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
     display: block;
@@ -407,15 +342,6 @@ div .everContainer nav div ol li a:hover{
     padding-top: 16.564%;
     margin-bottom: 25px;
     font-size: 1.303vw;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2::before{
-    background-color: var(--rs4);
-    content: '';
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    display: block;
-    right: 83%;
 }
 .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
     display: block;
@@ -5244,11 +5170,16 @@ body .signUpContainer>ul{
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .indexContainer .banslider li strong{
+        position: absolute;
+        top: 43.827%;
+        left: 13.281%;
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
     }
     .indexContainer .banslider li{
+        position: relative;
+        color: var(--gs1);
         height: 500px;
     }
     .indexContainer .banslider li a{
@@ -5256,34 +5187,73 @@ body .signUpContainer>ul{
         height: 100%;
     }
     .indexContainer .banslider li a img{
-        object-fit: cover;
+        width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .indexContainer .banslider li h2{
+        position: absolute;
+        top: 48.229%;
+        left: 13.281%;
         font-family: 'Lato';
-        font-size: 24px;
         font-weight: 700;
     }
     .indexContainer .contentBanner01{
         margin-top: 45px;
         padding-left: 24px;
     }
-    .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
+    .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
         font-size: 22px;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
+        font-size: 13px;
     }
     #wrap .contentBanner03{
         padding: 0;
     }
+    .indexContainer>.bx-wrapper .bx-controls .bx-controls-direction a{
+        top: 57.572%;
+        margin: 0;
+    }
     .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
         background: url('../images/mainBanL.png') no-repeat top / contain;
-        left: 23.75%;
+        left: 20.406%;
         z-index: 100;
+        width: 19px;
+        height: 22px;
     }
     .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
         background: url('../images/mainBanR.png') no-repeat top / contain;
-        left: 30.083%;
+        left: 25.083%;
         z-index: 100;
+        width: 19px;
+        height: 22px;
     }
+    .indexContainer .banslider li::before{
+        display: block;
+        position: absolute;
+        content: '';
+        border-left: 0.85vw solid var(--vs7);
+        top: 43.827%;
+        left: 11.25%;
+        height: 5.861vw;
+    }
+    .indexContainer .contentBanner01 h2{
+        margin-bottom: 10px;
+    }
+    .indexContainer .contentBanner01 .textBox{
+        margin-bottom: 35px;
+    }
+    .indexContainer .contentBanner01 .carouselWay4 li{
+        width: 200px;
+    }
+    .indexContainer .contentBanner01 .carouselWay4 li a{
+        display: block;
+        width: 220px;
+    }
+
+
+
     .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2)>a{
         padding: 20px 85px 20px 70px;
         margin: 0;
@@ -5293,6 +5263,81 @@ body .signUpContainer>ul{
 /* ?tablet */
 
 @media screen and (min-width: 1280px) {
+    .indexContainer .banslider li strong{
+        position: absolute;
+        top: 43.827%;
+        left: 13.281%;
+    }
+    .indexContainer .banslider li{
+        position: relative;
+        color: var(--gs1);
+    }
+    .indexContainer .banslider li h2{
+        position: absolute;
+        top: 48.229%;
+        left: 13.281%;
+    }
+    .indexContainer .contentBanner01{
+        margin: 155px 0 190px;
+        padding-left: 13.281%;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
+        font-size: 34px;
+    }
+    .indexContainer>.bx-wrapper .bx-controls .bx-controls-direction a{
+        top: 57.172%;
+        margin: 0;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
+        background: url('../images/mainBanL.png') no-repeat top / contain;
+        left: 18.75%;
+        z-index: 100;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
+        background: url('../images/mainBanR.png') no-repeat top / contain;
+        left: 22.083%;
+        z-index: 100;
+    }
+    .indexContainer .banslider li::before{
+        display: block;
+        position: absolute;
+        content: '';
+        border-left: 0.65vw solid var(--vs7);
+        top: 43.827%;
+        left: 11.25%;
+        height: 5.157vw;
+    }
+    .indexContainer .contentBanner01 h2{
+        margin-bottom: 25px;
+    }
+    .indexContainer .contentBanner01 .textBox{
+        margin-bottom: 120px;
+    }
+    .indexContainer .contentBanner01 .carouselWay4 li a{
+        display: block;
+        width: 325px;
+        margin-right: 40px;
+    }
     
+    
+    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2:before{
+        background-color: var(--rs4);
+        content: '';
+        width: 190px;
+        height: 7px;
+        position: absolute;
+        display: block;
+        right: -30px;
+        z-index: 100;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2::before{
+        background-color: var(--rs4);
+        content: '';
+        width: 190px;
+        height: 7px;
+        position: absolute;
+        display: block;
+        right: 83%;
+    }
 }
 /* ?desktop */
