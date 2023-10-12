@@ -177,15 +177,6 @@ div .everContainer nav div ol li a:hover{
 /* banslider Fin */
 .indexContainer .contentBanner01 div p{
     display: inline-block;
-    margin-right: 10px;
-}
-.indexContainer .contentBanner01>div>a{
-    background: url('../images/maincon01_more.png') no-repeat center bottom;
-    display: inline-block;
-    text-align: center;
-    width: 102px;
-    vertical-align: text-bottom;
-    padding: 0 0 5px;
 }
 .indexContainer .contentBanner01 .bx-wrapper{
     max-width: 1665px !important; margin-left: auto;
@@ -207,9 +198,6 @@ div .everContainer nav div ol li a:hover{
     display: block;
     text-align: right;
     color: var(--gs6);
-}
-.indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
-    top: 415px;
 }
 .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager{
     display: flex;
@@ -5199,7 +5187,7 @@ body .signUpContainer>ul{
         font-weight: 700;
     }
     .indexContainer .contentBanner01{
-        margin-top: 45px;
+        margin: 45px 0 110px;
         padding-left: 24px;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
@@ -5250,6 +5238,16 @@ body .signUpContainer>ul{
     .indexContainer .contentBanner01 .carouselWay4 li a{
         display: block;
         width: 220px;
+    }
+    .indexContainer .contentBanner01>div>a{
+        background: url('../images/maincon01_more.png') no-repeat center bottom / contain;
+        display: inline-block;
+        text-align: center;
+        font-size: 10px;
+        width: 56px;
+        vertical-align: text-bottom;
+        padding: 0 0 5px;
+        margin-left: 15px;
     }
 
 
@@ -5338,6 +5336,18 @@ body .signUpContainer>ul{
         position: absolute;
         display: block;
         right: 83%;
+    }
+    .indexContainer .contentBanner01>div>a{
+        background: url('../images/maincon01_more.png') no-repeat center bottom;
+        display: inline-block;
+        text-align: center;
+        width: 102px;
+        vertical-align: text-bottom;
+        padding: 0 0 5px;
+        margin-left: 10px;
+    }
+    .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
+        top: 415px;
     }
 }
 /* ?desktop */
