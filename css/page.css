@@ -5614,7 +5614,6 @@ body .signUpContainer>ul{
     .indexContainer .contentBanner03 #map .map_dtl button::before{
         background: url('../images/mapCopy.png') no-repeat center /contain;
         content: '';
-        background-position: ;
         display: inline-block;
         width: 13px;
         height: 15px;

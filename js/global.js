@@ -140,7 +140,7 @@ function justCopy(){
   var copyContent = "";
   $("#btnCopy").click(function(){
     copyContent = $("#copyMap").text();
-    alert("복사했습니다.");
+    alert("Copied.");
   });
 }
 
