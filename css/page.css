@@ -56,44 +56,8 @@ div .member{
 div .communit{
     background: url('../images/ever_Header05.png') no-repeat center / cover;
 }
-div .everContainer h2{
-    display: flex;
-    color: var(--gs1);
-    justify-content: center;
-    padding: 145px 0;
-}
-div .everContainer nav{
-    display: flex;
-    background-color: var(--gs1);
-    width: 46.875%;
-    min-width: 660px;
-    padding-left: 13.281%;
-    box-sizing: border-box;
-    align-items: center;
-}
-div .everContainer nav>a{
-    display: block;
-    background: url('../images/home_nav.png') no-repeat left / contain;
-    font-size: 0;
-    width: 19px;
-    height: 20px;
-}
 div .everContainer nav div{
     position: relative;
-}
-div .everContainer nav div::before{
-    border: 1px solid var(--gs4);
-    height: 25px;
-    content: '';
-    position: absolute;
-    top: 20px;
-}
-div .everContainer nav div input{
-    color: var(--gs11);
-    background-color: transparent;
-    border: none;
-    padding-left: 30px;
-    height: 65px;
 }
 div .everContainer nav div::after{
     content: '';
@@ -103,18 +67,6 @@ div .everContainer nav div::after{
 }
 div .everContainer nav div.active::after{
     transform: rotate(-180deg);
-}
-div .everContainer nav div:first-of-type::after{
-    background: url('../images/det_nav.png') no-repeat center / contain;
-    position: absolute;
-    right: 30px;
-    top: 27px;
-}
-div .everContainer nav div:last-of-type::after{
-    background: url('../images/det_nav.png') no-repeat center / contain;
-    position: absolute;
-    right: 30px;
-    top: 27px;
 }
 div .everContainer nav a{
     width: 10%; 
@@ -132,24 +84,6 @@ div .everContainer nav div ol{
 div .everContainer nav div.active ol{
     display: block;
     z-index: 100;
-}
-div .everContainer nav div:first-of-type ol{
-    position: absolute;
-    width: 100%;
-    top: 64px;
-    box-sizing: border-box;
-    padding: 20px 0 20px 30px;
-    border: 1px solid var(--gs6);
-    background-color: var(--gs1);
-}
-div .everContainer nav div:last-of-type ol{
-    position: absolute;
-    width: 100%;
-    top: 64px;
-    box-sizing: border-box;
-    padding: 20px 0 20px 30px;
-    border: 1px solid var(--gs6);
-    background-color: var(--gs1);
 }
 div .everContainer nav div ol li:not(:last-child){
     display: block;
@@ -5307,6 +5241,73 @@ body .signUpContainer>ul{
         display: block;
         line-height: 26px;
     }
+    div .everContainer h2{
+        display: flex;
+        color: var(--gs1);
+        justify-content: center;
+        padding: 55px 0;
+    }
+    div .everContainer nav{
+        display: flex;
+        background-color: var(--gs1);
+        width: 100%;
+        padding-left: 3.125%;
+        box-sizing: border-box;
+        align-items: center;
+        height: 40px;
+        border: 1px solid var(--gs5);
+    }
+    div .everContainer nav>a{
+        display: block;
+        background: url('../images/home_nav.png') no-repeat left / contain;
+        font-size: 0;
+        width: 10%;
+        height: 15px;
+    }
+    div .everContainer nav>div{
+        height: 40px;
+        border: 1px solid var(--gs5);
+        box-sizing: border-box;
+    }
+    div .everContainer nav div input{
+        color: var(--gs11);
+        background-color: transparent;
+        border: none;
+        padding-left: 30px;
+        line-height: 40px;
+    }
+    div .everContainer nav div:first-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 16px;
+    }
+    div .everContainer nav div:last-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 16px;
+    }
+    div .everContainer nav div:first-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 38px;
+        left: 1px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    div .everContainer nav div:last-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 38px;
+        left: -1px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
 }
 /* ?tablet */
 
@@ -5625,6 +5626,72 @@ body .signUpContainer>ul{
     .indexContainer .contentBanner03 #map .map_dtl address b{
         display: block;
         line-height: 26px;
+    }
+    div .everContainer h2{
+        display: flex;
+        color: var(--gs1);
+        justify-content: center;
+        padding: 145px 0;
+    }
+    div .everContainer nav{
+        display: flex;
+        background-color: var(--gs1);
+        width: 46.875%;
+        min-width: 660px;
+        padding-left: 13.281%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    div .everContainer nav>a{
+        display: block;
+        background: url('../images/home_nav.png') no-repeat left / contain;
+        font-size: 0;
+        width: 19px;
+        height: 20px;
+    }
+    div .everContainer nav div input{
+        color: var(--gs11);
+        background-color: transparent;
+        border: none;
+        padding-left: 30px;
+        height: 65px;
+    }
+    div .everContainer nav div::before{
+        border: 1px solid var(--gs4);
+        height: 25px;
+        content: '';
+        position: absolute;
+        top: 20px;
+    }
+    div .everContainer nav div:first-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 27px;
+    }
+    div .everContainer nav div:last-of-type::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        position: absolute;
+        right: 30px;
+        top: 27px;
+    }
+    div .everContainer nav div:first-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 64px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    div .everContainer nav div:last-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 64px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
     }
 }
 /* ?desktop */

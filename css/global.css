@@ -311,6 +311,9 @@ footer div details span{
         position: relative;
         margin-bottom: 20px;
     }
+    header #fnbPanel ul>li>ol>li>a{
+        font-size: 13px;
+    }
     header #fnbPanel ul>li h2::after{
         background: url('../images/mobileFnbMore.png') no-repeat right / contain;
         content: '';
@@ -412,7 +415,7 @@ footer div details span{
         color: var(--vs5);
     }
     header #fnbPanel ul>li>ol>li:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     footer>ul li{
         display: flex;
