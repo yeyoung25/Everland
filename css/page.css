@@ -202,53 +202,10 @@ div .everContainer nav div ol li a:hover{
     display: block; 
     clear: both;
 }
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
-    position: relative;
-    border-left: 2px solid var(--gs5);
-    padding-left: 30px;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a{
-    cursor: default;
-    color: var(--gs6);
-    font-size: 1.042vw;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active::before{
-    position: absolute;
-    content: '';
-    left: -3px;
-    width: 4px;
-    height: 30px;
-    background-color: var(--gs11);
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active{
-    color: var(--gs11);
-    font-weight: 700;
-}
 .indexContainer .contentBanner02>div:nth-child(2)>.picSliderH{
     width: 50%;
     padding-top: 140px;
     position: relative;
-}
-.indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
-    position: relative;
-    padding-left: 11.458%;
-    box-sizing: border-box;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
-    padding-top: 16.564%;
-    margin-bottom: 25px;
-    font-size: 1.303vw;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
-    display: block;
-    color: var(--rs7);
-    line-height: 35px;
-    font-size: 1.303vw;
-}
-.indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) p{
-    color: var(--gs9);
-    line-height: 30px;
-    font-size: 1.042vw;
 }
 .indexContainer .contentBanner02>div .picSliderE li,
 .indexContainer .contentBanner02>div .picSliderH li{
@@ -263,20 +220,6 @@ div .everContainer nav div ol li a:hover{
     transform: scale(1.03);
 }
 /* contentBanner02 Fin */
-.indexContainer .contentBanner03>div:not(:last-child){
-    box-sizing: border-box;
-    padding: 75px 70px;
-    width: 50%;
-}
-.indexContainer .contentBanner03>div:not(:last-child) h2{
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-    color: var(--os10);
-}
-.indexContainer .contentBanner03>div:first-child{
-    border-right: 1px solid var(--gs5);
-}
 .indexContainer .contentBanner03>div:first-child h2{
     margin-bottom: 60px;
 }
@@ -292,82 +235,18 @@ div .everContainer nav div ol li a:hover{
     display: inline-block;
     color: var(--gs9);
 }
-.indexContainer .contentBanner03>div:first-child ul li:not(:last-child) a,
-.indexContainer .contentBanner03>div:first-child ul li:not(:last-child) time{
-    margin-bottom: 15px;
-}
-.indexContainer .contentBanner03>div:first-child ul li a{
-    width: 80%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-bottom: 2px;
-}
-.indexContainer .contentBanner03>div:first-child ul li a:hover{
-    text-decoration: underline;
-}
 .indexContainer .contentBanner03>div:first-child ul li time{
     padding-top: 4px;
 }
 .indexContainer .contentBanner03>div:nth-child(2) ul{
     display: flex;
 }
-.indexContainer .contentBanner03>div:nth-child(2) ul li a{
-    display: inline-block;
-    width: 100%;
-    padding-top: 120px;
-}
 .indexContainer .contentBanner03>div:nth-child(2) ul li{
     width: 33.33%;
     box-sizing: border-box;
     text-align: center;
 }
-.indexContainer .contentBanner03>div:nth-child(2) ul li:first-child a{
-    background: url('../images/maincon03_res.png') no-repeat center top;
-    
-}
-.indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2) a{
-    background: url('../images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
-}
-.indexContainer .contentBanner03>div:nth-child(2) ul li:last-child a{
-    background: url('../images/maincon03_lost.png') no-repeat center top/ 100px 100px;
-}
-.indexContainer .contentBanner03>#map{
-    background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
-    position: relative;
-    width: 100%;
-    height: 550px;
-}
-.indexContainer .contentBanner03 #map .map_dtl{
-    position: absolute;
-    top: 160px;
-    right: 60px;
-    background-color: var(--os3);
-    opacity: 0.94;
-    color: var(--gs1);
-    width: 445px;
-    padding: 55px 30px 35px;
-}
-.indexContainer .contentBanner03 #map .map_dtl h2{
-    display: inline-block;
-    margin-bottom: 30px;
-}
-.indexContainer .contentBanner03 #map .map_dtl button{
-    display: inline-block;
-    border: 1px solid var(--gs1);
-    background: none;
-    margin-left: 40px;
-    color: var(--gs1);
-    padding: 10px;
-    vertical-align: text-bottom;
-}
-.indexContainer .contentBanner03 #map .map_dtl address{
-    line-height: 26px;
-}
-.indexContainer .contentBanner03 #map .map_dtl address b{
-    display: block;
-    line-height: 26px;
-}
+
 /* contentBanner03 Fin */
 /* 상세페이지 시작 */
 .newContainer div:nth-child(2) h3+ul li{
@@ -5155,6 +5034,7 @@ body .signUpContainer>ul{
         white-space: nowrap;
         margin: 15px 0 10px;
         font-size: 14px;
+        height: 15px;
     }
     .indexContainer .contentBanner01 .carouselWay4 li span{
         display: block;
@@ -5199,7 +5079,6 @@ body .signUpContainer>ul{
         color: var(--gs9);
         line-height: 20px;
         padding-bottom: 50px;
-        /* margin-bottom: 70px; */
     }
     .indexContainer .contentBanner02>div:first-of-type>div:last-of-type{
         width: 100%;
@@ -5209,14 +5088,10 @@ body .signUpContainer>ul{
         width: 100%;
         height: 515px;    
     }
-    .indexContainer .contentBanner02>div .picSliderE li a{
-        display: block;
-        height: 100%;
-    }
-    .indexContainer .contentBanner02>div .picSliderE li a img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .indexContainer .contentBanner02>div .picSliderE li img{
+        /* width: 100%; */
+        /* height: 100%; */
+        /* object-fit: cover; */
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol{
         display: flex;
@@ -5227,6 +5102,7 @@ body .signUpContainer>ul{
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls{
         position: relative;
+        z-index: 100;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction a{
         width: 25px;
@@ -5263,14 +5139,173 @@ body .signUpContainer>ul{
         top: 40px;
         right: 3.125%;
     }
+    .indexContainer .contentBanner02>div .picSliderH li{
+        width: 100%;
+        height: 515px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2){
+        margin-bottom: 70px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
+        position: relative;
+        width: 100%;
+        padding: 40px 3.125% 0 3.125%;
+        box-sizing: border-box;
+    }
     .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2)>a{
-        background: url('../images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
-        display: inline-block;
-        color: var(--rs6);
+        background: url('../images/maincon02_more.png') no-repeat center / 6px 11px;
         border: 1px solid var(--rs6);
-        padding: 20px 85px 20px 70px;
+        box-sizing: border-box;
+        padding: 14px;
+        font-size: 0;
+        position: absolute;
+        top: 40px;
+        right: 3.125%;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
+        margin-bottom: 25px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
+        display: block;
+        color: var(--rs7);
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) p{
+        color: var(--gs9);
+        line-height: 20px;
+        padding-bottom: 50px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls{
+        position: relative;
+        z-index: 100;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction a{
+        width: 25px;
+        height: 9px;
+        top: 226px;
         margin: 0;
-        /* 임시 */
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/mobilecon02pre.png') no-repeat center / contain;
+        left: 3.125%;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/mobilecon02next.png') no-repeat center / contain;
+        left: 8.984%;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
+        display: flex;
+        position: relative;
+        border-top: 1px solid var(--gs5);
+        width: 77.604%;
+        margin-left: auto;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a{
+        font-size: 0;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active::before{
+        position: absolute;
+        content: '';
+        top: -2px;
+        width: 25%;
+        height: 3px;
+        background-color: var(--gs11);
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active{
+        color: var(--gs11);
+        font-weight: 700;
+    }
+    .indexContainer .contentBanner03>div:first-child{
+        border-bottom: 1px solid var(--gs5);
+    }
+    .indexContainer .contentBanner03>div:not(:last-child){
+        box-sizing: border-box;
+        padding: 30px 3.125% 70px;
+    }
+    .indexContainer .contentBanner03>div:not(:last-child) h2{
+        justify-content: space-between;
+        align-items: center;
+        color: var(--os10);
+    }
+    .indexContainer .contentBanner03>div:first-child h2{
+        margin-bottom: 45px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) h2{
+        margin-bottom: 70px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li a{
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        /* padding-bottom: 2px; */
+        font-size: 13px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li time{
+        font-size: 13px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) a,
+    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) time{
+        margin-bottom: 10px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li a{
+        display: inline-block;
+        width: 100%;
+        padding-top: 95px;
+        color: var(--gs9);
+        font-size: 13px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:first-child a{
+        background: url('../images/maincon03_res.png') no-repeat center top / 78px 78px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2) a{
+        background: url('../images/maincon03_inpuiry.png') no-repeat center top / 78px 78px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:last-child a{
+        background: url('../images/maincon03_lost.png') no-repeat center top / 78px 78px;
+    }
+    .indexContainer .contentBanner03>#map{
+        background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0%);
+        background-color: var(--os3);
+        opacity: 0.94;
+        color: var(--gs1);
+        width: 300px;
+        padding: 30px 15px 20px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl h2{
+        display: inline-block;
+        margin-bottom: 20px;
+        vertical-align: top;
+        font-size: 22px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl button{
+        display: inline-block;
+        border: 1px solid var(--gs1);
+        background: none;
+        margin-left: 40px;
+        color: var(--gs1);
+        padding: 5px 10px;
+        vertical-align: text-bottom;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl address{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl address b{
+        display: block;
+        line-height: 26px;
     }
 }
 /* ?tablet */
@@ -5453,6 +5488,144 @@ body .signUpContainer>ul{
         margin: 10% 0 10% auto;;
         margin-left: 200px;
         font-size: 0.833vw;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
+        position: relative;
+        padding-left: 11.458%;
+        box-sizing: border-box;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2{
+        padding-top: 16.564%;
+        margin-bottom: 25px;
+        font-size: 1.303vw;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) h2 strong{
+        display: block;
+        color: var(--rs7);
+        line-height: 35px;
+        font-size: 1.303vw;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) p{
+        color: var(--gs9);
+        line-height: 30px;
+        font-size: 1.042vw;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
+        position: relative;
+        border-left: 2px solid var(--gs5);
+        padding-left: 30px;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a{
+        cursor: default;
+        color: var(--gs6);
+        font-size: 1.042vw;
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active::before{
+        position: absolute;
+        content: '';
+        left: -3px;
+        width: 4px;
+        height: 30px;
+        background-color: var(--gs11);
+    }
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li a.active{
+        color: var(--gs11);
+        font-weight: 700;
+    }
+    .contentBanner03{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .indexContainer .contentBanner03>div:first-child{
+        border-right: 1px solid var(--gs5);
+    }
+    .indexContainer .contentBanner03>div:not(:last-child){
+        box-sizing: border-box;
+        padding: 75px 70px;
+        width: 50%;
+    }
+    .indexContainer .contentBanner03>div:not(:last-child) h2{
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+        color: var(--os10);
+    }
+    .indexContainer .contentBanner03>div:first-child ul li a{
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-bottom: 2px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) a,
+    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) time{
+        margin-bottom: 15px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li a:hover{
+        text-decoration: underline;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:first-child a{
+        background: url('../images/maincon03_res.png') no-repeat center top / 100px 100px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2) a{
+        background: url('../images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li:last-child a{
+        background: url('../images/maincon03_lost.png') no-repeat center top/ 100px 100px;
+    }
+    .indexContainer .contentBanner03>div:nth-child(2) ul li a{
+        display: inline-block;
+        width: 100%;
+        padding-top: 120px;
+        color: var(--gs9);
+    }
+    .indexContainer .contentBanner03>#map{
+        background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl{
+        position: absolute;
+        top: 160px;
+        right: 60px;
+        background-color: var(--os3);
+        opacity: 0.94;
+        color: var(--gs1);
+        width: 445px;
+        padding: 55px 30px 35px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl h2{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl button{
+        display: flex;
+        border: 1px solid var(--gs1);
+        background: none;
+        margin-left: 40px;
+        color: var(--gs1);
+        padding: 10px;
+        vertical-align: text-bottom;
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl button::before{
+        background: url('../images/mapCopy.png') no-repeat center /contain;
+        content: '';
+        background-position: ;
+        display: inline-block;
+        width: 13px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl address{
+        line-height: 26px;
+    }
+    .indexContainer .contentBanner03 #map .map_dtl address b{
+        display: block;
+        line-height: 26px;
     }
 }
 /* ?desktop */

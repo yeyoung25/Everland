@@ -74,7 +74,6 @@ header .ect_btn,
 footer>ul,
 footer div div,
 footer div details summary,
-.contentBanner03,
 .contentBanner03>div:first-child ul li,
 .contentBanner03>div:first-child h2,
 .flexBox{
@@ -136,11 +135,11 @@ mark{
     [class*='30']{font-size: 30px;}
     [class*='28']{font-size: 28px;}
     [class*='25']{font-size: 20px;} /**/
-    [class*='24']{font-size: 24px;}
+    [class*='24']{font-size: 20px;} /**/
     [class*='22']{font-size: 22px;}
     [class*='21']{font-size: 21px;}
     [class*='20']{font-size: 12px;} /**/
-    [class*='18']{font-size: 18px;}
+    [class*='18']{font-size: 12px;} /**/
     [class*='16']{font-size: 12px;} /**/
     [class*='14']{font-size: 14px;}
     [class*='13']{font-size: 10px;} /**/
