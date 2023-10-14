@@ -101,8 +101,13 @@ function headerEvent() {
 }
 
 function headerAct() {
-  let headerHight = $("header").innerHeight();
+  var headerHight = $("header").innerHeight();
   $("#fnbPanel").css("top", headerHight + "px");
+  $(window).resize(function() {
+    headerHight = $("header").innerHeight();
+    $("#fnbPanel").css("top", headerHight + "px");
+  });
+
   $(".menuBar").click(function () {
     $("#fnbPanel").toggleClass("act");
     if (!$("#fnbPanel").hasClass("act") && $(window).scrollTop() !== 0) {
@@ -145,7 +150,22 @@ function justCopy(){
 }
 
 function mainFnb(button){
+
   $(button).click(function(){
+    let li = $(this).find('li');
+    let liHeight = li.outerHeight(true);
+    let margin = li.outerHeight(true) - li.outerHeight();
+    let liLength = li.length;
+    let height = liHeight * liLength - margin;
+
+    console.log(height)
+    
     $(this).toggleClass("active");
-  });
+
+    if($(this).hasClass('active')){
+        $(this).children('ol').css('height', height + 'px');
+    }else {
+        $(this).children('ol').css('height', 0 + 'px');
+    }
+});
 }

@@ -300,12 +300,11 @@ footer div details span{
     header #fnbPanel{
         background-color: var(--gs1);
         top: 60px;
-        padding: 40px 60px 350px;
+        padding: 40px 60px 531px;
     }
     header #fnbPanel ul>li{
         display: block;
         width: 100%;
-        /* margin-bottom: 35px; */
     }
     header #fnbPanel ul>li h2{
         position: relative;
@@ -366,30 +365,18 @@ footer div details span{
         overflow-y: hidden;
     }
     header #fnbPanel ul>li.active>ol{
+        opacity: 1;
+        margin-bottom: 55px;
+    }
+    header #fnbPanel ul>li.active>ol{
         display: block; 
         opacity: 1;
-    }
-    header #fnbPanel ul>li:first-child.active>ol{
-        height: 250px;
-    }
-    header #fnbPanel ul>li:nth-child(2).active>ol,
-    header #fnbPanel ul>li:nth-child(3).active>ol,
-        header #fnbPanel ul>li:nth-child(5).active>ol{
-        height: 150px;
-    }
-    header #fnbPanel ul>li:nth-child(4).active>ol,
-    header #fnbPanel ul>li:last-child.active>ol{
-        height: 80px;
-    }
-    header #fnbPanel ul>li:nth-child(6).active>ol,
-    header #fnbPanel ul>li:nth-child(7).active>ol{
-        height: 50px;
     }
     header #fnbPanel ul>li>ol>li>a{
         font-weight: 600;
     }
     header #fnbPanel ul>li:not(:last-child){
-        margin-bottom: 40px;
+        margin-bottom: 15px;
     }
     header #fnbPanel ul>li>h2{
         cursor: pointer;
