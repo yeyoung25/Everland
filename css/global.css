@@ -187,14 +187,6 @@ footer div details summary{
     cursor: pointer;
     align-items: center;
 }
-footer div details summary::after{
-    background: url('../images/footer_sum.png') no-repeat center / contain;
-    width: 12px;
-    height: 7px;
-    content: '';
-    display: block;
-    margin-left: 25px;
-}
 footer div details summary.on::after{
     transform: rotate(-180deg);
 }
@@ -488,6 +480,14 @@ footer div details span{
     footer div details p{
         text-align: center;
     }
+    footer div details summary::after{
+        background: url('../images/footer_sum.png') no-repeat center / contain;
+        width: 8px;
+        height: 5px;
+        content: '';
+        display: block;
+        margin-left: 25px;
+    }
 }
 /* ?tablet */
 @media screen and (min-width: 1280px) {
@@ -651,6 +651,14 @@ footer div details span{
         position: absolute;
         top: 125px;
         color: var(--gs8);
+    }
+    footer div details summary::after{
+        background: url('../images/footer_sum.png') no-repeat center / contain;
+        width: 12px;
+        height: 7px;
+        content: '';
+        display: block;
+        margin-left: 25px;
     }
 }
 /* ?desktop */
