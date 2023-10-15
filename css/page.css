@@ -237,121 +237,14 @@ div .everContainer nav div ol li a:hover{
     /* margin: 0 auto; */
     text-align: center;
 }
-.howContainer .detail_contents>div{
-    margin: 30px 0 0;
-    display: inline-block;
-    background-color: var(--gs2);
-    padding: 0  35px 65px 35px;
-    width: 95.744%;
-    box-sizing: border-box;
-    position: relative;
-}
-.howContainer .detail_contents div>p:first-child{
-    color: var(--vs9);
-    width: 600px;
-    line-height: 50px;
-    text-align: center;
-    margin: 65px auto;
-}
-.howContainer .detail_contents>div img{
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 100px;
-}
-.howContainer .detail_contents div>.imgBox h4{
-    position: absolute;
-    left: 60px;
-    top: 330px;
-    color: var(--gs1);
-    line-height: 30px;
-    text-align: left;
-    width: 330px;
-    border-bottom: 1px solid var(--gs1);
-    padding-bottom: 20px;
-    font-size: 24px;
-}
 .howContainer .detail_contents div>.imgBox h4 mark{
     color: var(--os1);
     background-color: transparent;
     font-style: normal;
 }
-.howContainer .detail_contents div>.imgBox p{
-    position: absolute;
-    left: 60px;
-    top: 420px;
-    color: var(--gs1);
-    line-height: 20px;
-    text-align: left;
-    width: 350px;
-}
-.howContainer .detail_contents div dl{
-    text-align: left;
-}
-.howContainer .detail_contents div dl dt{
-    background: url('../images/how_text.png') no-repeat left;
-    margin-bottom: 30px;
-    padding-left: 25px;
-}
 .howContainer .detail_contents div dl dd{
     padding-left: 25px;
-    margin-bottom: 20px;
     line-height: 22px;
-}
-.howContainer .detail_contents div dl{
-    margin-bottom: 55px;
-}
-.howContainer .detail_contents div dl:last-of-type{
-    margin-bottom: 180px;
-}
-.howContainer .detail_contents div p:nth-of-type(2),
-.howContainer .detail_contents div p:nth-of-type(3){
-    background: url('../images/how_text.png') no-repeat left;
-    margin-bottom: 55px;
-    padding-left: 30px;
-    text-align: left;
-}
-.howContainer .detail_contents div .safetyBox{
-    padding: 40px 0 40px 320px;
-    background: url('../images/how_safety.png') no-repeat left ;
-    background-position: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--gs8);
-    border-radius: 10px;
-    text-align: left;
-}
-.howContainer .detail_contents div .safetyBox h4{
-    color: var(--rs1);
-    margin-bottom: 30px;
-}
-.howContainer .detail_contents div .safetyBox ul li p{
-    color: var(--gs1);
-    line-height: 30px;
-}
-.howContainer .detail_contents div .safetyBox div{
-    margin-top: 50px;
-}
-.howContainer .detail_contents div .safetyBox div a{
-    background: url('../images/how_safetyNext.png') no-repeat right;
-    background-position: 90% center;
-    display: inline-block;
-    background-color: var(--gs1);
-    width: 345px;
-    line-height: 42px;
-    border-radius: 20px;
-    text-align: center;
-    margin-right: 30px;
-}
-.howContainer .detail_contents div .safetyBox div input{
-    background: url('../images/how_safetyNext.png') no-repeat right;
-    background-position: 93% center;
-    display: inline-block;
-    background-color: var(--gs1);
-    border: none;
-    width: 49.479%;
-    line-height: 42px;
-    border-radius: 20px;
-    text-align: center;
 }
 #handicappedPopUp{
     display: none;
@@ -5098,6 +4991,9 @@ body .signUpContainer>ul{
         align-items: center;
         color: var(--os10);
     }
+    .indexContainer .contentBanner03>div h2{
+        font-size: 20px;
+    }
     .indexContainer .contentBanner03>div:first-child h2{
         margin-bottom: 45px;
     }
@@ -5109,7 +5005,6 @@ body .signUpContainer>ul{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        /* padding-bottom: 2px; */
         font-size: 13px;
     }
     .indexContainer .contentBanner03>div:first-child ul li time{
@@ -5177,6 +5072,8 @@ body .signUpContainer>ul{
         display: block;
         line-height: 26px;
     }
+    /* index Fin */
+    /* 상세페이지 시작 */
     div .everContainer h2{
         display: flex;
         color: var(--gs1);
@@ -5245,7 +5142,6 @@ body .signUpContainer>ul{
     div div:nth-child(2) .linebtm,
     header+div>.linebtm,
     .siteContainer ul li>.linebtm{
-        font-size: 18px;
         text-align: center;
         padding: 55px 0;
         border-bottom: 1px solid var(--gs5);
@@ -5253,7 +5149,6 @@ body .signUpContainer>ul{
     .newContainer article h3{
         padding: 55px 0;
         text-align: center;
-        font-size: 18px;
     }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / 10px 10px;
@@ -5319,6 +5214,113 @@ body .signUpContainer>ul{
     .newContainer article .innerPager li a strong{
         font-size: 0;
     }
+    /* newNotice detail Fin */
+    .howContainer .detail_contents div>p:first-child{
+        color: var(--vs9);
+        width: 450px;
+        line-height: 30px;
+        text-align: center;
+        margin: 45px auto 40px;
+    }
+    .howContainer .detail_contents>div{
+        margin: 30px 0 0;
+        display: inline-block;
+        background-color: var(--gs2);
+        box-sizing: border-box;
+        position: relative;
+    }
+    .howContainer .detail_contents div>.imgBox h4{
+        position: absolute;
+        left: 25px;
+        top: 190px;
+        color: var(--gs1);
+        line-height: 30px;
+        text-align: left;
+        width: 330px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+    .howContainer .detail_contents div>.imgBox p{
+        font-size: 0;
+    }
+    .howContainer .detail_contents>div img{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 90px;
+    }
+    .howContainer .detail_contents div dl{
+        text-align: left;
+        margin-bottom: 55px;
+        padding: 0 10px 0 20px;
+    }
+    .howContainer .detail_contents div dl dt{
+        background: url('../images/how_text.png') no-repeat left / 10px 10px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    .howContainer .detail_contents div dl dd:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .howContainer .detail_contents div p:nth-of-type(2),
+    .howContainer .detail_contents div p:nth-of-type(3){
+        background: url('../images/how_text.png') no-repeat left / 10px 10px;
+        margin: 0 0 55px 20px;
+        padding-left: 15px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .howContainer .detail_contents div dl:last-of-type{
+        margin-bottom: 60px;
+    }
+    .howContainer .detail_contents div .safetyBox{
+        background: url('../images/how_safety.png') no-repeat left / 92px 85px;
+        background-position: 580px 185px;
+        padding: 35px 45px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--gs8);
+        border-radius: 10px;
+        text-align: left;
+    }
+    .howContainer .detail_contents div .safetyBox h4{
+        color: var(--rs1);
+        margin-bottom: 30px;
+    }
+    .howContainer .detail_contents div .safetyBox ul li p{
+        color: var(--gs1);
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+    .howContainer .detail_contents div .safetyBox div{
+        margin-top: 40px;
+    }
+    .howContainer .detail_contents div .safetyBox div a,
+    .howContainer .detail_contents div .safetyBox div input{
+        display: inline-block;
+        line-height: 32px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 700;
+        text-align: left;
+    }
+    .howContainer .detail_contents div .safetyBox div a{
+        background: url('../images/how_safetyNext.png') no-repeat right / 6px 9px;
+        background-position: 90% center;
+        width: 330px;
+        background-color: var(--gs1);
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+    .howContainer .detail_contents div .safetyBox div input{
+        background: url('../images/how_safetyNext.png') no-repeat right / 6px 9px;
+        background-position: 90% center;
+        width: 350px;
+        background-color: var(--gs1);
+        border: none;
+        padding: 0 0 0 20px;
+    }
+    /* howToUse detail Fin */
 }
 /* ?tablet */
 
@@ -5797,5 +5799,114 @@ body .signUpContainer>ul{
     .newContainer article .innerPager li strong{
         width: 100%;
     }
+    /* newNotice detail Fin */
+    .howContainer .detail_contents div>p:first-child{
+        color: var(--vs9);
+        width: 600px;
+        line-height: 50px;
+        text-align: center;
+        margin: 65px auto;
+    }
+    .howContainer .detail_contents>div{
+        margin: 30px 0 0;
+        display: inline-block;
+        background-color: var(--gs2);
+        padding: 0  35px 65px 35px;
+        width: 95.744%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .howContainer .detail_contents div>.imgBox h4{
+        position: absolute;
+        left: 60px;
+        top: 330px;
+        color: var(--gs1);
+        line-height: 30px;
+        text-align: left;
+        width: 330px;
+        border-bottom: 1px solid var(--gs1);
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    .howContainer .detail_contents div>.imgBox p{
+        position: absolute;
+        left: 60px;
+        top: 420px;
+        color: var(--gs1);
+        line-height: 20px;
+        text-align: left;
+        width: 350px;
+    }
+    .howContainer .detail_contents>div img{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .howContainer .detail_contents div dl{
+        text-align: left;
+        margin-bottom: 55px;
+    }
+    .howContainer .detail_contents div dl dd:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .howContainer .detail_contents div dl dt{
+        background: url('../images/how_text.png') no-repeat left;
+        margin-bottom: 30px;
+        padding-left: 25px;
+    }
+    .howContainer .detail_contents div p:nth-of-type(2),
+    .howContainer .detail_contents div p:nth-of-type(3){
+        background: url('../images/how_text.png') no-repeat left;
+        margin-bottom: 55px;
+        padding-left: 30px;
+        text-align: left;
+    }
+    .howContainer .detail_contents div dl:last-of-type{
+        margin-bottom: 180px;
+    }
+    .howContainer .detail_contents div .safetyBox{
+        padding: 40px 0 40px 320px;
+        background: url('../images/how_safety.png') no-repeat left ;
+        background-position: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--gs8);
+        border-radius: 10px;
+        text-align: left;
+    }
+    .howContainer .detail_contents div .safetyBox h4{
+        color: var(--rs1);
+        margin-bottom: 30px;
+    }
+    .howContainer .detail_contents div .safetyBox ul li p{
+        color: var(--gs1);
+        line-height: 30px;
+    }
+    .howContainer .detail_contents div .safetyBox div{
+        margin-top: 50px;
+    }
+    .howContainer .detail_contents div .safetyBox div a{
+        background: url('../images/how_safetyNext.png') no-repeat right;
+        background-position: 90% center;
+        display: inline-block;
+        background-color: var(--gs1);
+        width: 345px;
+        line-height: 42px;
+        border-radius: 20px;
+        text-align: center;
+        margin-right: 30px;
+    }
+    .howContainer .detail_contents div .safetyBox div input{
+        background: url('../images/how_safetyNext.png') no-repeat right;
+        background-position: 93% center;
+        display: inline-block;
+        background-color: var(--gs1);
+        border: none;
+        width: 49.479%;
+        line-height: 42px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    /* howToUse detail Fin */
 }
 /* ?desktop */
