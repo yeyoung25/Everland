@@ -363,15 +363,6 @@ div .everContainer nav div ol li a:hover{
     width: 100%;
 }
 /* suspensionNotice Fin */
-.trafContainer div:nth-child(2) h3{
-    text-align: center;
-    padding: 95px 0;
-}
-.trafContainer div:nth-child(2) ul{
-    display: flex;
-    margin-bottom: 100px;
-    cursor: pointer;
-}
 .trafContainer div:nth-child(2) ul li:not(:last-child)::after{
     content: '';
     display: inline-block;
@@ -392,166 +383,20 @@ div .everContainer nav div ol li a:hover{
     content: none;
     border: 0;
 }
-.trafContainer div:nth-child(2)>div.active{
-    display: block;
-}
 .trafContainer div:nth-child(2)>div{
     display: none;
 }
-.trafContainer div:nth-child(2) .publicTransport ol li strong{
+.trafContainer div:nth-child(2)>div.active{
     display: block;
-    margin-bottom: 60px;
 }
 .trafContainer div:nth-child(2) .publicTransport ol li strong mark{
     color: var(--os1);
 }
-.trafContainer div:nth-child(2) .publicTransport ol li strong mark:first-child{
-    margin-right: 35px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:first-child{
-    margin-bottom: 150px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 24px;
-    margin-right: 10px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
-    display: flex;
-    margin: 0 0 30px 20px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
-    margin: 0 0 20px 20px;
-    color: var(--gs8);
-}
 .trafContainer div:nth-child(2) .publicTransport ol li dl dd{
     color: var(--gs8);
 }
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
-    display: flex;
-    margin: 0 0 30px 20px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 24px;
-    margin-right: 10px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
-    margin: 0 0 40px 20px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
-    margin-bottom: 15px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2):before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 24px;
-    margin-right: 10px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
-    display: flex;
-    margin: 100px 0 40px;
-}
-.trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
-    margin-top: 50px;
-}
-.trafContainer div:nth-child(2) .byCar dl{
-    margin-bottom: 60px;
-}
-.trafContainer div:nth-child(2) .byCar dl dt::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 20px;
-    margin-right: 5px;
-}
-.trafContainer div:nth-child(2) .byCar dl dt{
-    margin-bottom: 30px;
-    display: flex;
-}
-.trafContainer div:nth-child(2) .byCar dl dd{
-    margin-bottom: 20px;
-    color: var(--gs8);
-}
-.trafContainer div:nth-child(2) .byCar figure{
-    display: flex;
-    flex-direction: column-reverse;
-}
-.trafContainer div:nth-child(2) .byCar figure figcaption::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 20px;
-    margin-right: 5px;
-}
-.trafContainer div:nth-child(2) .byCar figure figcaption{
-    display: flex;
-    margin-bottom: 30px;
-}
-.trafContainer div:nth-child(2) .kakaoT b{
-    display: block;
-    margin-bottom: 50px;
-}
-.trafContainer div:nth-child(2) .kakaoT b:first-child{
-    display: block;
-    color: var(--os1);
-    margin-bottom: 45px;
-}
-.trafContainer div:nth-child(2) .kakaoT span{
-    display: inline-block;
-    margin-left: 30px;
-}
-.trafContainer div:nth-child(2) .kakaoT p{
-    display: block;
-    color: var(--gs8);
-    width: 53.546%;
-    line-height: 26px;
-    margin-bottom: 155px;
-}
-.trafContainer div:nth-child(2) .kakaoT dl:not(:last-child){
-    margin-bottom: 70px;
-}
-.trafContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
-    margin-bottom: 150px;
-}
-.trafContainer div:nth-child(2) .kakaoT dl dt{
-    margin-bottom: 50px;
-}
-.trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
-    margin-bottom: 25px;
-}
-.trafContainer div:nth-child(2) .regularBus dl{
-    margin-bottom: 60px;
-}
-.trafContainer div:nth-child(2) .regularBus dl dt::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 24px;
-    margin-right: 5px;
-}
-.trafContainer div:nth-child(2) .regularBus dl dt{
-    margin-bottom: 35px;
-    display: flex;
-}
-.trafContainer div:nth-child(2) .regularBus dl dd{
-    line-height: 25px;
-    color: var(--gs9);
-}
 .trafContainer div:nth-child(2) .regularBus dl:first-child dd:last-child{
     color: var(--gs11);
-}
-.trafContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
-    margin-bottom: 20px;
-}
-.trafContainer div:nth-child(2) .regularBus b{
-    display: block;
-    margin-bottom: 60px;
 }
 /* trafficReport Fin */
 .amanContainer div:nth-child(2) ul li::after{
@@ -4950,6 +4795,7 @@ body .signUpContainer>ul{
         padding: 55px 0;
         border-bottom: 1px solid var(--gs5);
     }
+    .trafContainer div:nth-child(2) h3,
     .newContainer article h3{
         padding: 55px 0;
         text-align: center;
@@ -5264,6 +5110,11 @@ body .signUpContainer>ul{
         width: 50%;
     }
     /* suspensionNotice Fin */
+    .trafContainer div:nth-child(2) ul{
+        display: flex;
+        margin-bottom: 55px;
+        cursor: pointer;
+    }
     .trafContainer div:nth-child(2) ul li{
         border-bottom: 1px solid var(--gs11);
         position: relative;
@@ -5272,6 +5123,136 @@ body .signUpContainer>ul{
         line-height: 50px;
         color: var(--gs5);
         box-sizing: border-box;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li strong{
+        display: block;
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li strong mark:first-child{
+        margin-right: 15px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt,
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
+        display: flex;
+        margin: 0 0 20px 5px;
+        font-size: 14px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before,
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before,
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2):before,
+    .trafContainer div:nth-child(2) .byCar dl dt::before,
+    .trafContainer div:nth-child(2) .byCar figure figcaption::before,
+    .trafContainer div:nth-child(2) .regularBus dl dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 11px;
+        /* width: 5px;
+        height: 5px; */
+        line-height: 12px;
+        margin-right: 10px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child{
+        margin-bottom: 70px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
+        margin: 0 0 15px 5px;
+        color: var(--gs8);
+        font-size: 12px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
+        margin: 0 0 20px 15px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
+        display: flex;
+        margin: 50px 0 15px;
+        font-size: 14px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
+        margin-top: 50px;
+    }
+    .trafContainer div:nth-child(2) .byCar dl{
+        margin-bottom: 50px;
+    }
+    .trafContainer div:nth-child(2) .byCar dl dt{
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .trafContainer div:nth-child(2) .byCar dl dd{
+        color: var(--gs8);
+    }
+    .trafContainer div:nth-child(2) .byCar dl dd:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .trafContainer div:nth-child(2) .byCar figure{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .trafContainer div:nth-child(2) .byCar figure figcaption{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT b{
+        display: block;
+        margin-bottom: 35px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT b:first-child{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT span{
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT p{
+        display: block;
+        color: var(--gs8);
+        width: 78.546%;
+        line-height: 20px;
+        margin-bottom: 100px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl:not(:last-child){
+        margin-bottom: 100px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
+        margin-bottom: 150px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl dt{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl dd{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl{
+        margin-bottom: 50px;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dt{
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dd{
+        line-height: 18px;
+        color: var(--gs9);
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .trafContainer div:nth-child(2) .regularBus b{
+        display: block;
+        margin-bottom: 50px;
     }
     
     /* trafficReport Fin */
@@ -6053,6 +6034,15 @@ body .signUpContainer>ul{
         width: 20%;
     }
     /* suspensionNotice Fin */
+    .trafContainer div:nth-child(2) ul{
+        display: flex;
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+    .trafContainer div:nth-child(2) h3{
+        text-align: center;
+        padding: 95px 0;
+    }
     .trafContainer div:nth-child(2) ul li{
         border-bottom: 1px solid var(--gs11);
         position: relative;
@@ -6060,6 +6050,128 @@ body .signUpContainer>ul{
         text-align: center;
         line-height: 100px;
         color: var(--gs5);
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li strong{
+        display: block;
+        margin-bottom: 60px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li strong mark:first-child{
+        margin-right: 35px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
+        display: flex;
+        margin: 0 0 30px 20px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before,
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before,
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2):before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child{
+        margin-bottom: 150px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
+        margin: 0 0 20px 20px;
+        color: var(--gs8);
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
+        display: flex;
+        margin: 0 0 30px 20px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
+        margin: 0 0 40px 20px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
+        margin-bottom: 15px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
+        display: flex;
+        margin: 100px 0 40px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
+        margin-top: 50px;
+    }
+    .trafContainer div:nth-child(2) .byCar dl{
+        margin-bottom: 60px;
+    }
+    .trafContainer div:nth-child(2) .byCar dl dt::before,
+    .trafContainer div:nth-child(2) .byCar figure figcaption::before,
+    .trafContainer div:nth-child(2) .regularBus dl dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+    .trafContainer div:nth-child(2) .byCar dl dt{
+        margin-bottom: 30px;
+        display: flex;
+    }
+    .trafContainer div:nth-child(2) .byCar dl dd{
+        margin-bottom: 20px;
+        color: var(--gs8);
+    }
+    .trafContainer div:nth-child(2) .byCar figure{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .trafContainer div:nth-child(2) .byCar figure figcaption{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT b{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT b:first-child{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 45px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT span{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT p{
+        display: block;
+        color: var(--gs8);
+        width: 53.546%;
+        line-height: 26px;
+        margin-bottom: 155px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl:not(:last-child){
+        margin-bottom: 70px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
+        margin-bottom: 150px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl dt{
+        margin-bottom: 50px;
+    }
+    .trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
+        margin-bottom: 25px;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl{
+        margin-bottom: 60px;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dt{
+        margin-bottom: 35px;
+        display: flex;
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dd{
+        line-height: 25px;
+        color: var(--gs9);
+    }
+    .trafContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .trafContainer div:nth-child(2) .regularBus b{
+        display: block;
+        margin-bottom: 60px;
     }
 
     /* trafficReport Fin */
