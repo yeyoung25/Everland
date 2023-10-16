@@ -234,7 +234,6 @@ div .everContainer nav div ol li a:hover{
 }
 /* newNotice detail Fin */
 .howContainer .detail_contents{
-    /* margin: 0 auto; */
     text-align: center;
 }
 .howContainer .detail_contents div>.imgBox h4 mark{
@@ -251,64 +250,6 @@ div .everContainer nav div ol li a:hover{
 }
 #handicappedPopUp.active{
     display: block;
-}
-#handicappedPopUp{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 1000;
-}
-#handicappedPopUp div h2{
-    margin-bottom: 50px;
-}
-#handicappedPopUp div .closemodel{
-    background: url('../images/how_pre.png') no-repeat center;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 30px;
-    top: 40px;
-    background-color: transparent;
-    font-size: 0;
-    border: none;
-}
-#handicappedPopUp div p:first-child{
-    margin: 50px 0;
-}
-#handicappedPopUp div div h3{
-    margin-bottom: 35px;
-}
-#handicappedPopUp div div:first-of-type{
-    margin-top: 50px;
-}
-#handicappedPopUp div div:first-of-type p{
-    margin-bottom: 35px;
-    line-height: 30px;
-}
-#handicappedPopUp div div:first-of-type p>b{
-    display: block;
-}
-#handicappedPopUp div div:nth-of-type(2){
-    margin-bottom: 40px;
-    line-height: 30px;
-}
-#handicappedPopUp div div:nth-of-type(3) ol li{
-    margin-bottom: 40px;
-    line-height: 30px;
-}
-#handicappedPopUp div div:nth-of-type(3) mark{
-    display: block;
-    color: red;
-    margin-bottom: 15px;
-}
-#handicappedPopUp div div:nth-of-type(3) mark:last-of-type{
-    margin-bottom: 50px;
-}
-#handicappedPopUp div div:nth-of-type(3) p{
-    line-height: 30px;
 }
 /* howToUse Fin */
 .operContainer div:nth-child(2) div{
@@ -429,47 +370,8 @@ div .everContainer nav div ol li a:hover{
     color: var(--os1);
 }
 /* guideMap Fin */
-.usagContainer div:nth-child(2) h3+strong{
-    display: inline-block;
-    margin-top: 125px;
-    width: 28.014%;
-}
-.usagContainer div:nth-child(2) strong a::after{
-    background: url('../images/usageA.png') no-repeat center / contain;
-    display: inline-block;
-    content: '';
-    width: 8px;
-    height: 12px;
-    padding-right: 15px;
-}
-.usagContainer div:nth-child(2)>strong a{
-    display: inline-block;
-    color: var(--os1);
-    margin-left: 12.658%;
-    height: 24px;
-    vertical-align: middle;
-}
-.usagContainer div:nth-child(2) table{
-    float: right;
-    width: 71.985%;
-    text-align: center;
-    overflow : hidden;
-    margin-bottom: 150px;
-}
 .usagContainer div:nth-child(2) table thead tr th{
     width: 33.33%;
-}
-.usagContainer div:nth-child(2) table caption{
-    font-size: 0;
-    margin-top: 125px;
-}
-.usagContainer div:nth-child(2) table thead tr th{
-    border-top: 2px solid var(--os1);
-    border-bottom: none;
-}
-.usagContainer div:nth-child(2) table tbody tr th{
-    background-color: rgba(255,113,5,0.3);
-    border-left: none;
 }
 .usagContainer div:nth-child(2) table thead tr th:first-child{
     background-color: rgba(255,113,5,0.3);
@@ -484,60 +386,20 @@ div .everContainer nav div ol li a:hover{
 }
 .usagContainer div:nth-child(2) table tr th,
 .usagContainer div:nth-child(2) table tr td{
-    display: table-cell; 
+    display: table-cell;
     vertical-align:middle;
     border: 1px solid var(--gs9);
     width: 30%;
-}
-.usagContainer div:nth-child(2) table tr th,
-.usagContainer div:nth-child(2) table tr td:not(:last-child){
-    line-height: 60px; 
-}
-.usagContainer div:nth-child(2) table tr:last-child{
-    line-height: 22px;
-    height: 90px;
-    border-bottom: 1px solid var(--os1);
 }
 .usagContainer div:nth-child(2) table tbody tr:last-child th,
 .usagContainer div:nth-child(2) table tbody tr:last-child td{
     border-bottom: 1px solid var(--os1);
 }
-.usagContainer div:nth-child(2) table tr:last-child td:last-child{
-    padding: 25px 95px;
-}
 .usagContainer div:nth-child(2) table+div{
     clear: both;
 }
-.usagContainer div:nth-child(2) table+div>strong{
-    display: block;
-    margin-bottom: 45px;
-}
-.usagContainer div:nth-child(2) table+div>strong a{
-    display: inline-block;
-    color: var(--os1);
-    margin-left: 3.546%;
-    height: 24px;
-    vertical-align: middle;
-}
-.usagContainer div:nth-child(2) table+div ul{
-    margin-bottom: 155px;
-}
-.usagContainer div:nth-child(2) table+div ul li:not(:last-child){
-    margin-bottom: 115px;
-}
-.usagContainer div:nth-child(2) table+div ul li strong::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 20px;
-    margin-right: 10px;
-}
 .usagContainer div:nth-child(2) table+div ul li p{
     margin-left: 15px;
-}
-.usagContainer div:nth-child(2) table+div ul li strong{
-    display: flex;
-    margin-bottom: 35px;
 }
 .usagContainer div:nth-child(2) table+div ul li:first-child strong{
     color: var(--os1);
@@ -554,119 +416,12 @@ div .everContainer nav div ol li a:hover{
 .usagContainer div:nth-child(2) table+div ul li:nth-child(6) strong{
     color: var(--vs9);
 }
-.usagContainer div:nth-child(2) table+div ul li:nth-child(6) p span{
-    display: inline-block;
-    margin-left: 20px;
-}
-.usagContainer div:nth-child(2) table+div ul li p span{
-    margin-left: 20px;
-}
-.usagContainer div:nth-child(2) table+div ul li p{
-    margin-bottom: 20px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(2){
-    margin-bottom: 115px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(2) strong{
-    display: block;
-    margin-bottom: 50px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(2) p{
-    margin-bottom: 20px;
-    line-height: 25px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
-    margin-bottom: 35px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
-    margin-bottom: 10px;
-    line-height: 25px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) strong{
-    display: block;
-    margin-bottom: 50px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) p{
-    margin-bottom: 20px;
-    line-height: 25px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) p:last-of-type{
-    margin-bottom: 35px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div{
-    background-color: var(--gs2);
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 55px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div strong{
-    margin-bottom: 30px;
-    line-height: 30px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:not(:last-of-type){
-    margin-bottom: 60px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul li:not(:last-of-type){
-    margin-bottom: 20px;
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(1),
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(2),
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(3),
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(4){
-    color: var(--gs9);
-}
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(1),
-.usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(2){
-    color: var(--gs9);
-    line-height: 30px;
-}
 .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(3),
 .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(4),
 .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(5){
     color: var(--gs9);
 }
 /* usageFee Fin */
-.affContainer div:nth-child(2)>strong{
-    display: block;
-    margin: 110px 0 30px 0;
-}
-.affContainer div:nth-child(2)>ul:first-of-type{
-    margin-bottom: 110px;
-}
-.affContainer div:nth-child(2)>ul:first-of-type li{
-    margin-bottom: 10px;
-    color: var(--gs8);
-    line-height: 30px;
-}
-.affContainer div:nth-child(2)>img{
-    width: 100%;
-    margin-bottom: 110px;
-}
-.affContainer div:nth-child(2) div{
-    background-color: rgba(255, 113, 5, 0.2);
-    border-radius: 10px;
-    padding: 55px 50px;
-    margin: 160px 0 150px;
-}
-.affContainer div:nth-child(2) div p:first-child::before{
-    background: url('../images/aff_caution.png') no-repeat center;
-    content: '';
-    display: block;
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 20px;
-}
-.affContainer div:nth-child(2) div p:first-child{
-    width: 67.730%;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 40px;
-}
-.affContainer div:nth-child(2) div p:last-of-type{
-    text-align: center;
-    margin: 30px auto 60px;
-}
 .affContainer div:nth-child(2) div p a:hover{
     color: rgb(20, 40, 160);
     text-decoration: underline;
@@ -677,49 +432,13 @@ div .everContainer nav div ol li a:hover{
 .affContainer div:nth-child(2) div ul li{
     color: var(--gs9);
 }
-.affContainer div:nth-child(2) div ul li:not(:last-child){
-    margin-bottom: 25px;
-}
 .affContainer div:nth-child(2) div ul li:nth-of-type(2){
     color: var(--gs11);
-}
-.affContainer div:nth-child(2) div ul li dl dt{
-    margin: 25px 0 10px;
-    padding-left: 10px;
-    
-}
-.affContainer div:nth-child(2) div ul li dl dd{
-    padding-left: 15px;
-    line-height: 30px;
 }
 .affContainer div:nth-child(2)>ul:last-child::after{
     content: '';
     display: block;
     clear: both;
-}
-.affContainer div:nth-child(2)>ul:last-child{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-.affContainer div:nth-child(2)>ul:last-child li{
-    width: 24.539%;
-    box-sizing: border-box;
-    margin-bottom: 120px;
-}
-.affContainer div:nth-child(2)>ul:last-child li img{
-    width: 100%;
-}
-.affContainer div:nth-child(2)>ul:last-child li:not(:nth-child(3n+0)){
-    margin-right: 13.191%;
-}
-.affContainer div:nth-child(2)>ul:last-child li span{
-    display: block;
-    margin-top: 30px;
-    text-align: center;
-    line-height: 30px;
 }
 /* affiliateCard Fin */
 .speContainer div:nth-child(2) h3+div{
@@ -4501,7 +4220,6 @@ body .signUpContainer>ul{
     }
     .indexContainer .contentBanner02>div ul li img{
         width: 100%;
-        margin-left: auto;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls{
         position: relative;
@@ -4984,14 +4702,22 @@ body .signUpContainer>ul{
         border: none;
         padding: 0 0 0 20px;
     }
-    #handicappedPopUp>div{
+    #handicappedPopUp{
+        width: 100%;
+        height: 100vh;
         position: fixed;
+        top: 10%;
+        left: 0;
+        display: none;
+        z-index: 1000;
+    }
+    #handicappedPopUp>div{
         position: absolute;
         background-color: var(--gs1);
         border: 3px solid var(--os1);
         box-shadow: 0 0 0 9999px rgba(0,0,0,0.7);
-        width: 70.937%;
-        height: 100vh;
+        width: 93.75%;
+        height: 75vh;
         padding: 40px 30px 90px;
         box-sizing: border-box;
         margin: 0 auto;
@@ -5001,7 +4727,71 @@ body .signUpContainer>ul{
         z-index: 1000;
         overflow: scroll;
     }
-    /* howToUse detail Fin */
+    #handicappedPopUp div h2{
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    #handicappedPopUp div input+p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #handicappedPopUp div .closemodel{
+        background: url('../images/how_pre.png') no-repeat center;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+    }
+    #handicappedPopUp div p:first-child{
+        margin: 50px 0;
+    }
+    #handicappedPopUp div div h3{
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #handicappedPopUp div div h3+p{
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:first-of-type p{
+        margin-bottom: 30px;
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:nth-of-type(2){
+        margin-bottom: 40px;
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) ol li{
+        margin-bottom: 15px;
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) mark{
+        display: block;
+        color: red;
+        margin-bottom: 15px;
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) mark:last-of-type{
+        margin-bottom: 30px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) p{
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #handicappedPopUp div div:first-of-type p>b{
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    /* howToUse Fin */
     .operContainer div:nth-child(2)>strong{
         display: block;
         text-align: center;
@@ -5146,11 +4936,10 @@ body .signUpContainer>ul{
     .trafContainer div:nth-child(2) .regularBus dl dt::before{
         display: inline-block;
         content: '▶';
-        font-size: 11px;
-        /* width: 5px;
-        height: 5px; */
+        font-size: 10px;
         line-height: 12px;
         margin-right: 10px;
+        transform: scale(0.7);
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child{
         margin-bottom: 70px;
@@ -5318,6 +5107,258 @@ body .signUpContainer>ul{
         line-height: 40px;
     }
     /* guideMap Fin */
+    .usagContainer div:nth-child(2) h3+strong{
+        display: block;
+        margin: 50px 0 20px;
+    }
+    .usagContainer div:nth-child(2) table caption{
+        font-size: 0;
+        margin-top: 20px;
+        display: none;
+    }
+    .usagContainer div:nth-child(2) table thead tr th{
+        border-top: 2px solid var(--os1);
+        border-bottom: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .usagContainer div:nth-child(2) table tbody tr th{
+        background-color: rgba(255,113,5,0.3);
+        border-left: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .usagContainer div:nth-child(2) table tr:last-child{
+        line-height: 18x;
+        border-bottom: 1px solid var(--os1);
+    }
+    .usagContainer div:nth-child(2) strong a::after{
+        background: url('../images/usageA.png') no-repeat center / contain;
+        display: inline-block;
+        content: '';
+        width: 5px;
+        height: 8px;
+        padding-right: 15px;
+    }
+    .usagContainer div:nth-child(2)>strong a{
+        display: inline-block;
+        color: var(--os1);
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .usagContainer div:nth-child(2) table{
+        text-align: center;
+        overflow : hidden;
+        margin-bottom: 50px;
+    }
+    .usagContainer div:nth-child(2) table tr th,
+    .usagContainer div:nth-child(2) table tr td:not(:last-child){
+        line-height: 40px;
+    }
+    .usagContainer div:nth-child(2) table tr:last-child td:last-child{
+        padding: 20px 65px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li strong::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+        transform: scale(0.8);
+    }
+    .usagContainer div:nth-child(2) table+div>strong{
+        display: block;
+        margin-bottom: 25px;
+    }
+    .usagContainer div:nth-child(2) table+div>strong a{
+        display: inline-block;
+        color: var(--os1);
+        margin-left: 3.546%;
+        vertical-align: middle;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) table+div ul{
+        margin-bottom: 55px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li:not(:last-child){
+        margin-bottom: 50px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li strong{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p span{
+        margin-left: 15px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p{
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2){
+        margin-bottom: 50px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) strong{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) p{
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) strong{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) p{
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) p:last-of-type{
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div{
+        background-color: var(--gs2);
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div strong{
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul li{
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul li:not(:last-of-type){
+        margin-bottom: 10px;
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li:nth-child(6) p span{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(1),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(2),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(3),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(4){
+        color: var(--gs9);
+        line-height: 16px;
+        font-size: 10px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(4){
+        margin-bottom: 16px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(1),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(2){
+        color: var(--gs9);
+        line-height: 16px;
+        font-size: 10px;
+    }
+    /* usageFee Fin */
+    .affContainer div:nth-child(2)>strong{
+        display: block;
+        margin: 50px 0 30px 0;
+        font-size: 16px;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type{
+        margin-bottom: 30px;
+    }
+    .affContainer div:nth-child(2) div ul li:not(:last-child){
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .affContainer div:nth-child(2) div ul li:nth-child(3){
+        line-height: 18px;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type li{
+        color: var(--gs8);
+        line-height: 18px;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .affContainer div:nth-child(2)>img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .affContainer div:nth-child(2) div{
+        position: relative;
+        background-color: rgba(255, 113, 5, 0.2);
+        border-radius: 10px;
+        padding: 65px 25px;
+        margin: 50px 0 85px;
+    }
+    .affContainer div:nth-child(2) div p:first-child::before{
+        background: url('../images/aff_caution.png') no-repeat center;
+        content: '';
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 68px;
+        left: 70px;
+    }
+    .affContainer div:nth-child(2) div p:first-child{
+        width: 81.129%;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .affContainer div:nth-child(2) div p:last-of-type{
+        text-align: center;
+        margin: 30px auto 30px;
+    }
+    .affContainer div:nth-child(2) div ul li dl dt{
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+    .affContainer div:nth-child(2) div ul li dl dd{
+        padding-left: 15px;
+        line-height: 18px;
+    }
+    .affContainer div:nth-child(2)>ul:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li{
+        width: 45%;
+        box-sizing: border-box;
+        margin-bottom: 75px;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li img{
+        width: 100%;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li span{
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+    /* affiliateCard Fin */
+
+
+
+
+    /* specialPromotion Fin */
 }
 /* ?tablet */
 
@@ -5906,6 +5947,15 @@ body .signUpContainer>ul{
         border-radius: 20px;
         text-align: center;
     }
+    #handicappedPopUp{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 1000;
+    }
     #handicappedPopUp>div{
         position: fixed;
         position: absolute;
@@ -5923,7 +5973,56 @@ body .signUpContainer>ul{
         z-index: 1000;
         overflow: scroll;
     }
-    /* howToUse detail Fin */
+    #handicappedPopUp div h2{
+        margin-bottom: 50px;
+    }
+    #handicappedPopUp div .closemodel{
+        background: url('../images/how_pre.png') no-repeat center;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+    }
+    #handicappedPopUp div p:first-child{
+        margin: 50px 0;
+    }
+    #handicappedPopUp div div h3{
+        margin-bottom: 35px;
+    }
+    #handicappedPopUp div div:first-of-type{
+        margin-top: 50px;
+    }
+    #handicappedPopUp div div:first-of-type p{
+        margin-bottom: 35px;
+        line-height: 30px;
+    }
+    #handicappedPopUp div div:nth-of-type(2){
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) ol li{
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) mark{
+        display: block;
+        color: red;
+        margin-bottom: 15px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) mark:last-of-type{
+        margin-bottom: 50px;
+    }
+    #handicappedPopUp div div:nth-of-type(3) p{
+        line-height: 30px;
+    }
+    #handicappedPopUp div div:first-of-type p>b{
+        display: block;
+    }
+    /* howToUse Fin */
     .operContainer div:nth-child(2)>strong{
         display: block;
         margin: 110px 0 50px;
@@ -6235,7 +6334,234 @@ body .signUpContainer>ul{
         line-height: 55px;
         width: 13.879%;
     }
-
     /* guideMap Fin */
+    .usagContainer div:nth-child(2) h3+strong{
+        display: inline-block;
+        margin-top: 125px;
+        width: 28.014%;
+    }
+    .usagContainer div:nth-child(2) table thead tr th{
+        border-top: 2px solid var(--os1);
+        border-bottom: none;
+    }
+    .usagContainer div:nth-child(2) table tr:last-child{
+        line-height: 22px;
+        height: 90px;
+        border-bottom: 1px solid var(--os1);
+    }
+    .usagContainer div:nth-child(2) table tbody tr th{
+        background-color: rgba(255,113,5,0.3);
+        border-left: none;
+    }
+    .usagContainer div:nth-child(2) table caption{
+        font-size: 0;
+        margin-top: 125px;
+    }
+    .usagContainer div:nth-child(2) strong a::after{
+        background: url('../images/usageA.png') no-repeat center / contain;
+        display: inline-block;
+        content: '';
+        width: 8px;
+        height: 12px;
+        padding-right: 15px;
+    }
+    .usagContainer div:nth-child(2)>strong a{
+        display: inline-block;
+        color: var(--os1);
+        margin-left: 12.658%;
+        height: 24px;
+        vertical-align: middle;
+    }
+    .usagContainer div:nth-child(2) table{
+        float: right;
+        width: 71.985%;
+        text-align: center;
+        overflow : hidden;
+        margin-bottom: 150px;
+    }
+    .usagContainer div:nth-child(2) table tr th,
+    .usagContainer div:nth-child(2) table tr td:not(:last-child){
+        line-height: 60px; 
+    }
+    .usagContainer div:nth-child(2) table tr:last-child td:last-child{
+        padding: 25px 95px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li strong::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    .usagContainer div:nth-child(2) table+div>strong{
+        display: block;
+        margin-bottom: 45px;
+    }
+    .usagContainer div:nth-child(2) table+div>strong a{
+        display: inline-block;
+        color: var(--os1);
+        margin-left: 3.546%;
+        height: 24px;
+        vertical-align: middle;
+    }
+    .usagContainer div:nth-child(2) table+div ul{
+        margin-bottom: 155px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li:not(:last-child){
+        margin-bottom: 115px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li strong{
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p span{
+        margin-left: 20px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p{
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2){
+        margin-bottom: 115px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) strong{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) p{
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
+        margin-bottom: 35px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) strong{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) p{
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) p:last-of-type{
+        margin-bottom: 35px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div{
+        background-color: var(--gs2);
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 55px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div strong{
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:not(:last-of-type){
+        margin-bottom: 60px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li:nth-child(6) p span{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(1),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(2),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(3),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:first-of-type li:nth-child(4){
+        color: var(--gs9);
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(1),
+    .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:nth-of-type(2) li:nth-child(2){
+        color: var(--gs9);
+        line-height: 30px;
+    }
+    /* usageFee Fin */
+    .affContainer div:nth-child(2)>strong{
+        display: block;
+        margin: 110px 0 30px 0;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type{
+        margin-bottom: 110px;
+    }
+    .affContainer div:nth-child(2) div ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type li{
+        margin-bottom: 10px;
+        color: var(--gs8);
+        line-height: 30px;
+    }
+    .affContainer div:nth-child(2)>img{
+        width: 100%;
+        margin-bottom: 110px;
+    }
+    .affContainer div:nth-child(2) div{
+        background-color: rgba(255, 113, 5, 0.2);
+        border-radius: 10px;
+        padding: 55px 50px;
+        margin: 160px 0 150px;
+    }
+    .affContainer div:nth-child(2) div p:first-child::before{
+        background: url('../images/aff_caution.png') no-repeat center;
+        content: '';
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 20px;
+    }
+    .affContainer div:nth-child(2) div p:first-child{
+        width: 67.730%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 40px;
+    }
+    .affContainer div:nth-child(2) div p:last-of-type{
+        text-align: center;
+        margin: 30px auto 60px;
+    }
+    .affContainer div:nth-child(2) div ul li dl dt{
+        margin: 25px 0 10px;
+        padding-left: 10px;
+    }
+    .affContainer div:nth-child(2) div ul li dl dd{
+        padding-left: 15px;
+        line-height: 30px;
+    }
+    .affContainer div:nth-child(2)>ul:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li{
+        width: 24.539%;
+        box-sizing: border-box;
+        margin-bottom: 120px;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li img{
+        width: 100%;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li:not(:nth-child(3n+0)){
+        margin-right: 13.191%;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li span{
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+     /* affiliateCard Fin */
+
+
+     
+
+     /* specialPromotion Fin */
 }
 /* ?desktop */
