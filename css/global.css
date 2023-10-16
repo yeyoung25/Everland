@@ -506,6 +506,7 @@ footer div details span{
     header+div,
     footer{
         max-width: 1920px;
+        margin: 0 auto;
     }
     header>div{
         width: 768px;
