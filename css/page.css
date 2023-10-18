@@ -82,13 +82,13 @@ div .everContainer nav div ol li a:hover{
     color: var(--gs11);
 }
 .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
-    font-family: 'Open Sans';
+    width: auto;
     font-size: 20px;
-    color: var(--gs1);
+    font-family: 'Open Sans';
     top: 56.172%;
     left: 13.281%;
+    color: var(--gs1);
     padding: 0;
-    width: auto;
     height: 5%;
     text-align: left;
 }
@@ -290,7 +290,8 @@ div .everContainer nav div ol li a:hover{
     float: left;
     width: 46.241%;
 }
-.susContainer div:nth-child(2)>div:last-of-type .left table{
+.susContainer div:nth-child(2)>div:last-of-type .left table,
+.susContainer div:nth-child(2)>div:last-of-type .right table{
     width: 100%;
 }
 .susContainer div:nth-child(2)>div:last-of-type .left table tr td{
@@ -299,9 +300,6 @@ div .everContainer nav div ol li a:hover{
 .susContainer div:nth-child(2)>div:last-of-type .right{
     float: right;
     width: 46.241%;
-}
-.susContainer div:nth-child(2)>div:last-of-type .right table{
-    width: 100%;
 }
 /* suspensionNotice Fin */
 .trafContainer div:nth-child(2) ul li:not(:last-child)::after{
@@ -733,6 +731,7 @@ div .everContainer nav div ol li a:hover{
     width: 25%;
 }
 .seaContainer div:nth-child(2) div:first-of-type>ul li img{
+    display: block;
     width: 100%;
 }
 .seaContainer div:nth-child(2) div:first-of-type>ul{
@@ -781,71 +780,6 @@ div .everContainer nav div ol li a:hover{
     color: var(--vs9);
 }
 /* seasonTicket Fin */
-.proContainer div:nth-child(2)>strong{
-    display: block;
-    margin: 110px 0 135px;
-    text-align: center;
-}
-.proContainer div:nth-child(2) strong+ul>li:not(:last-child){
-    margin-bottom: 350px;
-}
-.proContainer div:nth-child(2) ul>li h4{
-    margin-bottom: 20px;
-}
-.proContainer div:nth-child(2) ul>li h4+b{
-    display: block;
-    margin-bottom: 45px;
-}
-.proContainer div:nth-child(2) ul li div:first-of-type img{
-    width: 70.921%;
-}
-.proContainer div:nth-child(2) ul li div+img{
-    width: 39.858%;
-    margin-left: 30px;
-    height: 618px;
-}
-.proContainer div:nth-child(2) ul li:first-child b+div:first-of-type,
-.proContainer div:nth-child(2) ul li:last-child b+div:first-of-type{
-    position: relative;
-    margin-bottom: 110px;
-}
-.proContainer div:nth-child(2) ul li:first-child div:first-of-type>p{
-    display: inline-block;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 150px;
-    left: 61.702%;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type{
-    display: flex;
-    justify-content: space-between;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
-    display: flex;
-    justify-content: space-between;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li:not(:last-child){
-    margin-bottom: 50px;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li::after{
-    content: '';
-    display: inline-block;
-    width: 9.071%;
-    height: 3px;
-    margin-top: 15px;
-    background-color: var(--os1);
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li p{
-    display: inline-block;
-    width: 62.207%;
-    line-height: 30px;
-    order: 1;
-}
 .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li p mark{
     display: block;
     color: var(--os1);
@@ -857,169 +791,22 @@ div .everContainer nav div ol li a:hover{
 .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:nth-child(3){
     color: var(--gs9);
 }
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child{
-    color: var(--gs9);
-    line-height: 35px;
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child b{
-    display: block;
-    color: var(--gs11);
-}
-.proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:not(:last-child){
-    margin-bottom: 20px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2) h4{
-    text-align: right;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2) b{
-    text-align: right;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type{
-    position: relative;
-    margin-bottom: 110px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type img{
-    float: right;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type>p{
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 170px;
-    left: 14.184%;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type{
-    display: flex;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img{
-    margin-right: 30px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:first-of-type{
-    display: flex;
-    flex-wrap: wrap;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type{
-    display: flex;
-    flex-wrap: wrap;
-}
 .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div div:first-of-type p:first-child{
     color: var(--rs8);
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:not(:last-of-type){
-    margin-bottom: 15px;
-    line-height: 26px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type{
-    line-height: 30px;
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 90px;
-    margin-right: 5px;
-    box-sizing: border-box;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type mark{
-    width: 90px;
-    position: absolute;
-    left: 0;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li{
-    margin-left: 75px;
-    display: flex;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li::before{
-    content: '-';
-    display: inline-block;
-    margin-right: 5px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li{
-    color: var(--gs9);
-    line-height: 24px;
 }
 .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li:first-child{
     color: #ff0000;
 }
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li:not(:last-child){
-    margin-bottom: 15px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b{
-    display: block;
-    margin-bottom: 20px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li{
-    color: var(--gs9);
-    display: flex;
-    line-height: 24px;
-}
-.proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li::before{
-    content: '•';
-    display: inline-block;
-    margin-right: 5px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-.proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
-    display: inline-block;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 210px;
-    left: 58.156%;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type{
-    display: flex;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p{
-    line-height: 26px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p:not(:last-of-type){
-    margin-bottom: 15px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul{
-    margin-top: 30px;
-}
 .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li:first-child{
     color: var(--rs8);
 }
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li{
-    margin-bottom: 15px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li span{
-    display: block;
-    margin-top: 15px;
-    color: var(--gs9);
-    margin-left: 15px;
-    line-height: 22px;
-}
 .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li:nth-child(2) span{
     color: var(--os1);
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
-    display: block;
-    margin-bottom: 20px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li{
-    display: flex;
-    line-height: 24px;
-    color: var(--gs9);
 }
 .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li::before{
     content: '•';
     display: inline-block;
     margin-right: 5px;
-}
-.proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
-    margin-bottom: 15px;
 }
 /* promotion Fin */
 .comuContainer div:nth-child(2) .accordion{
@@ -1030,13 +817,6 @@ div .everContainer nav div ol li a:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.comuContainer div:nth-child(2) .accordion li strong{
-    display: block;
-    position: relative;
-    width: 100%;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--gs6);
-}
 .comuContainer div:nth-child(2) .accordion li strong span{
     display: inline-block;
     width: 10%;
@@ -1046,14 +826,6 @@ div .everContainer nav div ol li a:hover{
     display: inline-block;
     margin-right: 30px;
     color: var(--gs5);
-}
-.comuContainer div:nth-child(2) .accordion li>div{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px 0;
-    background-color: var(--gs2);
-    color: var(--gs10);
 }
 .comuContainer div:nth-child(2) .accordion li>div::before{
     content: '';
@@ -1156,10 +928,6 @@ div .everContainer nav div ol li a:hover{
 }
 .comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content{
     display: none;
-}
-.comuContainer div:nth-child(2) .accordion .accordion_item.active .accordion_content{
-    display: flex;
-    border-bottom: 1px solid var(--vs8);
 }
 .comuContainer .paging{
     display: flex;
@@ -3491,6 +3259,7 @@ body .signUpContainer>ul{
     }
     div article .linebtm,
     div div:nth-child(2) .linebtm,
+    .comuContainer div:nth-child(2) h3,
     header+div>.linebtm,
     .siteContainer ul li>.linebtm{
         text-align: center;
@@ -3929,9 +3698,13 @@ body .signUpContainer>ul{
         margin-bottom: 70px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
+        margin-left: 5px;
         margin: 0 0 15px 5px;
         color: var(--gs8);
         font-size: 12px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd:not(:last-child){
+        margin-bottom: 15px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
         margin: 0 0 20px 15px;
@@ -4008,7 +3781,7 @@ body .signUpContainer>ul{
     .trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
         margin-bottom: 15px;
     }
-    .trafContainer div:nth-child(2) .regularBus dl{
+    .trafContainer div:nth-child(2) .regularBus dl:not(:last-child){
         margin-bottom: 50px;
     }
     .trafContainer div:nth-child(2) .regularBus dl dt{
@@ -4066,22 +3839,23 @@ body .signUpContainer>ul{
         width: 265px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) strong{
+        display: block;
+        margin-bottom: 20px;
         line-height: 25px;
         font-size: 18px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) p{
         color: var(--gs6);
         width: 270px;
-        margin-top: 20px;
         line-height: 25px;
         font-size: 16px;
+        margin-bottom: 40px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) a{
         display: inline-block;
         padding: 15px 45px;
         background-color: var(--os1);
         color: var(--gs1);
-        margin-top: 40px;
         font-size: 16px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(2){
@@ -4176,8 +3950,10 @@ body .signUpContainer>ul{
         margin-left: 15px;
     }
     .usagContainer div:nth-child(2) table+div ul li p{
-        margin-bottom: 10px;
         line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p:not(:last-child){
+        margin-bottom: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2){
         margin-bottom: 50px;
@@ -4187,15 +3963,19 @@ body .signUpContainer>ul{
         margin-bottom: 20px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) p{
-        margin-bottom: 10px;
         line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) p:not(:last-child){
+        margin-bottom: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
-        margin-bottom: 10px;
         line-height: 18px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) ul li:not(:last-child){
+        margin-bottom: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3)>strong{
         display: block;
@@ -4860,7 +4640,8 @@ body .signUpContainer>ul{
     }
     .atraContainer div:nth-child(2)>div h4+div img+div p,
     .enterContainer div:nth-child(2)>div h4+div img+div p,
-    .restContainer div:nth-child(2)>div h4+div img+div p{
+    .restContainer div:nth-child(2)>div h4+div img+div p,
+    .restContainer div:nth-child(2)>div h4+div img+p{
         width: 80%;
         margin: 0 auto;
         text-align: center;
@@ -4870,7 +4651,6 @@ body .signUpContainer>ul{
     .atraContainer div:nth-child(2)>div h4+div img+div p:not(:last-child),
     .enterContainer div:nth-child(2)>div h4+div img+div p:not(:last-child),
     .restContainer div:nth-child(2)>div h4+div img+div p:not(:last-child){
-        line-height: 20px;
         margin-bottom: 20px;
     }
     .atraContainer div:nth-child(2)>div h4+div img+div div:first-child,
@@ -4924,9 +4704,9 @@ body .signUpContainer>ul{
         margin-bottom: 25px;
         font-size: 18px;
     }
-    .atraContainer div:nth-child(2)>div div:last-child img+div ul,
-    .enterContainer div:nth-child(2)>div div:last-child img+div ul,
-    .restContainer div:nth-child(2)>div div:last-child img+div ul{
+    .atraContainer div:nth-child(2)>div div:last-child img+div ul:not(:last-child),
+    .enterContainer div:nth-child(2)>div div:last-child img+div ul:not(:last-child),
+    .restContainer div:nth-child(2)>div div:last-child img+div ul:not(:last-child){
         margin-bottom: 35px;
     }
     .atraContainer div:nth-child(2)>div div:last-child img+div p,
@@ -4979,10 +4759,12 @@ body .signUpContainer>ul{
         margin-bottom: 10px;
     }
     .restContainer div:nth-child(2)>div div:last-child ul li{
-        margin-bottom: 15px;
         line-height: 22px;
         color: var(--gs10);
         font-size: 14px;
+    }
+    .restContainer div:nth-child(2)>div div:last-child ul li:not(:last-child){
+        margin-bottom: 15px;
     }
     div .backBtn{
         display: block;
@@ -4993,7 +4775,7 @@ body .signUpContainer>ul{
         border: none;
         background-color: transparent;
         margin: 0 auto;
-        padding: 105px 0 115px;
+        margin: 105px auto 115px;
     }
     /* attraction / enterContainer / restaurant Details Fin */
     .gifContainer div:nth-child(2) h3~div{
@@ -5116,6 +4898,7 @@ body .signUpContainer>ul{
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
         margin-left: 15px;
+        line-height: 18px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong{
         display: flex;
@@ -5128,9 +4911,8 @@ body .signUpContainer>ul{
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p span{
         margin-left: 20px;
     }
-    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
+    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p:not(:last-child){
         margin-bottom: 10px;
-        line-height: 18px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(3) ul li:not(:last-child){
         margin-bottom: 50px;
@@ -5169,10 +4951,257 @@ body .signUpContainer>ul{
         margin-bottom: 10px;
     }    
     /* seasonTicket Fin */
-
-
+    .proContainer div:nth-child(2)>strong{
+        display: block;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .proContainer div:nth-child(2) strong+ul>li:not(:last-child){
+        margin-bottom: 110px;
+    }
+    .proContainer div:nth-child(2) ul>li h4{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul>li h4+b{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .proContainer div:nth-child(2) ul li div:first-of-type img{
+        display: block;
+        /* width: 650px; */
+        width: 84.635%;
+    }
+    .proContainer div:nth-child(2) ul li div+img,
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img{
+        display: none;
+    }
+    .proContainer div:nth-child(2) ul li:first-child b+div:first-of-type,
+    .proContainer div:nth-child(2) ul li:last-child b+div:first-of-type{
+        position: relative;
+        margin-bottom: 70px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:first-of-type>p{
+        display: inline-block;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 100px;
+        right: -15px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type{
+        display: flex;
+        justify-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
+        margin-bottom: 50px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li b{
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li::after{
+        content: '';
+        display: inline-block;
+        width: 9.071%;
+        height: 3px;
+        margin-top: 5px;
+        background-color: var(--os1);
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li p{
+        display: inline-block;
+        width: 62.207%;
+        line-height: 20px;
+        order: 1;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li{
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child{
+        color: var(--gs9);
+        line-height: 25px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child b{
+        font-size: 16px;
+        color: var(--gs11);
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2) h4{
+        text-align: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2) b{
+        text-align: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type{
+        position: relative;
+        margin-bottom: 70px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type img{
+        float: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type>p{
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 130px;
+        left: -25px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type{
+        display: flex;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:first-of-type,
+        .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p{
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:not(:last-of-type){
+        margin-bottom: 10px;
+        line-height: 22px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type{
+        position: relative;
+        line-height: 22px;
+        padding-left: 65px;
+        margin: 0 0 10px 5px;
+        box-sizing: border-box;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type mark{
+        position: absolute;
+        left: 0;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li{
+        display: flex;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li::before{
+        content: '-';
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul{
+        margin-bottom: 30px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li{
+        color: var(--gs9);
+        line-height: 22px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li{
+        display: flex;
+        color: var(--gs9);
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li::before{
+        content: '•';
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
+        display: inline-block;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 145px;
+        right: -55px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type{
+        display: flex;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p{
+        line-height: 22px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p:not(:last-of-type){
+        margin-bottom: 10px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul{
+        margin: 25px 0 30px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li span{
+        display: block;
+        color: var(--gs9);
+        margin: 10px 0 0 10px;
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li{
+        display: flex;
+        line-height: 22px;
+        color: var(--gs9);
+        font-size: 16px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
 
     /* promotion Fin */
+    .comuContainer div:nth-child(2) .accordion li strong{
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 20px 75px 20px 0;
+        line-height: 18px;
+        border-bottom: 1px solid var(--gs6);
+    }
+    .comuContainer div:nth-child(2) .accordion li>div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 75px 20px 0;
+        background-color: var(--gs2);
+        color: var(--gs10);
+    }
+    .comuContainer div:nth-child(2) .accordion .accordion_item.active .accordion_content{
+        display: flex;
+        flex-wrap: nowrap;
+        border-bottom: 1px solid var(--vs8);
+        line-height: 18px;
+    }
+
+    /* faq Fin */
 }
 /* ?tablet */
 
@@ -5988,8 +6017,10 @@ body .signUpContainer>ul{
         margin-bottom: 150px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
-        margin: 0 0 20px 20px;
-        color: var(--gs8);
+        margin-left: 20px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd:not(:last-child){
+       margin-bottom: 20px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
         display: flex;
@@ -6025,8 +6056,10 @@ body .signUpContainer>ul{
         display: flex;
     }
     .trafContainer div:nth-child(2) .byCar dl dd{
-        margin-bottom: 20px;
         color: var(--gs8);
+    }
+    .trafContainer div:nth-child(2) .byCar dl dd:not(:last-child){
+        margin-bottom: 20px;
     }
     .trafContainer div:nth-child(2) .byCar figure{
         display: flex;
@@ -6068,7 +6101,7 @@ body .signUpContainer>ul{
     .trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
         margin-bottom: 25px;
     }
-    .trafContainer div:nth-child(2) .regularBus dl{
+    .trafContainer div:nth-child(2) .regularBus dl:not(:last-child){
         margin-bottom: 60px;
     }
     .trafContainer div:nth-child(2) .regularBus dl dt{
@@ -6124,22 +6157,23 @@ body .signUpContainer>ul{
         width: 540px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) strong{
+        display: block;
         line-height: 51px;
         font-size: 2.343vw;
+        margin-bottom: 50px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) p{
         color: var(--gs6);
         width: 410px;
-        margin-top: 50px;
         line-height: 30px;
         font-size: 1.25vw;
+        margin-bottom: 50px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(1) a{
         display: inline-block;
         padding: 25px 85px;
         background-color: var(--os1);
         color: var(--gs1);
-        margin-top: 50px;
     }
     .guidContainer div:nth-child(2)>div div:nth-of-type(2){
         position: absolute;
@@ -6231,7 +6265,7 @@ body .signUpContainer>ul{
     .usagContainer div:nth-child(2) table+div ul li p span{
         margin-left: 20px;
     }
-    .usagContainer div:nth-child(2) table+div ul li p{
+    .usagContainer div:nth-child(2) table+div ul li p:not(:last-child){
         margin-bottom: 20px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2){
@@ -6249,8 +6283,10 @@ body .signUpContainer>ul{
         margin-bottom: 35px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
-        margin-bottom: 10px;
         line-height: 25px;
+    }
+    .usagContainer div:nth-child(2) div:nth-of-type(2) ul li:not(:last-child){
+        margin-bottom: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3) strong{
         display: block;
@@ -6307,9 +6343,11 @@ body .signUpContainer>ul{
         margin-bottom: 25px;
     }
     .affContainer div:nth-child(2)>ul:first-of-type li{
-        margin-bottom: 10px;
         color: var(--gs8);
         line-height: 30px;
+    }
+    .affContainer div:nth-child(2)>ul:first-of-type li:not(:last-child){
+        margin-bottom: 10px;
     }
     .affContainer div:nth-child(2)>img{
         width: 100%;
@@ -7164,9 +7202,11 @@ body .signUpContainer>ul{
         order: -1;
     }
     .restContainer div:nth-child(2)>div div:last-child ul li{
-        margin-bottom: 15px;
         line-height: 22px;
         color: var(--gs10);
+    }
+    .restContainer div:nth-child(2)>div div:last-child ul li:not(:last-child){
+        margin-bottom: 15px;
     }
     /* restaurant Details Fin */
     .gifContainer div:nth-child(2)>div:nth-of-type(odd){
@@ -7352,8 +7392,11 @@ body .signUpContainer>ul{
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p span{
         margin-left: 20px;
     }
-    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
+    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p:not(:last-child){
         margin-bottom: 20px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p:not(:last-child){
+        margin-bottom: 10px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(3){
         margin-bottom: 110px;
@@ -7400,10 +7443,241 @@ body .signUpContainer>ul{
         margin-bottom: 15px;
     }    
     /* seasonTicket Fin */
-
-
+    .proContainer div:nth-child(2)>strong{
+        display: block;
+        margin: 110px 0 135px;
+        text-align: center;
+    }
+    .proContainer div:nth-child(2) strong+ul>li:not(:last-child){
+        margin-bottom: 350px;
+    }
+    .proContainer div:nth-child(2) ul>li h4{
+        margin-bottom: 20px;
+    }
+    .proContainer div:nth-child(2) ul>li h4+b{
+        display: block;
+        margin-bottom: 45px;
+    }
+    .proContainer div:nth-child(2) ul li div:first-of-type img{
+        width: 70.921%;
+    }
+    .proContainer div:nth-child(2) ul li div+img{
+        width: 39.858%;
+        margin-left: 30px;
+        height: 618px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child b+div:first-of-type,
+    .proContainer div:nth-child(2) ul li:last-child b+div:first-of-type{
+        position: relative;
+        margin-bottom: 110px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:first-of-type>p{
+        display: inline-block;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 150px;
+        left: 61.702%;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type{
+        display: flex;
+        justify-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li:not(:last-child){
+        margin-bottom: 50px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li::after{
+        content: '';
+        display: inline-block;
+        width: 9.071%;
+        height: 3px;
+        margin-top: 15px;
+        background-color: var(--os1);
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li p{
+        display: inline-block;
+        width: 62.207%;
+        line-height: 30px;
+        order: 1;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child{
+        color: var(--gs9);
+        line-height: 35px;
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child b{
+        display: block;
+        color: var(--gs11);
+    }
+    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2) h4{
+        text-align: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2) b{
+        text-align: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type{
+        position: relative;
+        margin-bottom: 110px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type img{
+        float: right;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type>p{
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 170px;
+        left: 14.184%;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type{
+        display: flex;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img{
+        margin-right: 30px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:first-of-type{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:not(:last-of-type){
+        margin-bottom: 15px;
+        line-height: 26px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type{
+        line-height: 30px;
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 90px;
+        margin-right: 5px;
+        box-sizing: border-box;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type mark{
+        width: 90px;
+        position: absolute;
+        left: 0;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li{
+        margin-left: 75px;
+        display: flex;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li::before{
+        content: '-';
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li{
+        color: var(--gs9);
+        line-height: 24px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li{
+        color: var(--gs9);
+        display: flex;
+        line-height: 24px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li::before{
+        content: '•';
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
+        display: inline-block;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 210px;
+        left: 58.156%;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type{
+        display: flex;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p{
+        line-height: 26px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul{
+        margin-top: 30px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li{
+        margin-bottom: 15px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li span{
+        display: block;
+        margin-top: 15px;
+        color: var(--gs9);
+        margin-left: 15px;
+        line-height: 22px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li{
+        display: flex;
+        line-height: 24px;
+        color: var(--gs9);
+    }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
 
     /* promotion Fin */
+    .comuContainer div:nth-child(2) .accordion li strong{
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--gs6);
+    }
+    .comuContainer div:nth-child(2) .accordion li>div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 0;
+        background-color: var(--gs2);
+        color: var(--gs10);
+    }
+    .comuContainer div:nth-child(2) .accordion .accordion_item.active .accordion_content{
+        display: flex;
+        border-bottom: 1px solid var(--vs8);
+    }
+
+    /* faq Fin */
 
 }
 /* ?desktop */
