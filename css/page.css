@@ -226,9 +226,6 @@ div .everContainer nav div ol li a:hover{
     color: var(--gs9);
     margin-bottom: 10px;
 }
-.newContainer article .innerPager li a strong{
-    line-height: 22px;
-}
 .newContainer article .innerPager li:nth-child(2){
     text-align: center;
 }
@@ -436,11 +433,6 @@ div .everContainer nav div ol li a:hover{
 }
 .affContainer div:nth-child(2) div ul li:nth-of-type(2){
     color: var(--gs11);
-}
-.affContainer div:nth-child(2)>ul:last-child::after{
-    content: '';
-    display: block;
-    clear: both;
 }
 /* affiliateCard Fin */
 .speContainer div:nth-child(2) h3+div{
@@ -809,10 +801,6 @@ div .everContainer nav div ol li a:hover{
     margin-right: 5px;
 }
 /* promotion Fin */
-.comuContainer div:nth-child(2) .accordion{
-    border-top: 2px solid var(--vs8);
-    cursor: pointer;
-}
 .comuContainer div:nth-child(2) .accordion>li{
     display: flex;
     flex-wrap: wrap;
@@ -822,41 +810,13 @@ div .everContainer nav div ol li a:hover{
     width: 10%;
     text-align: center;
 }
-.comuContainer div:nth-child(2) .accordion li strong b{
-    display: inline-block;
-    margin-right: 30px;
-    color: var(--gs5);
-}
 .comuContainer div:nth-child(2) .accordion li>div::before{
     content: '';
     display: inline-block;
     width: 10%;
 }
-.comuContainer div:nth-child(2) .accordion li div b{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    color: var(--vs8);
-}
-.comuContainer div:nth-child(2) .accordion li div b+p{
-    width: 80%;
-    line-height: 22px;
-}
-.comuContainer div:nth-child(2) .accordion li div ol li{
-    line-height: 22px;
-}
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(N+7) div>b{
     margin-top: 4px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div b+ol li:first-child{
-    margin-bottom: 10px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div ol{
-    margin-bottom: 25px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div p{
-    margin-bottom: 5px;
-    line-height: 22px;
 }
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div,
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div{
@@ -869,36 +829,8 @@ div .everContainer nav div ol li a:hover{
     flex-wrap: wrap;
     width: 80%;
 }
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li{
-    margin-bottom: 5px;
-    line-height: 20px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li:first-child{
-    margin-bottom: 10px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:first-of-type{
-    margin-bottom: 5px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:not(:first-of-type){
-    margin-left: 5px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(10) div ol li:not(:last-child){
-    margin-bottom: 5px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(11) ol li:first-child{
-    margin-bottom: 5px;
-}
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(11) ol li:last-child{
     color: #ff0000;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:first-child{
-    margin-bottom: 5px;
-}
-.comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:not(:first-child){
-    margin-left: 10px;
-}
-.comuContainer div:nth-child(2) .accordion li ol li:not(:last-child){
-    margin-bottom: 5px;
 }
 .comuContainer div:nth-child(2) .accordion li div ol{
     width: 80%;
@@ -906,240 +838,36 @@ div .everContainer nav div ol li a:hover{
 .comuContainer div:nth-child(2) .accordion li div .accordion li{
     width: 85%;
 }
-.comuContainer div:nth-child(2) .accordion li div .accordion li:not(:last-child){
-    margin-bottom: 10px;
-}
-.comuContainer div:nth-child(2) .accordion li div .accordion li:first-child{
-    margin-bottom: 15px;
-}
 .comuContainer div:nth-child(2) .accordion .accordion_item.active>strong::after{
     background: url('../images/faq_color.png') no-repeat center / contain;
-}
-.comuContainer div:nth-child(2) .accordion .accordion_item>strong::after{
-    background: url('../images/faq_gray.png') no-repeat center / contain;
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 9px;
-    position: absolute;
-    right: 60px;
-    top: 24px;
-    transition: transform 0.2s ease-in-out;
 }
 .comuContainer div:nth-child(2) .accordion .accordion_item .accordion_content{
     display: none;
 }
-.comuContainer .paging{
-    display: flex;
-    width: 240px;
-    justify-content: space-between;
-    padding-top: 125px;
-}
 .comuContainer .paging>a{
     font-size: 0;
 }
-.comuContainer .paging>a:first-child{
-    background: url('../images/newdet_first.png') no-repeat center / contain;
-    width: 12px;
-}
-.comuContainer .paging>a:nth-child(2){
-    background: url('../images/newdet_pre.png') no-repeat center / contain;
-    width: 8px;
-}
-.comuContainer .paging>a:nth-child(4){
-    background: url('../images/newdet_next.png') no-repeat center / contain;
-    width: 8px;
-}
-.comuContainer .paging>a:last-child{
-    background: url('../images/newdet_last.png') no-repeat center / contain;
-    width: 12px;
-}
-/* faq Details Fin */
-.inqBContainer div:nth-child(2)>div:first-of-type{
-    margin-bottom: 80px;
-}
-.inqBContainer div:nth-child(2)>div:first-of-type>strong,
-.inqAContainer div:nth-child(2)>div:nth-of-type(2)>strong{
-    display: block;
-    margin-bottom: 30px;
-}
-.inqBContainer div:nth-child(2)>div:first-of-type>ol,
-.inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol{
-    border: 1px solid var(--gs5);
-    padding: 35px 30px;
-    margin-bottom: 30px;
-}
-.inqBContainer div:nth-child(2)>div:first-of-type>ol li:not(:last-child),
-.inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol li:not(:last-child){
-    margin-bottom: 10px;
-}
+/* faq Fin */
 .inqBContainer div:nth-child(2)>div:first-of-type form,
 .inqAContainer div:nth-child(2)>div:nth-of-type(2) form{
     display: inline-block;
 }
-.inqBContainer div:nth-child(2)>div:first-of-type form input,
-.inqAContainer div:nth-child(2)>div:nth-of-type(2) form input{
-    appearance: none;
-    margin-right: 10px;
-    margin-bottom: 4px;
-    width: 10px;
-    height: 10px;
-    box-shadow: 0 0 0 1px var(--vs7);
-    border-radius: 50%;
+.inqBContainer div:nth-child(2)>div:first-of-type form label,
+.inqAContainer div:nth-child(2)>div:nth-of-type(2) form label{
+    display: inline-block;
 }
 .inqBContainer div:nth-child(2)>div:first-of-type form input[type="radio"]:checked,
 .inqAContainer div:nth-child(2)>div:nth-of-type(2) form input[type="radio"]:checked{
     border: 1px solid var(--gs1);
     background-color: var(--vs7);
 }
-.inqBContainer div:nth-child(2)>div:first-of-type form label,
-.inqAContainer div:nth-child(2)>div:nth-of-type(2) form label{
-    display: inline-block;
-}
-.inqBContainer div:nth-child(2)>div:first-of-type form label:first-of-type,
-.inqAContainer div:nth-child(2)>div:nth-of-type(2) form label:first-of-type{
-    margin-right: 25px;
-}
 .inqBContainer div:nth-child(2)>div:first-of-type p,
 .inqAContainer div:nth-child(2)>div:nth-of-type(2) p{
     float: right;
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(2){
-    margin-bottom: 110px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend{
-    display: block;
-    margin-bottom: 30px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b{
-    display: inline-block;
-    margin-left: 30px;
-    color: var(--vs9);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b::before,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b::before{
-    background: url('../images/inqulry_star.png') no-repeat center / contain;
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-right: 10px;
-    margin-bottom: 3px;
-    color: #ff0000;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul{
-    border-top: 3px solid var(--vs7);
-    border-bottom: 1px solid var(--vs7);
-    margin-bottom: 30px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li>.star::after,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li .star::after{
-    background: url('../images/inqulry_star.png') no-repeat center / contain;
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-left: 10px;
-    color: #ff0000;
-    margin-bottom: 3px;
-}
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li:not(:last-child),
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li:not(:last-child){
     border-bottom: 1px solid var(--gs8);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
-    vertical-align: middle;
-    line-height: 24px;
-    display: inline-block;
-    width: 15%;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) label{
-    vertical-align: middle;
-    line-height: 24px;
-    display: inline-block;
-    width: 15%;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
-    background: url('../images/inqulry_select.png') no-repeat 95% 50%;
-    border: none;
-    appearance: none;
-    width: 42%;
-    padding: 5px 0 0 1%;
-    margin-left: -1%;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
-    background: url('../images/inqulry_select.png') no-repeat 95% 50%;
-    border: none;
-    appearance: none;
-    width: 20%;
-    padding: 5px 0 0 1%;
-    margin-left: -1%;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:first-child,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:first-child{
-    color: var(--gs8);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(5) input,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(6) input{
-    width: 50%;
-    outline-color: var(--vs9);
-    padding: 5px 0;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6),
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7){
-    display: flex;
-    flex-wrap: nowrap;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(7),
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(8){
-    display: flex;
-    flex-wrap: nowrap;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
-    display: inline-block;
-    width: 85%;
-    box-sizing: border-box;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div>textarea{
-    width: 100%;
-    border: 1px solid var(--gs9);
-    outline-color: var(--vs9);
-    resize: none;
-    margin-bottom: 15px;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    box-sizing: border-box;
-    padding: 10px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li{
-    color: var(--gs8);
-    line-height: 22px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child),
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li:not(:last-child){
-    margin-bottom: 10px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:first-child),
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:first-child){
-    width: 19.858%;
-    color: var(--gs11);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:last-child),
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:last-child){
-    display: block;
-    margin-bottom: 10px;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:last-child,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:last-child{
@@ -1165,65 +893,20 @@ div .everContainer nav div ol li a:hover{
     width: 100%;
     color: var(--gs8);
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span label,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span label{
-    display: inline-block;
-    background-color: var(--vs7);
-    color: var(--gs1);
-    padding: 10px 25px;
-    border-radius: 5px;
-    width: 10.171%;
-    margin-right: 20px;
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:first-child,
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:first-child{
+    color: var(--gs8);
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6),
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7),
+.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(7),
+.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(8){
+    display: flex;
+    flex-wrap: nowrap;
 }
 .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span input,
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span input{
     display: none;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div p,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div p{
-    margin-top: 15px;
-    color: var(--gs8);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input,
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>input{
-    display: block;
-    margin: 0 auto;
-    border: none;
-    background-color: var(--vs8);
-    color: var(--gs1);
-    padding: 25px 65px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3){
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: var(--gs2);
-    border-radius: 15px;
-    padding: 75px 115px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
-    height: 150px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) img+div{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 110px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) strong mark,
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) span a{
-    color: var(--vs7);
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
-    display: block;
-    margin-bottom: 40px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
 .modal01{
     display: none;
@@ -1231,83 +914,20 @@ div .everContainer nav div ol li a:hover{
 .modal01.active{
     display: block;
 }
-.modal01>div{
-    position: fixed;
-    width: 800px;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
-    z-index: 100;
-}
-.modal01 div>div{
-    background-color: var(--gs7);
-    text-align: center;
-    padding: 25px 0;
-}
-.modal01 div>b{
-    display: block;
-    background-color: var(--gs1);
-    padding: 50px 12.765%;
-    line-height: 26px;
-    text-align: center;
-}
 .modal01 div>div input{
     border: none;
     background-color: transparent;
     color: var(--gs1);
     cursor: pointer;
 }
-.inqBContainer div:nth-child(2) h3,
-.inqAContainer div:nth-child(2) h3{
-    margin-bottom: 110px;
-}
-.inqAContainer div:nth-child(2) h3+div:first-of-type{
-    display: flex;
-    background-color: var(--gs2);
-    padding: 65px 110px;
-    margin-bottom: 110px;
-}
-.inqAContainer div:nth-child(2) h3+div:first-of-type div{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    margin-left: 100px;
-}
-.inqAContainer div:nth-child(2) h3+div:first-of-type div strong{
-    line-height: 45px;
-}
-.inqAContainer div:nth-child(2) h3+div:first-of-type div strong span{
-    display: block;
-}
-.inqAContainer div:nth-child(2) h3+div:first-of-type div p{
-    color: var(--gs9);
-    line-height: 26px;
-}
-.inqAContainer div:nth-child(2)>div:nth-of-type(2){
-    margin-bottom: 80px;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child b{
-    width: 15%;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
-    width: 80.852%;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
-    appearance: none;
-    margin-right: 15px;
-    margin-bottom: 4px;
-    width: 10px;
-    height: 10px;
-    box-shadow: 0 0 0 1px var(--vs7);
-    border-radius: 50%;
-}
-.inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label{
-    margin-right: 30px;
-}
 .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input[type="radio"]:checked{
     border: 1px solid var(--gs1);
     background-color: var(--vs7);
+}
+.inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 /* inquiryBeforeVisiting / inquiryAfterVisiting Details Fin */
 .cheContainer div:nth-child(2) h3{
@@ -3124,6 +2744,7 @@ body .signUpContainer>ul{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        padding-top: 4px;
         font-size: 13px;
     }
     .indexContainer .contentBanner03>div:first-child ul li time{
@@ -3257,6 +2878,9 @@ body .signUpContainer>ul{
     div .everContainer nav div ol li{
         padding-left: 23px;
     }
+    .newContainer .paging>ol>li>a{
+        font-size: 16px;
+    }
     div article .linebtm,
     div div:nth-child(2) .linebtm,
     .comuContainer div:nth-child(2) h3,
@@ -3314,8 +2938,13 @@ body .signUpContainer>ul{
         border-top: 1px solid var(--gs5);
         box-sizing: border-box;
     }
-    .newContainer article .innerPager li a{
+    .newContainer article .innerPager li:first-child{
         display: flex;
+        justify-content: flex-start;
+    }
+    .newContainer article .innerPager li:last-child{
+        display: flex;
+        justify-content: flex-end;
     }
     .newContainer article .innerPager li:first-child a{
         background: url('../images/newdetD_pre.png') no-repeat left;
@@ -5176,8 +4805,12 @@ body .signUpContainer>ul{
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
         margin-bottom: 10px;
     }
-
     /* promotion Fin */
+    .comuContainer div:nth-child(2) .accordion{
+        border-top: 2px solid var(--vs8);
+        cursor: pointer;
+        padding-bottom: 80px;
+    }
     .comuContainer div:nth-child(2) .accordion li strong{
         display: flex;
         position: relative;
@@ -5200,9 +4833,393 @@ body .signUpContainer>ul{
         border-bottom: 1px solid var(--vs8);
         line-height: 18px;
     }
+    .comuContainer div:nth-child(2) .accordion .accordion_item>strong::after{
+        background: url('../images/faq_gray.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 11px;
+        height: 7px;
+        position: absolute;
+        right: 60px;
+        top: 24px;
+        transition: transform 0.2s ease-in-out;
+    }
+    .comuContainer div:nth-child(2) .accordion li strong b{
+        display: inline-block;
+        margin-right: 20px;
+        color: var(--gs5);
+    }
+    .comuContainer div:nth-child(2) .accordion li div b{
+        display: inline-block;
+        margin-right: 20px;
+        color: var(--vs8);
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span,
+    .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before{
+        content: '';
+        display: inline-block;
+        width: 12%;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before{
+        content: '';
+        display: inline-block;
+        width: 12.5%;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-child(6)>div::before{
+        content: '';
+        display: inline-block;
+        width: 14%;
+    }
+    .comuContainer div:nth-child(2) .accordion li div b+p{
+        width: 80%;
+        line-height: 18px;
+    }
+    .comuContainer div:nth-child(2) .accordion li div ol li{
+        line-height: 18px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div b+ol li:first-child{
+        margin-bottom: 10px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div ol{
+        margin-bottom: 25px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div p{
+        margin-bottom: 5px;
+        line-height: 18px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li{
+        margin-bottom: 5px;
+        line-height: 18px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li:first-child,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:first-of-type,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(10) div ol li:not(:last-child),
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(11) ol li:first-child,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:first-child,
+    .comuContainer div:nth-child(2) .accordion li ol li:not(:last-child),
+    .comuContainer div:nth-child(2) .accordion li div .accordion li:not(:last-child){
+        margin-bottom: 5px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:not(:first-of-type){
+        margin-left: 5px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:not(:first-child){
+        margin-left: 10px;
+    }
+    .comuContainer div:nth-child(2) .accordion li div .accordion li:first-child{
+        margin-bottom: 15px;
+    }
+    .comuContainer .paging{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+    }
+    .comuContainer .paging>ol>li>a{
+        font-size: 16px;
+    }
+    .comuContainer .paging>a:first-child{
+        background: url('../images/newdet_first.png') no-repeat center / contain;
+        width: 12px;
+    }
+    .comuContainer .paging>a:nth-child(2){
+        background: url('../images/newdet_pre.png') no-repeat center / contain;
+        width: 8px;
+    }
+    .comuContainer .paging>a:nth-child(4){
+        background: url('../images/newdet_next.png') no-repeat center / contain;
+        width: 8px;
+    }
+    .comuContainer .paging>a:last-child{
+        background: url('../images/newdet_last.png') no-repeat center / contain;
+        width: 12px;
+    }
 
-    /* faq Fin */
-}
+    /* faq Fin */    
+    .inqBContainer div:nth-child(2)>div:first-of-type{
+        margin-bottom: 45px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>strong,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>strong{
+        display: block;
+        margin-bottom: 25px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>ol,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol{
+        border: 1px solid var(--gs5);
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>ol li:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type form input,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form input{
+        appearance: none;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px var(--vs7);
+        border-radius: 50%;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type form label:first-of-type,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form label:first-of-type{
+        margin-right: 15px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2){
+        margin-bottom: 50px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend{
+        display: block;
+        margin-bottom: 25px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b{
+        display: inline-block;
+        margin-left: 30px;
+        color: var(--vs9);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b::before,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b::before{
+        background: url('../images/inqulry_star.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        color: #ff0000;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul{
+        border-top: 3px solid var(--vs7);
+        border-bottom: 1px solid var(--vs7);
+        margin-bottom: 30px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li>.star::after,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li .star::after{
+        background: url('../images/inqulry_star.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-left: 10px;
+        color: #ff0000;
+        margin-bottom: 3px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
+        vertical-align: middle;
+        line-height: 24px;
+        display: inline-block;
+        width: 20%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) label{
+        vertical-align: middle;
+        line-height: 24px;
+        display: inline-block;
+        width: 15%;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
+        background: url('../images/inqulry_select.png') no-repeat 95% 50%;
+        border: none;
+        appearance: none;
+        width: 50%;
+        padding: 5px 0 0 1%;
+        margin-left: -1%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
+        background: url('../images/inqulry_select.png') no-repeat 95% 50%;
+        border: none;
+        appearance: none;
+        width: 20%;
+        padding: 5px 0 0 1%;
+        margin-left: -1%;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(5) input,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(6) input{
+        width: 50%;
+        outline-color: var(--vs9);
+        padding: 5px 0;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
+        display: inline-block;
+        width: 85%;
+        box-sizing: border-box;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div>textarea{
+        width: 100%;
+        height: 115px;
+        border: 1px solid var(--gs9);
+        outline-color: var(--vs9);
+        resize: none;
+        margin-bottom: 15px;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li{
+        color: var(--gs8);
+        line-height: 18px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li:not(:last-child){
+        margin-bottom: 5px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:first-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:first-child){
+        width: 19.858%;
+        color: var(--gs11);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:last-child){
+        display: block;
+        margin-bottom: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span label,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span label{
+        display: inline-block;
+        background-color: var(--vs7);
+        color: var(--gs1);
+        padding: 0 7px;
+        border-radius: 5px;
+        width: 63px;
+        margin-right: 20px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div p,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div p{
+        margin-top: 10px;
+        color: var(--gs8);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>input{
+        display: block;
+        margin: 0 auto;
+        border: none;
+        background-color: var(--vs8);
+        color: var(--gs1);
+        padding: 13px 30px;
+        font-size: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3){
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: var(--gs2);
+        border-radius: 15px;
+        padding: 35px 60px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
+        height: 77px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) img+div{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 55px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong mark,
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) span a{
+        color: var(--vs7);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
+        display: block;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .modal01>div{
+        position: fixed;
+        width: 800px;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+        z-index: 100;
+    }
+    .modal01 div>div{
+        background-color: var(--gs7);
+        text-align: center;
+        padding: 25px 0;
+    }
+    .modal01 div>b{
+        display: block;
+        background-color: var(--gs1);
+        padding: 50px 12.765%;
+        line-height: 26px;
+        text-align: center;
+    }
+    .inqBContainer div:nth-child(2) h3,
+    .inqAContainer div:nth-child(2) h3{
+        margin-bottom: 50px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type{
+        display: flex;
+        align-items: center;
+        background-color: var(--gs2);
+        padding: 35px 55px;
+        margin-bottom: 50px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type img{
+        height: 84px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-left: 55px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div strong{
+        display: block;
+        margin-bottom: 15px;
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div p{
+        color: var(--gs9);
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2){
+        margin-bottom: 80px;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child b{
+        width: 15%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
+        width: 80.852%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
+        appearance: none;
+        margin-right: 15px;
+        margin-bottom: 4px;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px var(--vs7);
+        border-radius: 50%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label{
+        margin-right: 30px;
+    }
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div strong span{
+        display: block;
+        font-size: 18px;
+    }
 /* ?tablet */
 
 @media screen and (min-width: 1280px) {
@@ -5315,6 +5332,16 @@ body .signUpContainer>ul{
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2{
         margin-bottom: 25px;
         font-size: 1.303vw;
+    }
+    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2::before{
+        background-color: var(--os1);
+        content: '';
+        width: 190px;
+        height: 7px;
+        position: absolute;
+        display: block;
+        left: 83%;
+        z-index: 100;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
         display: block;
@@ -5677,6 +5704,9 @@ body .signUpContainer>ul{
         color: var(--gs1);
         padding: 0px 50px 0px 80px;
         line-height: 60px;
+    }
+    .newContainer article .innerPager li a strong{
+        line-height: 22px;
     }
     .newContainer article .innerPager li span,
     .newContainer article .innerPager li strong{
@@ -6410,6 +6440,11 @@ body .signUpContainer>ul{
         text-align: center;
         line-height: 30px;
     }
+    .affContainer div:nth-child(2)>ul:last-child::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
      /* affiliateCard Fin */
      .speContainer div:nth-child(2) h3+div div{
         height: 264px;
@@ -7057,6 +7092,7 @@ body .signUpContainer>ul{
     }
     .enterContainer div:nth-child(2)>div div:last-child img+div ol>li:nth-child(2){
         margin-bottom: 60px;
+        line-height: 22px;
     }
     .atraContainer div:nth-child(2)>div div:last-child img+div strong:first-child,
     .enterContainer div:nth-child(2)>div div:last-child img+div strong:first-child{
@@ -7102,8 +7138,10 @@ body .signUpContainer>ul{
         order: -1;
     }
     .enterContainer div:nth-child(2)>div div:last-child ul li{
-        margin-bottom: 15px;
         line-height: 22px;
+    }
+    .enterContainer div:nth-child(2)>div div:last-child ul li:not(:last-child){
+        margin-bottom: 15px;
     }
     .enterContainer div:nth-child(2)>div div:last-child img+ul li:nth-child(2){
         margin-bottom: 60px;
@@ -7655,8 +7693,12 @@ body .signUpContainer>ul{
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
         margin-bottom: 15px;
     }
-
     /* promotion Fin */
+    .comuContainer div:nth-child(2) .accordion{
+        border-top: 2px solid var(--vs8);
+        cursor: pointer;
+        padding-bottom: 125px;
+    }
     .comuContainer div:nth-child(2) .accordion li strong{
         display: block;
         position: relative;
@@ -7676,8 +7718,360 @@ body .signUpContainer>ul{
         display: flex;
         border-bottom: 1px solid var(--vs8);
     }
+    .comuContainer div:nth-child(2) .accordion .accordion_item>strong::after{
+        background: url('../images/faq_gray.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 9px;
+        position: absolute;
+        right: 60px;
+        top: 24px;
+        transition: transform 0.2s ease-in-out;
+    }
+    .comuContainer div:nth-child(2) .accordion li strong b{
+        display: inline-block;
+        margin-right: 30px;
+        color: var(--gs5);
+    }
+    .comuContainer div:nth-child(2) .accordion li div b{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 30px;
+        color: var(--vs8);
+    }
+    .comuContainer div:nth-child(2) .accordion li div b+p{
+        width: 80%;
+        line-height: 22px;
+    }
+    .comuContainer div:nth-child(2) .accordion li div ol li{
+        line-height: 22px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(7) div b+ol li:first-child{
+        margin-bottom: 10px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div ol{
+        margin-bottom: 25px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(8) div b+div p{
+        margin-bottom: 5px;
+        line-height: 22px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li{
+        margin-bottom: 5px;
+        line-height: 20px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ul li:first-child,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:first-of-type,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(10) div ol li:not(:last-child),
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(11) ol li:first-child,
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:first-child,
+    .comuContainer div:nth-child(2) .accordion li ol li:not(:last-child),
+    .comuContainer div:nth-child(2) .accordion li div .accordion li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(9) div b+div ol li:not(:first-of-type){
+        margin-left: 5px;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-of-type(14) ol li>ul li:not(:first-child){
+        margin-left: 10px;
+    }
+    .comuContainer div:nth-child(2) .accordion li div .accordion li:first-child{
+        margin-bottom: 15px;
+    }
+    .comuContainer .paging{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+    }
+    .comuContainer .paging>a:first-child{
+        background: url('../images/newdet_first.png') no-repeat center / contain;
+        width: 12px;
+    }
+    .comuContainer .paging>a:nth-child(2){
+        background: url('../images/newdet_pre.png') no-repeat center / contain;
+        width: 8px;
+    }
+    .comuContainer .paging>a:nth-child(4){
+        background: url('../images/newdet_next.png') no-repeat center / contain;
+        width: 8px;
+    }
+    .comuContainer .paging>a:last-child{
+        background: url('../images/newdet_last.png') no-repeat center / contain;
+        width: 12px;
+    }
 
     /* faq Fin */
+    .inqBContainer div:nth-child(2)>div:first-of-type{
+        margin-bottom: 80px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>strong,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>strong{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>ol,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol{
+        border: 1px solid var(--gs5);
+        padding: 35px 30px;
+        margin-bottom: 30px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type>ol li:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type form input,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form input{
+        appearance: none;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px var(--vs7);
+        border-radius: 50%;
+    }
+    .inqBContainer div:nth-child(2)>div:first-of-type form label:first-of-type,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form label:first-of-type{
+        margin-right: 25px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2){
+        margin-bottom: 110px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b{
+        display: inline-block;
+        margin-left: 30px;
+        color: var(--vs9);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b::before,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b::before{
+        background: url('../images/inqulry_star.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        color: #ff0000;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul{
+        border-top: 3px solid var(--vs7);
+        border-bottom: 1px solid var(--vs7);
+        margin-bottom: 30px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul>li>.star::after,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul>li .star::after{
+        background: url('../images/inqulry_star.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-left: 10px;
+        color: #ff0000;
+        margin-bottom: 3px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
+        vertical-align: middle;
+        line-height: 24px;
+        display: inline-block;
+        width: 15%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) label{
+        vertical-align: middle;
+        line-height: 24px;
+        display: inline-block;
+        width: 15%;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
+        background: url('../images/inqulry_select.png') no-repeat 95% 50%;
+        border: none;
+        appearance: none;
+        width: 37%;
+        padding: 5px 0 0 1%;
+        margin-left: -1%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
+        background: url('../images/inqulry_select.png') no-repeat 95% 50%;
+        border: none;
+        appearance: none;
+        width: 20%;
+        padding: 5px 0 0 1%;
+        margin-left: -1%;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(5) input,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(6) input{
+        width: 50%;
+        outline-color: var(--vs9);
+        padding: 5px 0;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
+        display: inline-block;
+        width: 85%;
+        box-sizing: border-box;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div>textarea{
+        width: 100%;
+        border: 1px solid var(--gs9);
+        outline-color: var(--vs9);
+        resize: none;
+        margin-bottom: 15px;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li{
+        color: var(--gs8);
+        line-height: 22px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) ul li:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:first-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:first-child){
+        width: 19.858%;
+        color: var(--gs11);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:last-child),
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:last-child){
+        display: block;
+        margin-bottom: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span label,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span label{
+        display: inline-block;
+        background-color: var(--vs7);
+        color: var(--gs1);
+        padding: 10px 25px;
+        border-radius: 5px;
+        width: 10.171%;
+        margin-right: 20px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div p,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div p{
+        margin-top: 15px;
+        color: var(--gs8);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>input{
+        display: block;
+        margin: 0 auto;
+        border: none;
+        background-color: var(--vs8);
+        color: var(--gs1);
+        padding: 25px 65px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3){
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: var(--gs2);
+        border-radius: 15px;
+        padding: 75px 115px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
+        height: 150px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) img+div{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 110px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong mark,
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) span a{
+        color: var(--vs7);
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .modal01>div{
+        position: fixed;
+        width: 800px;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+        z-index: 100;
+    }
+    .modal01 div>div{
+        background-color: var(--gs7);
+        text-align: center;
+        padding: 25px 0;
+    }
+    .modal01 div>b{
+        display: block;
+        background-color: var(--gs1);
+        padding: 50px 12.765%;
+        line-height: 26px;
+        text-align: center;
+    }
+    .inqBContainer div:nth-child(2) h3,
+    .inqAContainer div:nth-child(2) h3{
+        margin-bottom: 110px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type{
+        display: flex;
+        background-color: var(--gs2);
+        padding: 65px 110px;
+        margin-bottom: 110px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-left: 100px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div strong{
+        line-height: 45px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div p{
+        color: var(--gs9);
+        line-height: 26px;
+    }
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2){
+        margin-bottom: 80px;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child b{
+        width: 15%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
+        width: 80.852%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
+        appearance: none;
+        margin-right: 15px;
+        margin-bottom: 4px;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px var(--vs7);
+        border-radius: 50%;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label{
+        margin-right: 30px;
+    }
+    .inqAContainer div:nth-child(2) h3+div:first-of-type div strong span{
+        display: block;
+    }
 
 }
 /* ?desktop */
