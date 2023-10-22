@@ -467,201 +467,13 @@ div .everContainer nav div ol li a:hover{
     font-size: 0;
 }
 /* experienceProgram Details Fin */
-.recoContainer div:nth-child(2) div .pagerSliderBox01{
-    position: relative;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2),
-.recoContainer div:nth-child(2) div .pagerSliderBox03 > div:nth-child(2){
-    position: absolute;
-    bottom: 12%;
-    right: 0;
-    width: 45%;
-    margin-right: 3%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
-    background-color: rgba(76, 34, 2, 0.8);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5.458% 0 0 3.723%;
-    box-sizing: border-box;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
-    margin-bottom: 7.95%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
-    color: rgba(180, 96, 96, 0.7);
-    font-size: 7.291vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 strong{
-    display: inline-block;
-    color: #ffbf9b;
-    font-size: 1.822vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
-    display: block;
-    color: #fff4e0;
-    margin-bottom: 3.95%;
-    font-size: 1.041vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
-    color: #fff4e0;
-    line-height: 30px;
-    width: 82.708%;
-    font-size: 1.041vw;
-}
-.recoContainer div:nth-child(2) div [class^='pagerSliderBox'] .bx-wrapper .bx-viewport [class^='thumbPager'] li a{
-    display: block;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
-    border: 3px solid transparent;
-    box-sizing: border-box;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
-    border: 3px solid var(--os1);
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
-    border: 3px solid var(--rs4);
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a:hover,
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
-    border: 3px solid var(--vs4);
-}
-.recoContainer div:nth-child(2)  div .bx-wrapper:nth-child(2){
-    /* position: relative; */
-}
-.recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
-    display: block;
-    z-index: 0;
-    height: 100%;
-    margin-top: 0;
-}
-.recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-    background: url('../images/recomcon01_pre.png') no-repeat center;
-    left: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-    background: url('../images/recomcon01_next.png') no-repeat center;
-    right: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-    background: url('../images/recomcon02_pre.png') no-repeat center;
-    left: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-    background: url('../images/recomcon02_next.png') no-repeat center;
-    right: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-    background: url('../images/recomcon03_pre.png') no-repeat center;
-    left: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-    background: url('../images/recomcon03_next.png') no-repeat center;
-    right: -5%;
-    top: 0;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02{
-    position: relative;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
-    position: absolute;
-    bottom: 12%;
-    left: 0;
-    width: 45%;
-    margin-left: 3%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
-    background-color: rgba(14,40,5, 0.8);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5.458% 0 0 3.723%;
-    box-sizing: border-box;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
-    margin-bottom: 7.95%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
-    color: rgba(60,128,37, 0.7);
-    font-size: 7.291vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
-    display: inline-block;
-    color: #9ddc87;
-    margin-left: 30px;
-    font-size: 1.822vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
-    display: block;
-    color: #dbffcf;
-    margin-bottom: 3.95%;
-    font-size: 1.041vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
-    color: #dbffcf;
-    line-height: 30px;
-    width: 82.708%;
-    font-size: 1.041vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport{
-    height: 100px;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport .thumbPager{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+.recoContainer div:nth-child(2) div .pagerSliderBox01,
+.recoContainer div:nth-child(2) div .pagerSliderBox02,
 .recoContainer div:nth-child(2) div .pagerSliderBox03{
     position: relative;
 }
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
-    background-color: rgba(20,4,21, 0.8);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5.458% 0 0 3.723%;
-    box-sizing: border-box;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
-    margin-bottom: 7.95%;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
-    color: rgba(122,31,127,0.7);
-    font-size: 7.291vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
-    display: inline-block;
-    color: #d99adc;
-    margin-left: 30px;
-    font-size: 1.822vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
+.recoContainer div:nth-child(2) div [class^='pagerSliderBox'] .bx-wrapper .bx-viewport [class^='thumbPager'] li a{
     display: block;
-    color: #fcceff;
-    margin-bottom: 3.95%;
-    font-size: 1.041vw;
-}
-.recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
-    color: #fcceff;
-    line-height: 30px;
-    width: 82.708%;
-    font-size: 1.041vw;
 }
 .recoContainer div:nth-child(2) div div .bx-wrapper .bx-controls .bx-pager .bx-pager-item a{
     display: none;
@@ -949,68 +761,10 @@ div .everContainer nav div ol li a:hover{
     color: var(--os1);
     margin-bottom: 40px;
 }
-.aboutContainer>div>p{
-    line-height: 22px;
-}
 .aboutContainer>div>p:first-of-type{
     margin-bottom: 20px;
 }
-.aboutContainer>div>p:nth-of-type(2){
-    margin-bottom: 115px;
-}
-.aboutContainer>div>dl:not(:last-child){
-    margin-bottom: 85px;
-}
-.aboutContainer>div>dl>dt::before{
-    display: inline-block;
-    content: '▶';
-    font-size: 10px;
-    line-height: 20px;
-    margin-right: 10px;
-}
-.aboutContainer>div>dl>dt{
-    display: flex;
-    margin-bottom: 35px;
-}
-.aboutContainer>div>dl>dd{
-    line-height: 30px;
-    margin-left: 20px;
-}
-.aboutContainer>div>hr{
-    margin-bottom: 85px;
-}
-.aboutContainer>div>hr:not(:last-of-type)+p{
-    line-height: 22px;
-    margin-bottom: 90px;
-}
-/* aboutUs Details Fin */
-.hisContainer>ul{
-    display: flex;
-    cursor: pointer;
-}
-.hisContainer>ul>li{
-    position: relative;
-    width: 25%;
-    text-align: center;
-    border-bottom: 1px solid var(--gs11);
-    color: var(--gs5);
-    line-height: 100px;
-}
-.hisContainer>ul>li:not(:last-child):after{
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 100px;
-    background-color: var(--gs5);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.hisContainer>ul>li.active{
-    border: 1px solid var(--gs11);
-    border-bottom: none;
-    color: var(--gs11);
-}
+/* aboutUs Fin */
 .hisContainer>ol{
     display: none; 
 }
@@ -1022,74 +776,21 @@ div .everContainer nav div ol li a:hover{
     align-items: center;
     width: 100%;
 }
+.hisContainer>ul>li.active{
+    border: 1px solid var(--gs11);
+    border-bottom: none;
+    color: var(--gs11);
+}
 .hisContainer>ol>li:not(:last-child){
     border-bottom: 1px solid var(--gs7);
 }
-.hisContainer>ol>li>mark{
-    width: 25%;
-    text-align: center;
-    color: var(--vs7);
-}
-.hisContainer>ol>li>ol{
-    width: 75%;
-    padding: 55px 0;
-}
-.hisContainer>ol>li>ol>li{
-    position: relative;
-    padding-left: 70px;
-}
-.hisContainer>ol>li>ol>li:not(:last-child){
-    margin-bottom: 20px;
-}
-.hisContainer>ol>li>ol>li>mark{
-    display: inline-block;
-    color: var(--gs5);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-/* history Details Fin */
-.siteContainer>div{
-    margin-bottom: 150px;
-}
-.siteContainer>ul>li{
-    padding: 0 4.964%;
-    margin-bottom: 180px;
-}
-.siteContainer>ul>li>h3{
-    padding: 0 0 25px 25px;
-}
-.siteContainer>ul>li>ul{
-    display: flex;
-    margin-top: 60px;
-}
-.siteContainer>ul>li>ul>li{
-    width: 25%;
-    padding: 0 10px 0 25px;
-    height: 440px;
-}
-.siteContainer>ul>li>ul>li>b{
-    display: block;
-    margin-bottom: 35px;
-    line-height: 30px;
-}
-.siteContainer>ul>li>ul>li>ol>li:not(:last-child){
-    margin-bottom: 15px;
-}
-.siteContainer>ul>li:first-of-type>h3{
-    border-bottom: 3px solid var(--os1);
-    color: var(--os1);
-}
-.siteContainer>ul>li:first-of-type>ul>li:not(:first-child){
-    border-left: 1px solid var(--os1);
-}
+/* history Fin */
 .siteContainer>ul>li:first-of-type>ul,
 .siteContainer>ul>li:first-of-type>ul>li>ol>li>a{
     color: var(--os1);
 }
-.siteContainer>ul>li:nth-child(2)>h3{
-    border-bottom: 3px solid var(--vs9);
-    color: var(--vs9);
+.siteContainer>ul>li:first-of-type>ul>li:not(:first-child){
+    border-left: 1px solid var(--os1);
 }
 .siteContainer>ul>li:nth-child(2)>ul,
 .siteContainer>ul>li:nth-child(2)>ul>li>ol>li>a{
@@ -1098,10 +799,6 @@ div .everContainer nav div ol li a:hover{
 .siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
     border-left: 1px solid var(--vs9);
 }
-.siteContainer>ul>li:nth-child(3)>h3{
-    border-bottom: 3px solid var(--rs8);
-    color: var(--rs8);
-}
 .siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
     border-left: 1px solid var(--rs8);
 }
@@ -1109,22 +806,10 @@ div .everContainer nav div ol li a:hover{
 .siteContainer>ul>li:nth-child(3)>ul>li>ol>li>a{
     color: var(--rs8);
 }
-.siteContainer>ul>li:last-of-type>h3{
-    border-bottom: 3px solid var(--gs11);
-}
 .siteContainer>ul>li:last-child>ul>li:not(:first-child){
     border-left: 1px solid var(--gs11);
 }
-.siteContainer>ul>li:last-child>ul>li:first-child>ol>li:nth-child(4){
-    margin-bottom: 135px;
-}
-.siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:nth-child(2){
-    margin-bottom: 200px;
-}
-.siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
-    margin-bottom: 100px;
-}
-/* siteMap Details Fin */
+/* siteMap Fin */
 .notContainer>div:not(:last-child){
     margin-bottom: 150px;
 }
@@ -1300,48 +985,7 @@ div .everContainer nav div ol li a:hover{
 .notContainer>div:last-of-type>div>p>mark{
     color: var(--bs2);
 }
-/* noticeOfPolicyRevision Details Fin */
-.bidContainer>div:not(:last-child){
-    margin-bottom: 100px;
-}
-.bidContainer>div>h4::before{
-    content: '•';
-    display: inline-block;
-    margin-right: 10px;
-}
-.bidContainer>div>h4{
-    margin-bottom: 40px;
-}
-.bidContainer>div:first-of-type>ul>li>ol{
-    margin: 25px 0 0 25px;
-}
-.bidContainer>div:first-of-type>ul>li>ol>li:not(:last-child){
-    margin-bottom: 15px;
-}
-.bidContainer>div:first-of-type>ul>li:first-child{
-    margin-bottom: 25px;
-}
-.bidContainer>div:first-of-type>ul>li:nth-child(2),
-.bidContainer>div:first-of-type>ul>li:nth-child(3){
-    margin-bottom: 15px;
-}
-.bidContainer>div:last-of-type>ul{
-    margin-bottom: 40px;
-}
-.bidContainer>div:last-of-type>ul>li{
-    line-height: 22px;
-}
-.bidContainer>div:last-of-type>ul>li:not(:last-child){
-    margin-bottom: 15px;
-}
-.bidContainer>div:last-of-type>strong{
-    display: block;
-    line-height: 22px;
-}
-.bidContainer>div:last-of-type>strong:not(:last-child){
-    margin-bottom: 15px;
-}
-/* bidNotice Details Fin */
+/* noticeOfPolicyRevision Fin */
 .signInContainer>form,
 .findIdContainer>form,
 .findPWContainer>form{
@@ -1761,22 +1405,8 @@ body .signUpContainer>ul{
     box-sizing: border-box;
 }
 /* signUp Details Fin */
-.reserContainer>h2{
-    text-align: center;
-    margin: 3.351% 0 70px;
-    line-height: 55px;
-}
 .reserContainer>h2>mark{
     color: var(--os1);
-}
-.reserContainer>ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-.reserContainer>ul>li{
-    position: relative;
-    width: 28.368%;
-    height: 450px;
 }
 .reserContainer>ul>li:first-child{
     background: url('../images/resever.png') no-repeat center / contain;
@@ -1786,32 +1416,6 @@ body .signUpContainer>ul{
 }
 .reserContainer>ul>li:last-child{
     background: url('../images/reshome.png') no-repeat center / contain;
-}
-.reserContainer>ul>li>a{
-    display: inline-block;
-    /* width: 39%; */
-    color: var(--gs1);
-    border: 1px solid var(--gs1);
-    padding: 20px 25px;
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-}
-.reserContainer>ul>li>a:hover{
-    background-color: var(--gs1);
-    transition: 0.5s;
-    box-sizing: border-box;
-}
-.reserContainer>ul>li:first-child>a:hover{
-    color: var(--os1);
-}
-.reserContainer>ul>li:nth-child(2)>a:hover{
-    color: var(--bs8);
-}
-.reserContainer>ul>li:last-child>a:hover{
-    color: var(--rs9);
 }
 /* reservation Fin */
 
@@ -1825,8 +1429,6 @@ body .signUpContainer>ul{
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     header+.mwpadding>h3,
-    header+.hisContainer>ul,
-    header+.hisContainer>ol,
     .siteContainer>ul{
         max-width: 1458px;
         margin: 0 auto;
@@ -3617,12 +3219,207 @@ body .signUpContainer>ul{
     }
     .recoContainer div:nth-child(2) dl dd{
         display: inline-block;
-        width: 432px;
+        width: 56.25%;
         line-height: 20px;
         color: var(--gs9);
         box-sizing: border-box;
     }
-
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 > div:nth-child(2){
+        /* position: absolute;
+        bottom: 12%;
+        right: 0;
+        width: 45%;
+        margin-right: 3%; */
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li::after{
+        content: '';
+        display: block;
+        /* background-image: url('../images/recoRain01.png'); */
+        background-color: rgba(76, 34, 2, 0.8);
+        width: 100%;
+        height: 830px;
+        position: absolute;
+        top: 0;
+        z-index: -100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
+        width: 100%;
+        height: 380px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        border: 3px solid var(--gs11);
+        box-sizing: border-box;
+        z-index: 100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
+        position: absolute;
+        top: 50px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
+        color: rgba(180, 96, 96, 0.7);
+        font-size: 50px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #ffbf9b;
+        font-size: 20px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
+        display: block;
+        color: #fff4e0;
+        margin-bottom: 3.95%;
+        font-size: 16px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
+        color: #fff4e0;
+        line-height: 20px;
+        width: 82.708%;
+        font-size: 14px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
+        border: 3px solid transparent;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
+        border: 3px solid var(--os1);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
+        border: 3px solid var(--rs4);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
+        border: 3px solid var(--vs4);
+    }
+    .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
+        display: block;
+        z-index: 0;
+        height: 100%;
+        margin-top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon01_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon01_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon02_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon02_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon03_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon03_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        width: 45%;
+        margin-left: 3%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
+        background-color: rgba(14,40,5, 0.8);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5.458% 0 0 3.723%;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
+        color: rgba(60,128,37, 0.7);
+        font-size: 7.291vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #9ddc87;
+        margin-left: 30px;
+        font-size: 1.822vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
+        display: block;
+        color: #dbffcf;
+        margin-bottom: 3.95%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
+        color: #dbffcf;
+        line-height: 30px;
+        width: 82.708%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport{
+        height: 100px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport .thumbPager{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
+        background-color: rgba(20,4,21, 0.8);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5.458% 0 0 3.723%;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
+        color: rgba(122,31,127,0.7);
+        font-size: 7.291vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #d99adc;
+        margin-left: 30px;
+        font-size: 1.822vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
+        display: block;
+        color: #fcceff;
+        margin-bottom: 3.95%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
+        color: #fcceff;
+        line-height: 30px;
+        width: 82.708%;
+        font-size: 1.041vw;
+    }
 
 
     /* recommendedCourse Fin */
@@ -5009,7 +4806,179 @@ body .signUpContainer>ul{
         margin-bottom: 100px;
     }
     /* policy Fin */
-
+    .aboutContainer>div>p{
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .aboutContainer>div>p:nth-of-type(2){
+        margin-bottom: 85px;
+    }
+    .aboutContainer>div>dl:not(:last-child){
+        margin-bottom: 100px;
+    }
+    .aboutContainer>div>dl>dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 8px;
+        line-height: 16px;
+        margin-right: 10px;
+    }
+    .aboutContainer>div>dl>dt{
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .aboutContainer>div>dl>dd{
+        line-height: 30px;
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    .aboutContainer>div>hr{
+        margin: 0 0 100px 0;
+    }
+    .aboutContainer>div>hr:not(:last-of-type)+p{
+        line-height: 25px;
+        margin-bottom: 100px;
+    }
+    /* aboutUs Fin */
+    .hisContainer>ul{
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .hisContainer>ul>li{
+        position: relative;
+        width: 25%;
+        text-align: center;
+        border-bottom: 1px solid var(--gs11);
+        color: var(--gs5);
+        line-height: 50px;
+    }
+    .hisContainer>ul>li:not(:last-child):after{
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 50px;
+        background-color: var(--gs5);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .hisContainer>ol>li>ol{
+        width: 80%;
+        padding: 50px 0;
+    }
+    .hisContainer>ol>li>mark{
+        width: 20%;
+        text-align: center;
+        color: var(--vs7);
+        font-size: 16px;
+    }
+    .hisContainer>ol>li>ol>li{
+        position: relative;
+        padding-left: 40px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .hisContainer>ol>li>ol>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .hisContainer>ol>li>ol>li>mark{
+        display: inline-block;
+        color: var(--gs5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+    }
+    /* history Fin */
+    .bidContainer>div:not(:last-child){
+        margin-bottom: 80px;
+    }
+    .bidContainer>div>h4::before{
+        content: '•';
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .bidContainer>div>h4{
+        margin-bottom: 30px;
+    }
+    .bidContainer>div:first-of-type>ul>li>ol{
+        margin: 15px 0 0 20px;
+    }
+    .bidContainer>div:first-of-type>ul>li:first-child{
+        margin-bottom: 15px;
+    }
+    .bidContainer>div:first-of-type>ul>li>ol>li:not(:last-child),
+    .bidContainer>div:first-of-type>ul>li:nth-child(2),
+    .bidContainer>div:first-of-type>ul>li:nth-child(3),
+    .bidContainer>div:last-of-type>ul>li:not(:last-child),
+    .bidContainer>div:last-of-type>strong:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .bidContainer>div:last-of-type>ul{
+        margin-bottom: 15px;
+    }
+    .bidContainer>div:last-of-type>ul>li{
+        line-height: 18px;
+    }
+    .bidContainer>div:last-of-type>strong{
+        display: block;
+        line-height: 18px;
+    }
+    /* bidNotice Fin */
+    .siteContainer>div{
+        margin-bottom: 100px;
+    }
+    .siteContainer>ul>li{
+        margin-bottom: 100px;
+    }
+    .siteContainer>ul>li>h3{
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+    }
+    .siteContainer>ul>li>ul{
+        display: flex;
+    }
+    .siteContainer>ul>li>ul>li{
+        width: 25%;
+        padding: 0 10px 0 10px;
+        height: 280px;
+    }
+    .siteContainer>ul>li>ul>li>b{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .siteContainer>ul>li>ul>li>ol>li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .siteContainer>ul>li:first-of-type>h3{
+        border-bottom: 2px solid var(--os1);
+        color: var(--os1);
+    }
+    .siteContainer>ul>li:nth-child(2)>h3{
+        border-bottom: 2px solid var(--vs9);
+        color: var(--vs9);
+    }
+    .siteContainer>ul>li:nth-child(3)>h3{
+        border-bottom: 2px solid var(--rs8);
+        color: var(--rs8);
+    }
+    .siteContainer>ul>li:last-of-type>h3{
+        border-bottom: 3px solid var(--gs11);
+    }
+    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:nth-child(4){
+        margin-bottom: 105px;
+    }
+    .siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:nth-child(2){
+        margin-bottom: 148px;
+    }
+    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
+        margin-bottom: 100px;
+    }
+    /* siteMap Fin */
+    
     /*  Fin */
     .signInContainer>form>fieldset,
     .signInContainer>div,
@@ -5193,8 +5162,36 @@ body .signUpContainer>ul{
         text-align: center;
         background-color: var(--gs7);
     }
-
     /* signIn / findId  Details Fin */
+    .reserContainer>h2{
+        text-align: center;
+        margin: 100px 0;
+        line-height: 30px;
+    }
+    .reserContainer>ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .reserContainer>ul>li{
+        position: relative;
+        width: 28.368%;
+        height: 245px;
+    }
+    .reserContainer>ul>li>a{
+        display: inline-block;
+        color: var(--gs1);
+        border: 1px solid var(--gs1);
+        padding: 10px;
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+    }
+    .reserContainer .backBtn{
+        margin: 55px auto 0;
+    }
+    /* reservation Fin */
 }
 /* ?tablet */
 
@@ -6888,7 +6885,187 @@ body .signUpContainer>ul{
         color: var(--gs9);
         box-sizing: border-box;
     }
-
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 > div:nth-child(2){
+        position: absolute;
+        bottom: 12%;
+        right: 0;
+        width: 45%;
+        margin-right: 3%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
+        background-color: rgba(76, 34, 2, 0.8);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5.458% 0 0 3.723%;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
+        color: rgba(180, 96, 96, 0.7);
+        font-size: 7.291vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #ffbf9b;
+        font-size: 1.822vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
+        display: block;
+        color: #fff4e0;
+        margin-bottom: 3.95%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
+        color: #fff4e0;
+        line-height: 30px;
+        width: 82.708%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
+        border: 3px solid transparent;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
+        border: 3px solid var(--os1);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
+        border: 3px solid var(--rs4);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a:hover,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
+        border: 3px solid var(--vs4);
+    }
+    .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
+        display: block;
+        z-index: 0;
+        height: 100%;
+        margin-top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon01_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon01_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon02_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon02_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon03_pre.png') no-repeat center;
+        left: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon03_next.png') no-repeat center;
+        right: -5%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        width: 45%;
+        margin-left: 3%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
+        background-color: rgba(14,40,5, 0.8);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5.458% 0 0 3.723%;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
+        color: rgba(60,128,37, 0.7);
+        font-size: 7.291vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #9ddc87;
+        margin-left: 30px;
+        font-size: 1.822vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
+        display: block;
+        color: #dbffcf;
+        margin-bottom: 3.95%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
+        color: #dbffcf;
+        line-height: 30px;
+        width: 82.708%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport{
+        height: 100px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport .thumbPager{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
+        background-color: rgba(20,4,21, 0.8);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5.458% 0 0 3.723%;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
+        margin-bottom: 7.95%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
+        color: rgba(122,31,127,0.7);
+        font-size: 7.291vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
+        display: inline-block;
+        color: #d99adc;
+        margin-left: 30px;
+        font-size: 1.822vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
+        display: block;
+        color: #fcceff;
+        margin-bottom: 3.95%;
+        font-size: 1.041vw;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
+        color: #fcceff;
+        line-height: 30px;
+        width: 82.708%;
+        font-size: 1.041vw;
+    }
     /* recommendedCourse Fin */
     .atraContainer div:nth-child(2) h3+ul,
     .enterContainer div:nth-child(2) h3+ul,
@@ -7168,8 +7345,7 @@ body .signUpContainer>ul{
         font-size: 0;
         border: none;
         background-color: transparent;
-        margin: 0 auto;
-        padding: 160px 0 170px;
+        margin: 0 auto 350px;
     }
 
     /* attraction / enterContainer Details Fin */
@@ -8473,7 +8649,172 @@ body .signUpContainer>ul{
         margin-bottom: 110px;
     }
     /* policy Fin */
-    
+    .aboutContainer>div>p{
+        line-height: 22px;
+    }
+    .aboutContainer>div>p:nth-of-type(2){
+        margin-bottom: 115px;
+    }
+    .aboutContainer>div>dl:not(:last-child){
+        margin-bottom: 85px;
+    }
+    .aboutContainer>div>dl>dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    .aboutContainer>div>dl>dt{
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .aboutContainer>div>dl>dd{
+        line-height: 30px;
+        margin-left: 20px;
+    }
+    .aboutContainer>div>hr{
+        margin-bottom: 85px;
+    }
+    .aboutContainer>div>hr:not(:last-of-type)+p{
+        line-height: 22px;
+        margin-bottom: 90px;
+    }
+    /* aboutUs Fin */
+    .hisContainer>ul{
+        display: flex;
+        cursor: pointer;
+    }
+    .hisContainer>ul>li{
+        position: relative;
+        width: 25%;
+        text-align: center;
+        border-bottom: 1px solid var(--gs11);
+        color: var(--gs5);
+        line-height: 100px;
+    }
+    .hisContainer>ul>li:not(:last-child):after{
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 100px;
+        background-color: var(--gs5);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .hisContainer>ol>li>ol{
+        width: 75%;
+        padding: 55px 0;
+    }
+    .hisContainer>ol>li>ol>li{
+        position: relative;
+        padding-left: 70px;
+    }
+    .hisContainer>ol>li>ol>li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .hisContainer>ol>li>ol>li>mark{
+        display: inline-block;
+        color: var(--gs5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* history Fin */
+    .bidContainer>div:not(:last-child){
+        margin-bottom: 100px;
+    }
+    .bidContainer>div>h4::before{
+        content: '•';
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .bidContainer>div>h4{
+        margin-bottom: 40px;
+    }
+    .bidContainer>div:first-of-type>ul>li>ol{
+        margin: 25px 0 0 25px;
+    }
+    .bidContainer>div:first-of-type>ul>li>ol>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .bidContainer>div:first-of-type>ul>li:first-child{
+        margin-bottom: 25px;
+    }
+    .bidContainer>div:first-of-type>ul>li:nth-child(2),
+    .bidContainer>div:first-of-type>ul>li:nth-child(3){
+        margin-bottom: 15px;
+    }
+    .bidContainer>div:last-of-type>ul{
+        margin-bottom: 40px;
+    }
+    .bidContainer>div:last-of-type>ul>li{
+        line-height: 22px;
+    }
+    .bidContainer>div:last-of-type>ul>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .bidContainer>div:last-of-type>strong{
+        display: block;
+        line-height: 22px;
+    }
+    .bidContainer>div:last-of-type>strong:not(:last-child){
+        margin-bottom: 15px;
+    }
+    /* bidNotice Fin */
+    .siteContainer>div{
+        margin-bottom: 150px;
+    }
+    .siteContainer>ul>li{
+        padding: 0 4.964%;
+        margin-bottom: 180px;
+    }
+    .siteContainer>ul>li>h3{
+        padding: 0 0 25px 25px;
+        margin-bottom: 60px;
+    }
+    .siteContainer>ul>li>ul{
+        display: flex;
+    }
+    .siteContainer>ul>li>ul>li{
+        width: 25%;
+        padding: 0 10px 0 25px;
+        height: 440px;
+    }
+    .siteContainer>ul>li>ul>li>b{
+        display: block;
+        margin-bottom: 35px;
+        line-height: 30px;
+    }
+    .siteContainer>ul>li>ul>li>ol>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .siteContainer>ul>li:first-of-type>h3{
+        border-bottom: 3px solid var(--os1);
+        color: var(--os1);
+    }
+    .siteContainer>ul>li:nth-child(2)>h3{
+        border-bottom: 3px solid var(--vs9);
+        color: var(--vs9);
+    }
+    .siteContainer>ul>li:nth-child(3)>h3{
+        border-bottom: 3px solid var(--rs8);
+        color: var(--rs8);
+    }
+    .siteContainer>ul>li:last-of-type>h3{
+        border-bottom: 3px solid var(--gs11);
+    }
+    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:nth-child(4){
+        margin-bottom: 135px;
+    }
+    .siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:nth-child(2){
+        margin-bottom: 200px;
+    }
+    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
+        margin-bottom: 100px;
+    }
+      /* siteMap Fin */
       /*  Fin */
 
       .signInContainer>form>fieldset,
@@ -8653,5 +8994,45 @@ body .signUpContainer>ul{
       }
 
     /* signIn / findId  Details Fin */
+    .reserContainer>h2{
+        text-align: center;
+        margin: 3.351% 0 70px;
+        line-height: 55px;
+    }
+    .reserContainer>ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reserContainer>ul>li{
+        position: relative;
+        width: 28.368%;
+        height: 450px;
+    }
+    .reserContainer>ul>li>a{
+        display: inline-block;
+        color: var(--gs1);
+        border: 1px solid var(--gs1);
+        padding: 20px 25px;
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+    }
+    .reserContainer>ul>li>a:hover{
+        background-color: var(--gs1);
+        transition: 0.5s;
+        box-sizing: border-box;
+    }
+    .reserContainer>ul>li:first-child>a:hover{
+        color: var(--os1);
+    }
+    .reserContainer>ul>li:nth-child(2)>a:hover{
+        color: var(--bs8);
+    }
+    .reserContainer>ul>li:last-child>a:hover{
+        color: var(--rs9);
+    }
+    /* reservation Fin */
 }
 /* ?desktop */
