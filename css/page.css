@@ -613,7 +613,7 @@ div .everContainer nav div ol li a:hover{
 .comuContainer div:nth-child(2) .accordion li:nth-of-type(11) ol li:last-child{
     color: #ff0000;
 }
-.comuContainer div:nth-child(2) .accordion li div ol{
+.comuContainer div:nth-child(2) .accordion li div>ol{
     width: 80%;
 }
 .comuContainer div:nth-child(2) .accordion li div .accordion li{
@@ -810,178 +810,18 @@ div .everContainer nav div ol li a:hover{
     border-left: 1px solid var(--gs11);
 }
 /* siteMap Fin */
-.notContainer>div:not(:last-child){
-    margin-bottom: 150px;
-}
-.notContainer>div>strong{
-    display: block;
-    margin-bottom: 40px;
-}
-.notContainer>div>p{
-    margin-bottom: 30px;
-}
-.notContainer>div:first-of-type>p,
-.notContainer>div:last-of-type>p{
-    margin-bottom: 70px;
-}
-.notContainer>div>p{
-    line-height: 22px;
-}
-.notContainer>div>div:first-of-type{
-    margin-bottom: 110px;
-}
-.notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div>div>strong{
-    display: block;
-    margin-bottom: 40px;
-}
-.notContainer>div>div>b{
-    display: block;
-    margin-bottom: 30px;
-}
-.notContainer>div>div>div>b{
-    display: block;
-    margin-bottom: 20px;
-}
-.notContainer>div>div>div>ol{
-    margin: 0 0 50px 10px;
-}
-.notContainer>div>div>div>ol>li{
-    line-height: 22px;
-}
-.notContainer>div>div>div>ol>li>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div>div>ol>li:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div>span>b{
-    display: block;
-    margin-bottom: 15px;
-}
-.notContainer>div>span{
-    display: block;
-    margin-bottom: 70px;
-}
-.notContainer>div:nth-child(2)>span+div>b+ul>li:not(:last-child){
-    margin-bottom: 15px;
-}
+.notContainer>div>div>div>ol>li>mark,
 .notContainer>div>div>ul>li>del,
-.notContainer>div>div>ul>li>del>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div>ul>li>p:first-child{
-    margin-top: 20px;
-}
-.notContainer>div>div>ul>li>p{
-    line-height: 22px;
-}
+.notContainer>div>div>ul>li>del>mark,
 .notContainer>div>div:last-child>ul>li>p>mark,
 .notContainer>div>div:last-child>ul>li>p>del,
 .notContainer>div>div:last-child>ul>li>p>del>mark,
-.notContainer>div>div:last-child>ul>li>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div:last-child>ul>li>mark{
-    display: block;
-    line-height: 22px;
-}
-.notContainer>div>div:last-child>ul>li>mark:first-child{
-    margin-bottom: 20px;
-}
-.notContainer>div>div>p{
-    margin-bottom: 30px;
-}
-.notContainer>div:nth-of-type(6)>div>ol>li>ol{
-    margin: 10px 0 0 20px;
-}
-.notContainer>div>div>ol>li>ol>li{
-    line-height: 22px;
-}
-.notContainer>div:nth-of-type(6)>div>ol>li>ol>li:not(:last-child){
-    margin-bottom: 15px;
-}
-.notContainer>div>div>ol>li>ol>li>ul{
-    margin: 10px 0 0 20px;
-}
-.notContainer>div>div:last-child>ol>li>ol>li>ul>li:last-child>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div>ul>li>b{
-    display: block;
-    margin-bottom: 20px;
-}
-.notContainer>div>div>ul{
-    margin-bottom: 70px;
-}
-.notContainer>div>div:last-child>ul>li>p>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div>b+div>b+p:first-child{
-    display: block;
-    margin-bottom: 50px;
-}
-.notContainer>div>div>div>ul{
-    margin: 20px 0;
-}
-.notContainer>div>div>div>ul>li:not(:last-child){
-    margin-bottom: 15px;
-}
-.notContainer>div>div>div>p>mark{
-    color: var(--bs2);
-}
-.notContainer>div>div>div>p+p{
-    margin-bottom: 50px;
-}
-.notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
-.notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
-    margin-bottom: 20px;
-}
-.notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
-    margin-bottom: 30px;
-}
-.notContainer>div:nth-of-type(7)>div>ul>li>p:not(:last-child){
-    margin-bottom: 5px;
-}
-.notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div:nth-of-type(8)>div:first-of-type>div>b+p{
-    margin-bottom: 50px;
-}
-.notContainer>div:nth-of-type(8)>div:last-child>div>b+p{
-    margin-bottom: 15px;
-}
-.notContainer>div:nth-of-type(8)>div:last-child>div>ul>li>mark{
-    color: var(--bs2);
-}
-.notContainer>div:nth-of-type(9)>div>ol>li>ol{
-    margin: 20px 0 30px 0;
-}
-.notContainer>div:nth-of-type(9)>div>ol>li{
-    line-height: 22px;
-}
-.notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child){
-    margin-bottom: 10px;
-}
-.notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
-    margin-bottom: 10px;
-}
+.notContainer>div>div:last-child>ul>li>mark,
+.notContainer>div>div:last-child>ol>li>ol>li>ul>li:last-child>mark,
+.notContainer>div>div>div>p>mark,
+.notContainer>div:nth-of-type(8)>div:last-child>div>ul>li>mark,
 .notContainer>div:nth-of-type(9)>div:last-child>ol>li>ol>li>del,
-.notContainer>div:nth-of-type(9)>div:last-child>ol>li>ol>li>del>mark{
-    color: var(--bs2);
-}
+.notContainer>div:nth-of-type(9)>div:last-child>ol>li>ol>li>del>mark,
 .notContainer>div:last-of-type>div>p>mark{
     color: var(--bs2);
 }
@@ -3224,41 +3064,32 @@ body .signUpContainer>ul{
         color: var(--gs9);
         box-sizing: border-box;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 > div:nth-child(2),
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 > div:nth-child(2){
-        /* position: absolute;
-        bottom: 12%;
-        right: 0;
-        width: 45%;
-        margin-right: 3%; */
-    }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li::after{
-        content: '';
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
         display: block;
-        /* background-image: url('../images/recoRain01.png'); */
         background-color: rgba(76, 34, 2, 0.8);
         width: 100%;
-        height: 830px;
+        height: 850px;
         position: absolute;
         top: 0;
         z-index: -100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
         width: 100%;
-        height: 380px;
         position: absolute;
-        top: 50px;
-        right: 0;
-        border: 3px solid var(--gs11);
-        box-sizing: border-box;
+        top: 620px;
+        left: 24px;
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
+        border: 3px solid var(--gs11);
+        box-sizing: border-box;
         position: absolute;
         top: 50px;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4{
-        margin-bottom: 7.95%;
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
+        margin-bottom: 30px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
         color: rgba(180, 96, 96, 0.7);
@@ -3272,7 +3103,7 @@ body .signUpContainer>ul{
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
         display: block;
         color: #fff4e0;
-        margin-bottom: 3.95%;
+        margin-bottom: 15px;
         font-size: 16px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
@@ -3281,21 +3112,34 @@ body .signUpContainer>ul{
         width: 82.708%;
         font-size: 14px;
     }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2){
+        width: 580px;
+        position: absolute;
+        bottom: 28.823%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li{
+        width: 145px !important;
+        margin-left: 20px;
+    }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
+        width: 145px;
         border: 3px solid transparent;
         box-sizing: border-box;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a:hover,
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
         border: 3px solid var(--os1);
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a:hover,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
         border: 3px solid var(--rs4);
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a:hover,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
         border: 3px solid var(--vs4);
     }
@@ -3342,40 +3186,61 @@ body .signUpContainer>ul{
         width: 45%;
         margin-left: 3%;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li{
+        display: block;
         background-color: rgba(14,40,5, 0.8);
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 5.458% 0 0 3.723%;
-        box-sizing: border-box;
+        width: 100%;
+        height: 850px;
+        z-index: -100;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4{
-        margin-bottom: 7.95%;
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
+        width: 100%;
+        position: absolute;
+        top: 620px;
+        left: 24px;
+        z-index: 100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
+        border: 3px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li img{
+        border: 3px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
+        width: 100%;
+        position: absolute;
+        top: 620px;
+        left: 24px;
+        z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
         color: rgba(60,128,37, 0.7);
-        font-size: 7.291vw;
+        font-size: 50px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
         display: inline-block;
         color: #9ddc87;
         margin-left: 30px;
-        font-size: 1.822vw;
+        font-size: 20px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
         display: block;
         color: #dbffcf;
-        margin-bottom: 3.95%;
-        font-size: 1.041vw;
+        margin-bottom: 15px;
+        font-size: 16px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
         color: #dbffcf;
         line-height: 30px;
         width: 82.708%;
-        font-size: 1.041vw;
+        font-size: 14px;
+        line-height: 20px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport{
         height: 100px;
@@ -3385,43 +3250,35 @@ body .signUpContainer>ul{
         bottom: 0;
         right: 0;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li{
         background-color: rgba(20,4,21, 0.8);
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 5.458% 0 0 3.723%;
-        box-sizing: border-box;
-    }
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
-        margin-bottom: 7.95%;
+        width: 100%;
+        height: 850px;
+        z-index: -100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
         color: rgba(122,31,127,0.7);
-        font-size: 7.291vw;
+        font-size: 50px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
         display: inline-block;
         color: #d99adc;
         margin-left: 30px;
-        font-size: 1.822vw;
+        font-size: 20px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
         display: block;
         color: #fcceff;
-        margin-bottom: 3.95%;
-        font-size: 1.041vw;
+        margin-bottom: 15px;
+        font-size: 16px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
         color: #fcceff;
         line-height: 30px;
         width: 82.708%;
-        font-size: 1.041vw;
+        line-height: 20px;
+        font-size: 14px;
     }
-
-
     /* recommendedCourse Fin */
     .atraContainer div:nth-child(2) h3+ul,
     .enterContainer div:nth-child(2) h3+ul,
@@ -4612,7 +4469,7 @@ body .signUpContainer>ul{
         margin-bottom: 50px;
     }
     .tosContainer>div>ol>li:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .tosContainer>div>ol>li>b{
         display: block;
@@ -4662,7 +4519,7 @@ body .signUpContainer>ul{
     }
     .poliContainer .privacyPolicy>p:last-of-type,
     .poliContainer .privacyPolicy>ol>li:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .poliContainer .privacyPolicy>ol>li>b{
         display: block;
@@ -4978,8 +4835,126 @@ body .signUpContainer>ul{
         margin-bottom: 100px;
     }
     /* siteMap Fin */
-    
-    /*  Fin */
+    .notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child),
+    .notContainer>div>div>div>ol>li:not(:last-child),
+    .notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child),
+    .notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
+    .notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child),
+    .notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child),
+    .notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child),
+    .notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child),
+    .notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .notContainer>div:not(:last-child){
+        margin-bottom: 150px;
+    }
+    .notContainer>div>strong{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .notContainer>div>p{
+        margin-bottom: 30px;
+    }
+    .notContainer>div:first-of-type>p,
+    .notContainer>div:last-of-type>p{
+        margin-bottom: 70px;
+    }
+    .notContainer>div>p,
+    .notContainer>div>div>div>ol>li,
+    .notContainer>div>div>ul>li>p,
+    .notContainer>div>div>ol>li>ol>li,
+    .notContainer>div:nth-of-type(9)>div>ol>li{
+        line-height: 18px;
+    }
+    .notContainer>div>div:first-of-type{
+        margin-bottom: 110px;
+    }
+    .notContainer>div>div>strong{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .notContainer>div>div>b{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .notContainer>div>div>div>b,
+    .notContainer>div>div>ul>li>b{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .notContainer>div>div>div>ol{
+        margin: 0 0 50px 10px;
+    }
+    .notContainer>div>span>b{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .notContainer>div>span{
+        display: block;
+        margin-bottom: 70px;
+    }
+    .notContainer>div:nth-child(2)>span+div>b+ul>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .notContainer>div>div>ul>li>p:first-child{
+        margin-top: 20px;
+    }
+    .notContainer>div>div:last-child>ul>li>mark{
+        display: block;
+        line-height: 22px;
+    }
+    .notContainer>div>div:last-child>ul>li>mark:first-child{
+        margin-bottom: 20px;
+    }
+    .notContainer>div>div>p{
+        margin-bottom: 30px;
+    }
+    .notContainer>div:nth-of-type(6)>div>ol>li>ol{
+        margin: 10px 0 0 20px;
+    }
+    .notContainer>div:nth-of-type(6)>div>ol>li>ol>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .notContainer>div>div>ol>li>ol>li>ul{
+        margin: 10px 0 0 20px;
+    }
+    .notContainer>div>div>ul{
+        margin-bottom: 70px;
+    }
+    .notContainer>div>div>b+div>b+p:first-child{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .notContainer>div>div>div>ul{
+        margin: 20px 0;
+    }
+    .notContainer>div>div>div>ul>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .notContainer>div>div>div>p+p{
+        margin-bottom: 50px;
+    }
+    .notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
+        margin-bottom: 20px;
+    }
+    .notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .notContainer>div:nth-of-type(7)>div>ul>li>p:not(:last-child){
+        margin-bottom: 5px;
+    }
+    .notContainer>div:nth-of-type(8)>div:first-of-type>div>b+p{
+        margin-bottom: 50px;
+    }
+    .notContainer>div:nth-of-type(8)>div:last-child>div>b+p{
+        margin-bottom: 15px;
+    }
+    .notContainer>div:nth-of-type(9)>div>ol>li>ol{
+        margin: 20px 0 30px 0;
+    }
+    /* noticeOfPolicyRevision Fin */
     .signInContainer>form>fieldset,
     .signInContainer>div,
     .findIdContainer>form>fieldset,
@@ -8815,8 +8790,126 @@ body .signUpContainer>ul{
         margin-bottom: 100px;
     }
       /* siteMap Fin */
-      /*  Fin */
+      .notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child),
+      .notContainer>div>div>div>ol>li:not(:last-child),
+      .notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child),
+      .notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
+      .notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child),
+      .notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child),
+      .notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child),
+      .notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child),
+      .notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
+          margin-bottom: 10px;
+      }
+      .notContainer>div:not(:last-child){
+          margin-bottom: 150px;
+      }
+      .notContainer>div>strong{
+          display: block;
+          margin-bottom: 40px;
+      }
+      .notContainer>div>p{
+          margin-bottom: 30px;
+      }
+      .notContainer>div:first-of-type>p,
+      .notContainer>div:last-of-type>p{
+          margin-bottom: 70px;
+      }
+      .notContainer>div>p,
+      .notContainer>div>div>div>ol>li,
+      .notContainer>div>div>ul>li>p,
+      .notContainer>div>div>ol>li>ol>li,
+      .notContainer>div:nth-of-type(9)>div>ol>li{
+          line-height: 22px;
+      }
+      .notContainer>div>div:first-of-type{
+          margin-bottom: 110px;
+      }
+      .notContainer>div>div>strong{
+          display: block;
+          margin-bottom: 40px;
+      }
+      .notContainer>div>div>b{
+          display: block;
+          margin-bottom: 30px;
+      }
+      .notContainer>div>div>div>b,
+      .notContainer>div>div>ul>li>b{
+          display: block;
+          margin-bottom: 20px;
+      }
+      .notContainer>div>div>div>ol{
+          margin: 0 0 50px 10px;
+      }
+      .notContainer>div>span>b{
+          display: block;
+          margin-bottom: 15px;
+      }
+      .notContainer>div>span{
+          display: block;
+          margin-bottom: 70px;
+      }
+      .notContainer>div:nth-child(2)>span+div>b+ul>li:not(:last-child){
+          margin-bottom: 15px;
+      }
+      .notContainer>div>div>ul>li>p:first-child{
+          margin-top: 20px;
+      }
+      .notContainer>div>div:last-child>ul>li>mark{
+          display: block;
+          line-height: 22px;
+      }
+      .notContainer>div>div:last-child>ul>li>mark:first-child{
+          margin-bottom: 20px;
+      }
+      .notContainer>div>div>p{
+          margin-bottom: 30px;
+      }
+      .notContainer>div:nth-of-type(6)>div>ol>li>ol{
+          margin: 10px 0 0 20px;
+      }
+      .notContainer>div:nth-of-type(6)>div>ol>li>ol>li:not(:last-child){
+          margin-bottom: 15px;
+      }
+      .notContainer>div>div>ol>li>ol>li>ul{
+          margin: 10px 0 0 20px;
+      }
+      .notContainer>div>div>ul{
+          margin-bottom: 70px;
+      }
+      .notContainer>div>div>b+div>b+p:first-child{
+          display: block;
+          margin-bottom: 50px;
+      }
+      .notContainer>div>div>div>ul{
+          margin: 20px 0;
+      }
+      .notContainer>div>div>div>ul>li:not(:last-child){
+          margin-bottom: 15px;
+      }
+      .notContainer>div>div>div>p+p{
+          margin-bottom: 50px;
+      }
+      .notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
+          margin-bottom: 20px;
+      }
+      .notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
+          margin-bottom: 30px;
+      }
+      .notContainer>div:nth-of-type(7)>div>ul>li>p:not(:last-child){
+          margin-bottom: 5px;
+      }
+      .notContainer>div:nth-of-type(8)>div:first-of-type>div>b+p{
+          margin-bottom: 50px;
+      }
+      .notContainer>div:nth-of-type(8)>div:last-child>div>b+p{
+          margin-bottom: 15px;
+      }
+      .notContainer>div:nth-of-type(9)>div>ol>li>ol{
+          margin: 20px 0 30px 0;
+      }
 
+      /* noticeOfPolicyRevision Fin */
       .signInContainer>form>fieldset,
       .signInContainer>div{
           width: 606px;
