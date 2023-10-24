@@ -2927,6 +2927,12 @@ div .everContainer nav div ol li a:hover{
         height: 850px;
         z-index: -100;
     }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
+        border: 3px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 5.882%;
+    }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li::after{
         content: '';
         display: block;
@@ -2956,11 +2962,12 @@ div .everContainer nav div ol li a:hover{
         left: 24px;
         z-index: 100;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1) img{
+        content: url('../images/recoChild01_M.png');
         border: 3px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
-            top: 5.882%;
+        top: 5.882%;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li img{
         border: 3px solid var(--gs11);

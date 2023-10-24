@@ -110,6 +110,12 @@ footer div details summary.on::after{
 }
 /* ?mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    body#bodypad{
+        padding-top: 0;
+    }
+    body{
+        padding-top: 60px;
+    }
     .go_top{
         background: url('../images/go_top.png') no-repeat center / contain;
         position: fixed;
@@ -417,6 +423,12 @@ footer div details summary.on::after{
 }
 /* ?tablet */
 @media screen and (min-width: 1280px) {
+    body#bodypad{
+        padding-top: 0;
+    }
+    body{
+        padding-top: 110px;
+    }
     .go_top{
         background: url('../images/go_top.png') no-repeat center / contain;
         position: fixed;

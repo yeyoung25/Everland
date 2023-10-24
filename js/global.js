@@ -14,7 +14,7 @@ $(document).ready(function () {
   menuButton();
   gotop();
   sumDetail();
-  // mainHeader();
+  mainHeader();
   justCopy();
   bxExt01();
   bxExt02();
@@ -24,7 +24,6 @@ $(document).ready(function () {
 
 function mainHeader(){
   if(!$("#wrap").hasClass("indexContainer")){
-    $("header").css("position", "sticky");
     $("header").addClass("mouseOver");
   }else{
     headerEvent();
