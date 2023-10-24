@@ -75,12 +75,16 @@ function bxExt03(){
 }
 
 function headerScroll() {
-  if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
+  if (!$("#wrap").hasClass("indexContainer")) {
+    return;
+  } else if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
     $("header").removeClass("mouseOver");
     $(".go_top").addClass("scrollTop");
+    console.log("확인1");
   } else {
     $("header").addClass("mouseOver");
     $(".go_top").removeClass("scrollTop");
+    console.log("확인2");
   }
 }
 
@@ -109,16 +113,19 @@ function headerAct() {
   });
 
   $(".menuBar").click(function () {
+    $("body").toggleClass("scrollNone");
     $("#fnbPanel").toggleClass("act");
     if (!$("#fnbPanel").hasClass("act") && $(window).scrollTop() !== 0) {
       $(".go_top").removeClass("scrollTop");
+      headerScroll();
     } else {
       $(".go_top").addClass("scrollTop");
+      headerScroll();
     }
   });
 }
 
-function menuButton() {
+function menuButton(){
   var menuBar = document.querySelector(".menuBar");
   menuBar.addEventListener("click", () => {
   menuBar.classList.toggle("toggle");
@@ -126,7 +133,7 @@ function menuButton() {
 }
 
 function gotop(){
-  $(".go_top").click(function () {
+  $(".go_top").click(function(){
       $('html, body').animate({scrollTop: '0'}, 680);
   });
 }

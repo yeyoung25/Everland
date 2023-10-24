@@ -1,3 +1,6 @@
+body.scrollNone{
+    overflow-y: hidden;
+}
 .bx-wrapper {
     box-shadow: none;
     border: none;
