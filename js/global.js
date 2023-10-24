@@ -14,7 +14,7 @@ $(document).ready(function () {
   menuButton();
   gotop();
   sumDetail();
-  mainHeader();
+  // mainHeader();
   justCopy();
   bxExt01();
   bxExt02();
