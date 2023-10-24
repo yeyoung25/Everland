@@ -79,9 +79,6 @@ footer>ul li:nth-child(2)::after{
 footer>ul li:last-child::after{
     background: url('../images/call03.png') no-repeat center;
 }
-footer div div ul{
-    display: inline-block;
-}
 footer div div ul li{
     display: inline-block;
 }
@@ -100,18 +97,8 @@ footer div div ol li:not(:first-child){
 footer div details a{
     color: var(--gs8);
 }
-footer div details summary{
-    margin-bottom: 10px;
-    list-style: none;
-    cursor: pointer;
-    align-items: center;
-}
 footer div details summary.on::after{
     transform: rotate(-180deg);
-}
-footer div details span{
-    display: block;
-    margin-bottom: 10px;
 }
 /* footer Fin */
 
@@ -404,6 +391,8 @@ footer div details span{
     footer div details summary{
         justify-content: center;
         margin-bottom: 5px;
+        list-style: none;
+        align-items: center;
     }
     footer div details span{
         display: block;
@@ -658,6 +647,16 @@ footer div details span{
         position: absolute;
         top: 125px;
         color: var(--gs8);
+    }
+    footer div details summary{
+        margin-bottom: 10px;
+        list-style: none;
+        cursor: pointer;
+        align-items: center;
+    }
+    footer div details span{
+        display: block;
+        margin-bottom: 10px;
     }
     footer div details summary::after{
         background: url('../images/footer_sum.png') no-repeat center / contain;
