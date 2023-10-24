@@ -12,63 +12,8 @@
     opacity: 0;
     pointer-events: none;
 }
-footer>ul li{
-    max-width: 1410px;
-    margin: 0 auto;
-}
-footer>div{
-    max-width: 1458px;
-    margin: 0 auto;
-    padding: 37px 24px 0;
-    box-sizing: border-box;
-}
-header h1 a{
-    display: block;
-    background: url('../images/main_logo.png') no-repeat center / contain;
-    font-size: 0;
-}
-header>div{
-    justify-content: flex-end;
-}
-header div .ect_btn{
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 111px);
-    text-shadow: 0px 2px 7px rgba(127,127,127,0.8);
-}
 header div .ect_btn a{
     color: var(--gs1);
-}
-header div .ect_btn a:last-of-type{
-    background: url('../images/headerRes.png') no-repeat 35px center / 45px 42px;
-    background-color: var(--vs7);
-    padding: 0 35px 0 97px;
-    text-shadow: none;
-    line-height: 110px;
-}
-header div .menuBar span{
-    background-color: var(--gs1);
-    height: 4px;
-    transition: all 0.4s;
-}
-header div .menuBar span:first-child{
-    top: 38px;
-    left: 37px;
-    width: 38px;
-}
-header div .menuBar span:nth-child(2){
-    top: 52px;
-    left: 49px;
-    width: 26px;
-    transition: all 0.1s;
-}
-header div .menuBar span:last-child{
-    top: 66px;
-    left: 37px;
-    width: 38px;
-}
-header div .menuBar.toggle span:first-child{
-    transform: rotate(-45deg) translate(-10px, 10px);
 }
 header div .menuBar.toggle span:nth-child(2){
     opacity: 0;
@@ -86,23 +31,8 @@ header.mouseOver div .ect_btn a:not(:last-child){
     color: var(--gs11); 
     text-shadow: none;
 }
-header #fnbPanel{
-    display: none;
-    top: 0;
-    background-color: var(--gs11);
-    opacity: 0.95;
-    width: 100%;
-    padding: 7.888% 18.229% 23px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    transition-duration: 0.2s;
-}
 header #fnbPanel.act{
     display: block;
-}
-header #fnbPanel ul>li h2{
-    color: var(--gs1);
-    margin-bottom: 30px;
 }
 header #fnbPanel ul>li ol li{
     margin-bottom: 10px;
@@ -136,14 +66,12 @@ footer>ul li:first-child::after{
 footer>ul li:hover::after{
     transform: scale(1.1);
 }
-footer>ul li a{
-    color: var(--gs1);
-}
 footer>ul li h3,
 footer>ul li a{
     display: block;
     text-align: center;
     z-index: 1;  
+    color: var(--gs1);
 }
 footer>ul li:nth-child(2)::after{
     background: url('../images/call02.png') no-repeat center;
@@ -225,6 +153,9 @@ footer div details span{
         transform: translate(-50%,-50%);
     }
     header h1 a{
+        display: block;
+        background: url('../images/main_logo.png') no-repeat center / contain;
+        font-size: 0;
         width: 223.846px;
         height: 60px;
         font-size: 0;
@@ -264,6 +195,7 @@ footer div details span{
         background-color: var(--gs1);
         width: 25px;
         height: 3px;
+        transition: all 0.4s;
     }
     header div .menuBar span:first-child{
         top: 19px;
@@ -274,6 +206,7 @@ footer div details span{
         width: 17px;
         top: 29px;
         left: 25px;
+        transition: all 0.1s;
     }
     header div .menuBar span:last-child{
         width: 25px;
@@ -285,11 +218,6 @@ footer div details span{
     }
     header div .menuBar.toggle span:last-child{
         transform: rotate(45deg) translate(-6.5px, -8.5px);
-    }
-    header #fnbPanel{
-        background-color: var(--gs1);
-        top: 60px;
-        padding: 40px 60px 531px;
     }
     header #fnbPanel ul>li{
         display: block;
@@ -343,8 +271,15 @@ footer div details span{
         color: var(--gs1);
     }
     header #fnbPanel{
+        display: none;
+        width: 100%;
+        opacity: 0.95;
         max-height: calc(100vh - 60px);
         overflow: scroll;
+        background-color: var(--gs1);
+        top: 60px;
+        padding: 40px 60px 531px;
+        transition-duration: 0.2s;
     }
     header #fnbPanel ul>li>ol{
         opacity: 0;
@@ -411,10 +346,12 @@ footer div details span{
     footer>ul li>a{
         display: block;
         width: 100%;
+        color: var(--gs1);
     }
     footer>div{
-        padding-top: 37px;
         height: 300px;
+        padding-top: 37px;
+        box-sizing: border-box;
     }
     footer div div h2{
         background: url('../images/footer_logo.png') no-repeat center / contain;
@@ -517,12 +454,50 @@ footer div details span{
         transition-duration: 0.2s;
     }
     header>div{
+        justify-content: flex-end;
         width: 768px;
+    }
+    header div .ect_btn{
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 111px);
+        text-shadow: 0px 2px 7px rgba(127,127,127,0.8);
+    }
+    header div .ect_btn a:last-of-type{
+        background: url('../images/headerRes.png') no-repeat 35px center / 45px 42px;
+        background-color: var(--vs7);
+        padding: 0 35px 0 97px;
+        text-shadow: none;
+        line-height: 110px;
     }
     header div .menuBar{
         background-color: var(--gs10);
         width: 110px;
         height: 110px;
+    }
+    header div .menuBar span{
+        background-color: var(--gs1);
+        height: 4px;
+        transition: all 0.4s;
+    }
+    header div .menuBar span:first-child{
+        top: 38px;
+        left: 37px;
+        width: 38px;
+    }
+    header div .menuBar span:nth-child(2){
+        top: 52px;
+        left: 49px;
+        width: 26px;
+        transition: all 0.1s;
+    }
+    header div .menuBar span:last-child{
+        top: 66px;
+        left: 37px;
+        width: 38px;
+    }
+    header div .menuBar.toggle span:first-child{
+        transform: rotate(-45deg) translate(-10px, 10px);
     }
     header h1,
     header #fnbPanel ul>li{
@@ -531,8 +506,12 @@ footer div details span{
     header #fnbPanel ul>li{
         height: 350px;
         width: 25%;
-        padding-right: 5px;
+        padding: 0 10px;
         box-sizing: border-box;
+    }
+    header #fnbPanel ul>li h2{
+        color: var(--gs1);
+        margin-bottom: 30px;
     }
     header h1{
         padding-left: 3.125%;
@@ -542,14 +521,30 @@ footer div details span{
         align-items: center;
     }
     header h1 a{
+        display: block;
+        background: url('../images/main_logo.png') no-repeat center / contain;
+        font-size: 0;
         width: 365px;
         height: 80px;
     }
     footer>ul li{
+        max-width: 1410px;
+        margin: 0 auto;
         width: 33.33%;
         height: 200px;
         color: var(--gs1);
         overflow: hidden;
+    }
+    header #fnbPanel{
+        display: none;
+        top: 0;
+        background-color: var(--gs11);
+        opacity: 0.95;
+        width: 100%;
+        padding: 7.888% 18.229% 100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transition-duration: 0.2s;
     }
     header #fnbPanel ul>li:first-child:hover h2,
     header #fnbPanel ul>li:nth-child(5):hover h2{
@@ -615,8 +610,11 @@ footer div details span{
         margin: 30px 0 10px;
     }
     footer>div{
-        padding-top: 37px;
+        max-width: 1458px;
         height: 250px;
+        margin: 0 auto;
+        padding: 37px 24px 0;
+        box-sizing: border-box;
     }
     footer div div{
         align-items: center;
