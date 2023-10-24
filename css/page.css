@@ -2777,12 +2777,31 @@ div .everContainer nav div ol li a:hover{
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
         display: block;
-        background-color: rgba(76, 34, 2, 0.8);
         width: 100%;
         height: 850px;
         position: absolute;
         top: 0;
         z-index: -100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(1){
+        /* background-color: rgba(76, 34, 2, 0.8); */
+        background: url('../images/recoRain01.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(2){
+        /* background-color: rgba(76, 34, 2, 0.8); */
+        background: url('../images/recoRain02.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(3){
+        /* background-color: rgba(76, 34, 2, 0.8); */
+        background: url('../images/recoRain03.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(4){
+        /* background-color: rgba(76, 34, 2, 0.8); */
+        background: url('../images/recoRain04.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(5){
+        /* background-color: rgba(76, 34, 2, 0.8); */
+        background: url('../images/recoRain05.png') no-repeat center / cover;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
         width: 100%;
