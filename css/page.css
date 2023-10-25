@@ -5619,11 +5619,19 @@ div .everContainer nav div ol li a:hover{
         color: var(--gs9);
     }
     .indexContainer .contentBanner03>#map{
-        background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
+        /* width: 100%; */
+    }
+    .indexContainer .contentBanner03>#map{
+        background: url('../images/kakao_map.png') no-repeat center / cover;
         position: relative;
         width: 100%;
         height: 550px;
     }
+    /* .indexContainer .contentBanner03>#map>div>iframe{
+        position: relative;
+        width: 100%;
+        height: 550px;
+    } */
     .indexContainer .contentBanner03 #map .map_dtl{
         position: absolute;
         top: 160px;
