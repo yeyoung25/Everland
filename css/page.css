@@ -13,9 +13,6 @@ div .member{
 div .communit{
     background: url('../images/ever_Header05.png') no-repeat center / cover;
 }
-div .everContainer nav div{
-    position: relative;
-}
 div .everContainer nav div::after{
     content: '';
     display: block;
@@ -24,15 +21,6 @@ div .everContainer nav div::after{
 }
 div .everContainer nav div.active::after{
     transform: rotate(-180deg);
-}
-div .everContainer nav div{
-    width: 45%; 
-    min-width: 255px;
-    position: relative;
-    background-color: var(--gs1);
-}
-div .everContainer nav div ol{
-    display: none;
 }
 div .everContainer nav div.active ol{
     display: block;
@@ -1412,9 +1400,9 @@ div .everContainer nav div ol li a:hover{
         height: 15px;
     }
     div .everContainer nav div{
+        position: relative;
         width: 47.5%; 
         height: 40px;
-        position: relative;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
     }
@@ -1440,6 +1428,7 @@ div .everContainer nav div ol li a:hover{
         top: 16px;
     }
     div .everContainer nav div ol{
+        display: none;
         position: absolute;
         width: 100%;
         top: 100%;
@@ -5699,9 +5688,9 @@ div .everContainer nav div ol li a:hover{
         height: 20px;
     }
     div .everContainer nav div{
+        position: relative;
         width: 45%; 
         min-width: 255px;
-        position: relative;
         background-color: var(--gs1);
     }
     div .everContainer nav div input{
@@ -5729,6 +5718,9 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         right: 30px;
         top: 27px;
+    }
+    div .everContainer nav div ol{
+        display: none;
     }
     div .everContainer nav div:first-of-type ol{
         position: absolute;
