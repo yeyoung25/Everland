@@ -79,7 +79,6 @@ footer div div,
 }
 header::after,
 .indexContainer .contentBanner01 ul::after,
-.indexContainer .contentBanner02>div::after,
 .cboth::after{
     content: '';
     display: block;
@@ -127,7 +126,7 @@ mark{
     [class*='34']{font-size: 34px;}
     [class*='30']{font-size: 18px;} /**/
     [class*='28']{font-size: 24px;} /**/
-    [class*='25']{font-size: 20px;} /**/
+    [class*='25']{font-size: 18px;} /**//**/
     [class*='24']{font-size: 18px;} /**/
     [class*='22']{font-size: 16px;} /**/
     [class*='21']{font-size: 14px;} /**/

@@ -26,23 +26,10 @@ div .everContainer nav div.active ol{
     display: block;
     z-index: 100;
 }
-div .everContainer nav div ol li:not(:last-child){
-    display: block;
-    margin-bottom: 20px;
-}
-div .everContainer nav div ol li a{
-    color: var(--gs7);
-    display: block;
-    width: 100%;
-}
 div .everContainer nav div ol li a:hover{
     color: var(--gs11);
 }
 /* banslider Fin */
-.indexContainer .contentBanner01 div p{
-    display: inline-block;
-    line-height: 25px;
-}
 .indexContainer .contentBanner01 .bx-wrapper{
     max-width: 1665px !important; margin-left: auto;
 }
@@ -113,24 +100,6 @@ div .everContainer nav div ol li a:hover{
 }
 /* contentBanner03 Fin */
 /* 상세페이지 시작 */
-.newContainer div:nth-child(2) h3+ul li{
-    border-bottom: 1px solid var(--gs5);
-    line-height: 55px;
-}
-.newContainer div:nth-child(2) ul li a{
-    display: flex;
-}
-.newContainer div:nth-child(2) ul li a span:first-child{
-    width: 5%;
-    padding-left: 30px;
-}
-.newContainer div:nth-child(2) ul li a span:nth-child(2){
-    width: 15%;
-    color: var(--gs9);
-}
-.newContainer div:nth-child(2) ul li a strong{
-    width: 70%;
-}
 .newContainer .paging>a{
     font-size: 0;
 }
@@ -965,7 +934,7 @@ div .everContainer nav div ol li a:hover{
     #wrap .contentBanner03{
         max-width: 1458px;
         margin: 0 auto;
-        padding: 0 24px;
+        padding: 0 3.571%;
         box-sizing: border-box;
     }
     .experContainer article h3,
@@ -974,11 +943,11 @@ div .everContainer nav div ol li a:hover{
         padding: 55px 0;
     }
     header+.conPbtm{
-        padding-bottom: 250px;
+        padding-bottom: 150px;
     }
     header+.mwpadding{
         padding: 0 24px;
-        padding-bottom: 250px;
+        padding-bottom: 150px;
     }
     .indexContainer .banslider li strong{
         position: absolute;
@@ -1022,8 +991,8 @@ div .everContainer nav div ol li a:hover{
         font-weight: 700;
     }
     .indexContainer .contentBanner01{
-        margin: 45px 0 110px;
-        padding-left: 2%;
+        margin: 45px 0 105px;
+        padding-left: 3.571%;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
         font-size: 22px;
@@ -1066,7 +1035,7 @@ div .everContainer nav div ol li a:hover{
         content: '';
         border-left: 6px solid var(--vs7);
         top: 30%;
-        left: 2%;
+        left: 3.571%;
         height: 45px;
         font-size: 12px;
     }
@@ -1076,8 +1045,8 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner01 .textBox{
         position: relative;
         width: 97%;
-        margin-bottom: 35px;
-        padding-right: 2%;
+        margin-bottom: 30px;
+        padding-right: 3.571%;
     }
     .indexContainer .contentBanner01 .carouselWay4 li{
         width: 200px !important;
@@ -1087,6 +1056,10 @@ div .everContainer nav div ol li a:hover{
         display: block;
         width: 200px;
     }
+    .indexContainer .contentBanner01 div p{
+        display: inline;
+        line-height: 25px;
+    }
     .indexContainer .contentBanner01>div>a{
         background: url('../images/maincon01_more.png') no-repeat center bottom / contain;
         display: inline-block;
@@ -1095,9 +1068,7 @@ div .everContainer nav div ol li a:hover{
         width: 56px;
         vertical-align: text-bottom;
         padding-bottom: 5px;
-        /* position: absolute;
-        bottom: 0;
-        left: 120px; */
+        margin-left: 15px;
     }
     .indexContainer .contentBanner01 .carouselWay4 li strong{
         display: block;  
@@ -1106,6 +1077,7 @@ div .everContainer nav div ol li a:hover{
         white-space: nowrap;
         margin: 15px 0 10px;
         height: 15px;
+        text-align: center;
     }
     .indexContainer .contentBanner01 .carouselWay4 li span{
         display: block;
@@ -1122,7 +1094,7 @@ div .everContainer nav div ol li a:hover{
         display: flex;
         width: 96.875%;
         padding: 0;
-        bottom: -40px;
+        bottom: -55px;
     }
     .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager>div{
         width: 33.33%;
@@ -1132,14 +1104,15 @@ div .everContainer nav div ol li a:hover{
         flex-wrap: wrap;
         margin-bottom: 70px;
     }
-    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type{
+    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type,
+    .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
         position: relative;
         width: 100%;
-        padding: 40px 3.125% 0 3.125%;
+        padding: 35px 2% 0;
         box-sizing: border-box;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2{
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
         display: block;
@@ -1149,18 +1122,21 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type p{
         color: var(--gs9);
         line-height: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:last-of-type{
         width: 100%;
         order: -1;
     }
-    .indexContainer .contentBanner02>div ul li{
+    .indexContainer .contentBanner02>div:first-child ul li{
         width: 100%;
-        height: 600px;
+        height: 475px;
     }
     .indexContainer .contentBanner02>div ul li img{
         width: 100%;
+    }
+    .indexContainer .contentBanner02>div:first-of-type .bx-wrapper{
+        height: 270px;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls{
         position: relative;
@@ -1168,23 +1144,24 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction a{
         width: 25px;
-        height: 9px;
-        top: 205px;
+        height: 8px;
+        top: 0px;
         margin: 0;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/mobilecon02pre.png') no-repeat center / contain;
-        left: 3.125%;
+        left: 3.571%;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/mobilecon02next.png') no-repeat center / contain;
-        left: 8.984%;
+        left: 19.642%;
     }
-    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol{
+    .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol,
+    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
         display: flex;
         justify-content: space-between;
         position: relative;
-        width: 77.604%;
+        width: 64.285%;
         margin-left: auto;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol li{
@@ -1212,13 +1189,7 @@ div .everContainer nav div ol li a:hover{
         right: 3.125%;
     }
     .indexContainer .contentBanner02>div:nth-child(2){
-        margin-bottom: 70px;
-    }
-    .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2){
-        position: relative;
-        width: 100%;
-        padding: 40px 3.125% 0 3.125%;
-        box-sizing: border-box;
+        margin-bottom: 55px;
     }
     .indexContainer .contentBanner02>div:nth-child(2)>div:nth-child(2)>a{
         background: url('../images/maincon02_more.png') no-repeat center / 6px 11px;
@@ -1251,23 +1222,16 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction a{
         width: 25px;
         height: 9px;
-        top: 226px;
+        top: 219px;
         margin: 0;
     }
     .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/mobilecon02pre.png') no-repeat center / contain;
-        left: 3.125%;
+        left: 3.571%;
     }
     .indexContainer .contentBanner02>div:nth-child(2) .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/mobilecon02next.png') no-repeat center / contain;
-        left: 8.984%;
-    }
-    .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: 77.604%;
-        margin-left: auto;
+        left: 19.642%;
     }
     .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol li{
         font-size: 0;
@@ -1292,29 +1256,29 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner03>div:not(:last-child){
         box-sizing: border-box;
-        padding: 30px 3.125% 70px;
+        padding: 35px 3.571%;
     }
     .indexContainer .contentBanner03>div:not(:last-child) h2{
         justify-content: space-between;
         align-items: center;
         color: var(--os10);
     }
-    .indexContainer .contentBanner03>div h2{
-        font-size: 20px;
-    }
     .indexContainer .contentBanner03>div:first-child h2{
         margin-bottom: 45px;
     }
     .indexContainer .contentBanner03>div:nth-child(2) h2{
-        margin-bottom: 70px;
+        margin-bottom: 35px;
     }
     .indexContainer .contentBanner03>div:first-child ul li a{
-        width: 80%;
+        width: 55.428%;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
         padding-top: 4px;
         font-size: 13px;
+    }
+    .indexContainer .contentBanner03>div:first-child ul li:not(:nth-child(-n+2)){
+        display: none;
     }
     .indexContainer .contentBanner03>div:first-child ul li time{
         font-size: 13px;
@@ -1326,18 +1290,18 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner03>div:nth-child(2) ul li a{
         display: inline-block;
         width: 100%;
-        padding-top: 95px;
+        padding-top: 70px;
         color: var(--gs9);
-        font-size: 13px;
+        font-size: 10px;
     }
     .indexContainer .contentBanner03>div:nth-child(2) ul li:first-child a{
-        background: url('../images/maincon03_res.png') no-repeat center top / 78px 78px;
+        background: url('../images/maincon03_res.png') no-repeat center top / 60px 60px;
     }
     .indexContainer .contentBanner03>div:nth-child(2) ul li:nth-child(2) a{
-        background: url('../images/maincon03_inpuiry.png') no-repeat center top / 78px 78px;
+        background: url('../images/maincon03_inpuiry.png') no-repeat center top / 60px 60px;
     }
     .indexContainer .contentBanner03>div:nth-child(2) ul li:last-child a{
-        background: url('../images/maincon03_lost.png') no-repeat center top / 78px 78px;
+        background: url('../images/maincon03_lost.png') no-repeat center top / 60px 60px;
     }
     .indexContainer .contentBanner03>#map{
         background: url('../images/kakao_map.png') no-repeat center / cover; /*지도 임시*/
@@ -1349,32 +1313,32 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         bottom: 0;
         left: 50%;
+        width: 92.858%;
         transform: translate(-50%,0%);
         background-color: var(--os3);
         opacity: 0.94;
         color: var(--gs1);
-        /* width: 300px; */
-        padding: 30px 15px 20px;
+        padding: 20px 15px;
+        box-sizing: border-box;
     }
     .indexContainer .contentBanner03 #map .map_dtl h2{
         display: inline-block;
         margin-bottom: 20px;
         vertical-align: top;
-        font-size: 22px;
     }
     .indexContainer .contentBanner03 #map .map_dtl button{
         display: inline-block;
         border: 1px solid var(--gs1);
         background: none;
-        margin-left: 40px;
+        margin-left: 20px;
         color: var(--gs1);
         padding: 5px 10px;
         vertical-align: text-bottom;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 600;
     }
     .indexContainer .contentBanner03 #map .map_dtl address{
-        font-size: 12px;
+        font-size: 10px;
         line-height: 16px;
     }
     .indexContainer .contentBanner03 #map .map_dtl address b{
@@ -1387,28 +1351,28 @@ div .everContainer nav div ol li a:hover{
         display: flex;
         color: var(--gs1);
         justify-content: center;
-        padding: 55px 0;
+        padding: 45px 0;
     }
     div .everContainer nav{
         display: flex;
         background-color: var(--gs1);
         width: 100%;
-        padding-left: 3.125%;
+        padding-left: 3.571%;
         box-sizing: border-box;
         align-items: center;
         height: 40px;
         border: 1px solid var(--gs5);
     }
     div .everContainer nav>a{
+        background: url('../images/home_nav.png') no-repeat left / 15px 15px;
         display: block;
-        background: url('../images/home_nav.png') no-repeat left / contain;
+        width: 10%;
         font-size: 0;
-        width: 5%;
         height: 15px;
     }
     div .everContainer nav div{
         position: relative;
-        width: 47.5%; 
+        width: 45%; 
         height: 40px;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
@@ -1417,22 +1381,23 @@ div .everContainer nav div ol li a:hover{
         color: var(--gs11);
         background-color: transparent;
         border: none;
-        line-height: 40px;
-        padding: 0 0 0 23px;
+        line-height: 35px;
+        /* padding: 0 0 0 23px; */
         font-family: 'Open Sans';
         font-weight: 600;
+        font-size: 10px;
     }
     div .everContainer nav div:first-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
-        right: 30px;
-        top: 16px;
+        right: 10px;
+        top: 14px;
     }
     div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
-        right: 30px;
-        top: 16px;
+        right: 10px;
+        top: 14px;
     }
     div .everContainer nav div ol{
         display: none;
@@ -1443,10 +1408,21 @@ div .everContainer nav div ol li a:hover{
         transform: translateX(-50%);
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
-        padding: 24px 0;
+        padding: 15px 0;
+    }
+    div .everContainer nav div ol li:not(:last-child){
+        display: block;
+        margin-bottom: 15px;
+    }
+    div .everContainer nav div ol li a{
+        color: var(--gs7);
+        display: block;
+        width: 100%;
+        line-height: 16px;
+        font-size: 10px;
     }
     div .everContainer nav div ol li{
-        padding-left: 23px;
+        padding-left: 10px;
     }
     .newContainer .paging>ol>li>a{
         font-size: 16px;
@@ -1457,7 +1433,7 @@ div .everContainer nav div ol li a:hover{
     .comuContainer div:nth-child(2) h3,
     .siteContainer ul li>.linebtm{
         text-align: center;
-        padding: 55px 0;
+        padding: 40px 0;
         border-bottom: 1px solid var(--gs5);
     }
     .experContainer article h3,
@@ -1469,10 +1445,29 @@ div .everContainer nav div ol li a:hover{
     .newContainer div:nth-child(2) h3+ul{
         margin-bottom: 110px;
     }
+    .newContainer div:nth-child(2) h3+ul li{
+        border-bottom: 1px solid var(--gs5);
+        line-height: 65px;
+    }
+    .newContainer div:nth-child(2) ul li a{
+        /* position: relative; */
+    }
+    .newContainer div:nth-child(2) ul li a span:first-child{
+        vertical-align: middle;
+    }
+    .newContainer div:nth-child(2) ul li a span:nth-child(2){
+        display: none;
+    }
+    .newContainer div:nth-child(2) ul li a strong{
+        /* position: absolute;
+        top: 1px;
+        left: 35px; */
+    }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / 10px 10px;
-        width: 10%;
-        padding-left: 25px;
+        display: block;
+        line-height: 20px;
+        padding-left: 20px;
         color: var(--gs10);
     }
     .newContainer .paging{
@@ -5421,6 +5416,10 @@ div .everContainer nav div ol li a:hover{
         display: block;
         width: 200px;
     }
+    .indexContainer .contentBanner01 div p{
+        display: inline-block;
+        line-height: 25px;
+    }
     .indexContainer .contentBanner01>div>a{
         background: url('../images/maincon01_more.png') no-repeat center bottom / contain;
         display: inline-block;
@@ -5467,7 +5466,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type{
         position: relative;
         width: 100%;
-        padding: 40px 3.125% 0 3.125%;
+        padding: 40px 3.125% 0;
         box-sizing: border-box;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2{
@@ -5777,6 +5776,15 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--gs1);
         padding: 24px 0;
     }
+    div .everContainer nav div ol li:not(:last-child){
+        display: block;
+        margin-bottom: 20px;
+    }
+    div .everContainer nav div ol li a{
+        color: var(--gs7);
+        display: block;
+        width: 100%;
+    }
     div .everContainer nav div ol li{
         padding-left: 23px;
     }
@@ -5800,6 +5808,24 @@ div .everContainer nav div ol li a:hover{
     }
     .newContainer div:nth-child(2) h3+ul{
         margin-bottom: 110px;
+    }
+    .newContainer div:nth-child(2) h3+ul li{
+        border-bottom: 1px solid var(--gs5);
+        line-height: 55px;
+    }
+    .newContainer div:nth-child(2) ul li a{
+        display: flex;
+    }
+    .newContainer div:nth-child(2) ul li a span:first-child{
+        width: 5%;
+        padding-left: 30px;
+    }
+    .newContainer div:nth-child(2) ul li a span:nth-child(2){
+        width: 15%;
+        color: var(--gs9);
+    }
+    .newContainer div:nth-child(2) ul li a strong{
+        width: 70%;
     }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / 10px 10px;
@@ -9660,6 +9686,9 @@ div .everContainer nav div ol li a:hover{
         padding: 0 24px;
         box-sizing: border-box;
     }
+    #wrap .contentBanner03{
+        width: 100%;
+    }
     .experContainer article h3,
     .comuContainer div:nth-child(2) h3{
         text-align: center;
@@ -9733,6 +9762,10 @@ div .everContainer nav div ol li a:hover{
         display: block;
         width: 325px;
         margin-right: 40px;
+    }
+    .indexContainer .contentBanner01 div p{
+        display: inline-block;
+        line-height: 25px;
     }
     .indexContainer .contentBanner01>div>a{
         background: url('../images/maincon01_more.png') no-repeat center bottom;
@@ -10072,6 +10105,15 @@ div .everContainer nav div ol li a:hover{
     div .everContainer nav div ol{
         display: none;
     }
+    div .everContainer nav div ol li:not(:last-child){
+        display: block;
+        margin-bottom: 20px;
+    }
+    div .everContainer nav div ol li a{
+        color: var(--gs7);
+        display: block;
+        width: 100%;
+    }
     div .everContainer nav div:first-of-type ol{
         position: absolute;
         width: 100%;
@@ -10108,6 +10150,24 @@ div .everContainer nav div ol li a:hover{
     }
     .newContainer div:nth-child(2) h3+ul{
         margin-bottom: 125px;
+    }
+    .newContainer div:nth-child(2) h3+ul li{
+        border-bottom: 1px solid var(--gs5);
+        line-height: 55px;
+    }
+    .newContainer div:nth-child(2) ul li a{
+        display: flex;
+    }
+    .newContainer div:nth-child(2) ul li a span:first-child{
+        width: 5%;
+        padding-left: 30px;
+    }
+    .newContainer div:nth-child(2) ul li a span:nth-child(2){
+        width: 15%;
+        color: var(--gs9);
+    }
+    .newContainer div:nth-child(2) ul li a strong{
+        width: 70%;
     }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / contain;

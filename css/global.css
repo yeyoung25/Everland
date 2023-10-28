@@ -158,7 +158,7 @@ footer div details summary.on::after{
         align-items: center;
     }
     header div .ect_btn a:last-of-type{
-        background: url('../images/headerRes.png') no-repeat 14px center / 28px 29px;
+        background: url('../images/headerRes.png') no-repeat 12px center / 28px 29px;
         background-color: var(--vs7);
         text-shadow: none;
         line-height: 55px;
@@ -216,7 +216,7 @@ footer div details summary.on::after{
         transition-duration: 0.2s;
     }
     header #fnbPanel ul{
-        padding: 0 2%;
+        padding: 0 3.571%;
     }
     header #fnbPanel ul>li{
         display: block;
@@ -331,18 +331,18 @@ footer div details summary.on::after{
         font-size: 12px;
         line-height: 40px;
         text-align: left;
-        margin-left: 2%;
+        margin-left: 3.571%;
     }
     footer>ul li>a{
         color: var(--gs1);
         line-height: 40px;
         font-size: 10px;
         text-align: right;
-        margin-right: 2%;
+        margin-right: 3.571%;
     }
     footer>div{
         height: 400px;
-        padding: 15px 2% 0;
+        padding: 15px 3.571% 0;
         box-sizing: border-box;
     }
     footer div div h2{
