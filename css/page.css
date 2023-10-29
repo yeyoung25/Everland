@@ -120,13 +120,6 @@ div .everContainer nav div ol li a:hover{
     width: 12px;
 }
 /* newNotice Fin */
-.newContainer article div h4 time{
-    color: var(--gs7);
-    background: url('../images/newdetD_calendar.png') no-repeat left / contain;
-    padding-left: 20px;
-    background-size: 11px;
-    line-height: 27px;
-}
 .newContainer article div figure img{
     width: 100%;
 }
@@ -952,7 +945,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .banslider li strong{
         position: absolute;
         top: 30%;
-        left: 8.928%;
+        left: 25px;
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
@@ -986,7 +979,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .banslider li h2{
         position: absolute;
         top: 34.2%;
-        left: 8.928%;
+        left: 25px;
         font-family: 'Lato';
         font-weight: 700;
     }
@@ -1002,7 +995,7 @@ div .everContainer nav div ol li a:hover{
         width: auto;
         font-family: 'Open Sans';
         top: 46%;
-        left: 8.928%;
+        left: 25px;
         color: var(--gs1);
         padding: 0;
         height: 5%;
@@ -1019,13 +1012,14 @@ div .everContainer nav div ol li a:hover{
     .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
         background: url('../images/mainBanL.png') no-repeat top / contain;
         left: 29.642%;
+        left: 83px;
         z-index: 100;
         width: 19px;
         height: 22px;
     }
     .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
         background: url('../images/mainBanR.png') no-repeat top / contain;
-        left: 42.857%;
+        left: 120px;
         z-index: 100;
         width: 19px;
         height: 22px;
@@ -1036,7 +1030,7 @@ div .everContainer nav div ol li a:hover{
         content: '';
         border-left: 6px solid var(--vs7);
         top: 30%;
-        left: 3.571%;
+        left: 10px;
         height: 45px;
         font-size: 12px;
     }
@@ -1124,7 +1118,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type p{
         color: var(--gs9);
         line-height: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:last-of-type{
         width: 100%;
@@ -1132,7 +1126,6 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div ul li{
         width: 100%;
-        /* height: 600px; */
     }
     .indexContainer .contentBanner02>div ul li img{
         width: 100%;
@@ -1143,17 +1136,18 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction a{
         width: 25px;
-        height: 9px;
+        height: 8px;
+        top: 184px;
         top: 205px;
         margin: 0;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/mobilecon02pre.png') no-repeat center / contain;
-        left: 3.125%;
+        left: 3.571%;
     }
     .indexContainer .contentBanner02>div:first-of-type .bx-wrapper .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/mobilecon02next.png') no-repeat center / contain;
-        left: 8.984%;
+        left: 19.642%;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type ol,
     .indexContainer .contentBanner02>div:nth-child(2) div:nth-child(2) ol{
@@ -1273,17 +1267,17 @@ div .everContainer nav div ol li a:hover{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        padding-top: 4px;
-        font-size: 13px;
+        padding: 4px 0 1px;
+        font-size: 12px;
     }
     .indexContainer .contentBanner03>div:first-child ul li:not(:nth-child(-n+2)){
         display: none;
     }
     .indexContainer .contentBanner03>div:first-child ul li time{
-        font-size: 13px;
+        font-size: 12px;
     }
-    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) a,
-    .indexContainer .contentBanner03>div:first-child ul li:not(:last-child) time{
+    .indexContainer .contentBanner03>div:first-child ul li:not(:nth-child(2)) a,
+    .indexContainer .contentBanner03>div:first-child ul li:not(:nth-child(2)) time{
         margin-bottom: 10px;
     }
     .indexContainer .contentBanner03>div:nth-child(2) ul li a{
@@ -1312,7 +1306,7 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         bottom: 0;
         left: 50%;
-        width: 92.858%;
+        width: 260px;
         transform: translate(-50%,0%);
         background-color: var(--os3);
         opacity: 0.94;
@@ -1329,7 +1323,7 @@ div .everContainer nav div ol li a:hover{
         display: inline-block;
         border: 1px solid var(--gs1);
         background: none;
-        margin-left: 20px;
+        margin-left: 19px;
         color: var(--gs1);
         padding: 5px 10px;
         vertical-align: text-bottom;
@@ -1438,7 +1432,7 @@ div .everContainer nav div ol li a:hover{
     .experContainer article h3,
     .trafContainer div:nth-child(2) h3,
     .newContainer article h3{
-        padding: 55px 0;
+        padding: 40px 0;
         text-align: center;
     }
     .newContainer div:nth-child(2) h3+ul{
@@ -1449,10 +1443,9 @@ div .everContainer nav div ol li a:hover{
         line-height: 65px;
     }
     .newContainer div:nth-child(2) ul li a{
-        display: flex;
+        display: grid;
     }
     .newContainer div:nth-child(2) ul li a span:first-child{
-        display: flex;
         width: 5%;
         flex-direction: column;
         justify-content: center;
@@ -1462,9 +1455,7 @@ div .everContainer nav div ol li a:hover{
         display: none;
     }
     .newContainer div:nth-child(2) ul li a strong{
-        display: flex;
         width: 100%;
-        
         margin-left: 20px;
     }
     .newContainer div:nth-child(2) ul li a time{
@@ -1484,22 +1475,30 @@ div .everContainer nav div ol li a:hover{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 25px;
+        padding-bottom: 15px;
         border-bottom: 1px solid var(--gs5);
+        align-items: center;
     }
     .newContainer article div h4 small{
-        width: 100%;
-        display: block;
-        margin-bottom: 15px;
-        color: var(--gs9);
+        display: none;
     }
     .newContainer article div h4 b{
-        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .newContainer article div h4 time{
+        background: url('../images/newdetD_calendar.png') no-repeat left / 11px 10px;
+        margin-left: auto;
+        padding-left: 15px;
+        color: var(--gs7);
     }
     .newContainer article div figure{
         display: inline-block;
         text-align: center;
-        padding: 30px 0 55px;
+        padding: 20px 0 25px;
     }
     .newContainer article .innerPager{
         display: flex;
@@ -1526,12 +1525,13 @@ div .everContainer nav div ol li a:hover{
         text-align: right;
     }
     .newContainer article .innerPager li:nth-child(2) a{
-        background: url('../images/newdetD_list.png') no-repeat 25px center / 11px 11px;
+        background: url('../images/newdetD_list.png') no-repeat 15px center / 11px 11px;
         display: inline-block;
         background-color: var(--vs8);
         color: var(--gs1);
-        padding: 0px 35px 0px 50px;
-        line-height: 40px;
+        padding: 0px 17px 0px 37px;
+        line-height: 30px;
+        font-weight: 600;
     }
     .newContainer article .innerPager li a span,
     .newContainer article .innerPager li a strong{
@@ -5858,6 +5858,12 @@ div .everContainer nav div ol li a:hover{
     }
     .newContainer article div h4 b{
         font-size: 16px;
+    }
+    .newContainer article div h4 time{
+        color: var(--gs7);
+        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
+        padding: 2px 0 0 20px;
+        margin-left: auto;
     }
     .newContainer article div figure{
         display: inline-block;
@@ -10199,6 +10205,12 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin-bottom: 30px;
         color: var(--gs9);
+    }
+    .newContainer article div h4 time{
+        color: var(--gs7);
+        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
+        padding: 2px 0 0 20px;
+        margin-left: auto;
     }
     .newContainer article div figure{
         padding: 30px 25px 100px;
