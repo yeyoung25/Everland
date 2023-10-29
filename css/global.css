@@ -199,21 +199,22 @@ footer div details summary.on::after{
         left: 16px;
     }
     header div .menuBar.toggle span:first-child{
-        transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-5.5px, 6px);
     }
     header div .menuBar.toggle span:last-child{
-        transform: rotate(45deg) translate(-6.5px, -8.5px);
+        transform: rotate(45deg) translate(-6.5px, -7.5px);
     }
     header #fnbPanel{
         display: none;
         width: 100%;
         opacity: 0.95;
-        height: calc(100vh - 55px);
+        height: calc(100vh - 50px);
         overflow-y: scroll;
         background-color: var(--gs1);
         top: 55px;
         padding-top: 35px;
         transition-duration: 0.2s;
+        box-sizing: border-box;
     }
     header #fnbPanel ul{
         padding: 0 3.571%;

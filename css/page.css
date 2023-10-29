@@ -993,6 +993,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner01{
         margin: 45px 0 105px;
         padding-left: 3.571%;
+        box-sizing: border-box;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
         font-size: 22px;
@@ -1047,6 +1048,7 @@ div .everContainer nav div ol li a:hover{
         width: 97%;
         margin-bottom: 30px;
         padding-right: 3.571%;
+        box-sizing: border-box;
     }
     .indexContainer .contentBanner01 .carouselWay4 li{
         width: 200px !important;
