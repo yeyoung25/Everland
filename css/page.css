@@ -1450,18 +1450,23 @@ div .everContainer nav div ol li a:hover{
         line-height: 65px;
     }
     .newContainer div:nth-child(2) ul li a{
-        /* position: relative; */
+        display: flex;
     }
     .newContainer div:nth-child(2) ul li a span:first-child{
-        vertical-align: middle;
+        display: flex;
+        width: 5%;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 53px;
     }
     .newContainer div:nth-child(2) ul li a span:nth-child(2){
         display: none;
     }
     .newContainer div:nth-child(2) ul li a strong{
-        /* position: absolute;
-        top: 1px;
-        left: 35px; */
+        display: flex;
+        width: 100%;
+        
+        margin-left: 20px;
     }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / 10px 10px;

@@ -208,11 +208,11 @@ footer div details summary.on::after{
         display: none;
         width: 100%;
         opacity: 0.95;
-        max-height: calc(100vh - 60px);
-        overflow: scroll;
+        height: calc(100vh - 55px);
+        overflow-y: scroll;
         background-color: var(--gs1);
-        top: 60px;
-        padding: 35px 0 500px;
+        top: 55px;
+        padding-top: 35px;
         transition-duration: 0.2s;
     }
     header #fnbPanel ul{
