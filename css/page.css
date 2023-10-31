@@ -340,18 +340,16 @@ div .everContainer nav div ol li a:hover{
 .experContainer div:nth-child(2) ul{
     position: relative;
 }
-.experContainer div:nth-child(2) ul li:hover::after{
-    filter: brightness(0.5);
-    transform: scale(1.1);
-}
 .experContainer div:nth-child(2) ul li:first-child::after{
     background-image: url('../images/experience_lost.png');
 }
 .experContainer div:nth-child(2) ul li:nth-child(2)::after{
     background-image: url('../images/experience_safari.png');
+    background-position: 10%;
 }
 .experContainer div:nth-child(2) ul li:last-child::after{
     background-image: url('../images/experience_texpress.png');
+    background-position: 30%;
 }
 .experContainer div:nth-child(2) ul li:nth-child(2) strong{
     color: var(--rs1);
@@ -1053,7 +1051,6 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager{
         display: flex;
-        flex-direction: column-reverse;
         width: 96.875%;
         padding: 0;
         bottom: -55px;
@@ -1064,6 +1061,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:first-of-type{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column-reverse;
         margin-bottom: 70px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type,
@@ -1549,7 +1547,7 @@ div .everContainer nav div ol li a:hover{
     .howContainer .detail_contents div dl dt{
         background: url('../images/how_text.png') no-repeat left / 8px 8px;
         background-position: 2% 7px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-left: 25px;
         line-height: 22px;
         font-size: 14px;
@@ -1591,11 +1589,15 @@ div .everContainer nav div ol li a:hover{
     .howContainer .detail_contents div .safetyBox ul li:first-child p{
         color: var(--gs1);
         line-height: 16px;
+    }
+    .howContainer .detail_contents div .safetyBox ul li:first-child{
         margin-bottom: 25px;
     }
     .howContainer .detail_contents div .safetyBox ul li:last-child p{
         color: var(--gs1);
         line-height: 16px;
+    }
+    .howContainer .detail_contents div .safetyBox ul li:last-child{
         margin-bottom: 35px;
     }
     .howContainer .detail_contents div .safetyBox div a,
@@ -2195,13 +2197,12 @@ div .everContainer nav div ol li a:hover{
         align-items: center;
         font-size: 14px;
     }
+    .usagContainer div:nth-child(2) table+div ul li p{
+        line-height: 18px;
+    }
     .usagContainer div:nth-child(2) table+div ul li p span{
         display: block;
         margin-top: 20px;
-        font-size: 10px;
-    }
-    .usagContainer div:nth-child(2) table+div ul li p{
-        line-height: 18px;
         font-size: 10px;
     }
     .usagContainer div:nth-child(2) table+div ul li p:not(:last-child){
@@ -2296,13 +2297,14 @@ div .everContainer nav div ol li a:hover{
     .affContainer div:nth-child(2) div ul li,
     .affContainer div:nth-child(2) div ul li>dl{
         font-weight: 400;
+        line-height: 16px;
     }
     .affContainer div:nth-child(2) div ul li:not(:last-child){
         margin-bottom: 10px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .affContainer div:nth-child(2) div ul li:nth-child(3){
-        line-height: 18px;
+        line-height: 16px;
     }
     .affContainer div:nth-child(2)>ul:first-of-type li{
         color: var(--gs8);
@@ -2313,36 +2315,38 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 10px;
     }
     .affContainer div:nth-child(2)>img{
+        content: url('../images/thessencard_m.png');
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .affContainer div:nth-child(2) div{
         position: relative;
         background-color: rgba(255, 113, 5, 0.2);
         border-radius: 10px;
-        padding: 50px 15px;
+        padding: 55px 15px 15px;
         margin: 50px 0 85px;
     }
     .affContainer div:nth-child(2) div p:first-child::before{
-        background: url('../images/aff_caution.png') no-repeat center;
+        background: url('../images/aff_caution.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 48px;
-        height: 48px;
+        width: 26px;
+        height: 26px;
         position: absolute;
-        top: 55px;
-        left: 50px;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
     }
     .affContainer div:nth-child(2) div p:first-child{
-        width: 81.129%;
-        margin-left: auto;
-        font-size: 14px;
-        line-height: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .affContainer div:nth-child(2) div p:last-of-type,
     .affContainer div:nth-child(2) div p:last-of-type a{
         text-align: center;
-        margin: 30px auto 30px;
+        margin: 0 auto 30px;
         color: var(--gs9);
     }
     .affContainer div:nth-child(2) div ul li dl dt{
@@ -2351,14 +2355,14 @@ div .everContainer nav div ol li a:hover{
     }
     .affContainer div:nth-child(2) div ul li dl dd{
         padding-left: 15px;
-        line-height: 18px;
+        line-height: 16px;
     }
     .affContainer div:nth-child(2) div ul li dl dd:not(:last-child){
         margin-bottom: 5px;
     }
     .affContainer div:nth-child(2)>ul:last-child{
         width: 100%;
-        max-width: 768px;
+        max-width: 260px;
         box-sizing: border-box;
         margin: 0 auto;
     }
@@ -2381,7 +2385,7 @@ div .everContainer nav div ol li a:hover{
     /* affiliateCard Fin */
     .speContainer div:nth-child(2) h3+div div{
         height: 155px;
-        margin: 50px 0;
+        /* margin: 50px 0; */
     }
     .speContainer div:nth-child(2) h3+div div:first-child{
         background: url('../images/specialEverland.png') no-repeat center / contain;
@@ -2658,7 +2662,7 @@ div .everContainer nav div ol li a:hover{
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3){
         position: relative;
-        width: 23.84%;
+        width: 48%;
         height: 187px;
         border-radius: 20px;
         border: 3px solid rgba(98, 24, 102, 0.3);
@@ -2727,7 +2731,7 @@ div .everContainer nav div ol li a:hover{
         position: relative;
         width: 100%;
         height: 400px;
-        padding: 60px 24px 0;
+        padding: 160px 0 0;
         overflow: hidden;
         box-sizing: border-box;
         filter: brightness(1);
@@ -2747,41 +2751,44 @@ div .everContainer nav div ol li a:hover{
         transition: all 1.2s;
         z-index: -1;
     }
+    .experContainer div:nth-child(2) ul li:hover::after{
+        filter: brightness(0.3);
+    }
     .experContainer div:nth-child(2) ul li strong{
         display: block;
         margin-bottom: 25px;
         z-index: 100;
     }
     .experContainer div:nth-child(2) ul li p{
-        width: 50.212%;
-    }
-    .experContainer div:nth-child(2) ul li p:not(:last-of-type){
-        margin-bottom: 20px;
+        display: none;
     }
     .experContainer div:nth-child(2) ul li a{
-        background: url('../images/exper_go.png') no-repeat 65px center / 14px 9px;
+        background: url('../images/exper_go.png') no-repeat 60px center / 14px 9px;
         display: block;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%);
         width: 20px;
         margin-left: auto;
         color: var(--gs1);
         border: 2px solid var(--gs1);
         padding: 5px 45px 5px 30px;
+        line-height: 19px;
         font-size: 12px;
-        position: absolute;
-        bottom: 40px;
-        right: 75px;
     }
     .experContainer div:nth-child(2) ul li:first-child strong,
     .experContainer div:nth-child(2) ul li:nth-child(2) strong,
     .experContainer div:nth-child(2) ul li:last-child strong{
         font-size: 18px;
+        text-align: center;
     }
     .experContainer div:nth-child(2) ul li:first-child strong{
         color: var(--os1);
-        margin-left: 49.290%;
+        text-align: center;
     }
     .experContainer div:nth-child(2) ul li:first-child p{
-        margin-left: 49.290%;
+        display: none;
     }
     .experContainer div:nth-child(2) ul li p{
         color: var(--gs1);
@@ -2789,10 +2796,7 @@ div .everContainer nav div ol li a:hover{
     }
     .experContainer div:nth-child(2) ul li:last-child strong{
         color: var(--vs3);
-        margin-left: 49.290%;
-    }
-    .experContainer div:nth-child(2) ul li:last-child p{
-        margin-left: 49.290%;
+        text-align: center;
     }
     /* experienceProgram Fin */
     .experContainer article div h4{
@@ -7150,6 +7154,10 @@ div .everContainer nav div ol li a:hover{
         transition: all 1.2s;
         z-index: -1;
     }
+    .experContainer div:nth-child(2) ul li:hover::after{
+        filter: brightness(0.5);
+        transform: scale(1.1);
+    }
     .experContainer div:nth-child(2) ul li strong{
         display: block;
         margin-bottom: 25px;
@@ -11444,6 +11452,10 @@ div .everContainer nav div ol li a:hover{
         right: 0;
         transition: all 1.2s;
         z-index: -1;
+    }
+    .experContainer div:nth-child(2) ul li:hover::after{
+        filter: brightness(0.5);
+        transform: scale(1.1);
     }
     .experContainer div:nth-child(2) ul li strong{
         display: block;
