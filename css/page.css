@@ -225,11 +225,6 @@ div .everContainer nav div ol li a:hover{
     display: block;
     clear: both;
 }
-.amanContainer div:nth-child(2) ul li dl dd::before{
-    content: '-';
-    display: block;
-    margin-right: 5px;
-}
 /* amenities Fin */
 .guidContainer div:nth-child(2) h3{
     margin-bottom: 55px;
@@ -278,9 +273,6 @@ div .everContainer nav div ol li a:hover{
 .usagContainer div:nth-child(2) table+div{
     clear: both;
 }
-.usagContainer div:nth-child(2) table+div ul li p{
-    margin-left: 15px;
-}
 .usagContainer div:nth-child(2) table+div ul li:first-child strong{
     color: var(--os1);
 }
@@ -320,9 +312,6 @@ div .everContainer nav div ol li a:hover{
     color: var(--gs11);
 }
 /* affiliateCard Fin */
-.speContainer div:nth-child(2) h3+div{
-    display: flex;
-}
 .speContainer div:nth-child(2) h3+div div:first-child p,
 .speContainer div:nth-child(2) h3+div div:first-child p strong,
 .speContainer div:nth-child(2) h3+div div:first-child b{
@@ -1064,6 +1053,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>.bx-pager{
         display: flex;
+        flex-direction: column-reverse;
         width: 96.875%;
         padding: 0;
         bottom: -55px;
@@ -1099,7 +1089,6 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type>div:last-of-type{
         width: 100%;
-        order: -1;
     }
     .indexContainer .contentBanner02>div ul li{
         width: 100%;
@@ -1348,23 +1337,24 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
     }
     div .everContainer nav div input{
+        width: 80%;
         color: var(--gs11);
         background-color: transparent;
         border: none;
         line-height: 35px;
-        /* padding: 0 0 0 23px; */
+        text-align: left;
         font-family: 'Open Sans';
         font-weight: 600;
         font-size: 10px;
     }
     div .everContainer nav div:first-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
+        background: url('../images/det_nav.png') no-repeat center / 8px 5px;
         position: absolute;
         right: 10px;
         top: 14px;
     }
     div .everContainer nav div:last-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
+        background: url('../images/det_nav.png') no-repeat center / 8px 5px;
         position: absolute;
         right: 10px;
         top: 14px;
@@ -1392,7 +1382,7 @@ div .everContainer nav div ol li a:hover{
         font-size: 10px;
     }
     div .everContainer nav div ol li{
-        padding-left: 10px;
+        padding: 0 10px;
     }
     .newContainer .paging>ol>li>a{
         font-size: 16px;
@@ -1417,18 +1407,15 @@ div .everContainer nav div ol li a:hover{
     }
     .newContainer div:nth-child(2) h3+ul li{
         border-bottom: 1px solid var(--gs5);
-        /* line-height: 65px; */
     }
     .newContainer div:nth-child(2) ul li a{
-        /* display: grid; */
+        display: block;
+        padding: 10px 0;
     }
     .newContainer div:nth-child(2) ul li a span:first-child{
-        /* width: 5%;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 53px; */
         display: inline-block;
-
+        vertical-align: top;
+        line-height: 20px;
     }
     .newContainer div:nth-child(2) ul li a span:nth-child(2){
         display: none;
@@ -1436,7 +1423,8 @@ div .everContainer nav div ol li a:hover{
     .newContainer div:nth-child(2) ul li a strong{
         display: inline-block;
         width: 80%;
-        margin: 15px 0 0 20px;
+        margin-left: 20px;
+        line-height: 16px;
     }
     .newContainer div:nth-child(2) ul li a time{
         background: url('../images/newdet_calendar.png') no-repeat left / 10px 10px;
@@ -1444,7 +1432,7 @@ div .everContainer nav div ol li a:hover{
         line-height: 20px;
         padding-left: 20px;
         color: var(--gs10);
-        margin: 15px 0 15px 40px;
+        margin: 5px 0 0 35px;
     }
     .newContainer .paging{
         display: flex;
@@ -1539,7 +1527,7 @@ div .everContainer nav div ol li a:hover{
     .howContainer .detail_contents div>.imgBox h4{
         position: absolute;
         left: 10px;
-        top: 180px;
+        top: 150px;
         color: var(--gs1);
         line-height: 25px;
         text-align: left;
@@ -1562,8 +1550,8 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/how_text.png') no-repeat left / 8px 8px;
         background-position: 2% 7px;
         margin-bottom: 20px;
-        padding-left: 20px;
-        line-height: 20px;
+        padding-left: 25px;
+        line-height: 22px;
         font-size: 14px;
     }
     .howContainer .detail_contents div dl dd{
@@ -1578,9 +1566,9 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/how_text.png') no-repeat left / 8px 8px;
         background-position: 2% 7px;
         margin-bottom: 55px;
-        padding-left: 20px;
+        padding-left: 25px;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 22px;
         text-align: left;
     }
     .howContainer .detail_contents div dl:last-of-type{
@@ -1674,12 +1662,12 @@ div .everContainer nav div ol li a:hover{
         font-size: 14px;
     }
     #handicappedPopUp div .closemodel{
-        background: url('../images/how_pre.png') no-repeat center;
-        width: 18px;
-        height: 18px;
+        background: url('../images/how_pre.png') no-repeat center / 15px 15px;
+        width: 15px;
+        height: 15px;
         position: absolute;
         right: 15px;
-        top: 25px;
+        top: 20px;
         background-color: transparent;
         font-size: 0;
         border: none;
@@ -1859,11 +1847,15 @@ div .everContainer nav div ol li a:hover{
         border-bottom: 1px solid var(--gs11);
         position: relative;
         width: 25%;
+        height: 35px;
         text-align: center;
         line-height: 16px;
         color: var(--gs5);
         box-sizing: border-box;
         font-size: 10px;
+    }
+    .trafContainer div:nth-child(2) ul li:nth-child(2){
+        padding-top: 8px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li strong{
         display: block;
@@ -1876,11 +1868,19 @@ div .everContainer nav div ol li a:hover{
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt,
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child b{
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         line-height: 18px;
         font-size: 12px;
     }
-    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before,
+    .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 0px;
+        margin-right: 2px;
+        transform: scale(0.6);
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before,
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2):before,
     .trafContainer div:nth-child(2) .byCar dl dt::before,
     .trafContainer div:nth-child(2) .byCar figure figcaption::before,
@@ -1888,17 +1888,9 @@ div .everContainer nav div ol li a:hover{
         display: inline-block;
         content: '▶';
         font-size: 10px;
-        line-height: 5px;
-        margin-right: 5px;
-        transform: scale(0.7);
-    }
-    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before{
-        display: inline-block;
-        content: '▶';
-        font-size: 10px;
         line-height: 17px;
         margin-right: 5px;
-        transform: scale(0.7);
+        transform: scale(0.6);
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child{
         margin-bottom: 55px;
@@ -1912,11 +1904,14 @@ div .everContainer nav div ol li a:hover{
     .trafContainer div:nth-child(2) .publicTransport ol li:first-child dl dd:not(:last-child){
         margin-bottom: 5px;
     }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
+        margin-left: 5px;
+    }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl:not(:last-of-type){
-        margin: 0 0 20px 10px;
+        margin-bottom: 20px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         font-size: 12px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li dl dd{
@@ -1927,67 +1922,90 @@ div .everContainer nav div ol li a:hover{
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
         display: flex;
         margin: 50px 0 15px;
-        font-size: 14px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
-        margin-top: 50px;
+        margin-top: 55px;
     }
     .trafContainer div:nth-child(2) .byCar dl{
         margin-bottom: 50px;
     }
     .trafContainer div:nth-child(2) .byCar dl dt{
-        margin-bottom: 20px;
         display: flex;
+        margin-bottom: 15px;
+        line-height: 18px;
     }
     .trafContainer div:nth-child(2) .byCar dl dd{
         color: var(--gs8);
+        line-height: 16px;
+        font-size: 10px;
     }
     .trafContainer div:nth-child(2) .byCar dl dd:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .trafContainer div:nth-child(2) .byCar figure{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+        overflow-x: scroll;
+        white-space:nowrap;
+    }
+    .trafContainer div:nth-child(2) .byCar figure fi{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        overflow-x: scroll;
+        white-space:nowrap;
     }
     .trafContainer div:nth-child(2) .byCar figure figcaption{
         display: flex;
         margin-bottom: 20px;
+        line-height: 18px;
+    }
+    .trafContainer div:nth-child(2) .byCar figure img{
+        width: 600px;
+        height: 413px;
+        overflow-x: scroll;
     }
     .trafContainer div:nth-child(2) .kakaoT b{
         display: block;
         margin-bottom: 35px;
+        font-size: 16px;
     }
     .trafContainer div:nth-child(2) .kakaoT b:first-child{
         display: block;
         color: var(--os1);
-        margin-bottom: 30px;
-        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 22px;
+        font-size: 16px;
     }
     .trafContainer div:nth-child(2) .kakaoT span{
         display: inline-block;
-        margin-left: 30px;
-        font-size: 14px;
+        margin-left: 10px;
+        font-size: 12px;
     }
     .trafContainer div:nth-child(2) .kakaoT p{
         display: block;
         color: var(--gs8);
         width: 78.546%;
-        line-height: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 75px;
+        line-height: 16px;
+        font-size: 10px;
     }
     .trafContainer div:nth-child(2) .kakaoT dl:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 55px;
     }
     .trafContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     .trafContainer div:nth-child(2) .kakaoT dl dt{
-        margin-bottom: 30px;
-        font-size: 16px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
     .trafContainer div:nth-child(2) .kakaoT dl dd{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 16px;
     }
     .trafContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
         margin-bottom: 15px;
@@ -1998,18 +2016,22 @@ div .everContainer nav div ol li a:hover{
     .trafContainer div:nth-child(2) .regularBus dl dt{
         display: flex;
         margin-bottom: 20px;
+        line-height: 18px;
         font-size: 14px;
     }
     .trafContainer div:nth-child(2) .regularBus dl dd{
-        line-height: 18px;
+        line-height: 16px;
         color: var(--gs9);
+        font-size: 10px;
     }
     .trafContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .trafContainer div:nth-child(2) .regularBus b{
         display: block;
         margin-bottom: 50px;
+        line-height: 20px;
+        font-size: 14px;
     }
     
     /* trafficReport Fin */
@@ -2032,13 +2054,19 @@ div .everContainer nav div ol li a:hover{
     }
     .amanContainer div:nth-child(2) ul li dl dt{
         margin-bottom: 15px;
+        line-height: 20px;
         font-size: 14px;
     }
     .amanContainer div:nth-child(2) ul li dl dd{
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         line-height: 18px;
         color: var(--gs8);
+    }
+    .amanContainer div:nth-child(2) ul li dl dd::before{
+        /* content: '-';
+        display: block;
+        margin-right: 5px; */
     }
     .amanContainer div:nth-child(2) ul li dl dd:not(:last-of-type){
         margin-bottom: 10px;
@@ -2084,7 +2112,8 @@ div .everContainer nav div ol li a:hover{
     /* guideMap Fin */
     .usagContainer div:nth-child(2) h3+strong{
         display: block;
-        margin: 50px 0 20px;
+        margin: 30px 0 20px;
+        font-size: 18px;
     }
     .usagContainer div:nth-child(2) table caption{
         font-size: 0;
@@ -2113,7 +2142,7 @@ div .everContainer nav div ol li a:hover{
         content: '';
         width: 5px;
         height: 8px;
-        padding-right: 15px;
+        padding-right: 5px;
     }
     .usagContainer div:nth-child(2)>strong a{
         display: inline-block;
@@ -2131,7 +2160,7 @@ div .everContainer nav div ol li a:hover{
         line-height: 40px;
     }
     .usagContainer div:nth-child(2) table tr:last-child td:last-child{
-        padding: 20px 65px;
+        padding: 10px 15px;
         line-height: 18px;
     }
     .usagContainer div:nth-child(2) table+div ul li strong::before{
@@ -2144,30 +2173,36 @@ div .everContainer nav div ol li a:hover{
     .usagContainer div:nth-child(2) table+div>strong{
         display: block;
         margin-bottom: 25px;
+        font-size: 18px;
     }
     .usagContainer div:nth-child(2) table+div>strong a{
         display: inline-block;
         color: var(--os1);
         margin-left: 3.546%;
         vertical-align: middle;
-        line-height: 18px;
+        line-height: 16px;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) table+div ul{
         margin-bottom: 55px;
     }
     .usagContainer div:nth-child(2) table+div ul li:not(:last-child){
-        margin-bottom: 50px;
+        margin-bottom: 55px;
     }
     .usagContainer div:nth-child(2) table+div ul li strong{
         display: flex;
         margin-bottom: 20px;
         align-items: center;
+        font-size: 14px;
     }
     .usagContainer div:nth-child(2) table+div ul li p span{
-        margin-left: 15px;
+        display: block;
+        margin-top: 20px;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) table+div ul li p{
         line-height: 18px;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) table+div ul li p:not(:last-child){
         margin-bottom: 10px;
@@ -2178,9 +2213,11 @@ div .everContainer nav div ol li a:hover{
     .usagContainer div:nth-child(2) div:nth-of-type(2) strong{
         display: block;
         margin-bottom: 20px;
+        font-size: 18px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) p{
-        line-height: 18px;
+        line-height: 16px;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) p:not(:last-child){
         margin-bottom: 10px;
@@ -2190,6 +2227,7 @@ div .everContainer nav div ol li a:hover{
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
         line-height: 18px;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li:not(:last-child){
         margin-bottom: 10px;
@@ -2197,6 +2235,7 @@ div .everContainer nav div ol li a:hover{
     .usagContainer div:nth-child(2) div:nth-of-type(3)>strong{
         display: block;
         margin-bottom: 20px;
+        font-size: 18px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3) p{
         margin-bottom: 10px;
@@ -2210,16 +2249,16 @@ div .everContainer nav div ol li a:hover{
         width: 100%;
         box-sizing: border-box;
         border-radius: 10px;
-        padding: 30px;
+        padding: 15px 15px 50px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3) div strong{
         display: block;
         margin-bottom: 15px;
-        font-size: 12px;
         line-height: 18px;
+        font-size: 12px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3) div ul:not(:last-of-type){
-        margin-bottom: 30px;
+        margin-bottom: 55px;
     }
     .usagContainer div:nth-child(2) div:nth-of-type(3) div ul li{
         line-height: 16px;
@@ -2248,8 +2287,8 @@ div .everContainer nav div ol li a:hover{
     /* usageFee Fin */
     .affContainer div:nth-child(2)>strong{
         display: block;
-        margin: 50px 0 30px 0;
-        font-size: 16px;
+        margin: 30px 0 25px 0;
+        font-size: 14px;
     }
     .affContainer div:nth-child(2)>ul:first-of-type{
         margin-bottom: 30px;
@@ -2268,6 +2307,7 @@ div .everContainer nav div ol li a:hover{
     .affContainer div:nth-child(2)>ul:first-of-type li{
         color: var(--gs8);
         line-height: 18px;
+        font-size: 10px;
     }
     .affContainer div:nth-child(2)>ul:first-of-type li:not(:last-child){
         margin-bottom: 10px;
@@ -2317,18 +2357,15 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 5px;
     }
     .affContainer div:nth-child(2)>ul:last-child{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         width: 100%;
         max-width: 768px;
         box-sizing: border-box;
         margin: 0 auto;
     }
     .affContainer div:nth-child(2)>ul:last-child li{
-        width: 43%;
         box-sizing: border-box;
-        margin-bottom: 75px;
+        /* max-width: 50%; */
+        margin: 0 auto 75px;
     }
     .affContainer div:nth-child(2)>ul:last-child li img{
         display: block;
@@ -2338,19 +2375,18 @@ div .everContainer nav div ol li a:hover{
     .affContainer div:nth-child(2)>ul:last-child li span{
         display: block;
         text-align: center;
-        line-height: 24px;
-        font-size: 18px;
+        line-height: 22px;
+        font-size: 16px;
     }
     /* affiliateCard Fin */
-    /* 2-3 수정하기 */
     .speContainer div:nth-child(2) h3+div div{
         height: 155px;
         margin: 50px 0;
     }
     .speContainer div:nth-child(2) h3+div div:first-child{
-        background: url('../images/specialEverland.png') no-repeat center / cover;
+        background: url('../images/specialEverland.png') no-repeat center / contain;
         position: relative;
-        width: 50%;
+        width: 100%;
         margin-right: 1.063%;
     }
     .speContainer div:nth-child(2) h3+div div:first-child span{
@@ -2378,9 +2414,9 @@ div .everContainer nav div ol li a:hover{
         font-size: 10px;
     }
     .speContainer div:nth-child(2) h3+div div:last-child{
-        background: url('../images/specialAsiana.png')no-repeat center / cover;
+        background: url('../images/specialAsiana.png')no-repeat center / contain;
         position: relative;
-        width: 50%;
+        width: 100%;
     }
     .speContainer div:nth-child(2) h3+div div:last-child span{
         position: absolute;
@@ -5483,6 +5519,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner02>div:first-of-type{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column-reverse;
         margin-bottom: 70px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type{
@@ -5506,7 +5543,6 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type>div:last-of-type{
         width: 100%;
-        order: -1;
     }
     .indexContainer .contentBanner02>div ul li{
         width: 100%;
@@ -6439,6 +6475,11 @@ div .everContainer nav div ol li a:hover{
         line-height: 18px;
         color: var(--gs8);
     }
+    .amanContainer div:nth-child(2) ul li dl dd::before{
+        content: '-';
+        display: block;
+        margin-right: 5px;
+    }
     .amanContainer div:nth-child(2) ul li dl dd:not(:last-of-type){
         margin-bottom: 5px;
     }
@@ -6561,6 +6602,7 @@ div .everContainer nav div ol li a:hover{
         margin-left: 15px;
     }
     .usagContainer div:nth-child(2) table+div ul li p{
+        margin-left: 15px;
         line-height: 18px;
     }
     .usagContainer div:nth-child(2) table+div ul li p:not(:last-child){
@@ -6737,6 +6779,9 @@ div .everContainer nav div ol li a:hover{
     }
     /* affiliateCard Fin */
     /* 2-3 수정하기 */
+    .speContainer div:nth-child(2) h3+div{
+        display: flex;
+    }
     .speContainer div:nth-child(2) h3+div div{
         height: 155px;
         margin: 50px 0;
@@ -10783,10 +10828,14 @@ div .everContainer nav div ol li a:hover{
         line-height: 24px;
         color: var(--gs8);
     }
+    .amanContainer div:nth-child(2) ul li dl dd::before{
+        content: '-';
+        display: block;
+        margin-right: 5px;
+    }
     .amanContainer div:nth-child(2) ul li dl dd:not(:last-of-type){
         margin-bottom: 20px;
     }
-
     /* amenities Fin */
     .guidContainer div:nth-child(2)>div div:nth-of-type(1){
         position: absolute;
@@ -10899,6 +10948,9 @@ div .everContainer nav div ol li a:hover{
     .usagContainer div:nth-child(2) table+div ul li strong{
         display: flex;
         margin-bottom: 35px;
+    }
+    .usagContainer div:nth-child(2) table+div ul li p{
+        margin-left: 15px;
     }
     .usagContainer div:nth-child(2) table+div ul li p span{
         margin-left: 20px;
@@ -11054,7 +11106,10 @@ div .everContainer nav div ol li a:hover{
         clear: both;
     }
      /* affiliateCard Fin */
-     .speContainer div:nth-child(2) h3+div div{
+    .speContainer div:nth-child(2) h3+div{
+        display: flex;
+    }
+    .speContainer div:nth-child(2) h3+div div{
         height: 264px;
         margin: 100px 0 130px;
     }
