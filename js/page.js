@@ -149,3 +149,10 @@ function signUPpassCkeck(){
     
   })
 }
+
+if (window.matchMedia("(max-width: 700px)").matches) {
+  // Viewport is less or equal to 700 pixels wide
+  $(img).attr("src","mobile.png");
+} else {
+  // Viewport is greater than 700 pixels wide
+}

@@ -434,13 +434,11 @@ footer div details summary.on::after{
     }
     footer div details summary::after{
         background: url('../images/footer_sum.png') no-repeat center / contain;
-        display: block;
+        display: inline-block;
+        content: '';
         width: 8px;
         height: 5px;
-        content: '';
-        position: absolute;
-        top: 22px;
-        right: 35px;
+        margin-left: 10px;
     }
 }
 /* ?mobile */

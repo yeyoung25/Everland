@@ -1018,6 +1018,7 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner01 div p{
         display: inline;
         line-height: 25px;
+        margin-right: 15px;
     }
     .indexContainer .contentBanner01>div>a{
         background: url('../images/maincon01_more.png') no-repeat center bottom / contain;
@@ -1027,7 +1028,6 @@ div .everContainer nav div ol li a:hover{
         width: 56px;
         vertical-align: text-bottom;
         padding-bottom: 5px;
-        margin-left: 15px;
     }
     .indexContainer .contentBanner01 .carouselWay4 li strong{
         display: block;  
@@ -1846,6 +1846,9 @@ div .everContainer nav div ol li a:hover{
         cursor: pointer;
     }
     .trafContainer div:nth-child(2) ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-bottom: 1px solid var(--gs11);
         position: relative;
         width: 25%;
@@ -1855,9 +1858,7 @@ div .everContainer nav div ol li a:hover{
         color: var(--gs5);
         box-sizing: border-box;
         font-size: 10px;
-    }
-    .trafContainer div:nth-child(2) ul li:nth-child(2){
-        padding-top: 8px;
+        padding: 0 5px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li strong{
         display: block;
@@ -2199,6 +2200,7 @@ div .everContainer nav div ol li a:hover{
     }
     .usagContainer div:nth-child(2) table+div ul li p{
         line-height: 18px;
+        font-size: 12px;
     }
     .usagContainer div:nth-child(2) table+div ul li p span{
         display: block;
@@ -2383,71 +2385,77 @@ div .everContainer nav div ol li a:hover{
         font-size: 16px;
     }
     /* affiliateCard Fin */
+    .speContainer div:nth-child(2) h3+div{
+        width: 260px;
+        margin: 0 auto;
+    }
     .speContainer div:nth-child(2) h3+div div{
-        height: 155px;
-        /* margin: 50px 0; */
+        height: 111px;
     }
     .speContainer div:nth-child(2) h3+div div:first-child{
         background: url('../images/specialEverland.png') no-repeat center / contain;
         position: relative;
         width: 100%;
-        margin-right: 1.063%;
+        margin: 30px 0 10px;
     }
     .speContainer div:nth-child(2) h3+div div:first-child span{
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 10px;
         background-color: #c69e00;
-        padding: 10px 15px;
-        border-radius: 25px;
+        padding: 5px 10px;
+        border-radius: 15px;
         color: var(--gs1);
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) h3+div div:first-child p{
         position: absolute;
-        top: 65px;
-        left: 4.836%;
+        top: 45px;
+        left: 10px;
     }
     .speContainer div:nth-child(2) h3+div div:first-child p strong{
         display: block;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .speContainer div:nth-child(2) h3+div div:first-child b{
         position: absolute;
-        bottom: 25px;
-        left: 4.836%;
-        font-size: 10px;
+        bottom: 15px;
+        left: 10px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) h3+div div:last-child{
         background: url('../images/specialAsiana.png')no-repeat center / contain;
         position: relative;
         width: 100%;
+        margin-bottom: 50px;
     }
     .speContainer div:nth-child(2) h3+div div:last-child span{
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 10px;
         background-color: #bfa0a0;
-        padding: 10px 15px;
-        border-radius: 25px;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) h3+div div:last-child p{
         position: absolute;
-        top: 65px;
-        left: 4.836%;
+        top: 45px;
+        left: 10px;
         color: var(--gs1);
     }
     .speContainer div:nth-child(2) h3+div div:last-child p strong{
         display: block;
-        margin-top: 15px;
+        margin-top: 5px;
         color: var(--gs1);
     }
     .speContainer div:nth-child(2) h3+div div:last-child b{
         position: absolute;
-        bottom: 25px;
-        left: 4.836%;
+        bottom: 15px;
+        left: 10px;
         color: var(--gs1);
         font-weight: 600;
-        font-size: 10px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) .bx-wrapper{
         position: relative;
@@ -2463,9 +2471,9 @@ div .everContainer nav div ol li a:hover{
         position: relative;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li{
-        width: 150px !important;
-        height: 225px;
-        margin-right: 30px !important;
+        width: 100px !important;
+        height: 150px;
+        margin-right: 20px !important;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:first-child{
         background: url('../images/speslider01.png') no-repeat center / contain;
@@ -2478,19 +2486,19 @@ div .everContainer nav div ol li a:hover{
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(3) span:last-child{
         display: block;
-        width: 108px;
+        width: 100%;
         text-align: center;
-        bottom: 65px;
-        font-size: 12px;
+        bottom: 40px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(4){
         background: url('../images/speslider04.png') no-repeat center / contain;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(4) span:last-child{
-        width: 108px;
+        width: 100%;
         text-align: center;
-        bottom: 85px;
-        font-size: 12px;
+        bottom: 70px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5){
         background: url('../images/speslider05.png') no-repeat center / contain;
@@ -2498,10 +2506,10 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5) span:last-child,
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(7) span:last-child{
         display: block;
-        width: 108px;
+        width: 100%;
         text-align: center;
-        bottom: 85px;
-        font-size: 12px;
+        bottom: 60px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(6){
         background: url('../images/speslider06.png') no-repeat center / contain;
@@ -2513,27 +2521,28 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         display: block;
         margin: 0 auto;
-        top: 15px;
-        left: 20px;
+        top: 10px;
+        left: 5px;
         color: var(--gs9);
-        font-size: 12px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(2) span{
         color: var(--gs1);
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li span:last-child{
         position: absolute;
-        left: 22px;
+        left: 0;
         bottom: 70px;
-        line-height: 18px;
+        line-height: 13px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li p{
+        width: 90%;
         position: absolute;
-        top: 55px;
-        left: 20px;
-        line-height: 20px;
+        top: 30px;
+        left: 5px;
+        line-height: 16px;
         text-align: center;
-        font-size: 12px;
+        font-size: 9px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li span{
         font-size: 0.833vw;
@@ -2581,147 +2590,142 @@ div .everContainer nav div ol li a:hover{
         flex-wrap: wrap;
         margin-top: 80px;
     }
-    .speContainer div:nth-child(2) hr+ul:last-child::before{
-        width: 23.84%;
-        height: 318px;
-        content: '';
-        order: 1;
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child::after{
-        width: 23.84%;
-        height: 318px;
-        content: '';
-        order: 1;
-    }
     .speContainer div:nth-child(2) hr+ul:last-child{
         justify-content: space-between;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li{
-        height: 188px;
-        margin-bottom: 20px;
+        height: 140px;
+        margin-bottom: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child{
-        background: url('../images/spediscount01.png') no-repeat center / cover;
-        width: 49.2%;
+        background: url('../images/spediscount01.png') no-repeat center / contain;
+        width: 260px;
         position: relative;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child span:first-child{
         position: absolute;
-        top: 25px;
-        left: 20px;
+        top: 15px;
+        left: 15px;
         color: var(--os8);
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child b{
         position: absolute;
         top: 55px;
-        left: 20px;
+        left: 15px;
         color: var(--os1);
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child span{
         position: absolute;
         top: 80px;
-        left: 20px;
+        left: 15px;
         color: var(--os1);
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child strong{
         position: absolute;
         bottom: 25px;
-        left: 20px;
+        left: 15px;
         color: var(--os8);
-        font-size: 14px;
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2){
-        background: url('../images/spediscount02.png') no-repeat center / cover;
-        width: 49.2%;
+        background: url('../images/spediscount02.png') no-repeat center / contain;
+        width: 260px;
         position: relative;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span:first-child{
         position: absolute;
-        top: 25px;
-        left: 20px;
+        top: 15px;
+        left: 15px;
         color: var(--os8);
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) b{
         position: absolute;
         top: 55px;
-        left: 20px;
+        left: 15px;
         color: var(--os1);
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span{
         position: absolute;
         top: 80px;
-        left: 20px;
+        left: 15px;
         color: var(--os1);
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) strong{
         position: absolute;
         bottom: 25px;
-        left: 20px;
+        left: 15px;
         color: var(--os8);
-        font-size: 14px;
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3){
         position: relative;
-        width: 48%;
-        height: 187px;
+        width: 125px;
+        height: 136px;
         border-radius: 20px;
-        border: 3px solid rgba(98, 24, 102, 0.3);
+        border: 1px solid rgba(98, 24, 102, 0.3);
         background-color: rgba(228, 228, 228, 0.3);
-        padding: 20px 0 20px 15px;
+        padding: 15px;
         box-sizing: border-box;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3) span:first-child{
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: var(--vs9);
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3) b{
         display: block;
-        margin-bottom: 15px;
-        line-height: 20px;
+        margin-bottom: 10px;
+        line-height: 16px;
         color: var(--vs9);
+        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3) span:last-of-type{
         display: block;
         color: var(--gs8);
-        margin-bottom: 50px;
+        font-size: 8px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3) strong{
         display: block;
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 15px;
+        left: 15px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(19)::after{
-        background: url('../images/specialRain.png') no-repeat center / contain;
-        content: '';
-        width: 68px;
-        height: 68px;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:last-child::after{
         background: url('../images/specialgift.png') no-repeat center / contain;
         content: '';
-        width: 68px;
-        height: 68px;
+        width: 50px;
+        height: 49px;
         position: absolute;
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .speContainer div:nth-child(2) hr+ul:last-child li:last-child::after{
+        background: url('../images/specialRain.png') no-repeat center / contain;
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+    .speContainer div:nth-child(2) hr+ul:last-child::before,
+    .speContainer div:nth-child(2) hr+ul:last-child::after{
+        width: 125px;
+        content: '';
+        order: 1;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(5) p{
         color: #002c5f;
-        width: 108px;
         text-align: center;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(6) p{
         color: #0061aa;
-        width: 108px;
         text-align: center;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(7) p{
-        width: 108px;
         text-align: center;
     }
 
@@ -7096,7 +7100,7 @@ div .everContainer nav div ol li a:hover{
         left: 20px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(19)::after{
-        background: url('../images/specialRain.png') no-repeat center / contain;
+        background: url('../images/specialgift.png') no-repeat center / contain;
         content: '';
         width: 68px;
         height: 68px;
@@ -7105,7 +7109,7 @@ div .everContainer nav div ol li a:hover{
         right: 20px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:last-child::after{
-        background: url('../images/specialgift.png') no-repeat center / contain;
+        background: url('../images/specialRain.png') no-repeat center / contain;
         content: '';
         width: 68px;
         height: 68px;
@@ -11404,7 +11408,7 @@ div .everContainer nav div ol li a:hover{
         left: 40px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(19)::after{
-        background: url('../images/specialRain.png') no-repeat center;
+        background: url('../images/specialgift.png') no-repeat center;
         content: '';
         width: 118px;
         height: 118px;
@@ -11413,7 +11417,7 @@ div .everContainer nav div ol li a:hover{
         right: 40px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:last-child::after{
-        background: url('../images/specialgift.png') no-repeat center;
+        background: url('../images/specialRain.png') no-repeat center;
         content: '';
         width: 118px;
         height: 118px;
