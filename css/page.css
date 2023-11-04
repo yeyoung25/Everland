@@ -2460,7 +2460,7 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) .bx-wrapper{
         position: relative;
         margin: 0 auto;
-        margin-bottom: 145px;
+        margin-bottom: 125px;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport{
         height: 225px;
@@ -2588,7 +2588,6 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) hr+ul:last-child{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child{
         justify-content: space-between;
@@ -9770,6 +9769,14 @@ div .everContainer nav div ol li a:hover{
 /* ?tablet */
 
 @media screen and (min-width: 1280px) {
+    .scroll-container{
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    }
+    .scroll-area{
+        scroll-snap-align: start;
+        scroll-padding: 110px 0 0 0;
+    }
     header+.mwpadding>h3,
     header+.mwpadding>div,
     header+.hisContainer>ul,
@@ -10061,9 +10068,10 @@ div .everContainer nav div ol li a:hover{
         border-right: 1px solid var(--gs5);
     }
     .indexContainer .contentBanner03>div:not(:last-child){
-        box-sizing: border-box;
-        padding: 75px 70px;
         width: 50%;
+        padding: 75px 70px;
+        border-top: 1px solid var(--gs5);
+        box-sizing: border-box;
     }
     .indexContainer .contentBanner03>div:not(:last-child) h2{
         justify-content: space-between;
