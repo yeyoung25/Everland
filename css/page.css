@@ -403,15 +403,13 @@ div .everContainer nav div ol li a:hover{
     color: #1428a0;
 }
 /* attraction / enterContainer Details Fin */
-.seaContainer div:nth-child(2) div:first-of-type>ul li{
-    width: 25%;
-}
 .seaContainer div:nth-child(2) div:first-of-type>ul li img{
     display: block;
     width: 100%;
 }
 .seaContainer div:nth-child(2) div:first-of-type>ul{
     display: flex;
+    flex-wrap: wrap;
 }
 .seaContainer div:nth-child(2) div:first-of-type>ul li{
     position: relative;
@@ -617,15 +615,6 @@ div .everContainer nav div ol li a:hover{
     justify-content: space-between;
 }
 /* inquiryBeforeVisiting / inquiryAfterVisiting Details Fin */
-.cheContainer div:nth-child(2) h3+ul>li:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #2d6bba;
-}
-.cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
-    background-color: rgba(228, 228, 228, 0.3);
-}
 .cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
     position: relative;
 }
@@ -633,10 +622,6 @@ div .everContainer nav div ol li a:hover{
     content: '';
     display: block;
     clear: both;
-}
-.cheContainer div:nth-child(2) h3+ul>li:last-child{
-    background-color: rgba(32, 8, 33, 0.1);
-    position: relative;
 }
 .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type::after{
     content: '';
@@ -2147,11 +2132,13 @@ div .everContainer nav div ol li a:hover{
         height: 8px;
         padding-right: 5px;
     }
-    .usagContainer div:nth-child(2)>strong a{
+    .usagContainer div:nth-child(2)>strong a,
+    .usagContainer div:nth-child(2) table+div>strong a{
         display: inline-block;
         color: var(--os1);
-        margin-left: 20px;
-        font-size: 12px;
+        margin-left: 10px;
+        vertical-align: middle;
+        font-size: 10px;
     }
     .usagContainer div:nth-child(2) table{
         text-align: center;
@@ -2177,14 +2164,6 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin-bottom: 25px;
         font-size: 18px;
-    }
-    .usagContainer div:nth-child(2) table+div>strong a{
-        display: inline-block;
-        color: var(--os1);
-        margin-left: 3.546%;
-        vertical-align: middle;
-        line-height: 16px;
-        font-size: 10px;
     }
     .usagContainer div:nth-child(2) table+div ul{
         margin-bottom: 55px;
@@ -2224,9 +2203,6 @@ div .everContainer nav div ol li a:hover{
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) p:not(:last-child){
         margin-bottom: 10px;
-    }
-    .usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
-        /* margin-bottom: 20px; */
     }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
         line-height: 18px;
@@ -2522,7 +2498,7 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin: 0 auto;
         top: 10px;
-        left: 5px;
+        left: 10px;
         color: var(--gs9);
         font-size: 8px;
     }
@@ -2815,21 +2791,17 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 25px;
     }
     .recoContainer div:nth-child(2) dl{
-        display: flex;
-        justify-content: space-between;
-        margin: 0 3.125% 60px;
+        margin: 0 3.571% 45px;
     }
     .recoContainer div:nth-child(2) dl dt{
-        width: 31.212%;
+        margin-bottom: 15px;
     }
     .recoContainer div:nth-child(2) dl dt mark{
-        display: block;
+        margin-right: 5px;
         color: var(--os1);
-        margin-bottom: 10px;
     }
     .recoContainer div:nth-child(2) dl dd{
         display: inline-block;
-        width: 56.25%;
         line-height: 20px;
         color: var(--gs9);
         box-sizing: border-box;
@@ -2837,7 +2809,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
         display: block;
         width: 100%;
-        height: 850px;
+        height: 530px;
         position: absolute;
         top: 0;
         z-index: -100;
@@ -2872,10 +2844,10 @@ div .everContainer nav div ol li a:hover{
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
-        border: 3px solid var(--gs11);
+        border: 1px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
-        top: 5.882%;
+        top: 25px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4,
@@ -2906,33 +2878,33 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2),
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2),
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2){
-        width: 580px;
+        width: 280px;
         position: absolute;
-        bottom: 28.823%;
+        bottom: 36.792%;
         left: 50%;
         transform: translateX(-50%);
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li{
-        width: 145px !important;
+        width: 67px !important;
         margin-left: 20px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
-        width: 145px;
+        width: 67px;
         border: 3px solid transparent;
         box-sizing: border-box;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
-        border: 3px solid var(--os1);
+        border: 1px solid var(--os1);
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
-        border: 3px solid var(--rs4);
+        border: 1px solid var(--rs4);
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
-        border: 3px solid var(--vs4);
+        border: 1px solid var(--vs4);
     }
     .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
         display: block;
@@ -2941,32 +2913,32 @@ div .everContainer nav div ol li a:hover{
         margin-top: 0;
     }
     .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-        background: url('../images/recomcon01_pre.png') no-repeat center;
+        background: url('../images/recomcon01_pre.png') no-repeat center / 10px 20px;
         left: -5%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-        background: url('../images/recomcon01_next.png') no-repeat center;
+        background: url('../images/recomcon01_next.png') no-repeat center / 10px 20px;
         right: -5%;
         top: 0;
     }
     .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-        background: url('../images/recomcon02_pre.png') no-repeat center;
+        background: url('../images/recomcon02_pre.png') no-repeat center / 10px 20px;
         left: -5%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-        background: url('../images/recomcon02_next.png') no-repeat center;
+        background: url('../images/recomcon02_next.png') no-repeat center / 10px 20px;
         right: -5%;
         top: 0;
     }
     .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
-        background: url('../images/recomcon03_pre.png') no-repeat center;
+        background: url('../images/recomcon03_pre.png') no-repeat center / 10px 20px;
         left: -5%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
-        background: url('../images/recomcon03_next.png') no-repeat center;
+        background: url('../images/recomcon03_next.png') no-repeat center / 10px 20px;
         right: -5%;
         top: 0;
     }
@@ -2984,7 +2956,7 @@ div .everContainer nav div ol li a:hover{
         z-index: -100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
-        border: 3px solid var(--gs11);
+        border: 1px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
         top: 5.882%;
@@ -3020,16 +2992,16 @@ div .everContainer nav div ol li a:hover{
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1) img{
         content: url('../images/recoChild01_M.png');
-        border: 3px solid var(--gs11);
+        border: 1px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
-        top: 5.882%;
+        top: 25px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li img{
-        border: 3px solid var(--gs11);
+        border: 1px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
-        top: 5.882%;
+        top: 25px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
         width: 100%;
@@ -3234,8 +3206,9 @@ div .everContainer nav div ol li a:hover{
     .restContainer div:nth-child(2)>div div:last-child img,
     .gifContainer div:nth-child(2)>div img:last-child{
         display: block;
-        margin: 0 auto 30px;
+        margin: 0 auto 40px;
         width: 100%;
+        max-width: 580px;
     }
     .enterContainer div:nth-child(2)>div div:last-child img+div ol li{
         font-size: 14px;
@@ -3325,15 +3298,12 @@ div .everContainer nav div ol li a:hover{
     /* attraction / enterContainer / restaurant Details Fin */
     .gifContainer div:nth-child(2) h3~div:not(:last-child){
         margin-bottom: 100px;
-    }{
-        /* width: 382px;
-        height: 297px; */
     }
     .gifContainer div:nth-child(2)>div h4+div img{
         display: none;
     }
     .gifContainer div:nth-child(2)>div div p{
-        margin-bottom: 5px;
+        margin-bottom: 25px;
         line-height: 18px;
         text-align: center;
         font-size: 10px;
@@ -3367,21 +3337,28 @@ div .everContainer nav div ol li a:hover{
     /* giftShop Details Fin */
     .seaContainer div:nth-child(2) div>strong{
         display: block;
-        margin: 50px 0 30px;
+    }
+    .seaContainer div:nth-child(2) div:first-of-type{
+        margin-bottom: 25px;
+    }
+    .seaContainer div:nth-child(2) div:first-of-type>strong{
+        margin: 30px 0;
     }
     .seaContainer div:nth-child(2) div:not(:first-of-type)>strong{
         display: block;
-        margin: 70px 0 25px;
+    }
+    .seaContainer div:nth-child(2) div:first-of-type>ul li{
+        width: 50%;
     }
     .seaContainer div:nth-child(2) div:first-of-type>ul li b{
         display: block;
-        line-height: 20px;
-        margin: 15px 0 5px 10px;
+        line-height: 16px;
+        margin: 10px 0 10px 5px;
         font-size: 12px;
     }
     .seaContainer div:nth-child(2) div:first-of-type>ul li p{
         line-height: 16px;
-        margin-left: 10px;
+        margin: 0 0 30px 5px;
         color: var(--gs9);
         font-size: 10px;
     }
@@ -3392,10 +3369,21 @@ div .everContainer nav div ol li a:hover{
         height: 50px;
         position: absolute;
         top: -37px;
-        right: 50px;
+        right: 25px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(2){
+        margin-bottom: 60px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(2) strong{
+        margin-bottom: 25px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li:not(:last-child){
-        margin-bottom: 50px;
+        margin-bottom: 55px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong{
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong::before{
         display: inline-block;
@@ -3405,22 +3393,23 @@ div .everContainer nav div ol li a:hover{
         transform: scale(0.8);
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p{
-        margin-left: 15px;
         line-height: 18px;
+        font-size: 12px;
     }
-    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li strong{
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li:nth-child(6) p span{
-        display: inline-block;
-        margin-left: 20px;
-    }
-    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p span{
-        margin-left: 20px;
+    .seaContainer div:nth-child(2) div:nth-of-type(2) ul li span{
+        display: block;
+        margin-top: 20px;
+        font-size: 10px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(2) ul li p:not(:last-child){
         margin-bottom: 10px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(3){
+        margin-bottom: 60px;
+    }
+    .seaContainer div:nth-child(2) div:nth-of-type(3) strong,
+    .seaContainer div:nth-child(2) div:nth-of-type(4) strong{
+        margin-bottom: 25px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(3) ul li:not(:last-child){
         margin-bottom: 50px;
@@ -3428,6 +3417,7 @@ div .everContainer nav div ol li a:hover{
     .seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dt{
         display: flex;
         margin-bottom: 20px;
+        line-height: 20px;
         font-size: 14px;
     }
     .seaContainer div:nth-child(2) div:nth-of-type(3) ul li dl dt::before{
@@ -3465,7 +3455,7 @@ div .everContainer nav div ol li a:hover{
         text-align: center;
     }
     .proContainer div:nth-child(2) strong+ul>li:not(:last-child){
-        margin-bottom: 110px;
+        margin-bottom: 100px;
     }
     .proContainer div:nth-child(2) ul>li h4{
         margin-bottom: 15px;
@@ -3474,11 +3464,12 @@ div .everContainer nav div ol li a:hover{
     .proContainer div:nth-child(2) ul>li h4+b{
         display: block;
         margin-bottom: 30px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li div:first-of-type img{
         display: block;
-        /* width: 650px; */
-        width: 84.635%;
+        width: 100%;
+        margin-bottom: 5px;
     }
     .proContainer div:nth-child(2) ul li div+img,
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img{
@@ -3487,71 +3478,55 @@ div .everContainer nav div ol li a:hover{
     .proContainer div:nth-child(2) ul li:first-child b+div:first-of-type,
     .proContainer div:nth-child(2) ul li:last-child b+div:first-of-type{
         position: relative;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }
-    .proContainer div:nth-child(2) ul li:first-child div:first-of-type>p{
-        display: inline-block;
-        transform: rotate(90deg);
-        position: absolute;
-        top: 100px;
-        right: -15px;
-    }
-    .proContainer div:nth-child(2) ul li:first-child div:last-of-type{
-        display: flex;
-        justify-content: space-between;
-    }
-    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
+    .proContainer div:nth-child(2) ul li:first-child div:first-of-type>p,
+    .proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
+        display: block;
+        text-align: right;
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
-        display: flex;
-        justify-content: space-between;
-    }
-    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li b{
+        display: block;
+        text-align-last: left;
+        margin-bottom: 20px;
         font-size: 16px;
-    }
-    .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li::after{
-        content: '';
-        display: inline-block;
-        width: 9.071%;
-        height: 3px;
-        margin-top: 5px;
-        background-color: var(--os1);
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ol li p{
-        display: inline-block;
-        width: 62.207%;
+        display: block;
         line-height: 20px;
-        order: 1;
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li{
-        font-size: 16px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child{
         color: var(--gs9);
-        line-height: 25px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:last-child b{
-        font-size: 16px;
+        font-size: 12px;
         color: var(--gs11);
     }
     .proContainer div:nth-child(2) ul li:first-child div:last-of-type div ul li:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2) h4{
         text-align: right;
     }
-    .proContainer div:nth-child(2) ul li:nth-child(2) b{
+    .proContainer div:nth-child(2) ul li:nth-child(2)>b{
         text-align: right;
+        font-size: 14px;
+    }
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b,
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
+        font-size: 14px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type{
         position: relative;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type::after{
         content: '';
@@ -3562,97 +3537,55 @@ div .everContainer nav div ol li a:hover{
         float: right;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:first-of-type>p{
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 130px;
-        left: -25px;
+        text-align: left;
     }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type{
-        display: flex;
-    }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-    }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:first-of-type,
-        .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p{
-        font-size: 16px;
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:first-of-type{
+        margin-bottom: 40px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:not(:last-of-type){
         margin-bottom: 10px;
-        line-height: 22px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type{
         position: relative;
-        line-height: 22px;
-        padding-left: 65px;
+        line-height: 18px;
+        padding-left: 50px;
         margin: 0 0 10px 5px;
         box-sizing: border-box;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p:last-of-type mark{
         position: absolute;
         left: 0;
-        font-size: 16px;
-    }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li{
-        display: flex;
-        font-size: 16px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type p+ul li::before{
         content: '-';
         display: inline-block;
         margin-right: 5px;
     }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul{
-        margin-bottom: 30px;
-    }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li{
         color: var(--gs9);
-        line-height: 22px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type ul li:not(:last-child){
         margin-bottom: 10px;
     }
-    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b{
+    .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type b,
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
         display: block;
         margin-bottom: 20px;
-        font-size: 16px;
-        font-size: 16px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li{
-        display: flex;
         color: var(--gs9);
-        line-height: 22px;
-        font-size: 16px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li::before{
         content: '•';
         display: inline-block;
         margin-right: 5px;
     }
-    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        font-size: 16px;
-    }
-    .proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
-        display: inline-block;
-        transform: rotate(90deg);
-        position: absolute;
-        top: 145px;
-        right: -55px;
-    }
-    .proContainer div:nth-child(2) ul li:last-child div:last-of-type{
-        display: flex;
-    }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p{
-        line-height: 22px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p:not(:last-of-type){
         margin-bottom: 10px;
@@ -3660,26 +3593,23 @@ div .everContainer nav div ol li a:hover{
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul{
         margin: 25px 0 30px;
     }
+    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li{
+        line-height: 18px;
+    }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li:not(:last-child){
         margin-bottom: 10px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li span{
         display: block;
         color: var(--gs9);
-        margin: 10px 0 0 10px;
-        line-height: 22px;
-        font-size: 14px;
-    }
-    .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type b{
-        display: block;
-        margin-bottom: 20px;
-        font-size: 16px;
+        margin-top: 10px;
+        line-height: 18px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li{
         display: flex;
-        line-height: 22px;
+        line-height: 18px;
         color: var(--gs9);
-        font-size: 16px;
+        font-size: 12px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:last-of-type ul li:not(:last-child){
         margin-bottom: 10px;
@@ -3694,7 +3624,7 @@ div .everContainer nav div ol li a:hover{
         display: flex;
         position: relative;
         width: 100%;
-        padding: 20px 75px 20px 0;
+        padding: 15px 20px 15px 0;
         line-height: 18px;
         border-bottom: 1px solid var(--gs6);
     }
@@ -3702,7 +3632,7 @@ div .everContainer nav div ol li a:hover{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 20px 75px 20px 0;
+        padding: 15px 20px 15px 0;
         background-color: var(--gs2);
         color: var(--gs10);
     }
@@ -3719,13 +3649,14 @@ div .everContainer nav div ol li a:hover{
         width: 11px;
         height: 7px;
         position: absolute;
-        right: 60px;
-        top: 24px;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
         transition: transform 0.2s ease-in-out;
     }
     .comuContainer div:nth-child(2) .accordion li strong b{
         display: inline-block;
-        margin-right: 20px;
+        margin: 0 10px;
         color: var(--gs5);
     }
     .comuContainer div:nth-child(2) .accordion li div b{
@@ -4107,16 +4038,24 @@ div .everContainer nav div ol li a:hover{
     .cheContainer div:nth-child(2) h3+ul>li{
         height: 380px;
     }
+    .cheContainer div:nth-child(2) h3+ul>li:first-child{
+        background-color: #2d6bba;
+        height: 530px;
+    }
     .cheContainer div:nth-child(2) h3+ul>li:first-child::before{
         background: url('../images/lost_item01.png') no-repeat center / contain;
         content: '';
-        display: inline-block;
-        width: 277px;
-        height: 277px;
+        display: block;
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:first-child div{
+        text-align: center;
     }
     .cheContainer div:nth-child(2) h3+ul>li:first-child div img{
         display: inline-block;
-        margin: 0 0 40px 35px;
+        margin: 0 0 40px 5.461%;
         height: 96px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:first-child div img:first-child{
@@ -4137,91 +4076,83 @@ div .everContainer nav div ol li a:hover{
         line-height: 35px;
         text-align: center;
     }
+    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
+        background-color: rgba(228, 228, 228, 0.3);
+        height: 620px;
+    }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child{
-        padding: 50px 20px 50px 0;
+        padding: 45px 0 35px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child::before{
         background: url('../images/lost_item02_01.png') no-repeat center / contain;
         content: '';
-        display: inline-block;
+        display: block;
         width: 135px;
         height: 142px;
-        position: absolute;
-        left: 92px;
-        top: 47px;
-    }
-    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child p::before{
-        content: '';
-        display: inline-block;
-        background-color: var(--vs8);
-        width: 85px;
-        height: 5px;
-        position: absolute;
-        top: 60px;
-        left: 300px;
+        margin: 0 auto 20px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child p{
-        width: 36.647%;
-        float: right;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
         color: var(--vs8);
         line-height: 18px;
         font-size: 12px;
     }
-    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child{
-        padding: 65px 0 0 40px;
-    }
-    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child::after{
+    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child::before{
         background: url('../images/lost_item02_02.png') no-repeat center / contain;
         content: '';
-        display: inline-block;
+        display: block;
         width: 123px;
         height: 123px;
-        position: absolute;
-        bottom: 50px;
-        right: 80px;
+        margin: 0 auto 20px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child strong{
         display: inline-block;
-        width: 45.503%;
+        width: 95%;
+        text-align: center;
         line-height: 18px;
         margin-bottom: 20px;
         color: var(--vs8);
+        font-size: 12px;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child ul{
+        margin-left: 5%;
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child ul li{
         font-size: 10px;
         color: var(--gs10);
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child ul li:not(:last-child){
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:last-child{
+        background-color: rgba(32, 8, 33, 0.1);
+        position: relative;
+        height: 600px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child>strong{
         display: block;
         color: var(--os9);
-        width: 67.317%;
+        width: 95%;
         margin: 0 auto;
         text-align: center;
-        padding: 50px 0 45px;
-        line-height: 25px;
-        font-size: 18px;
+        padding: 45px 0 20px;
+        line-height: 22px;
+        font-size: 16px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child>div:first-of-type{
-        padding-left: 100px;
-    }
-    .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type::after{
-        background: url('../images/lost_item03_01.png') no-repeat center / contain;
-        content: '';
-        display: inline-block;
-        width: 88px;
-        height: 105px;
-        position: absolute;
-        top: 100px;
-        right: 85px;
+        padding-left: 5%;
+        margin-bottom: 35px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type mark{
         display: flex;
         color: var(--os1);
         line-height: 18px;
         font-size: 12px;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type mark b{
+        width: 75px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type mark:not(:last-child){
         margin-bottom: 5px;
@@ -4237,21 +4168,19 @@ div .everContainer nav div ol li a:hover{
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type mark>span{
         line-height: 18px;
+        padding-right: 5%;
     }
-    .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type::before{
+    .cheContainer div:nth-child(2) h3+ul>li:last-child>div:last-of-type::before{
         background: url('../images/lost_item03_02.png') no-repeat center / contain;
         content: '';
-        display: inline-block;
+        display: block;
         width: 62px;
         height: 83px;
-        position: absolute;
-        bottom: 60px;
-        left: 90px;
+        margin: 0 auto 20px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type div{
-        float: right;
-        width: 50%;
-        padding: 20px 20px 0 0;
+        width: 95%;
+        margin: 0 auto;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type div>strong{
         display: inline-block;
@@ -4259,16 +4188,6 @@ div .everContainer nav div ol li a:hover{
         color: var(--os9);
         position: relative;
         font-size: 14px;
-    }
-    .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type div>strong::before{
-        content: '';
-        display: inline-block;
-        width: 85px;
-        height: 3px;
-        background-color: var(--os10);
-        position: absolute;
-        top: 5px;
-        left: -115px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:last-of-type p{
         line-height: 18px;
@@ -6595,9 +6514,6 @@ div .everContainer nav div ol li a:hover{
     .usagContainer div:nth-child(2) div:nth-of-type(2) p:not(:last-child){
         margin-bottom: 10px;
     }
-    .usagContainer div:nth-child(2) div:nth-of-type(2) p:last-of-type{
-        /* margin-bottom: 20px; */
-    }
     .usagContainer div:nth-child(2) div:nth-of-type(2) ul li{
         line-height: 18px;
     }
@@ -7780,6 +7696,9 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin: 70px 0 25px;
     }
+    .seaContainer div:nth-child(2) div:first-of-type>ul li{
+        width: 25%;
+    }
     .seaContainer div:nth-child(2) div:first-of-type>ul li b{
         display: block;
         line-height: 20px;
@@ -7884,7 +7803,6 @@ div .everContainer nav div ol li a:hover{
     }
     .proContainer div:nth-child(2) ul li div:first-of-type img{
         display: block;
-        /* width: 650px; */
         width: 84.635%;
     }
     .proContainer div:nth-child(2) ul li div+img,
@@ -8029,7 +7947,6 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin-bottom: 20px;
         font-size: 16px;
-        font-size: 16px;
     }
     .proContainer div:nth-child(2) ul li:nth-child(2)>div:last-of-type img+div:first-of-type div:last-of-type ul li{
         display: flex;
@@ -8047,6 +7964,7 @@ div .everContainer nav div ol li a:hover{
         flex-wrap: wrap;
         align-content: space-between;
         font-size: 16px;
+        margin-bottom: 30px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:first-of-type img+p{
         display: inline-block;
@@ -8065,7 +7983,7 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 10px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul{
-        margin: 25px 0 30px;
+        margin-top: 25px;
     }
     .proContainer div:nth-child(2) ul li:last-child div:last-of-type div div:first-of-type p+ul li:not(:last-child){
         margin-bottom: 10px;
@@ -8514,6 +8432,12 @@ div .everContainer nav div ol li a:hover{
     .cheContainer div:nth-child(2) h3+ul>li{
         height: 380px;
     }
+    .cheContainer div:nth-child(2) h3+ul>li:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #2d6bba;
+    }
     .cheContainer div:nth-child(2) h3+ul>li:first-child::before{
         background: url('../images/lost_item01.png') no-repeat center / contain;
         content: '';
@@ -8543,6 +8467,9 @@ div .everContainer nav div ol li a:hover{
         color: #faff68;
         line-height: 35px;
         text-align: center;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
+        background-color: rgba(228, 228, 228, 0.3);
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child{
         padding: 50px 20px 50px 0;
@@ -8600,6 +8527,10 @@ div .everContainer nav div ol li a:hover{
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child ul li:not(:last-child){
         margin-bottom: 5px;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:last-child{
+        background-color: rgba(32, 8, 33, 0.1);
+        position: relative;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child>strong{
         display: block;
@@ -12217,6 +12148,9 @@ div .everContainer nav div ol li a:hover{
         display: block;
         margin: 110px 0 35px;
     }
+    .seaContainer div:nth-child(2) div:first-of-type>ul li{
+        width: 25%;
+    }
     .seaContainer div:nth-child(2) div:first-of-type>ul li b{
         display: block;
         line-height: 30px;
@@ -12914,6 +12848,12 @@ div .everContainer nav div ol li a:hover{
         width: 94.326%;
         height: 700px;
     }
+    .cheContainer div:nth-child(2) h3+ul>li:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #2d6bba;
+    }
     .cheContainer div:nth-child(2) h3+ul>li:first-child::before{
         background: url('../images/lost_item01.png') no-repeat center / contain;
         content: '';
@@ -12935,6 +12875,9 @@ div .everContainer nav div ol li a:hover{
         color: #faff68;
         line-height: 60px;
         text-align: center;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
+        background-color: rgba(228, 228, 228, 0.3);
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:first-child{
         padding: 100px 80px;
@@ -12989,6 +12932,10 @@ div .everContainer nav div ol li a:hover{
     }
     .cheContainer div:nth-child(2) h3+ul>li:nth-child(2) div:last-child ul li:not(:last-child){
         margin-bottom: 15px;
+    }
+    .cheContainer div:nth-child(2) h3+ul>li:last-child{
+        background-color: rgba(32, 8, 33, 0.1);
+        position: relative;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child>strong{
         display: block;
