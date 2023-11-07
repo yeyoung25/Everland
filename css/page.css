@@ -3,15 +3,19 @@ div .guide{
 }
 div .ticket{
     background: url('../images/ever_Header02.png') no-repeat center / cover;
+    background-position: 63% ;
 }
 div .activity{
     background: url('../images/ever_Header03.png') no-repeat center / cover;
+    background-position: 17%;
 }
 div .member{
     background: url('../images/ever_Header04.png') no-repeat center / cover;
+    background-position: 55%;
 }
 div .communit{
     background: url('../images/ever_Header05.png') no-repeat center / cover;
+    background-position: 54%;
 }
 div .everContainer nav div::after{
     content: '';
@@ -588,11 +592,6 @@ div .everContainer nav div ol li a:hover{
     border: 1px solid var(--gs1);
     background-color: var(--vs7);
 }
-.inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
 /* inquiryBeforeVisiting / inquiryAfterVisiting Details Fin */
 .cheContainer div:nth-child(2) h3+ul>li:nth-child(2){
     position: relative;
@@ -725,12 +724,6 @@ div .everContainer nav div ol li a:hover{
     margin-bottom: 15px;
 }
 /* noticeOfPolicyRevision Fin */
-.signInContainer>form,
-.findIdContainer>form,
-.findPWContainer>form{
-    padding-top: 100px;
-    margin-bottom: 50px;
-}
 .signInContainer>form>fieldset>ul>li>input,
 .findIdContainer>form>fieldset>ul>li>input,
 .findPWContainer>form>fieldset>ul>li>input{
@@ -772,12 +765,6 @@ div .everContainer nav div ol li a:hover{
     width: 14px;
     height: 14px;
     color: var(--gs10);
-}
-.signInContainer>form>fieldset>ul>li:not(:last-child)>input{
-    width: 73%;
-    line-height: 40px;
-    outline-color: transparent;
-    font-family: 'Open Sans';
 }
 .signInContainer>form>fieldset>ul>li:nth-child(2){
     margin-bottom: 25px;
@@ -863,10 +850,6 @@ div .everContainer nav div ol li a:hover{
         padding: 55px 0;
     }
     header+.conPbtm{
-        padding-bottom: 150px;
-    }
-    header+.mwpadding{
-        padding: 0 24px;
         padding-bottom: 150px;
     }
     .indexContainer .banslider li strong{
@@ -2764,6 +2747,9 @@ div .everContainer nav div ol li a:hover{
     .experContainer article div figure{
         margin-top: 30px;
     }
+    .experContainer article .lost figure img{
+        /* content: url('../images/experienceLostDetails_m.png'); */
+    }
     /* experienceProgram Details Fin */
     .recoContainer div:nth-child(2)>img{
         width: 100%;
@@ -2867,7 +2853,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li{
         width: 67px !important;
-        margin-left: 20px;
+        margin: 0 10px !important;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
@@ -3635,11 +3621,13 @@ div .everContainer nav div ol li a:hover{
     }
     .comuContainer div:nth-child(2) .accordion li strong b{
         display: inline-block;
+        width: 5%;
         margin: 0 10px;
         color: var(--gs5);
     }
     .comuContainer div:nth-child(2) .accordion li div b{
         display: inline-block;
+        width: 5%;
         margin: 0 10px;
         color: var(--vs8);
     }
@@ -3740,7 +3728,7 @@ div .everContainer nav div ol li a:hover{
     .inqBContainer div:nth-child(2)>div:first-of-type form,
     .inqAContainer div:nth-child(2)>div:nth-of-type(2) form{
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .inqBContainer div:nth-child(2)>div:first-of-type form+p,
     .inqAContainer div:nth-child(2)>div:nth-of-type(2) form+p{
@@ -3775,8 +3763,8 @@ div .everContainer nav div ol li a:hover{
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset legend b{
-        display: inline-block;
-        margin-top: 5px;
+        display: block;
+        margin-top: 15px;
         color: var(--vs9);
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset legend b::before,
@@ -3821,17 +3809,18 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 3px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li label{
-        vertical-align: middle;
-        line-height: 24px;
         display: inline-block;
         width: 100%;
+        vertical-align: middle;
+        line-height: 24px;
         font-size: 12px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) label{
-        vertical-align: middle;
-        line-height: 24px;
         display: inline-block;
-        width: 15%;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select{
         background: url('../images/inqulry_select.png') no-repeat 95% 60% / 6px 4px;
@@ -3839,26 +3828,19 @@ div .everContainer nav div ol li a:hover{
         appearance: none;
         width: 50%;
         padding: 5px 0 0 5%;
-        margin-left: -1%;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
         background: url('../images/inqulry_select.png') no-repeat 95% 60% / 6px 4px;
         border: none;
         appearance: none;
-        width: 20%;
+        width: 100%;
         padding: 5px 0 0 5%;
-        margin-left: -1%;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(5) input,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(6) input{
         width: 100%;
         outline-color: var(--vs9);
         padding: 5px 0 0 5%;
-    }
-    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div,
-    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div{
-        /* display: inline-block;
-        box-sizing: border-box; */
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:nth-child(6) div>textarea,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:nth-child(7) div>textarea{
@@ -3883,11 +3865,11 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 5px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li input,
-    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li input{
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:not(:first-child) input{
         border: none;
         outline-color: transparent;
         padding: 5px 0 0 5%;
-
+        width: 100%;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li select option:not(:first-child),
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select option:not(:first-child){
@@ -3901,18 +3883,24 @@ div .everContainer nav div ol li a:hover{
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span label,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span label{
-        display: inline-block;
         background-color: var(--vs7);
+        display: inline-block;
+        width: 75px;
         color: var(--gs1);
-        padding: 0 7px;
+        text-align: center;
         border-radius: 5px;
-        width: 63px;
-        margin-right: 20px;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div span small,
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div span small{
+        font-size: 10px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>ul li:last-child div p,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:last-child div p{
         margin-top: 10px;
         color: var(--gs8);
+        line-height: 18px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(2) form fieldset>input,
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>input{
@@ -3926,13 +3914,26 @@ div .everContainer nav div ol li a:hover{
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3){
         background-color: var(--gs2);
-        padding: 20px 0 25px;
+        padding: 20px 15px 25px;
         border-radius: 15px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) ol li:first-child{
+        margin-bottom: 20px;
+    }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) ol li:not(:first-child){
+        margin-left: 10px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
         display: block;
         height: 47px;
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) img+div{
         display: flex;
@@ -3944,17 +3945,18 @@ div .everContainer nav div ol li a:hover{
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-size: 18px;
+        text-align: center;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
-        flex-wrap: wrap;
         margin-bottom: 20px;
         font-size: 12px;
+        text-align: center;
     }
     .modal01>div{
         position: fixed;
-        width: 400px;
+        width: 260px;
         top: 30%;
         left: 50%;
         transform: translateX(-50%);
@@ -3969,8 +3971,8 @@ div .everContainer nav div ol li a:hover{
     .modal01 div>b{
         display: block;
         background-color: var(--gs1);
-        padding: 20px 30px;
-        line-height: 22px;
+        padding: 25px 15px;
+        line-height: 18px;
         text-align: center;
     }
     .inqBContainer div:nth-child(2) h3,
@@ -3979,19 +3981,17 @@ div .everContainer nav div ol li a:hover{
     }
     .inqAContainer div:nth-child(2) h3+div:first-of-type{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         background-color: var(--gs2);
-        padding: 35px 55px;
+        padding: 25px 10px;
         margin-bottom: 50px;
+        border-radius: 10px;
     }
     .inqAContainer div:nth-child(2) h3+div:first-of-type img{
-        height: 84px;
-    }
-    .inqAContainer div:nth-child(2) h3+div:first-of-type div{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        margin-left: 55px;
+        display: block;
+        height: 51px;
+        margin: 0 auto 15px;
     }
     .inqAContainer div:nth-child(2) h3+div:first-of-type div strong{
         display: block;
@@ -4005,13 +4005,12 @@ div .everContainer nav div ol li a:hover{
         font-size: 12px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child b{
-        width: 15%;
+        /* width: 15%; */
+        margin-bottom: 10px;
+        font-size: 12px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 85%;
+        width: 100%;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
         appearance: none;
@@ -4023,10 +4022,14 @@ div .everContainer nav div ol li a:hover{
         border-radius: 50%;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label{
-        margin-right: 10px;
-        line-height: 20px;
+        line-height: 16px;
+    }
+    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label:not(:last-of-type){
+        margin-right: 30px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div span{
+        display: block;
+        margin-top: 10px;
         font-size: 10px;
     }
     .inqAContainer div:nth-child(2) h3+div:first-of-type div strong span{
@@ -4663,11 +4666,27 @@ div .everContainer nav div ol li a:hover{
         margin: 10px 0 15px 0;
     }
     /* noticeOfPolicyRevision Fin */
+    header+.mwpadding{
+        padding: 0 3.571%;
+        padding-bottom: 150px;
+    }
+    .signInContainer>form,
+    .findIdContainer>form,
+    .findPWContainer>form{
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    .signInContainer>form>fieldset>ul>li:not(:last-child)>input{
+        width: 60%;
+        line-height: 30px;
+        outline-color: transparent;
+        font-family: 'Open Sans';
+    }
     .signInContainer>form>fieldset,
     .signInContainer>div,
     .findIdContainer>form>fieldset,
     .findPWContainer>form>fieldset{
-        width: 720px;
+        width: 100%;
         margin: 0 auto;
     }
     .signInContainer>form>fieldset>legend,
@@ -4678,13 +4697,13 @@ div .everContainer nav div ol li a:hover{
     .findIdContainer>form>fieldset>legend,
     .findIdContainer>form>fieldset>ul,
     .findPWContainer>form>fieldset>ul{
-        margin-bottom: 70px;
+        margin-bottom: 35px;
     }
     .signInContainer>form>fieldset>ul>li:not(:last-child),
     .findIdContainer>form>fieldset>ul>li,
     .findPWContainer>form>fieldset>ul>li{
         border-bottom: 1px solid var(--gs9);
-        line-height: 90px;
+        line-height: 60px;
         color: var(--gs9);
     }
     .signInContainer>form>fieldset>input{
@@ -4693,9 +4712,9 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--vs7);
         color: var(--gs1);
         width: 100%;
-        height: 65px;
+        height: 35px;
         text-align: center;
-        line-height: 65px;
+        font-size: 14px;
     }
     .findIdContainer>form>fieldset>input,
     .findPWContainer>form>fieldset>input{
@@ -4706,14 +4725,15 @@ div .everContainer nav div ol li a:hover{
         height: 65px;
     }
     .signInContainer>div>ul:first-child{
-        width: 480px;
-        margin: 0 auto 70px;
+        width: 260px;
+        margin: 0 auto 35px;
     }
     .signInContainer>form>fieldset>ul>li:not(:last-child)>label,
     .findIdContainer>form>fieldset>ul>li>label,
     .findPWContainer>form>fieldset>ul>li>label{
         display: inline-block;
-        width: 150px;
+        width: 90px;
+        font-size: 14px;
     }
     .findIdContainer>form>fieldset>ul>li>input,
     .findPWContainer>form>fieldset>ul>li>input{
@@ -4724,10 +4744,16 @@ div .everContainer nav div ol li a:hover{
         font-family: 'Open Sans';
     }
     .signInContainer>div>ul>li{
-        width: 33.33%;
         box-sizing: border-box;
         text-align: center;
         position: relative;
+    }
+    .signInContainer>div>ul>li:first-child,
+    .signInContainer>div>ul>li:last-child{
+        width: 25%;
+    }
+    .signInContainer>div>ul>li:nth-child(2){
+        width: 50%;
     }
     .signInContainer>div>ul:first-child>li:not(:first-child)::before{
         content: '';
@@ -4739,26 +4765,20 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         left: 0;
     }
-    .signInContainer>div>ul>li:first-child>a{
-        margin-left: 30px;
-    }
-    .signInContainer>div>ul>li:last-child>a{
-        margin-right: 30px;
-    }
     .signInContainer>div>ul:last-child>li{
-        width: 100px;
+        width: 60px;
     }
     .signInContainer>div>ul:last-child>li:first-child a{
         background: url('../images/signIn_kakao.png') no-repeat center / contain;
         display: inline-block;
-        width: 39px;
-        height: 36px;
+        width: 28px;
+        height: 27px;
     }
     .signInContainer>div>ul:last-child>li:last-child a{
         background: url('../images/signIn_faceBook.png') no-repeat center / contain;
         display: inline-block;
-        width: 19px;
-        height: 36px;
+        width: 14px;
+        height: 27px;
     }
     .findIdContainer>form>fieldset>div,
     .findPWContainer>form>fieldset>div{
@@ -4789,7 +4809,7 @@ div .everContainer nav div ol li a:hover{
         font-size: 16px;
     }
     header+.mwpadding>form+div{
-        width: 720px;
+        width: 100%;
         padding: 0;
         margin-bottom: 0;
     }
@@ -8346,6 +8366,11 @@ div .everContainer nav div ol li a:hover{
         border-radius: 15px;
         padding: 35px 60px;
     }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
         height: 77px;
     }
@@ -9104,6 +9129,22 @@ div .everContainer nav div ol li a:hover{
         margin: 10px 0 15px 0;
     }
     /* noticeOfPolicyRevision Fin */
+    header+.mwpadding{
+        padding: 0 24px;
+        padding-bottom: 150px;
+    }
+    .signInContainer>form,
+    .findIdContainer>form,
+    .findPWContainer>form{
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+    .signInContainer>form>fieldset>ul>li:not(:last-child)>input{
+        width: 73%;
+        line-height: 40px;
+        outline-color: transparent;
+        font-family: 'Open Sans';
+    }
     .signInContainer>form>fieldset,
     .signInContainer>div,
     .findIdContainer>form>fieldset,
@@ -12786,6 +12827,11 @@ div .everContainer nav div ol li a:hover{
         border-radius: 15px;
         padding: 75px 115px;
     }
+    .inqBContainer div:nth-child(2)>div:nth-of-type(3) ol{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) img{
         height: 150px;
     }
@@ -13447,98 +13493,114 @@ div .everContainer nav div ol li a:hover{
     .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
         margin-bottom: 100px;
     }
-      /* siteMap Fin */
-      .notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child),
-      .notContainer>div>div>div>ol>li:not(:last-child),
-      .notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child),
-      .notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
-      .notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child),
-      .notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child),
-      .notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child),
-      .notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child),
-      .notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
-          margin-bottom: 10px;
-      }
-      .notContainer>div:not(:last-child){
-          margin-bottom: 150px;
-      }
-      .notContainer>div>strong{
-          display: block;
-          margin-bottom: 40px;
-      }
-      .notContainer>div:first-of-type>p,
-      .notContainer>div:last-of-type>p{
-          margin-bottom: 70px;
-      }
-      .notContainer>div>p,
-      .notContainer>div>div>div>ol>li,
-      .notContainer>div>div>ul>li>p,
-      .notContainer>div>div>ol>li>ol>li,
-      .notContainer>div:nth-of-type(9)>div>ol>li{
-          line-height: 22px;
-      }
-      .notContainer>div>div:first-of-type{
-          margin-bottom: 110px;
-      }
-      .notContainer>div>div>strong{
-          display: block;
-          margin-bottom: 40px;
-      }
-      .notContainer>div>div>b{
-          display: block;
-          margin-bottom: 30px;
-      }
-      .notContainer>div>div>div>b,
-      .notContainer>div>div>ul>li>b{
-          display: block;
-          margin-bottom: 20px;
-      }
-      .notContainer>div>div>div>ol{
-          margin: 0 0 50px 10px;
-      }
-      .notContainer>div>span{
-          display: block;
-          margin-bottom: 70px;
-      }
-      .notContainer>div>div>ul>li>p:first-child{
-          margin-top: 20px;
-      }
-      .notContainer>div>div:last-child>ul>li>mark{
-          display: block;
-          line-height: 22px;
-      }
-      .notContainer>div>div>p{
-          margin-bottom: 30px;
-      }
-      .notContainer>div:nth-of-type(6)>div>ol>li>ol{
-          margin: 10px 0 0 20px;
-      }
-      .notContainer>div>div>ol>li>ol>li>ul{
-          margin: 10px 0 0 20px;
-      }
-      .notContainer>div>div>ul{
-          margin-bottom: 70px;
-      }
-      .notContainer>div>div>div>ul{
-          margin: 20px 0;
-      }
-      .notContainer>div>div>div>ul>li:not(:last-child){
-          margin-bottom: 15px;
-      }
-      .notContainer>div>div>div>p+p{
-          margin-bottom: 50px;
-      }
-      .notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
-          margin-bottom: 20px;
-      }
-      .notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
-          margin-bottom: 30px;
-      }
-      .notContainer>div:nth-of-type(9)>div>ol>li>ol{
-          margin: 20px 0 30px 0;
-      }
+    /* siteMap Fin */
+    .notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child),
+    .notContainer>div>div>div>ol>li:not(:last-child),
+    .notContainer>div:nth-of-type(3)>div>ul>li p:not(:last-child),
+    .notContainer>div:nth-of-type(4)>div>ul>li>p:not(:last-child),
+    .notContainer>div:nth-of-type(4)>div>ul>li>mark:not(:last-child),
+    .notContainer>div:nth-of-type(5)>div>ul>li>p:not(:last-child),
+    .notContainer>div:nth-of-type(8)>div>ul>li:not(:last-child),
+    .notContainer>div:nth-of-type(9)>div>ol>li>ol>li:not(:last-child),
+    .notContainer>div:nth-of-type(9)>div>ol>li:last-child>ol>li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .notContainer>div:not(:last-child){
+        margin-bottom: 150px;
+    }
+    .notContainer>div>strong{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .notContainer>div:first-of-type>p,
+    .notContainer>div:last-of-type>p{
+        margin-bottom: 70px;
+    }
+    .notContainer>div>p,
+    .notContainer>div>div>div>ol>li,
+    .notContainer>div>div>ul>li>p,
+    .notContainer>div>div>ol>li>ol>li,
+    .notContainer>div:nth-of-type(9)>div>ol>li{
+        line-height: 22px;
+    }
+    .notContainer>div>div:first-of-type{
+        margin-bottom: 110px;
+    }
+    .notContainer>div>div>strong{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .notContainer>div>div>b{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .notContainer>div>div>div>b,
+    .notContainer>div>div>ul>li>b{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .notContainer>div>div>div>ol{
+        margin: 0 0 50px 10px;
+    }
+    .notContainer>div>span{
+        display: block;
+        margin-bottom: 70px;
+    }
+    .notContainer>div>div>ul>li>p:first-child{
+        margin-top: 20px;
+    }
+    .notContainer>div>div:last-child>ul>li>mark{
+        display: block;
+        line-height: 22px;
+    }
+    .notContainer>div>div>p{
+        margin-bottom: 30px;
+    }
+    .notContainer>div:nth-of-type(6)>div>ol>li>ol{
+        margin: 10px 0 0 20px;
+    }
+    .notContainer>div>div>ol>li>ol>li>ul{
+        margin: 10px 0 0 20px;
+    }
+    .notContainer>div>div>ul{
+        margin-bottom: 70px;
+    }
+    .notContainer>div>div>div>ul{
+        margin: 20px 0;
+    }
+    .notContainer>div>div>div>ul>li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .notContainer>div>div>div>p+p{
+        margin-bottom: 50px;
+    }
+    .notContainer>div:nth-of-type(4)>div>ul>li>mark:first-child{
+        margin-bottom: 20px;
+    }
+    .notContainer>div:nth-of-type(7)>div>ul>li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .notContainer>div:nth-of-type(9)>div>ol>li>ol{
+        margin: 20px 0 30px 0;
+    }
 
-      /* noticeOfPolicyRevision Fin */
+    /* noticeOfPolicyRevision Fin */
+    header+.mwpadding{
+        padding: 0 24px;
+        padding-bottom: 150px;
+    }
+    .signInContainer>form,
+    .findIdContainer>form,
+    .findPWContainer>form{
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+    .signInContainer>form>fieldset>ul>li:not(:last-child)>input{
+        width: 73%;
+        line-height: 40px;
+        outline-color: transparent;
+        font-family: 'Open Sans';
+    }
       .signInContainer>form>fieldset,
       .signInContainer>div{
           width: 606px;
