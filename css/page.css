@@ -625,11 +625,6 @@ div .everContainer nav div ol li a:hover{
     color: var(--gs8);
 }
 /* policy Fin */
-.aboutContainer>div>b{
-    display: block;
-    color: var(--os1);
-    margin-bottom: 40px;
-}
 .aboutContainer>div>p:first-of-type{
     margin-bottom: 20px;
 }
@@ -658,25 +653,13 @@ div .everContainer nav div ol li a:hover{
 .siteContainer>ul>li:first-of-type>ul>li>ol>li>a{
     color: var(--os1);
 }
-.siteContainer>ul>li:first-of-type>ul>li:not(:first-child){
-    border-left: 1px solid var(--os1);
-}
 .siteContainer>ul>li:nth-child(2)>ul,
 .siteContainer>ul>li:nth-child(2)>ul>li>ol>li>a{
     color: var(--vs9);
 }
-.siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
-    border-left: 1px solid var(--vs9);
-}
-.siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
-    border-left: 1px solid var(--rs8);
-}
 .siteContainer>ul>li:nth-child(3)>ul,
 .siteContainer>ul>li:nth-child(3)>ul>li>ol>li>a{
     color: var(--rs8);
-}
-.siteContainer>ul>li:last-child>ul>li:not(:first-child){
-    border-left: 1px solid var(--gs11);
 }
 /* siteMap Fin */
 .notContainer>div>div>div>ol>li>mark,
@@ -1316,7 +1299,7 @@ div .everContainer nav div ol li a:hover{
     .comuContainer div:nth-child(2) h3,
     .siteContainer ul li>.linebtm{
         text-align: center;
-        padding: 40px 0;
+        padding: 35px 0;
         border-bottom: 1px solid var(--gs5);
     }
     .experContainer article h3,
@@ -3711,6 +3694,12 @@ div .everContainer nav div ol li a:hover{
         padding: 20px 10px;
         margin-bottom: 20px;
     }
+    .inqBContainer div:nth-child(2)>div:first-of-type>ol li,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol li,
+    .inqBContainer div:nth-child(2)>div:first-of-type form+p,
+    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form+p{
+        line-height: 18px;
+    }
     .inqBContainer div:nth-child(2)>div:first-of-type>ol li:not(:last-child),
     .inqAContainer div:nth-child(2)>div:nth-of-type(2)>ol li:not(:last-child){
         margin-bottom: 10px;
@@ -3719,10 +3708,6 @@ div .everContainer nav div ol li a:hover{
     .inqAContainer div:nth-child(2)>div:nth-of-type(2) form{
         display: inline-block;
         margin-bottom: 10px;
-    }
-    .inqBContainer div:nth-child(2)>div:first-of-type form+p,
-    .inqAContainer div:nth-child(2)>div:nth-of-type(2) form+p{
-        line-height: 18px;
     }
     .inqBContainer div:nth-child(2)>div:first-of-type form input,
     .inqAContainer div:nth-child(2)>div:nth-of-type(2) form input{
@@ -4002,21 +3987,22 @@ div .everContainer nav div ol li a:hover{
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div{
         width: 100%;
+        position: relative;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
         appearance: none;
-        margin-right: 5px;
-        margin-bottom: 4px;
+        margin: 5px 5px 4px 0;
         width: 8px;
         height: 8px;
         box-shadow: 0 0 0 1px var(--vs7);
         border-radius: 50%;
+        position: absolute;
+        left: 0;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label{
+        display: block;
         line-height: 16px;
-    }
-    .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label:not(:last-of-type){
-        margin-right: 20px;
+        padding-left: 20px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div span{
         display: block;
@@ -4197,7 +4183,7 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 50px;
     }
     .tosContainer>div>ol>li:not(:last-child){
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
     .tosContainer>div>ol>li>b{
         display: block;
@@ -4213,7 +4199,7 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 10px;
     }
     .tosContainer>div>ol>li:not(:last-child)>ol>li>ol{
-        margin-left: 10px;
+        margin-top: 10px;
     }
     .tosContainer>div>ol>li:last-child>ol>li:nth-child(2),
     .tosContainer>div>ol>li:last-child>ol>li:nth-child(3){
@@ -4392,12 +4378,18 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 100px;
     }
     /* policy Fin */
+    .aboutContainer>div>b{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
     .aboutContainer>div>p{
-        line-height: 25px;
+        line-height: 20px;
         font-size: 14px;
     }
     .aboutContainer>div>p:nth-of-type(2){
-        margin-bottom: 85px;
+        margin-bottom: 100px;
     }
     .aboutContainer>div>dl:not(:last-child){
         margin-bottom: 100px;
@@ -4411,19 +4403,18 @@ div .everContainer nav div ol li a:hover{
     }
     .aboutContainer>div>dl>dt{
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-size: 16px;
     }
     .aboutContainer>div>dl>dd{
-        line-height: 30px;
-        margin-left: 15px;
+        line-height: 20px;
         font-size: 14px;
     }
     .aboutContainer>div>hr{
         margin: 0 0 100px 0;
     }
     .aboutContainer>div>hr:not(:last-of-type)+p{
-        line-height: 25px;
+        line-height: 20px;
         margin-bottom: 100px;
     }
     /* aboutUs Fin */
@@ -4525,12 +4516,18 @@ div .everContainer nav div ol li a:hover{
     }
     .siteContainer>ul>li>ul{
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .siteContainer>ul>li>ul>li{
-        width: 25%;
-        padding: 0 10px 0 10px;
+        width: 45%;
+        /* padding: 0 10px 0 10px; */
         height: 280px;
     }
+    .siteContainer>ul>li>ul>li:nth-child(even){
+        padding-left: 10px;
+    }
+    
     .siteContainer>ul>li>ul>li>b{
         display: block;
         margin-bottom: 15px;
@@ -4542,6 +4539,18 @@ div .everContainer nav div ol li a:hover{
     .siteContainer>ul>li:first-of-type>h3{
         border-bottom: 2px solid var(--os1);
         color: var(--os1);
+    }
+    .siteContainer>ul>li:first-of-type>ul>li:not(:nth-child(odd)){
+        border-left: 1px solid var(--os1);
+    }
+    .siteContainer>ul>li:nth-child(2)>ul>li:not(:nth-child(odd)){
+        border-left: 1px solid var(--vs9);
+    }
+    .siteContainer>ul>li:nth-child(3)>ul>li:not(:nth-child(odd)){
+        border-left: 1px solid var(--rs8);
+    }
+    .siteContainer>ul>li:last-child>ul>li:not(:nth-child(odd)){
+        border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
         border-bottom: 2px solid var(--vs9);
@@ -5198,8 +5207,11 @@ div .everContainer nav div ol li a:hover{
     }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>label{
         display: inline-block;
-        width: 110px;
+        width: 100px;
         font-size: 12px;
+    }
+    .signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-last-child(2)>label{
+        width: 120px;
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type{
         display: flex;
@@ -8504,8 +8516,7 @@ div .everContainer nav div ol li a:hover{
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
         appearance: none;
-        margin-right: 5px;
-        margin-bottom: 4px;
+        margin: 0 5px 4px 0;
         width: 8px;
         height: 8px;
         box-shadow: 0 0 0 1px var(--vs7);
@@ -8911,6 +8922,11 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 100px;
     }
     /* policy Fin */
+    .aboutContainer>div>b{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 40px;
+    }
     .aboutContainer>div>p{
         line-height: 25px;
         font-size: 14px;
@@ -9061,6 +9077,18 @@ div .everContainer nav div ol li a:hover{
     .siteContainer>ul>li:first-of-type>h3{
         border-bottom: 2px solid var(--os1);
         color: var(--os1);
+    }
+    .siteContainer>ul>li:first-of-type>ul>li:not(:first-child){
+        border-left: 1px solid var(--os1);
+    }
+    .siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
+        border-left: 1px solid var(--vs9);
+    }
+    .siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
+        border-left: 1px solid var(--rs8);
+    }
+    .siteContainer>ul>li:last-child>ul>li:not(:first-child){
+        border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
         border-bottom: 2px solid var(--vs9);
@@ -12978,8 +13006,7 @@ div .everContainer nav div ol li a:hover{
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div input{
         appearance: none;
-        margin-right: 15px;
-        margin-bottom: 4px;
+        margin: 0 15px 4px 0;
         width: 10px;
         height: 10px;
         box-shadow: 0 0 0 1px var(--vs7);
@@ -13399,6 +13426,11 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 110px;
     }
     /* policy Fin */
+    .aboutContainer>div>b{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 40px;
+    }
     .aboutContainer>div>p{
         line-height: 22px;
     }
@@ -13543,6 +13575,18 @@ div .everContainer nav div ol li a:hover{
     .siteContainer>ul>li:first-of-type>h3{
         border-bottom: 3px solid var(--os1);
         color: var(--os1);
+    }
+    .siteContainer>ul>li:first-of-type>ul>li:not(:first-child){
+        border-left: 1px solid var(--os1);
+    }
+    .siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
+        border-left: 1px solid var(--vs9);
+    }
+    .siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
+        border-left: 1px solid var(--rs8);
+    }
+    .siteContainer>ul>li:last-child>ul>li:not(:first-child){
+        border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
         border-bottom: 3px solid var(--vs9);
