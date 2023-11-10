@@ -785,11 +785,6 @@ div .everContainer nav div ol li a:hover{
 .signUpContainer .step01>form>ol>li{
     position: relative;
 }
-.signUpContainer .step01>form>ol>li>div{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 .signUpContainer .step01>form>ol>li>div>label{
     color: var(--gs8);
 }
@@ -799,15 +794,6 @@ div .everContainer nav div ol li a:hover{
 .signUpContainer .step02>form>fieldset>ol:last-of-type>li>input[type="radio"]:checked{
     border: 1px solid var(--gs1);
     background-color: var(--vs7);
-}
-.signUpContainer .step02>form>fieldset>ol>li>button{
-    border: none;
-    background-color: transparent;
-    color: var(--bs5);
-}
-.signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-child(5){
-    display: flex;
-    align-items: center;
 }
 .signUpContainer .step03{
     text-align: center;
@@ -866,7 +852,7 @@ div .everContainer nav div ol li a:hover{
         object-fit: cover;
     }
     .indexContainer .banslider li:first-child a img{
-        content: url('../images/bg_main01_M.png');
+        /* content: url('../images/bg_main01_M.png'); */
     }
     .indexContainer .banslider li:nth-child(2) a img{
         content: url('../images/bg_main02_M.png');
@@ -1282,6 +1268,7 @@ div .everContainer nav div ol li a:hover{
         font-family: 'Open Sans';
         font-weight: 600;
         font-size: 10px;
+        text-overflow: ellipsis;
     }
     div .everContainer nav div:first-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / 8px 5px;
@@ -2482,7 +2469,7 @@ div .everContainer nav div ol li a:hover{
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div{
         position: relative;
-        width: 50%;
+        width: 25%;
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:first-child a.active{
         background: var(--gs11);
@@ -2497,18 +2484,19 @@ div .everContainer nav div ol li a:hover{
         height: 1px;
         background-color: var(--gs5);
     }
-    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:nth-child(2) a.active{
+    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div a.active{
         background: var(--gs11);
         height: 3px;
         position: absolute;
         top: -2px;
         left: 0;
     }
-    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:nth-child(2) a{
+    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div a{
         display: inline-block;
         width: 100%;
         height: 1px;
         background-color: var(--gs5);
+        margin: 0;
     }
     .speContainer div:nth-child(2) hr{
         display: none;
@@ -2641,6 +2629,7 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) hr+ul:last-child::before,
     .speContainer div:nth-child(2) hr+ul:last-child::after{
         width: 125px;
+        width: 193px;
         content: '';
         order: 1;
     }
@@ -2910,12 +2899,11 @@ div .everContainer nav div ol li a:hover{
         bottom: 12%;
         left: 0;
         width: 45%;
-        margin-left: 3%;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li{
         display: block;
         width: 100%;
-        height: 850px;
+        height: 530px;
         z-index: -100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
@@ -2969,7 +2957,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
         width: 100%;
         position: absolute;
-        top: 620px;
+        bottom: 10px;
         left: 3.571px;
         z-index: 100;
     }
@@ -2980,6 +2968,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
         display: inline-block;
         width: 50%;
+        line-height: 20px;
         color: #9ddc87;
         margin-left: 20px;
         font-size: 14px;
@@ -3006,7 +2995,7 @@ div .everContainer nav div ol li a:hover{
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li{
         width: 100%;
-        height: 850px;
+        height: 530px;
         z-index: -100;
     }    
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li::after{
@@ -3033,26 +3022,28 @@ div .everContainer nav div ol li a:hover{
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
         color: rgba(122,31,127,0.7);
-        font-size: 50px;
+        font-size: 40px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
         display: inline-block;
+        width: 50%;
+        line-height: 20px;
         color: #d99adc;
-        margin-left: 30px;
-        font-size: 20px;
+        margin-left: 20px;
+        font-size: 14px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
         display: block;
         color: #fcceff;
         margin-bottom: 15px;
-        font-size: 16px;
+        font-size: 12px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
         color: #fcceff;
         line-height: 30px;
-        width: 82.708%;
+        width: 95%;
         line-height: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
     /* recommendedCourse Fin */
     .atraContainer div:nth-child(2) h3+ul,
@@ -3174,8 +3165,9 @@ div .everContainer nav div ol li a:hover{
         max-width: 580px;
     }
     .enterContainer div:nth-child(2)>div div:last-child img+div ol li{
-        font-size: 14px;
         color: var(--gs9);
+        line-height: 18px;
+        font-size: 12px;
     }
     .enterContainer div:nth-child(2)>div div:last-child img+div ol li:not(:last-child){
         margin-bottom: 15px;
@@ -3824,7 +3816,7 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/inqulry_select.png') no-repeat 95% 60% / 6px 4px;
         border: none;
         appearance: none;
-        width: 50%;
+        width: 100%;
         padding: 5px 0 0 5%;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li select{
@@ -3884,6 +3876,7 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--vs7);
         display: inline-block;
         width: 75px;
+        line-height: 25px;
         color: var(--gs1);
         text-align: center;
         border-radius: 5px;
@@ -4023,7 +4016,7 @@ div .everContainer nav div ol li a:hover{
         line-height: 16px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div label:not(:last-of-type){
-        margin-right: 30px;
+        margin-right: 20px;
     }
     .inqAContainer div:nth-child(2)>div:last-of-type form fieldset>ul li:first-child div span{
         display: block;
@@ -4132,7 +4125,7 @@ div .everContainer nav div ol li a:hover{
     .cheContainer div:nth-child(2) h3+ul>li:last-child{
         background-color: rgba(32, 8, 33, 0.1);
         position: relative;
-        height: 600px;
+        height: 555px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child>strong{
         display: block;
@@ -4209,6 +4202,7 @@ div .everContainer nav div ol li a:hover{
     .tosContainer>div>ol>li>b{
         display: block;
         margin-bottom: 30px;
+        line-height: 18px;
     }
     .tosContainer>div>ol>li p,
     .tosContainer>div>ol>li>ol>li{
@@ -4666,13 +4660,12 @@ div .everContainer nav div ol li a:hover{
     /* noticeOfPolicyRevision Fin */
     header+.mwpadding{
         padding: 0 3.571%;
-        padding-bottom: 65px;
+        padding-bottom: 150px;
     }
     .signInContainer>form,
     .findIdContainer>form,
     .findPWContainer>form{
         padding-top: 50px;
-        margin-bottom: 50px;
     }
     .signInContainer>form>fieldset>ul>li:not(:last-child)>input{
         width: 60%;
@@ -4680,8 +4673,8 @@ div .everContainer nav div ol li a:hover{
         outline-color: transparent;
         font-family: 'Open Sans';
     }
-    .signInContainer>form>fieldset,
     .signInContainer>div,
+    .signInContainer>form>fieldset,
     .findIdContainer>form>fieldset,
     .findPWContainer>form>fieldset{
         width: 100%;
@@ -4695,7 +4688,7 @@ div .everContainer nav div ol li a:hover{
     .findIdContainer>form>fieldset>legend,
     .findIdContainer>form>fieldset>ul,
     .findPWContainer>form>fieldset>ul{
-        margin-bottom: 35px;
+        margin-bottom: 50px;
     }
     .signInContainer>form>fieldset>ul>li:not(:last-child),
     .findIdContainer>form>fieldset>ul>li,
@@ -4713,6 +4706,7 @@ div .everContainer nav div ol li a:hover{
         height: 35px;
         text-align: center;
         font-size: 14px;
+        margin-bottom: 35px;
     }
     .findIdContainer>form>fieldset>input,
     .findPWContainer>form>fieldset>input{
@@ -4720,7 +4714,8 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--vs7);
         color: var(--gs1);
         width: 100%;
-        height: 65px;
+        height: 35px;
+        font-size: 14px;
     }
     .signInContainer>div>ul:first-child{
         width: 260px;
@@ -4735,11 +4730,11 @@ div .everContainer nav div ol li a:hover{
     }
     .findIdContainer>form>fieldset>ul>li>input,
     .findPWContainer>form>fieldset>ul>li>input{
-        width: 77%;
+        width: 60%;
         line-height: 40px;
-        font-size: 18px;
         outline-color: transparent;
         font-family: 'Open Sans';
+        font-size: 14px;
     }
     .signInContainer>div>ul>li{
         box-sizing: border-box;
@@ -4783,27 +4778,16 @@ div .everContainer nav div ol li a:hover{
         position: relative;
         margin-bottom: 15px;
     }
-    .findIdContainer>form>fieldset>div::after,
-    .findPWContainer>form>fieldset>div::after{
-        background: url('../images/findId.png') no-repeat center / contain;
-        content: '';
-        display: inline-block;
-        width: 124px;
-        height: 118px;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .findIdContainer>form>fieldset>div>h3,
     .findPWContainer>form>fieldset>div>h3{
         display: inline-block;
         margin-bottom: 30px;
-        font-size: 24px;
+        line-height: 26px;
+        font-size: 20px;
     }
     .findIdContainer>form>fieldset>div>p,
     .findPWContainer>form>fieldset>div>p{
         line-height: 24px;
-        width: 450px;
         font-size: 16px;
     }
     header+.mwpadding>form+div{
@@ -4813,7 +4797,7 @@ div .everContainer nav div ol li a:hover{
     }
     .modal02>div{
         position: fixed;
-        width: 500px;
+        width: 260px;
         top: 30%;
         left: 50%;
         transform: translateX(-50%);
@@ -4821,28 +4805,29 @@ div .everContainer nav div ol li a:hover{
         z-index: 100;
     }
     .modal02>div>div{
-        padding: 30px 60px 35px;
+        padding: 25px 15px;
         background-color: var(--gs1);
     }
     .findPWContainer+.modal02>div>div{
-        padding: 30px 70px 35px;
+        padding: 20px 15px;
         background-color: var(--gs1);
     }
     .modal02>div>div strong{
         display: block;
-        margin-bottom: 15px;
-        font-size: 16px;
+        margin: 0 auto 10px;
+        text-align: center;
+        font-size: 14px;
     }
     .modal02>div>div p{
         margin-bottom: 20px;
         color: var(--gs9);
-        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
     }
     .modal02>div>div>b{
         display: block;
         text-align: center;
         line-height: 26px;
-        font-size: 16px;
     }
     .modal02>div>div p+b{
         display: block;
@@ -4856,7 +4841,7 @@ div .everContainer nav div ol li a:hover{
     .modal02>div a{
         display: inline-block;
         width: 100%;
-        line-height: 65px;
+        line-height: 35px;
         color: var(--gs1);
         border: none;
         cursor: pointer;
@@ -4867,16 +4852,36 @@ div .everContainer nav div ol li a:hover{
     body .signUpContainer>ul{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         border-bottom: 1px solid var(--gs8);
-        margin-bottom: 70px;
-        padding-bottom: 30px;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
     }
-    .signUpContainer>ul>li{
+    .signUpContainer>.step1>li:first-child,
+    .signUpContainer>.step2>li:nth-child(2),
+    .signUpContainer>.step3>li:last-of-type{
         display: flex;
         flex-wrap: wrap;
-        width: 33.33%;
+        /* width: 100%; */
+        position: relative;
+        padding-left: 40px;
+    }
+    .signUpContainer>.step1>li:nth-child(2),
+    .signUpContainer>.step1>li:nth-child(3),
+    .signUpContainer>.step2>li:first-child,
+    .signUpContainer>.step2>li:nth-child(3),
+    .signUpContainer>.step3>li:first-child,
+    .signUpContainer>.step3>li:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        width: 0%;
         position: relative;
         padding-left: 60px;
+    }
+    .signUpContainer .step01>form>ol>li>div{
+        position: absolute;
+        bottom: -40px;
+        left: 0;
     }
     .signUpContainer>.step1>li:first-child:after{
         content: '';
@@ -4885,7 +4890,7 @@ div .everContainer nav div ol li a:hover{
         height: 3px;
         background-color: var(--vs9);
         position: absolute;
-        bottom: -32px;
+        bottom: -22px;
         left: 0;
     }
     .signUpContainer>.step2>li:nth-child(2)::after{
@@ -4895,7 +4900,7 @@ div .everContainer nav div ol li a:hover{
         height: 3px;
         background-color: var(--vs9);
         position: absolute;
-        bottom: -32px;
+        bottom: -22px;
         left: 0;
     }
     .signUpContainer>.step3>li:last-child::after{
@@ -4905,7 +4910,7 @@ div .everContainer nav div ol li a:hover{
         height: 3px;
         background-color: var(--vs9);
         position: absolute;
-        bottom: -32px;
+        bottom: -22px;
         left: 0;
     }
     .signUpContainer>ul>li>strong{
@@ -4917,7 +4922,7 @@ div .everContainer nav div ol li a:hover{
     }
     .signUpContainer>ul>li>b{
         line-height: 14px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .signUpContainer>.step1>li:not(:first-child)>strong,
     .signUpContainer>.step1>li:not(:first-child)>b,
@@ -4934,44 +4939,45 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/signup01.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 47px;
-        height: 44px;
+        width: 29px;
+        height: 28px;
         position: absolute;
-        top: 6px;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
     }
     .signUpContainer>.step1>li:nth-child(2):before{
         background: url('../images/signup02.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 43px;
-        height: 43px;
+        width: 29px;
+        height: 29px;
         position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: -15px;
+        /* left: 50%; */
+        right: 0;
         opacity: 0.3;
     }
     .signUpContainer>.step1>li:last-child::before{
         background: url('../images/signup03.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 40px;
-        height: 42px;
+        width: 27px;
+        height: 30px;
         position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: -15px;
+        /* left: 50%; */
+        right: 0;
         opacity: 0.3;
     }
     .signUpContainer>.step2>li:first-child::before{
         background: url('../images/signup01.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 47px;
-        height: 44px;
+        width: 29px;
+        height: 28px;
         position: absolute;
-        top: -20px;
+        top: -15px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0.3;
@@ -4980,20 +4986,21 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/signup02.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 43px;
-        height: 43px;
+        width: 29px;
+        height: 29px;
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
     }
     .signUpContainer>.step2>li:last-child::before{
         background: url('../images/signup03.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 40px;
-        height: 42px;
+        width: 27px;
+        height: 30px;
         position: absolute;
-        top: -20px;
+        top: -15px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0.3;
@@ -5002,10 +5009,10 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/signup01.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 47px;
-        height: 44px;
+        width: 29px;
+        height: 28px;
         position: absolute;
-        top: -20px;
+        top: -15px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0.3;
@@ -5014,10 +5021,10 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/signup02.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 43px;
-        height: 43px;
+        width: 29px;
+        height: 29px;
         position: absolute;
-        top: -20px;
+        top: -15px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0.3;
@@ -5026,10 +5033,11 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/signup03.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 40px;
-        height: 42px;
+        width: 27px;
+        height: 30px;
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
     }
     .signUpContainer .step01>form>div{
@@ -5040,11 +5048,12 @@ div .everContainer nav div ol li a:hover{
         align-items: center;
     }
     .signUpContainer .step01>form>div>input{
-        width: 12.916%;
+        width: 10%;
         height: 19px;
     }
     .signUpContainer .step01>form>div>label{
         display: block;
+        width: 100%;
         color: var(--vs10);
     }
     .signUpContainer .step01>form>div>label>b{
@@ -5059,13 +5068,13 @@ div .everContainer nav div ol li a:hover{
         font-size: 10px;
     }
     .signUpContainer .step01>form>ol>li:not(:last-child)>strong>mark{
-        display: inline-block;
+        /* display: inline-block;
+        margin-right: 25px; */
         color: var(--vs7);
-        margin-right: 25px;
     }
     .signUpContainer .step01>form>ol>li:last-child>strong>mark{
         color: var(--os1);
-        margin-left: 25px;
+        margin-left: 10px;
     }
     .signUpContainer .step01>form>ol>li>div>input{
         margin: 3px 10px 4px 0;
@@ -5074,7 +5083,7 @@ div .everContainer nav div ol li a:hover{
     .signUpContainer .step01>form>ol>li>ol{
         margin: 25px 0 100px;
         border: 1px solid var(--gs8);
-        padding: 50px 25px;
+        padding: 30px 10px;
         color: var(--gs8);
         height: 150px;
         overflow: scroll;
@@ -5082,7 +5091,17 @@ div .everContainer nav div ol li a:hover{
         line-height: 18px;
     }
     .signUpContainer .step01>form>div+ol>li{
+        /* display: flex;
+        flex-wrap: wrap; */
         line-height: 24px;
+    }
+    .signUpContainer .step01>form>div+ol>li:not(:last-child)>strong{
+        position: relative;
+        padding-left: 65px;
+    }
+    .signUpContainer .step01>form>div+ol>li:not(:last-child)>strong>mark{
+        position: absolute;
+        left: 0;
     }
     .signUpContainer .step01>form>div+ol>li:first-child>ol>li:first-child{
         margin-bottom: 40px;
@@ -5139,14 +5158,15 @@ div .everContainer nav div ol li a:hover{
         border: none;
         background-color: var(--vs8);
         color: var(--gs1);
-        padding: 25px 0px;
+        padding: 15px 0px;
         text-align: center;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 14px;
     }
     .signUpContainer .step02>form>fieldset>strong{
         display: block;
         margin-bottom: 20px;
+        font-size: 14px;
     }
     .signUpContainer .step02>form>fieldset>strong:last-of-type{
         display: block;
@@ -5159,21 +5179,42 @@ div .everContainer nav div ol li a:hover{
         border-bottom: 1px solid var(--gs8);
         line-height: 65px;
     }
+    .signUpContainer .step02>form>fieldset>ol>li>button{
+        display: block;
+        margin: 0 0 25px auto;
+        border: none;
+        background-color: transparent;
+        color: var(--bs5);
+    }
+    .signUpContainer .step02>form>fieldset>ol:first-of-type>li:last-child{
+        display: flex;
+        justify-content: space-between;
+    }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>input{
         border: none;
         line-height: 35px;
+        text-align: right;
+        font-size: 12px;
     }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>label{
         display: inline-block;
-        width: 20.021%;
+        width: 110px;
+        font-size: 12px;
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type{
+        display: flex;
         margin-bottom: 100px;
+        flex-wrap: wrap;
+    }
+    .signUpContainer .step02>form>fieldset>ol:last-of-type li{
+        width: 100%;
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type li:not(:last-child){
         display: inline-block;
-        margin-right: 4.964%;
         font-size: 12px;
+    }
+    .signUpContainer .step02>form>fieldset>ol:last-of-type li:not(:nth-child(n+4)){
+        margin-bottom: 20px;
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type li>label{
         line-height: 18px;
@@ -5181,8 +5222,7 @@ div .everContainer nav div ol li a:hover{
     .signUpContainer .step02>form>fieldset>ol:last-of-type>li>input{
         border: none;
         appearance: none;
-        margin-right: 10px;
-        margin-bottom: 4px;
+        margin: 0 10px 4px 0;
         width: 10px;
         height: 10px;
         box-shadow: 0 0 0 1px var(--vs7);
@@ -5190,7 +5230,7 @@ div .everContainer nav div ol li a:hover{
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type>li:nth-child(5){
         width: 100%;
-        margin-top: 30px;
+        margin-top: 25px;
         padding-top: 30px;
         border-top: 1px solid var(--gs8);
         line-height: 18px;
@@ -5198,31 +5238,33 @@ div .everContainer nav div ol li a:hover{
     }
     .signUpContainer .step02>form>fieldset>ol>li:nth-child(5) span{
         display: inline-block;
-        width: 54.166%;
+        /* width: 54.166%; */
         color: var(--gs8);
         margin-left: auto;
         line-height: 16px;
         font-size: 10px;
     }
     .signUpContainer .step03 h3{
-        margin-bottom: 50px;
-        font-size: 30px;
+        margin-bottom: 45px;
+        font-size: 20px;
     }
     .signUpContainer .step03>strong{
         display: block;
         margin-bottom: 25px;
-        font-size: 20px;
+        font-size: 16px;
     }
     .signUpContainer .step03>p{
         color: var(--gs8);
-        margin-bottom: 70px;
-        font-size: 20px;
+        margin-bottom: 45px;
+        line-height: 22px;
+        font-size: 16px;
     }
     .signUpContainer .step03>a{
         display: block;
         width: 48.611%;
-        line-height: 55px;
+        line-height: 40px;
         margin: 0 auto;
+        font-size: 14px;
     }
     .signUpContainer .step03>a:first-of-type{
         background-color: var(--vs7);
@@ -9348,6 +9390,11 @@ div .everContainer nav div ol li a:hover{
         position: relative;
         padding-left: 60px;
     }
+    .signUpContainer .step01>form>ol>li>div{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .signUpContainer>.step1>li:first-child:after{
         content: '';
         display: inline-block;
@@ -9628,6 +9675,15 @@ div .everContainer nav div ol li a:hover{
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li{
         border-bottom: 1px solid var(--gs8);
         line-height: 65px;
+    }
+    .signUpContainer .step02>form>fieldset>ol>li>button{
+        border: none;
+        background-color: transparent;
+        color: var(--bs5);
+    }
+    .signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-child(5){
+        display: flex;
+        align-items: center;
     }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>input{
         border: none;
@@ -13805,6 +13861,11 @@ div .everContainer nav div ol li a:hover{
         position: relative;
         padding-left: 8.592%;
     }
+    .signUpContainer .step01>form>ol>li>div{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .signUpContainer>.step1>li:first-child:after{
         content: '';
         display: inline-block;
@@ -14063,7 +14124,6 @@ div .everContainer nav div ol li a:hover{
         text-align: center;
         margin: 0 auto;
     }
-
     .signUpContainer .step02>form>fieldset>strong{
         display: block;
         margin-bottom: 20px;
@@ -14078,6 +14138,15 @@ div .everContainer nav div ol li a:hover{
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li{
         border-bottom: 1px solid var(--gs8);
         line-height: 90px;
+    }
+    .signUpContainer .step02>form>fieldset>ol>li>button{
+        border: none;
+        background-color: transparent;
+        color: var(--bs5);
+    }
+    .signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-child(5){
+        display: flex;
+        align-items: center;
     }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>input{
         border: none;
