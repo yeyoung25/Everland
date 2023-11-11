@@ -694,9 +694,11 @@ div .everContainer nav div ol li a:hover{
 }
 .notContainer>div:nth-of-type(8)>div:first-of-type>div>b+p{
     margin-bottom: 50px;
+    line-height: 18px;
 }
 .notContainer>div:nth-of-type(8)>div:last-child>div>b+p{
     margin-bottom: 15px;
+    line-height: 18px;
 }
 /* noticeOfPolicyRevision Fin */
 .signInContainer>form>fieldset>ul>li>input,
@@ -4478,13 +4480,16 @@ div .everContainer nav div ol li a:hover{
         margin-right: 10px;
     }
     .bidContainer>div>h4{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+    .bidContainer>div:first-of-type>ul>li{
+        line-height: 18PX;
     }
     .bidContainer>div:first-of-type>ul>li>ol{
-        margin: 15px 0 0 20px;
+        margin: 10px 0 0 10px;
     }
     .bidContainer>div:first-of-type>ul>li:first-child{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .bidContainer>div:first-of-type>ul>li>ol>li:not(:last-child),
     .bidContainer>div:first-of-type>ul>li:nth-child(2),
@@ -4596,6 +4601,7 @@ div .everContainer nav div ol li a:hover{
     .notContainer>div>strong{
         display: block;
         margin-bottom: 20px;
+        line-height: 22px;
         font-size: 16px;
     }
     .notContainer>div:first-of-type>p,
@@ -4618,11 +4624,13 @@ div .everContainer nav div ol li a:hover{
     .notContainer>div>div>b{
         display: block;
         margin-bottom: 20px;
+        line-height: 18px;
     }
     .notContainer>div>div>div>b,
     .notContainer>div>div>ul>li>b{
         display: block;
         margin-bottom: 10px;
+        line-height: 18px;
     }
     .notContainer>div>div>div>ol{
         margin-bottom: 30px;
@@ -4630,6 +4638,7 @@ div .everContainer nav div ol li a:hover{
     .notContainer>div>span{
         display: block;
         margin-bottom: 30px;
+        line-height: 18px;
     }
     .notContainer>div>div>ul>li>p:first-child{
         margin-top: 10px;
@@ -4647,16 +4656,24 @@ div .everContainer nav div ol li a:hover{
         margin-top: 10px;
     }
     .notContainer>div>div>ol>li>ol>li>ul{
-        margin: 5px 0 0 20px;
+        margin: 5px 0 0 10px;
+    }
+    .notContainer>div>div>ol>li>ol>li>ul>li:not(:last-child){
+        margin-bottom: 5px;
     }
     .notContainer>div>div>ul{
         margin-bottom: 30px;
+        line-height: 18px;
     }
     .notContainer>div>div>div>ul{
         margin: 10px 0;
     }
+    .notContainer>div>div>div>ul>li{
+        line-height: 18px;
+    }
     .notContainer>div>div>div>ul>li:not(:last-child){
         margin-bottom: 10px;
+        line-height: 18px;
     }
     .notContainer>div>div>div>p+p{
         margin-bottom: 50px;
