@@ -635,18 +635,10 @@ div .everContainer nav div ol li a:hover{
 .hisContainer>ol.active{
     display: block; 
 }
-.hisContainer>ol>li{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
 .hisContainer>ul>li.active{
     border: 1px solid var(--gs11);
     border-bottom: none;
     color: var(--gs11);
-}
-.hisContainer>ol>li:not(:last-child){
-    border-bottom: 1px solid var(--gs7);
 }
 /* history Fin */
 .siteContainer>ul>li:first-of-type>ul,
@@ -792,7 +784,7 @@ div .everContainer nav div ol li a:hover{
     .siteContainer>ul{
         max-width: 1458px;
         margin: 0 auto;
-        padding: 0 24px;
+        padding: 0 3.571%;
         box-sizing: border-box;
         margin-bottom: 50px;
     }
@@ -838,7 +830,7 @@ div .everContainer nav div ol li a:hover{
         /* content: url('../images/bg_main01_M.png'); */
     }
     .indexContainer .banslider li:nth-child(2) a img{
-        content: url('../images/bg_main02_M.png');
+        /* content: url('../images/bg_main02_M.png'); */
     }
     .indexContainer .banslider li:nth-child(3) a img{
         content: url('../images/bg_main03_M.png');
@@ -4214,16 +4206,16 @@ div .everContainer nav div ol li a:hover{
     .poliContainer>ul{
         display: flex;
         cursor: pointer;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     .poliContainer>ul li{
         width: 50%;
         color: var(--gs5);
         box-sizing: border-box;
         border-bottom: 1px solid var(--gs11);
-        line-height: 50px;
+        line-height: 35px;
         text-align: center;
-        font-size: 14px;
+        font-size: 10px;
     }
     .poliContainer .privacyPolicy>p,
     .poliContainer .privacyPolicy>ol>li>ol>li{
@@ -4234,11 +4226,13 @@ div .everContainer nav div ol li a:hover{
     }
     .poliContainer .privacyPolicy>p:last-of-type,
     .poliContainer .privacyPolicy>ol>li:not(:last-child){
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
     .poliContainer .privacyPolicy>ol>li>b{
         display: block;
         margin-bottom: 25px;
+        line-height: 20px;
+        font-size: 14px;
     }
     .poliContainer .privacyPolicy>ol>li p{
         color: var(--gs8);
@@ -4313,7 +4307,7 @@ div .everContainer nav div ol li a:hover{
     }
     .poliContainer .privacyPolicy>ol>li:nth-child(8)>ol>li>ol>li>ul,
     .poliContainer .privacyPolicy>ol>li:nth-child(9)>ol>li:last-child>ul{
-        margin: 10px 0 0 10px;
+        margin-bottom: 10px;
     }
     .poliContainer .privacyPolicy>ol>li:nth-child(8)>ol>li>ol>li>ul li:not(:last-child){
         margin-bottom: 5px;
@@ -4335,24 +4329,21 @@ div .everContainer nav div ol li a:hover{
     }
     .poliContainer .managementPolicy>div>img{
         display: block;
-        width: 600px;
-        height: 300px;
-        margin: 0 auto 20px;
+        content: url('../images/policy_energy_m.png');
+        width: 260px;
+        margin: 0 auto 50px;
     }
     .poliContainer .managementPolicy>div:first-child>dl>dt{
         position: relative;
         margin-bottom: 30px;
         color: var(--vs8);
-        line-height: 24px;
+        line-height: 22px;
         font-size: 16px;
-        text-align: center;
     }
     .poliContainer .managementPolicy>div:first-child>dl>dd{
-        width: 81.119%;
         margin: 0 auto;
-        line-height: 20px;
-        text-align: center;
-        font-size: 14px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .poliContainer .managementPolicy>div:last-child>dl{
         margin-bottom: 40px;
@@ -4361,18 +4352,23 @@ div .everContainer nav div ol li a:hover{
         display: inline-block;
         content: '▶';
         font-size: 8px;
-        line-height: 16px;
+        line-height: 22px;
         margin-right: 10px;
     }
     .poliContainer .managementPolicy>div:last-child>dl>dt{
         display: flex;
         margin-bottom: 25px;
+        line-height: 22px;
         font-size: 16px;
     }
-    .poliContainer .managementPolicy>div:last-child>dl>dd,
+    .poliContainer .managementPolicy>div:last-child>dl>dd{
+        margin-left: 15px;
+        line-height: 20px;
+        font-size: 12px;
+    }
     .poliContainer .managementPolicy>div:last-child p{
         line-height: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .poliContainer .managementPolicy>div:last-child>dl>dd:not(:last-child){
         margin-bottom: 100px;
@@ -4381,12 +4377,12 @@ div .everContainer nav div ol li a:hover{
     .aboutContainer>div>b{
         display: block;
         color: var(--os1);
-        margin-bottom: 35px;
+        margin-bottom: 30px;
         font-size: 18px;
     }
     .aboutContainer>div>p{
-        line-height: 20px;
-        font-size: 14px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .aboutContainer>div>p:nth-of-type(2){
         margin-bottom: 100px;
@@ -4407,11 +4403,11 @@ div .everContainer nav div ol li a:hover{
         font-size: 16px;
     }
     .aboutContainer>div>dl>dd{
-        line-height: 20px;
-        font-size: 14px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .aboutContainer>div>hr{
-        margin: 0 0 100px 0;
+        margin-bottom: 35px;
     }
     .aboutContainer>div>hr:not(:last-of-type)+p{
         line-height: 20px;
@@ -4421,7 +4417,7 @@ div .everContainer nav div ol li a:hover{
     .hisContainer>ul{
         display: flex;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     .hisContainer>ul>li{
         position: relative;
@@ -4430,6 +4426,7 @@ div .everContainer nav div ol li a:hover{
         border-bottom: 1px solid var(--gs11);
         color: var(--gs5);
         line-height: 50px;
+        font-size: 10px;
     }
     .hisContainer>ul>li:not(:last-child):after{
         content: '';
@@ -4441,9 +4438,12 @@ div .everContainer nav div ol li a:hover{
         top: 0;
         right: 0;
     }
+    .hisContainer>ol>li:not(:last-child){
+        border-bottom: 1px solid var(--gs7);
+        margin-bottom: 35px;
+    }
     .hisContainer>ol>li>ol{
-        width: 80%;
-        padding: 50px 0;
+        padding: 35px 0;
     }
     .hisContainer>ol>li>mark{
         width: 20%;
@@ -4453,9 +4453,9 @@ div .everContainer nav div ol li a:hover{
     }
     .hisContainer>ol>li>ol>li{
         position: relative;
-        padding-left: 40px;
-        line-height: 20px;
-        font-size: 14px;
+        padding-left: 30px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .hisContainer>ol>li>ol>li:not(:last-child){
         margin-bottom: 15px;
@@ -4505,7 +4505,7 @@ div .everContainer nav div ol li a:hover{
     }
     /* bidNotice Fin */
     .siteContainer>div{
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     .siteContainer>ul>li{
         margin-bottom: 100px;
@@ -4521,16 +4521,22 @@ div .everContainer nav div ol li a:hover{
     }
     .siteContainer>ul>li>ul>li{
         width: 45%;
-        /* padding: 0 10px 0 10px; */
-        height: 280px;
+        height: 200px;
+    }
+    .siteContainer>ul>li>ul>li>a{
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .siteContainer>ul>li>ul>li:nth-child(n+1):nth-child(-n+2){
+        margin-bottom: 35px;
     }
     .siteContainer>ul>li>ul>li:nth-child(even){
         padding-left: 10px;
     }
-    
     .siteContainer>ul>li>ul>li>b{
         display: block;
         margin-bottom: 15px;
+        line-height: 20px;
         font-size: 14px;
     }
     .siteContainer>ul>li>ul>li>ol>li:not(:last-child){
@@ -4564,10 +4570,10 @@ div .everContainer nav div ol li a:hover{
         border-bottom: 3px solid var(--gs11);
     }
     .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:nth-child(4){
-        margin-bottom: 105px;
+        margin-bottom: 50px;
     }
     .siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:nth-child(2){
-        margin-bottom: 148px;
+        margin-bottom: 110px;
     }
     .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
         margin-bottom: 100px;
@@ -8984,6 +8990,14 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .hisContainer>ol>li{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .hisContainer>ol>li:not(:last-child){
+        border-bottom: 1px solid var(--gs7);
     }
     .hisContainer>ol>li>ol{
         width: 80%;
@@ -13485,13 +13499,28 @@ div .everContainer nav div ol li a:hover{
         top: 0;
         right: 0;
     }
+    .hisContainer>ol>li{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .hisContainer>ol>li:not(:last-child){
+        border-bottom: 1px solid var(--gs7);
+    }
     .hisContainer>ol>li>ol{
         width: 75%;
         padding: 55px 0;
     }
+    .hisContainer>ol>li>mark{
+        width: 20%;
+        text-align: center;
+        color: var(--vs7);
+        font-size: 16px;
+    }
     .hisContainer>ol>li>ol>li{
         position: relative;
         padding-left: 70px;
+        line-height: 22px;
     }
     .hisContainer>ol>li>ol>li:not(:last-child){
         margin-bottom: 20px;
