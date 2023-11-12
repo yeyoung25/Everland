@@ -494,7 +494,7 @@ div .everContainer nav div ol li a:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.comuContainer div:nth-child(2) .accordion li strong span{
+.comuContainer div:nth-child(2) .accordion li strong span:first-child{
     display: inline-block;
     width: 10%;
     text-align: center;
@@ -3592,11 +3592,13 @@ div .everContainer nav div ol li a:hover{
         display: inline-block;
         width: 5%;
         /* margin: 0 10px; */
+        padding: 0 2%;
         color: var(--gs5);
     }
     .comuContainer div:nth-child(2) .accordion li div b{
         display: inline-block;
         width: 5%;
+        padding: 0 2%;
         /* margin: 0 10px; */
         /* margin: 0 10px 0 -2px; */
         color: var(--vs8);
