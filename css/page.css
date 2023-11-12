@@ -1245,7 +1245,9 @@ div .everContainer nav div ol li a:hover{
         font-family: 'Open Sans';
         font-weight: 600;
         font-size: 10px;
-        text-overflow: ellipsis;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
     }
     div .everContainer nav div:first-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / 8px 5px;
@@ -3578,10 +3580,10 @@ div .everContainer nav div ol li a:hover{
         background: url('../images/faq_gray.png') no-repeat center / contain;
         content: '';
         display: inline-block;
-        width: 11px;
+        width: 10px;
         height: 7px;
         position: absolute;
-        right: 0px;
+        right: 5px;
         top: 50%;
         transform: translateY(-50%);
         transition: transform 0.2s ease-in-out;
@@ -3589,13 +3591,14 @@ div .everContainer nav div ol li a:hover{
     .comuContainer div:nth-child(2) .accordion li strong b{
         display: inline-block;
         width: 5%;
-        margin: 0 10px;
+        /* margin: 0 10px; */
         color: var(--gs5);
     }
     .comuContainer div:nth-child(2) .accordion li div b{
         display: inline-block;
         width: 5%;
-        margin: 0 10px;
+        /* margin: 0 10px; */
+        /* margin: 0 10px 0 -2px; */
         color: var(--vs8);
     }
     .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span,
@@ -3607,7 +3610,7 @@ div .everContainer nav div ol li a:hover{
         width: 10%;
     }
     .comuContainer div:nth-child(2) .accordion li div b+p{
-        width: 80%;
+        width: 85%;
         line-height: 18px;
     }
     .comuContainer div:nth-child(2) .accordion li div ol li{
