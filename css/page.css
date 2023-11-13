@@ -2492,70 +2492,28 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:first-child{
-        background: url('../images/spediscount01.png') no-repeat center / contain;
-        width: 260px;
+        background: url('../images/spediscount01_m.png') no-repeat center / contain;
+        width: 100%;
         position: relative;
     }
-    .speContainer div:nth-child(2) hr+ul:last-child li:first-child span:first-child{
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        color: var(--os8);
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:first-child b{
-        position: absolute;
-        top: 55px;
-        left: 15px;
-        color: var(--os1);
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:first-child span{
-        position: absolute;
-        top: 80px;
-        left: 15px;
-        color: var(--os1);
-        font-size: 10px;
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:first-child strong{
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        color: var(--os8);
-        font-size: 10px;
+    .speContainer div:nth-child(2) hr+ul:last-child li:first-child span:first-child,
+    .speContainer div:nth-child(2) hr+ul:last-child li:first-child b,
+    .speContainer div:nth-child(2) hr+ul:last-child li:first-child span,
+    .speContainer div:nth-child(2) hr+ul:last-child li:first-child strong,
+    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span:first-child,
+    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) b,
+    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span,
+    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) strong{
+        font-size: 0;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2){
-        background: url('../images/spediscount02.png') no-repeat center / contain;
-        width: 260px;
+        background: url('../images/spediscount02_m.png') no-repeat center / contain;
+        width: 100%;
         position: relative;
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span:first-child{
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        color: var(--os8);
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) b{
-        position: absolute;
-        top: 55px;
-        left: 15px;
-        color: var(--os1);
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) span{
-        position: absolute;
-        top: 80px;
-        left: 15px;
-        color: var(--os1);
-        font-size: 10px;
-    }
-    .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(2) strong{
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        color: var(--os8);
-        font-size: 10px;
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3){
         position: relative;
-        width: 125px;
+        width: 120px;
         height: 136px;
         border-radius: 20px;
         border: 1px solid rgba(98, 24, 102, 0.3);
@@ -2608,7 +2566,6 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) hr+ul:last-child::before,
     .speContainer div:nth-child(2) hr+ul:last-child::after{
         width: 125px;
-        width: 193px;
         content: '';
         order: 1;
     }
@@ -2809,8 +2766,7 @@ div .everContainer nav div ol li a:hover{
         width: 260px;
         height: 67px;
         position: absolute;
-        /* bottom: 36.792%; */
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
@@ -2824,7 +2780,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
-        width: 67px;
+        width: 100%;
         border: 3px solid transparent;
         box-sizing: border-box;
     }
@@ -4535,6 +4491,11 @@ div .everContainer nav div ol li a:hover{
         width: 45%;
         height: 200px;
     }
+    .siteContainer>ul>li:last-child>ul>li:nth-of-type(3),
+    .siteContainer>ul>li:last-child>ul>li:nth-of-type(4){
+        width: 45%;
+        height: 100px;
+    }
     .siteContainer>ul>li>ul>li>a{
         line-height: 20px;
         font-size: 14px;
@@ -4551,7 +4512,23 @@ div .everContainer nav div ol li a:hover{
         line-height: 20px;
         font-size: 14px;
     }
+    .siteContainer>ul>li>ul>li{
+        position: relative;
+    }
+    .siteContainer>ul>li:last-child>ul>li>ol>li:last-child{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    .siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:last-child{
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
     .siteContainer>ul>li>ul>li>ol>li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .siteContainer>ul>li:last-child>ul>li>ol>li:not(:nth-last-child(2)){
         margin-bottom: 10px;
     }
     .siteContainer>ul>li:first-of-type>h3{
@@ -4580,15 +4557,6 @@ div .everContainer nav div ol li a:hover{
     }
     .siteContainer>ul>li:last-of-type>h3{
         border-bottom: 3px solid var(--gs11);
-    }
-    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:nth-child(4){
-        margin-bottom: 50px;
-    }
-    .siteContainer>ul>li:last-child>ul>li:nth-child(2)>ol>li:nth-child(2){
-        margin-bottom: 110px;
-    }
-    .siteContainer>ul>li:last-child>ul>li:first-child>ol>li:last-child{
-        margin-bottom: 100px;
     }
     /* siteMap Fin */
     .notContainer>div:nth-of-type(2)>div>ul>li:not(:last-child),
