@@ -808,7 +808,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .banslider li strong{
         position: absolute;
-        top: 30%;
+        top: 30.5%;
         left: 25px;
         font-family: 'Open Sans';
         font-size: 16px;
@@ -842,7 +842,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .banslider li h2{
         position: absolute;
-        top: 34.2%;
+        top: 34.8%;
         left: 25px;
         font-family: 'Lato';
         font-weight: 700;
@@ -1236,7 +1236,7 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
     }
     div .everContainer nav div input{
-        width: 80%;
+        width: 85%;
         color: var(--gs11);
         background-color: transparent;
         border: none;
@@ -3591,25 +3591,25 @@ div .everContainer nav div ol li a:hover{
     .comuContainer div:nth-child(2) .accordion li strong b{
         display: inline-block;
         width: 5%;
-        /* margin: 0 10px; */
-        padding: 0 2%;
+        padding: 0 3%;
         color: var(--gs5);
     }
     .comuContainer div:nth-child(2) .accordion li div b{
         display: inline-block;
         width: 5%;
-        padding: 0 2%;
-        /* margin: 0 10px; */
-        /* margin: 0 10px 0 -2px; */
+        padding: 0 3%;
         color: var(--vs8);
     }
-    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span,
+    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span:first-child,
     .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before,
     .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before,
     .comuContainer div:nth-child(2) .accordion li:nth-child(6)>div::before{
         content: '';
         display: inline-block;
         width: 10%;
+    }
+    .comuContainer div:nth-child(2) .accordion li strong span:last-child{
+        width: 85%;
     }
     .comuContainer div:nth-child(2) .accordion li div b+p{
         width: 85%;
@@ -3920,14 +3920,16 @@ div .everContainer nav div ol li a:hover{
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) strong{
         display: block;
-        margin-bottom: 15px;
-        font-size: 18px;
+        margin: 0 auto 15px;
         text-align: center;
+        line-height: 24px;
+        font-size: 18px;
     }
     .inqBContainer div:nth-child(2)>div:nth-of-type(3) span{
-        margin-bottom: 20px;
-        font-size: 12px;
         text-align: center;
+        margin: 0 auto 20px;
+        line-height: 18px;
+        font-size: 12px;
     }
     .modal01>div{
         position: fixed;
@@ -5228,6 +5230,7 @@ div .everContainer nav div ol li a:hover{
         justify-content: space-between;
     }
     .signUpContainer .step02>form>fieldset>ol:first-of-type>li>input{
+        width: 140px;
         border: none;
         line-height: 35px;
         text-align: right;
@@ -5238,8 +5241,8 @@ div .everContainer nav div ol li a:hover{
         width: 100px;
         font-size: 12px;
     }
-    .signUpContainer .step02>form>fieldset>ol:first-of-type>li:nth-last-child(2)>label{
-        width: 120px;
+    .signUpContainer .step02>form>fieldset>ol:first-of-type>li>label{
+        width: 110px;
     }
     .signUpContainer .step02>form>fieldset>ol:last-of-type{
         display: flex;
@@ -5290,7 +5293,7 @@ div .everContainer nav div ol li a:hover{
     }
     .signUpContainer .step03>strong{
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         font-size: 16px;
     }
     .signUpContainer .step03>p{
@@ -8168,13 +8171,16 @@ div .everContainer nav div ol li a:hover{
         margin-right: 20px;
         color: var(--vs8);
     }
-    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span,
+    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span:first-child,
     .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before,
     .comuContainer div:nth-child(2) .accordion li:nth-child(3)>div::before,
     .comuContainer div:nth-child(2) .accordion li:nth-child(6)>div::before{
         content: '';
         display: inline-block;
         width: 10%;
+    }
+    .comuContainer div:nth-child(2) .accordion li:nth-child(2) strong span:last-child{
+        width: 85%;
     }
     .comuContainer div:nth-child(2) .accordion li div b+p{
         width: 80%;
