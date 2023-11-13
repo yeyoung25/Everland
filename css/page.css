@@ -781,6 +781,7 @@ div .everContainer nav div ol li a:hover{
 }
 /* reservation Fin */
 
+
 @media screen and (max-width: 767px) {
     header+.mwpadding>h3,
     .siteContainer>ul{
@@ -2580,7 +2581,6 @@ div .everContainer nav div ol li a:hover{
     .speContainer div:nth-child(2) .bx-wrapper .bx-viewport .speslider li:nth-child(7) p{
         text-align: center;
     }
-
     /* specialPromotion Fin */
     .experContainer div:nth-child(2) ul li{
         background-color: var(--gs11);
@@ -2689,7 +2689,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
         display: block;
         width: 100%;
-        height: 530px;
+        height: 650px;
         position: absolute;
         top: 0;
         z-index: -100;
@@ -2720,7 +2720,7 @@ div .everContainer nav div ol li a:hover{
         width: 100%;
         position: absolute;
         left: 3.571%;
-        bottom: 10px;
+        top: 450px;
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
@@ -2766,8 +2766,7 @@ div .everContainer nav div ol li a:hover{
         width: 260px;
         height: 67px;
         position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
+        top: 50%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -2838,14 +2837,14 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li{
         display: block;
         width: 100%;
-        height: 530px;
+        height: 650px;
         z-index: -100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
         border: 1px solid var(--gs11);
         box-sizing: border-box;
         position: absolute;
-        top: 5.882%;
+        top: 25px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li::after{
         content: '';
@@ -2872,16 +2871,14 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
         width: 100%;
         position: absolute;
-        bottom: 10px;
-        left: 3.571px;
+        top: 450px;
+        left: 9.571px;
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1) img{
         content: url('../images/recoChild01_M.png');
         border: 1px solid var(--gs11);
         box-sizing: border-box;
-        position: absolute;
-        top: 25px;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li img{
         border: 1px solid var(--gs11);
@@ -2892,8 +2889,8 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
         width: 100%;
         position: absolute;
-        bottom: 10px;
-        left: 3.571px;
+        top: 450px;
+        left: 9.571px;
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
@@ -2930,7 +2927,7 @@ div .everContainer nav div ol li a:hover{
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li{
         width: 100%;
-        height: 530px;
+        height: 650px;
         z-index: -100;
     }    
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li::after{
@@ -4140,7 +4137,7 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 50px;
     }
     .tosContainer>div>ol>li:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .tosContainer>div>ol>li>b{
         display: block;
@@ -4191,7 +4188,7 @@ div .everContainer nav div ol li a:hover{
     }
     .poliContainer .privacyPolicy>p:last-of-type,
     .poliContainer .privacyPolicy>ol>li:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .poliContainer .privacyPolicy>ol>li>b{
         display: block;
@@ -4350,10 +4347,10 @@ div .everContainer nav div ol li a:hover{
         font-size: 12px;
     }
     .aboutContainer>div>p:nth-of-type(2){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .aboutContainer>div>dl:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .aboutContainer>div>dl>dt::before{
         display: inline-block;
@@ -4435,7 +4432,7 @@ div .everContainer nav div ol li a:hover{
     }
     /* history Fin */
     .bidContainer>div:not(:last-child){
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     .bidContainer>div>h4::before{
         content: '•';
@@ -4571,7 +4568,7 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 5px;
     }
     .notContainer>div:not(:last-child){
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .notContainer>div>strong{
         display: block;
@@ -5328,6 +5325,303 @@ div .everContainer nav div ol li a:hover{
     /* reservation Fin */
 }
 /* ?mobile */
+@media screen and (max-width: 280px) {
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
+        display: block;
+        width: 100%;
+        height: 530px;
+        position: absolute;
+        top: 0;
+        z-index: -100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(76, 34, 2, 0.8);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(1){
+        background: url('../images/recoRain01.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(2){
+        background: url('../images/recoRain02.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(3){
+        background: url('../images/recoRain03.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(4){
+        background: url('../images/recoRain04.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li:nth-child(5){
+        background: url('../images/recoRain05.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div{
+        width: 100%;
+        position: absolute;
+        left: 3.571%;
+        top: 280px;
+        z-index: 100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
+        border: 1px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 25px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 mark{
+        color: rgba(180, 96, 96, 0.7);
+        font-size: 40px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div h4 strong{
+        display: inline-block;
+        width: 50%;
+        color: #ffbf9b;
+        margin-left: 20px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div>strong{
+        display: block;
+        color: #fff4e0;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li div p{
+        color: #fff4e0;
+        line-height: 18px;
+        width: 92.858%;
+        font-size: 12px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2){
+        width: 260px;
+        height: 67px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li{
+        width: 67px !important;
+        margin: 0 10px !important;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li a,
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li a{
+        width: 100%;
+        border: 3px solid transparent;
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager01 li.active a{
+        border: 1px solid var(--os1);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager02 li.active a{
+        border: 1px solid var(--rs4);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-viewport .thumbPager03 li.active a{
+        border: 1px solid var(--vs4);
+    }
+    .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
+        display: block;
+        z-index: 0;
+        height: 100%;
+        margin-top: 0;
+    }
+    .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
+        width: 10px;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon01_pre.png') no-repeat center / 10px 20px;
+        left: -1%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon01_next.png') no-repeat center / 10px 20px;
+        right: -2%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon02_pre.png') no-repeat center / 10px 20px;
+        left: -1%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon02_next.png') no-repeat center / 10px 20px;
+        right: -2%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
+        background: url('../images/recomcon03_pre.png') no-repeat center / 10px 20px;
+        left: -1%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
+        background: url('../images/recomcon03_next.png') no-repeat center / 10px 20px;
+        right: -2%;
+        top: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        width: 45%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li{
+        display: block;
+        width: 100%;
+        height: 530px;
+        z-index: -100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li img{
+        border: 1px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 5.882%;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(14,40,5, 0.8);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1){
+        background: url('../images/recoChild01.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(2){
+        background: url('../images/recoChild02.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(3){
+        background: url('../images/recoChild03.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(4){
+        background: url('../images/recoChild04.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(5){
+        background: url('../images/recoChild05.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
+        width: 100%;
+        position: absolute;
+        top: 280px;
+        left: 9.571px;
+        z-index: 100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1) img{
+        content: url('../images/recoChild01_M.png');
+        border: 1px solid var(--gs11);
+        box-sizing: border-box;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li img{
+        border: 1px solid var(--gs11);
+        box-sizing: border-box;
+        position: absolute;
+        top: 25px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
+        width: 100%;
+        position: absolute;
+        top: 280px;
+        left: 9.571px;
+        z-index: 100;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 mark{
+        color: rgba(60,128,37, 0.7);
+        font-size: 40px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div h4 strong{
+        display: inline-block;
+        width: 50%;
+        line-height: 20px;
+        color: #9ddc87;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div>strong{
+        display: block;
+        color: #dbffcf;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div p{
+        color: #dbffcf;
+        line-height: 18px;
+        width: 92.858%;
+        font-size: 12px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport{
+        height: 100px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper .bx-viewport .thumbPager{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li{
+        width: 100%;
+        height: 530px;
+        z-index: -100;
+    }    
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(20,4,21, 0.8);
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li:nth-child(1){
+        background: url('../images/recoThril01.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li:nth-child(2){
+        background: url('../images/recoThril02.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li:nth-child(3){
+        background: url('../images/recoThril03.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li:nth-child(4){
+        background: url('../images/recoThril04.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li:nth-child(5){
+        background: url('../images/recoThril05.png') no-repeat center / cover;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 mark{
+        color: rgba(122,31,127,0.7);
+        font-size: 40px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div h4 strong{
+        display: inline-block;
+        width: 50%;
+        line-height: 20px;
+        color: #d99adc;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div>strong{
+        display: block;
+        color: #fcceff;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div p{
+        color: #fcceff;
+        line-height: 30px;
+        width: 95%;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+/* recommended Mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     header+.mwpadding>h3,
     .siteContainer>ul{
