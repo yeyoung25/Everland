@@ -779,6 +779,15 @@ div .everContainer nav div ol li a:hover{
 .reserContainer>h2>mark{
     color: var(--os1);
 }
+.reserContainer>ul>li:first-child>span{
+    text-shadow: 0px 5px 6px rgba(99,47,0,0.5);
+}
+.reserContainer>ul>li:nth-child(2)>span{
+    text-shadow: 0px 5px 6px rgba(2,0,99,0.5);
+}
+.reserContainer>ul>li:last-child>span{
+    text-shadow: 0px 5px 6px rgba(15,33,10,0.8);
+}
 /* reservation Fin */
 
 
@@ -828,9 +837,6 @@ div .everContainer nav div ol li a:hover{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-    .indexContainer .banslider li:first-child a img{
-        /* content: url('../images/bg_main01_M.png'); */
     }
     .indexContainer .banslider li:nth-child(2) a img{
         /* content: url('../images/bg_main02_M.png'); */
@@ -5318,6 +5324,13 @@ div .everContainer nav div ol li a:hover{
         left: 50%;
         transform: translateX(-50%);
         box-sizing: border-box;
+    }
+    .reserContainer>ul>li>span{
+        color: var(--gs1);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
     }
     .reserContainer .backBtn{
         margin: 50px auto 0;
@@ -10127,6 +10140,13 @@ div .everContainer nav div ol li a:hover{
         transform: translateX(-50%);
         box-sizing: border-box;
     }
+    .reserContainer>ul>li>span{
+        color: var(--gs1);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
     .reserContainer .backBtn{
         margin: 55px auto 0;
     }
@@ -14615,6 +14635,13 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--gs1);
         transition: 0.5s;
         box-sizing: border-box;
+    }
+    .reserContainer>ul>li>span{
+        color: var(--gs1);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
     }
     .reserContainer>ul>li:first-child>a:hover{
         color: var(--os1);
