@@ -1,6 +1,9 @@
 body.scrollNone{
     overflow-y: hidden;
 }
+html{ 
+    scroll-behavior: smooth;
+} 
 .bx-wrapper {
     box-shadow: none;
     border: none;
@@ -207,8 +210,8 @@ footer div details summary.on::after{
     header #fnbPanel{
         display: none;
         width: 100%;
+        min-height: calc(100vh - 55px);
         opacity: 0.95;
-        height: calc(100vh - 50px);
         overflow-y: scroll;
         background-color: var(--gs1);
         top: 55px;
@@ -602,12 +605,12 @@ footer div details summary.on::after{
     header #fnbPanel{
         display: none;
         width: 100%;
+        min-height: calc(100vh - 60px);
         opacity: 0.95;
-        max-height: calc(100vh - 60px);
         overflow: scroll;
         background-color: var(--gs1);
         top: 60px;
-        padding: 40px 60px 531px;
+        padding: 40px 60px 0;
         transition-duration: 0.2s;
         box-sizing: border-box;
     }
@@ -809,7 +812,7 @@ footer div details summary.on::after{
     header div .ect_btn{
         justify-content: space-between;
         align-items: center;
-        width: calc(100% - 111px);
+        width: calc(100% - 110px);
         text-shadow: 0px 2px 7px rgba(127,127,127,0.8);
     }
     header div .ect_btn a:last-of-type{
@@ -894,6 +897,7 @@ footer div details summary.on::after{
         background-color: var(--gs11);
         opacity: 0.95;
         width: 100%;
+        /* min-height: calc(100% - 110px); */
         padding: 7.888% 18.229% 100px;
         margin: 0 auto;
         box-sizing: border-box;

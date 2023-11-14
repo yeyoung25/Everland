@@ -2726,7 +2726,7 @@ div .everContainer nav div ol li a:hover{
         width: 100%;
         position: absolute;
         left: 3.571%;
-        top: 450px;
+        top: 50vh;
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li img{
@@ -2766,13 +2766,13 @@ div .everContainer nav div ol li a:hover{
         width: 92.858%;
         font-size: 12px;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2),
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2),
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2){
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-of-type(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-of-type(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-of-type(2){
         width: 260px;
         height: 67px;
         position: absolute;
-        top: 50%;
+        top: 30vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -3098,7 +3098,7 @@ div .everContainer nav div ol li a:hover{
     .restContainer div:nth-child(2)>div div:last-child img,
     .gifContainer div:nth-child(2)>div img:last-child{
         display: block;
-        margin: 0 auto 40px;
+        margin: 0 auto 0px;
         width: 100%;
         max-width: 580px;
     }
@@ -3190,7 +3190,11 @@ div .everContainer nav div ol li a:hover{
     }
     /* attraction / enterContainer / restaurant Details Fin */
     .gifContainer div:nth-child(2) h3~div:not(:last-child){
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+        padding-top: 100px;
+    }
+    .gifContainer div:nth-child(2) h3~div:not(:first-child){
+        padding-top: 50px;
     }
     .gifContainer div:nth-child(2)>div h4+div img{
         display: none;
@@ -5338,7 +5342,7 @@ div .everContainer nav div ol li a:hover{
     /* reservation Fin */
 }
 /* ?mobile */
-@media screen and (max-width: 280px) {
+/* @media screen and (max-width: 300px) {
     .recoContainer div:nth-child(2) div .pagerSliderBox01 .fadeSlider li{
         display: block;
         width: 100%;
@@ -5413,9 +5417,9 @@ div .everContainer nav div ol li a:hover{
         width: 92.858%;
         font-size: 12px;
     }
-    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-child(2),
-    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-child(2),
-    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-child(2){
+    .recoContainer div:nth-child(2) div .pagerSliderBox01 .bx-wrapper:nth-of-type(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox02 .bx-wrapper:nth-of-type(2),
+    .recoContainer div:nth-child(2) div .pagerSliderBox03 .bx-wrapper:nth-of-type(2){
         width: 260px;
         height: 67px;
         position: absolute;
@@ -5633,7 +5637,7 @@ div .everContainer nav div ol li a:hover{
         line-height: 20px;
         font-size: 12px;
     }
-}
+} */
 /* recommended Mobile */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     header+.mwpadding>h3,
