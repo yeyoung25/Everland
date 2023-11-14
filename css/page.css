@@ -2877,7 +2877,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li div{
         width: 100%;
         position: absolute;
-        top: 450px;
+        top: 50vh;
         left: 9.571px;
         z-index: 100;
     }
@@ -2895,7 +2895,7 @@ div .everContainer nav div ol li a:hover{
     .recoContainer div:nth-child(2) div .pagerSliderBox03 .fadeSlider li div{
         width: 100%;
         position: absolute;
-        top: 450px;
+        top: 50vh;
         left: 9.571px;
         z-index: 100;
     }
