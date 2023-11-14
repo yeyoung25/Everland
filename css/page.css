@@ -2804,34 +2804,37 @@ div .everContainer nav div ol li a:hover{
         height: 100%;
         margin-top: 0;
     }
+    .recoContainer div:nth-child(2) div .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction a{
+        width: 10px;
+    }
     .recoContainer div:nth-child(2) .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/recomcon01_pre.png') no-repeat center / 10px 20px;
-        left: -6%;
+        left: -1%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox01 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/recomcon01_next.png') no-repeat center / 10px 20px;
-        right: -6%;
+        right: -2%;
         top: 0;
     }
     .recoContainer div:nth-child(2) .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/recomcon02_pre.png') no-repeat center / 10px 20px;
-        left: -6%;
+        left: -1%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox02 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/recomcon02_next.png') no-repeat center / 10px 20px;
-        right: -6%;
+        right: -2%;
         top: 0;
     }
     .recoContainer div:nth-child(2) .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-prev{
         background: url('../images/recomcon03_pre.png') no-repeat center / 10px 20px;
-        left: -6%;
+        left: -1%;
         top: 0;
     }
     .recoContainer div:nth-child(2)  .pagerSliderBox03 .bx-wrapper:nth-child(2) .bx-controls .bx-controls-direction .bx-next{
         background: url('../images/recomcon03_next.png') no-repeat center / 10px 20px;
-        right: -6%;
+        right: -2%;
         top: 0;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 > div:nth-child(2){
