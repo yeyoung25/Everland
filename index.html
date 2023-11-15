@@ -7,6 +7,7 @@
     <title>EVERAND RESORT</title>
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="shortcut icon" href="favicon-64x64.png" type="image/x-icon">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-NlStZG2jyTu-Fkt4m6yO0eFJJGm9fE&callback=console.debug&libraries=maps,marker&v=beta"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
@@ -333,9 +334,10 @@
                 </ul>
             </div>
             <div id="map">
-                <!-- <div class="googleMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.0516200106813!2d127.19780279678955!3d37.2939104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5403ce34d773%3A0x1fa18ab619238098!2z7JeQ67KE656c65Oc!5e0!3m2!1sko!2skr!4v1698162854163!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
+                <gmp-map center="37.29384994506836,127.20256805419922" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="37.29384994506836,127.20256805419922" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
                 <div class="map_dtl op7_20">
                     <h2 class="la9_35">EVERLANDRESORT</h2>
                     <button id="btnCopy" class="op7_12">COPY</button>

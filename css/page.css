@@ -10176,6 +10176,9 @@ div .everContainer nav div ol li a:hover{
         padding-top: 120px;
         color: var(--gs9);
     }
+    gmp-map{
+        height: 100%;
+    }
     .indexContainer .contentBanner03>#map{
         background: url('../images/kakao_map.png') no-repeat center / cover;
         position: relative;
