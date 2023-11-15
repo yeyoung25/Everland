@@ -1,6 +1,7 @@
 $(document).ready(function(){
   justToggle($("div div:first-child nav div"));
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
+  newspage()
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   inquToggle($("header+div div:nth-child(2)>div>form fieldset>input"));
   trafTab();
@@ -11,7 +12,6 @@ $(document).ready(function(){
   findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
   signUPcheck();
-  // experienceScroll();
 });
 
 
@@ -26,6 +26,12 @@ function accordionFaq(button){
     $(this).toggleClass("active");
   });
 }
+
+function newspage(){
+  $(".lastP").click(function(e){
+      alert("This is the last page.");
+  });
+};
 
 function howToggle(button){
   var currentPopup = null;
@@ -149,8 +155,4 @@ if (window.matchMedia("(max-width: 700px)").matches) {
   $(img).attr("src","mobile.png");
 } else {
   // Viewport is greater than 700 pixels wide
-}
-
-function experienceScroll(){
-
 }

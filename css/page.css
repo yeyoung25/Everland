@@ -3098,7 +3098,12 @@ div .everContainer nav div ol li a:hover{
     }
     .atraContainer div:nth-child(2)>div div:last-child img,
     .enterContainer div:nth-child(2)>div div:last-child img,
-    .restContainer div:nth-child(2)>div div:last-child img,
+    .restContainer div:nth-child(2)>div div:last-child img{
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 580px;
+    }
     .gifContainer div:nth-child(2)>div img:last-child{
         display: block;
         margin: 0 auto 0px;
