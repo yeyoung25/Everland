@@ -79,11 +79,9 @@ function headerScroll() {
   } else if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
     $("header").removeClass("mouseOver");
     $(".go_top").addClass("scrollTop");
-    console.log("확인1");
   } else {
     $("header").addClass("mouseOver");
     $(".go_top").removeClass("scrollTop");
-    console.log("확인2");
   }
 }
 
