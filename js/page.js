@@ -12,6 +12,7 @@ $(document).ready(function(){
   findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
   signUPcheck();
+  smoothtoAnchor()
 });
 
 
@@ -150,9 +151,9 @@ function signUPcheck(){
   });
 }
 
-if (window.matchMedia("(max-width: 700px)").matches) {
-  // Viewport is less or equal to 700 pixels wide
-  $(img).attr("src","mobile.png");
-} else {
-  // Viewport is greater than 700 pixels wide
+function smoothtoAnchor(){
+  $('a[href^=#]:not([href=#])').click(function(){
+      var element = $($(this).attr('href'));
+      $('html,body').animate({scrollTop: element.offset().top}, 450, 'swing');
+  });
 }

@@ -1252,12 +1252,7 @@ div .everContainer nav div ol li a:hover{
         text-overflow:ellipsis;
         white-space:nowrap;
     }
-    div .everContainer nav div:first-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / 8px 5px;
-        position: absolute;
-        right: 10px;
-        top: 14px;
-    }
+    div .everContainer nav div:first-of-type::after,
     div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / 8px 5px;
         position: absolute;
@@ -5785,12 +5780,7 @@ div .everContainer nav div ol li a:hover{
         font-family: 'Open Sans';
         font-weight: 600;
     }
-    div .everContainer nav div:first-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
-        position: absolute;
-        right: 30px;
-        top: 16px;
-    }
+    div .everContainer nav div:first-of-type::after,
     div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
@@ -10271,12 +10261,7 @@ div .everContainer nav div ol li a:hover{
         position: absolute;
         top: 20px;
     }
-    div .everContainer nav div:first-of-type::after{
-        background: url('../images/det_nav.png') no-repeat center / contain;
-        position: absolute;
-        right: 30px;
-        top: 27px;
-    }
+    div .everContainer nav div:first-of-type::after,
     div .everContainer nav div:last-of-type::after{
         background: url('../images/det_nav.png') no-repeat center / contain;
         position: absolute;
