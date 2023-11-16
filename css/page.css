@@ -10775,7 +10775,10 @@ div .everContainer nav div ol li a:hover{
         margin: 0 0 30px 20px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl{
-        margin: 0 0 40px 20px;
+        margin-left: 20px;
+    }
+    .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl:not(:last-child){
+        margin-bottom: 40px;
     }
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
         margin-bottom: 15px;
@@ -10786,9 +10789,6 @@ div .everContainer nav div ol li a:hover{
     .trafContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
         display: flex;
         margin: 100px 0 40px;
-    }
-    .trafContainer div:nth-child(2) .publicTransport ol li:last-child b:nth-of-type(4){
-        margin-top: 50px;
     }
     .trafContainer div:nth-child(2) .byCar dl{
         margin-bottom: 60px;
