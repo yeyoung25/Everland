@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  justToggle($("div div:first-child nav div"));
+  navToggle($("div div:first-child nav div"));
   accordionFaq($(".comuContainer div:nth-child(2) .accordion .accordion_item"));
-  newspage()
+  newspage();
   howToggle($(".howContainer .detail_contents div .safetyBox div input"));
   inquToggle($("header+div div:nth-child(2)>div>form fieldset>input"));
   trafTab();
@@ -12,11 +12,11 @@ $(document).ready(function(){
   findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
   signUPcheck();
-  smoothtoAnchor()
+  smoothtoAnchor();
 });
 
 
-function justToggle(button){
+function navToggle(button){
   $(button).click(function(){
     $(this).toggleClass("active");
   });
