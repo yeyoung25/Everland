@@ -17,6 +17,7 @@ div .communit{
     background: url('../images/ever_Header05.png') no-repeat center / cover;
     background-position: 54%;
 }
+/* Detail top_img */
 div .everContainer nav div.active::after{
     transform: rotate(-180deg);
 }
@@ -10891,7 +10892,6 @@ div .everContainer nav div ol li a:hover{
     }
     .amanContainer div:nth-child(2) ul li dl dd{
         display: flex;
-        width: 820px;
         line-height: 24px;
         color: var(--gs8);
     }
@@ -10939,7 +10939,7 @@ div .everContainer nav div ol li a:hover{
     /* guideMap Fin */
     .usagContainer div:nth-child(2) h3+strong{
         display: inline-block;
-        margin-top: 125px;
+        margin-top: 110px;
         width: 28.014%;
     }
     .usagContainer div:nth-child(2) table thead tr th{
@@ -10957,7 +10957,7 @@ div .everContainer nav div ol li a:hover{
     }
     .usagContainer div:nth-child(2) table caption{
         font-size: 0;
-        margin-top: 125px;
+        margin-top: 110px;
     }
     .usagContainer div:nth-child(2) strong a::after{
         background: url('../images/usageA.png') no-repeat center / contain;
