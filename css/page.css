@@ -10614,6 +10614,7 @@ div .everContainer nav div ol li a:hover{
         border: 1px solid var(--gs4);
         height: 160px;
         justify-content: space-between;
+        padding: 15px 0 0 15px;
     }
     .operContainer div:nth-child(2) div ol li:nth-child(1){
         border-radius: 15px 0 0 0;
@@ -10639,12 +10640,11 @@ div .everContainer nav div ol li a:hover{
     }
     .operContainer div:nth-child(2) div ol li strong{
         display: block;
-        margin: 15px 0 30px 15px;
+        margin-bottom: 30px;
     }
     .operContainer div:nth-child(2) div ol li b{
         display: block;
         color: var(--gs7);
-        margin-left: 15px;
     }
     .operContainer div:nth-child(2) p:last-of-type{
         color: var(--gs9);
