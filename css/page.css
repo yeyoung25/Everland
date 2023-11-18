@@ -3015,7 +3015,7 @@ div .everContainer nav div ol li a:hover{
         font-size: 24px;
     }
     .gifContainer div:nth-child(2)>div h4{
-        margin: 30px 0 40px;
+        margin-bottom: 40px;
         text-align: center;
         font-size: 24px;
     }
@@ -3175,11 +3175,11 @@ div .everContainer nav div ol li a:hover{
         margin: 55px auto 60px;
     }
     /* attraction / enterContainer / restaurant Details Fin */
-    .gifContainer div:nth-child(2) h3~div:not(:last-child){
-        padding-top: 100px;
+    .gifContainer div:nth-child(2) h3{
+        margin-bottom: 50px;
     }
-    .gifContainer div:nth-child(2) h3~div:not(:first-child){
-        padding-top: 50px;
+    .gifContainer div:nth-child(2) h3~div:not(:last-child){
+        margin-bottom: 100px;
     }
     .gifContainer div:nth-child(2)>div h4+div img{
         display: none;
@@ -7675,16 +7675,16 @@ div .everContainer nav div ol li a:hover{
         margin: 105px auto 115px;
     }
     /* attraction / enterContainer / restaurant Details Fin */
+    .gifContainer div:nth-child(2) h3{
+        margin-bottom: 50px;
+    }
     .gifContainer div:nth-child(2) h3~div{
         position: relative;
+        margin-bottom: 100px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd) h4{
-        padding-top: 150px;
         margin-bottom: 30px;
         font-size: 30px;
-    }
-    .gifContainer div:nth-child(2)>div:first-of-type h4{
-        padding-top: 55px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd)::after{
         content: '';
@@ -7699,7 +7699,6 @@ div .everContainer nav div ol li a:hover{
         height: 297px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(even) h4{
-        padding-top: 155px;
         margin-bottom: 30px;
         font-size: 30px;
         text-align: right;
@@ -12156,12 +12155,14 @@ div .everContainer nav div ol li a:hover{
         margin-bottom: 15px;
     }
     /* restaurant Details Fin */
+    .gifContainer div:nth-child(2) h3{
+        margin-bottom: 110px;
+    }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd){
         position: relative;
         margin-bottom: 525px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd) h4{
-        padding-top: 110px;
         margin-bottom: 45px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd) img:last-child{
@@ -12171,10 +12172,9 @@ div .everContainer nav div ol li a:hover{
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(even){
         position: relative;
-        align-items: flex-end;
+        margin-bottom: 110px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(even) h4{
-        padding-top: 110px;
         margin-bottom: 45px;
         text-align: right;
     }
@@ -12189,14 +12189,12 @@ div .everContainer nav div ol li a:hover{
     .gifContainer div:nth-child(2)>div div{
         display: flex;
         justify-content: space-between;
-    }
-    .gifContainer div:nth-child(2)>div:last-child div{
-        justify-content: flex-start;
+        position: relative;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(even) div{
         align-items: flex-end;
     }
-    .gifContainer div:nth-child(2)>div h4+div{
+    .gifContainer div:nth-child(2)>div:last-child{
         margin-bottom: 150px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd) h4+div img{
@@ -12211,22 +12209,14 @@ div .everContainer nav div ol li a:hover{
     }
     .gifContainer div:nth-child(2)>div div p{
         line-height: 22px;
+    }
+    .gifContainer div:nth-child(2)>div:nth-of-type(even) div p{
         margin-bottom: 10px;
     }
-    .gifContainer div:nth-child(2)>div{
-        position: relative;
+    .gifContainer div:nth-child(2)>div div p:not(:last-child){
+        margin-bottom: 10px;
     }
     .gifContainer div:nth-child(2)>div:nth-of-type(odd) div p::before{
-        content: '';
-        display: inline-block;
-        width: 80px;
-        height: 4px;
-        background-color: var(--os1);
-        position: absolute;
-        top: 210px;
-        left: 39.574%;
-    }
-    .gifContainer div:nth-child(2)>div:first-of-type div p::before{
         content: '';
         display: inline-block;
         width: 80px;
