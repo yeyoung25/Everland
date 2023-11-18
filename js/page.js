@@ -12,9 +12,11 @@ $(document).ready(function(){
   findtoggle($(".findPWContainer form>fieldset>input"));
   confirmation();
   signUPcheck();
-  smoothtoAnchor();
 });
 
+$(window).load(function(){
+  smoothtoAnchor();
+})
 
 function navToggle(button){
   $(button).click(function(){
@@ -151,9 +153,11 @@ function signUPcheck(){
   });
 }
 
-function smoothtoAnchor(){
-  $('a[href^=#]:not([href=#])').click(function(){
-      var element = $($(this).attr('href'));
-      $('html,body').animate({scrollTop: element.offset().top}, 450, 'swing');
-  });
+function smoothtoAnchor() {
+  var element = $($(this).attr('data-top'));
+
+  const urlParams = new URL(location.href).searchParams;
+  const scroll = urlParams.get('scroll');
+
+  $('html,body').animate({ scrollTop: $("#" + scroll).offset()?.top - 100 }, 450, 'swing');
 }
