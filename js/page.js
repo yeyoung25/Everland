@@ -154,8 +154,6 @@ function signUPcheck(){
 }
 
 function smoothtoAnchor() {
-  var element = $($(this).attr('data-top'));
-
   const urlParams = new URL(location.href).searchParams;
   const scroll = urlParams.get('scroll');
 
