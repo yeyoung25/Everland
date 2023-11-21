@@ -6720,6 +6720,8 @@ div .everContainer nav div ol li a:hover{
     .affContainer div:nth-child(2)>ul:last-child li{
         width: 43%;
         box-sizing: border-box;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li:not(:nth-last-child(-n+3)){
         margin-bottom: 75px;
     }
     .affContainer div:nth-child(2)>ul:last-child li img{
@@ -6734,7 +6736,6 @@ div .everContainer nav div ol li a:hover{
         font-size: 18px;
     }
     /* affiliateCard Fin */
-    /* 2-3 수정하기 */
     .speContainer div:nth-child(2) h3+div{
         display: flex;
     }
@@ -6900,16 +6901,16 @@ div .everContainer nav div ol li a:hover{
     }
     .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div{
         position: relative;
-        width: 50%;
+        width: 33.33%;
     }
-    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:first-child a.active{
+    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div a.active{
         background: var(--gs11);
         height: 3px;
         position: absolute;
         top: -2px;
         left: 0;
     }
-    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:first-child a{
+    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div a{
         display: inline-block;
         width: 100%;
         height: 1px;
@@ -6922,7 +6923,7 @@ div .everContainer nav div ol li a:hover{
         top: -2px;
         left: 0;
     }
-    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div:nth-child(2) a{
+    .speContainer div:nth-child(2) .bx-wrapper .bx-controls .bx-pager div a{
         display: inline-block;
         width: 100%;
         height: 1px;
