@@ -10335,7 +10335,8 @@ div .everContainer nav div ol li a:hover{
         width: 70%;
     }
     .newContainer div:nth-child(2) ul li a time{
-        background: url('../images/newdet_calendar.png') no-repeat left / contain;
+        /* background: url('../images/newdet_calendar.png') no-repeat left / contain; */
+        
         width: 10%;
         padding-left: 30px;
         color: var(--gs10);

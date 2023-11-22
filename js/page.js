@@ -153,7 +153,7 @@ function signUPcheck(){
   });
 }
 
-function smoothtoAnchor() {
+function smoothtoAnchor(){
   const urlParams = new URL(location.href).searchParams;
   const scroll = urlParams.get('scroll');
 
