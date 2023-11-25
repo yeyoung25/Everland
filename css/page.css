@@ -19,7 +19,7 @@ div .communit{
 }
 /* Detail top_img */
 div .everContainer nav div.active::after{
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) translateY(50%);
 }
 div .everContainer nav div.active ol{
     display: block;
@@ -1252,7 +1252,10 @@ div .everContainer nav div ol li a:hover{
         content: '';
         position: absolute;
         right: 10px;
-        top: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 5px;
     }
     div .everContainer nav div ol{
         display: none;
