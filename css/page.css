@@ -975,7 +975,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
         display: block;
-        color: var(--rs7);
+        color: var(--os1);
         line-height: 35px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type p{
@@ -1035,8 +1035,8 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--gs11);
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type>a{
-        background: url('../images/maincon02_more.png') no-repeat center / 6px 11px;
-        border: 1px solid var(--rs6);
+        background: url('../images/maincon02_Emore.png') no-repeat center / 6px 11px;
+        border: 1px solid var(--os1);
         box-sizing: border-box;
         padding: 14px;
         font-size: 0;
@@ -2250,8 +2250,10 @@ div .everContainer nav div ol li a:hover{
     }
     .affContainer div:nth-child(2)>ul:last-child li{
         box-sizing: border-box;
-        /* max-width: 50%; */
-        margin: 0 auto 75px;
+        margin: 0 auto;
+    }
+    .affContainer div:nth-child(2)>ul:last-child li:not(:last-child){
+        margin-bottom: 75px;
     }
     .affContainer div:nth-child(2)>ul:last-child li img{
         display: block;
@@ -5498,7 +5500,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
         display: block;
-        color: var(--rs7);
+        color: var(--os1);
         line-height: 35px;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type p{
@@ -5556,8 +5558,8 @@ div .everContainer nav div ol li a:hover{
         background-color: var(--gs11);
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type>a{
-        background: url('../images/maincon02_more.png') no-repeat center / 6px 11px;
-        border: 1px solid var(--rs6);
+        background: url('../images/maincon02_Emore.png') no-repeat center / 6px 11px;
+        border: 1px solid var(--os1);
         box-sizing: border-box;
         padding: 14px;
         font-size: 0;
@@ -10005,7 +10007,7 @@ div .everContainer nav div ol li a:hover{
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type h2 strong{
         display: block;
-        color: var(--rs7);
+        color: var(--os1);
         line-height: 35px;
         font-size: 1.303vw;
     }
@@ -10042,10 +10044,10 @@ div .everContainer nav div ol li a:hover{
         font-weight: 700;
     }
     .indexContainer .contentBanner02>div:first-of-type>div:first-of-type>a{
-        background: url('../images/maincon02_more.png') no-repeat 82.5% center / 6px 11px;
+        background: url('../images/maincon02_Emore.png') no-repeat 82.5% center / 6px 11px;
         display: block;
-        color: var(--rs6);
-        border: 1px solid var(--rs6);
+        color: var(--os1);
+        border: 1px solid var(--os1);
         padding: 20px 85px 20px 70px;
         margin: 10% 0 10% auto;
         width: 7%;
