@@ -6735,7 +6735,7 @@ div .everContainer nav div ol li a:hover{
         width: 43%;
         box-sizing: border-box;
     }
-    .affContainer div:nth-child(2)>ul:last-child li:not(:nth-last-child(-n+3)){
+    .affContainer div:nth-child(2)>ul:last-child li:not(:nth-last-child(-n+2)){
         margin-bottom: 75px;
     }
     .affContainer div:nth-child(2)>ul:last-child li img{
