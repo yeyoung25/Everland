@@ -924,12 +924,16 @@ div .everContainer nav div ol li a:hover{
         vertical-align: text-bottom;
         padding-bottom: 5px;
     }
+    .indexContainer .contentBanner01 .carouselWay4 li img{
+        display: block;
+        margin-bottom: 15px;
+    }
     .indexContainer .contentBanner01 .carouselWay4 li strong{
         display: block;  
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 15px 0 10px;
+        margin-bottom: 10px;
         height: 15px;
         text-align: center;
     }
@@ -5457,12 +5461,16 @@ div .everContainer nav div ol li a:hover{
         padding: 0 0 5px;
         margin-left: 15px;
     }
+    .indexContainer .contentBanner01 .carouselWay4 li img{
+        display: block;
+        margin-bottom: 15px;
+    }
     .indexContainer .contentBanner01 .carouselWay4 li strong{
         display: block;  
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 15px 0 10px;
+        margin-bottom: 10px;
         height: 15px;
     }
     .indexContainer .contentBanner01 .carouselWay4 li span{
@@ -9970,12 +9978,16 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner01 .bx-wrapper div:nth-child(2)>div{
         top: 415px;
     }
+    .indexContainer .contentBanner01 .carouselWay4 li img{
+        display: block;
+        margin-bottom: 15px;
+    }
     .indexContainer .contentBanner01 .carouselWay4 li strong{
         display: block;  
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 15px 0;
+        margin-bottom: 15px;
         height: 23px;
     }
     .indexContainer .contentBanner01 .carouselWay4 li span{
