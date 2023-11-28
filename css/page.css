@@ -638,7 +638,7 @@ div .everContainer nav div ol li a:hover{
 }
 .siteContainer>ul>li:nth-child(2)>ul,
 .siteContainer>ul>li:nth-child(2)>ul>li>ol>li>a{
-    color: var(--vs9);
+    color: var(--bs5);
 }
 .siteContainer>ul>li:nth-child(3)>ul,
 .siteContainer>ul>li:nth-child(3)>ul>li>ol>li>a{
@@ -4534,7 +4534,7 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--os1);
     }
     .siteContainer>ul>li:nth-child(2)>ul>li:not(:nth-child(odd)){
-        border-left: 1px solid var(--vs9);
+        border-left: 1px solid var(--bs4);
     }
     .siteContainer>ul>li:nth-child(3)>ul>li:not(:nth-child(odd)){
         border-left: 1px solid var(--rs8);
@@ -4543,8 +4543,8 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
-        border-bottom: 2px solid var(--vs9);
-        color: var(--vs9);
+        border-bottom: 2px solid var(--bs5);
+        color: var(--bs5);
     }
     .siteContainer>ul>li:nth-child(3)>h3{
         border-bottom: 2px solid var(--rs8);
@@ -9089,7 +9089,7 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--os1);
     }
     .siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
-        border-left: 1px solid var(--vs9);
+        border-left: 1px solid var(--bs5);
     }
     .siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
         border-left: 1px solid var(--rs8);
@@ -9098,8 +9098,8 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
-        border-bottom: 2px solid var(--vs9);
-        color: var(--vs9);
+        border-bottom: 2px solid var(--bs5);
+        color: var(--bs5);
     }
     .siteContainer>ul>li:nth-child(3)>h3{
         border-bottom: 2px solid var(--rs8);
@@ -13595,7 +13595,7 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--os1);
     }
     .siteContainer>ul>li:nth-child(2)>ul>li:not(:first-child){
-        border-left: 1px solid var(--vs9);
+        border-left: 1px solid var(--bs4);
     }
     .siteContainer>ul>li:nth-child(3)>ul>li:not(:first-child){
         border-left: 1px solid var(--rs8);
@@ -13604,8 +13604,8 @@ div .everContainer nav div ol li a:hover{
         border-left: 1px solid var(--gs11);
     }
     .siteContainer>ul>li:nth-child(2)>h3{
-        border-bottom: 3px solid var(--vs9);
-        color: var(--vs9);
+        border-bottom: 3px solid var(--bs5);
+        color: var(--bs5);
     }
     .siteContainer>ul>li:nth-child(3)>h3{
         border-bottom: 3px solid var(--rs8);
