@@ -9846,7 +9846,6 @@ div .everContainer nav div ol li a:hover{
 @media screen and (min-width: 1280px) {
     header+.mwpadding>h3,
     header+.mwpadding>div,
-    header+.hisContainer>ul,
     header+.hisContainer>ol,
     .siteContainer>ul{
         max-width: 1458px;
@@ -9862,6 +9861,7 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
         margin-bottom: 110px;
     }
+    header+.hisContainer>ul,
     div .linemg~div,
     div article,
     #wrap .contentBanner03{
@@ -9869,6 +9869,13 @@ div .everContainer nav div ol li a:hover{
         margin: 0 auto;
         padding: 0 24px;
         box-sizing: border-box;
+    }
+    header+.hisContainer>ul{
+        max-width: 1458px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
     }
     #wrap .contentBanner03{
         width: 100%;
