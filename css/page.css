@@ -19,7 +19,7 @@ div .communit{
 }
 /* Detail top_img */
 div .everContainer nav div.active::after{
-    transform: rotate(-180deg) translateY(50%);
+    transform: rotate(-180deg);
 }
 div .everContainer nav div.active ol{
     display: block;
@@ -1254,8 +1254,7 @@ div .everContainer nav div ol li a:hover{
         content: '';
         position: absolute;
         right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 16px;
         width: 8px;
         height: 5px;
     }
@@ -5792,7 +5791,7 @@ div .everContainer nav div ol li a:hover{
         content: '';
         position: absolute;
         right: 30px;
-        top: 16px;
+        top: 15px;
         display: block;
         width: 10px;
         height: 10px;
@@ -9897,7 +9896,7 @@ div .everContainer nav div ol li a:hover{
         left: 13.281%;
     }
     .indexContainer .contentBanner01{
-        margin: 155px 0 190px;
+        margin: 155px 0 210px;
         padding-left: 13.281%;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
