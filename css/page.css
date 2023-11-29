@@ -1293,16 +1293,16 @@ div .everContainer nav div ol li a:hover{
     div article .linebtm,
     div div:nth-child(2) .linebtm,
     header+div>.linebtm,
-    .comuContainer div:nth-child(2) h3,
     .siteContainer ul li>.linebtm{
         text-align: center;
         padding: 35px 0;
         border-bottom: 1px solid var(--gs5);
     }
+    .comuContainer div:nth-child(2) h3,
     .experContainer article h3,
     .trafContainer div:nth-child(2) h3,
     .newContainer article h3{
-        padding: 40px 0;
+        padding: 35px 0;
         text-align: center;
     }
     .newContainer div:nth-child(2) h3+ul{
@@ -1374,8 +1374,9 @@ div .everContainer nav div ol li a:hover{
     }
     .newContainer article .innerPager{
         display: flex;
-        padding-top: 55px;
+        align-items: center;
         width: 100%;
+        padding-top: 55px;
         border-top: 1px solid var(--gs5);
         box-sizing: border-box;
     }
@@ -1388,13 +1389,17 @@ div .everContainer nav div ol li a:hover{
         justify-content: flex-end;
     }
     .newContainer article .innerPager li:first-child a{
-        background: url('../images/newdetD_pre.png') no-repeat left;
+        background: url('../images/newdetD_pre.png') no-repeat left / contain;
         padding-left: 50px;
+        width: 22px;
+        height: 22px;
     }
     .newContainer article .innerPager li:last-child a{
-        background: url('../images/newdetD_next.png') no-repeat right;
+        background: url('../images/newdetD_next.png') no-repeat right / contain;
         padding-right: 50px;
         text-align: right;
+        width: 22px;
+        height: 22px;
     }
     .newContainer article .innerPager li:nth-child(2) a{
         background: url('../images/newdetD_list.png') no-repeat 15px center / 11px 11px;
@@ -5833,12 +5838,12 @@ div .everContainer nav div ol li a:hover{
     div article .linebtm,
     div div:nth-child(2) .linebtm,
     header+div>.linebtm,
-    .comuContainer div:nth-child(2) h3,
     .siteContainer ul li>.linebtm{
         text-align: center;
         padding: 55px 0;
         border-bottom: 1px solid var(--gs5);
     }
+    .comuContainer div:nth-child(2) h3,
     .experContainer article h3,
     .trafContainer div:nth-child(2) h3,
     .newContainer article h3{
@@ -10373,10 +10378,9 @@ div .everContainer nav div ol li a:hover{
         width: 70%;
     }
     .newContainer div:nth-child(2) ul li a time{
-        /* background: url('../images/newdet_calendar.png') no-repeat left / contain; */
-        
+        background: url('../images/newdet_calendar.png') no-repeat left / contain;
         width: 10%;
-        padding-left: 30px;
+        padding-left: 25px;
         color: var(--gs10);
         background-size: 12px;
     }
@@ -10401,8 +10405,9 @@ div .everContainer nav div ol li a:hover{
         color: var(--gs9);
     }
     .newContainer article div h4 time{
+        background: url('../images/newdet_calendar.png') no-repeat left / 12px 11px;
+        filter: invert(42%) sepia(0%) saturate(644%) hue-rotate(144deg) brightness(91%) contrast(86%);
         color: var(--gs7);
-        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
         padding: 2px 0 0 20px;
         margin-left: auto;
     }
