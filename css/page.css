@@ -7403,6 +7403,7 @@ div .everContainer nav div ol li a:hover{
         z-index: 100;
     }
     .recoContainer div:nth-child(2) div .pagerSliderBox02 .fadeSlider li:nth-child(1) img{
+        width: 100%;
         content: url('../images/recoChild01_M.png');
         border: 3px solid var(--gs11);
         box-sizing: border-box;
