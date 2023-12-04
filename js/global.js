@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
   customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0);
   customSlider(".picSliderE",'fade',true,350,4500,true,true,1,1,0,0,'.actTabPager','full',false,0);
   customSlider(".picSliderH",'fade',true,350,4500,true,true,1,1,0,0,'.homTabPager','full',false,0);
@@ -13,6 +12,7 @@ $(document).ready(function () {
 });
 
 $(window).load(function(){
+  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
   headerAct();
   menuButton();
   gotop();
