@@ -22,6 +22,10 @@ $(document).ready(function () {
   mainFnb($("header #fnbPanel ul>li"));
 });
 
+$(window).resize(function(){
+  headerAct();
+});
+
 function mainHeader(){
   if(!$("#wrap").hasClass("indexContainer")){
     $("header").addClass("mouseOver");
