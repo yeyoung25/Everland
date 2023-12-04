@@ -10,6 +10,9 @@ $(document).ready(function () {
   customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox01','full',true,1);
   customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox02','full',true,1);
   customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox03','full',true,1);
+});
+
+$(window).load(function(){
   headerAct();
   menuButton();
   gotop();
@@ -20,7 +23,7 @@ $(document).ready(function () {
   bxExt02();
   bxExt03();
   mainFnb($("header #fnbPanel ul>li"));
-});
+})
 
 $(window).resize(function(){
   headerAct();
