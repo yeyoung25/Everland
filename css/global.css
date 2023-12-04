@@ -805,8 +805,8 @@ footer div details summary.on::after{
         transition-duration: 0.2s;
     }
     header>div{
-        justify-content: flex-end;
-        width: 768px;
+        /* justify-content: flex-end; */
+        width: 75%;
     }
     header div .ect_btn{
         /* justify-content: space-between;
@@ -817,7 +817,7 @@ footer div details summary.on::after{
         text-shadow: 0px 2px 7px rgba(127,127,127,0.8);
     }
     header div .ect_btn a:not(:first-child){
-        margin-left: 28px;
+        margin-left: 30px;
     }
     header div .ect_btn a:last-of-type{
         display: inline-block;
@@ -872,11 +872,13 @@ footer div details summary.on::after{
         margin-bottom: 30px;
     }
     header h1{
+        width: 25%;
         padding-left: 3.125%;
         margin-top: 15px;
         font-size: 0;
         display: flex;
         align-items: center;
+        box-sizing: border-box;
     }
     header h1 a{
         display: block;
