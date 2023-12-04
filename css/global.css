@@ -148,16 +148,13 @@ footer div details summary.on::after{
     }
     header>div{
         width: 100%;
-        justify-content: space-between;
+        position: relative;
     }
     header div .ect_btn a:nth-child(-n+3){
         display: none;
     }
-    header div .ect_btn{
-        justify-content: space-between;
-        align-items: center;
-    }
     header div .ect_btn a:last-of-type{
+        display: inline-block;
         background: url('../images/headerRes.png') no-repeat 12px center / 28px 29px;
         background-color: var(--vs7);
         text-shadow: none;
@@ -170,6 +167,9 @@ footer div details summary.on::after{
         background-color: var(--gs10);
         width: 55px;
         height: 55px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     header div .menuBar.toggle{
         background-color: var(--gs1);
@@ -494,16 +494,13 @@ footer div details summary.on::after{
     }
     header>div{
         width: 100%;
-        justify-content: space-between;
+        position: relative;
     }
     header div .ect_btn a:nth-child(-n+3){
         display: none;
     }
-    header div .ect_btn{
-        justify-content: space-between;
-        align-items: center;
-    }
     header div .ect_btn a:last-of-type{
+        display: inline-block;
         background: url('../images/headerRes.png') no-repeat 14px center / 32px 30px;
         background-color: var(--vs7);
         text-shadow: none;
@@ -513,6 +510,9 @@ footer div details summary.on::after{
         font-size: 0;
     }
     header div .menuBar{
+        position: absolute;
+        top: 0;
+        right: 0;
         background-color: var(--gs10);
         width: 60px;
         height: 60px;
@@ -805,12 +805,9 @@ footer div details summary.on::after{
         transition-duration: 0.2s;
     }
     header>div{
-        /* justify-content: flex-end; */
         width: 75%;
     }
     header div .ect_btn{
-        /* justify-content: space-between;
-        align-items: center; */
         float: left;
         text-align: right;
         width: calc(100% - 110px);

@@ -84,10 +84,10 @@ header::after,
     display: block;
     clear: both;
 }
-header>div,
+/* header>div,
 .fright{
     float: right;
-}
+} */
 header div .menuBar,
 footer>ul li,
 footer>ul li h3,
