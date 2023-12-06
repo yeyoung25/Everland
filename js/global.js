@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function(){
   customSlider(".carouselWay4",'horizontal',false,500,4000,false,false,5,1,325,35,null,'full',false,0);
   customSlider(".picSliderE",'fade',true,350,4500,true,true,1,1,0,0,'.actTabPager','full',false,0);
   customSlider(".picSliderH",'fade',true,350,4500,true,true,1,1,0,0,'.homTabPager','full',false,0);
