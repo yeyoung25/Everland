@@ -806,6 +806,7 @@ footer div details summary.on::after{
     }
     header>div{
         width: 75%;
+        float: right;
     }
     header div .ect_btn{
         float: left;
