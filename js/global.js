@@ -9,11 +9,9 @@ $(document).ready(function(){
   customSlider(".pagerSliderBox01 .thumbPager01",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox01','full',true,1);
   customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox02','full',true,1);
   customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox03','full',true,1);
-});
-
-$(window).load(function(){
   customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
-  headerAct();
+  headerAct1();
+  headerAct2();
   menuButton();
   gotop();
   sumDetail();
@@ -23,10 +21,10 @@ $(window).load(function(){
   bxExt02();
   bxExt03();
   mainFnb($("header #fnbPanel ul>li"));
-})
+});
 
 $(window).resize(function(){
-  headerAct();
+  headerAct1();
 });
 
 function mainHeader(){
@@ -80,24 +78,24 @@ function bxExt03(){
   });
 }
 
-function headerScroll() {
-  if (!$("#wrap").hasClass("indexContainer")) {
+function headerScroll(){
+  if(!$("#wrap").hasClass("indexContainer")) {
     return;
-  } else if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
+  }else if($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
     $("header").removeClass("mouseOver");
     $(".go_top").addClass("scrollTop");
-  } else {
+  }else{
     $("header").addClass("mouseOver");
     $(".go_top").removeClass("scrollTop");
   }
 }
 
-function headerEvent() {
+function headerEvent(){
   $("header").hover(
-    function () {
+    function(){
       $("header").addClass("mouseOver");
     },
-    function () {
+    function(){
       if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
         $("header").removeClass("mouseOver");
       }
@@ -108,14 +106,16 @@ function headerEvent() {
   $(window).scroll(headerScroll);
 }
 
-function headerAct() {
+function headerAct1(){
   var headerHight = $("header").innerHeight();
   $("#fnbPanel").css("top", headerHight + "px");
   $(window).resize(function() {
     headerHight = $("header").innerHeight();
     $("#fnbPanel").css("top", headerHight + "px");
   });
+}
 
+function headerAct2() {
   $(".menuBar").click(function () {
     $("body").toggleClass("scrollNone");
     $("#fnbPanel").toggleClass("act");
