@@ -32,7 +32,7 @@ $(window).resize(function(){
 
 function mainHeader(){
   if(!$("#wrap").hasClass("indexContainer")){
-    $("header").addClass("mouseOver");
+    // $("header").addClass("mouseOver");
   }else{
     headerEvent();
   }
@@ -84,7 +84,7 @@ function bxExt03(){
 function headerScroll(){
   if(!$("#wrap").hasClass("indexContainer")) {
     return;
-  }else if($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
+  }else if($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")){
     $("header").removeClass("mouseOver");
     $(".go_top").addClass("scrollTop");
   }else{
@@ -99,7 +99,7 @@ function headerEvent(){
       $("header").addClass("mouseOver");
     },
     function(){
-      if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")) {
+      if ($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")){
         $("header").removeClass("mouseOver");
       }
     }
