@@ -82,7 +82,7 @@ function bxExt03(){
 }
 
 function headerScroll(){
-  if(!$("#wrap").hasClass("indexContainer")) {
+  if(!$("#wrap").hasClass("indexContainer")){
     return;
   }else if($(window).scrollTop() == 0 && !$("#fnbPanel").hasClass("act")){
     $("header").removeClass("mouseOver");
