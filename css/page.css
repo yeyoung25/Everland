@@ -180,6 +180,7 @@ div .everContainer nav div ol li a:hover{
 }
 .susContainer div:nth-child(2)>div:last-of-type .left table tr td{
     width: 50%;
+    text-transform: capitalize;
 }
 /* suspensionNotice Fin */
 .trafContainer div:nth-child(2) ul li:not(:last-child)::after{
