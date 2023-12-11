@@ -5694,9 +5694,8 @@ div .everContainer nav div ol li a:hover{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        padding-top: 4px;
+        padding: 4px 0 2px;
         font-size: 13px;
-        padding-bottom: 2px;
     }
     .indexContainer .contentBanner03>div:first-child ul li time{
         font-size: 13px;
