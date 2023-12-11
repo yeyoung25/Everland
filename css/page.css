@@ -8697,7 +8697,7 @@ div .everContainer nav div ol li a:hover{
         height: 13px;
         background-color: var(--os1);
         margin-right: 10px;
-        margin-top: 5px;
+        margin-top: 3px;
     }
     .cheContainer div:nth-child(2) h3+ul>li:last-child div:first-of-type mark>span{
         line-height: 18px;
