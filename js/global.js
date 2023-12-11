@@ -32,7 +32,7 @@ $(window).resize(function(){
 
 function mainHeader(){
   if(!$("#wrap").hasClass("indexContainer")){
-    // $("header").addClass("mouseOver");
+    $("header").addClass("mouseOver");
   }else{
     headerEvent();
   }
