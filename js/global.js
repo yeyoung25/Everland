@@ -10,6 +10,10 @@ $(document).ready(function(){
   customSlider(".pagerSliderBox02 .thumbPager02",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox02','full',true,1);
   customSlider(".pagerSliderBox03 .thumbPager03",'horizontal',false,500,0,true,true,3,1,250,35,'.pagerSliderBox03','full',true,1);
   customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
+});
+
+$(window).load(function(){
+  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
   headerAct1();
   headerAct2();
   menuButton();
@@ -21,7 +25,7 @@ $(document).ready(function(){
   bxExt02();
   bxExt03();
   mainFnb($("header #fnbPanel ul>li"));
-});
+})
 
 $(window).resize(function(){
   headerAct1();
