@@ -94,6 +94,9 @@ footer div details a{
 footer div details summary.on::after{
     transform: rotate(-180deg);
 }
+footer div details summary::marker{
+    font-size: 0;
+}
 /* footer Fin */
 
 @media screen and (max-width: 767px) {
@@ -416,7 +419,7 @@ footer div details summary.on::after{
     footer div details summary{
         position: relative;
         margin-bottom: 5px;
-        list-style: none;
+        /* list-style: none; */
         text-align: center;
         line-height: 16px;
         font-size: 10px;
