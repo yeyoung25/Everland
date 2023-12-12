@@ -1112,7 +1112,7 @@ div .everContainer nav div ol li a:hover{
         background: url(../images/maincon03_more.png) no-repeat right center / contain;
         padding-right: 10px;
         background-size: 4px 9px;
-        background-position: 40px 1px;
+        background-position: 40px 2.5px;
     }
     .indexContainer .contentBanner03>div:first-child{
         border-bottom: 1px solid var(--gs5);
