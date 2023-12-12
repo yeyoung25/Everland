@@ -1245,7 +1245,7 @@ div .everContainer nav div ol li a:hover{
         color: var(--gs11);
         background-color: transparent;
         border: none;
-        line-height: 35px;
+        line-height: 37px;
         text-align: left;
         font-family: 'Open Sans';
         font-weight: 600;
@@ -9812,6 +9812,12 @@ div .everContainer nav div ol li a:hover{
         max-width: 1458px;
         margin: 0 auto;
         padding: 0 24px;
+        box-sizing: border-box;
+        margin-bottom: 110px;
+    }
+    header+.signUpContainer>ul{
+        max-width: 1410px;
+        margin: 0 auto;
         box-sizing: border-box;
         margin-bottom: 110px;
     }
