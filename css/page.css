@@ -9814,11 +9814,19 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
         margin-bottom: 110px;
     }
+    .termsUse>h3,
     header+.signUpContainer>ul{
         max-width: 1410px;
         margin: 0 auto;
+        padding: 0;
         box-sizing: border-box;
         margin-bottom: 110px;
+    }
+    .termsUse>div,
+    .termsUse>ul{
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 0 24px;
     }
     header+.hisContainer>ul,
     div .linemg~div,
