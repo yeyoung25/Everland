@@ -54,8 +54,10 @@ div .everContainer nav div ol li a:hover{
 }
 /* contentBanner01 Fin */
 .indexContainer .contentBanner02{
-    border-bottom: 1px solid var(--gs5);
     margin-left: auto;
+}
+.indexContainer .contentBanner02 div:nth-child(3){
+    border-bottom: 1px solid var(--gs5);
 }
 .indexContainer .contentBanner02>div:first-of-type:after{
     content: ''; 
@@ -5804,6 +5806,7 @@ div .everContainer nav div ol li a:hover{
         height: 40px;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
+        border-right: 0px;
     }
     div .everContainer nav div input{
         width: 100%;
