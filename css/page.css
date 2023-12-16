@@ -1,3 +1,12 @@
+[data-scroll="transform"]{
+    transition-duration: 1s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+[data-scroll="transform"].active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 div .guide{
     background: url('../images/ever_Header01.png') no-repeat center / cover;
 }
@@ -1239,6 +1248,7 @@ div .everContainer nav div ol li a:hover{
         height: 40px;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
+        border-right: 0px;
     }
     div .everContainer nav div input{
         width: 85%;
@@ -2518,7 +2528,7 @@ div .everContainer nav div ol li a:hover{
     }
     .speContainer div:nth-child(2) hr+ul:last-child li:nth-child(n+3){
         position: relative;
-        width: 120px;
+        width: 48%;
         height: 136px;
         border-radius: 20px;
         border: 1px solid rgba(98, 24, 102, 0.3);
@@ -5796,6 +5806,8 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
     }
     div .everContainer nav div input{
+        width: 100%;
+        text-align: left;
         color: var(--gs11);
         background-color: transparent;
         border: none;

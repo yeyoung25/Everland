@@ -347,9 +347,9 @@ footer div details summary::marker{
         margin-right: 3.571%;
     }
     footer>div{
-        height: 400px;
         padding: 15px 3.571% 0;
         box-sizing: border-box;
+        padding-bottom: 30px;
     }
     footer div div h2{
         background: url('../images/footer_logo.png') no-repeat center / contain;
