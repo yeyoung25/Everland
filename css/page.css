@@ -5682,6 +5682,7 @@ div .everContainer nav div ol li a:hover{
         background-position: 45px 1px;
     }
     .indexContainer .contentBanner03>div:first-child{
+        border-top: 1px solid var(--gs5);
         border-bottom: 1px solid var(--gs5);
     }
     .indexContainer .contentBanner03>div:not(:last-child){
@@ -9937,7 +9938,6 @@ div .everContainer nav div ol li a:hover{
     .indexContainer .contentBanner01 .carouselWay4 li a{
         display: block;
         width: 325px;
-        margin-right: 40px;
     }
     .indexContainer .contentBanner01 div p{
         display: inline-block;
