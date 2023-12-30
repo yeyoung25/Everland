@@ -190,7 +190,7 @@ function mainScrollAct(){
   $('[data-scroll="transform"]').each(function () {
     if(
       $(window).scrollTop() >
-      $(this).offset().top - $(window).height() / 1.7
+      $(this).offset().top - $(window).height() / 1.1
     ) {
       $(this).addClass("active");
     } else {
@@ -201,7 +201,7 @@ function mainScrollAct(){
     $('[data-scroll="transform"]').each(function () {
       if(
         $(window).scrollTop() >
-        $(this).offset().top - $(window).height() / 1.7
+        $(this).offset().top - $(window).height() / 1.1
       ) {
         $(this).addClass("active");
       } else {

@@ -1200,6 +1200,7 @@ div .everContainer nav div ol li a:hover{
         background-position: 40px 2px;
     }
     .indexContainer .contentBanner03>div:first-child{
+        border-top: 1px solid var(--gs5);
         border-bottom: 1px solid var(--gs5);
     }
     .indexContainer .contentBanner03>div:not(:last-child){
