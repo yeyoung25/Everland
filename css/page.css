@@ -864,7 +864,6 @@ div .everContainer nav div ol li a:hover{
     }
     header+.mwpadding>h3,
     .siteContainer>ul{
-        max-width: 1458px;
         margin: 0 auto;
         padding: 0 3.571%;
         box-sizing: border-box;
@@ -873,10 +872,17 @@ div .everContainer nav div ol li a:hover{
     div .linemg~div,
     div article,
     #wrap .contentBanner03{
-        max-width: 1458px;
         margin: 0 auto;
         padding: 0 3.571%;
         box-sizing: border-box;
+    }
+    header+.termsUse{
+        margin: 0 auto;
+        padding: 0 3.571%;
+        box-sizing: border-box;
+    }
+    header+.termsUse>h3{
+        margin-bottom: 25px;
     }
     .experContainer article h3,
     .comuContainer div:nth-child(2) h3{
@@ -5471,6 +5477,15 @@ div .everContainer nav div ol li a:hover{
         padding: 0 24px;
         box-sizing: border-box;
     }
+    header+.termsUse{
+        max-width: 1458px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    header+.termsUse>h3{
+        margin-bottom: 50px;
+    }
     .experContainer article h3,
     .comuContainer div:nth-child(2) h3{
         text-align: center;
@@ -9980,27 +9995,14 @@ div .everContainer nav div ol li a:hover{
         box-sizing: border-box;
         margin-bottom: 110px;
     }
-    .termsUse>div,
-    .termsUse>ul{
-        max-width: 1410px;
-        margin: 0 auto;
-        padding: 0 24px;
-    }
-    header+.hisContainer>ul,
     div .linemg~div,
     div article,
+    header+.termsUse,
     #wrap .contentBanner03{
         max-width: 1458px;
         margin: 0 auto;
         padding: 0 24px;
         box-sizing: border-box;
-    }
-    header+.hisContainer>ul{
-        max-width: 1458px;
-        margin: 0 auto;
-        padding: 0 24px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
     }
     #wrap .contentBanner03{
         width: 100%;
