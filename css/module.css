@@ -102,12 +102,10 @@ footer>div,
     position: relative;
 }
 header div .menuBar span,
-header #fnbPanel,
 footer>ul li::after,
 .posiA{
     position: absolute;
 }
-
 .rightContent{
     margin-left: auto;
     max-width: 86.718%;
