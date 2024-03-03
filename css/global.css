@@ -23,9 +23,14 @@ header div .menuBar.toggle span:last-child{
     transform: rotate(45deg) translate(-10px, -10px);
 }
 header.mouseOver{
-    opacity: 0.95;
     background-color: var(--gs1);
+    opacity: 0.95;
 }
+/* header.mouseOver h1,
+header.mouseOver div div{
+    position: absolute;
+    z-index: 100;
+} */
 header.active #fnbPanel{
     opacity: 0.95;
     background-color: var(--gs1);
@@ -222,7 +227,6 @@ footer div details summary::marker{
         width: 100%;
         height: 100vh;
         overflow-y: scroll;
-        min-height: calc(100vh - 55px);
         opacity: 0.95;
         background-color: var(--gs1);
         padding: 35px 0 50px;
@@ -620,7 +624,6 @@ footer div details summary::marker{
         display: none;
         width: 100%;
         height: 100vh;
-        min-height: calc(100vh - 60px);
         opacity: 0.95;
         overflow: scroll;
         background-color: var(--gs1);
@@ -924,9 +927,9 @@ footer div details summary::marker{
     header #fnbPanel{
         display: none;
         position: absolute;
+        top: 100%;
         width: 100%;
         height: 100vh;
-        min-height: calc(100% - 110px);
         background-color: var(--gs11);
         opacity: 0.95;
         margin: 0 auto;
